@@ -1,0 +1,323 @@
+<html>
+<head>
+</head>
+<body>
+	<%=translate('RESULTS_FROM_BPI', [], self)%>
+<div>
+  <div id="center"  class="column">
+	<div class="citation">	
+    	<% if @record != nil %>
+	        <div id="preview">
+	            <% if @record[:thumbnail_url] != "" %>
+	            <%= image_tag("@record[:thumbnail_url]") %>
+	            <% else %>
+	            <%= image_tag("no_thumbnail.jpg") %>
+	            <% end %>
+	        </div>
+	        <div id="barTop">
+	        </div>
+	        <div id="infoUtils">
+	            <% if @record[:atitle] != "" %>
+	            <div class="myAlign">
+	            	
+	                <b> ATITLE : </b>
+	            </div>
+	            <%= @record[:atitle] %>
+	        </div>
+        <!--end of div elementInfoUtils -->
+	        <br/>
+	        <% end %>
+	        <% if @record[:isbn] != "" %>
+	        <div class="elementInfoUtils">
+	            <div class="myAlign">
+	               
+				   <b>Isbn : </b>
+	            </div>
+	            <%= @record[:isbn] %>
+	        </div>
+	        <!--end of div elementInfoUtils -->
+	        <br/>
+	        <% end %>
+	        <% if @record[:issn] != "" %>
+	        <div class="elementInfoUtils">
+	            <div class="myAlign">
+	                
+					<b>Issn : </b>
+	            </div>
+	            <%= @record[:issn] %>
+	        </div>
+	        <!--end of div elementInfoUtils -->
+	        <br/>
+	        <% end %>
+	        <% if @record[:abstract] != "" %>
+	        <div class="elementInfoUtils">
+	            <div class="myAlign">
+	            	
+	                <b> Abstract : </b>
+	            </div>
+	            <%= @record[:abstract] %>
+	        </div>
+	        <!--end of div elementInfoUtils -->
+	        <br/>
+	        <% end %>
+	        <% if @record[:date] != "" %>
+	        <div class="elementInfoUtils">
+	            <div class="myAlign">
+	            	
+	                <b>Date : </b>
+	            </div>
+	            <%= @record[:date] %>
+	        </div>
+	        <!--end of div elementInfoUtils -->
+	        <br/>
+	        <% end %>
+	        <% if @record[:author] != "" %>
+	        <div class="elementInfoUtils">
+	            <div class="myAlign">
+	            	
+	                <b>Author : </b>
+	            </div>
+	            <%= @record[:author] %>
+	        </div>
+	        <!--end of div elementInfoUtils -->
+	        <br/>
+	        <% end %>
+	        <% if @record[:link] != "" %>
+	        <div class="elementInfoUtils">
+	            <div class="myAlign">
+	                
+					<b>Link : </b>
+	            </div>
+	            <%= @record[:link] %>
+	        </div>
+	        <!--end of div elementInfoUtils -->
+	        <br/>
+	        <% end %>
+	        <% if @record[:direct_url] != "" %>
+	        <div class="elementInfoUtils">
+	            <div class="myAlign">
+	                
+					<b>Direct url : </b>
+	            </div>
+	            <%= @record[:direct_url] %>
+	        </div>
+	        <!--end of div elementInfoUtils -->
+	        <br/>
+	        <% end %>
+	        <% if @record[:static_url] != "" %>
+	        <div class="elementInfoUtils">
+	            <div class="myAlign">
+	                
+					<b>Static : </b>
+	            </div>
+	            <%= @record[:static_url] %>
+	        </div>
+	        <!--end of div elementInfoUtils -->
+	        <br/>
+	        <% end %>
+	        <% if @record[:subject] != "" %>
+	        <div class="elementInfoUtils">
+	            <div class="myAlign">
+	                
+					<b>Subject : </b>
+	            </div>
+	            <%= @record[:subject] %>
+	        </div>
+	        <!--end of div elementInfoUtils -->
+	        <br/>
+	        <% end %>
+	        <% if @record[:publisher] != "" %>
+	        <div class="elementInfoUtils">
+	            <div class="myAlign">
+	            	
+	                <b>Publisher : </b>
+	            </div>
+	            <%= @record[:publisher] %>
+	        </div>
+	        <!--end of div elementInfoUtils -->
+	        <br/>
+	        <% end %>
+	        <% if @record[:relation] != "" %>
+	        <div class="elementInfoUtils">
+	            <div class="myAlign">
+	                
+					<b>Relation : </b>
+	            </div>
+	            <%= @record[:relation] %>
+	        </div>
+	        <!--end of div elementInfoUtils -->
+	        <br/>
+	        <% end %>
+	        <% if @record[:contributor] != "" %>
+	        <div class="elementInfoUtils">
+	            <div class="myAlign">
+	                
+					<b>Contributor : </b>
+	            </div>
+	            <%= @record[:contributor] %>
+	        </div>
+	        <!--end of div elementInfoUtils -->
+	        <br/>
+	        <% end %>
+	        <% if @record[:rights] != "" %>
+	        <div class="elementInfoUtils">
+	            <div class="myAlign">
+	            	
+	                <b>Rights : </b>
+	            </div>
+	            <%= @record[:rights] %>
+	        </div>
+	        <!--end of div elementInfoUtils -->
+	        <br/>
+	        <% end %>
+	        <% if @record[:callnum] != "" %>
+	        <div class="elementInfoUtils">
+	            <div class="myAlign">
+	            	
+	                <b>Callnum : </b>
+	            </div>
+	            <%= @record[:callnum] %>
+	        </div>
+	        <!--end of div elementInfoUtils -->
+	        <br/>
+	        <% end %>
+	        <% if @record[:material_type] != "" %>
+	        <div class="elementInfoUtils">
+	            <div class="myAlign">
+	            	
+	                <b>Material Type : </b>
+	            </div>
+	            <%= @record[:material_type] %>
+	        </div>
+	        <!--end of div elementInfoUtils -->
+	        <br/>
+	        <% end %>
+	        <% if @record[:format] != "" %>
+	        <div class="elementInfoUtils">
+	            <div class="myAlign">
+	                
+					<b>Format : </b>
+	            </div>
+	            <%= @record[:format] %>
+	        </div>
+	        <!--end of div elementInfoUtils -->
+		    <br/>
+	        <% end %>
+	        <% if @record[:theme] != "" %>
+	        <div class="elementInfoUtils">
+	            <div class="myAlign">
+	                
+					<b>Theme(s) : </b>
+	            </div>
+	            <%= @record[:theme] %>
+	        </div>
+	        <!--end of div elementInfoUtils -->
+			<br/>
+	        <% end %>
+	        <% if @record[:category] != "" %>
+	        <div class="elementInfoUtils">
+	            <div class="myAlign">
+	                
+					<b>Category : </b>
+	            </div>
+	            <%= @record[:category] %>
+	        </div>
+	        <!--end of div elementInfoUtils -->
+	        <br/>
+	        <% end %>
+	        <% if @record[:vendor_name] != "" %>
+	        <div class="elementInfoUtils">
+	            <div class="myAlign">
+	                
+					<b>Vendor name : </b>
+	            </div>
+	            <%= @record[:vendor_name] %>
+	        </div>
+	        <!--end of div elementInfoUtils -->
+	        <br/>
+	        <% end %>
+	        <% if @record[:vendor_url] != "" %>
+	        <div class="elementInfoUtils">
+	            <div class="myAlign">
+	                
+					<b>Vendor url : </b>
+	            </div>
+	            <%= @record[:vendor_url] %>
+	        </div>
+	        <!--end of div elementInfoUtils -->
+	        <br/>
+	        <% end %>
+	        <% if @record[:volume] != "" %>
+	        <div class="elementInfoUtils">
+	            <div class="myAlign">
+	            	
+	                <b>Volume : </b>
+	            </div>
+	            <%= @record[:volume] %>
+	        </div>
+	        <!--end of div elementInfoUtils -->
+	        <br/>
+	        <% end %>
+	        <% if @record[:issue] != "" %>
+	        <div class="elementInfoUtils">
+	            <div class="myAlign">
+	                
+					<b>Issue : </b>
+	            </div>
+	            <%= @record[:issue] %>
+	        </div>
+	        <!--end of div elementInfoUtils -->
+	        <br/>
+	        <% end %>
+	        <% if @record[:number] != "" %>
+	        <div class="elementInfoUtils">
+	            <div class="myAlign">
+	                
+					<b>Number : </b>
+	            </div>
+	            <%= @record[:number] %>
+	        </div>
+	        <!--end of div elementInfoUtils -->
+	        <br/>
+	        <% end %>
+	        <% if @record[:page] != "" %>
+	        <div class="elementInfoUtils">
+	            <div class="myAlign">
+	                
+					<b>Page : </b>
+	            </div>
+	            <%= @record[:page] %>
+	        </div>
+	        <!--end of div elementInfoUtils -->
+	        <br/>
+	        <% end %>
+	        <% if @record[:raw_citation] != "" %>
+	        <div class="elementInfoUtils">
+	            <div class="myAlign">
+	                
+					<b>Raw citation: </b>
+	            </div>
+	            <%= @record[:raw_citation] %>
+	        </div>
+	        <!--end of div elementInfoUtils -->
+	        <br/>
+	        <% end %>
+	        <% if @record[:oclc_num] != "" %>
+	        <div class="elementInfoUtils">
+	            <div class="myAlign">
+	                
+					<b>Oclc num : </b>
+	            </div>
+	            <%= @record[:oclc_num] %>
+	        </div>
+	        <!--end of div elementInfoUtils -->
+	        <br/>
+	     <% end %>
+		 <%end%>
+	  </div>
+	
+  </div>
+</div>
+<%= puts 'In the document mailer' %>
+</body>
+</html>

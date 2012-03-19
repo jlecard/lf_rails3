@@ -1,0 +1,71 @@
+|open|/selenium/setup||
+|open|/record/search||
+|setTimeout|600000||
+|type|xpath=//input[@id='query[string]']|su:Oregon|
+|click|xpath=//input[@id='submitButton']||
+|waitForVisible|xpath=//img[@src='/images/wait.gif']||
+|waitForNotVisible|xpath=//img[@src='/images/wait.gif']||
+|waitForTextPresent|Refine Results||
+|includePartial|basic_results_layout||
+|waitForTextPresent|Databases||
+|type|xpath=//input[@id='query[string]']|su:lkasdkew||
+|click|xpath=//input[@id='submitButton']||
+|waitForTextPresent|Your search did not return any results||
+
+|type|xpath=//input[@id='query[string]']|subject:water|
+|click|xpath=//input[@id='submitButton']||
+|waitForVisible|xpath=//img[@src='/images/wait.gif']||
+|waitForNotVisible|xpath=//img[@src='/images/wait.gif']||
+|waitForTextPresent|Refine Results||
+|includePartial|basic_results_layout||
+|waitForTextPresent|Databases||
+|type|xpath=//input[@id='query[string]']|subject:lkasdkew|
+|click|xpath=//input[@id='submitButton']||
+|waitForTextPresent|Your search did not return any results||
+
+
+|type|xpath=//input[@id='query[string]']|author:Smith|
+|click|xpath=//input[@id='submitButton']||
+|waitForVisible|xpath=//img[@src='/images/wait.gif']||
+|waitForNotVisible|xpath=//img[@src='/images/wait.gif']||
+|waitForTextPresent|Refine Results||
+|includePartial|basic_results_layout||
+|type|xpath=//input[@id='query[string]']|author:lkasdkew|
+|click|xpath=//input[@id='submitButton']||
+|waitForTextPresent|Your search did not return any results||
+
+
+|type|xpath=//input[@id='query[string]']|au:Smith|
+|click|xpath=//input[@id='submitButton']||
+|waitForVisible|xpath=//img[@src='/images/wait.gif']||
+|waitForNotVisible|xpath=//img[@src='/images/wait.gif']||
+|waitForTextPresent|Refine Results||
+|includePartial|basic_results_layout||
+|type|xpath=//input[@id='query[string]']|author:lkasdkew|
+|click|xpath=//input[@id='submitButton']||
+|waitForTextPresent|Your search did not return any results||
+
+
+|type|xpath=//input[@id='query[string]']|ti:education|
+|click|xpath=//input[@id='submitButton']||
+|waitForVisible|xpath=//img[@src='/images/wait.gif']||
+|waitForNotVisible|xpath=//img[@src='/images/wait.gif']||
+|waitForTextPresent|Refine Results||
+|includePartial|basic_results_layout||
+|type|xpath=//input[@id='query[string]']|ti:lkasdkew|
+|click|xpath=//input[@id='submitButton']||
+|waitForTextPresent|Your search did not return any results||
+
+|type|xpath=//input[@id='query[string]']|title:science|
+|click|xpath=//input[@id='submitButton']||
+|waitForVisible|xpath=//img[@src='/images/wait.gif']||
+|waitForNotVisible|xpath=//img[@src='/images/wait.gif']||
+|waitForTextPresent|Refine Results||
+|includePartial|basic_results_layout||
+|type|xpath=//input[@id='query[string]']|title:lkasdkew|
+|click|xpath=//input[@id='submitButton']||
+|waitForTextPresent|Your search did not return any results||
+
+
+
+Source: $Id: attribute_searching.sel 512 2006-10-27 23:49:07Z herlockt $

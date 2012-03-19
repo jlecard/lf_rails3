@@ -1,0 +1,30 @@
+   <% remote_form_for (:manage_droit, @oManageDroit, 
+                :html => {:id => "form_#{profile_post[0]}_#{manage_role.id_role}_#{@tmp.id}"},
+                :url => {:action => 'new', :id => "form_#{profile_post[0]}_#{manage_role.id_role}_#{@tmp.id}" }) do |f| %>
+    <div class="box">
+         <span class="boxHeader boxAddElem">
+         <input name="manage_droit[id_role]" type="hidden" value="<%= manage_role.id_role %>" />
+         <input name="manage_droit[id_lieu]"type="hidden" value="<%= profile_post[0] %>" />
+            <span class="boxTitle">
+            <%= render :partial => 'selectCollection',
+                        :locals => 
+                        {
+                            :id_role => manage_role.id_role,
+                            :id_lieu => profile_post[0]
+                        }
+            %>
+            </span>
+            <span class="boxAction">
+                <select name="manage_droit[id_perm]">
+                    <% @managePerm.each do |manage_perm| %>
+                        <option value="<%= manage_perm.id_perm %>">
+                            <%= translate(manage_perm.id_perm) %>
+                        </option>
+                    <% end %>
+                </select>
+            </span>
+            <span class="boxAction">
+                <%= link_to_remote('<img title="add element" src="/images/new-document.png" />', :url => {:action => 'new', :id => "form_#{profile_post[0]}_#{manage_role.id_role}_#{@tmp.id}" }, :submit =>"form_#{profile_post[0]}_#{manage_role.id_role}_#{@tmp.id}") %>
+        </span>
+    </div>
+<%end%>

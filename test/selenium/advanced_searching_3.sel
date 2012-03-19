@@ -1,0 +1,28 @@
+|open|/selenium/setup||
+|open|/record/search||
+|setTimeout|600000||
+|waitForVisible|link=Advanced Search||
+|click|link=Advanced Search||
+|includePartial|advanced_search_layout||
+|type|xpath=//input[@id='query[type_author]']|Smith||
+|select|query[max]|10 results per database||
+|click|xpath=//input[@id='advancedSubmitButton']||
+|waitForVisible|xpath=//img[@src='/images/wait.gif']||
+|waitForNotVisible|xpath=//img[@src='/images/wait.gif']||
+|waitForTextPresent|Refine Results||
+|includePartial|basic_search_layout||
+|waitForTextPresent|Relevance*Date: Newest First||
+|waitForTextPresent|Search||
+|waitForTextPresent|Authors||
+|waitForVisible|link=Save This Item||
+|waitForVisible|link=Citation||
+|verifyTextNotPresent|An error occured||
+|waitForTextPresent|Databases||
+|waitForVisible|link=Advanced Search||
+|click|link=Advanced Search||
+|waitForVisible|link=Simple Search||
+|type|xpath=//input[@id='query[string]']|wtr|
+|click|xpath=//input[@id='advancedSubmitButton']||
+|waitForTextPresent|Did you mean:||
+
+Source: $Id: advanced_searching_3.sel 499 2006-10-26 22:45:27Z herlockt $

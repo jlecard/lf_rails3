@@ -1,0 +1,251 @@
+/* LibraryFind - Quality find done better. */
+/* Copyright (C) 2007 Oregon State University */
+
+/* This program is free software; you can redistribute it and/or modify it under */
+/* the terms of the GNU General Public License as published by the Free Software */
+/* Foundation; either version 2 of the License, or (at your option) any later */
+/* version. */
+
+/* This program is distributed in the hope that it will be useful, but WITHOUT */
+/* ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS */
+/* FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details. */
+
+/* You should have received a copy of the GNU General Public License along with */
+/* this program; if not, write to the Free Software Foundation, Inc., 59 Temple */
+/* Place, Suite 330, Boston, MA 02111-1307 USA */
+
+/* Questions or comments on this program may be addressed to: */
+
+/* LibraryFind */
+/* 121 The Valley Library */
+/* Corvallis OR 97331-4501 */
+
+/* http://libraryfind.org */
+
+body { background-color: #ffdfad; margin: 0px; padding: 0px; } 
+
+h1 { color: #000000; font-size: 18px; font-family: verdana,geneva,arial,helvetica, sans-serif; font-weight: 600; margin-bottom: 30px; }
+
+h2 { color: #000000; font-size: 15px; font-family: verdana,geneva,arial,helvetica, sans-serif; font-weight: 600; margin-top: 30px; margin-bottom: -4px; }
+
+h3 { color: #000000; font-weight: 700; font-size: 11px;  font-family: verdana,geneva,arial,helvetica, sans-serif; margin-bottom: -12px; }
+
+b, strong { font-weight: 700; font-family: verdana,geneva,arial,helvetica, sans-serif; }
+
+i, em { font-family: verdana,geneva,arial,helvetica, sans-serif; }
+
+p { color: #000000; font-size: 11px; font-family: verdana,geneva,arial,helvetica, sans-serif; line-height: 19px; margin-top: 19px; margin-bottom: 15px; }
+
+table { margin-bottom: 15px; margin-top: 15px; }
+
+td { color: #000000; font-size: 11px; font-family: verdana,geneva,arial,helvetica, sans-serif; }
+
+ul { list-style-type: none; font-size: 11px; font-family: verdana,geneva,arial,helvetica, sans-serif; line-height: 19px; margin-top: 19px; margin-left: 16px; }
+
+ul ul { line-height: 19px; margin-top: 5px; }
+
+ul li { list-style-type: none; font-family: verdana,geneva,arial,helvetica, sans-serif; line-height: 16px; margin-top: 1px; margin-bottom:8px; }
+
+ol { list-style-type: decimal; font-size: 11px; font-family: verdana,geneva,arial,helvetica, sans-serif; line-height: 19px; margin-top: 19px; }
+
+ol ol { list-style-type: lower-alpha; line-height: 19px; margin-top: 5px; }
+
+ol ol ol { list-style-type: decimal; line-height: 19px; margin-top: 5px; }
+
+li a { text-decoration: none; }
+
+pre { font-family: verdana,geneva,arial,helvetica, sans-serif; }
+
+a:link { color: #0000c7; font-family: verdana,geneva,arial,helvetica,sans-serif; text-decoration: none; }
+a:visited { color: #660066; font-family: verdana,geneva,arial,helvetica,sans-serif; text-decoration: none; }
+a:hover { color: #ce5500; font-family: verdana,geneva,arial,helvetica,sans-serif; text-decoration: none; }
+
+a.contents:link { color: #ce5500; font-family: verdana,geneva,arial,helvetica, sans-serif; text-decoration: none; }
+a.contents:visited { color: #ce5500; font-family: verdana,geneva,arial,helvetica, sans-serif; text-decoration: none; }
+a.contents:hover { color: #0000c7; font-family: verdana,geneva,arial,helvetica, sans-serif; text-decoration: none; }
+
+a.index:link { color: #000000; font-size: 11px; font-family: arial,helvetica, sans-serif; line-height: 16px; margin-top: 2px; margin-bottom: 1px; text-decoration: none; }
+a.index:visited { color: #000000; font-size: 11px; font-family: arial,helvetica, sans-serif; line-height: 16px; margin-top: 2px; margin-bottom: 1px; text-decoration: none; }
+a.index:hover { color: #ce5500; font-size: 11px; font-family: arial,helvetica, sans-serif; line-height: 16px; margin-top: 2px; margin-bottom: 1px; text-decoration: none; }
+
+a.indexw:link { color: #ffffff; font-size: 9px; font-weight: 900; font-family: arial,helvetica, sans-serif; line-height: 14px; margin-top: 2px; margin-bottom: 1px; text-decoration: none; }
+a.indexw:visited { color: #ffffff; font-size: 9px; font-weight: 900; font-family: arial,helvetica, sans-serif; line-height: 14px; margin-top: 2px; margin-bottom: 1px; text-decoration: none; }
+a.indexw:hover { color: #ce5500; font-size: 9px; font-weight: 900; font-family: arial,helvetica, sans-serif; line-height: 14px; margin-top: 2px; margin-bottom: 1px; text-decoration: none; }
+
+a.index2:link { color: #000000; font-size: 13px; font-family: arial,helvetica, sans-serif; line-height: 19px; margin-top: 2px; margin-bottom: 1px; text-decoration: none; }
+a.index2:visited { color: #000000; font-size: 13px; font-family: arial,helvetica, sans-serif; line-height: 19px; margin-top: 2px; margin-bottom: 1px; text-decoration: none; }
+a.index2:hover { color: #ce5500; font-size: 13px; font-family: arial,helvetica, sans-serif; line-height: 19px; margin-top: 2px; margin-bottom: 1px; text-decoration: none; }
+
+a.indexw2:link { color: #ffffff; font-size: 12px; font-weight: 500; font-family: arial,helvetica, sans-serif; line-height: 19px; margin-top: 2px; margin-bottom: 1px; text-decoration: none; }
+a.indexw2:visited { color: #ffffff; font-size: 12px; font-weight: 500; font-family: arial,helvetica, sans-serif; line-height: 19px; margin-top: 2px; margin-bottom: 1px; text-decoration: none; }
+a.indexw2:hover { color: #ce5500; font-size: 12px; font-weight: 500; font-family: arial,helvetica, sans-serif; line-height: 19px; margin-top: 2px; margin-bottom: 1px; text-decoration: none; }
+
+a.nav:link { font-size: 9px; color: #333333; font-family: arial,helvetica,sans-serif; }
+a.nav:visited { font-size: 9px; color: #333333; font-family: arial,helvetica,sans-serif; }
+a.nav:hover { font-size: 9px; color: #ce5500; font-family: arial,helvetica,sans-serif; }
+
+a.onav:link { font-size: 10px; color: #ffffff; font-family: arial,helvetica,sans-serif; }
+a.onav:visited { font-size: 10px; color: #ffffff; font-family: arial,helvetica,sans-serif; }
+a.onav:hover { font-size: 10px; color: #DDB420; font-family: arial,helvetica,sans-serif; }
+
+a.vr:link { font-size: 9px; color: #0000c7; font-family: arial,helvetica,sans-serif; text-decoration: underline; }
+a.vr:visited { font-size: 9px; color: #660066; font-family: arial,helvetica,sans-serif; text-decoration: underline; }
+a.vr:hover { font-size: 9px; color: #ce5500; font-family: arial,helvetica,sans-serif; text-decoration: underline; }
+
+.nav { font-size: 9px; color: #333333; font-family: arial,helvetica,sans-serif; }
+
+.onav { font-size: 10px; color: #ffffff; font-family: arial,helvetica,sans-serif; }
+
+h3.list { margin-left: 16px; }
+
+p.footer { color: #000000; font-size: 11px; font-family: verdana,geneva,arial,helvetica, sans-serif; line-height: 19px; margin-top: 19px; margin-bottom: 15px; }
+
+li.bullet { list-style-type: disc; font-family: verdana,geneva,arial,helvetica, sans-serif; line-height: 17px; }
+
+.bul { list-Style-Type: disc; font-size: 11px; font-family: verdana,geneva,arial,helvetica, sans-serif; margin-bottom: 6px; line-height: 17px; }
+
+table.header { margin-bottom: 0px; margin-top: 0px; }
+
+.note { font-size: 10px; line-height: 14px; margin-bottom: 15px; }
+
+.note_vr { font-size: 10px; line-height: 14px; margin-bottom: 10px; font-family: arial,helvetica, sans-serif; }
+
+.menu { font-size: 13px; }
+
+.oasis { color: #000000; font-size: 11px; font-family: verdana,geneva,arial,helvetica, sans-serif; line-height: 19px; margin-top: 2px; margin-bottom: 4px; }
+
+.indexp { color: #524563; font-size: 11px; font-family: arial,helvetica, sans-serif; line-height: 16px; margin-top: 2px; margin-bottom: 1px; text-decoration: none; }
+
+.indexpl { color: #524563; font-size: 11px; font-family: arial,helvetica, sans-serif; line-height: 16px; margin-top: 2px; margin-bottom: 1px; text-decoration: none; }
+
+.indexp2 { color: #524563; font-size: 12px; font-family: arial,helvetica, sans-serif; line-height: 19px; margin-top: 2px; margin-bottom: 1px; }
+
+.indexp2l { color: #524563; font-size: 13px; font-family: arial,helvetica, sans-serif; line-height: 19px; margin-top: 2px; margin-bottom: 1px; }
+
+.impact { font-size: 11px; color: #CB5301; line-height: 15px; margin-top: 12px; margin-bottom: 10px; }
+
+.impact2 { font-size: 11px; color: #CB5301; line-height: 15px; }
+
+.impact2_small { font-size: 9px; color: #CB5301; line-height: 13px; }
+
+form.bottom { margin-bottom: 0px; }
+form.nothing { margin-bottom: 0px; margin-top: 0px; }
+
+/* classes for RICD Suggestion and FAQ pages */
+
+td.categories { width: 30%; vertical-align: top; padding-bottom: 3px; }
+td.categories p { margin-top: 5px; margin-bottom: 8px; line-height: 15px; }
+
+td.questions { vertical-align: top; padding-bottom: 3px; padding-left: 5px; }
+td.questions p { margin-top: 5px; margin-bottom: 8px; line-height: 15px; }
+
+/* classes for the User Study */
+h1.study { color: #000000; font-size: 13px; font-family: verdana,geneva,arial,helvetica, sans-serif; font-weight: 600; margin-top: 30px; margin-bottom: 0px; }
+
+select.study { color: #000000; font-size: 11px; font-family: verdana,geneva,arial,helvetica, sans-serif; }
+textarea.study { color: #000000; font-size: 11px; font-family: verdana,geneva,arial,helvetica, sans-serif; }
+
+
+/*Classes for Metafind search box*/
+
+h1.meta { color: #000000; font-size: 15px; font-family: verdana,geneva,arial,helvetica, sans-serif; font-weight: 600; margin-top: 30px; margin-bottom: 0px; }
+
+span.meta { color: #000000; font-size: 13px; font-family: arial,helvetica, sans-serif; line-height: 19px; margin-top: 2px; margin-bottom: 1px; }
+
+span.meta_small { color: #000000; font-size: 11px; font-family: arial,helvetica, sans-serif; line-height: 16px; margin-top: 2px; margin-bottom: 1px; }
+
+span.meta_small_d { color: #000000; font-size: 11px; font-family: arial,helvetica, sans-serif; line-height: 16px; margin-top: 2px; margin-bottom: 1px; margin-left: 50px; }
+
+p.mf1 { margin-top: 8px; margin: 7px 0px 0px 0px; padding: 0px; }
+
+form#find { border-width: 1px; border-color: #524563; margin-top: 2px; margin-bottom: 0px; padding: 0; }
+#find input { font-size: 11px; }
+#find_d input { font-size: 11px; }
+
+a.mf:link { font-size: 11px; color: #524563; font-family: arial,helvetica,sans-serif; text-decoration: underline; line-height: 11px; vertical-align: middle; margin: 0px; padding: 0px; }
+a.mf:visited { font-size: 11px; color: #660066; font-family: arial,helvetica,sans-serif; text-decoration: underline; line-height: 11px; vertical-align: middle; margin: 0px; padding: 0px; }
+a.mf:hover { font-size: 11px; color: #0000c7; font-family: arial,helvetica,sans-serif; text-decoration: underline; line-height: 11px; vertical-align: middle; margin: 0px; padding: 0px; }
+
+a.mf1:link { font-size: 11px; color: #0000c7; font-family: arial,helvetica,sans-serif; text-decoration: underline; line-height: 14px; vertical-align: middle; margin: 0px; padding: 0px; }
+a.mf1:visited { font-size: 11px; color: #660066; font-family: arial,helvetica,sans-serif; text-decoration: underline; line-height: 14px; vertical-align: middle; margin: 0px; padding: 0px; }
+a.mf1:hover { font-size: 11px; color: #ce5500; font-family: arial,helvetica,sans-serif; text-decoration: underline; line-height: 14px; vertical-align: middle; margin: 0px; padding: 0px; }
+
+/*Sys availability page styles */
+
+.outages { background-color: #FBF6F5; }
+
+/*featurebox styles*/
+
+div.featurebox { padding: 8px 20px; background-color: #FFF8EF; border: thin #D8D2CA dashed; }
+
+
+/*Classes for PNW Stream Survey Pages*/
+
+h3.pnw_head { font-size: 11px; font-style: italic; font-weight: 600; padding-left: 18px; padding-bottom: 0px; margin-top: 0px; color: #454545; }
+p.pnw { font-size: 11px; line-height: 14px; color: #676767; font-family: arial,helvetica,sans-serif; padding-left: 18px; margin-top: 14px; }
+td.pnw_menu { background-color: #E3E4E4; font-family: arial,helvetica,sans-serif; font-size: 12px; font-weight: bold; color: #404040; padding-left: 5px; vertical-align: bottom; }
+td.pnw_menu2 { background-color: #E3E4E4; font-family: arial,helvetica,sans-serif; font-size: 11px; font-weight: bold; color: #404040; padding-left: 5px; vertical-align: bottom; padding-bottom: 2px; }
+td.pnw_box { padding-left: 2px; }
+td.pnw_menu3 { background-color: #E3E4E4; font-family: arial,helvetica,sans-serif; font-size: 11px; font-weight: bold; color: #727272; padding-left: 5px; vertical-align: bottom; padding-bottom: 1px; }
+a.pnw_links:link { font-family: arial,helvetica,sans-serif; color: #2B2B2B; font-size: 12px; font-weight: lighter; }
+a.pnw_links:visited { font-family: arial,helvetica,sans-serif; color: #2B2B2B; font-size: 12px; font-weight: lighter; }
+a.pnw_links:hover { font-family: arial,helvetica,sans-serif; color: #D27B3D; font-size: 12px; font-weight: lighter; }
+
+/*PNW Stream Survey Menu*/
+a.stream_menu:link { 
+font-family: arial,helvetica, sans-serif;
+color: #333333;
+font-size: 11px;
+margin-left: 5px;
+}
+	 
+a.stream_menu:visited { 
+font-family: arial,helvetica, sans-serif;
+color: #333333;
+font-size: 11px;
+margin-left: 5px;
+}
+	 
+a.stream_menu:hover { 
+font-family: arial,helvetica, sans-serif;
+color: #cc732b;
+font-size: 11px;
+margin-left: 5px;
+}
+	 
+td.stream_gray {
+background-color: #E3E4E4;
+}
+
+select.stream_select {
+width: 121px; 
+font-size: 10px;
+margin-left: 5px;
+}
+
+input.stream_input {
+font-size: 10px;
+width: 90px;
+margin-left: 5px;
+}
+
+h3.stream_header {
+font-size: 11px; 
+font-style: italic;  
+padding-left: 18px;
+color: #666666;
+letter-spacing: -1px;
+font-weight: 700;
+margin-top: 0px;
+margin-bottom: -13px;
+}
+
+p.stream_header {
+font-size: 11px; 
+line-height: 14px; 
+color: #666666; 
+font-family: arial,helvetica,sans-serif; 
+padding-left: 18px; 
+margin-top: 14px;
+}
+

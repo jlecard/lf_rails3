@@ -1,0 +1,20 @@
+ropenurl - an openurl library for ruby
+
+USAGE 
+
+  require 'ropenurl'
+  co = OpenURL::ContextObject.new
+  ...
+
+DESCRIPTION
+
+INSTALLATION
+
+  gem install ropenurl
+
+LICENSE
+
+AUTHORS
+
+Ross Singer <rsinger@gmail.com>
+Ed Summers <ehs@pobox.com>

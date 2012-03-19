@@ -1,0 +1,16 @@
+|open|/admin||
+|includePartial|/admin/basic_admin_layout||
+|includePartial|/admin/navigation||
+|waitForVisible|link=List Users||
+|click|link=List Users||
+|includePartial|/admin/list_users||
+|waitForVisible|link=Edit||
+|click|link=Edit||
+|waitForTextPresent|Edit User||
+|waitForTextPresent|User Name||
+|waitForTextPresent|Full Name||
+|waitForTextPresent|Email||
+|waitForTextPresent|Password||
+|waitForTextPresent|Password (confirm)||
+|waitForTextPresent|Administrator||
+|includePartial|/admin/user_form||

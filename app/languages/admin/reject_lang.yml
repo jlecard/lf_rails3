@@ -1,0 +1,108 @@
+EN:
+  #INLINE HELP
+  JOURNAL_TITLE_DESCRIPTION: help for coverage journal_title here
+  JOURNAL_TITLE_EXAMPLE: e.g. example coverage journal_title here
+  ISSN_DESCRIPTION: help for coverage issn here
+  ISSN_EXAMPLE: e.g. example coverage issn here
+  EISSN_DESCRIPTION: help for coverage eissn here
+  EISSN_EXAMPLE: e.g. example coverage eissn here
+  ISBN_DESCRIPTION: help for coverage isbn here
+  ISBN_EXAMPLE: e.g. example coverage isbn here
+  START_DATE_DESCRIPTION: help for coverage start_date here
+  START_DATE_EXAMPLE: e.g. example coverage start_date here
+  END_DATE_DESCRIPTION: help for coverage end_date here
+  END_DATE_EXAMPLE: e.g. example coverage end_date here
+  PROVIDER_DESCRIPTION: help for coverage provider here
+  PROVIDER_EXAMPLE: e.g. example coverage provider here
+  URL_DESCRIPTION: help for coverage url here
+  URL_EXAMPLE: e.g. example coverage url here
+  MOD_DATE_DESCRIPTION: help for coverage mod_date here
+  MOD_DATE_EXAMPLE: e.g. example coverage mod_date here 
+  #LABELS
+  JOURNAL_TITLE_LABEL: "Journal Title:"
+  ISSN_LABEL: "ISSN:"
+  EISSN_LABEL: "eISSN:"
+  ISBN_LABEL: "ISBN:"
+  START_DATE_LABEL: "Start Date:"
+  END_DATE_LABEL: "End Date:"
+  PROVIDER_LABEL: "Provider:"
+  URL_LABEL: "URL:"
+  MODIFICATION_DATE_LABEL: "Modification Date:"
+  EDIT_COVERAGE_HEADER: Edit Coverage
+  COVERAGE_HEADER: Coverage
+  COVERAGE_CREATED: Coverage was successfully created.
+  COVERAGE_UPDATED: 'Coverage was successfully updated.'  
+  READ_FILE_ERROR: 'Directory missing or data file corrupted'
+  DB_CHOOSE: 'Please make a your choice in the databases list' 
+FR:
+  #INLINE HELP
+  JOURNAL_TITLE_DESCRIPTION: FRENCH help for coverage journal_title here
+  JOURNAL_TITLE_EXAMPLE: FRENCH e.g. example coverage journal_title here
+  ISSN_DESCRIPTION: FRENCH help for coverage issn here
+  ISSN_EXAMPLE: FRENCH e.g. example coverage issn here
+  EISSN_DESCRIPTION: FRENCH help for coverage eissn here
+  EISSN_EXAMPLE: FRENCH e.g. example coverage eissn here
+  ISBN_DESCRIPTION: FRENCH help for coverage isbn here
+  ISBN_EXAMPLE: FRENCH e.g. example coverage isbn here
+  START_DATE_DESCRIPTION: FRENCH help for coverage start_date here
+  START_DATE_EXAMPLE: FRENCH e.g. example coverage start_date here
+  END_DATE_DESCRIPTION: FRENCH help for coverage end_date here
+  END_DATE_EXAMPLE: FRENCH e.g. example coverage end_date here
+  PROVIDER_DESCRIPTION: FRENCH help for coverage provider here
+  PROVIDER_EXAMPLE: FRENCH e.g. example coverage provider here
+  URL_DESCRIPTION: FRENCH help for coverage url here
+  URL_EXAMPLE: FRENCH e.g. example coverage url here
+  MOD_DATE_DESCRIPTION: FRENCH help for coverage mod_date here
+  MOD_DATE_EXAMPLE: FRENCH e.g. example coverage mod_date here 
+  #LABELS
+  JOURNAL_TITLE_LABEL: "FRENCH Journal Title:"
+  ISSN_LABEL: "FRENCH ISSN:"
+  EISSN_LABEL: "FRENCH eISSN:"
+  ISBN_LABEL: "FRENCH ISBN:"
+  START_DATE_LABEL: "FRENCH Start Date:"
+  END_DATE_LABEL: "FRENCH End Date:"
+  PROVIDER_LABEL: "FRENCH Provider:"
+  URL_LABEL: "FRENCH URL:"
+  MODIFICATION_DATE_LABEL: "FRENCH Modification Date:"
+  EDIT_COVERAGE_HEADER: FRENCH Edit Coverage
+  COVERAGE_HEADER: FRENCH Coverage
+  COVERAGE_CREATED: FRENCH Coverage was successfully created.
+  COVERAGE_UPDATED: 'FRENCH Coverage was successfully updated.' 
+  READ_FILE_ERROR: 'Directory missing or data file corrupted'
+  DB_CHOOSE: 'Please make a your choice in the databases list' 
+ES:
+  #INLINE HELP
+  JOURNAL_TITLE_DESCRIPTION: SPANISH help for coverage journal_title here
+  JOURNAL_TITLE_EXAMPLE: SPANISH e.g. example coverage journal_title here
+  ISSN_DESCRIPTION: SPANISH help for coverage issn here
+  ISSN_EXAMPLE: SPANISH e.g. example coverage issn here
+  EISSN_DESCRIPTION: SPANISH help for coverage eissn here
+  EISSN_EXAMPLE: SPANISH e.g. example coverage eissn here
+  ISBN_DESCRIPTION: SPANISH help for coverage isbn here
+  ISBN_EXAMPLE: SPANISH e.g. example coverage isbn here
+  START_DATE_DESCRIPTION: SPANISH help for coverage start_date here
+  START_DATE_EXAMPLE: SPANISH e.g. example coverage start_date here
+  END_DATE_DESCRIPTION: SPANISH help for coverage end_date here
+  END_DATE_EXAMPLE: SPANISH e.g. example coverage end_date here
+  PROVIDER_DESCRIPTION: SPANISH help for coverage provider here
+  PROVIDER_EXAMPLE: SPANISH e.g. example coverage provider here
+  URL_DESCRIPTION: SPANISH help for coverage url here
+  URL_EXAMPLE: SPANISH e.g. example coverage url here
+  MOD_DATE_DESCRIPTION: SPANISH help for coverage mod_date here
+  MOD_DATE_EXAMPLE: SPANISH e.g. example coverage mod_date here 
+  #LABELS
+  JOURNAL_TITLE_LABEL: "SPANISH Journal Title:"
+  ISSN_LABEL: "SPANISH ISSN:"
+  EISSN_LABEL: "SPANISH eISSN:"
+  ISBN_LABEL: "SPANISH ISBN:"
+  START_DATE_LABEL: "SPANISH Start Date:"
+  END_DATE_LABEL: "SPANISH End Date:"
+  PROVIDER_LABEL: "SPANISH Provider:"
+  URL_LABEL: "SPANISH URL:"
+  MODIFICATION_DATE_LABEL: "SPANISH Modification Date:"
+  EDIT_COVERAGE_HEADER: SPANISH Edit Coverage
+  COVERAGE_HEADER: SPANISH Coverage
+  COVERAGE_CREATED: SPANISH Coverage was successfully created.
+  COVERAGE_UPDATED: 'SPANISH Coverage was successfully updated.'  
+  READ_FILE_ERROR: 'Directory missing or data file corrupted'
+  DB_CHOOSE: 'Please make a your choice in the databases list'

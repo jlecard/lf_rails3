@@ -1,0 +1,12 @@
+|waitForVisible|xpath=//input[@id='collection_name']||
+|waitForVisible|xpath=//input[@id='collection_alt_name']||
+|waitForVisible|xpath=//input[@id='collection_conn_type_z3950']||
+|waitForVisible|xpath=//input[@id='collection_conn_type_oai']||
+|waitForVisible|xpath=//input[@id='collection_host']||
+|waitForVisible|xpath=//textarea[@id='collection_definition']||
+|waitForVisible|xpath=//input[@id='collection_record_schema']||
+|waitForVisible|xpath=//input[@id='collection_url']||
+|waitForVisible|xpath=//input[@id='collection_mat_type_book']||
+|waitForVisible|xpath=//input[@id='collection_vendor_url']||
+|waitForVisible|xpath=//input[@id='collection_bib_attr']||
+|waitForVisible|xpath=//input[@id='saveButton']||

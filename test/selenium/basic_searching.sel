@@ -1,0 +1,30 @@
+|open|/selenium/setup||
+|open|/record/search||
+|setTimeout|600000||
+|type|xpath=//input[@id='query[string]']|Oregon||
+|click|xpath=//input[@id='submitButton']||
+|waitForVisible|xpath=//img[@src='/images/wait.gif']||
+|waitForNotVisible|xpath=//img[@src='/images/wait.gif']||
+|waitForTextPresent|Refine Results||
+|includePartial|basic_results_layout||
+|waitForVisible|link=Next >||
+|click|link=Next >||
+|waitForVisible|xpath=//img[@src='/images/wait.gif']||
+|waitForVisible|link=< Previous||
+|verifyNotVisible|xpath=//img[@src='/images/wait.gif']||
+|click|link=< Previous||
+|waitForVisible|xpath=//img[@src='/images/wait.gif']||
+|waitForNotTextPresent|< Previous||
+|verifyNotVisible|xpath=//img[@src='/images/wait.gif']||
+|waitForTextPresent|Databases||
+|waitForVisible|link=Advanced Search||
+|click|link=Advanced Search||
+|waitForVisible|link=Simple Search||
+|type|xpath=//input[@id='query[string]']|wtr|
+|click|xpath=//input[@id='advancedSubmitButton']||
+|waitForTextPresent|Did you mean:||
+|type|xpath=//input[@id='query[string]']||
+|click|xpath=//input[@id='submitButton']||
+|waitForTextNotPresent|Refine Results||
+
+Source: $Id: basic_searching.sel 1187 2007-12-13 16:30:56Z herlockt $

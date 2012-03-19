@@ -1,0 +1,11 @@
+|open|/admin||
+|includePartial|/admin/basic_admin_layout||
+|includePartial|/admin/navigation||
+|waitForVisible|link=List Collection Groups||
+|click|link=List Collection Groups||
+|includePartial|/admin/list_collection_groups||
+|waitForVisible|link=General||
+|click|link=General||
+|includePartial|/admin/show_collection_group||
+|waitForTextPresent|Collection Group||
+|waitForVisible|link=Edit||

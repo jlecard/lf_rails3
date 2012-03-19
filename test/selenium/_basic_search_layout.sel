@@ -1,0 +1,8 @@
+|waitForVisible|link=My Saved Items||
+|waitForVisible|link=Help||
+|waitForVisible|link=Report a Problem||
+|waitForVisible|xpath=//input[@id='query[string]']||
+|waitForVisible|link=Advanced Search||
+|verifyValue|xpath=//input[@id='submitButton']|Find It!|
+
+Source: $Id: _basic_search_layout.sel 512 2006-10-27 23:49:07Z herlockt $

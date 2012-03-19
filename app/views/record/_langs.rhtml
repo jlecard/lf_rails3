@@ -1,0 +1,60 @@
+<%if @langs!=nil and !@langs.empty?%>
+  <div id="blangs"  class="navigation"><b><%=translate('LANGS')%></b>
+    <%if @filter.assoc("lang")!=nil
+	  filter=build_unfilter_string("lang")	
+	  params=build_filter_params(filter,@tab_template)%>
+      <%=link_to translate('UNFILTER_LANGS'), 
+		    {  :action => 'retrieve_page', 
+				:controller=>'record', 
+				:params=>params},	:onclick=>"scroll(0,0);showWait()", :class=>"unfilter"%>
+    <%end%>  
+	<div name="menuItem" id="tlangs" class="expanded" init="0">
+      <div id="langs_0">
+	    <%count=0
+		@langs.each{|_lang, _number| 
+		  if count<5	  
+			  if _lang!=nil and _lang!='' and _lang.to_s.strip!='undefined' 
+				count=count+1
+				filter=build_filter_string("lang",_lang)
+				params=build_filter_params(filter,@tab_template)
+				lang = translate("LANG_" + _lang.to_s) %>						  
+	            <%=link_to translate('RESULTS',[lang, _number.to_s]), 
+	                     {  :action => 'retrieve_page', 
+							:controller=>'record', 
+							:params=>params},	:onclick=>"scroll(0,0);showWait()"%>
+			  <%end  
+		  end
+		}  
+		if @langs.length>5%>
+		    <%=link_to_function translate('MORE_LANGS'), "Element.hide('more_langs_0');Element.show('more_langs');Element.show('langs_1')", {:style=>"text-decoration:underline", :id=>'more_langs_0'}%>
+		<%end%>
+	  </div>
+	  <%if @langs.length>5%>
+	    <div id='more_langs'>
+	      <%multiples=((@langs.length)/5).ceil
+		  1.upto(multiples) { |i|%>
+			  <div id=<%='langs_'+i.to_s%> style='display:none;'>
+		        <%@langs[i*5..(i+1)*5-1].each{|_lang, _number| 
+				  if _lang!=nil and _lang!='' and _lang.to_s.strip!='undefined'		
+					filter=build_filter_string("lang",_lang)
+					params=build_filter_params(filter,@tab_template)
+					lang = translate("LANG_" + _lang.to_s) %>				  
+		            <%=link_to translate('RESULTS',[lang.to_s ,_number.to_s]), 
+		                     {  :action => 'retrieve_page', 
+								:controller=>'record', 
+								:params=>params},	:onclick=>"scroll(0,0);showWait()"%>
+		          <%end  
+				}%>
+		        <span id=<%='more_langs_'+i.to_s%>>
+	  				<%=link_to_function translate('TOP_LANGS'), "Element.hide('more_langs');Element.show('more_langs_0')", :style=>"text-decoration:underline"%>
+					<%if i<multiples%>
+						<%=link_to_function translate('MORE_LANGS'), "Element.hide('more_langs_"+i.to_s+"');Element.show('langs_"+(i+1).to_s+"');Element.show('more_langs_"+(i+1).to_s+"')", :style=>"text-decoration:underline"%>
+			  		<%end%> 
+				</span>
+		  	 </div>
+	      <%}%>
+	    </div>
+	  <%end%>
+	</div>
+  </div>
+<%end%>

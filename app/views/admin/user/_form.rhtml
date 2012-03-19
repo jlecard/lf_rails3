@@ -1,0 +1,57 @@
+<div id="error"><%= error_messages_for 'user' %></div>
+<div id="form_field">
+  <span class="form_left">
+  	<label for="user_name"><%=translate("USER_NAME_LABEL")%></label><br/>
+    <small><%=translate("NAME_DESCRIPTION")%></small>
+  </span>
+  <span class="form_right">
+    <%= form.text_field :name %><br/>
+    <small><%=translate("NAME_EXAMPLE")%></small>
+  </span>
+</div>
+<div id="form_field">
+  <span class="form_left">
+  	<label for="user_full_name"><%=translate("FULL_NAME_LABEL")%></label><br/>
+    <small><%=translate("FULL_NAME_DESCRIPTION")%></small>
+  </span>
+  <span class="form_right">
+    <%= form.text_field :full_name %><br/>
+    <small><%=translate("FULL_NAME_EXAMPLE")%></small>
+  </span>
+</div>
+<div id="form_field">
+  <span class="form_left">
+  	<label for="user_email"><%=translate("EMAIL_ADDRESS_LABEL")%></label><br/>
+    <small><%=translate("EMAIL_DESCRIPTION")%></small>
+  </span>
+  <span class="form_right">
+    <%= form.text_field :email %><br/>
+    <small><%=translate("EMAIL_EXAMPLE")%></small>
+  </span>
+</div>
+<div id="form_field">
+  <span class="form_left">
+  	<label for="user_password"><%=translate("PASSWORD_LABEL")%></label><br/>
+    <small><%=translate("PASSWORD_DESCRIPTION")%></small>
+  </span>
+  <span class="form_right">
+    <%= form.password_field :password %><br/>
+    <small><%=translate("PASSWORD_EXAMPLE")%></small>
+  </span>
+</div>
+<div id="form_field">
+  <span class="form_left">
+  	<label for="user_password_confirmation"><%=translate("PASSWORD_CONFIRM_LABEL")%></label><br/>
+    <small><%=translate("PASSWORD_CONFIRMATION_DESCRIPTION")%></small>
+  </span>
+  <span class="form_right">
+    <%= form.password_field :password_confirmation %><br/>
+    <small><%=translate("PASSWORD_CONFIRMATION_EXAMPLE")%></small>
+  </span>
+</div>
+  <div id="form_field">
+	<span class="form_left">
+		<%= check_box "user", "administrator", :style=>"width:14px"%><span class="dot"><%=translate("ADMINISTRATOR_LABEL")%></span><br/>
+		<small><%=translate("ADMINISTRATOR_DESCRIPTION")%></small>
+	</span>
+  </div>

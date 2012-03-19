@@ -1,0 +1,29 @@
+EN:
+  #INLINE HELP
+  NAN: Primary Document Type
+  
+FR:
+  #INLINE HELP
+  NAN: Type primaire de document
+  LISTING_DOCUMENT_TYPES : "Liste des types de document"
+  NEW_DOCUMENT_TYPE : "Nouveau type de document"
+  EDIT : Editer
+  SHOW : Afficher
+  DESTROY : Supprimer
+  CONFIRM_DESTROY : "Vous êtes sûr ?"
+  BACK : Retour
+  EDIT_DOCUMENT_TYPE : "Editer le type de document primaire"
+  UPDATE_SUCCESS : "Le type de document a été mis à jour avec succès."
+  
+  #LABLES
+  NAME_LABEL : "Nom :"
+  DOCUMENT_TYPE_LABEL : "Type de document :"
+  NAME_LABEL_FOR_LISTING : "Nom"
+  DOCUMENT_TYPE_LABEL_FOR_LISTING : "Type de document"
+  COLLECTION_NAME_LABEL : "Provenance (Collection)"  
+  #BUTTONS
+  UPDATE_BUTTON : "Mettre à jour"
+  
+ES:
+  #INLINE HELP
+  NAN: Primary Document Type

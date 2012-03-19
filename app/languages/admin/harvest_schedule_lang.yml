@@ -1,0 +1,43 @@
+EN:
+  SUNDAY: Sunday
+  MONDAY: Monday
+  TUESDAY: Tuesday
+  WEDNESDAY: Wednesday
+  THURSDAY: Thursday
+  FRIDAY: Friday
+  SATURDAY: Saturday
+  SLOT_ALREADY_EXISTS: "This time slot is already taken by this collection"
+FR:
+  SCHEDULE_LIST: "Programmation des moissons"
+  SUNDAY: Dimanche
+  MONDAY: Lundi
+  TUESDAY: Mardi
+  WEDNESDAY: Mercredi
+  THURSDAY: Jeudi
+  FRIDAY: Vendredi
+  SATURDAY: Samedi
+  HARVEST_DAY_LABEL: "Jour de moisson :"
+  COLLECTION_NAME_LABEL: "Collection :"
+  TIME_LABEL: "Heure de moisson :"
+  CREATE_BUTTON_LABEL: "Enregistrer"
+  ADD_COLLECTION_EXAMPLE: "Saisissez les premières lettres de la collection à moissonner ou double-cliquez dans la liste"
+  NEW_SCHEDULE: "Nouveau programme de moisson"
+  UNHARVESTED_COLLECTIONS: "Liste des collections jamais moissonnées :"
+  SLOT_ALREADY_EXISTS: "Ce créneau horaire existe déjà pour cette collection."
+  EDIT_SCHEDULE_AT: "\"Modification du programme : '#{args[0]} - #{args[1]}'\""
+  REMOVE_COLLECTION_LABEL: "Collections moissonnées :"
+  COLLECTION_INSTRUCTIONS: "Double-cliquez sur une ligne pour supprimer la collection"
+  ADD_COLLECTION_LABEL: "Ajouter la collection suivante :"
+  ADD: "Ajouter"
+  ADD_SCHEDULE: "Nouveau programme de moisson"
+  BACK_TO_LIST: "Retour à la liste"
+  EDIT_SCHEDULE: "Modifier le programme"
+ES:
+  SUNDAY: Sunday
+  MONDAY: Monday
+  TUESDAY: Tuesday
+  WEDNESDAY: Wednesday
+  THURSDAY: Thursday
+  FRIDAY: Friday
+  SATURDAY: Saturday
+ 

@@ -1,0 +1,10 @@
+|waitForVisible|xpath=//input[@id='coverage_journal_title']||
+|waitForVisible|xpath=//input[@id='coverage_issn']||
+|waitForVisible|xpath=//input[@id='coverage_eissn']||
+|waitForVisible|xpath=//input[@id='coverage_isbn']||
+|waitForVisible|xpath=//input[@id='coverage_start_date']||
+|waitForVisible|xpath=//input[@id='coverage_end_date']||
+|waitForVisible|xpath=//input[@id='coverage_provider']||
+|waitForVisible|xpath=//input[@id='coverage_url']||
+|waitForVisible|xpath=//input[@id='coverage_mod_date']||
+|waitForVisible|xpath=//input[@id='saveButton']||

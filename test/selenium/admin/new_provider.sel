@@ -1,0 +1,23 @@
+|open|/admin||
+|includePartial|/admin/basic_admin_layout||
+|includePartial|/admin/navigation||
+|waitForVisible|link=Add a New Provider||
+|click|link=Add a New Provider||
+|waitForTextPresent|Add a New Provider||
+|waitForTextPresent|Provider Name:||
+|waitForTextPresent|Title:||
+|waitForTextPresent|URL:||
+|waitForTextPresent|Article Type:||
+|waitForTextPresent|Proxy:||
+|waitForTextPresent|Can Resolve||
+|includePartial|/admin/provider_form||
+|type|provider_provider_name|test provider name||
+|type|provider_title|test title||
+|type|provider_url|http://oasis.oregonstate.edu||
+|type|provider_article_type|test artcile type||
+|type|provider_proxy|test proxy||
+|click|provider_can_resolve||
+|click|xpath=//input[@id='saveButton']||
+|includePartial|/admin/list_providers||
+|waitForTextPresent|test provider name||
+|waitForTextPresent|test title||

@@ -1,0 +1,14 @@
+|waitForTextPresent|Find results for||
+|waitForVisible|xpath=//input[@id='query[string]']||
+|waitForTextPresent|The exact phrase||
+|waitForTextPresent|Any of these words||
+|waitForTextPresent|All the words||
+|waitForTextPresent|Subject||
+|waitForTextPresent|Author||
+|waitForTextPresent|Title||
+|waitForVisible|link=Simple Search||
+|waitForTextPresent|Maximum||
+|waitForTextPresent|100 results per database*10 results per database||
+|verifyValue|xpath=//input[@id='advancedSubmitButton']|Find It!|
+
+Source: $Id: _advanced_search_layout.sel 499 2006-10-26 22:45:27Z herlockt $

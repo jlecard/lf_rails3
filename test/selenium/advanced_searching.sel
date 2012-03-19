@@ -1,0 +1,22 @@
+|open|/selenium/setup||
+|open|/record/search||
+|setTimeout|200000||
+|waitForVisible|link=Advanced Search||
+|click|link=Advanced Search||
+|includePartial|advanced_search_layout||
+|type|xpath=//input[@id='query[type_subject]']|education||
+|select|query[max]|10 results per database||
+|click|xpath=//input[@id='advancedSubmitButton']||
+|waitForVisible|xpath=//img[@src='/images/wait.gif']||
+|waitForNotVisible|xpath=//img[@src='/images/wait.gif']||
+|waitForTextPresent|Refine Results||
+|includePartial|advanced_results_layout||
+|waitForTextPresent|Databases||
+|waitForVisible|link=Advanced Search||
+|click|link=Advanced Search||
+|waitForVisible|link=Simple Search||
+|type|xpath=//input[@id='query[string]']|wtr|
+|click|xpath=//input[@id='advancedSubmitButton']||
+|waitForTextPresent|Did you mean:||
+
+Source: $Id: advanced_searching.sel 499 2006-10-26 22:45:27Z herlockt $

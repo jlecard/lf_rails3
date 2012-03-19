@@ -1,0 +1,828 @@
+<script>
+    $j(function(){
+		
+		var option = {};
+		option.collapsible = true;
+        $j("#tabs_coll").tabs(option);
+		
+    });
+</script>
+<div id="tabs_coll">
+    <ul>
+        <li>
+            <a href="#form_field_main-1">Edition</a>
+        </li>
+        <% if @collection.conn_type == 'z3950' %>
+        <li>
+            <a href="#mapping-2">Mapping z3950</a>
+        </li>
+        <%end%>
+   </ul>
+   
+<div id="form_field_main-1">
+
+<div id="error">
+    <%= error_messages_for 'collection' %>
+</div>
+<div id="form_field">
+    <span class="form_left">
+        <label for="collection_name">
+            <%=translate("NAME_LABEL") %>
+        </label>
+        <br/>
+        <small>
+            <%=translate("NAME_DESCRIPTION") %>
+        </small>
+    </span>
+    <span class="form_right"><%= form.text_field :name %>
+        <br/>
+        <small>
+            <%=translate("NAME_EXAMPLE") %>
+        </small>
+    </span>
+</div>
+
+<div id="form_field">
+    <span class="form_left">
+        <label for="collection_alt_name">
+            <%=translate("ALT_NAME_LABEL") %>
+        </label>
+        <br/>
+        <small>
+            <%=translate("ALT_NAME_DESCRIPTION") %>
+        </small>
+    </span>
+    <span class="form_right"><%= form.text_field :alt_name %>
+        <br/>
+        <small>
+            <%=translate("ALT_NAME_EXAMPLE") %>
+        </small>
+    </span>
+</div>
+<div id="form_field">
+<span class="form_left">
+    <label for="collection_conn_type">
+        <%=translate("CONN_TYPE_LABEL") %>
+    </label>
+    <br/>
+    <small>
+        <%=translate("CONN_TYPE_DESCRIPTION") %>
+    </small>
+</span>
+<span class="form_right"><span class="dot"><%= radio_button "collection", "conn_type", 'z3950', :onclick=>"Element.show('advanced_keyword_searching')", :style=>"width:14px" %><%=translate("Z3950_LABEL") %>&nbsp;&nbsp; </span><span class="dot"><%= radio_button "collection", "conn_type", 'oai', :onclick=>"Element.hide('advanced_keyword_searching')", :style=>"width:14px" %><%=translate("OAIPMH_LABEL") %>&nbsp;&nbsp; </span><span class="dot"><%= radio_button "collection", "conn_type", 'opensearch', :onclick=>"Element.hide('advanced_keyword_searching')", :style=>"width:14px" %><%=translate("OPEN_SEARCH_LABEL") %>&nbsp;&nbsp; </span><span class="dot"><%= radio_button "collection", "conn_type", 'sru', :onclick=>"Element.hide('advanced_keyword_searching')", :style=>"width:14px" %><%=translate("SRU_LABEL") %>&nbsp;&nbsp; </span><span class="dot"><%= radio_button "collection", "conn_type", 'connector', :onclick=>"Element.hide('advanced_keyword_searching')", :style=>"width:14px" %><%=translate("CONNECTOR_LABEL") %>&nbsp;&nbsp; </span><span class="dot"><%= radio_button "collection", "conn_type", 'mediaview', :onclick=>"Element.hide('advanced_keyword_searching')", :style=>"width:14px" %><%=translate("MEDIAVIEW_LABEL") %>&nbsp;&nbsp; </span><span class="dot"><%= radio_button "collection", "conn_type", 'ged', :onclick=>"Element.hide('advanced_keyword_searching')", :style=>"width:14px" %><%=translate("GED_LABEL") %>&nbsp;&nbsp; </span><span class="dot"><%= radio_button "collection", "conn_type", 'portfolio', :onclick=>"Element.hide('advanced_keyword_searching')", :style=>"width:14px" %><%=translate("PORTFOLIO_LABEL") %>&nbsp;&nbsp; </span><span class="dot"><%= radio_button "collection", "conn_type", 'quinzaine', :onclick=>"Element.hide('advanced_keyword_searching')", :style=>"width:14px" %><%=translate("QUINZAINE_LABEL") %>&nbsp;&nbsp; </span><span class="dot"><%= radio_button "collection", "conn_type", 'ProfessionPolitique', :onclick=>"Element.hide('advanced_keyword_searching')", :style=>"width:14px" %>Profession Politique &nbsp;&nbsp; </span></span>
+<!-- end of form_right span -->
+<br/>
+<small>
+    <%=translate("CONN_TYPE_EXAMPLE") %>
+</small>
+</span>
+</div>
+<% _display = "display:none"
+if @collection.conn_type == 'z3950'
+_display="display:block"
+end %>
+<div id="form_field">
+    <span class="form_left">
+        <label for="collection_groups">
+            <%=translate("COLLECTION_GROUPS_LABEL") %>
+        </label>
+    </span>
+    <span class="form_right"><% groups = CollectionGroup.get_all
+        @collection_groups = @collection.collection_groups
+        groups_to_display = Array.new
+        groups.each do |group|
+        groups_to_display.push(group.name) if @collection.collection_groups.include?(group)
+        end %>
+        <%= groups_to_display.join(", ").chomp(", ") unless groups_to_display.empty? %>
+    </span>
+</div>
+<div id="advanced_keyword_searching" style="<%=_display%>">
+    <div id="form_field">
+        <span class="form_left"><%= check_box "collection", "isword", :style=>"width:14px" %><span class="dot"><%=translate("ADVANCED_KEYWORD_SEARCHING_LABEL") %></span>
+            <br/>
+            <small>
+                <%=translate("ADV_KEYWORD_DESCRIPTION") %>
+            </small>
+        </span>
+    </div>
+</div>
+<div id="form_field">
+    <span class="form_left">
+        <label for="collection_host">
+            <%=translate("HOST_LABEL") %>
+        </label>
+        <br/>
+        <small>
+            <%=translate("HOST_DESCRIPTION") %>
+        </small>
+    </span>
+    <span class="form_right"><%= form.text_field :host %>
+        <br/>
+        <small>
+            <%=translate("HOST_EXAMPLE") %>
+        </small>
+    </span>
+</div>
+<div id="form_field">
+    <span class="form_left">
+        <label for="collection_user">
+            <%=translate("USER_LABEL") %>
+        </label>
+        <br/>
+        <small>
+            <%=translate("USER_DESCRIPTION") %>
+        </small>
+    </span>
+    <span class="form_right"><%= form.text_field :user %>
+        <br/>
+        <small>
+            <%=translate("USER_EXAMPLE") %>
+        </small>
+    </span>
+</div>
+<div id="form_field">
+    <span class="form_left">
+        <label for="collection_password">
+            <%=translate("PASS_LABEL") %>
+        </label>
+        <br/>
+        <small>
+            <%=translate("PASSWORD_DESCRIPTION") %>
+        </small>
+    </span>
+    <span class="form_right"><%= form.text_field :pass %>
+        <br/>
+        <small>
+            <%=translate("PASSWORD_EXAMPLE") %>
+        </small>
+    </span>
+</div>
+<div id="form_field">
+    <span class="form_left">
+        <label for="post_data">
+            <%=translate("POST_LABEL") %>
+        </label>
+        <br/>
+        <small>
+            <%=translate("POST_DESCRIPTION") %>
+        </small>
+    </span>
+    <span class="form_right"><%= form.text_field :post_data %>
+        <br/>
+        <small>
+            <%=translate("POST_EXAMPLE") %>
+        </small>
+    </span>
+</div>
+<div id="form_field">
+    <span class="form_left">
+        <label for="collection_oai_set">
+            <%=translate("OAI_SET_LABEL") %>
+        </label>
+        <br/>
+        <small>
+            <%=translate("OAI_SET_DESCRIPTION") %>
+        </small>
+    </span>
+    <span class="form_right"><%= form.text_field :oai_set %>
+        <br/>
+        <small>
+            <%=translate("OAI_SET_EXAMPLE") %>
+        </small>
+    </span>
+</div>
+<div id="form_field">
+    <span class="form_left">
+        <label for="collection_parent">
+            <%=translate("IS_PARENT_LABEL") %>
+        </label>
+        <br/>
+    </span>
+    <span class="form_right"><%= radio_button "collection", "is_parent", '1', :style=>"width:14px" %><span class="dot"><%=translate("YES_LABEL") %>&nbsp;&nbsp; </span><%= radio_button "collection", "is_parent", '0', :style=>"width:14px" %><span class="dot"><%=translate("NO_LABEL") %>&nbsp;&nbsp;</span>
+        <br/>
+    </span>
+    <small>
+        <%=translate("COLLECTION_PARENT") %>
+    </small>
+</div>
+<div id="form_field">
+    <span class="form_left">
+        <label for="collection_record_schema">
+            <%=translate("RECORD_SCHEMA_LABEL") %>
+        </label>
+        <br/>
+        <small>
+            <%=translate("RECORD_SCHEMA_DESCRIPTION") %>
+        </small>
+    </span>
+    <span class="form_right"><%= form.text_field :record_schema %>
+        <br/>
+        <small>
+            <%=translate("RECORD_SCHEMA_EXAMPLE") %>
+        </small>
+    </span>
+</div>
+<div id="form_field">
+    <span class="form_left">
+        <label for="collection_definition_search">
+            <%=translate("DEFINITION_SEARCH_LABEL") %>
+        </label>
+        <br/>
+        <small>
+            <%=translate("DEFINITION_SEARCH_DESCRIPTION") %>
+        </small>
+    </span>
+    <span class="form_right"><%= text_area :collection, :definition_search, :rows=>3 %>
+        <br/>
+        <small>
+            <%=translate("DEFINITION_SEARCH_EXAMPLE") %>
+        </small>
+    </span>
+</div>
+<div id="form_field">
+    <span class="form_left">
+        <label for="collection_definition">
+            <%=translate("DEFINITION_LABEL") %>
+        </label>
+        <br/>
+        <small>
+            <%=translate("DEFINITION_DESCRIPTION") %>
+        </small>
+    </span>
+    <span class="form_right"><%= form.text_area :definition, :rows=>3 %>
+        <br/>
+        <small>
+            <%=translate("DEFINITION_EXAMPLE") %>
+        </small>
+    </span>
+</div>
+<div id="form_field">
+    <span class="form_left">
+        <label for="collection_url">
+            <%=translate("URL_LABEL") %>
+        </label>
+        <br/>
+        <small>
+            <%=translate("URL_DESCRIPTION") %>
+        </small>
+    </span>
+    <span class="form_right"><%= form.text_field :url %>
+        <br/>
+        <small>
+            <%=translate("URL_EXAMPLE") %>
+        </small>
+    </span>
+</div>
+<div id="form_field">
+    <span class="form_left">
+        <label for="collection_mat_type">
+            <%=translate("MAT_TYPE_LABEL") %>
+        </label>
+        <br/>
+        <small>
+            <%=translate("MATERIAL_TYPE_DESCRIPTION") %>
+        </small>
+    </span>
+    <span class="form_right"><%= radio_button "collection", "mat_type",'Article', :style=>"width:14px" %><span class="dot"><%=translate("ARTICLE_LABEL") %>&nbsp;&nbsp; </span><%= radio_button "collection", "mat_type",'Book', :style=>"width:14px" %><span class="dot"><%=translate("BOOK_LABEL") %>&nbsp;&nbsp; </span><%= radio_button "collection", "mat_type", 'Finding Aid', :style=>"width:14px" %><span class="dot"><%=translate("FINDING_AID_LABEL") %>&nbsp;&nbsp; </span><%= radio_button "collection", "mat_type", 'Image', :style=>"width:14px" %><span class="dot"><%=translate("IMAGE_LABEL") %>&nbsp;&nbsp; </span><%= radio_button "collection", "mat_type", 'Newspaper', :style=>"width:14px" %><span class="dot"><%=translate("NEWSPAPER_LABEL") %>&nbsp;&nbsp; </span><%= radio_button "collection", "mat_type", 'Internet', :style=>"width:14px" %><span class="dot"><%=translate("INTERNET_LABEL") %>&nbsp;&nbsp; </span><% @primaryDocumentTypes.each do |p| %>
+        <%= radio_button "collection", "mat_type", "#{p.name}", :style=>"width:14px" %><span class="dot"><%=p.name %>&nbsp;&nbsp; </span><% end %>
+        <br/>
+        <small>
+            <%=translate("MATERIAL_TYPE_EXAMPLE") %>
+        </small>
+    </span>
+</div>
+<div id="form_field">
+    <span class="form_left">
+        <label for="collection_virtual">
+            <%=translate("VIRTUAL_LABEL") %>
+        </label>
+        <br/>
+        <small>
+            <%=translate("VIRTUAL_DESCRIPTION") %>
+        </small>
+    </span>
+    <span class="form_right"><%= form.text_field :virtual %>
+        <br/>
+        <small>
+            <%=translate("VIRTUAL_EXAMPLE") %>
+        </small>
+    </span>
+</div>
+<div id="form_field">
+    <span class="form_left">
+        <label for="collection_vendor_url">
+            <%=translate("VENDOR_URL_LABEL") %>
+        </label>
+        <br/>
+        <small>
+            <%=translate("VENDOR_URL_DESCRIPION") %>
+        </small>
+    </span>
+    <span class="form_right"><%= form.text_field :vendor_url %>
+        <br/>
+        <small>
+            <%=translate("VENDOR_URL_EXAMPLE") %>
+        </small>
+    </span>
+</div>
+<div id="form_field">
+    <span class="form_left">
+        <label for="collection_bib_attr">
+            <%=translate("BIB_ATTR_LABEL") %>
+        </label>
+        <br/>
+        <small>
+            <%=translate("BIB_ATTR_DESCRIPTION") %>
+        </small>
+    </span>
+    <span class="form_right"><%= form.text_field :bib_attr %>
+        <br/>
+        <small>
+            <%=translate("BIB_ATTR_EXAMPLE") %>
+        </small>
+    </span>
+</div>
+<div id="form_field">
+    <span class="form_left">
+        <label for="collection_proxy">
+            <%=translate("PROXY_LABEL") %>
+        </label>
+        <br/>
+        <small>
+            <%=translate("PROXY_DESCRIPTION") %>
+        </small>
+    </span>
+    <span class="form_right"><%= radio_button "collection", "proxy", '1', :style=>"width:14px" %><span class="dot"><%=translate("YES_LABEL") %>&nbsp;&nbsp; </span><%= radio_button "collection", "proxy", '0', :style=>"width:14px" %><span class="dot"><%=translate("NO_LABEL") %>&nbsp;&nbsp; </span>
+        <br/>
+        <small>
+            <%=translate("PROXY_EXAMPLE") %>
+        </small>
+    </span>
+</div>
+<!--div id="form_field">
+<span class="form_left">
+<label for="collection_private">
+<%=translate("IS_PRIVATE_LABEL") %>
+</label>
+<br/>
+</span>
+<span class="form_right"><%= radio_button "collection", "is_private", 'true', :style=>"width:14px" %><span class="dot"><%=translate("YES_LABEL") %>&nbsp;&nbsp; </span><%= radio_button "collection", "is_private", 'false', :style=>"width:14px" %><span class="dot"><%=translate("NO_LABEL") %>&nbsp;&nbsp;</span>
+<br/>
+</span>
+</div>
+<div id="form_field">
+<span class="form_left">
+<label for="collection_has_right">
+<%=translate("COLLECTION_HAS_RIGHT") %>
+</label>
+<br/>
+</span>
+<span class="form_right"><%= radio_button "collection", "has_right", 'true', :style=>"width:14px" %><span class="dot"><%=translate("YES_LABEL") %>&nbsp;&nbsp; </span><%= radio_button "collection", "has_right", 'false', :style=>"width:14px" %><span class="dot"><%=translate("NO_LABEL") %>&nbsp;&nbsp;</span>
+<br/>
+</span>
+</div>
+<div id="form_field">
+<span class="form_left">
+<label for="collection_class_handle_right">
+<%=translate("CLASS_HANDLE_RIGHT_LABEL") %>
+</label>
+<br/>
+<small>
+<%=translate("CLASSNAME_HANDLE_DESCRIPTION") %>
+</small>
+</span>
+<span class="form_right"><%= form.text_field :class_handle_right %>
+<br/>
+<small>
+<%=translate("CLASSNAME_HANDLE_EXAMPLE") %>
+</small>
+</span>
+</div-->
+<div id="form_field">
+    <span class="form_left">
+        <label for="collection_harvest_day">
+            <%=translate("HARVESTING_DAYS_DESCRIPTION") %>
+        </label>
+        <br/>
+        <small>
+            <%=translate("HARVESTING_DAYS_EXAMPLE") %>
+        </small>
+    </span>
+    <span class="form_right"><% schedules = HarvestSchedule.find_all_by_collection_id(@collection.id) %>
+        <% if !schedules.nil? %>
+        <ul>
+            <% schedules.each do |schedule| %>
+            <li>
+                <%= "#{translate(schedule.day.to_s.upcase)} : #{schedule.time.strftime('%H:%M')}" %>
+            </li>
+            <% end %>
+        </ul>
+        <% end %>
+        <%= link_to translate("NEW_SCHEDULE_LABEL"),
+        {:controller=>'admin/harvest_schedule',
+        :action=>'new',
+        :params=>{"collection_id"=>@collection.id, "collection_name"=>@collection.name,"back_to_collection"=>true}
+        } %>
+    </span>
+</div>
+<div id="form_field">
+    <span class="form_left">
+        <label for="collection_availability">
+            <%=translate("COLLECTION_AVAILABILITY") %>
+        </label>
+        <br/>
+        <small>
+            <%=translate("COLLECTION_AVAILABILITY_DESCRIPTION") %>
+        </small>
+    </span>
+    <span class="form_right">
+        <select name="collection[availability]">
+            <option value=""<%= @collection.availability == "" ? "selected=selected" : "" %>><%=translate("COLLECTION_AVAIL_LABEL_") %></option>
+            <option value="online"<%= @collection.availability == "online" ? "selected=selected" : "" %>><%=translate("COLLECTION_AVAIL_LABEL_ONLINE") %></option>
+            <option value="onshelf"<%= @collection.availability == "onshelf" ? "selected=selected" : "" %>><%=translate("COLLECTION_AVAIL_LABEL_ONSHELF") %></option>
+            <option value="petit test">testons</option>
+        </select>
+    </span>
+</div>
+<div id="form_field">
+    <span class="form_left">
+        <label for="collection_actions_allowed">
+            <%=translate("COLLECTION_ACTIONS_ALLOWED_LABEL") %>
+        </label>
+        <br/>
+        <small>
+            <%=translate("COLLECTION_ACTIONS_ALLOWED_DESCRIPTION") %>
+        </small>
+    </span>
+    <span class="form_right"><%= radio_button "collection", "actions_allowed", 'true', :style=>"width:14px" %><span class="dot"><%=translate("YES_LABEL") %>&nbsp;&nbsp; </span><%= radio_button "collection", "actions_allowed", 'false', :style=>"width:14px" %><span class="dot"><%=translate("NO_LABEL") %>&nbsp;&nbsp; </span>
+        <br/>
+    </span>
+</div>
+</div>
+
+
+ <% if @collection.conn_type == 'z3950' %>
+
+<div id="mapping-2">
+	<H3> Remplissage du Mapping </H3>
+	
+	<%
+	_params = @collection.zoom_params("keyword")
+	_params['search_id'] = "88f87b356d4b5f69e74094f29706c3dbba48a675"
+    _params['collection_id'] = @collection.id
+    _params['definition_search'] = @collection.definition_search
+    _params_string=_params.inspect
+    _params_string=_params_string.gsub("\"\"","vide") # Ceci est fait pour éviter de perdre l'information "string vide" par le traitement suivant
+    _params_string=_params_string.gsub("\"","")
+    _params_string=_params_string.gsub("{","")
+    _params_string=_params_string.gsub("}","")
+    _params_string=_params_string.gsub(", ",",")
+    # Tous ces gsub sont nécessaires car _params_string est de la forme :
+    # {"isword"=>"blabla".....}
+    # et cela crée des bugs d'affichage de la balise <input>
+    # mais aussi un mauvais traitement des données dans la fonction javascript "requete"
+    
+    pos_string = ""
+    pos = _params_string.index("&")
+    while pos != nil
+    	if pos_string == ""
+    		pos_string = pos.to_s
+    	else
+    		pos_string="#{pos.to_s},#{pos_string}"
+    	end
+    	_params_string.sub!("&","")
+    	pos = _params_string.index("&")
+    end
+    # Ce traitement est nécessaire car la présence des "&" crée des bugs dans l'appel de la fonction javascript "requete"
+    %>
+	<input type="hidden" value="<%= _params_string %>" id="parametres"  />
+	<input type="hidden" value="<%= pos_string %>" id="positions"  />
+	
+	<%#donnees_record=["ptitle","title","atitle","isbn","issn","abstract","date",
+		#"author","link","id","source","doi","openurl","direct_url","thumbnail_url",
+		#"static_url","subject","publisher","relation","contributor","coverage",
+		#"rights","callnum","material_type","format","vendor_name","vendor_url","volume",
+		#"issue","number","page","start","floatend","floatholdings","raw_citation","oclc_num",
+		#"theme","category","lang","identifier","availability"]
+		%>
+		<%bool=""
+		if (@collection.definition != "")
+			bool="1"
+		else
+			bool="0"
+		end
+		%>
+	<input type="hidden" id="defBool" value="<%= bool%>" />
+	<div id="form_field">
+		<span class="form_left">
+			<label>Définition actuelle :</label>
+		</span>
+		<span class="form_right">
+			<div id="zoneDeDefinition"><%= @collection.definition%></div>
+		</span>
+	</div>
+	<div id="form_field">		
+		<span class="form_left">
+			<div id="zoneDeRecherche">
+				<input type="text" id="myText" value="" style="width: 100%;" />
+			<br/>
+				<input type="button" value="Envoyer la requête" onclick="requete();" style="width: 100%;" />
+			</div>
+		</span>
+		<span class="form_right">
+			<div id="zoneDuTexte" style="text-align: left;">Ici s'affichera le résultat de la recherche</div>
+		</span>
+	</div>
+	<div id="form_field">	
+		<span class="form_left">
+			<input type="hidden" value="" id="tags"  />
+			<div id="comboBoutons"></div>
+			<div id="explicationsCombo"></div>
+			<div id="explicationsTexte"></div>
+			<div id="messageValidation" style="color: red"></div>
+		</span>
+		<span class="form_right">
+			<input type="hidden" value="1" id="comboNombre">
+			<div id="comboBoxes"></div>
+			<br /><br />
+			<input type="hidden" id="temoinTexte" value="0" />
+			<input type="hidden" id="valeurTexte" value="" />
+		</span>	
+	</div>
+</div>
+</div>
+<br/><br/><br/>
+	
+<% end%>
+
+<script language="javascript">
+function checkValueBox(e){
+        var elem = e.name.charAt(23);
+        var harv = document.getElementsByName("collection[harvest_day]")[0].value;
+        if (e.checked) {
+            if (harv.indexOf(elem) == -1) 
+                harv += elem;
+        }
+        else {
+            if (harv.indexOf(elem) != -1) 
+                harv = harv.replace(elem, '');
+        }
+        document.getElementsByName("collection[harvest_day]")[0].value = harv;
+    }
+// Script pour lancer la recherche du mot écrit dans la zone de texte
+function requete(){
+	document.getElementById("zoneDuTexte").innerHTML="Requete en cours, patientez..."  // Message d'attente
+	document.getElementById("temoinTexte").value="0"  // On la met à "0" car on fait disparaitre la zone de texte
+	document.getElementById("comboBoutons").innerHTML='';  // On fait disparaitre les boutons
+	document.getElementById("comboBoxes").innerHTML='';  // On fait disparaitre les comboBox
+	document.getElementById("explicationsCombo").innerHTML='';  // On fait disparaitre les explications des comboBox
+	document.getElementById("explicationsTexte").innerHTML='';  // On fait disparaitre les explications de la zone de texte
+	document.getElementById("messageValidation").innerHTML='';  // On fait disparaitre le message de validation de l'enregistrement
+	var mot = document.getElementById("myText").value;  // On récupère le mot tapé
+	var par = document.getElementById("parametres").value;  // On prend les paramètres de la collection que l'on a stocké
+	var pos = document.getElementById("positions").value;  // On prend la position des & dans les paramètres
+	new Ajax.Request('/admin/collection/requeteformulaire?mot='+mot+'&parametres='+par+'&positions='+pos, {  // Appel à la fonction avec toutes les infos récupérées
+		asynchronous : false,
+		evalScripts : true,
+		onComplete : function(transport) {
+		requeteAff(transport);  // Script d'affichage du résultat
+		},
+		onFailure : function() {
+			alert('Requete : Erreur lors de la requete...')
+		}
+	}); 
+}
+// Script pour traiter et afficher les résultats de la requête
+function requeteAff(transport){
+	var response = transport.responseText;  // Conversion du résultat en texte
+	document.getElementById("comboNombre").value='1';  // On initialise le nombre de comboBox affichées
+	if (response.indexOf('hidden',0)==-1) {  // Si la réponse ne contient pas hidden, ça veut dire que l'on n'a rien trouvé
+		document.getElementById("zoneDuTexte").innerHTML=response;  // On imprime le message (qui est un message d'erreur)
+		document.getElementById("tags").value='';  // On efface les tags
+	}
+	else {  // Sinon on a trouvé des réponses qui sont de la forme " [réponse] hidden [tags]"
+		var item = response.substring(0,response.indexOf('hidden',0))  // On prend la réponse
+		var tags = response.substring(response.indexOf('hidden',0)+7,response.length)  // On prend les tags
+		document.getElementById("zoneDuTexte").innerHTML=item;  // On les assigne
+		document.getElementById("tags").value=tags
+		var bool = document.getElementById("defBool").value  // bool correspond au fait qu'on a déjà une définition
+		if (bool=="1") {  // Si tel est le cas
+			var def = document.getElementById("zoneDeDefinition").innerHTML  // On va chercher la définition
+			//document.getElementById("comboNombre").value=(def.split(";").length)+''  // On met le nombre de comboBox affichées à jour
+			new Ajax.Request('/admin/collection/creationDef?tags='+tags+'&def='+def, {  // On appelle la méthode qui va nous remplir les comboBox
+				asynchronous : false,
+				evalScripts : true,
+				onComplete : function(transport) {
+				comboBoxesAff(transport);
+				},
+				onFailure : function() {
+					alert('RequeteAff : Erreur lors de l\'affichage de la requete...')
+				}
+			});
+		}
+		else {  // Sinon, il n'y a pas de définition et donc on n'affiche qu'une seul comboBox
+			new Ajax.Request('/admin/collection/creation?tags='+tags+'&id=0', {
+				asynchronous : false,
+				evalScripts : true,
+				onComplete : function(transport) {
+				comboBoxesAff(transport);  // Script d'affichage des boutons et comboBox
+				},
+				onFailure : function() {
+					alert('RequeteAff : Erreur lors de l\'affichage de la requete...')
+				}
+			});
+		}
+	}
+}
+// Script pour afficher les comboBox
+function comboBoxesAff(transport){
+	var response = transport.responseText;  // On convertit le résultat en texte
+	if (response.indexOf('hidden',0)==-1) {  // S'il n'y a pas de hidden ça veut dire qu'il n'y a qu'une combo box
+		document.getElementById("comboBoxes").innerHTML=response;  // On affiche la comboBox
+	}
+	else {
+		var boxes = response.substring(0,response.indexOf('hidden',0))  // On prend les box
+		var nb = response.substring(response.indexOf('hidden',0)+7,response.length)  // On prend le nombre de box qu'on a créé
+		document.getElementById("comboBoxes").innerHTML=boxes  // On affiche les comboBox
+		document.getElementById("comboNombre").value=nb  // On stocke le nombre que l'on a créé
+	}
+	document.getElementById("comboBoutons").innerHTML='<input type="button" value="Ajouter un champ" onclick="add();" style="width: 100%;" /><input type="button" value="Ajouter zone de texte" onclick="text();" style="width: 100%" /><input type="button" value="Valider" onclick="ok();" style="width: 100%;" />';
+	// On affiche les boutons
+	document.getElementById("explicationsCombo").innerHTML='<small><u>Menus déroulants :</u><br />Choisissez les valeurs dans les menus déroulants.<br />Le couple sera ignoré s\'il est vide ou incomplet.</small>'
+	// On affiche l'explication des comboBox
+}
+// Script pour ajouter une comboBox
+function add(){
+	document.getElementById("messageValidation").innerHTML='';  // On fait disparaitre le message de validation de l'enregistrement
+	var i=parseInt(document.getElementById("comboNombre").value);  // On regarde combien on a de comboBox déjà affichées
+	var tags=document.getElementById("tags").value;  // On prend les tags que l'on possède
+	//if (i<tags.split(';').length) {  // S'il y a moins de comboBox que de tags, on peut en ajouter une
+		new Ajax.Request('/admin/collection/creation?tags='+tags+'&id='+i, {
+			asynchronous : false,
+			evalScripts : true,
+			onComplete : function(transport) {
+			addAff(transport);
+			},
+			onFailure : function() {
+				alert('Add : Erreur lors de l\'ajout...')
+			}
+		});
+	/*}
+	else {  // Sinon, on prévient que l'on a atteint le nombre limite
+		alert("Nombre suffisant (un par tag)")
+	}*/
+	
+}
+// Script pour afficher toutes les comboBox
+function addAff(transport){
+	var response = transport.responseText;  // On convertit la réponse en texte
+	var i=parseInt(document.getElementById("comboNombre").value);  // On prend le nombre de comboBox que l'on a d'affiché
+	document.getElementById("comboNombre").value = (i+1);  // On incrémente ensuite ce nombre
+	boxes=document.getElementById("comboBoxes").innerHTML  // On prend la valeur des comboBox
+	if (document.getElementById("temoinTexte").value=="1") {  // S'il y a la zone de texte
+		var split=boxes.split("<input")  // On coupe avant
+		var val=document.getElementById("myTextDef").value;  // On prend ce qu'il y avait dans la zone de texte
+		new_boxes=split[0]+response+'<input type="text" id="myTextDef" value="'+val+'" style="width: 100%;" />'  // On forme le résultat
+	}
+	else {  // S'il n'y a pas de zone de texte, on peut mettre à la fin
+		new_boxes=boxes + response
+	}
+	document.getElementById("comboBoxes").innerHTML = new_boxes;  // On affiche alors la nouvelle valeur
+}
+// Script pour gérer l'ajout/le retrait de la zone de texte
+function text(){
+	document.getElementById("messageValidation").innerHTML='';  // On fait disparaitre le message de validation de l'enregistrement
+	tem=document.getElementById("temoinTexte").value;  // On va chercher le témoin
+	if (tem=="0"){  // S'il vaut 0, c'est qu'il faut afficher la zone de texte
+		val=document.getElementById("valeurTexte").value;  // On prend la valeur qu'elle a
+		document.getElementById("temoinTexte").value="1";  // On change la valeur du témoin
+		boxes = document.getElementById("comboBoxes").innerHTML  // On prend la valeur des comboBox
+		document.getElementById("comboBoxes").innerHTML=boxes+'<input type="text" id="myTextDef" value="'+val+'" style="width: 100%;" />';  // On y ajoute la zone de texte avec sa valeur
+		boutons=document.getElementById("comboBoutons").innerHTML;  // On va chercher les boutons
+		document.getElementById("comboBoutons").innerHTML=boutons.sub('Ajouter zone de texte','Masquer zone de texte');  // Pour changer le texte d'un des boutons
+		document.getElementById("explicationsTexte").innerHTML='<small><u>Zone de texte :</u><br />Renseignez d\'éventuels champs manquants.<br />Respectez la synthaxe "attribut=code;"</small>'
+		// On affiche l'explication de la zone de texte
+	}
+	else {  // Sinon, c'est qu'il faut masquer la zone de texte
+		document.getElementById("temoinTexte").value="0";  // On change le témoin
+		val=document.getElementById("myTextDef").value;  // On prend la valeur de la zone de texte
+		boxes = document.getElementById("comboBoxes").innerHTML;  // On prend la valeur des comboBox
+		boxes_split=boxes.split('<input');  // On sépare à l'endroit de la zone de texte
+		document.getElementById("comboBoxes").innerHTML=boxes_split[0];  // Et on ne garde que les comboBox
+		document.getElementById("valeurTexte").value=val;  // Et on stocke ce qu'elle valait
+		boutons=document.getElementById("comboBoutons").innerHTML;  // On prend les boutons
+		document.getElementById("comboBoutons").innerHTML=boutons.sub('Masquer zone de texte','Ajouter zone de texte');  // Pour changer le texte d'un des boutons
+		document.getElementById("explicationsTexte").innerHTML='' // On efface l'explication de la zone de texte
+	}
+	
+}
+// Script pour mémoriser les éléments sélectionnés
+function comboChange(){
+	document.getElementById("messageValidation").innerHTML='';  // On fait disparaitre le message de validation de l'enregistrement
+	var i=parseInt(document.getElementById("comboNombre").value);  // On prend le nombre de comboBox que l'on a d'affiché
+	var boxes = document.getElementById("comboBoxes").innerHTML;  // On récupère ces comboBox
+	var valeurs='';
+	var k=0;
+	for (k=0;k<i;k++){
+		var a=k+""  // On transforme k en string
+		var rec=document.getElementById("record_"+a).options[document.getElementById("record_"+a).selectedIndex].value;  // On récupère la valeur du champ de record sélectionné
+		var tag=document.getElementById("combo_"+a).options[document.getElementById("combo_"+a).selectedIndex].value;  // On récupère la valeur du tag sélectionné
+		valeurs=valeurs+rec+'='+tag+';';  // On les concatène
+	}
+	var tab=valeurs.split(";");  // On les sépare dans un tableau
+	boxes=boxes.gsub('selected="selected" ','');  // On déselectionne les mauvais
+	if (document.getElementById("temoinTexte").value=="1") {  // S'il y a la zone de texte
+		var split=boxes.split("<input")  // On coupe avant
+		boxes=split[0]  // Et on ne garde que les comboBox
+	}
+	var boxes_split=boxes.split("<br><br>");  // On prend les paires de comboBox une à une (car elles sont séparées par <br><br> )
+	for (k=0;k<tab.length-1;k++){
+		var split=boxes_split[k].split("</select>");  // On prend les comboBox une à une (car elles sont séparées par </select> )
+		var t=tab[k].split('=');  // On sépare les deux champs
+		_recs=split[0];  // On prend le tag sélectionné
+		split[0]=_recs.substring(0,_recs.indexOf('"'+t[0]+'"')-7)+' selected="selected" '+_recs.substring(_recs.indexOf('"'+t[0]+'"')-7,_recs.length);  // On ajoute le fait qu'il soit sélectionné dans la balise
+		_tags=split[1];  // Idem
+		split[1]=_tags.substring(0,_tags.indexOf('"'+t[1]+'"')-7)+' selected="selected" '+_tags.substring(_tags.indexOf('"'+t[1]+'"')-7,_tags.length);
+		boxes_split[k]=split.join('</select>');  // On reforme le tout
+	}
+	new_boxes=boxes_split.join("<br><br>");  // On reforme le tout
+	if (document.getElementById("temoinTexte").value=="1") {  // S'il y avait la zone de texte
+		var val=document.getElementById("myTextDef").value;  // On prend sa valeur
+		new_boxes = new_boxes + '<input type="text" id="myTextDef" value="'+val+'" style="width: 100%;" />'  // On l'ajoute à la fin
+	}
+	document.getElementById("comboBoxes").innerHTML=new_boxes
+}
+// Script pour valider la nouvelle définition et la mettre dans les bons champs
+function ok(){
+	document.getElementById("messageValidation").innerHTML='';  // On fait disparaitre le message de validation de l'enregistrement
+	var n=parseInt(document.getElementById("comboNombre").value);  // On regarde combien on a de comboBox
+	var result='';
+	var i=0;
+	var temoin=0  // Témoin d'erreur
+	for (i=0;i<n;i++){
+		var a=i+""
+		var rec=document.getElementById("record_"+a).options[document.getElementById("record_"+a).selectedIndex].value;  // On prend la valeur sélectionnée du champ record
+		var tag=document.getElementById("combo_"+a).options[document.getElementById("combo_"+a).selectedIndex].value;  // On prend la valeur sélectionnée du tag
+		if ((tag!='Vide') && (rec!='Vide')) {  // Il faut que les deux soient non vides pour pouvoir enregistrer la paire
+			result=result+rec+'='+tag+';';
+		}
+	}
+	if (document.getElementById("temoinTexte").value=="1") {  // Si la zone de texte est présente
+		var val=document.getElementById("myTextDef").value  // On va chercher sa valeur
+		val=val.gsub(/\s+/,'')  // On enlève tous les espaces
+		if (val.substring(val.length-1,val.length)==';') {  // Si ce qui a été tapé fini par un ";"
+		result=result.substring(0,val.length-1)  // On l'enlève
+		}
+		if (val!='') {  // S'il y avait quelque chose de tapé
+			donnees_record=["ptitle","title","atitle","isbn","issn","abstract","date","author","link","id","source","doi","openurl","direct_url","thumbnail_url","static_url","subject","publisher","relation","contributor","coverage","rights","callnum","material_type","format","vendor_name","vendor_url","volume","issue","number","page","start","floatend","floatholdings","raw_citation","oclc_num","theme","category","lang","identifier","availability"]
+			val_split=val.split(";");  // On sépare les différents champs tapés
+			for (i=0;i<val_split.length;i++) {  // Pour tous les champs
+				if (temoin==0){  // Si on n'a pas rencontré d'erreur
+					split=val_split[i].split('=')  // On sépare les deux éléments du champ
+					if (contains(donnees_record,split[0])) {  // Si l'attribut est bien dans la liste des attributs
+						if (split.length==2) {  // S'il y avait bien quelque chose de l'autre coté du =
+							if (split[1].length!=4) {  // Si ce deuxième élément est trop court/long
+								alert('Donnée mal formée dans la zone de texte : "' + val_split[i] + '".\nLe code doit faire 4 caractères de long');  // On en informe
+								temoin = 1  // Et on met le témoi d'erreur à 1
+							}
+						}
+						else {  // Else du if (split.length==2), il n'y a donc pas de deuxième élément
+							alert('Donnée mal formée dans la zone de texte : "' + val_split[i] + '".\nIl faut séparer les champs avec un =');  // On en informe
+							temoin = 1  // Et on met le témoi d'erreur à 1
+						}
+					}
+					else {  // Else du if (contains(donnees_record,split[0])), l'attribut n'est donc pas dans la liste
+						alert('Donnée mal formée dans la zone de texte : "' + val_split[i] + '".\nL\'attribut n\'est pas dans la liste');  // On en informe
+						temoin = 1  // Et on met le témoi d'erreur à 1
+					}
+				}
+			}
+		}
+		
+	}
+	if (temoin==0) {  // Si on n'a pas rencontré d'erreur
+		if (result==""){  // Si toutes les paires étaient nulles ou incomplètes, on les avertit
+			alert('Il faut remplir au moins un des champs')
+		}
+		else {  // Sinon on peut enregistrer la nouvelle définition
+			document.getElementById("defBool").value="1"  // On met donc le témoin de présence d'une définition à 1
+			document.getElementById("collection_definition").innerHTML=result;  // On met dans la zone la nouvelle définition prête à être enregistrée
+			document.getElementById("zoneDeDefinition").innerHTML=result;  // On l'affiche en haut de la page
+			document.getElementById("messageValidation").innerHTML='Définition actualisée. N\'oubliez pas d\'<u>enregistrer</u>.'  // On confirme la définition
+		}
+	}
+}
+// Script pour savoir si un élément est dans un tableau
+function contains(a, obj){
+  for(var i = 0; i < a.length; i++) {
+    if(a[i] === obj){
+      return true;
+    }
+  }
+  return false;
+}
+
+
+    
+    
+</script>

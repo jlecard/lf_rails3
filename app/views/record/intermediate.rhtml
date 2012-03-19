@@ -1,0 +1,22 @@
+  <%params=build_pinging_params%>
+<% form_tag({ :action => "finish_search", :controller=>'/record',:params=>params }, {:name=>'intermediate_form', :id=>'intermediate_form', :onsubmit=>"Element.show('processing_results');document.getElementById('stop_polling').value='true';showWait();"})  do -%>
+<input type='hidden' name='stop_polling' id='stop_polling' value='false' />
+<input type='hidden' id='jobs' name='jobs' value='<%=@jobs*","%>' />
+<div id="stop_searching">
+     <%= submit_tag translate("STOP_SEARCHING"), {:id=>"stopPolling"}%><br/>
+	 <%=translate("STOP_SEARCHING_MESSAGE")%>
+	 	<div id="processing_results" style="display:none" ><%=translate("PROCESSING_RESULTS")%></div>
+
+</div>
+	   <div id="searching_feedback" >
+	<%= render(:partial=>"pinging")%>
+  </div>
+  <% url = url_for(:action => :check_job_status, 
+							:controller=>'record',
+							:params=>params )%>
+  <script type="text/javascript">
+     var intervalId = setInterval('statusCheck("<%=url%>")', 100)
+  </script>
+
+			   
+<%end%>				   

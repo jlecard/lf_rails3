@@ -1,0 +1,41 @@
+<div id="page_contents">
+<%= render(:partial => "admin/navigation")%>
+<div id="center"  class="column">
+<h2><%=translate("PROVIDERS")%></h2>
+<div id="edit_form">
+ <div class="admin-list">
+   <% columns_hash=Provider.columns_hash
+	  for column in  @display_columns
+      _class_name="medium-column"
+   %> 
+      <label class="<%=_class_name%>"><%= columns_hash[column].human_name%></label>
+  <% end %>
+    <span class="action-links">&nbsp;</span>
+  </div>
+  <br/>
+
+<% for provider in @providers %>
+   <div class="admin-list">
+  <% for column in @display_columns
+        _class_name="medium-column"
+        if provider.send(column)==nil or provider.send(column)=="" %>
+           <span class="<%=_class_name%>">&nbsp;</span>
+		    <%elsif column=="provider_name"%>
+     <span class="<%=_class_name%>"><%= link_to h(provider.send(column)), :action => 'show', :id => provider %></span>
+       <%else%>
+    <span class="<%=_class_name%>"><%=h provider.send(column) %></span>
+     <% end %>
+  <% end %>
+    <span class="action-links">
+      <%= link_to translate("EDIT"), :action => 'edit', :id => provider %>&nbsp;&nbsp;
+      <%= link_to translate("DESTROY"), { :action => 'destroy', :id => provider }, :confirm => translate("ARE_YOU_SURE"), :method => "post" %>&nbsp;&nbsp;
+    </span>
+  </div>
+  <br/>
+<% end %>
+
+<%= link_to translate("PREVIOUS_PAGE"), { :page => @provider_pages.current.previous } if @provider_pages.current.previous %>
+<%= link_to translate("NEXT_PAGE"), { :page => @provider_pages.current.next } if @provider_pages.current.next %> 
+</div>
+</div>
+</div>

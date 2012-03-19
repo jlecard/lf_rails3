@@ -1,0 +1,30 @@
+<div id="page_contents">
+ <%= render(:partial => "admin/navigation")%>
+<div id="center"  class="middle">
+	
+<p>
+  <b>Label:</b>
+  <%=h @search_tab_filter.label %>
+</p>
+
+<p>
+  <b>Nom du champs de recherche:</b>
+  <%=h @search_tab_filter.field_filter %>
+</p>
+
+<p>
+  <b>|Description du champs de recherche</b>
+  <%=h @search_tab_filter.description %>
+</p>
+
+<p>
+  <b>Nom de l'onglet associe</b>
+  <%=h SearchTab.find(@search_tab_filter.search_tab_id).label %>
+</p>
+
+
+
+<%= link_to 'Editer', {:action => 'edit', :id => @search_tab_filter.id} %> |
+<%= link_to 'Retour', admin_search_tab_filters_path %>
+</div>
+</div>

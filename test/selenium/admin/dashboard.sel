@@ -1,0 +1,13 @@
+|open|/admin/dashboard||
+|includePartial|/admin/basic_admin_layout||
+|includePartial|/admin/navigation||
+|waitForVisible|link=Admin Home||
+|waitForVisible|link=Collections||
+|waitForVisible|link=Collection Groups||
+|waitForVisible|link=Providers||
+|waitForVisible|link=Coverages||
+|waitForVisible|link=Users||
+
+
+
+ 

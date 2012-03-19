@@ -1,0 +1,6 @@
+|open|/selenium/setup||
+|open|/admin||
+|includePartial|/admin/basic_admin_layout||
+
+
+Source: $Id: basic_layout.sel 512 2006-10-27 23:49:07Z herlockt $

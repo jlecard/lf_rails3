@@ -1,0 +1,281 @@
+<div class="search">
+    <div class="field">
+        <% if (@linkMenu != nil)
+        select = @linkMenu[0].id;
+        else
+        select = 0;
+        end
+        advance = false %>
+        <% if params[:idTab] != nil && params[:idTab].to_i > 0
+        select = params[:idTab].to_i;
+        end %>
+        <% if @filter_tab != nil %>
+        <% @filter_tab.each do |id_tab, @filter|
+        i = id_tab.to_s.to_i;
+        if (@filter != nil) %>
+        <% if (i == select) %>
+        <div id="form_<%= i %>">
+            <% else %>
+            <div id="form_<%= i %>" class="hideElement">
+                <% end %><!-- end of i == 0 --><% form_tag({ :action => "retrieve", :controller=>'/record'}, {:name=>'search_form', :id=>'search_form', :onsubmit=>"showWait('waitimage1')"})  do -%>
+                <input type='hidden' name='start_search' id="start_search" value="true"><% 
+								query_string=""
+                @values=params[:query]
+                tab_query_string = []
+                if @values!=nil
+	                query_string=@values[:string]
+	                if query_string != nil && query_string != ""
+	                # ne pas spliter si dans des " "
+	                query_string = query_string.gsub(/(.*),,,(.*)/, '\1|LF_DEL|\2')
+					query_string = query_string.gsub(/(.*),,,(.*)/, '\1|LF_DEL|\2')
+	                tab_query_string = query_string.split("|LF_DEL|")
+	                end
+                else
+	                if @query != nil
+		                query_string=@query*', '.to_s
+		                tab_query_string=@query;
+	                end
+                end
+				if (params[:query] != nil && params[:query][:string1] != nil)
+					tab_query_string << params[:query][:string1] || "";
+					tab_query_string << params[:query][:string2] || "";
+					tab_query_string << params[:query][:string3] || "";
+				end
+                sets=params[:sets]
+                if sets==nil or sets==""
+                	sets=@sets
+                end 
+				
+				field_filter = Array.new(3);
+				if ((params[:query] != nil) && (params[:query][:type] != nil))
+					field_filter = params[:query][:type].split(",");
+				elsif ((params[:query] != nil) && (params[:query][:field_filter1] != nil))
+					field_filter[0] = params[:query][:field_filter1] || "";
+					field_filter[1] = params[:query][:field_filter2] || "";
+					field_filter[2] = params[:query][:field_filter3] || "";
+				end
+				operator = Array.new(2);
+				operator[0] = "AND";
+				operator[1] = "AND";
+				if ((!params[:query].nil?) && (!params[:query][:operator1].nil?))
+					operator[0] = params[:query][:operator1];
+				end
+				if ((!params[:query].nil?) && (!params[:query][:operator2].nil?))
+					operator[1] = params[:query][:operator2];
+				end
+				if ((!params[:query].nil?) && (!params[:query][:operator].nil?))
+					operator[0] = params[:query][:operator].split(',')[0] || 'AND';
+					operator[1] = params[:query][:operator].split(',')[1] || 'AND';
+				end
+				%>
+                <% if tab_query_string[1] != nil && tab_query_string[1] != ""
+                	advance = true;
+                end %>
+                <input type="hidden" id="sets" name="sets" value=<%=sets%>><input type="hidden" id="idTab" name="idTab" value='<%=i%>'><!-- span id="simpleSearch" -->
+                <div id="advancedAlign">
+                    <div class="textSearchElem">
+                        <%= translate('SEARCH') %><input type="hidden" name="mobile" value="<%=@IsMobile.to_s%>" />
+                    </div>
+                    <div class="fieldSearchFirst">
+                        <!-- Field Search one -->
+						<% if @IsMobile == true %>
+                        	<%=text_field_tag "query[string1]", tab_query_string[0], {:size=>"10", :id=>"label"} %>
+                        <% else %>
+                        	<%=text_field_tag "query[string1]", tab_query_string[0], {:id=>"autoCompleteTextField_#{i}a", :size=>"22", :class=>'textField'} %>
+                        <% end %>
+                        <%= translate('FROM') %>
+                      	<select name="query[field_filter1]" title="<%=translate('FROM_TITLE')%>">
+                        	<% @filter[0].each do | elem |
+								if (field_filter[0] == elem.field_filter)%>
+									<option selected value="<%=elem.field_filter%>" title="<%=elem.description%>" ><%= elem.label %></option>
+								<% else %>
+									<option onclick='this.parentNode.title="<%=elem.description%>"' value="<%=elem.field_filter%>" title="<%=elem.description%>"><%= elem.label %></option>
+								<% end %>
+							<%end%>
+                        </select>
+                        <%= translate('IN') %>
+                        <select id="select2" name="query_sets" title="<%= translate('IN_TITLE') %>">
+                            <% if (@groups_tab[i] != nil) %>
+	                            <% @groups_tab[i].each do | elem | %>
+	                            	<% value = 'g' + elem.id.to_s
+		                            if (('g' + elem.id.to_s == params[:sets]) || ('g' + elem.id.to_s == params[:query_sets])) %>
+		                            	<option selected value='g<%= elem.id %>' title='<%= elem.description %>' onclick='this.parentNode.title="<%=elem.description%>"' ><%= elem.full_name %></option>
+		                            <% else %>
+		                            	<option  onclick='this.parentNode.title="<%=elem.description%>"' value='g<%= elem.id %>' title='<%= elem.description %>'><%= elem.full_name %></option>
+		                            <% end %>
+	                            <% end %>
+                            <% end %>
+                        </select>
+                    </div>
+                    <!-- End of div FieldSearch --><!-- <%= submit_tag translate('FIND_IT'), {:id=>"buttonSubmit"} %> -->
+                    <br/>
+                    <div id="advanceForm_<%= i %>" class="advanceForm">
+                        <div class="fieldSearch">
+                            <!-- Field Search two -->
+                            <select class="andOr" name="query[operator1]">
+                            	<% if (operator[0] == "AND")%>
+                                	<option selected='true' value="AND">ET</option>
+								<% else%>
+									<option value="AND">ET</option>
+								<% end %>
+								<% if (operator[0] == "OR")%>
+                                	 <option selected='true' value="OR">OU</option>
+								<% else%>
+									 <option value="OR">OU</option>
+								<% end %>
+								<% if (operator[0] == "NOT")%>
+                                	<option selected='true' value="NOT">SAUF</option>
+								<% else%>
+									<option value="NOT">SAUF</option>
+								<% end %>
+                            </select>
+                            <%=text_field_tag "query[string2]", tab_query_string[1], {:id=>"autoCompleteTextField_#{i}b", :size=>"22", :class=>'textField'} %>
+                            <%= translate('FROM') %>
+                            <select name="query[field_filter2]" title="<%= translate('FROM_TITLE') %>">
+                                <% @filter[0].each do | elem |
+								if (field_filter[1] == elem.field_filter)%>
+									<option selected value="<%=elem.field_filter%>" title="<%=elem.description%>" ><%= elem.label %></option>
+								<% else %>
+									<option  onclick='this.parentNode.title="<%=elem.description%>"' value="<%=elem.field_filter%>" title="<%=elem.description%>"><%= elem.label %></option>
+								<% end %>
+							<%end%>
+                            </select>
+                        </div>
+                        <!-- End of span FieldSearch -->
+                        <div class="fieldSearch">
+                            <!-- Field Search three -->
+                            <select class="andOr" name="query[operator2]">
+                                <% if (operator[1] == "AND")%>
+                                	<option selected='true' value="AND">ET</option>
+								<% else%>
+									<option value="AND">ET</option>
+								<% end %>
+								<% if (operator[1] == "OR")%>
+                                	 <option selected='true' value="OR">OU</option>
+								<% else%>
+									 <option value="OR">OU</option>
+								<% end %>
+								<% if (operator[1] == "NOT")%>
+                                	<option selected='true' value="NOT">SAUF</option>
+								<% else%>
+									<option value="NOT">SAUF</option>
+								<% end %>
+                            </select>
+                            <%=text_field_tag "query[string3]", tab_query_string[2], {:id=>"autoCompleteTextField_#{i}c", :size=>"22", :class=>'textField'} %>
+                            <%= translate('FROM') %>
+                            <select name="query[field_filter3]" title="<%= translate('FROM_TITLE') %>">
+                                <% @filter[0].each do | elem |
+								if (field_filter[2] == elem.field_filter)%>
+									<option selected value="<%=elem.field_filter%>" title="<%=elem.description%>" ><%= elem.label %></option>
+								<% else %>
+									<option  onclick='this.parentNode.title="<%=elem.description%>"' value="<%=elem.field_filter%>" title="<%=elem.description%>"><%= elem.label %></option>
+								<% end %>
+							<%end%>
+                            </select>
+						</div>
+
+						<!-- Number of results -->
+						<div class="fieldSearch">
+							<%= translate('MAX_SEARCH_RESULTS') %>
+							<select name="max_search">
+								<option value="DEFAULT"><%= translate('DEFAULT') %></option>
+								<option <% if @max == 10 %>
+											selected="selected"
+										<% end %>
+										value="10">10</option>
+								<option <% if @max == 50 %>
+											selected="selected"
+										<% end %>
+										value="50">50</option>
+								<option <% if @max == 100 %>
+											selected="selected"
+										<% end %>
+										value="100">100</option>
+								<option <% if @max == 250 %>
+											selected="selected"
+										<% end %>
+										value="250">250</option>
+								<option <% if @max == 500 %>
+											selected="selected"
+										<% end %>
+										value="500">500</option>
+								<option <% if @max == 1000 %>
+											selected="selected"
+										<% end %>
+										value="1000">1000</option>
+							</select>
+							<!-- End number of results -->
+							
+							<!-- Number of results / page -->
+							<%= translate('MAX_SHOW_RESULTS') %>
+							<select name="show_search">
+								<option value="DEFAULT"><%= translate('DEFAULT') %></option>
+								<option <% if @page_size == 5 %>
+											selected="selected"
+										<% end %>
+										value="5">5</option>
+								<option <% if @page_size == 25 %>
+											selected="selected"
+										<% end %>
+										value="25">25</option>
+								<option <% if @page_size == 50 %>
+											selected="selected"
+										<% end %>
+										value="50">50</option>
+								<option <% if @page_size == 100 %>
+											selected="selected"
+										<% end %>
+										value="100">100</option>
+							</select>
+                        </div>
+						<!-- End number of results / page -->
+
+                    <!-- End of span FieldSearch -->
+                    </div>
+                    <!-- End of div advancedForm-->
+                </div>
+                <!-- End of div advanced Align  --><%= submit_tag translate('FIND_IT'), {:id=>"buttonSubmit"} %>
+                <% if @IsMobile != true %>
+                <!-- <%=link_to_function translate('ADVANCED_SEARCH'), "$('start_search').value='false';var query_string=getQueryElement().value;var set_string=$('sets').value;window.location='/record/advanced_search?query[string]='+escape(query_string)+'&sets='+set_string" %> --><%=link_to_function translate('ADVANCED_SEARCH'), "Effect.toggle('advanceForm_#{i}', 'slide', {duration: 0.2 });" %>
+                <% end %>
+                <span id="waitimage<%=i%>" class="waitimage"><img src="/images/wait.gif"/></span><!-- /span -->
+            </div>
+            <script>
+                setFocus();
+                Element.hide('waitimage<%=i%>')
+            </script>
+            <% i+= 1 %>
+            <% end %>
+            <% end %>
+            <% end %>
+            <% end %>
+            <div id="autoCompleteMenu"></div>
+            <script>
+				aIdTab = Array();
+				<% if (@linkMenu != nil)
+					@linkMenu.each do |aLine|%>
+					aIdTab.push(<%= aLine.id.to_s.to_i %>)
+				<% end
+				end %>
+    		    initSubMenu(<%=select%>, <%= advance%>, aIdTab);
+				//var field	= document.getElementById("autoCompleteTextField_" + aIdTab[0] + "a").nextSibling.nextSibling.value;
+    			//new Ajax.Autocompleter("autoCompleteTextField_" + aIdTab[0] + "a", 'autoCompleteMenu', '/search/autocomplete', {parameters: "field="+field});
+    			initAutoComplete(1);
+    			initAutoComplete(2);
+    			initAutoComplete(3);
+				setTitle("query[field_filter1]");
+				setTitle("query[field_filter2]");
+				setTitle("query[field_filter3]");
+				setTitle("query_sets");
+            </script>
+        </div>
+        <!-- End div  field-->
+    </div>
+    <!-- End div search-->
+    <div class="help">
+        <ul>
+            <li>
+            <a href="#"><%= translate("NEED_HELP") %>
+            </a>
+        </ul>
+    </div>

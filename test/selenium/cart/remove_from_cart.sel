@@ -1,0 +1,9 @@
+|waitForVisible|link=My Saved Items||
+|click|link=My Saved Items||
+|waitForVisible|xpath=//img[@src='/images/wait.gif']||
+|waitForNotVisible|xpath=//img[@src='/images/wait.gif']||
+|includePartial|/cart/cart||
+|waitForVisible|link=Remove from Saved Items||
+|click|link=Remove from Saved Items||
+|includePartial|/cart/cart||
+

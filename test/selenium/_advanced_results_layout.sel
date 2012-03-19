@@ -1,0 +1,11 @@
+|includePartial|basic_search_layout||
+|waitForTextPresent|Results * of * hits||
+|waitForTextPresent|Advanced search results for||
+|waitForTextPresent|Relevance*Date: Newest First||
+|waitForVisible|link=Save This Item||
+|waitForVisible|link=Citation||
+|verifyTextNotPresent|An error occured||
+
+
+
+Source: $Id: _advanced_results_layout.sel 499 2006-10-26 22:45:27Z herlockt $

@@ -1,0 +1,17 @@
+<div id="page_contents">
+	<%= render(:partial => "admin/navigation")%>
+	<div id="center"  class="column">
+		<table>
+			<tr>
+			<th>Label</th>
+			<th>Description</th>
+			</tr>
+			<tr>
+				<td><%=@search_tabs.label%></td>
+ 				<td><%=@search_tabs.description%></td>
+			</tr>
+		</table>
+		<%= link_to 'Edit', {:action => 'edit', :id => @search_tabs.id} %> |
+		<%= link_to 'Back', admin_search_tabs_path %>
+	</div>
+</div>

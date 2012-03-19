@@ -1,0 +1,6 @@
+<div id="abstract_<%=article_abstract.id.to_s%>" class="citation" style="display:none">
+	<div style="float:right">
+		<%= link_to_function image_tag("/images/close.png", :border=>0), "Element.hide('abstract_"+article_abstract.id.to_s+"')"%>
+            </div>
+	<%=article_abstract.abstract%>
+</div>

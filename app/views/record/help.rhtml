@@ -1,0 +1,40 @@
+<P class=MsoNormal><B><SPAN style="FONT-SIZE: 14pt; FONT-FAMILY: Arial">
+	<%=translate('OVERVIEW')%>
+</SPAN></B></P>
+<P class=MsoNormal style="MARGIN: 0in 0in 12pt 0.5in; TEXT-INDENT: -0.25in">
+  <SPAN style="FONT-SIZE: 7pt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN>
+  <SPAN style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">
+    &nbsp;&nbsp;<%=translate('OVERVIEW_TEXT')%>
+  </SPAN>
+</P>
+<P class=MsoNormal><B><SPAN style="FONT-SIZE: 14pt; FONT-FAMILY: Arial">
+  <%=translate('FAQ')%>
+</SPAN></B></P>
+<%begin  
+    help_total=translate('HELP_TOTAL').to_i
+  rescue Exception => e
+    logger.info(e.backtrace.to_s)
+    help_total=10
+  end
+  if help_total<1
+	help_total=10
+  end
+%>
+<%
+for count in 1..help_total.to_i do
+    number="NUMBER_"+count.to_s
+	question="QUESTION_"+count.to_s
+	answer="ANSWER_"+count.to_s
+%>
+<P class=MsoNormal style="MARGIN: 0in 0in 12pt 0.5in; TEXT-INDENT: -0.25in">
+<SPAN style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">
+  <%=translate(number)%>
+</SPAN>
+<SPAN style="FONT-SIZE: 7pt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </SPAN>
+<SPAN style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">
+  <%=translate(question)%><BR><BR>
+  <%=translate(answer)%>
+</SPAN></P>
+<%end%>
+
+

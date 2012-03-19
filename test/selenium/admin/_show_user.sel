@@ -1,0 +1,7 @@
+|waitForTextPresent|Name:||
+|waitForTextPresent|Full name:||
+|waitForTextPresent|Email:||
+|waitForTextPresent|Hashed password:||
+|waitForTextPresent|Salt:||
+|waitForTextPresent|Administrator||
+

@@ -1,0 +1,76 @@
+<%_from=display_source(article)%>
+<div id="result-row">
+  <%_localopenurl = nil%>
+  <%if article.openurl!=nil%>
+  <%_tmppos = article.openurl.index("?")%>
+  <%if _tmppos != nil %>
+  <%_localopenurl = article.openurl.slice(_tmppos+1, (article.openurl.length-(_tmppos+1)))%>
+  <span class="Z3988" title="<%=_localopenurl.gsub('&','&amp;')%>"></span>
+  <%end%>
+  <%end%>
+  [<%=article.material_type%>]&nbsp;&nbsp;
+	  <span id="ptitle">
+	  	<% idVar = article.id.split('_') %>
+	  	<% linkId = idVar[2] + ";" + idVar[1] + ";" + idVar[0] %>
+		<%= link_to article.ptitle, :controller=>"document", :action=>"display", :id=>linkId%>
+	  </span>
+</div>
+<%if article.abstract!=''%>
+  <div id="abstract">
+    <%=short_abstract(article)%>
+  </div>
+<%end %>
+<div id="result-row">
+  <%if article.date!='' and article.date!='00000000'%>
+    <%=display_date(article)%>  &#160;
+  <%end%>
+    <span id="source-italic"">
+      <%=_from%>
+    </span>
+</div>
+<%=render(:partial => "/record/details/article_citation", :object => article) %>
+<%=render(:partial => "/record/details/article_abstract", :object => article) %> 
+<div id="result-row" class='vr' >
+  <%if article.direct_url==nil || article.direct_url==''
+    _settings ||= YAML::load_file(RAILS_ROOT + "/config/config.yml") 
+    _ill_url=_settings['ILL_URL']
+    if _localopenurl!=nil
+      if _ill_url!=nil && _ill_url!=''%>
+        <a href="<%=_ill_url+_localopenurl%>" target="_blank"><%=translate('INTERLIBRARY_LOAN')%></a>&#160;
+      <%end%>
+ <% else 
+       if _ill_url != nil && _ill_url != ''%>
+         &#160;<a href="<%=_ill_url%>" target="_blank"><%=translate('INTERLIBRARY_LOAN')%></a>&#160;
+       <%end%>
+    <%end%>
+  <%end%>
+  <%if article.abstract!=''%>
+    <%= link_to_function translate('FULL_ABSTRACT'), "Element.hide('citation_"+article.id.to_s+"');Element.toggle('abstract_"+article.id.to_s+"')"%>&#160;
+<%end %>
+  <%= link_to_function translate('CITATION'), "Element.hide('abstract_"+article.id.to_s+"');Element.toggle('citation_"+article.id.to_s+"')"%>&#160;
+  <span id='add_to_cart_<%=article.id%>'>   
+        <%if session[:cart]==nil || !session[:cart].include?(article.id) %>
+       <%=link_to_remote translate('SAVE_THIS_ITEM'), {
+                                              :update => 'add_to_cart_%s' % article.id,
+                                              :url => { :action => 'add', :controller=>'/cart'},
+                                              :with => "'id=%s'" % article.id
+                                              }%>
+        <% else 
+             if @cart_page!=nil and !@cart_page.empty? %>
+              <%=link_to_remote translate('REMOVE_FROM_SAVED_ITEMS'), {
+                                              :update => 'row_%s' % article.id,
+                                              :url => { :action => 'remove', :controller=>'/cart'},
+                                              :with => "'id=%s'" % article.id,
+                                              :loading => "scroll(0,0);Element.show('waitimage')",
+                                              :complete => "Element.hide('waitimage');"
+                                              }%>
+            <%end%>
+        <%end%>
+        </span>&#160;
+         <% if article.vendor_url!=nil and article.vendor_url!='' %>
+         <a href=<%=h(article.vendor_url)%> target="_blank">
+                  <%=translate('MORE_FROM',[escape_quote(article.vendor_name)])%>
+                </a>&#160;
+  <%end%>           
+   
+</div>  

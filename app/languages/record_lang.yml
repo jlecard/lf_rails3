@@ -1,0 +1,538 @@
+EN:
+  TOP_IMAGES: Image results for Oregon State University collections
+  #_authors.rhtml
+  AUTHORS: Authors
+  UNFILTER_AUTHORS: Unfilter Authors
+  RESULTS: " \"#{args[0]} (#{args[1]} results)\""
+  MORE_AUTHORS: "[More Authors...]"
+  TOP_AUTHORS: "[Only Top 10 Authors...]"
+  #_databases.rhtml
+  DATABASES: Databases
+  UNFILTER_DATABASES: Unfilter Databases
+  MORE_DATABASES: "[More Databases...]"
+  TOP_DATABASES: "[Only Top 10 Databases...]"
+  #_themes.rhtml
+  THEMES: Themes
+  UNFILTER_THEMES: Unfilter Themes
+  MORE_THEMES: "[More Themes...]"
+  TOP_THEMES: "[Only Top 10 Themes...]"
+  #_filter_trail.rhtml
+  SEARCH_RESULTS_FOR: "Search results for "
+  ADVANCED_SEARCH_RESULTS_FOR: "<b>Advanced</b> search results for: "
+  #_group_details.rhtml
+  COLLECTIONS_IN_THIS_GROUP: Collections in this group
+  #_image_rows.rhtml
+  RESULTS_HITS: " \"Results #{args[0]} - #{args[1]} of #{args[2]} hits\""
+  #_navigation.rhtml
+  REFINE_RESULTS: Refine Results
+  MATERIAL_TYPES: Material Types
+  UNFILTER_MATERIAL_TYPES: Unfilter Material Types
+  UNFILTER_AVAILABILITIES : Unfilter Availability
+  #_pagination.rhtml
+  PREVIOUS: '&lt;  Previous'
+  NEXT: 'Next &gt;'
+  MORE_RESULTS: "Find more results with the following databases:"
+  #_sort.rhtml
+  SORT_BY: "Sort by: "
+  RELEVANCE: Relevance
+  OLDEST_FIRST: "Date: Oldest First"
+  NEWEST_FIRST: "Date: Newest First"
+  AUTHOR_UP: "Author: A..Z"
+  AUTHOR_DOWN: "Author: Z..A"
+  TITLE_UP: "Title: A..Z"
+  TITLE_DOWN: "Title: Z..A"
+  #_spell_check.rhtml
+  DID_YOU_MEAN: "Did you mean:"
+  MORE: "[more]"
+  LESS: "[less]"
+  #_see_also.rhtml
+  SEE_ALSO: "See Also:"
+  #_subjects.rhtml
+  SUBJECTS: Subjects
+  UNFILTER_SUBJECTS: Unfilter Subjects
+  MORE_SUBJECTS: "[More Subjects...]"
+  TOP_SUBJECTS: "[Only Top 10 Subjects...]"
+  #_date.rhtml
+  DATES: Dates
+  UNFILTER_DATES: Unfilter Dates
+  MORE_DATES: "[More Dates...]"
+  TOP_DATES: "[Only Top 10 Dates...]"
+  #langs.rhtml
+  LANGS: Languages
+  UNFILTER_LANGS: Unfilter Languages
+  MORE_LANGS: "[More Languages...]"
+  TOP_LANGS: "[Only Top 10 Languages...]"
+  #availabilities.rhtml
+  AVAILABILITIES: Availability
+  #advanced_search.rhtml
+  ADVANCED_SEARCH: Advanced Search
+  FIND_RESULTS_FOR: Find results for
+  MAXIMUM: "Maximum"
+  LOOK_IN: "Look in:"
+  ALL_THE_WORDS: All the words
+  THE_EXACT_PHRASE: The exact phrase
+  ANY_OF_THESE_WORDS: Any of these words
+  AUTHOR: Author
+  KEYWORD: Keyword
+  SUBJECT: Subject
+  TITLE: Title
+  SIMPLE_SEARCH: Simple Search
+  MAX_10: 10 results per database
+  MAX_25: 25 results per database
+  MAX_50: 50 results per database
+  MAX_100: 100 results per database
+  GROUPSEARCH: "Groups to search"
+  #help.rhtml
+  OVERVIEW: Overview
+  OVERVIEW_TEXT: Welcome to LibraryFind!  This tool is a one-stop-shopping tool for academic searching.  Additionally, LibraryFind will learn how users search and the most frequent searches will be returned faster.   <br/>This tool is undergoing continuous development, improvement, and refinement.  In the coming months, you will notice many improvements and new features.  
+  FAQ: FAQ
+  NUMBER_1: 1)
+  QUESTION_1: Why does my search take so long?
+  ANSWER_1: Welcome to the world of federated search. There are actually a couple of factors that lead to the lengthiness of retrieval time within LibraryFind. First and foremost is the fact that the tool is querying resources from multiple targets. Navigating between these targets does slow the overall responsiveness of the tool because each target must return its results before the display can be generated (see related question - Why doesn'tis show results as they are found?). This delay is true of all federated search tools. However, unlike other tools, we are taking an activeapproach to alleviating this delay for the most often queried research topics. LibraryFind has been developed as a learning application, so themore often an item is requested, the faster that query will be run. Over time, the query becomes cached, negating any retrieval time. This will be an ongoing process, but one that we hope will be worthwhile.
+  NUMBER_2: 2)
+  QUESTION_2: Why doesn't it show results as they are found?
+  ANSWER_2: Unlike most/all federated search tools, LibraryFind is unique in that we believe that the most relevant entries should be on the first page. This means that the query must evaluate all items retrieved in the search in order to apply relevancy. In the future, we will be looking at ways of both increasing the speed of the query as well as providing different display options so users can choose the one that best fits their searching style.
+  NUMBER_3: 3)
+  QUESTION_3: Why are some titles linked, while some are not?
+  ANSWER_3: LibraryFind has a couple of very unique features to and this happens to be one. The tool actually found journal holdings using our OpenURL server allowing to tool to know if a particular vendor should have an item. If the vendor should have the item, then the link is displayed. If not, then the title is not linked and the user can click on the "Interlibrary Loan" link to find the item.
+  NUMBER_4: 4)
+  QUESTION_4: I clicked on a title and the vendor says that the article cannot be found?
+  ANSWER_4: There are two possible scenarios in which this could happen. First, many vendors like Ebsco, index pre-prints. These are items that are not yet published, but are linked because they meet our holdings criteria (i.e., we have resources to present). In the future, these pre-print items will be marked and unlinked to minimize confusion. The second scenario occurs because of a lack of data from outside databases. We know thatthis is an issue and are looking at ways to try to accommodate these problems.
+  NUMBER_5: 5)
+  QUESTION_5: Do you have an advanced search?
+  ANSWER_5: "At this point, there isn't a formal advanced search interface, but you can change the query to search different indexes. Currently, LibraryFind does all searches as keyword searches however, you can specify searches as title, author and subject searches by using the following mnemonics - ti: su: au: Example - ti:my title"
+  NUMBER_6: 6)
+  QUESTION_6: How can I improve my search?
+  ANSWER_6: Example keyword search-  Mary's River<br/>Example phrase search-  "Mary's River"<br/>LibraryFind interprets your keyword search (Mary's River - without quotes) in the following order-<br/>&nbsp;&nbsp;&nbsp;Mary's River<br/>&nbsp;&nbsp;&nbsp;Mary's and River<br/>&nbsp;&nbsp;&nbsp;Mary's* and River*<br/>&nbsp;&nbsp;&nbsp;Mary's* or River*<br/>So if your search is for Mary's River (without quotes), you will also see results that referenced Mary's or just referenced River.  If you want to explicitly do a phrase search, you simply need to group the search with quotes, i.e., "Mary's River". 
+  NUMBER_7: 7)
+  QUESTION_7: How do I see only Articles, or Books?
+  ANSWER_7: After a search, click the desired link under the "Refine Results" section of the left navigation bar. For example, if you know that you are looking for an article on women in mathematics, enter women in mathematics and click "Find It!"  After getting the search results, click the "Articles" link on the left.  This will filter out any books or images that were returned in your original search and just display the pertinent articles. To return to the initial search results, select the link with your search term in the upper-left bread-crumb filter trail.
+  NUMBER_8: 8)
+  QUESTION_8: How do I see the most recent items?
+  ANSWER_8: 'Select the "Date: Newest first" option from the "Sort By" drop down in the upper-right.  However, if the item does not have an available date, it will appear at the end of the list, but may still be a recently published item.  For example, if you are interested in the latest research on the Montessori Method, enter it in the search field and click "Find It!"  Then, click "Date: Newest First" in the "Sort By" drop down of the results top-bar. If you want to return to the initial search results, select the "Relevance" option.'
+  NUMBER_9: 9)
+  QUESTION_9: What is the "Databases" section in the left navigation bar for?
+  ANSWER_9: The database links in the "Databases" section of the left navigation bar allows you to see only the results from the corresponding database.  For example, if you see that "Academic Search Premiere" had over a million hits, you may want to focus on this database.  You can click on the "Academic Search Premiere" link and see some of the results from that database.  If those initial results don't include what you're looking for, then click on the "more from Academic Search Premiere" link.  This will take you to the corresponding database where you can enter your search and see more results.  To return to your initial search results, just click the Search results for "your search term" link at the top-left above the left navigation bar.
+  NUMBER_10: 10)
+  QUESTION_10: How do I send myself an email containing some of my search results?
+  ANSWER_10: As you're searching and discovering items that you'd like to send, click on the "Save This Item" link.  Anything that you add to your "My Saved Items" list will be available throughout your browser session.  When you've completed your research, click the "My Saved Items" link to see everything that you've collected and enter your email address in the text field on the left-hand-side.  Then click the "Email Saved Items" link and you'll have the list of records sent to you.
+  #total number of help questions for display
+  HELP_TOTAL: 10
+  #search.rhtml
+  LIBRARY_FIND_IS: "LibraryFind is..."
+  OPEN_SOURCE: an open source metasearch application developed by librarians for libraries, built with Ruby on Rails.
+  FIND_IT_LABEL: "Find It:"
+  FIND_IT_1: Enter your search in the above box and click Find It!
+  FIND_IT_2: Your results will be displayed and ranked by relevance
+  GET_IT_LABEL: "Get It:"
+  GET_IT_1: Click the linked title to get to the full text
+  REFINE_IT_LABEL: "Refine It:"
+  REFINE_IT_1: Further refine your search by clicking links on the left
+  REFINE_IT_2: "Return to your full list of results at any time by clicking your linked search on the upper-left"
+  FEATURES_LABEL: "Some Current Features:"
+  FEATURES_1: "Built-in OpenURL resolver"
+  FEATURES_2: "2-click find workflow"
+  FEATURES_3: "Ability to locally index collections"
+  FEATURES_4: "Web-based administration"
+  FEATURES_5: "3-tiered caching system (to improve speed of searches)"
+  FEATURES_6: "Customizable user interface"
+  FOOTER: "LibraryFind&reg; is software developed by the Oregon State University Libraries, funded in part by a grant from the State Library."
+  #record_controller.rb
+  NO_RESULTS: "Your search did not return any results"
+  ERROR_OCCURED: " \"The following error occurred while searching: '#{args[0]}'.<br/>Click the link labeled 'Report a Problem' to send an email with a description of the error.\""
+  DB_ERRORS: " \"The search results are incomplete due to problems with specific databases.  Try your search again to see if a complete result set can be returned.  <br>Errors: #{args[0]}\""
+  ERRORS_GETTING_GROUPS: "An error occured while getting group members.  Click the link labeled 'Report a Problem' to send an email with a description of the error."
+  FILTER_DID_NOT_MATCH: "Your filter did not match any results"
+  IMAGE_NOT_FOUND: "Image not found"
+  DB_ERRORS: "One or more databases experienced errors during this search.  The results below may be incomplete and the most relavent results may not have been returned.  Try your search again to see if the issues have been resolved and to see if there are any more results."
+  SEARCH_STOPPED: "The search was stopped before all databases were searched.  The results below may be incomplete and the most relavent results may not have been returned. "
+  ERROR_DETAILS: "Click to see error details"
+  DB_PRIVATE: "One or more databases require authentication before they can be queried.  Please login in order to view the hidden resources."
+  PRIVATE_DETAILS: "Click to see private resources"
+  PROCESSING_RESULTS: "Now retrieving and ranking search results..."
+  ALL_DESCRIPTION: "Return materials with all these words"
+  ALL_EXAMPLE: "Example: Linus Pauling"
+  EXACT_DESCRIPTION: "Return materials containing this exact phrase"
+  EXACT_EXAMPLE: "Example: business management"
+  ANY_DESCRIPTION: "Return materials with any of these words"
+  ANY_EXAMPLE: "Example: women engineering"
+  AUTHOR_DESCRIPTION: "Return materials written by this person or organization"
+  AUTHOR_EXAMPLE: "Example: Pauling"
+  SUBJECT_DESCRIPTION: "Return materials pertaining to this subject"
+  SUBJECT_EXAMPLE: "Example: education"
+  TITLE_DESCRIPTION: "Return materials where this is part of the title"
+  TITLE_EXAMPLE: "Example: peace"
+  MAXIMUM_DESCRIPTION: "Select the number of results for each database"
+  STOP_SEARCHING: "Stop Searching"
+  STOP_SEARCHING_MESSAGE: "Click the 'Stop Searching' button to stop the search where it is at and see the current result set. Note: this may mean that the most relevant results would not be returned."
+  NOW_SEARCHING: "Now Searching:"
+  COMPLETED_SEARCHING: "Completed Searching:"
+  #accueil_ALL
+      #_Left
+  EXPLORE_BY_SUBJECT: "Explore by Subject"
+  NEWS: "News, Media, Press"
+  ARTS: "Arts"
+  LAW: "Law, Administration,"
+  INSTITUTION: "Institutions"
+  ECONOMIE: "Economics, Business, Management"
+  HISTORY: "History"
+  LANGUAGES: "Languages, Literatures"
+  RECREATION: "Recreation, Sports, Tourism"
+  PHILOSOPHY: "Philosophy, Religion"
+  JOBS: "Search Jobs, jobs, training"
+  SCIENCE_TECH: "Science, technology, medicine"
+  SCIENCE_H: "Humanities and Social Sciences"
+  PRACTICAL: "Practical"
+  ART_19: "Art to 19th century"
+  ART_20: "Art of the 20th and 21st centuries"
+  ARCH: " Architecture"
+  DECO_ART: "Decorative arts, design, fashion"
+  GRAPHIC: "Graphics, comics"
+  PHOTOGRAPHY: "Photography"
+  MUSIC: "Music"
+  CINEMA: "Cinema"
+  PERF_ART: "Performing arts"
+      #_Middle
+  NEWS: "News"
+  SUBSCRIBE_NEWS: "Subscribe to news"
+  YOUR_LIBRARIAN: "YOUR LIBRARIAN SAW/READ/LISTENING"
+  BIBLIOGRAPHY: "Bibliography : "
+  EVENTS: "EVENTS"
+  EXPOSITION: "Expositions :"
+FR:
+  TOP_IMAGES: Résultats d'image
+  #_authors.rhtml
+  AUTHORS: Auteur
+  UNFILTER_AUTHORS: Enlever le filtre d'auteur
+  RESULTS: " \"#{args[0]} (#{args[1]} résultats)\""
+  MORE_AUTHORS: [Plus d'auteurs...]
+  TOP_AUTHORS: [Seulement le Top 10 des Auteurs...]
+  #_databases.rhtml
+  DATABASES: Bases de recherche
+  UNFILTER_DATABASES: Enlever le filtre de base de recherche
+  MORE_DATABASES: Plus de bases de recherche
+  TOP_DATABASES: [Seulement le Top 10 des bases...]
+  #_themes.rhtml
+  THEMES: Themes
+  UNFILTER_THEMES: Enlever le filtre des themes
+  MORE_THEMES: "[Plus de themes...]"
+  TOP_THEMES: "[Seulement le Top 10 de themes...]"
+  #_filter_trail.rhtml
+  SEARCH_RESULTS_FOR: "Résultats de recherche pour "
+  ADVANCED_SEARCH_RESULTS_FOR: "Résultats avances de recherche pour : "
+  #_group_details.rhtml
+  COLLECTIONS_IN_THIS_GROUP: Base de recherche dans ce groupe
+  #_image_rows.rhtml
+  RESULTS_HITS: " \"Résultats de #{args[0]} a #{args[1]} sur #{args[2]} documents trouves\""
+  #_navigation.rhtml
+  REFINE_RESULTS: Affiner les résultats
+  MATERIAL_TYPES: Type de document
+  UNFILTER_MATERIAL_TYPES: Enlever le filtre de type de document
+  UNFILTER_AVAILABILITIES : Enlever le filtre de disponibilité
+  #_pagination.rhtml
+  PREVIOUS: '&lt;  Precedant'
+  NEXT: 'Suivant &gt;'
+  MORE_RESULTS: "Trouvez plus de résultats avec ces bases de recherche:"
+  #_sort.rhtml
+  SORT_BY: "Trier par: "
+  RELEVANCE: Pertinence
+  OLDEST_FIRST: "Les plus vieux"
+  NEWEST_FIRST: "Les plus recents"
+  AUTHOR_UP: "Auteur: A..Z"
+  AUTHOR_DOWN: "Auteur: Z..A"
+  #_spell_check.rhtml
+  DID_YOU_MEAN: "Essayez cette orthographe:"
+  MORE: "[plus]"
+  LESS: "[moins]"
+  #_see_also.rhtml
+  SEE_ALSO: "Voir aussi:"
+  #_subjects.rhtml
+  SUBJECTS: Sujets
+  UNFILTER_SUBJECTS: Enlever le fitre de sujets
+  MORE_SUBJECTS: [Plus de sujets...]
+  TOP_SUBJECTS: [Seulement le Top 10 des Sujets...]
+  #_date.rhtml
+  DATES: Dates
+  UNFILTER_DATES: Enlever le filtre de Dates
+  MORE_DATES: "[Plus de  Dates...]"
+  TOP_DATES: "[Seulement le Top 10 des Dates...]"
+  #availabilities.rhtml
+  AVAILABILITIES: Disponibilité
+  #advanced_search.rhtml
+  ADVANCED_SEARCH: Recherche avancée
+  FIND_RESULTS_FOR: Plus de résultats pour
+  MAXIMUM: "Maximum"
+  LOOK_IN: "FRENCH Look in:"
+  ALL_THE_WORDS: Tous les mots
+  THE_EXACT_PHRASE: La phrase exacte
+  ANY_OF_THESE_WORDS: Un de ces mots
+  AUTHOR: Auteur
+  KEYWORD: Mots clefs
+  SUBJECT: Sujet
+  TITLE: Titre
+  SIMPLE_SEARCH: Recherche simple
+  MAX_10: 10 résultats par base
+  MAX_25: 25 résultats par base
+  MAX_50: 50 résultats par base
+  MAX_100: 100 résultats par base
+  GROUPSEARCH: "FRENCH Groups to search"
+  #help.rhtml
+  OVERVIEW: FRENCH Overview
+  OVERVIEW_TEXT: FRENCH Welcome to LibraryFind!  This tool is a one-stop-shopping tool for academic searching.  Additionally, LibraryFind will learn how users search and the most frequent searches will be returned faster.   <br/>This tool is undergoing continuous development, improvement, and refinement.  In the coming months, you will notice many improvements and new features.  
+  FAQ: FRENCH FAQ
+  NUMBER_1: FRENCH 1)
+  QUESTION_1: FRENCH Why does my search take so long?
+  ANSWER_1: FRENCH Welcome to the world of federated search. There are actually a couple of factors that lead to the lengthiness of retrieval time within LibraryFind. First and foremost is the fact that the tool is querying resources from multiple targets. Navigating between these targets does slow the overall responsiveness of the tool because each target must return its results before the display can be generated (see related question - Why doesn'tis show results as they are found?). This delay is true of all federated search tools. However, unlike other tools, we are taking an activeapproach to alleviating this delay for the most often queried research topics. LibraryFind has been developed as a learning application, so themore often an item is requested, the faster that query will be run. Over time, the query becomes cached, negating any retrieval time. This will be an ongoing process, but one that we hope will be worthwhile.
+  NUMBER_2: FRENCH 2)
+  QUESTION_2: FRENCH Why doesn't it show results as they are found?
+  ANSWER_2: FRENCH Unlike most/all federated search tools, LibraryFind is unique in that we believe that the most relevant entries should be on the first page. This means that the query must evaluate all items retrieved in the search in order to apply relevancy. In the future, we will be looking at ways of both increasing the speed of the query as well as providing different display options so users can choose the one that best fits their searching style.
+  NUMBER_3: FRENCH 3)
+  QUESTION_3: FRENCH Why are some titles linked, while some are not?
+  ANSWER_3: FRENCH LibraryFind has a couple of very unique features to and this happens to be one. The tool actually found journal holdings using our OpenURL server allowing to tool to know if a particular vendor should have an item. If the vendor should have the item, then the link is displayed. If not, then the title is not linked and the user can click on the "Interlibrary Loan" link to find the item.
+  NUMBER_4: FRENCH 4)
+  QUESTION_4: FRENCH I clicked on a title and the vendor says that the article cannot be found?
+  ANSWER_4: FRENCH There are two possible scenarios in which this could happen. First, many vendors like Ebsco, index pre-prints. These are items that are not yet published, but are linked because they meet our holdings criteria (i.e., we have resources to present). In the future, these pre-print items will be marked and unlinked to minimize confusion. The second scenario occurs because of a lack of data from outside databases. We know thatthis is an issue and are looking at ways to try to accommodate these problems.
+  NUMBER_5: FRENCH 5)
+  QUESTION_5: FRENCH Do you have an advanced search?
+  ANSWER_5: "FRENCH At this point, there isn't a formal advanced search interface, but you can change the query to search different indexes. Currently, LibraryFind does all searches as keyword searches however, you can specify searches as title, author and subject searches by using the following mnemonics - ti: su: au: Example - ti:my title"
+  NUMBER_6: FRENCH 6)
+  QUESTION_6: FRENCH How can I improve my search?
+  ANSWER_6: FRENCH Example keyword search-  Mary's River<br/>Example phrase search-  "Mary's River"<br/>LibraryFind interprets your keyword search (Mary's River - without quotes) in the following order-<br/>&nbsp;&nbsp;&nbsp;Mary's River<br/>&nbsp;&nbsp;&nbsp;Mary's and River<br/>&nbsp;&nbsp;&nbsp;Mary's* and River*<br/>&nbsp;&nbsp;&nbsp;Mary's* or River*<br/>So if your search is for Mary's River (without quotes), you will also see results that referenced Mary's or just referenced River.  If you want to explicitly do a phrase search, you simply need to group the search with quotes, i.e., "Mary's River". 
+  NUMBER_7: FRENCH 7)
+  QUESTION_7: FRENCH How do I see only Articles, or Books?
+  ANSWER_7: FRENCH After a search, click the desired link under the "Refine Results" section of the left navigation bar. For example, if you know that you are looking for an article on women in mathematics, enter women in mathematics and click "Find It!"  After getting the search results, click the "Articles" link on the left.  This will filter out any books or images that were returned in your original search and just display the pertinent articles. To return to the initial search results, select the link with your search term in the upper-left bread-crumb filter trail.
+  NUMBER_8: FRENCH 8)
+  QUESTION_8: FRENCH How do I see the most recent items?
+  ANSWER_8: 'FRENCH Select the "Date: Newest first" option from the "Sort By" drop down in the upper-right.  However, if the item does not have an available date, it will appear at the end of the list, but may still be a recently published item.  For example, if you are interested in the latest research on the Montessori Method, enter it in the search field and click "Find It!"  Then, click "Date: Newest First" in the "Sort By" drop down of the results top-bar. If you want to return to the initial search results, select the "Relevance" option.'
+  NUMBER_9: FRENCH 9)
+  QUESTION_9: FRENCH What is the "Databases" section in the left navigation bar for?
+  ANSWER_9: FRENCH The database links in the "Databases" section of the left navigation bar allows you to see only the results from the corresponding database.  For example, if you see that "Academic Search Premiere" had over a million hits, you may want to focus on this database.  You can click on the "Academic Search Premiere" link and see some of the results from that database.  If those initial results don't include what you're looking for, then click on the "more from Academic Search Premiere" link.  This will take you to the corresponding database where you can enter your search and see more results.  To return to your initial search results, just click the Search results for "your search term" link at the top-left above the left navigation bar.
+  NUMBER_10: FRENCH 10)
+  QUESTION_10: FRENCH How do I send myself an email containing some of my search results?
+  ANSWER_10: FRENCH As you're searching and discovering items that you'd like to send, click on the "Save This Item" link.  Anything that you add to your "My Saved Items" list will be available throughout your browser session.  When you've completed your research, click the "My Saved Items" link to see everything that you've collected and enter your email address in the text field on the left-hand-side.  Then click the "Email Saved Items" link and you'll have the list of records sent to you.
+  #total number of help questions for display
+  HELP_TOTAL: FRENCH 10
+  #search.rhtml
+  LIBRARY_FIND_IS: "FRENCH LibraryFind is..."
+  OPEN_SOURCE: FRENCH an open source metasearch application developed by librarians for libraries, built with Ruby on Rails.
+  FIND_IT_LABEL: "FRENCH Find It:"
+  FIND_IT_1: FRENCH Enter your search in the above box and click Find It!
+  FIND_IT_2: FRENCH Your results will be displayed and ranked by relevance
+  GET_IT_LABEL: "FRENCH Get It:"
+  GET_IT_1: FRENCH Click the linked title to get to the full text
+  REFINE_IT_LABEL: "FRENCH Refine It:"
+  REFINE_IT_1: FRENCH Further refine your search by clicking links on the left
+  REFINE_IT_2: "FRENCH Return to your full list of results at any time by clicking your linked search on the upper-left"
+  FEATURES_LABEL: "FRENCH Some Current Features:"
+  FEATURES_1: "FRENCH Built-in OpenURL resolver"
+  FEATURES_2: "FRENCH 2-click find workflow"
+  FEATURES_3: "FRENCH Ability to locally index collections"
+  FEATURES_4: "FRENCH Web-based administration"
+  FEATURES_5: "FRENCH 3-tiered caching system (to improve speed of searches)"
+  FEATURES_6: "FRENCH Customizable user interface"
+  FOOTER: "FRENCH LibraryFind&reg; is software developed by the Oregon State University Libraries, funded in part by a grant from the State Library."
+  #record_controller.rb
+  NO_RESULTS: "Votre requete n'a renvoyee aucun résultat"
+  ERROR_OCCURED: " \"Une erreur est survenue lors de la recherche: '#{args[0]}'.\""
+  DB_ERRORS: " \"FRENCH The search results are incomplete due to problems with specific databases.  Try your search again to see if a complete result set can be returned.  <br>Errors: #{args[0]}\""
+  ERRORS_GETTING_GROUPS: "FRENCH An error occured while getting group members.  Click the link labeled 'Report a Problem' to send an email with a description of the error."
+  FILTER_DID_NOT_MATCH: "FRENCH Your filter did not match any results"
+  IMAGE_NOT_FOUND: "FRENCH Image not found"
+  DB_ERRORS: "FRENCH One or more databases experienced errors during this search.  The results below may be incomplete and the most relavent results may not have been returned.  Try your search again to see if the issues have been resolved and to see if there are any more results."
+  SEARCH_STOPPED: "FRENCH The search was stopped before all databases were searched.  The results below may be incomplete and the most relavent results may not have been returned. "
+  ERROR_DETAILS: "FRENCH Click to see error details"
+  DB_PRIVATE: "FRENCH One or more databases require authentication before they can be queried.  Please login in order to view the hidden resources."
+  PRIVATE_DETAILS: "FRENCH Click to see private resources"
+  PROCESSING_RESULTS: "Recherche en cours..."
+  STOP_SEARCHING: "Arreter la recherche"
+  STOP_SEARCHING_MESSAGE: "Cliquer sur le boutton 'Arreter la recherche' pour afficher les résultats récuperés.\nNote : Une ou plusieurs bases pourra ne pas être interrogée."
+  NOW_SEARCHING: "En cours de recherche :"
+  COMPLETED_SEARCHING: "Base de données interogées :"
+  #accueil_ALL
+      #_Left
+  EXPLORE_BY_SUBJECT: "Explorer par thèmes"
+      #_Middle
+  NEWS: "Nouveautés"
+  SUBSCRIBE_NEWS: "S'abonner aux nouveautés"
+  YOUR_LIBRARIAN: " Votre bibliothécaire vous conseille"
+  BIBLIOGRAPHY: "Bibliographie : "
+  EVENTS: "Evénements"
+  EXPOSITION: "Expositions :"
+  LANGS: Langages
+ 
+ES:
+  TOP_IMAGES: SPANISH Image results for Oregon State University collections
+  #_authors.rhtml
+  AUTHORS: SPANISH Authors
+  UNFILTER_AUTHORS: SPANISH Unfilter Authors
+  RESULTS: " \"SPANISH #{args[0]} (#{args[1]} results)\""
+  MORE_AUTHORS: SPANISH [More Authors...]
+  TOP_AUTHORS: SPANISH [Only Top 10 Authors...]
+  #_databases.rhtml
+  DATABASES: SPANISH Databases
+  UNFILTER_DATABASES: SPANISH Unfilter Databases
+  MORE_DATABASES: SPANISH [More Databases...]
+  TOP_DATABASES: SPANISH [Only Top 10 Databases...]
+  #_themes.rhtml
+  THEMES: Themes
+  UNFILTER_THEMES: Unfilter Themes
+  MORE_THEMES: "[More Themes...]"
+  TOP_THEMES: "[Only Top 10 Themes...]"
+  #availabilities.rhtml
+  AVAILABILITIES: Availability
+  #_filter_trail.rhtml
+  SEARCH_RESULTS_FOR: "SPANISH Search results for "
+  ADVANCED_SEARCH_RESULTS_FOR: "SPANISH <b>Advanced</b> search results for: "
+  #_group_details.rhtml
+  COLLECTIONS_IN_THIS_GROUP: SPANISH Collections in this group
+  #_image_rows.rhtml
+  RESULTS_HITS: " \"SPANISH Results #{args[0]} - #{args[1]} of #{args[2]} hits\""
+  #_navigation.rhtml
+  REFINE_RESULTS: SPANISH Refine Results
+  MATERIAL_TYPES: SPANISH Material Types
+  UNFILTER_MATERIAL_TYPES: SPANISH Unfilter Material Types
+  UNFILTER_AVAILABILITIES : SPANISH Unfilter Availability
+  #_pagination.rhtml
+  PREVIOUS: 'SPANISH &lt;  Previous'
+  NEXT: 'SPANISH Next &gt;'
+  MORE_RESULTS: "SPANISH Find more results with the following databases:"
+  #_sort.rhtml
+  SORT_BY: "SPANISH Sort by: "
+  RELEVANCE: SPANISH Relevance
+  OLDEST_FIRST: "SPANISH Date: Oldest First"
+  NEWEST_FIRST: "SPANISH Date: Newest First"
+  AUTHOR_UP: "SPANISH Author: A..Z"
+  AUTHOR_DOWN: "SPANISH Author: Z..A"
+  #_spell_check.rhtml
+  DID_YOU_MEAN: "SPANISH Did you mean:"
+  MORE: "SPANISH [more]"
+  LESS: "SPANISH [less]"
+  #_see_also.rhtml
+  SEE_ALSO: "[ES] See also:"
+  #_subjects.rhtml
+  SUBJECTS: SPANISH Subjects
+  UNFILTER_SUBJECTS: SPANISH Unfilter Subjects
+  MORE_SUBJECTS: SPANISH [More Subjects...]
+  TOP_SUBJECTS: SPANISH [Only Top 10 Subjects...]
+  #advanced_search.rhtml
+  ADVANCED_SEARCH: SPANISH Advanced Search
+  FIND_RESULTS_FOR: SPANISH Find results for
+  MAXIMUM: "SPANISH Maximum"
+  LOOK_IN: "SPANISH Look in:"
+  ALL_THE_WORDS: SPANISH All the words
+  THE_EXACT_PHRASE: SPANISH The exact phrase
+  ANY_OF_THESE_WORDS: SPANISH Any of these words
+  AUTHOR: SPANISH Author
+  KEYWORD: SPANISH Keyword
+  SUBJECT: SPANISH Subject
+  TITLE: SPANISH Title
+  SIMPLE_SEARCH: SPANISH Simple Search
+  MAX_10: SPANISH 10 results per database
+  MAX_25: SPANISH 25 results per database
+  MAX_50: SPANISH 50 results per database
+  MAX_100: SPANISH 100 results per database
+  GROUPSEARCH: "SPANISH Groups to search"
+  #help.rhtml
+  OVERVIEW: SPANISH Overview
+  OVERVIEW_TEXT: SPANISH Welcome to LibraryFind!  This tool is a one-stop-shopping tool for academic searching.  Additionally, LibraryFind will learn how users search and the most frequent searches will be returned faster.   <br/>This tool is undergoing continuous development, improvement, and refinement.  In the coming months, you will notice many improvements and new features.  
+  FAQ: SPANISH FAQ
+  NUMBER_1: SPANISH 1)
+  QUESTION_1: SPANISH Why does my search take so long?
+  ANSWER_1: SPANISH Welcome to the world of federated search. There are actually a couple of factors that lead to the lengthiness of retrieval time within LibraryFind. First and foremost is the fact that the tool is querying resources from multiple targets. Navigating between these targets does slow the overall responsiveness of the tool because each target must return its results before the display can be generated (see related question - Why doesn'tis show results as they are found?). This delay is true of all federated search tools. However, unlike other tools, we are taking an activeapproach to alleviating this delay for the most often queried research topics. LibraryFind has been developed as a learning application, so themore often an item is requested, the faster that query will be run. Over time, the query becomes cached, negating any retrieval time. This will be an ongoing process, but one that we hope will be worthwhile.
+  NUMBER_2: SPANISH 2)
+  QUESTION_2: SPANISH Why doesn't it show results as they are found?
+  ANSWER_2: SPANISH Unlike most/all federated search tools, LibraryFind is unique in that we believe that the most relevant entries should be on the first page. This means that the query must evaluate all items retrieved in the search in order to apply relevancy. In the future, we will be looking at ways of both increasing the speed of the query as well as providing different display options so users can choose the one that best fits their searching style.
+  NUMBER_3: SPANISH 3)
+  QUESTION_3: SPANISH Why are some titles linked, while some are not?
+  ANSWER_3: SPANISH LibraryFind has a couple of very unique features to and this happens to be one. The tool actually found journal holdings using our OpenURL server allowing to tool to know if a particular vendor should have an item. If the vendor should have the item, then the link is displayed. If not, then the title is not linked and the user can click on the "Interlibrary Loan" link to find the item.
+  NUMBER_4: SPANISH 4)
+  QUESTION_4: SPANISH I clicked on a title and the vendor says that the article cannot be found?
+  ANSWER_4: SPANISH There are two possible scenarios in which this could happen. First, many vendors like Ebsco, index pre-prints. These are items that are not yet published, but are linked because they meet our holdings criteria (i.e., we have resources to present). In the future, these pre-print items will be marked and unlinked to minimize confusion. The second scenario occurs because of a lack of data from outside databases. We know thatthis is an issue and are looking at ways to try to accommodate these problems.
+  NUMBER_5: SPANISH 5)
+  QUESTION_5: SPANISH Do you have an advanced search?
+  ANSWER_5: "SPANISH At this point, there isn't a formal advanced search interface, but you can change the query to search different indexes. Currently, LibraryFind does all searches as keyword searches however, you can specify searches as title, author and subject searches by using the following mnemonics - ti: su: au: Example - ti:my title"
+  NUMBER_6: SPANISH 6)
+  QUESTION_6: SPANISH How can I improve my search?
+  ANSWER_6: SPANISH Example keyword search-  Mary's River<br/>Example phrase search-  "Mary's River"<br/>LibraryFind interprets your keyword search (Mary's River - without quotes) in the following order-<br/>&nbsp;&nbsp;&nbsp;Mary's River<br/>&nbsp;&nbsp;&nbsp;Mary's and River<br/>&nbsp;&nbsp;&nbsp;Mary's* and River*<br/>&nbsp;&nbsp;&nbsp;Mary's* or River*<br/>So if your search is for Mary's River (without quotes), you will also see results that referenced Mary's or just referenced River.  If you want to explicitly do a phrase search, you simply need to group the search with quotes, i.e., "Mary's River". 
+  NUMBER_7: SPANISH 7)
+  QUESTION_7: SPANISH How do I see only Articles, or Books?
+  ANSWER_7: SPANISH After a search, click the desired link under the "Refine Results" section of the left navigation bar. For example, if you know that you are looking for an article on women in mathematics, enter women in mathematics and click "Find It!"  After getting the search results, click the "Articles" link on the left.  This will filter out any books or images that were returned in your original search and just display the pertinent articles. To return to the initial search results, select the link with your search term in the upper-left bread-crumb filter trail.
+  NUMBER_8: SPANISH 8)
+  QUESTION_8: SPANISH How do I see the most recent items?
+  ANSWER_8: 'SPANISH Select the "Date: Newest first" option from the "Sort By" drop down in the upper-right.  However, if the item does not have an available date, it will appear at the end of the list, but may still be a recently published item.  For example, if you are interested in the latest research on the Montessori Method, enter it in the search field and click "Find It!"  Then, click "Date: Newest First" in the "Sort By" drop down of the results top-bar. If you want to return to the initial search results, select the "Relevance" option.'
+  NUMBER_9: SPANISH 9)
+  QUESTION_9: SPANISH What is the "Databases" section in the left navigation bar for?
+  ANSWER_9: SPANISH The database links in the "Databases" section of the left navigation bar allows you to see only the results from the corresponding database.  For example, if you see that "Academic Search Premiere" had over a million hits, you may want to focus on this database.  You can click on the "Academic Search Premiere" link and see some of the results from that database.  If those initial results don't include what you're looking for, then click on the "more from Academic Search Premiere" link.  This will take you to the corresponding database where you can enter your search and see more results.  To return to your initial search results, just click the Search results for "your search term" link at the top-left above the left navigation bar.
+  NUMBER_10: SPANISH 10)
+  QUESTION_10: SPANISH How do I send myself an email containing some of my search results?
+  ANSWER_10: SPANISH As you're searching and discovering items that you'd like to send, click on the "Save This Item" link.  Anything that you add to your "My Saved Items" list will be available throughout your browser session.  When you've completed your research, click the "My Saved Items" link to see everything that you've collected and enter your email address in the text field on the left-hand-side.  Then click the "Email Saved Items" link and you'll have the list of records sent to you.
+  #total number of help questions for display
+  HELP_TOTAL: SPANISH 10
+  #search.rhtml
+  LIBRARY_FIND_IS: "SPANISH LibraryFind is..."
+  OPEN_SOURCE: SPANISH an open source metasearch application developed by librarians for libraries, built with Ruby on Rails.
+  FIND_IT_LABEL: "SPANISH Find It:"
+  FIND_IT_1: SPANISH Enter your search in the above box and click Find It!
+  FIND_IT_2: SPANISH Your results will be displayed and ranked by relevance
+  GET_IT_LABEL: "SPANISH Get It:"
+  GET_IT_1: SPANISH Click the linked title to get to the full text
+  REFINE_IT_LABEL: "SPANISH Refine It:"
+  REFINE_IT_1: SPANISH Further refine your search by clicking links on the left
+  REFINE_IT_2: "SPANISH Return to your full list of results at any time by clicking your linked search on the upper-left"
+  FEATURES_LABEL: "SPANISH Some Current Features:"
+  FEATURES_1: "SPANISH Built-in OpenURL resolver"
+  FEATURES_2: "SPANISH 2-click find workflow"
+  FEATURES_3: "SPANISH Ability to locally index collections"
+  FEATURES_4: "SPANISH Web-based administration"
+  FEATURES_5: "SPANISH 3-tiered caching system (to improve speed of searches)"
+  FEATURES_6: "SPANISH Customizable user interface"
+  FOOTER: "SPANISH LibraryFind&reg; is software developed by the Oregon State University Libraries, funded in part by a grant from the State Library."
+  #record_controller.rb
+  NO_RESULTS: "SPANISH Your search did not return any results"
+  ERROR_OCCURED: " \"SPANISH The following error occurred while searching: '#{args[0]}'.<br/>Click the link labeled 'Report a Problem' to send an email with a description of the error.\""
+  DB_ERRORS: " \"SPANISH The search results are incomplete due to problems with specific databases.  Try your search again to see if a complete result set can be returned.  <br>Errors: #{args[0]}\""
+  ERRORS_GETTING_GROUPS: "SPANISH An error occured while getting group members.  Click the link labeled 'Report a Problem' to send an email with a description of the error."
+  FILTER_DID_NOT_MATCH: "SPANISH Your filter did not match any results"
+  IMAGE_NOT_FOUND: "SPANISH Image not found"
+  DB_ERRORS: "SPANISH One or more databases experienced errors during this search.  The results below may be incomplete and the most relavent results may not have been returned.  Try your search again to see if the issues have been resolved and to see if there are any more results."
+  SEARCH_STOPPED: "SPANISH The search was stopped before all databases were searched.  The results below may be incomplete and the most relavent results may not have been returned. "
+  ERROR_DETAILS: "SPANISH Click to see error details"
+  DB_PRIVATE: "SPANISH One or more databases require authentication before they can be queried.  Please login in order to view the hidden resource."
+  PRIVATE_DETAILS: "SPANISH Click to see private resources"
+  PROCESSING_RESULTS: "SPANISH Now retrieving and ranking search results..."
+  STOP_SEARCHING: "SPANISH Stop Searching"
+  STOP_SEARCHING_MESSAGE: "SPANISH Click the 'Stop Searching' button to stop the search where it is at and see the current result set. Note: this may mean that the most relevant results would not be returned."
+  NOW_SEARCHING: "SPANISH Now Searching:"
+  COMPLETED_SEARCHING: "SPANISH Completed Searching:"
+  #accueil_ALL
+      #_Left
+  EXPLORE_BY_SUBJECT: "Explore by Subject"
+  NEWS: "News, Media, Press"
+  ARTS: "Arts"
+  LAW: "Law, Administration,"
+  INSTITUTION: "Institutions"
+  ECONOMIE: "Economics, Business, Management"
+  HISTORY: "History"
+  LANGUAGES: "Languages, Literatures"
+  RECREATION: "Recreation, Sports, Tourism"
+  PHILOSOPHY: "Philosophy, Religion"
+  JOBS: "Search Jobs, jobs, training"
+  SCIENCE_TECH: "Science, technology, medicine"
+  SCIENCE_H: "Humanities and Social Sciences"
+  PRACTICAL: "Practical"
+  ART_19: "Art to 19th century"
+  ART_20: "Art of the 20th and 21st centuries"
+  ARCH: " Architecture"
+  DECO_ART: "Decorative arts, design, fashion"
+  GRAPHIC: "Graphics, comics"
+  PHOTOGRAPHY: "Photography"
+  MUSIC: "Music"
+  CINEMA: "Cinema"
+  PERF_ART: "Performing arts"
+      #_Middle
+  NEWS: "News"
+  SUBSCRIBE_NEWS: "Subscribe to news"
+  YOUR_LIBRARIAN: "YOUR LIBRARIAN SAW/READ/LISTENING"
+  BIBLIOGRAPHY: "Bibliography : "
+  EVENTS: "EVENTS"
+  EXPOSITION: "Expositions :"

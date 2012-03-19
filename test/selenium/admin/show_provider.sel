@@ -1,0 +1,12 @@
+|open|/admin||
+|includePartial|/admin/basic_admin_layout||
+|includePartial|/admin/navigation||
+|waitForVisible|link=List Providers||
+|click|link=List Providers||
+|includePartial|/admin/list_providers||
+|waitForVisible|link=test provider name||
+|click|link=test provider name||
+|includePartial|/admin/show_provider||
+|waitForTextPresent|Provider||
+|waitForVisible|link=Edit||
+

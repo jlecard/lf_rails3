@@ -1,0 +1,61 @@
+<%if @subjects!=nil and !@subjects.empty?%>
+  <div id="bSubjects" class="navigation"><b><%=translate('SUBJECTS')%></b> 
+  <% if @filter.assoc("subject")!=nil
+  		filter=build_unfilter_string("subject")	
+		params=build_filter_params(filter,@tab_template)%>
+		<%=link_to translate('UNFILTER_SUBJECTS'), 
+		    {  :action => 'retrieve_page', 
+				:controller=>'record', 
+				:params=>params},	:onclick=>"scroll(0,0);showWait()", :class=>"unfilter"%>
+	<%end%>
+    <div name="menuItem" id="tSubjects" class="expanded" init="0">
+      <div id="subjects_0">
+      <%count=0
+	  	@subjects.each{|_sub, _number| 
+		  if count< 5 
+		      if _sub!=nil and _sub!='' and _sub.to_s.strip!='undefined'
+				count=count+1
+				filter=build_filter_string("subject",_sub)	
+				params=build_filter_params(filter,@tab_template)%>
+				<%=link_to translate('RESULTS',[_sub,_number.to_s]), 
+				    {  :action => 'retrieve_page', 
+						:controller=>'record', 
+						:params=>params},	:onclick=>"scroll(0,0);showWait()"%>
+			  <%end%>
+		  <%end
+		}%>
+	  <%if @subjects.length>5%>
+		    <%=link_to_function translate('MORE_SUBJECTS'), "Element.hide('more_0');Element.show('more_subjects');Element.show('subjects_1')", {:style=>"text-decoration:underline", :id=>'more_0'}%>
+	  <%end%>
+	  </div>
+	  	  <%if @subjects.length>5%>
+
+		   <div id='more_subjects'>
+	      <%multiples=((@subjects.length)/5).ceil
+		  1.upto(multiples) { |i| %>
+			  <div id=<%='subjects_'+i.to_s%> style='display:none;'>
+		        <%@subjects[i*5..(i+1)*5-1].each{|_sub, _number| %>
+	  <%if _sub!=nil and _sub!='' and _sub.to_s.strip!='undefined'%>
+			<%filter=build_filter_string("subject",_sub)	
+				params=build_filter_params(filter,@tab_template)%>
+				<%=link_to translate('RESULTS',[_sub,_number.to_s]), 
+				    {  :action => 'retrieve_page', 
+						:controller=>'record', 
+						:params=>params},	:onclick=>"scroll(0,0);showWait()"%>
+			  <%end%>
+		  <%}%>
+		  <span id=<%='more_'+i.to_s%>>
+	  						<%=link_to_function translate('TOP_SUBJECTS'), "Element.hide('more_subjects');Element.show('more_0')", :style=>"text-decoration:underline"%>
+					<%if i<multiples%>
+						<%=link_to_function translate('MORE_SUBJECTS'), "Element.hide('more_"+i.to_s+"');Element.show('subjects_"+(i+1).to_s+"');Element.show('more_"+(i+1).to_s+"')", :style=>"text-decoration:underline"%>
+			  		<%end%> 
+					</span>
+	  </div>
+ <%  }%>
+ 
+	  </div>
+		<%end%>	  
+	</div>
+  </div>
+<%end%>    
+  

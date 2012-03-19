@@ -1,0 +1,15 @@
+|waitForTextPresent|Collection Groups||
+|waitForTextPresent|Name||
+|waitForTextPresent|Full name||
+|waitForTextPresent|agriculture||
+|waitForTextPresent|Agriculture||
+|waitForTextPresent|general||
+|waitForTextPresent|General||
+|waitForTextPresent|image||
+|waitForTextPresent|Images||
+|waitForTextPresent|books||
+|waitForTextPresent|Books||
+|waitForTextPresent|articles||
+|waitForTextPresent|Articles||
+|waitForVisible|link=Edit||
+|waitForVisible|link=Destroy||

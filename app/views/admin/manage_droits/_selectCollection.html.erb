@@ -1,0 +1,10 @@
+<select id="selectCollection_<%=id_role%>_<%=id_lieu%>" name="manage_droit[id_collection]">
+    <% 
+            collectionWithoutDefine = GetCollectionNotDefineForRoleByLocation(id_role, id_lieu); 
+    %>
+    <% collectionWithoutDefine.each do |collection| %>
+        <option value="<%= collection.id %>">
+            <%= collection.alt_name %>
+        </option>
+    <% end %>
+</select>

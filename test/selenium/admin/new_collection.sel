@@ -1,0 +1,48 @@
+|open|/admin||
+|includePartial|/admin/basic_admin_layout||
+|includePartial|/admin/navigation||
+|waitForVisible|link=Add a New Collection||
+|click|link=Add a New Collection||
+|waitForTextPresent|Add a New Collection||
+|waitForTextPresent|Name||
+|waitForTextPresent|Alternate Name||
+|waitForTextPresent|Connection Type||
+|waitForTextPresent|Z39.50||
+|waitForTextPresent|OAI-PMH ||
+|waitForTextPresent|Host||
+|waitForTextPresent|User||
+|waitForTextPresent|Password||
+|waitForTextPresent|Record Schema||
+|waitForTextPresent|Definition||
+|waitForTextPresent|URL||
+|waitForTextPresent|Material Type||
+|waitForTextPresent|Article||
+|waitForTextPresent|Book||
+|waitForTextPresent|Finding Aid||
+|waitForTextPresent|Image||
+|waitForTextPresent|Newspaper||
+|waitForTextPresent|Virtual||
+|waitForTextPresent|Vendor URL||
+|waitForTextPresent|Bib-1 Attributes||
+|includePartial|/admin/collection_form||
+|type|collection_name|test||
+|type|collection_alt_name|test collection||
+|click|collection_conn_type_z3950||
+|waitForVisible|xpath=//input[@id='collection_isword']||
+|click|collection_conn_type_oai||
+|waitForNotVisible|xpath=//input[@id='collection_isword']||
+|click|collection_conn_type_z3950||
+|waitForVisible|xpath=//input[@id='collection_isword']||
+|click|collection_isword||
+|type|collection_host|http://oasis.oregonstate.edu:210/INNOPAC||
+|type|collection_definition|ti=245;ti=130;au=100;au=110;au=700;au=710;callnum=099;callnum=090;callnum=086;callnum=050;ass_num=907b7;note=500;pub=260b;date=260c;subject=650;subject=651||
+|type|collection_record_schema|MARC21;xml||
+|type|collection_url|http://oasis.oregonstate.edu/record=b{ass_num}||
+|click|collection_mat_type_book||
+|type|collection_vendor_url|http://oasis.oregonstate.edu||
+|click|xpath=//input[@id='saveButton']||
+|includePartial|/admin/list_collections||
+|click|link=Next page||
+|waitForTextPresent|test||
+|waitForTextPresent|test collection||
+|waitForTextPresent|MARC21;xml||

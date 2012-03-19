@@ -1,0 +1,248 @@
+EN:
+  LOADING: Loading graph log...
+  NOTHING_TO_DISPLAY: No datas to display
+  TITLE_COLLECTION_GROUP: Collection groups logs (%)
+  TITLE_CONSULT: Consults logs (%)
+  TITLE_FACETTE: Facettes logs (%)
+  TITLE_MAIL: Mails logs (%)
+  TITLE_PRINT: Prints logs (%)
+  TITLE_REBONCE: Rebounces logs (%)
+  TITLE_RSS: Rss logs (%)
+  Statistic: Statistic
+  Used: Utilisator
+  Year: Year
+  Month: Month
+  Title: Title 
+  
+  Types: types of exportations 
+  Object_type: Types 
+  Notices: Documents
+  search_input: 1st query
+  search_input2: 2nd query
+  search_input3: 3rd query
+  search_group: collection groupe
+  tab_filter: Tab
+  search_type: Search type
+  search_type_label: Search type
+  idDoc: Document Id
+  collection_id: Collection Id
+  alt_name: Collection Name
+  material_type: Material Type
+  profil: Profile
+ 
+  doc_identifier: Identifier
+  doc_collection_id: Collection id
+  dc_title: Title
+  ptitle: pTitle
+  dc_type: Type
+  notes_avg: notes_avg
+  notes_count: Notes count
+  comments_count: Comments count
+  comments_count_public: Public Comments count 
+  notices_count: Notices count 
+  tags_count: Tags count
+  tags_count_public: Public Tags count
+  subscriptions_count: Subscriptions count
+  lists_count: 	Lists count
+  lists_count_public: Public Lists count
+  
+  
+  Log_liste_consult: Consultations of listes
+  Logcart: Carts
+  Log_mail_export: Documents sent by mail or by exportation
+  Log_rebonce_tag: Rebonce on tags
+  Log_rebonce_mode: Rebonce on tag profile list
+  Log_facet: Facette
+  Log_save_req: query to save
+  Log_comment_note: Comments and note
+  Log_history_search: query's historic
+  
+  label_ : None
+  label_day: day
+  label_month: month
+  label_year: year
+  
+  search_tab_subject_id: Theme
+  
+  indoor: Localisation
+  l_indoor: Indoor
+  l_outdoor: Outdoor
+  
+  collection_name: Collection
+  
+  date: Date
+  total: Nombre
+  
+  notice_id: Notice
+  liste_id: Liste
+
+  tag_label: Mot clé
+  
+  name: Pseudo
+  uuid: Identifiant
+  
+  title: Titre
+  
+  facette: Facette
+  availability: Disponibilité
+  lang: Langue
+  subject: Sujet
+  
+FR:
+  LOADING: Chargement des statistiques des rebonds en cours...
+  NOTHING_TO_DISPLAY: Aucune donnée à afficher
+  TITLE_COLLECTION_GROUP: Collection groups logs (%)
+  TITLE_CONSULT: Consults logs (%)
+  TITLE_FACETTE: Facettes logs (%)
+  TITLE_MAIL: Mails logs (%)
+  TITLE_PRINT: Statistiques de liens d'impression (%)
+  TITLE_REBONCE: Statistiques de rebonds (%)
+  TITLE_RSS: statistiques de liens Rss (%)
+  history_search: statistiques de requetes (%)
+  Statistic: Statistique
+  Used: Utilisateurs
+  Year: Année
+  Month: Mois
+  Title: Titre 
+  Types: types d'exportations 
+  Object_type: Types 
+  Notices: Documents
+  search_input: 1er requête
+  search_input2: 2ème requête
+  search_input3: 3ème requête
+  search_group: Groupe de collection
+  tab_filter: Onglet
+  search_type : Type de recherche
+  search_type_label : Type de recherche
+  idDoc: Id Document 
+  collection_id: Id Collection 
+  alt_name: Nom Collection
+  material_type: Type de document
+  profil: Profil
+  
+  doc_identifier: Identifiant
+  doc_collection_id: Id Collection
+  dc_title: Titre
+  ptitle: pTitre
+  dc_type: Type
+  notes_avg: Note moyenne
+  notes_count: Nombre de notes
+  comments_count: Nombre de commentaires
+  comments_count_public: Nombre de commentaires publiques
+  notices_count: Nombre de notices
+  tags_count: Nombre de tags
+  tags_count_public: Nombre de tags publiques
+  subscriptions_count: Nombre de suivis
+  lists_count:  Nombre de listes
+  lists_count_public: Nombres de listes publiques
+  
+  
+  Log_liste_consult: Consultations de listes
+  Logcart: Paniers
+  Log_mail_export: Notice envoyé par mail ou par export
+  Log_rebonce_tag: Rebonce sur tags
+  Log_rebonce_mode: Rebonce sur tag profile liste
+  Log_facet: Facette
+  Log_save_req: Sauvegarde des requêtes
+  Log_comment_note: Commentaire et note
+  Log_history_search: Historique de requêtes
+  
+  label_ : Aucun
+  label_day: jour
+  label_month: mois
+  label_year: année
+  
+  search_tab_subject_id: Theme
+  
+  indoor: Localisation
+  l_indoor: Interne
+  l_outdoor: Externe
+  
+  collection_name: Collection
+  
+  date: Date
+  total: Nombre
+  
+  notice_id: Notice
+  liste_id: Liste
+  
+  tag_label: Mot clé
+  
+  name: Pseudo
+  uuid: Identifiant
+  
+  title: Titre
+  
+  facette: Facette
+  availability: Disponibilité
+  lang: Langue
+  subject: Sujet
+  
+ES:
+  LOADING: Chargement des statistiques des rebonds en cours...
+  NOTHING_TO_DISPLAY: Aucune donnée à afficher
+  TITLE_COLLECTION_GROUP: Collection groups logs (%)
+  TITLE_CONSULT: Consults logs (%)
+  TITLE_FACETTE: Facettes logs (%)
+  TITLE_MAIL: Mails logs (%)
+  TITLE_PRINT: Statistiques de liens d'impression (%)
+  TITLE_REBONCE: Statistiques de rebonds (%)
+  TITLE_RSS: statistiques de liens Rss (%)
+  history_search: statistiques de requetes (%)
+  Statistic: Statistique
+  Used: Utilisateurs
+  Year: Année
+  Month: Mois
+  Title: Titre 
+  Types: types d'exportations 
+  Object_type: Types 
+  Notices: Documents
+  search_input: 1er requête
+  search_input2: 2ème requête
+  search_input3: 3ème requête
+  search_group: groupe de collection
+  tab_filter: Onglet
+  
+  
+  Log_liste_consult: Consultations de listes
+  Logcart: Paniers
+  Log_mail_export: Notice envoyé par mail ou par export
+  Log_rebonce_tag: Rebonce sur tags
+  Log_rebonce_mode: Rebonce sur tag profile liste
+  Log_facet: Facette
+  Log_save_req: Sauvegarde des requêtes
+  Log_comment_note: Commentaire et note
+  Log_history_search: Historique de requêtes
+  
+  label_: Aucun
+  label_day: jour
+  label_month: mois
+  label_year: année
+  
+  search_tab_subject_id: Theme
+  
+  indoor: Localisation
+  l_indoor: Interne
+  l_outdoor: Externe
+  
+  collection_name: Collection
+  
+  date: Date
+  total: Nombre
+  
+  notice_id: Notice
+  liste_id: Liste
+  
+  tag_label: Mot clé
+  
+  name: Pseudo
+  uuid: Identifiant
+  
+  title: Titre
+  
+  facette: Facette
+  availability: Disponibilité
+  lang: Langue
+  subject: Sujet
+  
+  

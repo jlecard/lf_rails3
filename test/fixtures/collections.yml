@@ -1,0 +1,568 @@
+# LibraryFind - Quality find done better.
+# Copyright (C) 2007 Oregon State University
+#
+# This program is free software; you can redistribute it and/or modify it under 
+# the terms of the GNU General Public License as published by the Free Software 
+# Foundation; either version 2 of the License, or (at your option) any later 
+# version.
+#
+# This program is distributed in the hope that it will be useful, but WITHOUT 
+# ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS 
+# FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License along with 
+# this program; if not, write to the Free Software Foundation, Inc., 59 Temple 
+# Place, Suite 330, Boston, MA 02111-1307 USA
+#
+# Questions or comments on this program may be addressed to:
+#
+# LibraryFind
+# 121 The Valley Library
+# Corvallis OR 97331-4501
+#
+# http://libraryfind.org
+--- 
+collections_034: 
+  virtual: 
+  user: ""
+  name: oasis
+  vendor_url: http://oasis.oregonstate.edu
+  conn_type: z3950
+  bib_attr: "@attr 5=100"
+  mat_type: Book
+  url: http://oasis.oregonstate.edu/record=b{ass_num}
+  record_schema: MARC21;xml
+  alt_name: Oregon State University Library Catalog
+  id: "145"
+  definition: ti=245;ti=130;au=100;au=110;au=700;au=710;callnum=099;callnum=090;callnum=086;callnum=050;ass_num=907b7;note=500;pub=260b;date=260c;subject=650;subject=651
+  host: oasis.oregonstate.edu:210/INNOPAC
+  isword: "1"
+  pass: ""
+collections_023: 
+  virtual: 
+  user: 
+  name: hdl_1957_497
+  vendor_url: http://ir.library.oregonstate.edu/dspace/community-list
+  conn_type: oai
+  bib_attr: 
+  mat_type: Article
+  url: ""
+  record_schema: oai_dc
+  alt_name: Course Materials (BEE)
+  id: "113"
+  definition: 
+  host: http://ir.library.oregonstate.edu/dspace-oai/request
+  isword: "0"
+  pass: 
+collections_012: 
+  virtual: dspace
+  user: 
+  name: hdl_1957_12
+  vendor_url: http://ir.library.oregonstate.edu/dspace/community-list
+  conn_type: oai
+  bib_attr: 
+  mat_type: Article
+  url: ""
+  record_schema: oai_dc
+  alt_name: Publications and Reports
+  id: "102"
+  definition: 
+  host: http://ir.library.oregonstate.edu/dspace-oai/request
+  isword: "0"
+  pass: 
+collections_001: 
+  virtual: image
+  user: 
+  name: EAD
+  vendor_url: http://digitalcollections.library.oregonstate.edu/EAD
+  conn_type: oai
+  bib_attr: 
+  mat_type: Finding Aid
+  url: 
+  record_schema: oai_dc
+  alt_name: OSU EAD
+  id: "13"
+  definition: 
+  host: http://digitalcollections.library.oregonstate.edu/cgi-bin/oai.exe
+  isword: "0"
+  pass: 
+collections_024: 
+  virtual: dspace
+  user: 
+  name: hdl_1957_498
+  vendor_url: http://ir.library.oregonstate.edu/dspace/community-list
+  conn_type: oai
+  bib_attr: 
+  mat_type: Article
+  url: ""
+  record_schema: oai_dc
+  alt_name: Presentations (BEE)
+  id: "114"
+  definition: 
+  host: http://ir.library.oregonstate.edu/dspace-oai/request
+  isword: "0"
+  pass: 
+collections_013: 
+  virtual: dspace
+  user: 
+  name: hdl_1957_22
+  vendor_url: http://ir.library.oregonstate.edu/dspace/community-list
+  conn_type: oai
+  bib_attr: 
+  mat_type: Article
+  url: ""
+  record_schema: oai_dc
+  alt_name: Presentations and Posters
+  id: "103"
+  definition: 
+  host: http://ir.library.oregonstate.edu/dspace-oai/request
+  isword: "0"
+  pass: 
+collections_002: 
+  virtual: image
+  user: 
+  name: archives
+  vendor_url: http://digitalcollections.library.oregonstate.edu/archives
+  conn_type: oai
+  bib_attr: 
+  mat_type: Image
+  url: 
+  record_schema: oai_dc
+  alt_name: Archives
+  id: "14"
+  definition: 
+  host: http://digitalcollections.library.oregonstate.edu/cgi-bin/oai.exe
+  isword: "0"
+  pass: 
+collections_025: 
+  virtual: dspace
+  user: 
+  name: hdl_1957_8
+  vendor_url: http://ir.library.oregonstate.edu/dspace/community-list
+  conn_type: oai
+  bib_attr: 
+  mat_type: Article
+  url: ""
+  record_schema: oai_dc
+  alt_name: "Honors College "
+  id: "115"
+  definition: 
+  host: http://ir.library.oregonstate.edu/dspace-oai/request
+  isword: "0"
+  pass: 
+collections_014: 
+  virtual: 
+  user: 
+  name: hdl_1957_23
+  vendor_url: http://ir.library.oregonstate.edu/dspace/community-list
+  conn_type: oai
+  bib_attr: 
+  mat_type: Article
+  url: ""
+  record_schema: oai_dc
+  alt_name: "Internal Reports and White Papers "
+  id: "104"
+  definition: 
+  host: http://ir.library.oregonstate.edu/dspace-oai/request
+  isword: "0"
+  pass: 
+collections_003: 
+  virtual: image
+  user: 
+  name: bracero
+  vendor_url: http://digitalcollections.library.oregonstate.edu/bracero
+  conn_type: oai
+  bib_attr: 
+  mat_type: Image
+  url: 
+  record_schema: oai_dc
+  alt_name: Braceros in Oregon Photograph Collection
+  id: "15"
+  definition: 
+  host: http://digitalcollections.library.oregonstate.edu/cgi-bin/oai.exe
+  isword: "0"
+  pass: 
+collections_026: 
+  virtual: dspace
+  user: 
+  name: hdl_1957_83
+  vendor_url: http://ir.library.oregonstate.edu/dspace/community-list
+  conn_type: oai
+  bib_attr: 
+  mat_type: Article
+  url: ""
+  record_schema: oai_dc
+  alt_name: Electronic Books
+  id: "116"
+  definition: 
+  host: http://ir.library.oregonstate.edu/dspace-oai/request
+  isword: "0"
+  pass: 
+collections_015: 
+  virtual: dspace
+  user: 
+  name: hdl_1957_257
+  vendor_url: http://ir.library.oregonstate.edu/dspace/community-list
+  conn_type: oai
+  bib_attr: 
+  mat_type: Article
+  url: ""
+  record_schema: oai_dc
+  alt_name: The Messenger
+  id: "105"
+  definition: 
+  host: http://ir.library.oregonstate.edu/dspace-oai/request
+  isword: "0"
+  pass: 
+collections_004: 
+  virtual: image
+  user: 
+  name: chembond
+  vendor_url: http://osulibrary.oregonstate.edu/specialcollections/coll/pauling/bond/index.html
+  conn_type: oai
+  bib_attr: 
+  mat_type: Image
+  url: 
+  record_schema: oai_dc
+  alt_name: Nature of the Chemical Bond
+  id: "16"
+  definition: 
+  host: http://digitalcollections.library.oregonstate.edu/cgi-bin/oai.exe
+  isword: "0"
+  pass: 
+collections_027: 
+  virtual: dspace
+  user: 
+  name: hdl_1957_89
+  vendor_url: http://ir.library.oregonstate.edu/dspace/community-list
+  conn_type: oai
+  bib_attr: 
+  mat_type: Article
+  url: ""
+  record_schema: oai_dc
+  alt_name: Electronic Theses and Dissertations
+  id: "117"
+  definition: 
+  host: http://ir.library.oregonstate.edu/dspace-oai/request
+  isword: "0"
+  pass: 
+collections_016: 
+  virtual: dspace
+  user: 
+  name: hdl_1957_28
+  vendor_url: http://ir.library.oregonstate.edu/dspace/community-list
+  conn_type: oai
+  bib_attr: 
+  mat_type: Article
+  url: ""
+  record_schema: oai_dc
+  alt_name: Publications and Reports (ORNHIC)
+  id: "106"
+  definition: 
+  host: http://ir.library.oregonstate.edu/dspace-oai/request
+  isword: "0"
+  pass: 
+collections_005: 
+  virtual: image
+  user: 
+  name: corflood64
+  vendor_url: http://digitalcollections.library.oregonstate.edu/corflood64
+  conn_type: oai
+  bib_attr: 
+  mat_type: Image
+  url: 
+  record_schema: oai_dc
+  alt_name: 1964 Corvallis Flood
+  id: "17"
+  definition: 
+  host: http://digitalcollections.library.oregonstate.edu/cgi-bin/oai.exe
+  isword: "0"
+  pass: 
+collections_028: 
+  virtual: dspace
+  user: 
+  name: hdl_1957_93
+  vendor_url: http://ir.library.oregonstate.edu/dspace/community-list
+  conn_type: oai
+  bib_attr: 
+  mat_type: Article
+  url: ""
+  record_schema: oai_dc
+  alt_name: U.S. Forest Service Research Legacy
+  id: "118"
+  definition: 
+  host: http://ir.library.oregonstate.edu/dspace-oai/request
+  isword: "0"
+  pass: 
+collections_017: 
+  virtual: dspace
+  user: 
+  name: hdl_1957_29
+  vendor_url: http://ir.library.oregonstate.edu/dspace/community-list
+  conn_type: oai
+  bib_attr: 
+  mat_type: Article
+  url: ""
+  record_schema: oai_dc
+  alt_name: Oregon Explorer
+  id: "107"
+  definition: 
+  host: http://ir.library.oregonstate.edu/dspace-oai/request
+  isword: "0"
+  pass: 
+collections_006: 
+  virtual: image
+  user: 
+  name: cultural
+  vendor_url: http://digitalcollections.library.oregonstate.edu/cultural
+  conn_type: oai
+  bib_attr: 
+  mat_type: Image
+  url: 
+  record_schema: oai_dc
+  alt_name: Oregon Multicultural Archives
+  id: "18"
+  definition: 
+  host: http://digitalcollections.library.oregonstate.edu/cgi-bin/oai.exe
+  isword: "0"
+  pass: 
+collections_029: 
+  virtual: 
+  user: 
+  name: hdl_1957_957
+  vendor_url: http://ir.library.oregonstate.edu/dspace/community-list
+  conn_type: oai
+  bib_attr: 
+  mat_type: Article
+  url: ""
+  record_schema: oai_dc
+  alt_name: "Cooperative Institutional Research Program Reports "
+  id: "119"
+  definition: 
+  host: http://ir.library.oregonstate.edu/dspace-oai/request
+  isword: "0"
+  pass: 
+collections_018: 
+  virtual: dspace
+  user: 
+  name: hdl_1957_31
+  vendor_url: http://ir.library.oregonstate.edu/dspace/community-list
+  conn_type: oai
+  bib_attr: 
+  mat_type: Article
+  url: ""
+  record_schema: oai_dc
+  alt_name: Water and Watersheds Initiative
+  id: "108"
+  definition: 
+  host: http://ir.library.oregonstate.edu/dspace-oai/request
+  isword: "0"
+  pass: 
+collections_007: 
+  virtual: image
+  user: 
+  name: dna
+  vendor_url: http://digitalcollections.library.oregonstate.edu/dna
+  conn_type: oai
+  bib_attr: 
+  mat_type: Image
+  url: 
+  record_schema: oai_dc
+  alt_name: DNA
+  id: "19"
+  definition: 
+  host: http://digitalcollections.library.oregonstate.edu/cgi-bin/oai.exe
+  isword: "0"
+  pass: 
+collections_030: 
+  virtual: 
+  user: 
+  name: hdl_1957_958
+  vendor_url: http://ir.library.oregonstate.edu/dspace/community-list
+  conn_type: oai
+  bib_attr: 
+  mat_type: Article
+  url: ""
+  record_schema: oai_dc
+  alt_name: Faculty Survey of Student Engagement Reports
+  id: "120"
+  definition: 
+  host: http://ir.library.oregonstate.edu/dspace-oai/request
+  isword: "0"
+  pass: 
+collections_019: 
+  virtual: dspace
+  user: 
+  name: hdl_1957_4
+  vendor_url: http://ir.library.oregonstate.edu/dspace/community-list
+  conn_type: oai
+  bib_attr: 
+  mat_type: Article
+  url: ""
+  record_schema: oai_dc
+  alt_name: "Papers, Articles, and Conference Proceedings "
+  id: "109"
+  definition: 
+  host: http://ir.library.oregonstate.edu/dspace-oai/request
+  isword: "0"
+  pass: 
+collections_008: 
+  virtual: image
+  user: 
+  name: herbarium
+  vendor_url: http://digitalcollections.library.oregonstate.edu/herbarium
+  conn_type: oai
+  bib_attr: 
+  mat_type: Image
+  url: 
+  record_schema: oai_dc
+  alt_name: Herbarium Specimens Collection
+  id: "20"
+  definition: 
+  host: http://digitalcollections.library.oregonstate.edu/cgi-bin/oai.exe
+  isword: "0"
+  pass: 
+collections_031: 
+  virtual: 
+  user: 
+  name: hdl_1957_959
+  vendor_url: http://ir.library.oregonstate.edu/dspace/community-list
+  conn_type: oai
+  bib_attr: 
+  mat_type: Article
+  url: ""
+  record_schema: oai_dc
+  alt_name: National Survey of Student Engagement Reports
+  id: "121"
+  definition: 
+  host: http://ir.library.oregonstate.edu/dspace-oai/request
+  isword: "0"
+  pass: 
+collections_020: 
+  virtual: dspace
+  user: 
+  name: hdl_1957_456
+  vendor_url: http://ir.library.oregonstate.edu/dspace/community-list
+  conn_type: oai
+  bib_attr: 
+  mat_type: Article
+  url: ""
+  record_schema: oai_dc
+  alt_name: Bioresource Research
+  id: "110"
+  definition: 
+  host: http://ir.library.oregonstate.edu/dspace-oai/request
+  isword: "0"
+  pass: 
+collections_009: 
+  virtual: image
+  user: 
+  name: pawardsmedals
+  vendor_url: http://digitalcollections.library.oregonstate.edu/pawardsmedals
+  conn_type: oai
+  bib_attr: 
+  mat_type: Image
+  url: 
+  record_schema: oai_dc
+  alt_name: Pauling's Awards and Medals
+  id: "21"
+  definition: 
+  host: http://digitalcollections.library.oregonstate.edu/cgi-bin/oai.exe
+  isword: "0"
+  pass: 
+collections_032: 
+  virtual: 
+  user: 
+  name: hdl_1957_961
+  vendor_url: http://ir.library.oregonstate.edu/dspace/community-list
+  conn_type: oai
+  bib_attr: 
+  mat_type: Article
+  url: ""
+  record_schema: oai_dc
+  alt_name: Your First Year College Year Reports
+  id: "122"
+  definition: 
+  host: http://ir.library.oregonstate.edu/dspace-oai/request
+  isword: "0"
+  pass: 
+collections_021: 
+  virtual: dspace
+  user: 
+  name: hdl_1957_495
+  vendor_url: http://ir.library.oregonstate.edu/dspace/community-list
+  conn_type: oai
+  bib_attr: 
+  mat_type: Article
+  url: ""
+  record_schema: oai_dc
+  alt_name: Research Publications (BEE)
+  id: "111"
+  definition: 
+  host: http://ir.library.oregonstate.edu/dspace-oai/request
+  isword: "0"
+  pass: 
+collections_010: 
+  virtual: image
+  user: 
+  name: sickle
+  vendor_url: http://osulibrary.oregonstate.edu/specialcollections/coll/pauling/blood/index.html
+  conn_type: oai
+  bib_attr: 
+  mat_type: Image
+  url: 
+  record_schema: oai_dc
+  alt_name: Sickle-Cell Anemia Collection
+  id: "23"
+  definition: 
+  host: http://digitalcollections.library.oregonstate.edu/cgi-bin/oai.exe
+  isword: "0"
+  pass: 
+collections_033: 
+  virtual: 
+  user: ""
+  name: ORGB
+  vendor_url: http://0-infoweb.newsbank.com.oasis.oregonstate.edu/
+  conn_type: z3950
+  bib_attr: 
+  mat_type: Newspaper
+  url: ""
+  record_schema: Marc21
+  alt_name: Oregonian
+  id: "144"
+  definition: ati=245a;ti=730a;static=856u;date=0058;
+  host: catalog.newsbank.com:210/ORGB
+  isword: "0"
+  pass: ""
+collections_022: 
+  virtual: dspace
+  user: 
+  name: hdl_1957_496
+  vendor_url: http://ir.library.oregonstate.edu/dspace/community-list
+  conn_type: oai
+  bib_attr: 
+  mat_type: Article
+  url: ""
+  record_schema: oai_dc
+  alt_name: Theses and Dissertations (BEE)
+  id: "112"
+  definition: 
+  host: http://ir.library.oregonstate.edu/dspace-oai/request
+  isword: "0"
+  pass: 
+collections_011: 
+  virtual: image
+  user: 
+  name: streamsurvey
+  vendor_url: http://osulibrary.oregonstate.edu/digitalcollections/pacificNWstream/
+  conn_type: oai
+  bib_attr: 
+  mat_type: Image
+  url: 
+  record_schema: oai_dc
+  alt_name: NW Stream Survey
+  id: "24"
+  definition: 
+  host: http://digitalcollections.library.oregonstate.edu/cgi-bin/oai.exe
+  isword: "0"
+  pass: 

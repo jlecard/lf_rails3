@@ -1,0 +1,29 @@
+<div id="page_contents">
+    <%= render(:partial => "admin/navigation") %>
+    <div id="center" class="column middle">
+        <h1>Listing editorials</h1>
+        <table>
+            <tr>
+            </tr>
+            <% for editorial in @editorials %>
+            <tr>
+                <td>
+                    <%=h editorial.label %>
+                </td>
+                <td>
+                    <%= link_to 'Show', {:action => 'show', :id => editorial.id} %>
+                </td>
+                <td>
+                    <%= link_to 'Edit', {:action => 'edit', :id => editorial.id} %>
+                </td>
+                <td>
+                    <%= link_to 'Destroy', {:action => 'destroy', :id => editorial.id}, :confirm => 'Are you sure?', :method => :delete %>
+                </td>
+            </tr>
+            <% end %>
+        </table>
+        <br/>
+        <%= link_to 'New editorial', new_admin_editorial_path %>
+		<%= link_to 'Affecte editorial', {:action => 'affecte' } %>
+    </div>
+</div>

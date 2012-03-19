@@ -1,0 +1,64 @@
+--- !ruby/object:Gem::Specification 
+name: sru
+version: !ruby/object:Gem::Version 
+  version: 0.0.5
+platform: ruby
+authors: 
+- Ed Summers
+autorequire: sru
+bindir: bin
+cert_chain: []
+
+date: 2008-09-12 00:00:00 -07:00
+default_executable: 
+dependencies: []
+
+description: 
+email: ehs@pobox.com
+executables: []
+
+extensions: []
+
+extra_rdoc_files: []
+
+files: 
+- lib/sru
+- lib/sru/xpath.rb
+- lib/sru/explain.rb
+- lib/sru/exception.rb
+- lib/sru/search_retrieve.rb
+- lib/sru/response.rb
+- lib/sru/scan.rb
+- lib/sru/term.rb
+- lib/sru/client.rb
+- lib/sru.rb
+- test/tc_rexml_client_test.rb
+- test/tc_libxml_client_test.rb
+has_rdoc: true
+homepage: http://www.textualize.com/sruby
+post_install_message: 
+rdoc_options: []
+
+require_paths: 
+- lib
+required_ruby_version: !ruby/object:Gem::Requirement 
+  requirements: 
+  - - ">="
+    - !ruby/object:Gem::Version 
+      version: "0"
+  version: 
+required_rubygems_version: !ruby/object:Gem::Requirement 
+  requirements: 
+  - - ">="
+    - !ruby/object:Gem::Version 
+      version: "0"
+  version: 
+requirements: []
+
+rubyforge_project: 
+rubygems_version: 1.3.1
+signing_key: 
+specification_version: 2
+summary: a Ruby library for Search and Retrieve by URL
+test_files: []
+

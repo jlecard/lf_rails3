@@ -1,0 +1,12 @@
+|open|/admin||
+|includePartial|/admin/basic_admin_layout||
+|includePartial|/admin/navigation||
+|waitForVisible|link=List Collections||
+|click|link=List Collections||
+|includePartial|/admin/list_collections||
+|waitForVisible|link=Archives||
+|click|link=Archives||
+|includePartial|/admin/show_collection||
+|waitForTextPresent|Collection||
+|waitForVisible|link=Edit||
+

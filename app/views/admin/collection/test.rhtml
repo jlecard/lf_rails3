@@ -1,0 +1,62 @@
+<div id="page_contents">
+<%= render(:partial => "admin/navigation")%>
+<div id="center"  class="column">
+<h2><%=translate('DIAGNOSTIC_RESULTS')%></h2>
+<p>
+<%
+  id = "c" + @collection.id.to_s
+  qtype = Array.new()
+  arg = Array.new()
+
+  qtype[0] = "keyword"
+  arg[0] = "test"
+  start = 1
+  max = 10
+
+  if @collection.conn_type=="oai"
+     require 'oai'
+     client = OAI::Client.new @collection.host, :parser =>PARSER_TYPE
+     records = client.list_records :set => @collection.name, :metadata_prefix => @collection.record_schema
+     if records == nil
+%>
+	<%=translate('CONFIGURATION_INVALID')%> <%
+      else
+         if records.to_a.length > 0
+%>
+	<%=translate('SUCCESS',records.to_a.length.to_s)%> 
+<%
+	  else
+%>
+	<%=translate('ZERO_RECORDS')%> 
+<%
+	  end
+       end
+  else
+  require 'soap/wsdlDriver'
+  driver = SOAP::WSDLDriverFactory.new(::LIBRARYFIND_WSDL_HOST).create_rpc_driver
+  begin
+    tmpResults = driver.send :Search, id, qtype, arg, start, max
+
+    if tmpResults != nil
+%>
+   <%=translate('TOTAL_RESULTS',tmpResults.length)%><br /><br />
+   <%=translate('TITLE_LABEL',tmpResults[0].ptitle)%><br /><br />
+   <%=translate('ABSTRACT_LABEL',tmpResults[0].abstract)%><br /><br />
+   <%=translate('SUCCESSFUL_SEARCH')%><br /><br />
+<%
+     else
+%>
+   <%=translate('NO_RESULTS')%>
+<%
+     end
+   rescue
+%>
+    <%=translate('ERROR_OCCURED')%>
+<%
+    end
+    end
+%>
+
+</p>
+</div>
+</div>

@@ -1,0 +1,34 @@
+|open|/selenium/setup||
+|open|/record/search||
+|setTimeout|600000||
+|waitForVisible|link=Advanced Search||
+|click|link=Advanced Search||
+|includePartial|advanced_search_layout||
+|type|xpath=//input[@id='query[string_exact]']|higher education||
+|select|query[max]|50 results per database||
+|click|xpath=//input[@id='advancedSubmitButton']||
+|waitForVisible|xpath=//img[@src='/images/wait.gif']||
+|waitForNotVisible|xpath=//img[@src='/images/wait.gif']||
+|waitForTextPresent|Refine Results||
+|includePartial|advanced_results_layout||
+|verifyTextNotPresent|Did you mean:||
+|waitForTextPresent|Databases||
+|waitForVisible|link=Articles (*||
+|click|link=Articles (*||
+|waitForVisible|xpath=//img[@src='/images/wait.gif']||
+|waitForNotVisible|xpath=//img[@src='/images/wait.gif']||
+|includePartial|advanced_results_layout||
+|waitForTextPresent|[Article]||
+|verifyTextNotPresent|[Book]||
+|waitForTextPresent|Databases||
+|waitForVisible|link='"higher education"'||
+|click|link='"higher education"'||
+|waitForTextPresent|Material Types||
+|waitForVisible|link=Books (*||
+|click|link=Books (*||
+|waitForVisible|xpath=//img[@src='/images/wait.gif']||
+|waitForNotVisible|xpath=//img[@src='/images/wait.gif']||
+|includePartial|advanced_results_layout||
+|verifyTextNotPresent|[Article]||
+|waitForTextPresent|[Book]||
+Source: $Id: advanced_type_filtering.sel 499 2006-11-26 11:45:27Z herlockt $

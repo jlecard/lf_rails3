@@ -1,0 +1,21 @@
+<div id="page_contents">
+    <%= render(:partial => "admin/navigation") %>
+    <div id="center" class="column middle">
+        <h1><%=translate('NEW_ROLE')%></h1>
+        <br />
+        <% form_for(:manage_role, @manage_roles, :url => {:action => 'create'}) do |f| %>
+          <%= f.error_messages %>
+
+          <p>
+            <%= f.label translate('ROLE_NAME')%>
+            <br />
+            <%= f.text_field :id_role %>
+          </p>
+          <p>
+            <%= f.submit translate("SAVE") %>
+          </p>
+        <% end %>
+
+        <%= link_to translate('BACK'), admin_manage_roles_path %>
+    </div>
+</div>

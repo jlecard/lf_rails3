@@ -1,0 +1,58 @@
+|open|/selenium/setup||
+|open|/record/search||
+|setTimeout|600000||
+|type|xpath=//input[@id='query[string]']|wter|
+|click|xpath=//input[@id='submitButton']||
+|waitForTextPresent|Did you mean:||
+|waitForVisible|link=winter||
+|waitForVisible|link=[more]||
+|click|link=[more]||
+|waitForVisible|link=wt er||
+|waitForVisible|link=water||
+|waitForVisible|link=weer||
+|verifyNotVisible|link=[more]||
+|waitForVisible|link=[less]||
+|click|link=[less]||
+|waitForNotVisible|link=water||
+|waitForVisible|link=winter||
+|verifyNotVisible|link=wt er||
+|verifyNotVisible|link=weer||
+|verifyNotVisible|link=[less]||
+|waitForVisible|link=[more]||
+|click|link=[more]||
+|waitForVisible|link=water||
+|click|link=water||
+|waitForVisible|xpath=//img[@src='/images/wait.gif']||
+|waitForNotVisible|xpath=//img[@src='/images/wait.gif']||
+|waitForTextPresent|Refine Results||
+|includePartial|basic_results_layout||
+|waitForVisible|link=Advanced Search||
+|click|link=Advanced Search||
+|includePartial|advanced_search_layout||
+|type|xpath=//input[@id='query[string]']|wter|
+|click|xpath=//input[@id='advancedSubmitButton']||
+|waitForTextPresent|Did you mean:||
+|waitForVisible|link=winter||
+|waitForVisible|link=[more]||
+|click|link=[more]||
+|waitForVisible|link=wt er||
+|waitForVisible|link=water||
+|waitForVisible|link=weer||
+|verifyNotVisible|link=[more]||
+|waitForVisible|link=[less]||
+|click|link=[less]||
+|waitForNotVisible|link=water||
+|waitForVisible|link=winter||
+|verifyNotVisible|link=wt er||
+|verifyNotVisible|link=weer||
+|verifyNotVisible|link=[less]||
+|waitForVisible|link=[more]||
+|click|link=[more]||
+|waitForVisible|link=water||
+|click|link=water||
+|waitForVisible|xpath=//img[@src='/images/wait.gif']||
+|waitForNotVisible|xpath=//img[@src='/images/wait.gif']||
+|waitForTextPresent|Refine Results||
+|includePartial|basic_results_layout||
+
+Source: $Id: spelling_suggestion.sel 517 2006-10-31 19:49:48Z herlockt $

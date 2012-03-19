@@ -1,0 +1,64 @@
+--- !ruby/object:Gem::Specification 
+name: opensearch
+version: !ruby/object:Gem::Version 
+  version: 0.0.1
+platform: ruby
+authors: 
+- drawnboy
+autorequire: 
+bindir: bin
+cert_chain: []
+
+date: 2006-01-10 00:00:00 -08:00
+default_executable: 
+dependencies: []
+
+description: OpenSearch is simple format of sharing of search results by A9. See opensearch.a9.com/ for detail.  This library is for OpenSearch version 1.0 or 1.1
+email: drawn.boy@gmail.com
+executables: []
+
+extensions: []
+
+extra_rdoc_files: 
+- README
+- CHANGES
+files: 
+- README
+- Rakefile
+- CHANGES
+- lib/opensearch.rb
+- lib/opensearch/1.1.rb
+- lib/opensearch/base.rb
+- lib/opensearch/1.0.rb
+has_rdoc: true
+homepage: http://opensearch.rubyforge.org
+post_install_message: 
+rdoc_options: 
+- --title
+- OpenSearch
+- --main
+- README
+- --line-numbers
+require_paths: 
+- lib
+required_ruby_version: !ruby/object:Gem::Requirement 
+  requirements: 
+  - - ">="
+    - !ruby/object:Gem::Version 
+      version: "0"
+  version: 
+required_rubygems_version: !ruby/object:Gem::Requirement 
+  requirements: 
+  - - ">="
+    - !ruby/object:Gem::Version 
+      version: "0"
+  version: 
+requirements: []
+
+rubyforge_project: opensearch
+rubygems_version: 1.3.1
+signing_key: 
+specification_version: 2
+summary: Search A9 OpenSearch compatible engines
+test_files: []
+

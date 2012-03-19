@@ -1,0 +1,5 @@
+|waitForTextPresent|My Saved Items||
+|waitForTextPresent|Saved Items Actions||
+|waitForVisible|xpath=//img[@src='/images/newemail.gif']||
+|waitForVisible|xpath=//input[@id='email_address']||
+|waitForVisible|link=Email Saved Items||

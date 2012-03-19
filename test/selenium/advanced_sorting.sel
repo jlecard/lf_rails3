@@ -1,0 +1,47 @@
+|open|/selenium/setup||
+|open|/record/search||
+|setTimeout|600000||
+|waitForVisible|link=Advanced Search||
+|click|link=Advanced Search||
+|includePartial|advanced_search_layout||
+|type|xpath=//input[@id='query[type_subject]']|education||
+|select|query[max]|10 results per database||
+|click|xpath=//input[@id='advancedSubmitButton']||
+|waitForVisible|xpath=//img[@src='/images/wait.gif']||
+|waitForNotVisible|xpath=//img[@src='/images/wait.gif']||
+|waitForTextPresent|Refine Results||
+|includePartial|advanced_results_layout||
+|verifyTextNotPresent|Did you mean:||
+|waitForTextPresent|Databases||
+|waitForTextPresent|Relevance*Date: Oldest First||
+|select|sort_value|Date: Newest First||
+|waitForVisible|xpath=//img[@src='/images/wait.gif']||
+|waitForNotVisible|xpath=//img[@src='/images/wait.gif']||
+|includePartial|advanced_results_layout||
+|waitForTextPresent|Databases||
+|waitForTextPresent|Relevance*Date: Newest First||
+|select|sort_value|Date: Oldest First||
+|waitForVisible|xpath=//img[@src='/images/wait.gif']||
+|waitForNotVisible|xpath=//img[@src='/images/wait.gif']||
+|includePartial|advanced_results_layout||
+|waitForTextPresent|Databases||
+|waitForTextPresent|Relevance*Date: Oldest First||
+|select|sort_value|Relevance||
+|waitForVisible|xpath=//img[@src='/images/wait.gif']||
+|waitForNotVisible|xpath=//img[@src='/images/wait.gif']||
+|includePartial|advanced_results_layout||
+|waitForTextPresent|Databases||
+|select|sort_value|Author: A..Z||
+|waitForVisible|xpath=//img[@src='/images/wait.gif']||
+|waitForNotVisible|xpath=//img[@src='/images/wait.gif']||
+|includePartial|advanced_results_layout||
+|waitForTextPresent|Databases||
+|waitForTextPresent|Relevance*Date: Oldest First||
+|select|sort_value|Author: Z..A||
+|waitForVisible|xpath=//img[@src='/images/wait.gif']||
+|waitForNotVisible|xpath=//img[@src='/images/wait.gif']||
+|includePartial|advanced_results_layout||
+|waitForTextPresent|Databases||
+|waitForTextPresent|Relevance*Date: Oldest First||
+
+Source: $Id: advanced_sorting.sel 499 2006-11-26 11:45:27Z herlockt $

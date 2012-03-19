@@ -1,0 +1,447 @@
+@charset "UTF-8";
+/* CSS Document */
+/* COUL Vert /!\ NE CHANGER QUE : les ref couleurs et la partie faisant référence au couleurs dans les noms des images de fond */
+
+
+
+
+/* @group Layout */
+
+/* @group Boutons Fomulaires */
+.btn-envoyer{
+	background-image: url(/images/btn-envoyer-orange.gif);
+}
+
+.btn-search{
+	background-image: url(/images/btn-search-orange.gif);
+}
+
+.btn-valider{
+	background-image: url(/images/btn-valider-orange.gif);
+}
+
+.btn-lancerrecherche{
+	background-image: url(/images/btn-lancerrecherche-orange.gif);
+}
+.btn-inscription{
+	background-image: url(/images/btn-inscription-orange.gif);
+}
+
+
+/* @end */
+
+/* @group titrage */h3, .color {	color:#F65007;
+}
+
+.picto-fleche{
+	background-image : url(/images/picto-fleche-orange.gif) ;
+}
+
+/* @end */
+
+/* @end */
+/* @group Header */
+div.header{
+	background-color:#F65007;
+	border-color: #FA966A;
+}
+
+/* @group Liens */
+
+div.links a{
+		color: #FCCAB5;
+		border-color:#FCCAB5;
+	}
+
+
+
+/* @end */
+				
+
+/* @group Recherche */
+	div.recherche{
+		background-image : url(/images/header-search-background-orange.gif);	
+	}
+
+
+/* @end */
+
+/* @group Menu Niv 1 */
+div.menu-niv1 li a{
+	background-color: #F87339;
+	border-bottom-color: #F65007;
+}
+	div.menu-niv1 li a.actif{
+		background-color: #FA966A;
+		border-color: #FA966A;
+	}
+	div.menu-niv1 li a.profil{
+		background-color: #F76120;
+	}
+	div.menu-niv1 li a:hover{
+		background-color: #FA966A;
+	}
+	
+/* @end */
+
+
+
+/* @end */
+
+div.breadcrumb a.home{
+	color: #F65007;
+}
+
+
+/* @group Content */
+
+/* @group Column Left */
+
+/* @group SubMenu */
+div#left-column .submenu li.select{
+	background-image : url(/images/picto-fleche-orange.gif) ;
+}
+div#left-column ul.submenu ul li{
+	color: #F65007;
+	border-bottom: 1px solid #FCCAB5;
+}
+	div#left-column ul.submenu li ul li a{
+		color: #F65007;
+	}
+
+
+/* @end */
+
+/* @group RSS */
+div#left-column .rss{
+	/*border-color: #FCCAB5;*/
+}
+	div#left-column .rss a:hover{
+		/*color: #F65007;*/
+	}
+
+
+/* @end */
+
+/* @end */
+
+/* @group Coeur de page */
+#content-column .border-color{
+	border-color: #F65007;
+}
+#content-column a{
+	color: #F65007;
+}
+#content-column h1{
+	border-color: #F65007;
+}
+	#content-column h2{
+		border-color: #FCCAB5;
+	}
+
+#content-column p.chapo{
+	color: #F65007;
+}
+
+/* @group Listes */
+#content-column li{
+	background-image: url(/images/picto-fleche-orange.gif) ;
+}
+
+/* @end */
+
+/* @group Tableaux */
+div#content-column  fieldset legend{
+	color:#F65007;
+}
+div#content-column   tfoot, div#content-column   thead {
+	border-color: #F65007;
+}
+
+div#content-column   tfoot th, div#content-column   thead th  {
+	border-color:  #F65007;
+	background-color:#F65007;
+}
+div#content-column   th  {
+	border:1px solid #F65007;
+}
+
+div#content-column   td {
+	border:1px solid #F65007;
+}
+div#content-column   tr.ligne2 {
+	background-color:  #FDDCCD;
+}
+
+
+div#content-column   caption {
+	text-align:left;
+	color:#8596A2;
+}
+/* @end */
+
+/* @end */
+/* @group Column Right */
+/* @group Focus */
+div#right-column .focus{
+	background-color: #FDDCCD;
+}
+	div#right-column .focus h1{
+		color: #F65007;
+	}
+	div#right-column .focus .focus-illustration{
+		border-color: #F65007;
+	}
+
+div#right-column .focus li{
+	border-color: #FA966A;
+}
+div#right-column .focus li.lecture{
+	background-image: url(/images/picto-lecture-orange.gif)
+}
+
+	
+/* @end */
+
+/* @group Articles */
+
+div#right-column .article{
+	border-color: #FCCAB5;
+}
+	div#right-column .article .categorie{
+		color:  #F65007;
+	}
+	
+/* @end */
+
+/* @end */
+
+
+/* @end */
+
+/* @group Content - ACCUEIL */
+/*** Spécifique ACCUEIL ***/
+div#wrapper.accueil{
+	background-color: #FDDCCD;
+}
+	.couleur{
+		color: #F65007;
+	}
+/* @group Column Left - ACCUEIL */
+
+div#left-column.accueil{
+	background-color: #FDDCCD;
+}
+	div#left-column.accueil a{
+		color: #F65007;
+	}
+	div#left-column.accueil .innertube{
+		border-color: #F65007;
+	}
+		div#left-column.accueil .innertube.first{
+			border-color: #FDDCCD;
+		}
+
+	
+/* @group Newslettre */
+div.newslettre .type-text-ie6{
+	background-color: #FA966A;
+}
+div.newslettre .type-image-ie6{
+	/*background :#F65007 url(/images/acc-newslettre-btn-background-vert.gif) no-repeat 0 0;*/
+	background-color:#F65007;
+}
+
+
+
+/* @end */
+
+/* @end */
+
+/* @group Column Content - ACCUEIL */
+div#content-column .acc-title{
+	border-color:  #F65007;
+}
+
+/* @group Evenements */
+div#content-column .evenements .categorie{
+	color:  #F65007;
+}
+	div#content-column .evenements .navigation{
+		border-color:#FCCAB5;
+	}
+		div#content-column .evenements .navigation a{
+			background-color :#FA966A;
+		}
+			div#content-column .evenements .navigation a:hover{
+				background-color : #F65007;
+			}
+	
+	
+/* @end */
+
+/* @group Articles */
+div#content-column .article.first p a{
+	color:  #F65007;
+}
+div#content-column .article{
+	border-color: #FCCAB5;
+}
+	div#content-column .article .categorie{
+		color:  #F65007;
+	}
+	
+/* @end */
+/* @end */
+
+/* @group Column Right - ACCUEIL */
+div#right-column.accueil{
+	background-color: #FDDCCD;
+}
+	div#right-column.accueil a{
+		color: #F65007;
+	}
+	div#right-column.accueil .innertube{
+		border-color: #F65007;
+	}
+		div#right-column.accueil .innertube.first{
+			border-color:#FDDCCD;
+		}
+	
+div#right-column.accueil .item{
+	background-image: url(/images/picto-fleche-orange.gif);
+}
+
+
+/* @end */
+
+
+
+
+/* @end */
+
+
+
+/* @group Footer */
+div#footer{
+	border-color: #FA966A;
+}
+
+
+/* @end */
+
+/********/
+
+/* @group Sitemap */
+
+#content-column .sitemap ul{
+	background-image: url(/images/picto-fleche-orange.gif);
+}
+	#content-column .sitemap ul li.rub a{
+		color:  #F65007;
+	}
+/* @end */
+
+/* @group Resultats */
+#content-column .result li:hover{
+	background-color:  #FDDCCD;
+}
+	#content-column .result li a:hover{
+		color:  #F65007;
+	}
+
+/* @group Pager */
+
+#content-column .pager{
+	border-color: #FCCAB5;
+}	
+	#content-column .pager a{
+		color: #F65007;
+	}
+
+/* @end */
+/* @end */
+
+/* @group Pages Saison Culturelle */
+
+#content-column .tab-dates-manif td.date-manif{
+	background-image: url(/images/picto-fleche-orange.gif) ;
+}
+
+#content-column .manifestations-fiche li{
+	background-color: #FDDCCD;
+}
+
+
+/* @end */
+
+/* @group Signets */
+#content-column  .signets-acc table{
+	background-image: url(/images/picto-fleche-orange.gif);
+}
+
+
+/* @end */
+
+/* @group Pages Annuaire */
+
+#content-column .annuaire ul li, #content-column .annuaire ul li a:hover{
+	color: #F65007;
+}
+
+/* @group Navigation */
+
+#content-column .annuaire .navigation a{
+	background-image: url(/images/picto-fleche-orange.gif);
+}
+#content-column .annuaire .navigation a.prev{
+	background-image: url(/images/picto-fleche-orange-inverted.gif);
+}
+
+/* @end */
+
+/* @group Tableau */
+
+#content-column .annuaire table thead th{
+	color:#F65007;
+	background-color:  #FDDCCD;
+}
+#content-column .annuaire table a:hover{
+	color:#F65007;
+}
+
+/* @end */
+
+#content-column .annuaire .breadcrumb a{
+	background-image: url(/images/picto-fleche-orange.gif);
+}
+
+
+/* @end */
+
+
+/* @group Page Newslettre */
+
+/* @group Tableau */
+
+#content-column .newslettre table thead th{
+	color:#F65007;
+	background-color:  #FDDCCD;
+}
+#content-column .newslettre table a:hover{
+	color:#F65007;
+}
+
+/* @end */
+
+
+
+/* @end */
+
+/* @group Page Sondage */
+
+#content-column .sondage .encart .barre-resultat{
+	background-color: #F65007;
+}	
+/* @end */
+

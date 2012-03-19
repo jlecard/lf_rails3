@@ -1,0 +1,7 @@
+|waitForVisible|xpath=//input[@id='user_name']||
+|waitForVisible|xpath=//input[@id='user_full_name']||
+|waitForVisible|xpath=//input[@id='user_email']||
+|waitForVisible|xpath=//input[@id='user_password']||
+|waitForVisible|xpath=//input[@id='user_password_confirmation']||
+|waitForVisible|xpath=//input[@id='user_administrator']||
+|waitForVisible|xpath=//input[@id='saveButton']||

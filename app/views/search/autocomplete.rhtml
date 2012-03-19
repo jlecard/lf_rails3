@@ -1,0 +1,5 @@
+<% if (!@autocomplete_res.nil?)%>
+<ul id="autoComplete" ><% for item in @autocomplete_res %>
+	<li><%= item %></li><% end %>
+</ul>
+<% end %>

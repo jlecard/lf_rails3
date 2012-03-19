@@ -1,0 +1,17 @@
+|waitForTextPresent|Administration||
+|waitForVisible|link=Admin Home||
+|waitForVisible|link=Users||
+|waitForVisible|link=List Users||
+|waitForVisible|link=Add a New User||
+|waitForVisible|link=Collections||
+|waitForVisible|link=List Collections||
+|waitForVisible|link=Add a New Collection||
+|waitForVisible|link=Collection Groups||
+|waitForVisible|link=List Collection Groups||
+|waitForVisible|link=Add a New Collection Group||
+|waitForVisible|link=Providers||
+|waitForVisible|link=List Providers||
+|waitForVisible|link=Add a New Provider||
+|waitForVisible|link=Coverages||
+|waitForVisible|link=List Collections||
+|waitForVisible|link=Add a New Collection||

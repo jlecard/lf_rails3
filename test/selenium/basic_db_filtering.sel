@@ -1,0 +1,37 @@
+|open|/selenium/setup||
+|open|/record/search||
+|setTimeout|600000||
+|type|xpath=//input[@id='query[string]']|Idaho|
+|click|xpath=//input[@id='submitButton']||
+|waitForVisible|xpath=//img[@src='/images/wait.gif']||
+|waitForNotVisible|xpath=//img[@src='/images/wait.gif']||
+|waitForTextPresent|Refine Results||
+|includePartial|basic_results_layout||
+|waitForTextPresent|Databases||
+|waitForVisible|link=Electronic Theses and Dissertations (*||
+|click|link=Electronic Theses and Dissertations (*||
+|waitForVisible|xpath=//img[@src='/images/wait.gif']||
+|waitForNotVisible|xpath=//img[@src='/images/wait.gif']||
+|includePartial|basic_results_layout||
+|waitForTextPresent|[Article]||
+|verifyTextNotPresent|[Book]||
+|waitForVisible|link='Idaho'||
+|click|link='Idaho'||
+|waitForTextPresent|Databases||
+|waitForVisible|link=Oregon State University Library Catalog (25 results)||
+|click|link=Oregon State University Library Catalog (25 results)||
+|waitForVisible|xpath=//img[@src='/images/wait.gif']||
+|waitForNotVisible|xpath=//img[@src='/images/wait.gif']||
+|waitForNotVisible|xpath=//img[@src='/images/wait.gif']||
+|includePartial|basic_search_layout||
+|waitForTextPresent|Search results for||
+|waitForTextPresent|Relevance*Date: Oldest First||
+|waitForTextPresent|Results * of * hits||
+|waitForVisible|link=Save This Item||
+|waitForVisible|link=Citation||
+|verifyTextNotPresent|An error occured||
+|verifyTextNotPresent|[Article]||
+|waitForTextPresent|[Book]||
+
+
+Source: $Id: basic_db_filtering.sel 569 2006-11-27 10:35:10Z herlockt $

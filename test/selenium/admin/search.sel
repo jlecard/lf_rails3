@@ -1,0 +1,41 @@
+|open|/admin||
+|includePartial|/admin/basic_admin_layout||
+|includePartial|/admin/navigation||
+|setTimeout|600000||
+|type|xpath=//input[@id='query[string]']|Oregon||
+|click|xpath=//input[@id='submitButton']||
+|waitForVisible|xpath=//img[@src='/images/wait.gif']||
+|waitForNotVisible|xpath=//img[@src='/images/wait.gif']||
+|waitForTextPresent|Refine Results||
+|includePartial|basic_results_layout||
+|waitForVisible|link=Next >||
+|click|link=Next >||
+|waitForVisible|xpath=//img[@src='/images/wait.gif']||
+|waitForVisible|link=< Previous||
+|verifyNotVisible|xpath=//img[@src='/images/wait.gif']||
+|verifyElementNotPresent|link=Admin Home||
+|verifyElementNotPresent|link=Users||
+|verifyElementNotPresent|link=List Users||
+|verifyElementNotPresent|link=Add a New User||
+|verifyElementNotPresent|link=Collections||
+|verifyElementNotPresent|link=List Collections||
+|verifyElementNotPresent|link=Add a New Collection||
+|verifyElementNotPresent|link=Collection Groups||
+|verifyElementNotPresent|link=List Collection Groups||
+|verifyElementNotPresent|link=Add a New Collection Group||
+|verifyElementNotPresent|link=Providers||
+|verifyElementNotPresent|link=List Providers||
+|verifyElementNotPresent|link=Add a New Provider||
+|verifyElementNotPresent|link=Coverages||
+|verifyElementNotPresent|link=List Collections||
+|verifyElementNotPresent|link=Add a New Collection||
+|waitForVisible|link=Admin||
+|click|link=Admin||
+|includePartial|/admin/basic_admin_layout||
+|includePartial|/admin/navigation||
+|waitForVisible|link=Admin Home||
+|waitForVisible|link=Collections||
+|waitForVisible|link=Collection Groups||
+|waitForVisible|link=Providers||
+|waitForVisible|link=Coverages||
+|waitForVisible|link=Users||

@@ -1,0 +1,105 @@
+|open|/selenium/setup||
+|open|/record/search||
+|setTimeout|600000||
+|waitForVisible|link=Advanced Search||
+|click|link=Advanced Search||
+|includePartial|advanced_search_layout||
+|type|xpath=//input[@id='query[string]']|language||
+|type|xpath=//input[@id='query[string_exact]']|Oregon State||
+|type|xpath=//input[@id='query[type_subject]']|education||
+|click|xpath=//input[@id='advancedSubmitButton']||
+|waitForVisible|xpath=//img[@src='/images/wait.gif']||
+|waitForNotVisible|xpath=//img[@src='/images/wait.gif']||
+|waitForTextPresent|Refine Results||
+|includePartial|advanced_results_layout||
+|waitForTextPresent|Databases||
+|waitForVisible|link=Books (*||
+|click|link=Books (*||
+|waitForVisible|xpath=//img[@src='/images/wait.gif']||
+|waitForNotVisible|xpath=//img[@src='/images/wait.gif']||
+|includePartial|advanced_results_layout||
+|waitForTextPresent|[Book]||
+|verifyTextNotPresent|[Article]||
+|waitForTextPresent|Databases||
+|waitForTextPresent|Relevance*Date: Newest First||
+|select|sort_value|Date: Oldest First||
+|waitForVisible|xpath=//img[@src='/images/wait.gif']||
+|waitForNotVisible|xpath=//img[@src='/images/wait.gif']||
+|includePartial|advanced_results_layout||
+|waitForTextPresent|Databases||
+|waitForTextPresent|Relevance*Date: Oldest First||
+|waitForVisible|link=Next >||
+|click|link=Next >||
+|waitForVisible|xpath=//img[@src='/images/wait.gif']||
+|waitForVisible|link=< Previous||
+|verifyNotVisible|xpath=//img[@src='/images/wait.gif']||
+|verifyTextNotPresent|Did you mean:||
+|waitForTextPresent|Databases||
+|waitForVisible|link=Advanced Search||
+|click|link=Advanced Search||
+|includePartial|advanced_search_layout||
+|type|xpath=//input[@id='query[string]']|||
+|type|xpath=//input[@id='query[string_any]']|oregon state||
+|type|xpath=//input[@id='query[type_title]']|water||
+|click|xpath=//input[@id='advancedSubmitButton']||
+|waitForVisible|xpath=//img[@src='/images/wait.gif']||
+|waitForNotVisible|xpath=//img[@src='/images/wait.gif']||
+|waitForTextPresent|Refine Results||
+|includePartial|advanced_results_layout||
+|waitForTextPresent|Databases||
+|waitForVisible|link=Articles (*||
+|click|link=Articles (*||
+|waitForVisible|xpath=//img[@src='/images/wait.gif']||
+|waitForNotVisible|xpath=//img[@src='/images/wait.gif']||
+|includePartial|advanced_results_layout||
+|waitForTextPresent|[Article]||
+|verifyTextNotPresent|[Book]||
+|waitForTextPresent|Databases||
+|waitForTextPresent|Relevance*Date: Newest First||
+|select|sort_value|Date: Newest First||
+|waitForVisible|xpath=//img[@src='/images/wait.gif']||
+|waitForNotVisible|xpath=//img[@src='/images/wait.gif']||
+|includePartial|advanced_results_layout||
+|waitForTextPresent|Databases||
+|waitForTextPresent|Relevance*Date: Oldest First||
+|waitForVisible|link=Next >||
+|click|link=Next >||
+|waitForVisible|xpath=//img[@src='/images/wait.gif']||
+|waitForVisible|link=< Previous||
+|verifyNotVisible|xpath=//img[@src='/images/wait.gif']||
+|verifyTextNotPresent|Did you mean:||
+|waitForTextPresent|Databases||
+|waitForVisible|link=Advanced Search||
+|click|link=Advanced Search||
+|includePartial|advanced_search_layout||
+|type|xpath=//input[@id='query[string]']|||
+|type|xpath=//input[@id='query[string_any]']|oregon state||
+|type|xpath=//input[@id='query[type_author]']|Oregon State University. Water Resources Research Institute||
+|click|xpath=//input[@id='advancedSubmitButton']||
+|waitForVisible|xpath=//img[@src='/images/wait.gif']||
+|waitForNotVisible|xpath=//img[@src='/images/wait.gif']||
+|waitForTextPresent|Refine Results||
+|includePartial|advanced_results_layout||
+|waitForTextPresent|Databases||
+|waitForVisible|link=Images (*||
+|click|link=Images (*||
+|waitForVisible|xpath=//img[@src='/images/wait.gif']||
+|waitForNotVisible|xpath=//img[@src='/images/wait.gif']||
+|includePartial|advanced_results_layout||
+|verifyTextNotPresent|[Article]||
+|verifyTextNotPresent|[Book]||
+|waitForTextPresent|Databases||
+|waitForTextPresent|Relevance*Date: Newest First||
+|select|sort_value|Author: A..Z||
+|waitForVisible|xpath=//img[@src='/images/wait.gif']||
+|waitForNotVisible|xpath=//img[@src='/images/wait.gif']||
+|includePartial|advanced_results_layout||
+|waitForTextPresent|Databases||
+|waitForTextPresent|Relevance*Date: Oldest First||
+|waitForVisible|link=Next >||
+|click|link=Next >||
+|waitForVisible|xpath=//img[@src='/images/wait.gif']||
+|waitForVisible|link=< Previous||
+|verifyNotVisible|xpath=//img[@src='/images/wait.gif']||
+|verifyTextNotPresent|Did you mean:||
+|waitForTextPresent|Databases||

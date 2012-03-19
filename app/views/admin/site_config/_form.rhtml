@@ -1,0 +1,16 @@
+<%= error_messages_for 'site_config' %>
+
+<!--[form:site_config]-->
+<p><label for="site_config_field">Field</label><br/>
+<%= text_field 'site_config', 'field', :size=>"41"    %></p>
+
+<p><label for="site_config_value">Value</label><br/>
+<%= text_field 'site_config', 'value', :size=>"41"    %></p>
+
+<p><label for="site_config_previous_value">Previous value</label><br/>
+<%= text_field 'site_config', 'previous_value', :size=>"41"    %></p>
+
+<p><label for="site_config_updated_at">Updated at</label><br/>
+<%= datetime_select 'site_config', 'updated_at'  %></p>
+<!--[eoform:site_config]-->
+

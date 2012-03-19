@@ -1,0 +1,52 @@
+FR:
+  #INLINE HELP
+  ADD_A_NEW_RSS_FEED : Ajouter un nouveau flux RSS
+  NAME_DESCRIPTION : Nom interne du flux RSS
+  NAME_EXAMPLE : articles_de_presse
+  FULL_NAME_DESCRIPTION: Nom du flux RSS qui s'affiche à l'écran
+  FULL_NAME_EXAMPLE: Articles de presse
+  PRIMARY_DOCUMENT_TYPE_DESCRIPTION : Type du document recherché
+  ISBN_ISSN_NULLABLE_DESCRIPTION : Définit si ISBN/ISSN est obligatoire ou non
+  COLLECTION_GROUP_DESCRIPTION : Vous pouvez ajouter un nouveau groupe en cliquant sur New
+  PRIMARY_DOCUMENT_TYPES : document_types
+  COLLECTION_GROUPS : collection_groups
+  NEW_COLLECTION_GROUP : New
+  SOLR_REQUEST_EXAMPLE : q=video&sort=score+desc
+  UPDATE_PERIODICITY_DESCRIPTION : Mise à jour du flux RSS (en nombre de jours)
+  URL_DESCRIPTION : URL générée automatiquement
+  RSS_FEEDS_HEADER : Liste des flux RSS
+  DESTROY : Supprimer
+  EDIT : Editer
+  ARE_YOU_SURE : "Etes vous sûr ?"
+  FULL_NAME_COLUMN : Nom complet
+  NAME_COLUMN : Nom
+  CREATED_AT_COLUMN : Date de création
+  UPDATED_AT_COLUMN : Date de dernière modification
+  EDIT_RSS_FEED : Editer le flux RSS
+  SEARCH_BOX_TITLE : Filtrer sur les flux RSS
+  APPLY_FILTER : Filtrer
+  RSS_FEED_CREATED : "Flux RSS ajouté avec succès."
+  RSS_FEED_UPDATED : "Flux RSS modifié avec succès."
+  RETURN : Retour
+  REQUIRED: Obligatoire
+  NOT_REQUIRED: Il n'est pas obligatoire
+  
+  
+  #LABELS
+  NAME_LABEL : "Nom :"
+  FULL_NAME_LABEL : "Nom complet :"
+  RSS_FEED_PARAMETERS_LABEL : "Paramètres :"
+  PRIMARY_DOCUMENT_TYPE_LABEL : "Type du document primaire :"
+  NEW_DOCS_LABEL : "Nouveautés :"
+  YES_LABEL : "Oui"
+  NO_LABEL : "Non"
+  ISBN_ISSN_NULLABLE_LABEL : "ISBN/ISSN :"
+  COLLECTION_GROUP_LABEL : "Groupe de collections :"
+  SOLR_REQUEST_LABEL : "Requête SOLR :"
+  UPDATE_PERIODICITY_LABEL : "Périodicité de la mise à jour :"
+  URL_LABEL : "Lien du flux RSS :"
+  PERIOD_LABEL : "Période :"
+  BEGIN_DATE_LABEL : " Du : "
+  END_DATE_LABEL : " Au : "
+  UPDATED_AT_LABEL : "Mis à jour le :"
+  CREATED_AT_LABEL : "Créé le :"

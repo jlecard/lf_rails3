@@ -1,0 +1,16 @@
+<div id="page_contents">
+    <%= render(:partial => "admin/navigation") %>
+    <div id="center" class="middle">
+    	<p>
+            <b>Label:</b>
+            <%=h @editorial.label %>
+        </p>
+		
+		<p>
+            <b>Html:</b>
+            <%=h @editorial.html %>
+        </p>
+		
+        <%= link_to 'Edit', {:action => 'edit', :id => @editorial.id} %> |<%= link_to 'Back', admin_editorials_path %>
+    </div>
+</div>

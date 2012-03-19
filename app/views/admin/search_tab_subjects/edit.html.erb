@@ -1,0 +1,27 @@
+<script>
+    function checkFormat(c){
+    
+        if (c.value == 'request' && c.checked == true) {
+            value = false;
+        }
+        else {
+            value = true;
+        }
+        
+        document.getElementById('search_tab_subject_url').disabled = !value;
+        document.getElementsByName("search_tab_subject[collection_group_id]")[0].disabled = value;
+    }
+</script>
+<div id="page_contents">
+    <%= render(:partial => "admin/navigation") %>
+    <div id="center" class="middle">
+        <h1><%=translate("FORM_TITLE") %></h1>
+        <% form_for(:search_tab_subject, @search_tab_subject, :url => {:action => 'update', :id => @search_tab_subject.id}) do |f| %>
+        <%= render :partial => "form", :locals=>{:f=>f} %> 
+        <p>
+            <%= f.submit translate("UPDATE_BUTTON_LABEL") %>
+        </p>
+        <% end %>
+        <%= link_to translate("SHOW"), {:action => 'show', :id => @search_tab_subject.id} %>|<%= link_to translate("BACK"), admin_search_tab_subjects_path + "?id=" + @search_tab_subject.id.to_s %>
+    </div>
+</div>

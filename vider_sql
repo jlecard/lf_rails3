@@ -1,0 +1,4 @@
+use lf_dev;
+truncate table cached_records;
+truncate table cached_searches;
+truncate table job_queues;

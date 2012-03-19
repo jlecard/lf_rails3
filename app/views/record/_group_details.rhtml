@@ -1,0 +1,17 @@
+<div id="details_<%=group_details.id%>" class="group-details" style="width:220px;float:left;display:none">
+
+	<div style="position:relative;float:right;width:20px;">
+		<%= link_to_function image_tag("/images/close.png", :border=>0), "Element.hide('details_"+group_details.id.to_s+"')"%>
+            </div>
+	<div style="width:195px;float:left;">
+	<b><%=translate("COLLECTIONS_IN_THIS_GROUP")%></b><br/>
+  <%group_members=group_details.member_names
+	if group_members!=nil
+      sorted_collections=group_members.sort_by{ |col| col }%>
+
+	<% for collection in sorted_collections %>
+	  <small><%=collection%></small><br/>
+	<%end%>
+	<%end%>
+	</div>
+</div>

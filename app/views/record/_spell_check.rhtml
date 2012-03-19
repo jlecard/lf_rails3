@@ -1,0 +1,18 @@
+<%if @spelling_list!=nil and @spelling_list.length>0 %>
+<div>
+    <span id="waitimage_spell" class="waitimage"><img src="/images/wait.gif"/></span>
+    <script>
+        Element.hide('waitimage_spell');
+    </script>
+    <b style='color: #ce5500'><%=translate('DID_YOU_MEAN') %></b>&nbsp;&nbsp;<%=link_to_function @spelling_list[0], 'scroll(0,0);showWait("waitimage_spell");spellCorrection("'+h(@spelling_list[0])+'")' %>
+    <% if @spelling_list.length>1 %>
+    <span id="more_spelling">&nbsp;&nbsp;<%=link_to_function translate('MORE'), "Element.show('all_spelling');Element.hide('more_spelling')" %>
+    </span>
+    <span id="all_spelling" style="display:none"><% for i in 1..@spelling_list.length %>
+        <%=link_to_function @spelling_list[i], 'scroll(0,0);showWait("waitimage_spell");spellCorrection("'+h(@spelling_list[i])+'")' %>
+        <% end %>
+        &nbsp;&nbsp;<%=link_to_function translate('LESS'), "Element.hide('all_spelling');Element.show('more_spelling')" %></span>
+    <% end %>
+</div>
+<br/>
+<% end %>

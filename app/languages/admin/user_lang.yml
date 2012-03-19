@@ -1,0 +1,72 @@
+EN:
+  #INLINE HELP
+  NAME_DESCRIPTION: help for user name here
+  NAME_EXAMPLE: e.g. example user name here
+  FULL_NAME_DESCRIPTION: help for user full_name here
+  FULL_NAME_EXAMPLE: e.g. example user full_name here
+  EMAIL_DESCRIPTION: help for user email here
+  EMAIL_EXAMPLE: e.g. example user email here
+  PASSWORD_DESCRIPTION: help for user password here
+  PASSWORD_EXAMPLE: e.g. example user password here
+  PASSWORD_CONFIRMATION_DESCRIPTION: help for user password_confirmation here
+  PASSWORD_CONFIRMATION_EXAMPLE: e.g. example user password_confirmation here
+  ADMINISTRATOR_DESCRIPTION: help for administrator checkbox 
+  #LABELS
+  USER_NAME_LABEL: "User Name:"
+  FULL_NAME_LABEL: "Full Name:"
+  EMAIL_ADDRESS_LABEL: "Email Address:"
+  PASSWORD_LABEL: "Password:"
+  PASSWORD_CONFIRM_LABEL: "Password (confirm):"
+  ADMINISTRATOR_LABEL: "Administrator"
+  EDIT_USER_HEADER: Edit User
+  USER_HEADER: User
+  USER_CREATED: User was successfully created.
+  USER_UPDATED: 'User was successfully updated.'
+FR:
+  #INLINE HELP
+  NAME_DESCRIPTION: FRENCH help for user name here
+  NAME_EXAMPLE: FRENCH e.g. example user name here
+  FULL_NAME_DESCRIPTION: FRENCH help for user full_name here
+  FULL_NAME_EXAMPLE: FRENCH e.g. example user full_name here
+  EMAIL_DESCRIPTION: FRENCH help for user email here
+  EMAIL_EXAMPLE: FRENCH e.g. example user email here
+  PASSWORD_DESCRIPTION: FRENCH help for user password here
+  PASSWORD_EXAMPLE: FRENCH e.g. example user password here
+  PASSWORD_CONFIRMATION_DESCRIPTION: FRENCH help for user password_confirmation here
+  PASSWORD_CONFIRMATION_EXAMPLE: FRENCH e.g. example user password_confirmation here
+  ADMINISTRATOR_DESCRIPTION: FRENCH help for administrator checkbox 
+  #LABELS
+  USER_NAME_LABEL: "FRENCH User Name:"
+  FULL_NAME_LABEL: "FRENCH Full Name:"
+  EMAIL_ADDRESS_LABEL: "FRENCH Email Address:"
+  PASSWORD_LABEL: "FRENCH Password:"
+  PASSWORD_CONFIRM_LABEL: "FRENCH Password (confirm):"
+  ADMINISTRATOR_LABEL: "FRENCH Administrator"
+  EDIT_USER_HEADER: FRENCH Edit User
+  USER_HEADER: FRENCH User
+  USER_CREATED: FRENCH User was successfully created.
+  USER_UPDATED: 'FRENCH User was successfully updated.'
+ES:
+  #INLINE HELP
+  NAME_DESCRIPTION: SPANISH help for user name here
+  NAME_EXAMPLE: SPANISH e.g. example user name here
+  FULL_NAME_DESCRIPTION: SPANISH help for user full_name here
+  FULL_NAME_EXAMPLE: SPANISH e.g. example user full_name here
+  EMAIL_DESCRIPTION: SPANISH help for user email here
+  EMAIL_EXAMPLE: SPANISH e.g. example user email here
+  PASSWORD_DESCRIPTION: SPANISH help for user password here
+  PASSWORD_EXAMPLE: SPANISH e.g. example user password here
+  PASSWORD_CONFIRMATION_DESCRIPTION: SPANISH help for user password_confirmation here
+  PASSWORD_CONFIRMATION_EXAMPLE: SPANISH e.g. example user password_confirmation here
+  ADMINISTRATOR_DESCRIPTION: SPANISH help for administrator checkbox 
+  #LABELS
+  USER_NAME_LABEL: "SPANISH User Name:"
+  FULL_NAME_LABEL: "SPANISH Full Name:"
+  EMAIL_ADDRESS_LABEL: "SPANISH Email Address:"
+  PASSWORD_LABEL: "SPANISH Password:"
+  PASSWORD_CONFIRM_LABEL: "SPANISH Password (confirm):"
+  ADMINISTRATOR_LABEL: "SPANISH Administrator"
+  EDIT_USER_HEADER: SPANISH Edit User
+  USER_HEADER: SPANISH User
+  USER_CREATED: SPANISH User was successfully created.
+  USER_UPDATED: 'SPANISH User was successfully updated.'

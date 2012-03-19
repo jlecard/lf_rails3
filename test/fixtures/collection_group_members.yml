@@ -1,0 +1,154 @@
+# LibraryFind - Quality find done better.
+# Copyright (C) 2007 Oregon State University
+#
+# This program is free software; you can redistribute it and/or modify it under 
+# the terms of the GNU General Public License as published by the Free Software 
+# Foundation; either version 2 of the License, or (at your option) any later 
+# version.
+#
+# This program is distributed in the hope that it will be useful, but WITHOUT 
+# ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS 
+# FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License along with 
+# this program; if not, write to the Free Software Foundation, Inc., 59 Temple 
+# Place, Suite 330, Boston, MA 02111-1307 USA
+#
+# Questions or comments on this program may be addressed to:
+#
+# LibraryFind
+# 121 The Valley Library
+# Corvallis OR 97331-4501
+#
+# http://libraryfind.org
+--- 
+collection_group_members_024: 
+  default_on: "1"
+  id: "26"
+  collection_group_id: "3"
+  collection_id: "19"
+collection_group_members_013: 
+  default_on: "1"
+  id: "13"
+  collection_group_id: "2"
+  collection_id: "110"
+collection_group_members_025: 
+  default_on: "1"
+  id: "27"
+  collection_group_id: "3"
+  collection_id: "13"
+collection_group_members_014: 
+  default_on: "1"
+  id: "14"
+  collection_group_id: "2"
+  collection_id: "111"
+collection_group_members_026: 
+  default_on: "1"
+  id: "28"
+  collection_group_id: "3"
+  collection_id: "21"
+collection_group_members_015: 
+  default_on: "1"
+  id: "15"
+  collection_group_id: "2"
+  collection_id: "112"
+collection_group_members_027: 
+  default_on: "1"
+  id: "29"
+  collection_group_id: "3"
+  collection_id: "23"
+collection_group_members_016: 
+  default_on: "1"
+  id: "17"
+  collection_group_id: "2"
+  collection_id: "114"
+collection_group_members_005: 
+  default_on: "1"
+  id: "5"
+  collection_group_id: "2"
+  collection_id: "102"
+collection_group_members_028: 
+  default_on: "1"
+  id: "30"
+  collection_group_id: "3"
+  collection_id: "24"
+collection_group_members_017: 
+  default_on: "1"
+  id: "18"
+  collection_group_id: "2"
+  collection_id: "115"
+collection_group_members_006: 
+  default_on: "1"
+  id: "6"
+  collection_group_id: "2"
+  collection_id: "103"
+collection_group_members_029: 
+  default_on: "1"
+  id: "31"
+  collection_group_id: "4"
+  collection_id: "145"
+collection_group_members_018: 
+  default_on: "1"
+  id: "19"
+  collection_group_id: "2"
+  collection_id: "116"
+collection_group_members_007: 
+  default_on: "1"
+  id: "7"
+  collection_group_id: "2"
+  collection_id: "104"
+collection_group_members_030: 
+  default_on: "1"
+  id: "32"
+  collection_group_id: "2"
+  collection_id: "145"
+collection_group_members_019: 
+  default_on: "1"
+  id: "20"
+  collection_group_id: "2"
+  collection_id: "117"
+collection_group_members_008: 
+  default_on: "1"
+  id: "8"
+  collection_group_id: "2"
+  collection_id: "105"
+collection_group_members_020: 
+  default_on: "1"
+  id: "21"
+  collection_group_id: "2"
+  collection_id: "118"
+collection_group_members_009: 
+  default_on: "1"
+  id: "9"
+  collection_group_id: "2"
+  collection_id: "106"
+collection_group_members_021: 
+  default_on: "1"
+  id: "23"
+  collection_group_id: "3"
+  collection_id: "15"
+collection_group_members_010: 
+  default_on: "1"
+  id: "10"
+  collection_group_id: "2"
+  collection_id: "107"
+collection_group_members_022: 
+  default_on: "1"
+  id: "24"
+  collection_group_id: "3"
+  collection_id: "16"
+collection_group_members_011: 
+  default_on: "1"
+  id: "11"
+  collection_group_id: "2"
+  collection_id: "108"
+collection_group_members_023: 
+  default_on: "1"
+  id: "25"
+  collection_group_id: "3"
+  collection_id: "18"
+collection_group_members_012: 
+  default_on: "1"
+  id: "12"
+  collection_group_id: "2"
+  collection_id: "109"

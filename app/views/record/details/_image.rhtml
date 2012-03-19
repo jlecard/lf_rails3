@@ -1,0 +1,59 @@
+<div class="image_detail" >
+  <%url = image.direct_url
+    if url!=nil and url!=''
+       thumbnail_url = image.thumbnail_url
+       if thumbnail_url == nil or thumbnail_url == ''
+	  thumbnail_url = '/images/no_thumbnail.jpg'
+       end
+       if thumbnail_url !=nil and thumbnail_url != ''
+  %>
+        <div>
+          <a target="_blank"  href="<%=h(url)%>" >
+            <img style="max-height:160px; max-width:150px;" src="<%=h(thumbnail_url)%>" border="0"/>
+          </a>
+        </div>
+      <%end%>
+    <%end%>
+  <div>
+    <%=image.ptitle%><br />
+  </div>
+  <div>
+    <%if image.subject!=''%>
+      <%=image.subject%> 
+    <%end%>    
+</div>
+<div>
+  <%if image.date!='' and image.date!='00000000'%>
+    <%=display_date(image)%>  &#160;
+  <%end%>
+</div>
+  <div class='vr' >
+  <%= link_to_function translate('CITATION'), "Element.toggle('citation_"+image.id.to_s+"')"%>&#160;
+  <span id="add_to_cart_<%=image.id%>"> 
+         <%if session[:cart]==nil ||  !session[:cart].include?(image.id) %>
+         <%=link_to_remote translate('SAVE_THIS_ITEM'), {
+                                              :update => 'add_to_cart_%s' % image.id,
+                                              :url => { :action => 'add', :controller=>'/cart'},
+                                              :with => "'id=%s'" % image.id
+                                              }%>
+        <% else 
+             if @cart_page!=nil and !@cart_page.empty? %>
+               <%=link_to_remote translate('REMOVE_FROM_SAVED_ITEMS'), {
+                                              :update => 'row_%s' % image.id,
+                                              :url => { :action => 'remove', :controller=>'/cart'},
+                                              :with => "'id=%s'" % image.id,
+                                              :loading => "scroll(0,0);Element.show('waitimage')",
+                                              :complete => "Element.hide('waitimage');"
+                                              }%>
+          <%end%>
+        <%end%>
+ 
+        </span>&#160;
+  <% if image.vendor_url!=nil and image.vendor_url!='' %>
+         <a href=<%=h(image.vendor_url)%> target="_blank">
+                  <%=translate('MORE_FROM',[escape_quote(image.vendor_name)])%>
+                </a>&#160;
+  <%end%>           
+   
+</div>  
+</div>

@@ -1,0 +1,7 @@
+|open|/admin||
+|includePartial|/admin/basic_admin_layout||
+|includePartial|/admin/navigation||
+|waitForVisible|link=List Coverages||
+|click|link=List Coverages||
+|includePartial|/admin/list_coverages||
+

@@ -1,0 +1,58 @@
+<div id="error"><%= error_messages_for 'provider' %></div>
+<div id="form_field">
+  <span class="form_left">
+  	<label for="provider_name"><%=translate("PROVIDER_NAME_LABEL")%></label><br/>
+    <small><%=translate("NAME_DESCRIPTION")%></small>
+  </span>
+  <span class="form_right">
+    <%= form.text_field :provider_name %><br/>
+    <small><%=translate("NAME_EXAMPLE")%></small>
+  </span>
+</div>
+<div id="form_field">
+  <span class="form_left">
+  	<label for="provider_title"><%=translate("TITLE_LABEL")%></label><br/>
+    <small><%=translate("TITLE_DESCRIPTION")%></small>
+  </span>
+  <span class="form_right">
+    <%= form.text_field :title %><br/>
+    <small><%=translate("TITLE_EXAMPLE")%></small>
+  </span>
+</div>
+<div id="form_field">
+  <span class="form_left">
+  	<label for="provider_url"><%=translate("URL_LABEL")%></label><br/>
+    <small><%=translate("URL_DESCRIPTION")%></small>
+  </span>
+  <span class="form_right">
+    <%= form.text_field :url %><br/>
+    <small><%=translate("URL_EXAMPLE")%></small>
+  </span>
+</div>
+<div id="form_field">
+  <span class="form_left">
+  	<label for="provider_article_type"><%=translate("ARTICLE_TYPE_LABEL")%></label><br/>
+    <small><%=translate("ARTICLE_TYPE_DESCRIPTION")%></small>
+  </span>
+  <span class="form_right">
+    <%= form.text_field :article_type %><br/>
+    <small><%=translate("ARTICLE_TYPE_EXAMPLE")%></small>
+  </span>
+</div>
+<div id="form_field">
+  <span class="form_left">
+  	<label for="provider_proxy"><%=translate("PROXY_LABEL")%></label><br/>
+    <small><%=translate("PROXY_DESCRIPTION")%></small>
+  </span>
+  <span class="form_right">
+    <%= form.text_field :proxy %><br/>
+    <small><%=translate("PROXY_EXAMPLE")%></small>
+  </span>
+</div>
+  <div id="form_field">
+	<span class="form_left">
+		<%= check_box "provider", "can_resolve", :style=>"width:14px"%><span class="dot"><%=translate("CAN_RESOLVE_LABEL")%></span><br/>
+		<small><%=translate("CAN_RESOLVE_DESCRIPTION")%></small>
+	</span>
+  </div>
+

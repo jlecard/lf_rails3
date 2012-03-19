@@ -1,0 +1,75 @@
+<div class="right">
+    <div id="personnalSpace">
+        <h5><%= translate('PERSONNAL_SPACE') %></h5>
+        <div id="listMyCart">
+            <% if @cart_page!=nil and !@cart_page.empty?
+            for _record in @cart_page %>
+            <div id="arow_<%=_record.id%>" class="arow">
+                <%= render(:partial => "/record/details/generic_list", :object => _record) %>
+            </div>
+            <% end %>
+            <span id="session_basket"><%= link_to translate('SESSION_BASKET'), :controller=>"/cart", :action=>"list" %>
+            </span>
+            <!-- end of span session_basket --><% else %>
+            <div>
+                <%= translate('EMPTY_CART') %>
+            </div>
+            <% end %>
+        </div>
+        <!-- end of div listMyCart -->
+    </div>
+    <!-- end of div personnalSpace --><!--
+    <h4><%= translate('BASKET') %></h4>
+    <%= translate('INFO_BASKET') %>
+    <br/>
+    <h4><%= translate('SEARCH_HISTORY') %></h4>
+    <%= translate('INFO_HISTORY') %>
+    <br/>
+    <h4><%= translate('RESEARCH_TOOLBOX') %></h4>
+    <%= translate('INFO_TOOLBOX') %>
+    <br/>
+    <%= translate('INFO2_TOOLBOX') %>
+    <br/>
+    --><hr/>
+    <div id="list">
+        <h5><%= translate('MOST_VIEWED') %></h5>
+        <br/>
+        <% if @mostViewed != nil %>
+        <% @mostViewed.each do |item| %>
+        <a title="<%= item.title %>" href="/document/display?doc=<%= item.idDoc %>"><%= item.title %>...<!--(<%= item.nb_consult %>)--></a>
+        <br/>
+        <% end %>
+        <% end %>
+        <br/>
+    </div>
+    <hr>
+    <div id="list">
+        <h5><%= translate('LINK_EXTERNE_LABEL') %></h5>
+        <br/>
+        <a title="<%= translate('LINK_SATISFACTION_LABEL') %>" href="<%= LINK_SATISFACTION_URL %> " target="_blank"><%= translate('LINK_SATISFACTION_LABEL') %></a>
+		<br/>
+        <a title="<%= translate('LINK_MESSAGERIE_LABEL') %>" href="<%= LINK_MESSAGERIE_URL %> " target="_blank"><%= translate('LINK_MESSAGERIE_LABEL') %></a>
+    </div>
+    <!-- end of div list --><hr/>
+    <div id="followUs">
+        <h5><%= translate('FOLLOW_US') %></h5>
+        <div class="logo-groups-center">
+            <div class="logo-groups">
+                <a href="#"><%= image_tag("/images/logo1.PNG", :alt => "logo1") %></a>
+                <a href="#"><%= image_tag("/images/logo2.PNG", :alt => "logo2") %></a>
+                <a href="#"><%= image_tag("/images/logo3.PNG", :alt => "logo3") %></a>
+                <a href="#"><%= image_tag("/images/logo4.PNG", :alt => "logo4") %></a>
+                <a href="#"><%= image_tag("/images/logo4.PNG", :alt => "logo5") %></a>
+                <br/>
+                <a href="#"><%= image_tag("/images/logo6.PNG", :alt => "logo6") %></a>
+                <a href="#"><%= image_tag("/images/logo7.PNG", :alt => "logo7") %></a>
+                <a href="#"><%= image_tag("/images/logo8.PNG", :alt => "logo8") %></a>
+                <a href="#"><%= image_tag("/images/logo9.PNG", :alt => "logo9") %></a>
+                <a href="#"><%= image_tag("/images/logo10.PNG", :alt => "logo10") %></a>
+            </div>
+            <!-- End div logo-groups -->
+        </div>
+        <!-- End div logo-groups-center -->
+    </div>
+    <!-- end div followUs  -->
+</div>

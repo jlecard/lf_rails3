@@ -1,0 +1,8 @@
+|open|/selenium/setup||
+|open|/admin||
+|includePartial|/admin/basic_admin_layout||
+|type|user_name|admintest||
+|type|user_password|secret||
+|click|xpath=//input[@id='logInButton']||
+
+Source: $Id: basic_login.sel 512 2006-10-27 23:49:07Z herlockt $

@@ -1,0 +1,42 @@
+EN:
+  #_navigation.rhtml
+  SAVED_ITEMS: Saved Items Actions
+  NEW_EMAIL: New Email
+  ENTER_EMAIL_ADDRESS: enter email address
+  EMAIL_SAVED_ITEMS: Email Saved Items
+  #list.rhtml
+  MY_SAVED_ITEMS: My Saved Items
+  SAVED_ITEMS_NOTICE: "NOTE: This list of saved items will only remain active for the current browser session.  A future implementation of LibraryFind will allow you to login and store results."
+  EMAIL_SENT: "Email message sent"
+  EXPORT_TO_PDF: "Export to pdf"
+  SESSION_BASKET: "Your Cart" 
+  
+FR:
+  #_navigation.rhtml
+  SAVED_ITEMS: Element sauvegardes
+  NEW_EMAIL: Email
+  ENTER_EMAIL_ADDRESS: Saisissez votre email
+  EMAIL_SAVED_ITEMS: Envoyer par mail les elements enregistres
+  #list.rhtml
+  MY_SAVED_ITEMS: Mes elements enregistres
+  SAVED_ITEMS_NOTICE: Les objets mis en panier le resteront durant le temps de votre visite sur le site.
+  EMAIL_SENT: "Email envoye"
+  EXPORT_TO_PDF: "Exporter en pdf"
+  SESSION_BASKET: "Votre panier" 
+  Statistic: Statistique
+  Logcart: Paniers
+  Used: Utilisateurs
+  Year: Année
+  Month: Mois
+ES:
+  #_navigation.rhtml
+  SAVED_ITEMS: SPANISH Saved Items Actions
+  NEW_EMAIL: SPANISH New Email
+  ENTER_EMAIL_ADDRESS: SPANISH enter email address
+  EMAIL_SAVED_ITEMS: SPANISH Email Saved Items
+  #list.rhtml
+  MY_SAVED_ITEMS: SPANISH My Saved Items
+  SAVED_ITEMS_NOTICE: "SPANISH NOTE: This list of saved items will only remain active for the current browser session.  A future implementation of LibraryFind will allow you to login and store results."
+  EMAIL_SENT: "SPANISH Email message sent"
+  EXPORT_TO_PDF: "Spanish Export to pdf"
+  SESSION_BASKET: "Your Cart" 

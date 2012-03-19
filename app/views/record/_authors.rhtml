@@ -1,0 +1,58 @@
+<%if @authors!=nil and !@authors.empty?%>
+  <div id="bAuthors"  class="navigation"><b><%=translate('AUTHORS')%></b>
+    <%if @filter.assoc("author")!=nil
+	  filter=build_unfilter_string("author")	
+	  params=build_filter_params(filter,@tab_template)%>
+      <%=link_to translate('UNFILTER_AUTHORS'), 
+		    {  :action => 'retrieve_page', 
+				:controller=>'record', 
+				:params=>params},	:onclick=>"scroll(0,0);showWait()", :class=>"unfilter"%>
+    <%end%>  
+	<div name="menuItem" id="tAuthors" class="expanded" init="0">
+      <div id="authors_0">
+	    <%count=0
+		@authors.each{|_auth, _number| 
+		  if count<5	  
+			  if _auth!=nil and _auth!='' and _auth.to_s.strip!='undefined' 
+				count=count+1
+				filter=build_filter_string("author",_auth)
+				params=build_filter_params(filter,@tab_template)%>						  
+	            <%=link_to translate('RESULTS',[_auth,_number.to_s]), 
+	                     {  :action => 'retrieve_page', 
+							:controller=>'record', 
+							:params=>params},	:onclick=>"scroll(0,0);showWait()"%>
+			  <%end  
+		  end
+		}  
+		if @authors.length>5%>
+		    <%=link_to_function translate('MORE_AUTHORS'), "Element.hide('more_authors_0');Element.show('more_authors');Element.show('authors_1')", {:style=>"text-decoration:underline", :id=>'more_authors_0'}%>
+		<%end%>
+	  </div>
+	  <%if @authors.length>5%>
+	    <div id='more_authors'>
+	      <%multiples=((@authors.length)/5).ceil
+		  1.upto(multiples) { |i|%>
+			  <div id=<%='authors_'+i.to_s%> style='display:none;'>
+		        <%@authors[i*5..(i+1)*5-1].each{|_auth, _number| 
+				  if _auth!=nil and _auth!='' and _auth.to_s.strip!='undefined'		
+					filter=build_filter_string("author",_auth)
+					params=build_filter_params(filter,@tab_template)%>				  
+		            <%=link_to translate('RESULTS',[_auth,_number.to_s]), 
+		                     {  :action => 'retrieve_page', 
+								:controller=>'record', 
+								:params=>params},	:onclick=>"scroll(0,0);showWait()"%>
+		          <%end  
+				}%>
+		        <span id=<%='more_authors_'+i.to_s%>>
+	  				<%=link_to_function translate('TOP_AUTHORS'), "Element.hide('more_authors');Element.show('more_authors_0')", :style=>"text-decoration:underline"%>
+					<%if i<multiples%>
+						<%=link_to_function translate('MORE_AUTHORS'), "Element.hide('more_authors_"+i.to_s+"');Element.show('authors_"+(i+1).to_s+"');Element.show('more_authors_"+(i+1).to_s+"')", :style=>"text-decoration:underline"%>
+			  		<%end%> 
+				</span>
+		  	 </div>
+	      <%}%>
+	    </div>
+	  <%end%>
+	</div>
+  </div>
+<%end%>

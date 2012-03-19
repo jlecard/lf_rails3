@@ -1,0 +1,70 @@
+|open|/selenium/setup||
+|open|/record/search||
+|setTimeout|400000||
+|type|xpath=//input[@id='query[string]']|education|
+|click|xpath=//input[@id='submitButton']||
+|waitForVisible|xpath=//img[@src='/images/wait.gif']||
+|waitForNotVisible|xpath=//img[@src='/images/wait.gif']||
+|waitForTextPresent|Refine Results||
+|includePartial|basic_results_layout||
+|waitForTextPresent|Databases||
+|waitForVisible|link=Articles (*||
+|click|link=Articles (*||
+|waitForVisible|xpath=//img[@src='/images/wait.gif']||
+|waitForNotVisible|xpath=//img[@src='/images/wait.gif']||
+|includePartial|basic_results_layout||
+|waitForTextPresent|[Article]||
+|verifyTextNotPresent|[Book]||
+|waitForTextPresent|Databases||
+|waitForVisible|link=Save This Item||
+|click|link=Save This Item|
+|waitForTextPresent|Item Saved||
+|waitForVisible|link='education'||
+|click|link='education'||
+|waitForTextPresent|Material Types||
+|waitForVisible|link=Books (*||
+|click|link=Books (*||
+|waitForVisible|xpath=//img[@src='/images/wait.gif']||
+|waitForNotVisible|xpath=//img[@src='/images/wait.gif']||
+|includePartial|basic_results_layout||
+|waitForTextPresent|[Book]||
+|verifyTextNotPresent|[Article]||
+|waitForVisible|link=Save This Item||
+|click|link=Save This Item|
+|waitForTextPresent|Item Saved||
+|waitForVisible|link='education'||
+|click|link='education'||
+|waitForTextPresent|Material Types||
+|waitForVisible|link=Finding Aids (*||
+|click|link=Finding Aids (*||
+|waitForVisible|xpath=//img[@src='/images/wait.gif']||
+|waitForNotVisible|xpath=//img[@src='/images/wait.gif']||
+|includePartial|basic_results_layout||
+|waitForTextPresent|[Finding Aid]||
+|verifyTextNotPresent|[Book]||
+|waitForTextPresent|Databases||
+|waitForVisible|link=Save This Item||
+|click|link=Save This Item|
+|waitForTextPresent|Item Saved||
+|waitForVisible|link='education'||
+|click|link='education'||
+|waitForTextPresent|Material Types||
+|waitForVisible|link=Images (*||
+|click|link=Images (*||
+|waitForVisible|xpath=//img[@src='/images/wait.gif']||
+|waitForNotVisible|xpath=//img[@src='/images/wait.gif']||
+|includePartial|basic_results_layout||
+|verifyTextNotPresent|[Finding Aid]||
+|verifyTextNotPresent|[Book]||
+|verifyTextNotPresent|[Article]||
+|waitForTextPresent|Databases||
+|waitForVisible|link=Save This Item||
+|click|link=Save This Item|
+|waitForTextPresent|Item Saved||
+|waitForVisible|link=My Saved Items||
+|click|link=My Saved Items||
+|waitForVisible|xpath=//img[@src='/images/wait.gif']||
+|waitForNotVisible|xpath=//img[@src='/images/wait.gif']||
+|waitForTextPresent|[Article]||
+|waitForTextPresent|[Book]||
+|waitForTextPresent|[Finding Aid]||

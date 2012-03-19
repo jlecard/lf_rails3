@@ -1,0 +1,8 @@
+|open|/selenium/setup||
+|open|/record/search||
+|waitForVisible|link=Advanced Search||
+|click|link=Advanced Search||
+|includePartial|advanced_search_layout||
+
+
+Source: $Id: advanced_layout.sel 499 2006-10-26 22:45:27Z herlockt $

@@ -1,0 +1,22 @@
+<html>
+<head>
+  <title><%=translate('LIBRARY_FIND_TITLE')%><%= controller.action_name %></title>
+  <%= stylesheet_link_tag 'look_and_feel' %>
+  <%= stylesheet_link_tag 'library_find' %>
+  <%= stylesheet_link_tag 'custom' %>
+  <%= javascript_include_tag :defaults %>       
+</head>
+<body>
+  <% @page_title || translate('SEARCH') %>
+<div class='tabbar'>
+ <span id="logo"><h1><%=translate("LIBRARY_FIND_HEADER")%></h1></span>
+
+  
+ <%= render(:partial => "record/search_box")%>
+ </div> 
+  <div id="innerwrapper">
+    <%= @content_for_layout %>
+  </div> <!-- end innerwrapper -->
+ 
+</body>
+</html>

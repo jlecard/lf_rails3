@@ -1,0 +1,15 @@
+|waitForVisible|link=My Saved Items||
+|click|link=My Saved Items||
+|waitForVisible|xpath=//img[@src='/images/wait.gif']||
+|waitForNotVisible|xpath=//img[@src='/images/wait.gif']||
+|includePartial|/cart/cart||
+|verifyValue|xpath=//input[@id='email_address']|enter email address||
+|click|xpath=//input[@id='email_address']||
+|verifyValue|xpath=//input[@id='email_address']|||
+|type|email_address|nobody@example.com||
+|waitForVisible|link=Email Saved Items||
+|click|link=Email Saved Items||
+|waitForVisible|xpath=//span[@id='wait_email']||
+|waitForNotVisible|xpath=//span[@id='wait_email']||
+|waitForTextPresent|Email message sent||
+

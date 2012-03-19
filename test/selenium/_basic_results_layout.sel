@@ -1,0 +1,11 @@
+|waitForNotVisible|xpath=//img[@src='/images/wait.gif']||
+|includePartial|basic_search_layout||
+|waitForTextPresent|Search results for||
+|waitForTextPresent|Relevance*Date: Newest First||
+|waitForTextPresent|Results * of * hits||
+|waitForVisible|link=Save This Item||
+|waitForVisible|link=Citation||
+|verifyTextNotPresent|An error occured||
+
+
+Source: $Id: _basic_results_layout.sel 1187 2007-12-13 16:30:56Z herlockt $

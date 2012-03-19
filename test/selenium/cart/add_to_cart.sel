@@ -1,0 +1,20 @@
+|open|/selenium/setup||
+|open|/record/search||
+|setTimeout|600000||
+|includePartial|basic_search_layout||
+|type|query[string]|Oregon||
+|click|xpath=//input[@id='submitButton']||
+|waitForVisible|xpath=//img[@src='/images/wait.gif']||
+|waitForTextPresent|Refine Results||
+|waitForVisible|link=Save This Item||
+|click|link=Save This Item||
+|waitForTextPresent|Item Saved||
+|click|link=Save This Item||
+|waitForTextPresent|Item Saved||
+|click|link=Save This Item||
+|waitForTextPresent|Item Saved||
+|click|link=My Saved Items||
+|waitForVisible|xpath=//img[@src='/images/wait.gif']||
+|waitForNotVisible|xpath=//img[@src='/images/wait.gif']||
+|includePartial|/cart/cart||
+|waitForVisible|link=Remove from Saved Items||

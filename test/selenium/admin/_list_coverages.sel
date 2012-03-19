@@ -1,0 +1,7 @@
+|waitForTextPresent|Coverages||
+|waitForTextPresent|Journal title||
+|waitForTextPresent|Provider||
+|waitForTextPresent|Start date||
+|waitForTextPresent|End date||
+|waitForVisible|link=Edit||
+|waitForVisible|link=Destroy||

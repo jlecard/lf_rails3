@@ -1,0 +1,33 @@
+<div id="page_contents">
+<%= render(:partial => "admin/navigation")%>
+<div id="center"  class="middle">
+<h1>Liste des filtres d'Onglet</h1>
+
+<table width="500">
+  <tr>
+  	<th>Nom</th>
+	<th>Filtre</th>
+	<th>Nom de l'Onglet</th>
+	<th>Description</th>
+	<th>&nbsp;</th>
+	<th>&nbsp;</th>
+	<th>&nbsp;</th>
+  </tr>
+
+<% for search_tab_filter in @admin_search_tab_filters %>
+  <tr>
+  	<td><%= h search_tab_filter.label%></td>
+  	<td><%= h search_tab_filter.field_filter%></td>
+	<td><%= h SearchTab.find(search_tab_filter.search_tab_id).label %>
+	<td><%= h search_tab_filter.description%></td>
+    <td><%= link_to 'Afficher', {:action => 'show', :id => search_tab_filter.id} %></td>
+    <td><%= link_to 'Editer', {:action => 'edit', :id => search_tab_filter.id} %></td>
+    <td><%= link_to 'Supprimer', {:action => 'destroy', :id => search_tab_filter.id}, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to "Nouveau Filtre d'Onglet", new_admin_search_tab_filter_path %>
+</div>

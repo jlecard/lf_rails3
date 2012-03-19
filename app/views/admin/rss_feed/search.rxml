@@ -1,0 +1,29 @@
+xml.instruct! :xml, :version=>"1.0" 
+xml.rss(:version=>"2.0"){
+  xml.channel{
+    xml.title("BPI - Flux RSS")
+    chaine = ::LIBRARYFIND_BASEURL + request.request_uri[1,request.request_uri.length].to_s
+    xml.link(chaine)
+    xml.description("Flux pour la recherche: #{@query}")
+    xml.language("eng-us")
+    if !@records.nil?
+      for rec in @records
+        xml.item do
+          xml.title(rec.ptitle)
+          xml.description(rec.abstract)
+          # rfc822
+          #xml.pubDate(rec.date)
+          #xml.link(rec.direct_url)
+          #xml.guid(rec.direct_url)
+#          if rec.direct_url.blank?
+          xml.link(::LIBRARYFIND_BASEURL + "document/display/doc=#{rec.id}")
+          xml.guid(::LIBRARYFIND_BASEURL + "document/display/doc=#{rec.id}")
+#          else
+#            xml.link(rec.direct_url)
+#            xml.guid(rec.direct_url)
+#          end
+        end
+      end
+    end
+  }
+}

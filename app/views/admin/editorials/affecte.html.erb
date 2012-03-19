@@ -1,0 +1,75 @@
+<div id="page_contents">
+    <%= render(:partial => "admin/navigation") %>
+    <div id="center" class="middle">
+        <h1>Affecte editorial to groups collections</h1>
+        <% form_for(:collectionGroup, @collection_group, :url => {:action => 'affecte'}) do |f| %>
+        <%= f.error_messages %>
+        <p>
+        	<br/>
+            <h2>Groupes de collection:</h2>
+            <br/>
+			<br/>
+            <select name="collection_group_id" onchange="submit()">
+                <option value=0 label="None">None</option>
+                <%= options_from_collection_for_select( @collection_groups, :id, :name, @collection_group.id) %>
+                <br/>
+                <br/>
+            </select>
+        </p>
+        <br/>
+        <% end %>
+        <% form_for(:collectionGroup, @collection_group, :url => {:action => 'maj'}) do |f| %>
+        <input name="collection_group_id" type="hidden" value="<%= @collection_group.id.to_s %>">
+        <table border="1">
+            <tr>
+                <td>
+                    Selection
+                </td>
+                <td>
+                    Rang
+                </td>
+                <td>
+                    Editorial
+                </td>
+                <td>
+                </td>
+            </tr>
+            <% j = 0
+            for editorial in @editorials %>
+            <tr>
+                <td>
+                    <% if @selected_editorials !=nil and @selected_editorials.include?(editorial.id.to_s)
+                    checked = true;
+                    else
+                    checked = false;
+                    end %>
+                    <%= check_box "editorials", "#{editorial.id}", :checked => checked %>
+                </td>
+                <% arr = Array.new();
+                (1..10).each do |i|
+                arr << i;
+                end %>
+                <td>
+                    <select name="ranks[<%= editorial.id %>]">
+                        <%= options_for_select(arr, !@selected_editorials_rank.blank? ? @selected_editorials_rank[j].to_i : 0) %>
+                        <br/>
+                        <br/>
+                    </select>
+                </td>
+                <td>
+                    <%=h editorial.label %>
+                </td>
+                <td>
+                    <%= link_to 'Edit', {:action => 'edit', :id => editorial.id} %>
+                </td>
+            </tr>
+            <% j = j + 1 %>
+            <% end %>
+        </table>
+        <p>
+            <%= f.submit "Update" %>
+        </p>
+        <% end %>
+        <%= link_to 'Back', admin_editorials_path %>
+    </div>
+</div>

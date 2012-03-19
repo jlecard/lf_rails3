@@ -1,0 +1,83 @@
+<div id="page_contents">
+    <%= render(:partial => "admin/navigation") %>
+    <div id="center" class="middle">
+        <h1><%=translate("LIST_TITLE") %></h1>
+        <br/>
+        <%= link_to translate("ADD_SEARCH_SUBJECT_LINK"), new_admin_search_tab_subject_path %>
+        <br/>
+        <%@search_tabs.each { |tab| %>
+        <span><a href="#" name="setEffectToggle" class="linkplus"></a>
+            <div id="tree_TAB" class="box boxTab">
+                <span class="boxHeader boxHeaderTab"><a class="boxTitle" onClick="Effect.toggle(document.getElementById('sub_tree_tab_<%=tab.label%>'), 'slide', {duration: 0.2}); return false;"><%=tab.label %></a><%= link_to '<img title="Ajouter un thème" alt="Ajouter un thème" src="/images/new-document.png"/>', {:action => 'new', :tabId => tab.id, :parentId => 0} %>
+                    <a class="boxAction" onclick="openTab('<%=tab.label%>', true);">
+                    	<img title="Tout déplier" alt="Tout déplier" src="/images/add_theme.png"/></a>
+						<a class="boxAction" onclick="openTab('<%=tab.label%>', false);">
+						<img title="Replier" alt="Replier" src="/images/remove_theme.png"/></a></span>
+                <div name="menuItem_<%=tab.label%>" style="display:none;" id="sub_tree_tab_<%=tab.label%>">
+                    <% lastTabId = 0;
+                    callStack = Array.new()
+                    callStack.push(0);
+                    @TreeObject.each { |value|
+                    if ((value != "ROOT") && (value.tab_id == tab.id)) # noeud Racine qui contient tous les themes
+                    if (lastTabId != value.tab_id)
+                    if (lastTabId != 0)
+                    while (callStack.last != callStack.first) do
+                    tmp = callStack.pop() %>
+                </div>
+                <!--end of tree <%=tmp.id%> -->
+            </div>
+            <!-- end of sub_tree -->
+        </span>
+        <%end %>
+    </div>
+    <!-- end of div sub_menu_tree --><%end
+    lastTabId = value.tab_id; %>
+    <%end
+    if (callStack.last != value.parent_id)
+    while (callStack.last != value.parent_id) do
+    tmp = callStack.pop(); %>
+</div>
+<!--end of tree -->
+</div>
+<!-- end of sub_tree <%=tmp.id%> --></span>
+<%end %>
+<%end
+if (@theme.haveSon?(value.id))
+callStack.push(value.id); %>
+<span><a href="#" name="setEffectToggle" class="linkplus"></a>
+    <div id="tree_<%=value.id%>" class="box">
+        <%= render(:partial => "lines", :locals =>{:value=>value}) %>
+        <div name="menuItem_<%=tab.label%>" style="display:none;" id="sub_tree_<%=value.id%>" class="expanded" init="0">
+            <%else %>
+            <span><a href="#" name="setEffectToggle" class="linkplus"></a>
+                <div id="tree_<%=value.id%>" class="box">
+                    <%= render(:partial => "lines", :locals =>{:value=>value})%>
+                    <div name="menuItem_<%=tab.label%>" style="display:none;" id="sub_tree_<%=value.id%>" class="expanded" init="0">
+                    </div>
+                </div>
+            </span>
+            <%end
+            end
+            } %>
+            <%while (callStack.last != callStack.first) do
+            callStack.pop(); %>
+        </div>
+        <!--end of tree -->
+    </div>
+    <!-- end of sub_tree -->
+</span>
+<%end %>
+</div>
+<!-- end of div sub_menu_tree -->
+</div>
+</span>
+<% } %>
+</div>
+<!-- end of div middle -->
+<script>
+        		
+        		<% if ((!params.nil?) && (!params[:id].nil?) && (!params[:id].empty?))%>
+        			openArbo(<%= params[:id].to_i%>);
+        		<% end %>
+        	
+</script>

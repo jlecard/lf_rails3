@@ -1,0 +1,50 @@
+<div id="page_contents">
+    <%= render(:partial => "admin/navigation") %>
+    <div id="center" class="column">
+        <h2><%=translate('RSS_FEEDS_HEADER') %></h2>
+        <div id="edit_form">
+            <% for column in RssFeed.content_columns %>
+	            <div id="form_field">
+	                <span class="form_left">
+	                    <label for="<%=column.name %>">
+	                        <%= translate("#{column.name.upcase}_LABEL") %>
+	                    </label>
+	                </span>
+					<% if column.name.upcase == 'PRIMARY_DOCUMENT_TYPE' %>
+		                <span class="form_right">
+	                		<%=h PrimaryDocumentType.getPrimaryDocumentTypeNameById(@rss_feed.send(column.name)) %>
+		                </span>
+					<% elsif column.name.upcase == 'COLLECTION_GROUP' %>
+						<span class="form_right">
+                			<%=h CollectionGroup.getCollectionGroupFullNameById(@rss_feed.send(column.name)) %>
+		                </span>
+					<% elsif column.name.upcase == 'NEW_DOCS' %>
+						<span class="form_right">
+							<% if @rss_feed.send(column.name).to_i == 1 %>
+								<%=h translate('YES_LABEL') %>
+							<% else %>
+								<%=h translate('NO_LABEL') %>
+							<% end %>
+						</span>
+					<% elsif column.name.upcase == 'ISBN_ISSN_NULLABLE' %>
+						<span class="form_right">
+							<% if @rss_feed.send(column.name).to_i == 1 %>
+								<%=h translate('REQUIRED') %>
+							<% else %>
+								<%=h translate('NOT_REQUIRED') %>
+							<% end %>
+						</span>
+					<% else %>
+						<span class="form_right">
+		                	<%=h @rss_feed.send(column.name) %>
+		                </span>
+					<% end %>
+	            </div>
+			<% end %>
+	        <%= link_to translate('EDIT'), :action => 'edit', :id => @rss_feed %>
+			<%= link_to translate('RETURN'), :action => 'list' %>
+
+        </div>
+	</div>
+
+</div>

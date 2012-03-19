@@ -1,0 +1,138 @@
+/* CSS Document */
+
+/* style menus page accueil*/
+
+.menutype1{
+float :left;
+margin-top: 0px;
+margin-left : 10px;
+_margin-left : 7px;
+width : 245px;
+background-color : #F0ECF4;
+height:298px;
+}
+.titremenu{
+background-color :#30036D;
+height:40px;
+}
+.titremenu h1{
+padding-top :3px;
+margin-left :3px;
+color:#FFFFFF;
+font-size : 1.5em;
+border:none;
+}
+.niv2 li{
+margin:0;
+list-style-image: url(../img/pict_puceh.gif) ;
+background-image :none;
+}
+.contenumenu a{
+text-decoration: none ;
+}
+.contenumenu{
+padding-top:5px;
+}
+.contenumenu ul{
+padding:0;
+}
+.contenumenu li{
+margin: 0px ;
+}
+
+.hometxt {width: 345px; }
+.titre {padding-left:20px; color:#30036D;font-size: 14px; font-weight: bold; background:transparent url(../img/...) no-repeat scroll 0 0; background-image:url(../img/picto-fleche-mauve.gif);}
+#interroger {margin-left : 10px;}
+.btrechsimple{ margin-top:5px; float:right; margin-right:25px; text-align:right; width:345px;}
+.petitlien{float:right; text-align:right; width:345px; margin-right:25px;}
+.sepbar { background-image: url(../img/trame_fin.gif); width:760px; font-size:1px;height:4px;line-height:1px;margin:10px 0 10px 2px;}
+#elargir{margin-left : 10px;}
+
+.tx-iframeflexform-pi1 { height: 100%;}
+
+.contenulistetheme{
+  padding-top:5px;
+}
+
+.contenulistetheme ul{
+  padding:0.4em 0;
+}
+
+.contenulistetheme li{
+  margin:0.2em 0;
+  line-height:1.2em;
+}
+
+.contenulistetheme li.pistethemeniv1 a{
+  color:#888888;
+  font-size:1.2em;
+  text-decoration:none;
+}
+
+.contenulistetheme li.pistethemeniv1 ul li.pistethemeniv2{
+  text-indent:0;
+  margin:0 0 0 0;
+}
+.contenulistetheme li.pistethemeniv1 ul li.pistethemeniv2 a:hover{
+  text-decoration:underline;
+}
+.contenulistetheme li.pistethemeniv1 ul li.pistethemeniv2 a{
+  color:#30036D;
+  font-size:0.8em;
+  font-weight:normal;
+}
+
+
+#pistescolselection { 
+	position: absolute; 
+	left: 28px; 
+	top: 10px; 
+	width: 300px; 
+	padding-bottom: 15px; 
+}
+#pistescolaide { 
+	position: absolute; 
+	left: 354px; 
+	top: 10px; 
+	width: 444px; 
+	padding-bottom: 15px;
+}
+#pistescolselection p a, #pistescolaide p a { color: #30036d; font-weight: bold;}
+#pistes h1 { 
+	background-color: #30036d;
+	font-size: 14px; 
+	font-weight: bold; 
+	color: #ffffff; 
+	padding: 2px 2px 2px 4px; 
+	margin: 0 0 7px 0;
+}
+#pistes h2 { 
+	color: #30036d; 
+	background-color: #e4d0f7;
+	font-size: 12px; 
+	font-weight: bold; 
+	padding: 2px 2px 2px 4px; 
+	margin: 0 0 7px 0;
+}
+
+#menulangue, #menulanguefake {
+  position:absolute;
+  top:4px;
+  left:860px;
+  width:140px;
+  text-align:right;
+}
+
+#menulangue, #menulanguefake {
+  display: inline;
+}
+
+#menulangue .menulangueitem, #menulanguefake .menulangueitem {
+  margin-bottom:2px;
+}
+
+#menulangue .menulangueitem a, #menulanguefake .menulangueitem a { border-right:0px; color: white;}
+
+.pistethematique {
+  margin-left: 10px;
+}

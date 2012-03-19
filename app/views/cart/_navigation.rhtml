@@ -1,0 +1,37 @@
+<div id="left" class="left">
+    <!-- nav bar -->
+    <div id="browse">
+        <div class="xsnazzysearch">
+            <b class="xtop "><b class="xb1"></b><b class="xb4"></b></b>
+            <div class="xboxcontent">
+                <h2 id="browsetitle"><%=translate( "SAVED_ITEMS") %></h2>
+                <div id="t_nav">
+                    <div id="plus">
+                    </div>
+                    <div id="email" class="navigation">
+                        <img alt="<%=translate( 'NEW_EMAIL')%>" border="0" src="/images/newemail.gif"/><input style="width:170" type="text" id="email_address" value="<%=translate( 'ENTER_EMAIL_ADDRESS')%>" onfocus="document.getElementById('email_address').value='';"/><%=link_to_remote translate( 'EMAIL_SAVED_ITEMS'), {
+                        :update => 'email_response' ,
+                        :url => { :action => 'email', :controller=>'/document'},
+                        :with => "'to='+document.getElementById('email_address').value",
+                        :loading => "showWaitEmail()",
+                        :complete => "Element.hide('wait_email');"
+                        } %>
+                        <span id="wait_email" class="waitimage"><img src="/images/wait.gif"/></span>
+                    </div>
+                    <div id="email_response">
+                    </div>
+                    <div id="pdf" class="navigation">
+                        <img alt="<%=translate( 'NEW_EMAIL')%>" border="0" src="/images/icon_pdf.gif"/>
+						<%=link_to translate( 'EXPORT_TO_PDF'),  { :action => 'pdf', :controller=>'/cart'}, :style=>'display: inline', :popup => true %>
+                    </div>
+                </div><!--end t_nav-->
+            </div><!--close xboxcontent --><b class="xbottom"><b class="xb4"></b><b class="xb1"></b></b>
+        </div>
+        <!--end xsnazzysearch-->
+    </div>
+    <!--close browse -->
+</div>
+<!-- end left column -->
+<script language='JavaScript'>
+    Element.hide('wait_email')
+</script>

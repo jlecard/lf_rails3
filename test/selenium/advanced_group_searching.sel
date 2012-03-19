@@ -1,0 +1,92 @@
+|open|/selenium/setup||
+|open|/record/search||
+|setTimeout|600000||
+|waitForVisible|link=Advanced Search||
+|click|link=Advanced Search||
+|includePartial|advanced_search_layout||
+|type|xpath=//input[@id='query[string]']|oregon||
+|select|query[max]|25 results per database||
+|waitForVisible|xpath=//input[@id='collection_group_g2']||
+|click|xpath=//input[@id='collection_group_g2']||
+|waitForVisible|xpath=//input[@id='collection_group_g3']||
+|click|xpath=//input[@id='collection_group_g3']||
+|waitForVisible|xpath=//input[@id='collection_group_g5']||
+|click|xpath=//input[@id='collection_group_g5']||
+|click|xpath=//input[@id='advancedSubmitButton']||
+|waitForVisible|xpath=//img[@src='/images/wait.gif']||
+|waitForNotVisible|xpath=//img[@src='/images/wait.gif']||
+|waitForTextPresent|Refine Results||
+|includePartial|advanced_results_layout||
+|waitForTextPresent|Databases||
+|waitForVisible|link=Advanced Search||
+|click|link=Advanced Search||
+|waitForVisible|xpath=//input[@id='collection_group_g5']||
+|click|xpath=//input[@id='collection_group_g5']||
+|click|xpath=//input[@id='collection_group_g2']||
+|click|xpath=//input[@id='advancedSubmitButton']||
+|waitForVisible|xpath=//img[@src='/images/wait.gif']||
+|waitForNotVisible|xpath=//img[@src='/images/wait.gif']||
+|waitForTextPresent|Refine Results||
+|includePartial|basic_search_layout||
+|waitForTextPresent|Results * of * hits||
+|waitForTextPresent|Advanced search results for||
+|waitForTextPresent|Relevance*Date: Newest First||
+|waitForVisible|link=Save This Item||
+|waitForVisible|link=Citation||
+|verifyTextNotPresent|An error occured||
+|waitForTextPresent|Databases||
+|waitForVisible|link=Advanced Search||
+|click|link=Advanced Search||
+|waitForVisible|xpath=//input[@id='collection_group_g2']||
+|click|xpath=//input[@id='collection_group_g2']||
+|click|xpath=//input[@id='collection_group_g3']||
+|click|xpath=//input[@id='advancedSubmitButton']||
+|waitForVisible|xpath=//img[@src='/images/wait.gif']||
+|waitForNotVisible|xpath=//img[@src='/images/wait.gif']||
+|waitForTextPresent|Refine Results||
+|includePartial|advanced_results_layout||
+|waitForTextPresent|Databases||
+|waitForVisible|link=Advanced Search||
+|click|link=Advanced Search||
+|waitForVisible|xpath=//input[@id='collection_group_g3']||
+|select|query[max]|25 results per database||
+|waitForVisible|xpath=//input[@id='collection_group_g3']||
+|click|xpath=//input[@id='collection_group_g3']||
+|click|xpath=//input[@id='collection_group_g4']||
+|click|xpath=//input[@id='advancedSubmitButton']||
+|waitForVisible|xpath=//img[@src='/images/wait.gif']||
+|waitForNotVisible|xpath=//img[@src='/images/wait.gif']||
+|waitForTextPresent|Refine Results||
+|includePartial|advanced_results_layout||
+|waitForTextPresent|Databases||
+|waitForVisible|link=Advanced Search||
+|click|link=Advanced Search||
+|waitForVisible|xpath=//input[@id='collection_group_g2']||
+|click|xpath=//input[@id='collection_group_g2']||
+|click|xpath=//input[@id='advancedSubmitButton']||
+|waitForVisible|xpath=//img[@src='/images/wait.gif']||
+|waitForNotVisible|xpath=//img[@src='/images/wait.gif']||
+|waitForTextPresent|Refine Results||
+|includePartial|advanced_results_layout||
+|waitForTextPresent|Databases||
+|waitForVisible|link=Advanced Search||
+|click|link=Advanced Search||
+|waitForVisible|xpath=//input[@id='collection_group_g3']||
+|click|xpath=//input[@id='collection_group_g3']||
+|click|xpath=//input[@id='advancedSubmitButton']||
+|waitForVisible|xpath=//img[@src='/images/wait.gif']||
+|waitForNotVisible|xpath=//img[@src='/images/wait.gif']||
+|waitForTextPresent|Refine Results||
+|waitForTextPresent|Databases||
+|waitForVisible|link=Advanced Search||
+|click|link=Advanced Search||
+|waitForVisible|xpath=//input[@id='collection_group_g5']||
+|click|xpath=//input[@id='collection_group_g5']||
+|click|xpath=//input[@id='advancedSubmitButton']||
+|waitForVisible|xpath=//img[@src='/images/wait.gif']||
+|waitForNotVisible|xpath=//img[@src='/images/wait.gif']||
+|waitForTextPresent|Refine Results||
+|waitForTextPresent|Databases||
+
+
+Source: $Id: advanced_group_searching.sel 499 2006-12-5 22:45:27Z herlockt $

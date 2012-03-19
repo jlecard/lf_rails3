@@ -1,0 +1,4 @@
+|waitForVisible|xpath=//input[@id='collection_group_name']||
+|waitForVisible|xpath=//input[@id='collection_group_full_name']||
+|waitForVisible|xpath=//textarea[@id='collection_group_description']||
+|waitForVisible|xpath=//input[@id='saveButton']||

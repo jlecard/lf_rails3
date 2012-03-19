@@ -1,0 +1,7 @@
+|open|/admin||
+|includePartial|/admin/basic_admin_layout||
+|includePartial|/admin/navigation||
+|waitForVisible|link=List Collections||
+|click|link=List Collections||
+|includePartial|/admin/list_collections||
+

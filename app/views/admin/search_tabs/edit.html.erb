@@ -1,0 +1,22 @@
+<div id="page_contents">
+	<%= render(:partial => "admin/navigation")%>
+	<div id="center"  class="column">
+		<h1>Editing search_tabs <%= @search_tabs.label%></h1>
+		
+		<% form_for(:search_tabs, @search_tabs, :url => {:action => 'update', :id => @search_tabs.id}) do |f| %>
+		  <%= f.error_messages %>
+		  <p>
+		  	<%=f.label :label %> </br>
+			<%=f.text_field :label %></br>
+		    <%= f.label :description %><br />
+		    <%= f.text_area :description %>
+		  </p>
+		  <p>
+		    <%= f.submit "Update" %>
+		  </p>
+		<% end %>
+		
+		<%= link_to 'Show', {:action => 'show', :id => @search_tabs.id} %> |
+		<%= link_to 'Back', admin_search_tabs_path %>
+	</div>
+</div>

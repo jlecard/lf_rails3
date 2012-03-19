@@ -1,0 +1,49 @@
+|open|/selenium/setup||
+|open|/record/search||
+|setTimeout|400000||
+|type|xpath=//input[@id='query[string]']|education|
+|click|xpath=//input[@id='submitButton']||
+|waitForVisible|xpath=//img[@src='/images/wait.gif']||
+|waitForNotVisible|xpath=//img[@src='/images/wait.gif']||
+|waitForTextPresent|Refine Results||
+|includePartial|basic_results_layout||
+|waitForVisible|link=Next >||
+|click|link=Next >||
+|waitForVisible|xpath=//img[@src='/images/wait.gif']||
+|waitForVisible|link=< Previous||
+|verifyNotVisible|xpath=//img[@src='/images/wait.gif']||
+|verifyTextNotPresent|Did you mean:||
+|waitForTextPresent|Databases||
+|waitForTextPresent|Relevance*Date: Oldest First||
+|select|sort_value|Date: Oldest First||
+|waitForVisible|xpath=//img[@src='/images/wait.gif']||
+|waitForNotVisible|xpath=//img[@src='/images/wait.gif']||
+|includePartial|basic_results_layout||
+|waitForTextPresent|Databases||
+|waitForTextPresent|Relevance*Date: Oldest First||
+|select|sort_value|Date: Newest First||
+|waitForVisible|xpath=//img[@src='/images/wait.gif']||
+|waitForNotVisible|xpath=//img[@src='/images/wait.gif']||
+|includePartial|basic_results_layout||
+|waitForTextPresent|Databases||
+|waitForTextPresent|Relevance*Date: Oldest First||
+|select|sort_value|Relevance|
+|waitForVisible|xpath=//img[@src='/images/wait.gif']||
+|waitForNotVisible|xpath=//img[@src='/images/wait.gif']||
+|includePartial|basic_results_layout||
+|waitForTextPresent|Databases||
+|select|sort_value|Author: A..Z||
+|waitForVisible|xpath=//img[@src='/images/wait.gif']||
+|waitForNotVisible|xpath=//img[@src='/images/wait.gif']||
+|includePartial|basic_results_layout||
+|waitForTextPresent|Databases||
+|waitForTextPresent|Relevance*Date: Oldest First||
+|select|sort_value|Author: Z..A||
+|waitForVisible|xpath=//img[@src='/images/wait.gif']||
+|waitForNotVisible|xpath=//img[@src='/images/wait.gif']||
+|includePartial|basic_results_layout||
+|waitForTextPresent|Databases||
+|waitForTextPresent|Relevance*Date: Oldest First||
+
+
+Source: $Id: basic_sorting.sel 569 2006-11-20 23:57:10Z herlockt $

@@ -1,0 +1,68 @@
+<div id='pagination'>
+    <% if @show_previous or @show_next %>
+    	<% _showBase = false %>
+	
+	    <% if @show_previous
+		    params=build_pagination_params(build_string_from_filter(Array.new(@filter)),@previous) %>
+		    <%= link_to translate('PREVIOUS'),
+		    {:action => 'retrieve_page',
+		    :controller=>'record',
+		    :params=>params},
+		    {:onclick=>"showWait()",
+		    :class => "pagination-link" } %>
+	    	&nbsp;
+		<% end %>
+	    
+		<% for page_num in @page_list %>
+		    <% if page_num != @page
+			    params=build_pagination_params(build_string_from_filter(Array.new(@filter)),page_num) %>
+			    <%= link_to page_num.to_s,
+			    {:action => 'retrieve_page',
+			    :controller=>'record',
+			    :params=>params},
+			    {:onclick=>"showWait()",
+			    :class => "pagination-link" } %>
+			    &nbsp;
+			<% else %>
+		    	<%= page_num %>&nbsp;
+			<% end %>
+	    <% end %>
+		
+	    <% if @show_next
+		    params=build_pagination_params(build_string_from_filter(Array.new(@filter)),@next) %>
+		    <%= link_to translate('NEXT'), {
+		    :action => 'retrieve_page',
+		    :controller=>'record',
+		    :params=>params},
+		    {:onclick=>"showWait()",
+		    :class => "pagination-link" } %>
+	    <%else %>
+	    	<% _showBase = true %>
+		<% end %>
+	<% else %>
+	    <% _showBase = true %>
+	<% end %>
+	
+    <% if _showBase %>
+	    <% if get_total_hits.to_i > @results.length %>
+		    <%if @all_databases!=nil and @all_databases.length > 0 %>
+			    <div id='search_databases'>
+			    	<br/>
+			        <b><%=translate('MORE_RESULTS') %></b>
+			        <br/>
+			        <% @all_databases.each{|d|
+						if d[:total_hits].to_i > @max.to_i
+					        if !d[:url].blank? %>
+						        <a href=<%=h(d[:url])%> target="_blank">
+							<% end %>
+						    <%=escape_quote(d[:target_name])+" ("+d[:total_hits].to_s+" hits)" %>
+						    <% if !d[:url].blank? %>
+						        </a>&nbsp;&nbsp;&nbsp;
+							<% end
+						end
+			        } %>
+		    	</div>
+		    <%end %>
+	    <%end %>
+    <%end %>
+</div>

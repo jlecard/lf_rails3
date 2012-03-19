@@ -1,0 +1,15 @@
+|open|/admin||
+|includePartial|/admin/basic_admin_layout||
+|includePartial|/admin/navigation||
+|waitForVisible|link=List Users||
+|click|link=List Users||
+|includePartial|/admin/list_users||
+|waitForVisible|link=LibraryFind Admin||
+|click|link=LibraryFind Admin||
+|includePartial|/admin/show_user||
+|waitForTextPresent|User||
+|waitForVisible|link=Edit||
+
+      
+
+ 

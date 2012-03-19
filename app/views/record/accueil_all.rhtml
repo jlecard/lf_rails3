@@ -1,0 +1,95 @@
+<div class="left">
+    <h3><%= translate('EXPLORE_BY_SUBJECT') %></h3>
+
+	<%select = @linkMenu[0].id;
+	if params[:idTab] != nil && params[:idTab].to_i > 0
+		select = params[:idTab].to_i;
+	end %>
+	<%
+	lastTabId = 0;
+	callStack = Array.new()
+	callStack.push(0);
+	@TreeObject.each { |value| 
+			if (value != "ROOT") # noeud Racine qui contient tous les themes
+							if (lastTabId != value.tab_id)
+									if (lastTabId != 0)
+												while (callStack.last != callStack.first) do
+														callStack.pop();%>
+														</div><!--end of tree -->
+														</div><!-- end of sub_tree -->
+														</span>
+												<%end %>
+											</div><!-- end of div sub_menu_tree -->
+									<% end
+									lastTabId = value.tab_id;
+									if (value.tab_id == select)%>
+										<div name='sub_menu_tree_<%=value.tab_id%>'>
+									<% else %>
+										<div name='sub_menu_tree_<%=value.tab_id%>' class='hideElement' >
+									<% end
+							end
+							if (callStack.last != value.parent_id) 
+										while (callStack.last != value.parent_id) do
+												callStack.pop();%>
+												</div><!--end of tree -->
+												</div><!-- end of sub_tree -->
+												</span>
+										<%end
+							end
+					if (@theme.haveSon?(value.id))
+							callStack.push(value.id);%>
+							<span>
+								<a name="setEffectToggle" class="linkplus">+</a>
+								<div id="tree_<%=value.id%>" class="navigation">
+									<% if ((value.format == 'request') && (value.collection_group_id != nil) && (value.collection_group_id != 0)) %>
+										<a title="<%=value.description%>" href="/record/retrieve_theme?sets=g<%=value.collection_group_id%>" ><%=value.label%></a>
+									<%elsif ((value.format == 'url') && (!value.url.blank?)) %>
+										<a title="<%=value.description%>" href="<%=value.url%>" target="_blank"><%=value.label%></a>
+									<%else%>
+										<a title="<%=value.description%>" onClick="Effect.toggle(document.getElementById('sub_tree_<%=value.id%>'), 'slide', {duration: 0.2, afterFinish: setTimeout('window.scrollBy(0, $(sub_tree_' + <%=value.id%> + ').offsetHeight)', 250)}); return false;"><%=value.label%></a>
+									<%end%>
+									<div name="menuItem" id="sub_tree_<%=value.id%>" class="expanded" init="0">
+					<%else%>
+							<span>
+								<a class="linkplus">-</a>
+								<div id="sub_tree_<%=value.id%>" class="navigation">
+									<% if ((value.format == 'request') && (value.collection_group_id != nil) && (value.collection_group_id != 0)) %>
+										<a title="<%=value.description%>" href="/record/retrieve_theme?sets=g<%=value.collection_group_id%>&idTab=<%=select%>" ><%=value.label%></a>
+									<%elsif ((value.format == 'url') && (!value.url.blank?)) %>
+										<a title="<%=value.description%>" href="<%=value.url%>" target="_blank"><%=value.label%></a>
+									<%else%>
+										<a title="<%=value.description%>" ><%=value.label%></a>
+									<%end%>
+								</div>
+							</span>
+					<%end
+			end
+	}%>
+		<%while (callStack.last != callStack.first) do
+				callStack.pop();%>
+				</div><!--end of tree -->
+				</div><!-- end of sub_tree -->
+				</span>
+		<%end %>
+		</div><!-- end of div sub_menu_tree -->
+	</div><!-- End div left-->
+<%= render :partial => "rnavigation"%>
+<div id="middle" class="middle">
+<%= render(:partial => "messages") %>
+<%= render(:partial => "errors") %>
+<%= render(:partial => "private") %>
+<%begin%>
+<% if ((params[:tabName] != nil) && (params[:tabName] != ""))%>
+	<%= render(:partial => params[:tabName].downcase) %>
+<% else %>
+<%= render(:partial => "tab_all") %>
+<% end %>
+<%rescue%>
+<%= render(:partial => "tab_all") %>
+<%end%>
+</div>
+<!-- End div middle-->
+<script>
+    init_subContainer();
+    initMenuAdmin();
+</script>

@@ -1,0 +1,31 @@
+|open|/admin||
+|includePartial|/admin/basic_admin_layout||
+|includePartial|/admin/navigation||
+|waitForVisible|link=Add a New Coverage||
+|click|link=Add a New Coverage||
+|waitForTextPresent|Add a New Coverage||
+|waitForTextPresent|Journal Title:||
+|waitForTextPresent|ISSN:||
+|waitForTextPresent|eISSN:||
+|waitForTextPresent|ISBN:||
+|waitForTextPresent|Start Date:||
+|waitForTextPresent|End Date:||
+|waitForTextPresent|Provider:||
+|waitForTextPresent|URL:||
+|waitForTextPresent|Modification Date:||
+|includePartial|/admin/coverage_form||
+|type|coverage_journal_title|test journal title||
+|type|coverage_issn|test issn||
+|type|coverage_eissn|test eissn||
+|type|coverage_isbn|test isbn||
+|type|coverage_start_date|20000101||
+|type|coverage_end_date|20050101||
+|type|coverage_provider|test provider||
+|type|coverage_url|http://oasis.oregonstate.edu=||
+|type|coverage_mod_date|20030101||
+|click|xpath=//input[@id='saveButton']||
+|includePartial|/admin/list_coverages||
+|waitForTextPresent|test journal title||
+|waitForTextPresent|test provider||
+|waitForTextPresent|20000101||
+|waitForTextPresent|20050101||

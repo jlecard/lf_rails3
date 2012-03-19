@@ -1,0 +1,20 @@
+|open|/admin||
+|includePartial|/admin/basic_admin_layout||
+|includePartial|/admin/navigation||
+|waitForVisible|link=List Providers||
+|click|link=List Providers||
+|includePartial|/admin/list_providers||
+|waitForVisible|link=Edit||
+|click|link=Edit||
+|waitForTextPresent|Edit Provider||
+|waitForTextPresent|Add a New Provider||
+|waitForTextPresent|Provider Name:||
+|waitForTextPresent|Title:||
+|waitForTextPresent|URL:||
+|waitForTextPresent|Article Type:||
+|waitForTextPresent|Proxy:||
+|waitForTextPresent|Can Resolve||
+|includePartial|/admin/provider_form||
+|waitForVisible|xpath=//input[@id='saveButton']||
+|click|xpath=//input[@id='saveButton']||
+|includePartial|/admin/show_provider||

@@ -1,0 +1,22 @@
+|open|/admin||
+|includePartial|/admin/basic_admin_layout||
+|includePartial|/admin/navigation||
+|waitForVisible|link=List Coverages||
+|click|link=List Coverages||
+|includePartial|/admin/list_coverages||
+|waitForVisible|link=Edit||
+|click|link=Edit||
+|waitForTextPresent|Edit Coverage||
+|waitForTextPresent|Journal Title:||
+|waitForTextPresent|ISSN:||
+|waitForTextPresent|eISSN:||
+|waitForTextPresent|ISBN:||
+|waitForTextPresent|Start Date:||
+|waitForTextPresent|End Date:||
+|waitForTextPresent|Provider:||
+|waitForTextPresent|URL:||
+|waitForTextPresent|Modification Date:||
+|includePartial|/admin/coverage_form||
+|waitForVisible|xpath=//input[@id='saveButton']||
+|click|xpath=//input[@id='saveButton']||
+|includePartial|/admin/show_coverage||

@@ -1,0 +1,9 @@
+|waitForTextPresent|Journal title:||
+|waitForTextPresent|Issn:||
+|waitForTextPresent|Eissn:||
+|waitForTextPresent|Isbn:||
+|waitForTextPresent|Start date:||
+|waitForTextPresent|End date:||
+|waitForTextPresent|Provider:||
+|waitForTextPresent|Url:||
+|waitForTextPresent|Mod date:||

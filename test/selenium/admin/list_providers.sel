@@ -1,0 +1,7 @@
+|open|/admin||
+|includePartial|/admin/basic_admin_layout||
+|includePartial|/admin/navigation||
+|waitForVisible|link=List Providers||
+|click|link=List Providers||
+|includePartial|/admin/list_providers||
+

@@ -1,0 +1,9 @@
+|waitForTextPresent|Collections||
+|waitForTextPresent|Name||
+|waitForTextPresent|Alt name||
+|waitForTextPresent|Record schema||
+|waitForTextPresent|archives||
+|waitForTextPresent|Archives||
+|waitForTextPresent|oai_dc||
+|waitForVisible|link=Edit||
+|waitForVisible|link=Destroy||

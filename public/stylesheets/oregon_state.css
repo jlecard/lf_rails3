@@ -1,0 +1,56 @@
+
+/*** OSU specific ***/
+#header {background: #736980 url('http://osulibrary.oregonstate.edu/images/header_bg.gif') repeat-x;}
+.smallfont { background: url(http://osulibrary.oregonstate.edu/images/a_small_underline.gif) no-repeat;}
+.medfont { background: url(http://osulibrary.oregonstate.edu/images/a_med.gif) no-repeat;}
+.largefont { background: url(http://osulibrary.oregonstate.edu/images/a_large.gif) no-repeat;}
+#librarybar {width:995px;}
+#navmenu ul li.first {margin-left: 8px; }
+#t_nav div div a {margin-left: 18px; }
+.column {position:inherit; float: none;}
+body {
+  padding-left: 0px;   
+  padding-right: 0px;  
+  margin: 0; 
+  min-width: 804px;
+}
+#header, #footer {
+  margin-left: 0px;   
+  margin-right: 0px;   
+}
+#footer {
+  margin-bottom: 0px;
+  clear:both;
+  width:800px;
+  position: relative;
+  top: 5em;
+}
+#footer p{margin-top: 0;}
+
+#header {
+  min-width:995px;
+}
+#center { 
+    margin: 32px 30px 20px 191px;
+	padding: 10 0 0 10;
+    width:820px;
+}
+#left {   
+  	position: absolute;
+	width:191px;
+	top: 42px;
+	left: 0;
+	margin:0;
+	z-index:5;
+  
+}
+#right {
+  margin-top: 0px;
+  position: absolute;
+  margin-right: 0px;
+}
+#browse {
+  margin-top: 0px;
+}
+
+

@@ -1,0 +1,33 @@
+|open|/admin||
+|includePartial|/admin/basic_admin_layout||
+|includePartial|/admin/navigation||
+|waitForVisible|link=List Collections||
+|click|link=List Collections||
+|includePartial|/admin/list_collections||
+|waitForVisible|link=Edit||
+|click|link=Edit||
+|waitForTextPresent|Edit Collection||
+|waitForTextPresent|Name||
+|waitForTextPresent|Alternate Name||
+|waitForTextPresent|Connection Type||
+|waitForTextPresent|Z39.50||
+|waitForTextPresent|OAI-PMH ||
+|waitForTextPresent|Host||
+|waitForTextPresent|User||
+|waitForTextPresent|Password||
+|waitForTextPresent|Record Schema||
+|waitForTextPresent|Definition||
+|waitForTextPresent|URL||
+|waitForTextPresent|Material Type||
+|waitForTextPresent|Article||
+|waitForTextPresent|Book||
+|waitForTextPresent|Finding Aid||
+|waitForTextPresent|Image||
+|waitForTextPresent|Newspaper||
+|waitForTextPresent|Virtual||
+|waitForTextPresent|Vendor URL||
+|waitForTextPresent|Bib-1 Attributes||
+|includePartial|/admin/collection_form||
+|waitForVisible|xpath=//input[@id='saveButton']||
+|click|xpath=//input[@id='saveButton']||
+|includePartial|/admin/show_collection||

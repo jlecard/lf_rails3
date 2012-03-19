@@ -1,0 +1,7 @@
+|waitForVisible|xpath=//input[@id='provider_provider_name']||
+|waitForVisible|xpath=//input[@id='provider_title']||
+|waitForVisible|xpath=//input[@id='provider_url']||
+|waitForVisible|xpath=//input[@id='provider_article_type']||
+|waitForVisible|xpath=//input[@id='provider_proxy']||
+|waitForVisible|xpath=//input[@id='provider_can_resolve']||
+|waitForVisible|xpath=//input[@id='saveButton']||

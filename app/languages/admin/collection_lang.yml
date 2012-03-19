@@ -1,0 +1,327 @@
+EN:
+  #Inline help
+  NAME_DESCRIPTION: help for collection name here
+  NAME_EXAMPLE: e.g. example collection name here
+  ALT_NAME_DESCRIPTION: help for collection alt name here
+  ALT_NAME_EXAMPLE: e.g. example collection alt name here
+  CONN_TYPE_DESCRIPTION: help for collection connection type
+  CONN_TYPE_EXAMPLE: e.g. for collection connection type
+  ADV_KEYWORD_SEARCHING_DESCRIPTION: help for advanced keyword searching
+  HOST_DESCRIPTION: help for collection host here
+  HOST_EXAMPLE: e.g. example collection host here
+  USER_DESCRIPTION: help for collection user here
+  USER_EXAMPLE: e.g. example collection user here
+  PASSWORD_DESCRIPTION: help for collection password here
+  PASSWORD_EXAMPLE: e.g. example collection password here
+  RECORD_SCHEMA_DESCRIPTION: help for collection record_schema here
+  RECORD_SCHEMA_EXAMPLE: e.g. example collection record_schema here
+  DEFINITION_DESCRIPTION: help for collection Definition here
+  DEFINITION_EXAMPLE: e.g. example collection Definition here
+  URL_DESCRIPTION: help for collection url here
+  URL_EXAMPLE: e.g. example collection url here
+  MATERIAL_TYPE_DESCRIPTION: help for collection mat_type here
+  MATERIAL_TYPE_EXAMPLE: e.g. example collection mat_type here
+  VIRTUAL_DESCRIPTION: help for collection virtual here
+  VIRTUAL_EXAMPLE: e.g. example collection virtual here
+  VENDOR_URL_DESCRIPION: help for collection vendor_url here
+  VENDOR_URL_EXAMPLE: e.g. example collection vendor_url here
+  BIB_ATTR_DESCRIPTION: help for collection bib_attr here
+  BIB_ATTR_EXAMPLE: e.g. example collection bib_attr here
+  PROXY_DESCRIPTION: help for collection proxy here
+  PROXY_EXAMPLE: e.g. example collection proxy here
+  COLLECTION_PARENT: Is Toplevel OAI Collection
+  COLLECTION_PRIVATE: Must authenticate to show in list
+  HARVESTING_DAYS_DESCRIPTION: Harvesting days
+  HARVESTING_DAYS_EXAMPLE: Choose the harvesting days for the collection
+  #labels
+  NAME_LABEL: "Name:"
+  ALTERNATE_NAME_LABEL: "Alternate Name:"
+  CLASSNAME_HANDLE: "Handle Classname"
+  CLASSNAME_HANDLE_DESCRIPTION: "give handle classname for check document right"
+  CLASSNAME_HANDLE_EXAMPLE: "e.g. example Bpi (with connector name is CookieBPI, suffixe CookieXXXX)"
+  COLLECTION_HAS_RIGHT: "This Collection Contains right ?"
+  CONNECTION_TYPE_LABEL: "Connection Type:"
+  COLLECTION_GROUPS_LABEL: "Associated collection groups:"
+  Z3950_LABEL: "Z39.50"
+  OAIPMH_LABEL: "OAI-PMH"
+  OPEN_SEARCH_LABEL: "Open Search"
+  SRU_LABEL: "SRU"
+  CONNECTOR_LABEL: "Custom Connector"
+  QUINZAINE_LABEL: "Quinzaine littéraire"
+  MEDIAVIEW_LABEL: "MediaView"
+  GED_LABEL: "GED"
+  PORTFOLIO_LABEL: "Portfolio"
+  ADVANCED_KEYWORD_SEARCHING_LABEL: "Advanced Keyword Searching"
+  HOST_LABEL: "Host:"
+  USER_LABEL: "User:"
+  PASSWORD_LABEL: "Password:"
+  RECORD_SCHEMA_LABEL: "Record Schema:"
+  DEFINITION_LABEL: "Definition:"
+  URL_LABEL: "URL:"
+  MATERIAL_TYPE_LABEL: "Material Type:"
+  ARTICLE_LABEL: Article
+  BOOK_LABEL: Book
+  FINDING_AID_LABEL: Finding Aid
+  IMAGE_LABEL: Image
+  NEWSPAPER_LABEL: Newspaper
+  INTERNET_LABEL: Internet
+  VIRTUAL_LABEL: "Virtual:"
+  VENDOR_URL_LABEL: "Vendor URL:"
+  BIB1_ATTRIBUTES_LABEL: "Bib-1 Attributes:"
+  USE_PROXY_LABEL: "Use Proxy:"
+  YES_LABEL: "Yes"
+  NO_LABEL: "No"
+  EDIT_COLLECTION: Edit Collection
+  COLLECTIONS_HEADER: Collections
+  TEST_CONNECTION: Test Connection
+  COLLECTION_HEADER: Collection
+  EDIT: Edit
+  DIAGNOSTIC_RESULTS: "Diagnostic Results:"
+  CONFIGURATION_INVALID: "Configuration appears to be invalid.  Please check you information and try again."
+  SUCCESS: " \"Success!  The test harvested: #{args[0]} records.\""
+  ZERO_RECORDS: While no errors were reported, the test harvested zero records.  You may want to check your configuration information.
+  TOTAL_RESULTS_LABEL: " \"Total Results: #{args[0]}\""
+  TITLE_LABEL: " \"Title: #{args[0]}\""
+  ABSTRACT_LABEL: " \"Abstract: #{args[0]}\""
+  SUCCESSFUL_SEARCH: Search was successful
+  NO_RESULTS: No results were returned.  Please confirm your configuration information.
+  ERROR_OCCURED: An Error has occurred.  Please confirm your configuration information.
+  COLLECTION_CREATED: 'Collection was successfully created.'
+  COLLECTION_UPDATED: 'Collection was successfully updated.'
+  OAI_SET_LABEL: "Name Set OAI:"
+  OAI_SET_DESCRIPTION: "Name of Set to harvest (to harvest all: check parent) "
+  OAI_SET_EXAMPLE: "Example: book"
+  
+  DEFINITION_SEARCH_LABEL: "Mapping search"
+  DEFINITION_SEARCH_DESCRIPTION: "Use for customize bib attributes in Z39.50"
+  DEFINITION_SEARCH_EXAMPLE: "query_type=bib; ex: keyword=1016;title=4;"
+
+FR:
+  #Inline help
+  NAME_DESCRIPTION: "Nom interne de la collection ([a-z])"
+  NAME_EXAMPLE: "portfolio"
+  ALT_NAME_DESCRIPTION: "Nom de la collection qui s'affiche à l'écran"
+  ALT_NAME_EXAMPLE: "Porfolio"
+  CONN_TYPE_DESCRIPTION: "Type de connexion"
+  CONN_TYPE_EXAMPLE: "Z39.50"
+  ADV_KEYWORD_SEARCHING_DESCRIPTION: "FRENCH help for advanced keyword searching"
+  HOST_DESCRIPTION: "Nom du serveur ou du fichier hébergeur de la collection"
+  HOST_EXAMPLE: "/srv/exportTab.txt ou http://serveur.com ou host:210/hia"
+  USER_DESCRIPTION: "Nom d'utilisateur pour accéder à la ressource"
+  USER_EXAMPLE: "admin"
+  PASSWORD_DESCRIPTION: "Mots de passe si besoin"
+  PASSWORD_EXAMPLE: "password"
+  RECORD_SCHEMA_DESCRIPTION: "Format des données ou schéma odbc"
+  RECORD_SCHEMA_EXAMPLE: "oai_dc, MARC21, monschema"
+  DEFINITION_DESCRIPTION: "Mapping pour Z39.50"
+  DEFINITION_EXAMPLE: "attribut=code; ex: ati=245a;"
+  URL_DESCRIPTION: "Lien vers la source de données"
+  URL_EXAMPLE: "lien http"
+  MATERIAL_TYPE_DESCRIPTION: "Type utilisé par défaut"
+  MATERIAL_TYPE_EXAMPLE: ""
+  VIRTUAL_DESCRIPTION: ""
+  VIRTUAL_EXAMPLE: ""
+  VENDOR_URL_DESCRIPION: "Url de la source de données"
+  VENDOR_URL_EXAMPLE: "http://adresse.com"
+  BIB_ATTR_DESCRIPTION: "Attributs BIB à inserer pour toute requetes Z3950 sur cette collection"
+  BIB_ATTR_EXAMPLE: "\@1014 test"
+  PROXY_DESCRIPTION: "Proxy HTTP sur le serveur"
+  PROXY_EXAMPLE: ""
+  COLLECTION_PARENT: "Pour OAI, indexer tous les sets"
+  COLLECTION_PRIVATE: "Non utilisé"
+  HARVESTING_DAYS_DESCRIPTION: "Jour de moisson"
+  HARVESTING_DAYS_EXAMPLE: "Choisir les jours de moisson pour la collection"
+  #labels
+  NAME_LABEL: "Nom :"
+  ALT_NAME_LABEL: "Nom complet :"
+  CONNECTION_TYPE_LABEL: "Type de connexion :"
+  CONN_TYPE_LABEL: "Type de connexion :"
+  CLASSNAME_HANDLE: "Handle Classname"
+  CLASSNAME_HANDLE_DESCRIPTION: "give handle classname for check document right"
+  CLASSNAME_HANDLE_EXAMPLE: "Par exemple: Bpi (avec un connecteur qui a pour nom CookieBPI, suffixe: CookieXXX)"
+  COLLECTION_HAS_RIGHT: "Nécessite des droits ?"
+  COLLECTION_GROUPS_LABEL: "Groupes de collections :"
+  Z3950_LABEL: "Z39.50"
+  OAIPMH_LABEL: "OAI-PMH"
+  OPEN_SEARCH_LABEL: "Open Search"
+  SRU_LABEL: "SRU"
+  MEDIAVIEW_LABEL: "MediaView"
+  GED_LABEL: "GED"
+  PORTFOLIO_LABEL: "Portfolio"
+  CONNECTOR_LABEL: "Connecteur spécifique"
+  QUINZAINE_LABEL: "Quinzaine littéraire"
+  ADVANCED_KEYWORD_SEARCHING_LABEL: "Recherche avancée par mot clé"
+  HOST_LABEL: "Hôte :"
+  USER_LABEL: "Nom d'utilisateur :"
+  PASS_LABEL: "Mot de passe :"
+  RECORD_SCHEMA_LABEL: "Schéma de données :"
+  DEFINITION_LABEL: "Définition :"
+  URL_LABEL: "URL :"
+  MAT_TYPE_LABEL: "Type de document par défaut :"
+  ARTICLE_LABEL: Article
+  BOOK_LABEL: Livre
+  FINDING_AID_LABEL: Aide à la recherche
+  IMAGE_LABEL: Image
+  NEWSPAPER_LABEL: Journal
+  VIRTUAL_LABEL: "Virtuel :"
+  ISWORD_LABEL: "Mot ?"
+  VENDOR_URL_LABEL: "URL du fournisseur :"
+  BIB_ATTR_LABEL: "Attributs BIB :"
+  PROXY_LABEL: "Utiliser un proxy ? :"
+  HARVESTED_LABEL: "Date de la dernière moisson :"
+  IS_PARENT_LABEL: "Parent :"
+  FILTER_QUERY_LABEL: "Filtre de requête"
+  HAS_RIGHT_LABEL: "Nécessite des droits ?"
+  CLASS_HANDLE_RIGHT_LABEL: "Classe de gestion des droits :"
+  IS_PRIVATE_LABEL: "Collection privée ?"
+  HARVEST_DAY_LABEL: "Jours de moisson :"
+  YES_LABEL: "Oui"
+  NO_LABEL: "Non"
+  EDIT_COLLECTION: "Editer Collection"
+  COLLECTIONS_HEADER: "Collections"
+  TEST_CONNECTION: "Tester Connection"
+  COLLECTION_HEADER: "Collection"
+  EDIT: "Editer"
+  DIAGNOSTIC_RESULTS: "Résultats du Diagnostic :"
+  CONFIGURATION_INVALID: "La configuration n'est pas valide.  Vérifiez les informations et essayez à nouveau."
+  SUCCESS: " \"Réussi !  Le test a recensé : #{args[0]} enregistrements.\""
+  ZERO_RECORDS: "FRENCH While no errors were reported, the test harvested zero records.  You may want to check your configuration information."
+  TOTAL_RESULTS_LABEL: " \"Résultats: #{args[0]}\""
+  TITLE_LABEL: " \"Titre: #{args[0]}\""
+  ABSTRACT_LABEL: " \"FRENCH Abstract: #{args[0]}\""
+  SUCCESSFUL_SEARCH: "Recherche réussie"
+  NO_RESULTS: "FRENCH No results were returned.  Please confirm your configuration information."
+  ERROR_OCCURED: "FRENCH An Error has occurred.  Please confirm your configuration information."
+  COLLECTION_CREATED: "FRENCH Collection was successfully created."
+  COLLECTION_UPDATED: "FRENCH Collection was successfully updated."
+  SUNDAY: "Dimanche"
+  MONDAY: "Lundi"
+  TUESDAY: "Mardi"
+  WEDNESDAY: "Mercredi"
+  THURSDAY: "Jeudi"
+  FRIDAY: "Vendredi"
+  SATURDAY: "Samedi"
+  NEW_SCHEDULE_LABEL: "Nouveau programme"
+  #Search form
+  SEARCH_BOX_TITLE: "Filtre sur les collections"
+  TAB_LABEL: "Onglet :"
+  ANY_VALUE: "Indifférent"
+  #Columns
+  NAME_COLUMN: "Nom"
+  ALT_NAME_COLUMN: "Nom complet"
+  COLLECTION_GROUPS_COLUMN: "Groupes de collections"
+  MORE_GROUPS_LABEL: "[...]"
+  OAI_SET_LABEL: "Nom du set (OAI)/Nom de classe de gestion (Connecteur):"
+  OAI_SET_DESCRIPTION: "Nom du set à indexer (pour tout indexer : cocher parent) ou nom de classe pour un connecteur spécifique"
+  OAI_SET_EXAMPLE: "Exemple: book"
+  POST_LABEL: "Formulaire POST"
+  POST_DESCRIPTION: "Données à envoyer par POST pour s'authentifier"
+  POST_EXAMPLE: "user=toto|password=tata|context=nls"
+  
+  DEFINITION_SEARCH_LABEL: "Mapping d'interrogation"
+  DEFINITION_SEARCH_DESCRIPTION: "Utilise pour personnaliser les bib attributes dans le Z39.50"
+  DEFINITION_SEARCH_EXAMPLE: "query_type=bib; ex: keyword=1016;"
+  
+ES:
+  #Inline help
+  NAME_DESCRIPTION: SPANISH help for collection name here
+  NAME_EXAMPLE: SPANISH e.g. example collection name here
+  ALT_NAME_DESCRIPTION: SPANISH help for collection alt name here
+  ALT_NAME_EXAMPLE: SPANISH e.g. example collection alt name here
+  CONN_TYPE_DESCRIPTION: SPANISH help for collection connection type
+  CONN_TYPE_EXAMPLE: SPANISH e.g. for collection connection type
+  ADV_KEYWORD_SEARCHING_DESCRIPTION: SPANISH help for advanced keyword searching
+  HOST_DESCRIPTION: SPANISH help for collection host here
+  HOST_EXAMPLE: SPANISH e.g. example collection host here
+  USER_DESCRIPTION: SPANISH help for collection user here
+  USER_EXAMPLE: SPANISH e.g. example collection user here
+  PASSWORD_DESCRIPTION: SPANISH help for collection password here
+  PASSWORD_EXAMPLE: SPANISH e.g. example collection password here
+  RECORD_SCHEMA_DESCRIPTION: SPANISH help for collection record_schema here
+  RECORD_SCHEMA_EXAMPLE: SPANISH e.g. example collection record_schema here
+  DEFINITION_DESCRIPTION: SPANISH help for collection Definition here
+  DEFINITION_EXAMPLE: SPANISH e.g. example collection Definition here
+  URL_DESCRIPTION: SPANISH help for collection url here
+  URL_EXAMPLE: SPANISH e.g. example collection url here
+  MATERIAL_TYPE_DESCRIPTION: SPANISH help for collection mat_type here
+  MATERIAL_TYPE_EXAMPLE: SPANISH e.g. example collection mat_type here
+  VIRTUAL_DESCRIPTION: SPANISH help for collection virtual here
+  VIRTUAL_EXAMPLE: SPANISH e.g. example collection virtual here
+  VENDOR_URL_DESCRIPION: SPANISH help for collection vendor_url here
+  VENDOR_URL_EXAMPLE: SPANISH e.g. example collection vendor_url here
+  BIB_ATTR_DESCRIPTION: SPANISH help for collection bib_attr here
+  BIB_ATTR_EXAMPLE: SPANISH e.g. example collection bib_attr here
+  PROXY_DESCRIPTION: SPANISH help for collection proxy here
+  PROXY_EXAMPLE: SPANISH e.g. example collection proxy here
+  COLLECTION_PARENT: SPANISH Is TopLevel OAI Collection
+  COLLECTION_PRIVATE: SPANISH Must authenticate before show in list
+  HARVESTING_DAYS_DESCRIPTION: Harvesting days
+  HARVESTING_DAYS_EXAMPLE: Choose the harvesting days for the collection
+  #labels
+  NAME_LABEL: "SPANISH Name:"
+  ALTERNATE_NAME_LABEL: "SPANISH Alternate Name:"
+  CONNECTION_TYPE_LABEL: "SPANISH Connection Type:"
+  CLASSNAME_HANDLE: "Handle Classname"
+  CLASSNAME_HANDLE_DESCRIPTION: "give handle classname for check document right"
+  CLASSNAME_HANDLE_EXAMPLE: "e.g. example Bpi"
+  COLLECTION_HAS_RIGHT: "This Collection Contains right ?"
+  COLLECTION_GROUPS_LABEL: "Groupes de collections :"
+  Z3950_LABEL: "SPANISH Z39.50"
+  OAIPMH_LABEL: "SPANISH OAI-PMH"
+  OPEN_SEARCH_LABEL: "SPANISH Open Search"
+  SRU_LABEL: "SPANISH SRU"
+  PORTFOLIO_LABEL: "Portfolio"
+  MEDIAVIEW_LABEL: "MediaView"
+  GED_LABEL: "GED"
+  CONNECTOR_LABEL: "SPANISH Custom Connector"
+  QUINZAINE_LABEL: "Quinzaine littéraire"
+  ADVANCED_KEYWORD_SEARCHING_LABEL: "SPANISH Advanced Keyword Searching"
+  HOST_LABEL: "SPANISH Host:"
+  USER_LABEL: "SPANISH User:"
+  PASSWORD_LABEL: "SPANISH Password:"
+  RECORD_SCHEMA_LABEL: "SPANISH Record Schema:"
+  DEFINITION_LABEL: "SPANISH Definition:"
+  URL_LABEL: "SPANISH URL:"
+  MATERIAL_TYPE_LABEL: "SPANISH Material Type:"
+  ARTICLE_LABEL: SPANISH Article
+  BOOK_LABEL: SPANISH Book
+  FINDING_AID_LABEL: SPANISH Finding Aid
+  IMAGE_LABEL: SPANISH Image
+  NEWSPAPER_LABEL: SPANISH Newspaper
+  VIRTUAL_LABEL: "SPANISH Virtual:"
+  VENDOR_URL_LABEL: "SPANISH Vendor URL:"
+  BIB1_ATTRIBUTES_LABEL: "SPANISH Bib-1 Attributes:"
+  USE_PROXY_LABEL: "SPANISH Use Proxy:"
+  YES_LABEL: "SPANISH Yes"
+  NO_LABEL: "SPANISH No"
+  EDIT_COLLECTION: SPANISH Edit Collection
+  COLLECTIONS_HEADER: SPANISH Collections
+  TEST_CONNECTION: SPANISH Test Connection
+  COLLECTION_HEADER: SPANISH Collection
+  EDIT: SPANISH Edit
+  DIAGNOSTIC_RESULTS: "SPANISH Diagnostic Results:"
+  CONFIGURATION_INVALID: "SPANISH Configuration appears to be invalid.  Please check you information and try again."
+  SUCCESS: " \"SPANISH Success!  The test harvested: #{args[0]} records.\""
+  ZERO_RECORDS: SPANISH While no errors were reported, the test harvested zero records.  You may want to check your configuration information.
+  TOTAL_RESULTS_LABEL: " \"SPANISH Total Results: #{args[0]}\""
+  TITLE_LABEL: " \"SPANISH Title: #{args[0]}\""
+  ABSTRACT_LABEL: " \"SPANISH Abstract: #{args[0]}\""
+  SUCCESSFUL_SEARCH: SPANISH Search was successful
+  NO_RESULTS: SPANISH No results were returned.  Please confirm your configuration information.
+  ERROR_OCCURED: SPANISH An Error has occurred.  Please confirm your configuration information.
+  COLLECTION_CREATED: 'SPANISH Collection was successfully created.'
+  COLLECTION_UPDATED: 'SPANISH Collection was successfully updated.'
+  SUNDAY: Sun
+  MONDAY: Mon
+  TUESDAY: Tue
+  WEDNESDAY: Wed
+  THURSDAY: Thu
+  FRIDAY: Fri
+  SATURDAY: Sat
+  OAI_SET_LABEL: "(ES) Nom du set (OAI):"
+  OAI_SET_DESCRIPTION: "(ES) Nom du set à indexer (pour tout indexer : cocher parent)"
+  OAI_SET_EXAMPLE: "(ES) example: set"
+  
+  DEFINITION_SEARCH_LABEL: "Mapping search"
+  DEFINITION_SEARCH_DESCRIPTION: "Use for customize bib attributes in Z39.50"
+  DEFINITION_SEARCH_EXAMPLE: "query_type=bib; ex: keyword=1016;"

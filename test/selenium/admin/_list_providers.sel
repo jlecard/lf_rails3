@@ -1,0 +1,5 @@
+|waitForTextPresent|Providers||
+|waitForTextPresent|Provider name||
+|waitForTextPresent|Title||
+|waitForVisible|link=Edit||
+|waitForVisible|link=Destroy||

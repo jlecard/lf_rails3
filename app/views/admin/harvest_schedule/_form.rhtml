@@ -1,0 +1,44 @@
+<div id="error">
+    <%= error_messages_for 'harvest_schedule' %>
+</div>
+<div id="form_field">
+    <span class="form_left">
+        <label for="harvest_schedule_day">
+            <%=translate("HARVEST_DAY_LABEL") %>
+        </label>
+    </span>
+    <span class="form_right">
+        <select name='harvest_schedule[day]' id='harvest_schedule[day]'>
+            <% @harvest_schedule.enum_values.each do |key, val| %>
+            <option value="<%=key%>"<%= 'selected=#{key} ' if params['day']==val or params['day']==key.to_s %>><%=translate(val.upcase) %></option>
+            <%end %>
+        </select>
+        <br/>
+    </span>
+</div>	
+<div id="form_field">
+    <span class="form_left">
+        <label for="collection_name">
+            <%=translate("COLLECTION_NAME_LABEL") %>
+        </label>
+    </span>
+    <span class="form_right"><% value = params['collection_name'] %>
+        <%= text_field_with_auto_complete :collection, :name, {:value=>value}, {:skip_syle=>true} %>
+        <small>
+            <%=translate("COLLECTION_EXAMPLE") %>
+        </small>
+    </span>
+</div>
+<div id="form_field">
+    <span class="form_left">
+        <label for="harvest_schedule_time">
+            <%=translate("TIME_LABEL") %>
+        </label>
+    </span>
+    <span class="form_right"><%= time_select :harvest_schedule, :time, {:minute_step=>15} %>
+        <br/>
+        <br/>
+    </span>
+</div>
+
+

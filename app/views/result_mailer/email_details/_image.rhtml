@@ -1,0 +1,52 @@
+<div class="image_detail" >
+ <%_from=display_source(image)%>
+  <%url = image.direct_url
+    if url!=nil and url!=''
+      thumbnail_url = image.thumbnail_url
+      if thumbnail_url != nil and thumbnail_url != ''
+  %>
+  <span class="image-full">
+        <div>
+          <a target="_blank"  href="<%=h(url)%>" >
+            <img style="max-height:160px; max-width:150px;" src="<%=h(thumbnail_url)%>" border="0"/>
+          </a>
+        </div>
+		</span>
+      <%end%>
+    <%end%>
+	<span >
+<div id="image-full-row">
+  [<%=image.material_type%>]&nbsp;&nbsp;
+  <span id="ptitle">
+    <%if image.direct_url != "" %>
+      <a href=<%=h(image.direct_url)%> target="_blank">
+        <%=image.ptitle%>
+      </a>
+    <%else %>
+      <%=image.ptitle%>
+    <%end %>
+  </span>
+</div>
+<div id="image-full-row">
+  <% if image.author!=''%>
+    <%=image.author%> 
+    <%if image.subject!=''%>
+      | <%=image.subject%> 
+    <%end%>     
+  <%else%>
+    <%if image.subject!=''%>
+      <%=image.subject%> 
+    <%end%>   
+  <%end%>   
+</div>
+<div id="image-full-row">
+  <%if image.date!='' and image.date!='00000000'%>
+    <%=display_date(image)%>  &#160;
+  <%end%>
+    <span id="source"">   
+      <%=_from%>
+    </span>
+</div>
+
+</span>
+</div>

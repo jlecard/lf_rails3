@@ -1,0 +1,44 @@
+EN:
+  #INLINE HELP
+  NAN: Primary Document Type
+  YES_LABEL: Yes
+  NO_LABEL: No
+  FORMAT_REQUEST_LABEL: Request
+  FORMAT_URL_LABEL: Url
+  INVALID_PARENT: "Tab cannot be different than the parent's subject tab."
+  PARENT_LABEL: "Parent:"  
+FR:
+  #INLINE HELP
+  NAN: Type primaire de document
+  YES_LABEL: Oui
+  NO_LABEL: Non
+  FORMAT_REQUEST_LABEL: "Requête :"
+  FORMAT_URL_LABEL: URL
+  DESCRIPTION_LABEL: "Description :"
+  HIDE_LABEL: "Cacher ?"
+  LABEL_LABEL: "Libéllé :"
+  TAB_LABEL: "Onglet :"
+  FORM_TITLE: Edition du thème
+  PARENT_LABEL: "Parent :"
+  NONE_VALUE: Aucun
+  TYPE_LABEL: "Type :"
+  COLLECTION_GROUP_LABEL: "Groupe de collections :"
+  URL_LABEL: "URL :"
+  RANK_LABEL: "Rang :"
+  UPDATE_BUTTON_LABEL: Enregistrer
+  CREATE_BUTTON_LABEL: Créer
+  EDIT_LINK_LABEL: Editer
+  BACK_LINK_LABEL: Retour
+  NEW_THEME_TITLE: Nouveau thème
+  ADD_SEARCH_SUBJECT_LINK: Ajouter un nouveau thème
+  LIST_TITLE: Liste des thèmes d'onglet
+  EDIT_SUBJECT: Modifier le thème
+  INVALID_PARENT: "L'onglet rattaché au thème ne peut pas être différent de l'onglet du parent."
+  
+ES:
+  #INLINE HELP
+  NAN: Primary Document Type
+  YES_LABEL: Si
+  NO_LABEL: No
+  FORMAT_REQUEST_LABEL: Request
+  FORMAT_URL_LABEL: Url

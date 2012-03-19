@@ -1,0 +1,13 @@
+<%= render(:partial => "admin/navigation") %>
+<div class="middle">
+    <div>
+        <%= render(:partial => "admin/log_view_generic/stats_index") %>
+        <h1><%= @title %></h1>
+        <%= render :partial => "formulaire", :locals=>{:params=> params, :action => "comment", :profiles => @profiles} %>
+        <br/>
+        <%= render :partial => "generic_table", :locals=>{:headers=>@headers, :items => @items, :params=> params} %>
+        <br/>
+        <br/>
+        <%= render :partial => "admin/admin_pagination", :locals=>{:pages=>@pages, :params=> params} %>
+    </div>
+</div>

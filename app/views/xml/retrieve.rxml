@@ -1,0 +1,45 @@
+begin
+ _lprint = false
+ _lxml = ""
+ objBuilder = Builder::XmlMarkup.new(:target => _lxml, :indent =>1)
+ objBuilder.records {
+ for _zindex in 0..(@results.length-1)
+   objBuilder.item {
+     @results[_zindex].each_pair() {|lkey, lvalue|
+       if lvalue != nil
+         eval("objBuilder." + lkey.to_s +  lvalue.to_s.dump)
+       else
+         eval("objBuilder." + lkey.to_s + "")
+       end
+     }
+     _lprint=true
+   }
+ end
+ }
+
+ if params[:xslt] != nil
+   @headers["Content-Type"] = "text/html" 
+
+   require 'xml/libxml'
+   require 'xml/libxslt'
+
+   xslt = XML::XSLT.file(params[:xslt])
+   #_objparser = XML::Parser.new()
+   #_objparser.string = _lxml
+   #_objxml = XML::Document.new()
+   #_objxml = _objparser.parse
+
+
+   xslt.doc = XML::Parser.string(_lxml).parse
+
+   # Parse to create a stylesheet, then apply.
+   s = xslt.parse
+   s.apply
+   return s.to_s
+  else
+   return _lxml
+  end 
+rescue StandardError => bang
+ return "<error>" + bang + "</error>"
+end
+

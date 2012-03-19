@@ -1,0 +1,115 @@
+<%_from=display_source(generic_list)%>
+    <%
+     if @image_isbn_list == nil
+        @image_isbn_list = ""
+     end
+     if @isbn_list == nil
+	@isbn_list = ""
+     end
+     pisbn = ''
+    %>
+<!--
+      <%  
+        if generic_list.thumbnail_url != nil && generic_list.thumbnail_url != ''  
+      %>  
+      <span style="display:inline;float:left;padding-right:0.5em;" name="open_lib_image"><img src="<%=generic_list.thumbnail_url%>" border="0" /></span>  
+       <%  
+
+       elsif ((defined?(OPENLIBRARY_COVERS)) or (defined?(GOOGLE_COVERS)) && generic_list.isbn != nil && generic_list.isbn != '')
+          pisbn = generic_list.isbn
+          if generic_list.isbn.index(";")
+             _tisbna = pisbn.split(";")
+             pisbn = _tisbna[0]
+             if pisbn.index(' ')
+               pisbn = pisbn.slice(0, pisbn.index(' '))
+             end
+          else
+	     if pisbn.index(' ')
+	        pisbn = pisbn.slice(0, pisbn.index(' '))
+             end
+          end
+          logger.debug("COVER ISBN: " + pisbn)
+    	%>
+          <% if pisbn != '' %>
+          <span style="display:none;float:left;padding-right:0.5em;" name="open_lib_image" id="OL:ISBN:<%=pisbn%>"></span>
+          <% @image_isbn_list += "ISBN:" + pisbn + "," %>
+          <%else%>
+          <span style="display:none;float:left;padding-right:0.5em;" name="open_lib_image" id="OL:00-<%=generic_list.id.to_s%>"></span>
+ 	  <% @image_isbn_list += "ISBN:" + generic_list.id.to_s + "," %>
+          <%end%>
+    <%elsif ((defined?(OPENLIBRARY_COVERS)) or (defined?(GOOGLE_COVERS)) && generic_list.oclc_num != nil && generic_list.oclc_num != '') %>
+	  <span style="display:none; float:left;padding-right:0.5em;" name="open_lib_image" id="OL:OCLC:<%=generic_list.oclc_num%>"></span>
+          <% @image_isbn_list += "OCLC:" + generic_list.oclc_num + "," %>
+    <%end %>
+	-->
+      <%  
+        if generic_list.isbn != nil && generic_list.isbn != ''  
+      %>  
+	  <img src="http://images.amazon.com/images/P/<%=generic_list.isbn.split('-').join()%>.01.TPB__.jpg">
+	  <%end%>	
+<% if (generic_list.ptitle.length() > 30)
+	generic_list.ptitle = generic_list.ptitle[0..30] + "...";
+   end
+%>
+<div id="result-row">
+  <span id="ptitle">
+    <%if generic_list.direct_url != " " %>
+	  <span id="ptitle">
+		<%= link_to generic_list.ptitle, :controller=>"document", :action=>"display", :doc=>generic_list.id%>
+	  </span>
+    <%else %>
+      <%=generic_list.ptitle%>
+    <%end %>
+  </span>
+</div>
+<% if generic_list.author != '' and generic_list.subject!='' %>
+<div id="result-row">
+  <% if generic_list.author!=''%>
+    <%=generic_list.author%> 
+    <%if generic_list.subject!=''%>
+      | <%=generic_list.subject%> 
+    <%end%>     
+  <%else%>
+    <%if generic_list.subject!=''%>
+      <%=generic_list.subject%> 
+    <%end%>   
+  <%end%>   
+</div>
+<%end%>
+<div id="result-row">
+  <%if generic_list.date!='' and generic_list.date!='00000000'%>
+    <%=display_date(generic_list)%>  &#160;
+  <%end%>
+    <span id="source"">   
+      <%=_from%>
+    </span>
+</div>
+<div id="result-row" class='vr' >
+
+  <span id="add_to_cart_<%=generic_list.id%>"> 
+         <%if session[:cart]==nil ||  !session[:cart].include?(generic_list.id) %>
+         <%=link_to_remote translate('SAVE_THIS_ITEM'), {
+                                              :update => 'add_to_cart_%s' % generic_list.id,
+                                              :url => { :action => 'add', :controller=>'/cart'},
+                                              :with => "'doc=%s'" % generic_list.id
+                                              }%>
+        <% else 
+             if @cart_page!=nil and !@cart_page.empty? %>
+              <%=link_to_remote translate('REMOVE_FROM_SAVED_ITEMS'), {
+                                              :update => 'arow_%s' % generic_list.id,
+                                              :url => { :action => 'remove', :controller=>'/cart'},
+                                              :with => "'doc=%s'" % generic_list.id,
+                                              :loading => "Element.show('waitimage')",
+                                              :complete => "loadCart('/record/getCart', 'listMyCart');"
+                                              }%>
+          <%end%>
+        <%end%>
+     
+      </span>&#160;
+ <% if generic_list.vendor_url!=nil and generic_list.vendor_url!='' %>
+         <a href=<%=h(generic_list.vendor_url)%> target="_blank">
+                  <%=translate('MORE_FROM',[escape_quote(generic_list.vendor_name)])%>
+                </a>&#160;
+  <%end%>           
+   
+</div>  

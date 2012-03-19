@@ -1,0 +1,36 @@
+@charset "UTF-8";
+/* CSS Document */
+/* CSS Pour Impression BPI */
+
+#easy-access, div.header, div.bdx-images,div#left-column,#content-column .date a, div#footer,div.search,div.help,div.menu-niv2, #browse, .right{
+	display: none;
+}
+
+div#content-column{
+	width: 670px;
+}
+
+div.breadcrumb {
+	margin-left: 20px;
+}
+
+div#right-column{
+	margin-left: 30px;
+}
+
+div#right-column .focus{
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.citation {
+	library_...239099303 (ligne 534)
+	background-color:#EEEEEE;
+	border-style:solid;
+	border-width:1px;
+	color:#504A4D;
+	float:left;
+	margin:5px 10px 10px;
+	padding:100px;
+	width:500px;
+}

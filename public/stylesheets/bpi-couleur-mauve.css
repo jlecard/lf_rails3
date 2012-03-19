@@ -1,0 +1,421 @@
+@charset "UTF-8";
+/* CSS Document */
+/* COUL Vert /!\ NE CHANGER QUE : les ref couleurs et la partie faisant rÃ©fÃ©rence au couleurs dans les noms des images de fond */
+
+
+
+
+/* @group Layout */
+
+/* @group Boutons formulaires */
+.btn-envoyer{
+	background-image: url(/images/btn-envoyer-mauve.gif);
+}
+
+.btn-valider{
+	background-image: url(/images/btn-valider-mauve.gif);
+}
+
+.btn-search{
+	background-image: url(/images/btn-search-mauve.gif);
+}
+.btn-lancerrecherche{
+	background-image: url(/images/btn-lancerrecherche-mauve.gif);
+}
+
+.btn-inscription{
+	background-image: url(/images/btn-inscription-mauve.gif);
+}
+
+
+/* @end */
+
+/* @group titrage */
+
+h3, .color {
+	color:#30036D;
+}
+
+.picto-fleche{
+	background-image : url(/images/picto-fleche-mauve.gif) ;
+}
+
+/* @end */
+
+/* @end */
+/* @group Header */
+.header{
+	background-color:#30036D;
+	border-color: #8368a7;
+}
+
+/* @group Liens */
+
+.links a{
+		color: #c1b3d3;
+		border-color:#c1b3d3;
+	}
+
+
+
+/* @end */
+				
+
+/* @group Recherche */
+/*	.recherche{
+		background-image : url(/images/header-search-background-mauve.gif);
+		visibility: hidden;
+	}*/
+
+
+/* @end */
+
+/* @group Menu Niv 1 */
+.menu-niv1 li a{
+	background-color: #59358a;
+	border-bottom-color: #30036D;
+}
+	.menu-niv1 li a.actif{
+		background-color: #8368a7;
+		border-color: #8368a7;
+	}
+	.menu-niv1 li a.profil{
+		background-color: #451c7c;
+	}
+	.menu-niv1 li a:hover{
+		background-color: #8368a7;
+	}
+	
+/* @end */
+
+
+
+/* @end */
+
+.breadcrumb a.home{
+	color: #30036D;
+}
+
+
+/* @group Content */
+
+/* @group Column Left */
+
+/* @group SubMenu */
+.left-column .submenu li.select{
+	background-image : url(/images/picto-fleche-mauve.gif) ;
+}
+.left-column ul.submenu ul li{
+	color: #30036D;
+	border-bottom: 1px solid #e0d9e9;
+}
+	.left-column ul.submenu li ul li a{
+		color: #30036D;
+	}
+
+
+/* @end */
+
+/* @group RSS */
+.left-column .rss{
+	/*border-color: #e0d9e9;*/
+}
+	.left-column .rss a:hover{
+		/*color: #30036D;*/
+	}
+
+
+/* @end */
+
+/* @end */
+
+/* @group Coeur de page */
+.content-column .border-color{
+	border-color: #30036D;
+}
+.content-column a{
+	color: #30036D;
+}
+.content-column h1{
+	border-color: #30036D;
+}
+	.content-column h2{
+		border-color: #e0d9e9;
+	}
+
+.content-column p.chapo{
+	color: #30036D;
+}
+
+/* @group Listes */
+.content-column li{
+	background-image: url(/images/picto-fleche-mauve.gif) ;
+}
+.content-column li.actif{
+	background-image: url(/images/picto-fleche-mauve-bas.gif) ;
+}
+/* @end */
+
+/* @group Column Right */
+/* @group Focus */
+.right-column .focus{
+	background-color: #f0ecf4;
+}
+	.right-column .focus h1{
+		color: #30036D;
+	}
+	.right-column .focus .focus-illustration{
+		border-color: #30036D;
+	}
+
+.right-column .focus li{
+	border-color: #8368a7;
+}
+.right-column .focus li.lecture{
+	background-image: url(/images/picto-lecture-mauve.gif)
+}
+
+	
+/* @end */
+
+/* @group Articles */
+
+.right-column .article{
+	border-color: #e0d9e9;
+}
+	.right-column .article .categorie{
+		color:  #30036D;
+	}
+	
+/* @end */
+
+/* @end */
+
+
+/* @end */
+
+/* @group Content - ACCUEIL */
+/*** SpÃ©cifique ACCUEIL ***/
+.wrapper.accueil{
+	background-color: #f0ecf4;
+}
+	.couleur{
+		color: #30036D;
+	}
+/* @group Column Left - ACCUEIL */
+
+.left-column.accueil{
+	background-color: #f0ecf4;
+}
+	.left-column.accueil a{
+		color: #30036D;
+	}
+	.left-column.accueil .innertube{
+		border-color: #30036D;
+	}
+		.left-column.accueil .innertube.first{
+			border-color: #f0ecf4;
+		}
+
+	
+/* @group Newslettre */
+.newslettre .type-text-ie6{
+	background-color: #e0d9e9;
+}
+.newslettre .type-image-ie6{
+	background-color:#30036D;
+}
+
+
+
+/* @end */
+
+/* @end */
+
+/* @group Column Content - ACCUEIL */
+.content-column .acc-title{
+	border-color:  #30036D;
+}
+
+/* @group Evenements */
+.content-column .evenements .categorie{
+	color:  #30036D;
+}
+	.content-column .evenements .navigation{
+		border-color:#e0d9e9;
+	}
+		.content-column .evenements .navigation a{
+			background-color :#957eb4;
+		}
+			.content-column .evenements .navigation a:hover{
+				background-color : #30036D;
+			}
+	
+	
+/* @end */
+
+/* @group Articles */
+.content-column .article.first p a{
+	color:  #30036D;
+}
+.content-column .article{
+	border-color: #e0d9e9;
+}
+	.content-column .article .categorie{
+		color:  #30036D;
+	}
+	
+/* @end */
+/* @end */
+
+/* @group Column Right - ACCUEIL */
+.right-column.accueil{
+	background-color: #f0ecf4;
+}
+	.right-column.accueil a{
+		color: #30036D;
+	}
+	.right-column.accueil .innertube{
+		border-color: #30036D;
+	}
+		.right-column.accueil .innertube.first{
+			border-color:#f0ecf4;
+		}
+	
+.right-column.accueil .item{
+	background-image: url(/images/picto-fleche-mauve.gif);
+}
+
+
+
+/* @end */
+
+
+
+
+/* @end */
+
+
+
+/* @group Footer */
+.footer{
+	border-color: #8368a7;
+}
+
+
+/* @end */
+
+/********/
+
+/* @group Sitemap */
+
+.content-column .sitemap ul{
+	background-image: url(/images/picto-fleche-mauve.gif);
+}
+	.content-column .sitemap ul li.rub a{
+		color:  #30036D;
+	}
+/* @end */
+
+/* @group Resultats */
+.content-column .result li:hover{
+	background-color:  #f0ecf4;
+}
+	.content-column .result li a:hover{
+		color:  #30036D;
+	}
+
+/* @group Pager */
+
+.content-column .pager{
+	border-color: #e0d9e9;
+}	
+	.content-column .pager a{
+		color: #30036D;
+	}
+
+/* @end */
+/* @end */
+
+/* @group Pages Saison Culturelle */
+
+.content-column .tab-dates-manif td.date-manif{
+	background-image: url(/images/picto-fleche-mauve.gif) ;
+}
+
+.content-column .manifestations-fiche li{
+	background-color: #f0ecf4;
+}
+
+
+/* @end */
+
+/* @group Signets */
+.content-column  .signets-acc table{
+	background-image: url(/images/picto-fleche-mauve.gif);
+}
+
+
+/* @end */
+
+/* @group Pages Annuaire */
+
+.content-column .annuaire ul li, .content-column .annuaire ul li a:hover{
+	color: #30036D;
+}
+
+/* @group Navigation */
+
+.content-column .annuaire .navigation a{
+	background-image: url(/images/picto-fleche-mauve.gif);
+}
+.content-column .annuaire .navigation a.prev{
+	background-image: url(../img/picto-fleche-mauve-inverted.gif);
+}
+
+/* @end */
+
+/* @group Tableau */
+
+.content-column .annuaire table thead th{
+	color:#30036D;
+	background-color:  #f0ecf4;
+}
+.content-column .annuaire table a:hover{
+	color:#30036D;
+}
+
+/* @end */
+
+.content-column .annuaire .breadcrumb a{
+	background-image: url(/images/picto-fleche-mauve.gif);
+}
+
+
+/* @end */
+
+/* @group Page Newslettre */
+
+/* @group Tableau */
+
+.content-column .newslettre table thead th{
+	color:#30036D;
+	background-color:  #f0ecf4;
+}
+.content-column .newslettre table a:hover{
+	color:#30036D;
+}
+
+/* @end */
+
+
+
+/* @end */
+
+/* @group Page Sondage */
+
+
+.content-column .sondage .encart .barre-resultat{
+	background-color: #30036D;
+}	
+/* @end */

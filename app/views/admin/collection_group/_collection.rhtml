@@ -1,0 +1,51 @@
+<div id="alphabetical_collections">
+  <span id="add_collections">
+    <h2><%=translate("ADD_COLLECTIONS")%></h2>
+	<small><%=translate("COLLECTIONS_INSTRUCTIONS")%></small>
+	<% alphabetize_collections%>
+	<% "A".upto("Z") do |letter|
+		if letter==@letter %>
+	      <b style="font-weight:bolder;font-size:16px;"><%=letter%></b>
+        <%else%>
+		    <%=link_to letter, 
+                     {  :action => 'edit_groups', 
+						:controller=>'/admin/collection_group', 
+						:id=>@collection_group.id,
+						:params=>{"letter"=>letter}
+					},	:onclick=>"javascript:$('edit_form').method = 'POST'; $('edit_form').action = this.href;$('edit_form').submit();return false;"%>
+			<%end%>
+  	<%end%>
+	<br/>
+  	<%for c in @group_list 
+	  if @selected_collections==nil || !@selected_collections.include?(c.id.to_s)%>
+	  <span id="collection_list">
+        <%= check_box('collection', h(c.id.to_s))%>
+  	    <%= c.alt_name %><br/>
+		query : <%= text_field("query_collection", c.id.to_s)%>
+	  </span>
+		<br/> &nbsp; <br/>
+	  <%end %>
+    <%end %>
+	
+	  <br/>
+  </span>
+  <span id="remove_collections">
+  	<h2><%=translate("COLLECTIONS_IN_THIS_GROUP")%></h2>
+    <%if @selected_collections!=nil && !@selected_collections.empty?%>
+	<small><%=translate("HOW_TO_REMOVE_COLLECTIONS")%></small><br/>
+	<%for c in @selected_collections
+		coll=Collection.find(c)%>
+		<span id="collection_list_items">
+        <%= check_box 'collection', h(c), :checked => 'checked'%>
+  	    <b><%= coll.alt_name %></b>
+		<%= " (#{@filter_queries[c]})"%>
+		</span>
+		</br>
+
+	  <%end %>	
+	  <br/>
+    <%end %>	
+  </span>
+</div>
+ 
+  

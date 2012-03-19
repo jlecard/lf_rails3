@@ -1,0 +1,97 @@
+<div id="pages_contents">
+    <%= render(:partial => "admin/navigation") %>
+    <div id="center" class="column middle">
+    <p>
+        <h1><%=translate("ROLES")%> :</h1>
+        <h3><%=translate("MANAGE_DROIT_INFO")%></h3>
+    </p>
+        <br />
+    <div id="status">
+    </div>
+        <% @manageRole.each do |manage_role| %>
+        <div class="box boxTab">
+            <span class="boxHeader boxHeaderTab">
+                <a class="boxTitle" onClick="Effect.toggle(document.getElementById('sub_tree_tab_<%=manage_role.id_role%>'), 'slide', {duration: 0.2}); return false;">
+                    <%=manage_role.id_role %>
+                </a>
+                <a class="boxAction" onclick="openTab('<%=manage_role.id_role%>', true);">
+                    <img title="Tout déplier" alt="Tout déplier" src="/images/add_theme.png"/>
+                </a>
+                <a class="boxAction" onclick="openTab('<%=manage_role.id_role%>', false);">
+                    <img title="Replier" alt="Replier" src="/images/remove_theme.png"/>
+                </a>
+            </span>
+            <div name="menuItem_<%=manage_role.id_role%>" style="display:none;" id="sub_tree_tab_<%=manage_role.id_role%>">
+                <% @profilePost.each do |profile_post| %>
+                    <div class="box">
+                         <span class="boxHeader boxSubHeader">
+                            <a class="boxTitle" onClick="Effect.toggle(document.getElementById('sub_tree_tab_<%=manage_role.id_role%>_<%=profile_post[0]%>'), 'slide', {duration: 0.2}); return false;">
+                                <%=profile_post[1]['Label'] %>
+                            </a>
+                            <a class="boxAction" onClick="Effect.toggle(document.getElementById('sub_tree_tab_<%=manage_role.id_role%>_<%=profile_post[0]%>'), 'slide', {duration: 0.2}); return false;">
+                            </a>
+                        </span>
+                        <div name="menuItem_<%=manage_role.id_role%>" style="display:none;" id="sub_tree_tab_<%=manage_role.id_role%>_<%=profile_post[0]%>">
+                            <% @collection.each do |collection| 
+                                @tmp = collection
+                            %>
+                           
+                                <% found = ManageDroit.find(:first,:select=>"*",:conditions=> {
+                                                    :id_role => manage_role.id_role, 
+                                                    :id_lieu => profile_post[0], 
+                                                    :id_collection => collection.id
+                                                }) 
+                                if (!found.blank?()) %>
+                                    <span id="line_<%=profile_post[0]%>_<%=manage_role.id_role%>_<%=collection.id%>" class="boxHeader box">
+                                        <a class='boxTitle'>
+                                            <%= collection.alt_name  %>
+                                        </a>
+                                        <select name="id_perm" id="update_<%=profile_post[0]%>_<%=manage_role.id_role%>_<%=collection.id%>">
+                                            <% @managePerm.each do |manage_perm| %>
+                                                <% if (found.id_perm == manage_perm.id_perm) %>
+                                                    <option selected="true" value="<%= manage_perm.id_perm %>">
+                                                <% else %>
+                                                    <option value="<%= manage_perm.id_perm %>">
+                                                <% end %>
+                                                <%= translate("#{manage_perm.id_perm.to_s}") %>
+                                                </option>
+                                            <% end %>
+                                        </select>
+                                        <%= observe_field "update_#{profile_post[0]}_#{manage_role.id_role}_#{collection.id}", 
+                                                            :url => {:action => 'update'},
+                                                           :with => "'id_perm=' + value + 
+                                                                    '&id_collection=#{collection.id}' + 
+                                                                    '&id_lieu=#{profile_post[0]}' + 
+                                                                    '&id_role=#{manage_role.id_role}'"
+                                                            %>
+                                        <%= link_to_remote '<img title="Supprimer" alt="Supprimer" src="/images/delete.png" />', 
+                                            :url => {
+                                                :action         => 'delete',
+                                                :id_collection  => collection.id,
+                                                :id_lieu        => profile_post[0],
+                                                :id_role        => manage_role.id_role,
+                                                :id_perm        => found["id_perm"]
+                                            }, 
+                                            :confirm => 'Are you sure?', 
+                                            :class=>"boxAction" 
+                                        %>
+                                    </span>
+                                <% end %>
+                            <% end %>
+                             <%= render :partial => 'addForm', 
+                                        :locals => 
+                                            {
+                                                :profile_post => profile_post,
+                                                :manage_role  => manage_role,
+                                            } %>
+                        </div>
+                    </div>
+                <% end %>
+            </div>
+        </div>
+        <% end  %>
+        <br />
+        <br />
+        <br />
+    </div>
+</div>

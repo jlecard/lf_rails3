@@ -1,0 +1,39 @@
+<div id="page_contents">
+    <%= render(:partial => "admin/navigation") %>
+    <div id="center" class="admin box">
+        <p>
+            <b><%= translate("TAB_LABEL")%></b>
+            <%=h SearchTab.find(@search_tab_subject.tab_id).label %>
+        </p>
+        <p>
+            <b><%= translate("PARENT_LABEL")%></b>
+            <%=h "#{@search_tab_subject.label} (id=#{@search_tab_subject.parent_id})"  %>
+        </p>
+        <p>
+            <b><%= translate("DESCRIPTION_LABEL")%></b>
+            <%=h @search_tab_subject.description %>
+        </p>
+        <p>
+            <b><%= translate("HIDE_LABEL")%></b>
+            <%=h @search_tab_subject.hide %>
+        </p>
+		<p>
+            <b><%= translate("FORMAT_REQUEST_LABEL")%></b>
+            <%=h @search_tab_subject.format %>
+        </p>
+        <p>
+            <b><%= translate("COLLECTION_GROUP_LABEL")%></b>
+            <%=
+            if ((!@search_tab_subject.collection_group_id.nil?) && (@search_tab_subject.collection_group_id > 0))
+            	h CollectionGroup.find(@search_tab_subject.collection_group_id).name
+            else 
+				h translate("NONE_VALUE")
+            end %>
+        </p>
+		<p>
+            <b><%= translate("URL_LABEL")%></b>
+            <%=h @search_tab_subject.url %>
+        </p>
+        <%= link_to translate("EDIT_LINK_LABEL"), {:action => 'edit', :id => @search_tab_subject.id} %>|<%= link_to translate("BACK_LINK_LABEL"), admin_search_tab_subjects_path %>
+    </div>
+</div>

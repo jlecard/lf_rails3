@@ -1,0 +1,30 @@
+EN:
+  #INLINE HELP
+  NAN: Primary Document Type
+  
+FR:
+  #INLINE HELP
+  LISTING_PRIMARY_DOCUMENT_TYPES : "Liste des types de document primaires"
+  NEW_PRIMARY_DOCUMENT_TYPE : "Nouveau type de document primaire"
+  EDIT : Editer
+  SHOW : Afficher
+  DESTROY : Supprimer
+  BACK : Retour
+  EDIT_PRIMARY_DOCUMENT_TYPE : Editer le type de document primaire
+  CONFIRM_DESTROY : 'Vous êtes sûr ?'
+  NEW_PRIMARY_DOCUMENT_TYPE : Nouveau type de document primaire
+  NEW_PERIOD_DESCRIPTION : Période, en jours, après laquelle le document n'est plus considéré parmis les nouveautés
+  NEW_PERIOD_FOR_LISTING : Période de nouveauté
+  
+  #LABELS
+  NAME_LABEL : "Nom : "
+  NEW_PERIOD_LABEL : "Période de nouveauté : "
+  NAME_LABEL_FOR_LISTING : "Nom"
+  
+  #BUTTONS
+  CREATE_BUTTON : Enregistrer
+  UPDATE_BUTTON : Mettre à jour
+  
+ES:
+  #INLINE HELP
+  NAN: Primary Document Type

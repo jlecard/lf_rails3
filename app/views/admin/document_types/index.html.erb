@@ -1,0 +1,29 @@
+<div id="page_contents">
+<%= render(:partial => "admin/navigation")%>
+<div id="center"  class="column middle">
+	
+<h1><%= translate('LISTING_DOCUMENT_TYPES')%></h1>
+<br/>
+
+<table width="100%">
+  <tr>
+    <th><%= translate('NAME_LABEL_FOR_LISTING')%></th>
+	<th><%= translate('COLLECTION_NAME_LABEL') %></th>
+    <th><%= translate('DOCUMENT_TYPE_LABEL_FOR_LISTING')%></th>
+  </tr>
+
+<% for document_type in @document_types %>
+  <tr>
+    <td><%=h document_type.name %></td>
+    
+    <td><%=h document_type.collection_name%>
+	<td><%=h document_type.primary_document_type_name%></td>
+    <td><%= link_to translate('EDIT'), {:action =>'edit', :id => document_type.id} %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+  </div>       
+</div>

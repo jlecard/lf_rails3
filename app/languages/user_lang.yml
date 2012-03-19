@@ -1,0 +1,33 @@
+EN:
+  #_login.rhtml
+  NAME: "Name:"
+  PASSWORD: "Password:"
+  LOG_IN: "Log In"
+  EMAIL_SAVED_ITEMS: Email Saved Items
+  #list.rhtml
+  MY_SAVED_ITEMS: My Saved Items
+  SAVED_ITEMS_NOTICE: "NOTE: This list of saved items will only remain active for the current browser session.  A future implementation of LibraryFind will allow you to login and store results."
+  INVALID_USER: 'Invalid user or password'
+  LOGGED_OUT: 'Logged out'
+FR:
+  #_login.rhtml
+  NAME: "Nom:"
+  PASSWORD: "Mot de passe:"
+  LOG_IN: "Identifiant"
+  EMAIL_SAVED_ITEMS: Email
+  #list.rhtml
+  MY_SAVED_ITEMS: FRENCH My Saved Items
+  SAVED_ITEMS_NOTICE: "FRENCH NOTE: This list of saved items will only remain active for the current browser session.  A future implementation of LibraryFind will allow you to login and store results."
+  INVALID_USER: 'Login ou mot de passe invalide'
+  LOGGED_OUT: 'Deconnexion'
+ES:
+  #_login.rhtml
+  NAME: "SPANISH Name:"
+  PASSWORD: "SPANISH Password:"
+  LOG_IN: "SPANISH Log In"
+  EMAIL_SAVED_ITEMS: SPANISH Email Saved Items
+  #list.rhtml
+  MY_SAVED_ITEMS: SPANISH My Saved Items
+  SAVED_ITEMS_NOTICE: "SPANISH NOTE: This list of saved items will only remain active for the current browser session.  A future implementation of LibraryFind will allow you to login and store results."
+  INVALID_USER: 'SPANISH Invalid user or password'
+  LOGGED_OUT: 'SPANISH Logged out'

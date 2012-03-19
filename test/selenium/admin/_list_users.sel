@@ -1,0 +1,6 @@
+|waitForTextPresent|Users||
+|waitForTextPresent|Name||
+|waitForTextPresent|Full name||
+|waitForTextPresent|Email||
+|waitForVisible|link=Edit||
+|waitForVisible|link=Destroy||

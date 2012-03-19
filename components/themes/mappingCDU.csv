@@ -1,0 +1,88 @@
+15;;
+1510;Cote commence par 0(;
+1515;Sans objet;
+1520;Cote commence par 024 ou 03 ou 07 ou 09;
+20;;
+2010;Cote commence par 7(07) ou 7(084) ou 7(091) ou 75(07) ou 73(07);
+2015;Cote commence par 704-7(03) ou 704-7(06) ou 704-7(076) ou 704-7(082) ou 704-7(091) ou 704-8(03) ou 704-8(06) ou 704-8(07) ou 704-8(076) ou 704-8(082) ou 704-8(091) ou 704-8(092) ou 704-9(07) ou 704-9(092);
+2020;"Cote commence par 70""11"" ou 70""12"" ou 70""13"" ou 70""14"" ou 70""15"" ou 70""16"" ou 70""17"" ou 70""18""";
+2021;"Cote commence par 70""19"" ou 70""20""";
+2024;Cote commence par 7.3(4@ ou 7.3(5@ ou 7.3(6@ ou 7.3(7@ ou 7.3(8@ ou 7.3(9@;
+2025;Cote commence par 72;
+2027;Cote commence par 75;
+2029;Cote commence par 73;
+2030;Cote commence par 74 ;743.9
+2033;Cote commence par 743.9;
+2035;Cote commence par 765 ou 768;
+2040;Cote commence par 77;
+2045;Cote commence par 791;
+2050;Sans objet;
+2055;Cote commence par 79[espace], 790, 792 ;
+25;;
+2510;Sans objet;
+2515;Cote commence par 34 ou 35 ou 36;
+30;;
+3010;Cote commence par 33;
+3015;Cote commence par 65 ;
+10;;
+1010;Cote commence par 0.0 ou 0.2;
+1015;Cote commence par 0.1;
+1020;Sans objet;
+1025;Cote commence par ENC A ou ENC B;
+1030;Cote commence par 0.6 ou ENC D;
+1035;Cote commence par 90
+1040;Cote commence par 3.2 ou 3.3
+35;
+3510;Cote commence par 93[espace] ou 93 ou HG US CHRO.
+3515;Cote commence par 931 ou 93.2 ou 932 ou 934 ou 935 ou 936 ou 937 ou 938.
+
+3520;Cote commence par 930.6 ou 940.5 ou 940.6 
+3525;Cote commence par 930.7 ou 940.7 
+3530;Cote commence par 944 ou 929
+3535;Cote commence par 940[espace] ou 940(0 ou 940.1 ou 940.3 ou 940.4 ou 941 ou 942 ou 943 ou 945 ou 946 ou 947 ou 948 ou 949 ou 95 ou 96 ou 97 ou 98 ou 99
+40;
+4010;Cote commence par : 82[espace] 82.@ ou 821(0) ou 821(00) ou  821(04 ou 821(07 ou 829.3(0) ou 829.3(00) ou ou 829.(04 ou 829.3(07 ou 829.4(0) ou 829.4(00) ou 829.4(04 ou 829.4(07  ou 829.9(0) ou 829.9(00) ou 829.9(04 ou 829.9(07 ou 83[espace] ou 83.@ ou 839.31(0) ou 839.31(00) ou 839.31(04 ou 839.31(07 ou 839.4(0) ou 839.4(00) ou 839.4(04 ou 839.4(07 ou 839.5(0) ou 839.5(00) ou 839.5(04 ou 839.5(07 ou 839.6(0) ou 839.6(00) ou 839.6(04 ou 839.6(07 ou 839.7(0) ou 839.7(00) ou 839.7(04 ou 839.7(07 ou 839.8(0) ou 839.8(00) ou 839.8(04 ou 839.8(07 ou 839.9(0) ou 839.9(00) ou 839.9(04 ou 839.9(07 ou 84[espace] ou 84.@ ou 841(0) ou 841(00) ou 841(04 ou 841(07 ou 843(0) ou 843(00)ou 843(04 ou 843(07 ou 846.1(0) ou 846.1(00) ou 846.1(04 ou 846.1(07 ou 846.3(0) ou 846.3(00) ou 846.3(04 ou 846.3(07 ou 848(0) ou 848 (00) ou 848(04 ou 848(07 ou 849(0) ou 849(00) ou 849(04 ou 849(07 ou 85[espace] ou 85.@ ou 852(0) ou 852(00)  ou 852(04 ou 852(07 ou 859(0) ou 859(00) ou 859(04 ou 859(07 ou 86[espace] ou 86.@ ou 862(0) ou 862(00) ou 862(04 ou 862(07 ou 863(0) ou 863(00)  ou 863(04 ou 863(07 ou 864(0) ou 864(00)  ou 864(04 ou 864(07 ou 869(0) ou 869(00)  ou 869(04 ou 869(07 ou 870[espace] ou 870.@ ou 873(0) ou 873(00)  ou 873(04 ou 873(07 ou 874[espace] ou 874.@ ou 876(0) ou 876(00) ou 876(04 ou 876(07 ou 877(0) ou 877(00) ou 877(04 ou 877(07 ou 88(0) ou 88(00) ou 88(04 ou 88(07 ou 882(0) ou 882(00) ou 882(04 ou 882(07 ou 883(0) ou 883(00) ou 883(04 ou 883(07 ou 884(0) ou 884(00) ou 884(04 ou 884(07 ou 885(0) ou 885(00) ou 885(04 ou 885(07 ou 886.1(0) ou 886.1(00) ou 886.1(04  ou 886.1(07 ou 886.2(0) ou 886.2(00)  ou 886.2(04 ou 886.2(07 ou 886.5(0) ou 886.5(00) ou 886.5(04  ou 886.5(07 ou 886.7(0) ou 886.7(00) ou 886.7(04 ou 886.7(07 ou 887(0) ou 887(00) ou 887(04 ou 887(07 ou 888(0) ou 888(00) ou 888(04 ou 888(07 ou 888.1(0) ou 888.1(00)  ou 888.1(04 ou 888.1(07 ou 889(0) ou 889(00) ou 889(04 ou 889(07 ou 890(0) ou 890(00) ou 890(04 ou 890(07 ou 891.1(0) ou 891.1(00) ou 891.1(04 ou 891.1(07 ou 891.2(0) ou 891.2(00) ou 891.2(04 ou 891.2(07 ou 891.5(0) ou 891.5(00)  ou 891.5(04 ou 891(07 ou 892(0) ou 892(00) ou 892(04  ou 892(07 ou 892.4(0) ou 892.4(00) ou 892.4(04 ou 892.4(07 ou 892.7(0) ou 892.7(00)  ou 892.7(04 ou 892.7(07 ou 893(0) ou 893(00) ou 893(04 ou 893(07 ou 894(0) ou 894(00) ou 894(04 ou 894(07) ou 894.35(0) ou 894.35(00) ou 894.35(04 ou 894.35(07 ou   894.5[espace] ou 894.51(0) ou 894.51(00)  ou 894.51(04 ou 894.51(07 ou 895.1(0) ou 895.1(00) ou 891.1(04 ou 895.1(07 ou 895.2(0) ou 895.2(00) ou 895.2(04 ou 895.2(07 ou 895.22(0) ou 895.22(00) ou 895.22(04 ou 895.22(07 ou 895.24(0) ou 895.24(00) ou895.24(04 ou 895.24(07 ou 895.26(0) ou 895.26(00) ou 895.26(04 ou 895.26(07 ou 895.6(0) ou 895.6(00) ou 895.6(04 ou 895.6(07 ou 895.8(0) ou 895.8(00) ou 895.8(04 ou 895.8(07 ou 897(0) ou 897(00) ou 897(04 ou 897(07 ou 898
+4015;Cote commence par 80
+4020;Cote commence par 81
+4025;Cote commence par 8.20 ou 8.3 ou 8.4 ou 8.5 ou 8.6 ou 8.8 ou 8.9 ou 840 ou 841[espace] ou 842[espace] 843[espace] ou 845 ou 846 ou 848[espace] ou 849[espace]
+
+4030;Cote commence par 820 ou 830 ou 840 ou 850 ou 851ou 852 ou 860 ou 865 ou  821 ou 823 ou 825 ou 826 ou 827 ou 829 ou 831 ou 832 ou 839 ou 841-@ ou 842.8 ou 843-@ ou 852[espace] ou 859[espace] ou ou 861 ou 862[espace] ou 863 ou 864 ou 865 ou 868 ou 869 ou 87[espace] ou 87-@  ou 871 ou 873 ou 875 ou 876 ou 877 ou 88[espace]ou88(082) ou 88(091) ou 882 ou 883 ou 884 ou 885 ou 886 ou 887 ou 888 ou 889 ou 890 ou 891.1 ou 891.2 ou 892.5 ou 892 ou 893 ou 894[espace] ou 894.35 ou 894.51 ou 895 ou 897 ou 898;Cote commence par : 82[espace] 82.@ ou 821(0) ou 821(00) ou  821(04 ou 821(07 ou 829.3(0) ou 829.3(00) ou ou 829.(04 ou 829.3(07 ou 829.4(0) ou 829.4(00) ou 829.4(04 ou 829.4(07  ou 829.9(0) ou 829.9(00) ou 829.9(04 ou 829.9(07 ou 83[espace] ou 83.@ ou 839.31(0) ou 839.31(00) ou 839.31(04 ou 839.31(07 ou 839.4(0) ou 839.4(00) ou 839.4(04 ou 839.4(07 ou 839.5(0) ou 839.5(00) ou 839.5(04 ou 839.5(07 ou 839.6(0) ou 839.6(00) ou 839.6(04 ou 839.6(07 ou 839.7(0) ou 839.7(00) ou 839.7(04 ou 839.7(07 ou 839.8(0) ou 839.8(00) ou 839.8(04 ou 839.8(07 ou 839.9(0) ou 839.9(00) ou 839.9(04 ou 839.9(07 ou 84[espace] ou 84.@ ou 841(0) ou 841(00) ou 841(04 ou 841(07 ou 843(0) ou 843(00)ou 843(04 ou 843(07 ou 846.1(0) ou 846.1(00) ou 846.1(04 ou 846.1(07 ou 846.3(0) ou 846.3(00) ou 846.3(04 ou 846.3(07 ou 848(0) ou 848 (00) ou 848(04 ou 848(07 ou 849(0) ou 849(00) ou 849(04 ou 849(07 ou 85[espace] ou 85.@ ou 852(0) ou 852(00)  ou 852(04 ou 852(07 ou 859(0) ou 859(00) ou 859(04 ou 859(07 ou 86[espace] ou 86.@ ou 862(0) ou 862(00) ou 862(04 ou 862(07 ou 863(0) ou 863(00)  ou 863(04 ou 863(07 ou 864(0) ou 864(00)  ou 864(04 ou 864(07 ou 869(0) ou 869(00)  ou 869(04 ou 869(07 ou 870[espace] ou 870.@ ou 873(0) ou 873(00)  ou 873(04 ou 873(07 ou 874[espace] ou 874.@ ou 876(0) ou 876(00) ou 876(04 ou 876(07 ou 877(0) ou 877(00) ou 877(04 ou 877(07 ou 88(0) ou 88(00) ou 88(04 ou 88(07 ou 882(0) ou 882(00) ou 882(04 ou 882(07 ou 883(0) ou 883(00) ou 883(04 ou 883(07 ou 884(0) ou 884(00) ou 884(04 ou 884(07 ou 885(0) ou 885(00) ou 885(04 ou 885(07 ou 886.1(0) ou 886.1(00) ou 886.1(04  ou 886.1(07 ou 886.2(0) ou 886.2(00)  ou 886.2(04 ou 886.2(07 ou 886.5(0) ou 886.5(00) ou 886.5(04  ou 886.5(07 ou 886.7(0) ou 886.7(00) ou 886.7(04 ou 886.7(07 ou 887(0) ou 887(00) ou 887(04 ou 887(07 ou 888(0) ou 888(00) ou 888(04 ou 888(07 ou 888.1(0) ou 888.1(00)  ou 888.1(04 ou 888.1(07 ou 889(0) ou 889(00) ou 889(04 ou 889(07 ou 890(0) ou 890(00) ou 890(04 ou 890(07 ou 891.1(0) ou 891.1(00) ou 891.1(04 ou 891.1(07 ou 891.2(0) ou 891.2(00) ou 891.2(04 ou 891.2(07 ou 891.5(0) ou 891.5(00)  ou 891.5(04 ou 891(07 ou 892(0) ou 892(00) ou 892(04  ou 892(07 ou 892.4(0) ou 892.4(00) ou 892.4(04 ou 892.4(07 ou 892.7(0) ou 892.7(00)  ou 892.7(04 ou 892.7(07 ou 893(0) ou 893(00) ou 893(04 ou 893(07 ou 894(0) ou 894(00) ou 894(04 ou 894(07) ou 894.35(0) ou 894.35(00) ou 894.35(04 ou 894.35(07 ou   894.5[espace] ou 894.51(0) ou 894.51(00)  ou 894.51(04 ou 894.51(07 ou 895.1(0) ou 895.1(00) ou 891.1(04 ou 895.1(07 ou 895.2(0) ou 895.2(00) ou 895.2(04 ou 895.2(07 ou 895.22(0) ou 895.22(00) ou 895.22(04 ou 895.22(07 ou 895.24(0) ou 895.24(00) ou895.24(04 ou 895.24(07 ou 895.26(0) ou 895.26(00) ou 895.26(04 ou 895.26(07 ou 895.6(0) ou 895.6(00) ou 895.6(04 ou 895.6(07 ou 895.8(0) ou 895.8(00) ou 895.8(04 ou 895.8(07 ou 897(0) ou 897(00) ou 897(04 ou 897(07 ou 898
+45;;
+4510;Cote commence par 64 ou 794 ou 635.1 ou 635.9;
+4515;Cote commence par 796 ou 797 ou 798 ou 799;
+4520;Cote commence par 795 ou PRA H;
+50;;
+5010;"Cote commence par 1( ou 1"""" ou 10 ou 11 ou 13 ou 14 ou 16 ou 17 ou 18";
+5015;Cote commence par 2;
+55;;
+5510;Cote commence par EMP A ou EMP C;
+5515;Cote commence par EMP B;
+60;;
+6010;Cote commence par 5(0 ou 5.1 ou 5.3 ou 50;
+6015;Cote commence par 51 ou 53 ou 54;
+6020;Cote commence par 52 ou 55;
+6025;Cote commence par 56 ou 57 ou 58 ou 59;
+6030;Cote commence par 61
+6035;Cote commence par 62[espace] ou 62( ou 62. ou 620 ou 621 ou 622 ou 623 ou 624 ou 625 ou 626 ou 627 ou 628
+6040;Cote commence par 63
+6045;Cote commence par 629
+6050;Cote commence par 681
+6055;Cote commence par 66 ou 67 ou 639
+65;
+6510;Cote commence par 3(
+6515;Cote commence par 15
+6520;Cote commence par 30 ou 31
+6525;Cote commence par 39
+6530;Cote commence par 32
+6535;Cote commence par 37 ou 38
+6540;Cote commence par 020 ou 021 ou 022 ou 03
+6545;Cote commence par 91 ou HG US ATL
+70;
+7010;Cote commence par 0.7
+7015;Cote commence par PRA B
+7020;Cote commence par PRA C
+7025;Cote commence par PRA F
+7030;Cote commence par PRA D
+7035;Cote commence par PRA A
+7040;Cote commence par PRA G
+7045;Cote commence par PRA H

@@ -1,0 +1,19 @@
+body, body div, body p, body th, body td, body li, body dd	{
+	font-size:	small;
+	voice-family:	"\"}\"";
+	voice-family:	inherit;
+	font-size:	medium
+}
+
+html>body, html>body div, html>body p, html>body th, html>body td, html>body li, html>body dd	{
+	font-size:	medium;
+}
+body #header div, body #navmenu li {font-size:small;}
+html>body #header div, html>body #navmenu li {font-size:small;}
+body h2 {font-size:x-large;}
+html>body h2 {font-size:x-large;}
+body .anchors {font-size: 13px;}
+html>body .anchors {font-size: 13px;}
+.smallfont {background-image: url(/images/a_small.gif);}
+.medfont { background-image: url(/images/a_med_underline.gif);}
+.largefont {background-image: url(/images/a_large.gif);}

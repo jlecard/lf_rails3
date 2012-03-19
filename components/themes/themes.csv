@@ -1,0 +1,82 @@
+ID;Label;Niveau;Parent
+15;Actualités, médias, presse;0;0
+1510;Articles de journaux et de magazines;2;15
+1515;Sites de journaux et de magazines;2;15
+1520;Documentation sur les médias et l’édition;2;15
+20;Arts;0;0
+2010;Généralités;2;20
+2015;Art jusqu'au 19ème siècle;2;20
+2020;Art des 20ème et 21ème siècles;2;20
+2025;Architecture;2;20
+2030;Arts décoratifs, design, mode;2;20
+2035;Graphisme, bande dessinée;2;20
+2040;Photographie;2;20
+2045;Cinéma;2;20
+2050;Musique;2;20
+2055;Spectacle vivant;2;20
+25;Droit, administration, institutions;0;0
+2510;Administration, institutions ;2;25
+2515;Droit;2;25
+30;Economie, entreprise, gestion;0;0
+3010;Economie;2;30
+3015;Entreprise, gestion;2;30
+10;Généralités;0;0
+1010;Bibliographies, livres en librairie;2;10
+1015;Bibliothèques et catalogues;2;10
+1020;Bibliothèques numériques;2;10
+1025;Encyclopédies;2;10
+1030;Dictionnaires de langues, de sigles;2;10
+1035;Dictionnaires biographiques;2;10
+1040;Données sur les pays;2;10
+35;Histoire;0;0
+3510;Généralités;2;35
+3515;Préhistoire, archéologie, antiquité;2;35
+3520;Histoire médiévale et moderne;2;35
+3525;Histoire contemporaine;2;35
+3530;Histoire de France, généalogie;2;35
+3535;Histoire des continents et des pays;2;35
+40;Langues, littératures;0;0
+4010;Langues;2;40
+4015;Linguistique;2;40
+4020;Littérature générale;2;40
+4025;Littératures de langue française;2;40
+4030;Littératures étrangères;2;40
+45;Loisirs, sports, tourisme;0;0
+4510;Loisirs;0;45
+4515;Sports;0;45
+4520;Tourisme;0;45
+50;Philosophie, religions;0;0
+5010;Philosophie;2;50
+5015;Religions;2;50
+55;Recherche d'emploi, métiers, formation;0;0
+5510;Orientation, formation, métiers;2;55
+5515;Recherche d'emploi;2;55
+60;Sciences, techniques, médecine;0;0
+6010;Généralités;2;60
+6015;Mathématiques, physique, chimie;2;60
+6020;Sciences de la Terre et de l'univers;2;60
+6025;Sciences de la vie;2;60
+6030;Médecine;2;60
+6035;Sciences de l'ingénieur;2;60
+6040;Agriculture;2;60
+6045;Transports;2;60
+6050;Informatique;2;60
+6055;Industrie, artisanat;2;60
+65;Sciences humaines et sociales;0;0
+6510;Généralités;2;65
+6515;Psychologie, psychanalyse;2;65
+6520;Sociologie, démographie;2;65
+6525;Ethnologie;2;65
+6530;Politique;2;65
+6535;Education;2;65
+6540;Sciences de l'information et de la communication;2;65
+6545;Géographie, urbanisme;2;65
+70;Vie pratique;0;0
+7010;Répertoires généraux d'adresses;2;70
+7015;Démarches administratives et juridiques;2;70
+7020;Famille et couple;2;70
+7025;Logement;2;70
+7030;Solidarité, santé;2;70
+7035;Handicap;2;70
+7040;Consommation, budget;2;70
+7045;Paris et Ile-de-France;2;70

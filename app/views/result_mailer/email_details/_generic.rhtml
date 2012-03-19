@@ -1,0 +1,35 @@
+<%_from=display_source(generic)%>
+<div id="result-row">
+  [<%=generic.material_type%>]&nbsp;&nbsp;
+  <span id="ptitle">
+    <%if generic.direct_url != "" %>
+      <a href=<%=h(generic.direct_url)%> target="_blank">
+        <%=generic.ptitle%>
+      </a>
+    <%else %>
+      <%=generic.ptitle%>
+    <%end %>
+  </span>
+</div>
+<div id="result-row">
+  <% if generic.author!=''%>
+    <%=generic.author%> 
+    <%if generic.subject!=''%>
+      | <%=generic.subject%> 
+    <%end%>     
+  <%else%>
+    <%if generic.subject!=''%>
+      <%=generic.subject%> 
+    <%end%>   
+  <%end%>   
+</div>
+<div id="result-row">
+  <%if generic.date!='' and generic.date!='00000000'%>
+    <%=display_date(generic)%>  &#160;
+  <%end%>
+    <span id="source"">   
+      <%=_from%>
+    </span>
+</div>
+<div id="result-row" class='vr' >
+ </div>  

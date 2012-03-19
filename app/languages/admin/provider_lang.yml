@@ -1,0 +1,72 @@
+EN:
+  #INLINE HELP
+  NAME_DESCRIPTION: help for provider name here
+  NAME_EXAMPLE: e.g. example provider name here
+  TITLE_DESCRIPTION: help for provider title here
+  TITLE_EXAMPLE: e.g. example provider title name here
+  URL_DESCRIPTION: help for provider url here
+  URL_EXAMPLE: e.g. example provider url here
+  ARTICLE_TYPE_DESCRIPTION: help for provider article_type here
+  ARTICLE_TYPE_EXAMPLE: e.g. example provider article_type here
+  PROXY_DESCRIPTION: help for provider proxy here
+  PROXY_EXAMPLE: e.g. example provider proxy here
+  CAN_RESOLVE_DESCRIPTION: help for provider Can Resolve
+  #LABLES
+  PROVIDER_NAME_LABEL: "Provider Name:"
+  TITLE_LABEL: "Title:"
+  URL_LABEL: "URL:"
+  ARTICLE_TYPE_LABEL: "Article Type:"
+  PROXY_LABEL: "Proxy:"
+  CAN_RESOLVE_LABEL: "Can Resolve?"
+  EDIT_PROVIDER_HEADER: Edit Provider
+  PROVIDER_HEADER: Provider
+  PROVIDER_CREATED: Provider was successfully created.
+  PROVIDER_UPDATED: 'Provider was successfully updated.'
+FR:
+  #INLINE HELP
+  NAME_DESCRIPTION: FRENCH help for provider name here
+  NAME_EXAMPLE: FRENCH e.g. example provider name here
+  TITLE_DESCRIPTION: FRENCH help for provider title here
+  TITLE_EXAMPLE: FRENCH e.g. example provider title name here
+  URL_DESCRIPTION: FRENCH help for provider url here
+  URL_EXAMPLE: FRENCH e.g. example provider url here
+  ARTICLE_TYPE_DESCRIPTION: FRENCH help for provider article_type here
+  ARTICLE_TYPE_EXAMPLE: FRENCH e.g. example provider article_type here
+  PROXY_DESCRIPTION: FRENCH help for provider proxy here
+  PROXY_EXAMPLE: FRENCH e.g. example provider proxy here
+  CAN_RESOLVE_DESCRIPTION: FRENCH help for provider Can Resolve
+  #LABLES
+  PROVIDER_NAME_LABEL: "FRENCH Provider Name:"
+  TITLE_LABEL: "FRENCH Title:"
+  URL_LABEL: "FRENCH URL:"
+  ARTICLE_TYPE_LABEL: "FRENCH Article Type:"
+  PROXY_LABEL: "FRENCH Proxy:"
+  CAN_RESOLVE_LABEL: "FRENCH Can Resolve?"
+  EDIT_PROVIDER_HEADER: FRENCH Edit Provider
+  PROVIDER_HEADER: FRENCH Provider
+  PROVIDER_CREATED: FRENCH Provider was successfully created.
+  PROVIDER_UPDATED: 'FRENCH Provider was successfully updated.'
+ES:
+  #INLINE HELP
+  NAME_DESCRIPTION: SPANISH help for provider name here
+  NAME_EXAMPLE: SPANISH e.g. example provider name here
+  TITLE_DESCRIPTION: SPANISH help for provider title here
+  TITLE_EXAMPLE: SPANISH e.g. example provider title name here
+  URL_DESCRIPTION: SPANISH help for provider url here
+  URL_EXAMPLE: SPANISH e.g. example provider url here
+  ARTICLE_TYPE_DESCRIPTION: SPANISH help for provider article_type here
+  ARTICLE_TYPE_EXAMPLE: SPANISH e.g. example provider article_type here
+  PROXY_DESCRIPTION: SPANISH help for provider proxy here
+  PROXY_EXAMPLE: SPANISH e.g. example provider proxy here
+  CAN_RESOLVE_DESCRIPTION: SPANISH help for provider Can Resolve
+  #LABLES
+  PROVIDER_NAME_LABEL: "SPANISH Provider Name:"
+  TITLE_LABEL: "SPANISH Title:"
+  URL_LABEL: "SPANISH URL:"
+  ARTICLE_TYPE_LABEL: "SPANISH Article Type:"
+  PROXY_LABEL: "SPANISH Proxy:"
+  CAN_RESOLVE_LABEL: "SPANISH Can Resolve?"
+  EDIT_PROVIDER_HEADER: SPANISH Edit Provider
+  PROVIDER_HEADER: SPANISH Provider
+  PROVIDER_CREATED: SPANISH Provider was successfully created.
+  PROVIDER_UPDATED: 'SPANISH Provider was successfully updated.'

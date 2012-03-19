@@ -1,0 +1,54 @@
+EN:
+    TITLE: Rebounce
+    INT_SRC: internal source
+    EXT_SRC: external source
+    ERROR_INFO_DOC: Error while retrieving informations about the document
+    # navigation.rhtml
+    EMAIL_THE_DOCUMENT : Email the document
+    REFWORKS_THE_DOCUMENT : RefWorks
+    PDF_THE_DOCUMENT : Exporter en pdf
+    EMAIL_SENT: "Email sent"
+    EMAIL_NOT_SENT: "Email not sent"
+    EMAIL_FORMAT_ERROR : "Incorrect mail address"
+    NEW_EMAIL: New Email
+    ENTER_EMAIL_ADDRESS: Enter email address
+    QUATRIEME_DE_COUVERTURE: "Quatrieme de couverture"
+    TABLE_DES_MATIERES: "Table des matieres"
+    DOWNLOAD: "Download"
+    ERROR_ACCES: "You don't have any rights"
+FR:
+    TITLE: Rebounce
+    INT_SRC: source interne
+    EXT_SRC: source externe
+    ERROR_INFO_DOC: Erreurs lors de la récupération des informations sur le document
+    # navigation.rhtml
+    EMAIL_THE_DOCUMENT : Envoyer ce document par courriel
+    REFWORKS_THE_DOCUMENT : RefWorks
+    PDF_THE_DOCUMENT : Export en Pdf
+    EMAIL_SENT: "Courriel envoyé"
+    NEW_EMAIL: Nouveau courriel
+    ENTER_EMAIL_ADDRESS: Saisissez une adresse électronique
+    QUATRIEME_DE_COUVERTURE: "Quatrième de couverture"
+    TABLE_DES_MATIERES: "Table des matières"
+    EMAIL_NOT_SENT: "Erreur d'envoi de l'email"
+    EMAIL_FORMAT_ERROR : "Adresse mail incorrecte"
+    DOWNLOAD: "Télécharger"
+    ERROR_ACCES: "Vous n'avez pas le droit"
+ES:
+    TITLE: Rebounce
+    INT_SRC: source interne
+    EXT_SRC: source externe
+    ERROR_INFO_DOC: Erreurs lors de la récupération des informations sur le document
+    # navigation.rhtml
+    EMAIL_THE_DOCUMENT : Envoyez ce document par mail
+    REFWORKS_THE_DOCUMENT : RefWorks
+    PDF_THE_DOCUMENT : Pdf
+    EMAIL_SENT: "Email envoye"
+    EMAIL_NOT_SENT: "Email not sent"
+    EMAIL_FORMAT_ERROR : "Incorrect mail address"
+    NEW_EMAIL: Nouveau Mail
+    ENTER_EMAIL_ADDRESS: Saisissez une adresse mail
+    QUATRIEME_DE_COUVERTURE: "Quatrieme de couverture"
+    TABLE_DES_MATIERES: "Table des matieres"
+    DOWNLOAD: "Télécharger"
+    ERROR_ACCES: "Vous n'avez pas le droit"

@@ -1,0 +1,28 @@
+<html>
+<head>
+</head>
+<body>
+	<%=translate('RESULTS_FROM_LIBRARYFIND', [], self)%>
+<div>
+  <div id="center"  class="column">
+  <% if @results!=nil and !@results.empty?
+      for _record in @results %>   
+        <div id="row_<%=_record.id%>" class="row">
+  <%    if _record.material_type.downcase=='book' %> 
+          <%= render(:partial => "/result_mailer/email_details/book", :object => _record) %>
+     <% elsif _record.material_type.downcase=='article' %>
+          <%= render(:partial => "/result_mailer/email_details/article", :object => _record) %>
+        <% elsif _record.material_type.downcase=='image' %>
+     <%= render(:partial => "/result_mailer/email_details/image", :object => _record) %>
+     <% else %>
+          <%= render(:partial => "/result_mailer/email_details/generic", :object => _record) %>
+     <% end  %>
+        </div>
+<%    end %>
+<%  end %>
+  </div>
+</div>
+
+</body>
+</html>
+

@@ -1,0 +1,26 @@
+EN:
+    ROLES: "role"
+    ROLES_HEADER: "Handle roles"
+    ADD_NEW_ROLE: "Add new role"
+    ROLES_LIST: "List of roles"
+    MANAGE_ROLE_LIST: "List roles"
+    NEW_ROLE: "New role"
+    ROLE_NAME: "Nom"
+FR:
+    ROLES: "Rôles"
+    ROLES_HEADER: "Gestion des rôles"
+    ADD_NEW_ROLE: "Ajouter un rôle"
+    ROLES_LIST: "Liste des rôles"
+    MANAGE_ROLE_LIST: "Liste des rôles"
+    NEW_ROLE: "Nouveau rôle"
+    ROLE_NAME: "Nom"
+
+ES:
+    ROLES: "role"
+    ROLES_HEADER: "Handle roles"
+    ADD_NEW_ROLE: "Add new role"
+    ROLES_LIST: "List of roles"
+    MANAGE_ROLE_LIST: "List roles"
+    NEW_ROLE: "New role"
+    ROLE_NAME: "Name"
+    

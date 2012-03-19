@@ -1,0 +1,12 @@
+<span class="boxHeader">
+	<a title="<%=value.description%>" class="boxTitle" onClick="Effect.toggle(document.getElementById('sub_tree_<%=value.id%>'), 'slide', {duration: 0.2}); return false;"><%=value.label %></a>
+<%= link_to '<img title="Ajouter un thème" alt="Ajouter un thème" src="/images/new-document.png"/>', {:action => 'new', :tabId => value.tab_id, :parentId => value.id} %>
+<%= link_to '<img title="' + translate("EDIT_SUBJECT") + '"alt="' + translate("EDIT_SUBJECT") + '" src="/images/edit.png" />', {:action => 'edit', :id => value.id}, :class=>"boxAction" %>
+<%= link_to '<img title="Afficher" alt="Afficher" src="/images/show.png" />', {:action => 'show', :id => value.id}, :class=>"boxAction" %>
+<%= link_to '<img title="Supprimer" alt="Supprimer" src="/images/delete.png" />', {:action => 'destroy', :id => value.id}, :confirm => 'Are you sure?', :method => :delete, :class=>"boxAction" %>
+<% if !value.hide %>
+<%=  link_to '<img title="Cacher" alt="Cacher" src="/images/hide1.png" />', {:action => 'hide', :id => value.id, :value => 'true'}, :method => :get, :class=>"boxAction" %>
+<% else %>
+<%=	 link_to '<img title="Montrer" alt="Montrer" src="/images/hide2.png" />', {:action => 'hide', :id => value.id, :value => 'false'}, :method => :get, :class=>"boxAction" %>
+<% end %>
+</span>

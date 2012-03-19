@@ -1,0 +1,52 @@
+Welcome to LibraryFind!
+-----------------------
+
+LibraryFind is designed to be an easy-to-use, fast, easy-to-set up, and 
+easy-to-maintain system for integrating access to diverse library resources.  
+Our goal is to make any information resource just two clicks away - one click 
+to find, one click to get.  
+
+To install and run LibraryFind, you will need to be familiar with running
+Ruby on Rails applications, setting up MySQL databases, and installing some
+additional software libraries.  If you don't already have this experience,
+any system administrator near you should be able to get up and running with
+LibraryFind in under an hour.  See GETTING STARTED below for details.
+
+LibraryFind is software developed by the Oregon State University Libraries, 
+funded in part by a grant from the State Library.
+
+
+GETTING STARTED
+---------------
+
+You will need to be comfortable running Ruby on Rails applications in particular,
+and with system administration in general, to install, configure, and successfully
+run LibraryFind.  The entire system (search backend, harvester, indexing, 
+database, and web front-end) can be run on any Unix-like system, and the web 
+front-end can be run on Windows machines which connect to a remote system over
+the web using WSDL.
+
+To get going, read INSTALL.txt for details, and visit http://libraryfind.org/
+to find links to email lists, online documentation, and other resources. 
+ 
+
+LICENSE
+-------
+
+LibraryFind is free software licensed according to the GNU General Public 
+License (GPL).  For details, see the file LICENSE.
+
+
+QUESTIONS/COMMENTS?
+-------------------
+
+Questions or comments on LibraryFind may be addressed to:
+
+  LibraryFind
+  121 The Valley Library
+  Corvallis OR 97331-4501
+
+  http://libraryfind.org
+
+
+$Id: README 726 2007-01-29 22:21:38Z dchud $

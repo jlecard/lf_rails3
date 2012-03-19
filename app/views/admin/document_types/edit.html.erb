@@ -1,0 +1,27 @@
+<div id="page_contents">
+<%= render(:partial => "admin/navigation")%>
+<div id="center"  class="column">
+	<BR/>
+<h1><%= translate('EDIT_DOCUMENT_TYPE')%></h1>
+
+<% form_for(:document_type, @document_type, :url => {:action => 'update', :id => @document_type.id}) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label translate('NAME_LABEL') %><br />
+    <%= f.text_field :name, :disabled => true %>
+  </p>
+  <p>
+    <%= f.label translate('DOCUMENT_TYPE_LABEL') %><br />
+        <select name="document_type[primary_document_type]">
+        <%= options_from_collection_for_select( @primary_document_types, :id, :name, @document_type.primary_document_type) %><br/><br/>
+        </select>
+  </p>
+  <p>
+    <%= f.submit translate('UPDATE_BUTTON') %>
+  </p>
+<% end %>
+
+<%= link_to translate('BACK'), admin_document_types_path %>
+  </div>       
+</div>

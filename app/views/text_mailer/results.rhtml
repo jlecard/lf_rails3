@@ -1,0 +1,30 @@
+<html>
+<head>
+</head>
+<body>
+	<%=translate('RESULTS_FROM_BPI', [], self)%>
+<div>
+  <div id="center"  class="column">
+	<div class="citation">	
+    	<% if @record != nil %>
+	        
+	        <br/>
+	        
+	        <% if @record[:mail_text] != "" %>
+	        <div class="elementInfoUtils">
+	            <div class="myAlign">
+	                
+	            </div>
+	          
+	        </div>
+	        <!--end of div elementInfoUtils -->
+	        <br/>
+	     <% end %>
+		 <%end%>
+	  </div>
+	
+  </div>
+</div>
+<%= puts 'In the document mailer' %>
+</body>
+</html>

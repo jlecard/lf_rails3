@@ -1,0 +1,35 @@
+<span id="line_<%=@manage_droit.id_lieu%>_<%=@manage_droit.id_role%>_<%=@manage_droit.id_collection%>" class="boxHeader box">
+    <a class="boxTitle">
+        <%= @collection.alt_name %>
+    </a>
+    <select name="id_perm" id="update_<%=@manage_droit.id_lieu%>_<%=@manage_droit.id_role%>_<%=@manage_droit.id_collection%>">
+        <% @managePerm.each do |manage_perm| %>
+            <% if (@manage_droit.id_perm == manage_perm.id_perm) %>
+                <option id="toto" selected="true" value="<%= manage_perm.id_perm %>">
+            <% else %>
+                <option id='toto' value="<%= manage_perm.id_perm %>">
+            <% end %>
+            <%= translate(manage_perm.id_perm) %>
+            </option>
+        <% end %>
+    </select>
+    <%= observe_field "update_#{@manage_droit.id_lieu}_#{@manage_droit.id_role}_#{@manage_droit.id_collection}", 
+                        :url => {:action => 'update'},
+                       :with => "'id_perm=' + value + 
+                                '&id_collection=#{@manage_droit.id_collection}' + 
+                                '&id_lieu=#{@manage_droit.id_lieu}' + 
+                                '&id_role=#{@manage_droit.id_role}'"
+                        %>
+    <%= link_to_remote '<img title="Supprimer" alt="Supprimer" src="/images/delete.png" />', 
+        :url => {
+            :action         => 'delete',
+            :id_collection  => @manage_droit.id_collection,
+            :id_lieu        => @manage_droit.id_lieu,
+            :id_role        => @manage_droit.id_role,
+            :id_perm        => @manage_droit.id_perm
+        }, 
+        :confirm => 'Are you sure?', 
+        :class=>"boxAction" 
+    %>
+</span>
+

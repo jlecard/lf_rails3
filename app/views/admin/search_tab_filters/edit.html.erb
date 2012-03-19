@@ -1,0 +1,37 @@
+<div id="page_contents">
+<%= render(:partial => "admin/navigation")%>
+<div id="center"  class="middle">
+<h1>Editing search_tab_filter</h1>
+
+<% form_for(:search_tab_filter, @search_tab_filter, :url => {:action => 'update', :id => @search_tab_filter.id}) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :label %><br />
+    <%= f.text_field :label %>
+  </p>
+  <p>
+    <%= f.label :field_filter %><br />
+        <select name="search_tab_filter[field_filter]">
+        <%= options_for_select( @fields_filter, @search_tab_filter.field_filter) %><br/><br/>
+        </select>
+  </p>
+  <p>
+    <%= f.label :search_tab_id %><br />
+        <select name="search_tab_filter[search_tab_id]">
+        <%= options_from_collection_for_select( @search_tabs, :id, :label, @search_tab_filter.search_tab_id) %><br/><br/>
+        </select>
+  </p>
+ 	<p>
+    <%= f.label :description %><br />
+    <%= f.text_area :description %>
+  </p>
+  <p>
+    <%= f.submit "Update" %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', {:action => 'show', :id => @search_tab_filter.id} %> |
+<%= link_to 'Back', admin_search_tab_filters_path %>
+</div>
+</div>

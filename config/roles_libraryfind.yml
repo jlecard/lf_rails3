@@ -1,0 +1,18 @@
+
+
+ANONYM:
+    Id        : "anonym"
+    Label     : "Anonyme"      # name of label
+    Groups    : ""                       # groups associated to role
+    State     : "False"
+    Roles     : ""        
+    
+    
+BASIC:
+    Id        : "basic"
+    Label     : "Authentifié"      # name of label
+    Groups    : ""           # groups associated to role
+    State     : "True"
+    Roles     : ""
+
+    

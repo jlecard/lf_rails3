@@ -1,0 +1,41 @@
+<div id="page_contents">
+<%= render(:partial => "admin/navigation")%>
+<div id="center"  class="column">
+<h2>Settings</h2>
+ <div class="admin-list">
+  <% for column in  SiteConfig.content_columns
+      _class_name="medium-column"
+      if column.name=="updated_at" 
+        _class_name="large-column"
+      end %> 
+      <label class="<%=_class_name%>"><%= column.human_name %></label>
+  <% end %>
+    <span class="action-links">&nbsp;</span>
+  </div>
+<br/>
+  
+  <% for site_config in @site_configs %>
+  <div class="admin-list">
+  <% for column in SiteConfig.content_columns 
+        _class_name="medium-column"
+       if column.name=="updated_at" 
+        _class_name="large-column"
+      end 
+      if site_config.send(column.name)==nil or site_config.send(column.name)=="" %>
+           <span class="<%=_class_name%>">&nbsp;</span>
+      <%else%>
+    <span class="<%=_class_name%>"><%=h site_config.send(column.name) %></span>
+     <% end %>
+  <% end %>
+    <span class="action-links"><%= link_to 'Show', :action => 'show', :id => site_config %>&nbsp;&nbsp;
+      <%= link_to 'Edit', :action => 'edit', :id => site_config %>&nbsp;&nbsp;
+      <%= link_to 'Destroy', { :action => 'destroy', :id => site_config }, :confirm => 'Are you sure?', :method => "post" %></span>
+  </div>
+  <br/>
+<% end %>
+
+<%= link_to 'Previous page', { :page => @site_config_pages.current.previous } if @site_config_pages.current.previous %>
+<%= link_to 'Next page', { :page => @site_config_pages.current.next } if @site_config_pages.current.next %> 
+
+</div>
+</div>

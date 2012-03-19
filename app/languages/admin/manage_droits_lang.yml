@@ -1,0 +1,17 @@
+US:
+    ROLES: "Rights by role associations"
+    ACC: "Full access"
+    REC: "No access to links"
+    MANAGE_DROIT_INFO: "A collection has no access by default"
+
+FR:
+    ROLES: "Attribution des droits par rôle"
+    ACC: "Accès total"
+    REC: "Accès sans lien"
+    MANAGE_DROIT_INFO: "Par défault une collection n'a la permission à aucun acces"
+
+ES:
+    ROLES: "Rights by role associations"
+    ACC: "Full access"
+    REC: "No access to links"
+    MANAGE_DROIT_INFO: "A collection has no access by default"

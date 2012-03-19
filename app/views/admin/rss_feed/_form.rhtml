@@ -1,0 +1,180 @@
+<div id="error">
+    <%= error_messages_for 'rss_feed' %>
+</div>
+
+<div id="form_field">
+    <span class="form_left">
+        <label for="rss_feed_name">
+            <%=translate("NAME_LABEL") %>
+        </label>
+        <br/>
+        <small>
+            <%=translate("NAME_DESCRIPTION") %>
+        </small>
+    </span>
+    <span class="form_right"><%= form.text_field :name %>
+        <br/>
+        <small>
+            <%=translate("NAME_EXAMPLE") %>
+        </small>
+    </span>
+</div>
+
+<div id="form_field">
+    <span class="form_left">
+        <label for="rss_feed_full_name">
+            <%=translate("FULL_NAME_LABEL") %>
+        </label>
+        <br/>
+        <small>
+            <%=translate("FULL_NAME_DESCRIPTION") %>
+        </small>
+    </span>
+    <span class="form_right"><%= form.text_field :full_name %>
+        <br/>
+        <small>
+            <%=translate("FULL_NAME_EXAMPLE") %>
+        </small>
+    </span>
+</div>
+
+<div id="form_field">
+    <span class="form_left">
+        <U>	<label for="rss_feed_parameters">
+            	<%=translate("RSS_FEED_PARAMETERS_LABEL") %>
+        	</label>
+		</U>
+    </span>
+</div>
+
+<div id="form_field">
+	<span class="form_left">
+    	<label for="primary_document_type_label">
+        	<%=translate("PRIMARY_DOCUMENT_TYPE_LABEL") %>
+        </label>
+        <br/>
+        <small>
+            <%=translate("PRIMARY_DOCUMENT_TYPE_DESCRIPTION") %>
+        </small>
+    </span>
+	
+	<span class="form_left">
+		<select id="select1" name="rss_feed[primary_document_type]" title="<%= translate('PRIMARY_DOCUMENT_TYPE') %>">
+			<% if @primary_document_types != nil %>
+				<% @primary_document_types.each do | elem | %>
+					<% if !@rss_feed.nil? and elem.id.to_i == @rss_feed['primary_document_type'].to_i %>
+						<option selected onclick="this.parentNode.title='<%=elem.name%>';" value='<%= elem.id %>' title='<%= elem.name %>'><%= elem.name %></option>
+					<% else %>
+						<option onclick="this.parentNode.title='<%=elem.name%>';" value='<%= elem.id %>' title="<%= elem.name %>"> <%= elem.name %> </option>
+					<% end %>
+				<% end %>
+			<% end %>
+		</select>
+	</span>
+</div>
+
+<div id="form_field">
+    <span class="form_left">
+        <label for="rss_feed_new_docs">
+            <%=translate("NEW_DOCS_LABEL") %>
+        </label>
+    </span>
+    <span class="form_right"><%= radio_button "rss_feed", "new_docs", '1', :style=>"width:14px" %><span class="dot"><%=translate("YES_LABEL") %>&nbsp;&nbsp; </span><%= radio_button "rss_feed", "new_docs", '0', :style=>"width:14px" %><span class="dot"><%=translate("NO_LABEL") %>&nbsp;&nbsp; </span>
+    </span>
+</div>
+
+<div id="form_field">
+    <span class="form_left">
+        <label for="rss_feed_isbn_iss_nullable">
+            <%=translate("ISBN_ISSN_NULLABLE_LABEL") %>
+        </label>
+		<small>
+       		<%=translate("ISBN_ISSN_NULLABLE_DESCRIPTION")%>
+		</small>
+    </span>
+    <span class="form_right"><%= radio_button "rss_feed", "isbn_issn_nullable", '1', :style=>"width:14px" %><span class="dot"><%=translate("YES_LABEL") %>&nbsp;&nbsp; </span><%= radio_button "rss_feed", "isbn_issn_nullable", '0', :style=>"width:14px" %><span class="dot"><%=translate("NO_LABEL") %>&nbsp;&nbsp;</span>
+    </span>
+</div>
+
+<div id="form_field">
+	<span class="form_left">
+    	<label for="collection_group_label">
+        	<%=translate("COLLECTION_GROUP_LABEL") %>
+        </label>
+        <br/>
+        <small>
+            <%=translate("COLLECTION_GROUP_DESCRIPTION") %>
+        </small>
+    </span>
+	<span class="form_left">
+    <select id="select2" name="rss_feed[collection_group]" title="<%= translate('COLLECTION_GROUPS') %>">
+	    <% if (@groups_tab[1] != nil) %>
+	        <% @groups_tab[1].each do | elem | %>
+					<% if !@rss_feed.nil? and elem.id.to_i == @rss_feed['collection_group'].to_i %>			
+						<option selected onclick='this.parentNode.title="<%=elem.name%>"' value='<%= elem.id %>' title='<%= elem.full_name %>' ><%= elem.full_name %></option>
+					<% else %>
+						<option onclick='this.parentNode.title="<%=elem.name%>"' value='<%= elem.id %>' title='<%= elem.full_name %>' ><%= elem.full_name %></option>
+					<% end %>						
+	        <% end %>
+	    <% end %>
+	</select>
+	<%= link_to translate("NEW_COLLECTION_GROUP"), 
+				{:controller=>'admin/collection_group', 
+				 :action=>'new', 
+				 :params=>{"rss_feed_id"=> @rss_feed.id, "rss_feed_name"=>@rss_feed.name,"back_to_rss_feed"=>true}
+				} %>
+	</span>
+</div>
+
+<div id="form_field">
+    <span class="form_left">
+        <label for="rss_feed_solr_request">
+            <%=translate("SOLR_REQUEST_LABEL") %>
+        </label>
+    </span>
+    <span class="form_right"><%= form.text_field :solr_request %>
+        <br/>
+        <small>
+            <%=translate("SOLR_REQUEST_EXAMPLE") %>
+        </small>
+    </span>
+</div>
+
+<div id="form_field">
+    <span class="form_left">
+        <label for="rss_feed_update_periodicity">
+            <%=translate("UPDATE_PERIODICITY_LABEL") %>
+        </label>
+		<br/>
+		<small>
+			<%=translate("UPDATE_PERIODICITY_DESCRIPTION") %>
+		</small>
+    </span>
+    <span class="form_right"><%= form.text_field :update_periodicity, :style=>"width:50px" %>
+    </span>
+</div>
+
+<script>	
+	elem = document.getElementById("rss_feed_update_periodicity");
+	elem.onkeyup = function (){
+	var len = parseInt(this.value.length);
+	len = len - 1;
+	if( this.value.substr(len,1) <'0' || this.value.substr(len,1) > '9')
+		this.value = this.value.substr(0,len)
+	}
+</script>
+	
+<div id="form_field">
+    <span class="form_left">
+        <label for="rss_feed_url">
+            <%=translate("URL_LABEL") %>
+        </label>
+		<br/>
+		<small>
+			<%=translate("URL_DESCRIPTION") %>
+		</small>
+    </span>
+    <span class="form_right"> <%= @rss_feed.url %>
+    	<%= form.hidden_field :url %>
+    </span>
+</div>

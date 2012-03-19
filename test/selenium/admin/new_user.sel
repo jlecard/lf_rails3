@@ -1,0 +1,24 @@
+|open|/admin||
+|includePartial|/admin/basic_admin_layout||
+|includePartial|/admin/navigation||
+|waitForVisible|link=Add a New User||
+|click|link=Add a New User||
+|waitForTextPresent|Add a New User||
+|waitForTextPresent|User Name||
+|waitForTextPresent|Full Name||
+|waitForTextPresent|Email||
+|waitForTextPresent|Password||
+|waitForTextPresent|Password (confirm)||
+|waitForTextPresent|Administrator||
+|includePartial|/admin/user_form||
+|type|user_name|selenium||
+|type|user_full_name|selenium test user||
+|type|user_email|nobody@example.com||
+|type|user_password|testselenium||
+|type|user_password_confirmation|testselenium||
+|click|user_administrator||
+|click|xpath=//input[@id='saveButton']||
+|includePartial|/admin/list_users||
+|waitForTextPresent|selenium||
+|waitForTextPresent|selenium test user||
+|waitForTextPresent|nobody@example.com||

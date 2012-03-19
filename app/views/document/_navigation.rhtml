@@ -1,0 +1,92 @@
+<% if @record != nil %>
+<div class="right">
+    <!-- nav bar -->
+    <div id="browse">
+        <div class="xsnazzysearch">
+            <h2></h2>
+            <!-- <h2><%=translate('TITLE')%></h2>-->
+            <div id="t_nav">
+                <!--<br/>TODO REBOUNCES<br/><br/>-->
+                <div id="addTools" class="toolsSubs">
+                    <h3>Add To:</h3>
+                    <ul>
+                        <big>
+                            <%title = @record[:title] %>
+                            <%url = LIBRARYFIND_BASEURL + "document/display?doc=#{@id}" %>
+                            <%if @record != nil %>
+                            <%if @record[:title] != nil %>
+                            <%refUrl = url + "&T1=" +@record[:title] %>
+                            <%end %>
+                            <%end %>
+                            <img src="/images/delicious.jpg" height=15 width=15 alt="Delicious"/><%=link_to "Delicious" , "http://del.icio.us/post?url=#{LIBRARYFIND_BASEURL}document/display?doc=#{@id};title=#{title}", :popup => true %>
+                            <li>
+                            </li>
+                            <img src="/images/connotea.jpeg" height=15 width=30 alt="Connotea"/><%=link_to "Connotea" , "http://www.connotea.org/add?uri=#{LIBRARYFIND_BASEURL}document/display?doc=#{@id};usertitle=#{title}", :popup => true %>
+                            <li>
+                            </li>
+                            <img src="/images/refworks.jpg" height=15 width=15 alt="Refworks"/><%=link_to translate('REFWORKS_THE_DOCUMENT'), {:controller=>'/document', :action => 'refworks', :doc => "#{@id}"}, :popup => true %>
+                            <li>
+                            </li>
+                            <img src="/images/icon_pdf.gif" border=0 alt="PDF"/><%=link_to translate('PDF_THE_DOCUMENT'), {:controller=>'/cart', :action => 'pdf', :doc => "#{@id}"}, :popup => true %>
+                        </big>
+                    </ul>
+                </div>
+            </div><!--end t_nav--><!--<h3>Envoyer par mail:</h3>-->
+            <div id="email" class="navigation">
+                <img alt="<%=translate( 'NEW_EMAIL')%>" border="0" src="/images/newemail.gif"/><input style="width:170" type="text" id="email_address" value="<%=translate('ENTER_EMAIL_ADDRESS')%>" onfocus="document.getElementById('email_address').value='';"/><%=link_to_remote translate('EMAIL_THE_DOCUMENT'), {
+                :update => 'email_response' ,
+                :url => { :action => 'email', :controller=>'/document', :doc=>@id},
+                :with => "'to='+document.getElementById('email_address').value",
+                :loading => "showWaitEmail()",
+                :complete => "Element.hide('wait_email');"
+                } %>
+                <span id="wait_email" class="waitimage"><img src="/images/wait.gif"/></span>
+            </div>
+            <div id="email_response">
+            </div>
+            <div>
+            	<% if !@id.nil? %>
+                <input type="button" value="Imprimer ce document" align=left onclick="window.open('/document/display?id=<%= @id[0] %>;<%= @id[1] %>;<%= @id[2] %>&print=true')"/>
+            	<% end %>
+			</div>
+            <div>
+                <br/>
+                <span id="add_to_cart_<%=@id_format%>"><%if session[:cart]==nil ||  !session[:cart].include?(@id) %>
+                    <%=link_to_remote translate('SAVE_THIS_ITEM'), {
+                    :update => 'add_to_cart_%s' % @id_format,
+                    :url => { :action => 'add', :controller=>'/cart'},
+                    :with => "'doc=%s'" % @id,
+                    :complete => "loadCart('/record/getCart', 'listMyCart');"
+                    } %>
+                    <%end %>
+                </span>
+            </div>
+            <div id="personnalSpace">
+                <h5><%= translate('PERSONNAL_SPACE') %></h5>
+                <div id="listMyCart">
+                    <% if @cart_page!=nil and !@cart_page.empty?
+                    for _record in @cart_page %>
+                    <div id="arow_<%=@id_format%>" class="arow">
+                        <%= render(:partial => "/record/details/generic_list", :object => _record) %>
+                    </div>
+                    <% end %>
+                    <span id="session_basket"><%= link_to translate('SESSION_BASKET'), :controller=>"/cart", :action=>"list" %>
+                    </span>
+                    <!-- end of span session_basket --><% else %>
+                    <div>
+                        <%= translate('EMPTY_CART') %>
+                    </div>
+                    <% end %>
+                </div>
+                <!-- end of div listMyCart -->
+            </div>
+        </div>
+        <!--end xsnazzysearch-->
+    </div>
+    <!--close browse --><b class="xbottom"><b class="xb4"></b><b class="xb1"></b></b>
+</div>
+<!-- end left column -->
+<%end %>
+<script language='JavaScript'>
+    Element.hide('wait_email')
+</script>

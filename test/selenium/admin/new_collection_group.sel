@@ -1,0 +1,17 @@
+|open|/admin||
+|includePartial|/admin/basic_admin_layout||
+|includePartial|/admin/navigation||
+|waitForVisible|link=Add a New Collection Group||
+|click|link=Add a New Collection Group||
+|waitForTextPresent|Add a New Collection Group||
+|waitForTextPresent|Name||
+|waitForTextPresent|Full Name||
+|waitForTextPresent|Description||
+|includePartial|/admin/collection_group_form||
+|type|collection_group_name|test||
+|type|collection_group_full_name|test collection group||
+|type|collection_group_description|collection group created for selenium tests||
+|click|xpath=//input[@id='saveButton']||
+|includePartial|/admin/list_collection_groups||
+|waitForTextPresent|test||
+|waitForTextPresent|test collection group||

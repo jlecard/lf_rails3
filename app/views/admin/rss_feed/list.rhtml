@@ -1,0 +1,55 @@
+<div id="page_contents">
+    <%= render :partial => "admin/navigation" %>
+	<%= render :partial => "filter_form" %>
+    <div id="center" class="column">
+
+        <span><h2><%=translate('RSS_FEEDS_HEADER') %></h2></span>
+        <br/>
+        <%= link_to translate('ADD_A_NEW_RSS_FEED'), :controller => '/admin/rss_feed', :action => 'new' %>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<%= render :partial => "admin/admin_pagination", :locals=>{:pages=>@rss_feeds_pages, :params=> params} %>
+        <div id="edit_form">
+            <div class="admin-list">
+                <% columns_hash=RssFeed.columns_hash
+                for column in @display_columns
+                _class_name="medium-column"
+                if column=="mat_type" || column=="created_at" || column=="updated_at"
+                _class_name="small-column"
+                elsif column=="full_name" || column=="name" 
+                _class_name="large-column"
+                end %>
+                <label class="<%=_class_name%>">
+                    <%= translate("#{columns_hash[column].name.upcase}_COLUMN") %>
+                </label>
+                <% end %>
+                
+                <span class="action-links">&nbsp;</span>
+            </div>
+            <br/>
+            <% for rss_feed in @rss_feeds %>
+            <div class="admin-list">
+                <% for column in @display_columns
+                _class_name="medium-column"
+                if column=="mat_type" || column=="created_at" || column=="updated_at"
+                _class_name="small-column"
+                elsif column=="full_name" || column=="name" 
+                _class_name="large-column"
+                end
+                logger.debug("[LIST_RSS_FEED] : #{rss_feed.send(column)}")
+                if rss_feed.send(column) == nil or rss_feed.send(column) == "" %>
+                <span class="<%=_class_name%>">&nbsp;</span>
+                <%elsif column=="full_name" %>
+                <span class="<%=_class_name%>"><%= link_to h(rss_feed.send(column)), :action => 'show', :id => rss_feed %></span>
+                <%else %>
+                <span class="<%=_class_name%>"><%=h rss_feed.send(column) %></span>
+                <% end %>
+                <% end %>
+                <span class="action-links"><%= link_to translate('EDIT'), :action => 'edit', :id => rss_feed %>&nbsp;&nbsp;<%= link_to translate('DESTROY'), { :action => 'destroy', :id => rss_feed }, :confirm => translate('ARE_YOU_SURE'), :method => "post" %>&nbsp;&nbsp;<!--<%= link_to translate('TEST_CONNECTION'), :action => 'test', :id => rss_feed %>&nbsp;&nbsp;--></span>
+            </div>
+            <br/>
+            <% end %>
+        </div>
+    </div>
+    <%= render :partial => "admin/admin_pagination", :locals=>{:pages=>@rss_feeds_pages, :params=> params} %>
+</div>
+
+

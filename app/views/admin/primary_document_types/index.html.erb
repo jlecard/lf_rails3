@@ -1,0 +1,28 @@
+<div id="page_contents">
+<%= render(:partial => "admin/navigation")%>
+<div id="center"  class="column middle">
+
+<h1><%= translate('LISTING_PRIMARY_DOCUMENT_TYPES')%></h1>
+<br/>
+<table width="100%">
+  <tr>
+    <th><%= translate('NAME_LABEL_FOR_LISTING')%></th>
+	<th><%= translate('NEW_PERIOD_FOR_LISTING')%></th>
+  </tr>
+
+<% for primary_document_type in @primary_document_types %>
+  <tr>
+    <td><%=h primary_document_type.name %></td>
+	<td><%=h primary_document_type.new_period %></td>
+    <td><%= link_to translate('EDIT'), {:action => 'edit', :id => primary_document_type.id} %></td>
+    <td><%= link_to translate('DESTROY'), {:action => 'destroy', :id => primary_document_type.id}, :confirm => translate('CONFIRM_DESTROY'), :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to translate('NEW_PRIMARY_DOCUMENT_TYPE'), new_admin_primary_document_type_path %>
+
+  </div>       
+</div>

@@ -1,0 +1,32 @@
+<script>
+    function checkFormat(c){
+		
+        if (c.value == 'request' && c.checked == true) {
+            value = false;
+        }
+        else {
+            value = true;
+        }
+        
+        document.getElementById('search_tab_subject_url').disabled = !value;
+        document.getElementsByName("search_tab_subject[collection_group_id]")[0].disabled = value;
+    }
+</script>
+
+<div id="page_contents">
+    <%= render(:partial => "admin/navigation") %>
+    <div id="center" class="middle">
+    <h1><%=translate("NEW_THEME_TITLE")%></h1>
+    <% form_for(:search_tab_subject, @search_tab_subject, :url => {:action => 'create'}) do |f| %>
+    <%= render :partial => "form", :locals=>{:f=>f} %> 
+    <p>
+        <%= f.submit translate("CREATE_BUTTON_LABEL") %>
+    </p>
+    <% end 
+	if ((!params.nil?) && (!params[:parentId].nil?))%>
+		<%= link_to translate("BACK_LINK_LABEL"), admin_search_tab_subjects_path + "?id=" + params[:parentId] %>    	
+	<% else %>
+		<%= link_to translate("BACK_LINK_LABEL"), admin_search_tab_subjects_path %>
+	<% end %>
+</div>
+</div>

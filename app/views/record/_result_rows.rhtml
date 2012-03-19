@@ -1,0 +1,33 @@
+ <%= render(:partial => "messages") %>
+  <%= render(:partial => "errors") %>
+<%= render(:partial => "private") %>
+<div id="spelling_list"><%= render(:partial => "spell_check") %></div>
+<div id="see_also_list"><%= render(:partial => "see_also") %></div>
+ 
+  <%  lf_paginate
+    if @results_page!=nil and !@results_page.empty? and !@results.empty? 
+ 	first_result=(@page*@page_size)-(@page_size-1)
+	last_result=first_result+@results_page.length-1
+	hits_string=translate('RESULTS_HITS',[first_result.to_s,last_result.to_s,get_total_hits.to_s])%>  
+    <% if @IsMobile != true %>
+    <div id='hits'><span><%=hits_string%></span>
+    <%= render(:partial => "sort")%>
+    </div>
+    <% end %>
+   
+      <%for _record in @results_page %>   
+        <% if @IsMobile == true %>
+	   <div id="row_<%=_record.id%>" class="row-min">
+         <% else %>
+           <div id="row_<%=_record.id%>" class="row">
+         <%end%>
+      <% if _record.thumbnail_url != nil  and _record.thumbnail_url != ''%>
+          <%= render(:partial => "/record/details/image_full", :object => _record) %>
+      <% else %>
+          <%= render(:partial => "/record/details/generic", :object => _record) %>
+     <% end  %>
+        </div>
+     <% end %>
+	  <%= render(:partial=>"top_images")%>
+      <%= render(:partial => "pagination") %>
+<%  end %>

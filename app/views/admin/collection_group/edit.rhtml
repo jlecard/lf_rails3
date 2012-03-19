@@ -1,0 +1,14 @@
+<div id="page_contents">
+<%= render(:partial => "admin/navigation")%>
+<div id="center"  class="column">
+  <h2 ><%=translate("EDIT_COLLECTION_GROUP")%></h2>
+  	<% form_for :collection_group, @collection_group, :url => { :action => "update", :object=>@collection_group }, :html=>{:name=>'collection_group_form',:id=>"edit_form"}  do |f| %>
+		<%= render :partial => 'form', :locals=>{:form=>f}  %>  
+	  	<%=hidden_field_tag(:selected_collections, @selected_collections*',')%>
+	  	<%=hidden_field_tag(:id, @collection_group.id)%>
+		<%= submit_tag translate("SAVE"), {:id=>"saveButton"} %>
+	    <%= render(:partial => "collection")%>
+	<% end %>
+  </div>       
+</div>
+

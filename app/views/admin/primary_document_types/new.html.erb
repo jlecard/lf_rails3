@@ -1,0 +1,35 @@
+<div id="page_contents">
+<%= render(:partial => "admin/navigation")%>
+<div id="center"  class="column">
+<BR/>
+<h1><%= translate('NEW_PRIMARY_DOCUMENT_TYPE')%></h1>
+
+<% form_for(:primary_document_type, @primary_document_type, :url => { :action => "create"}) do |f| %>
+  <%= f.error_messages %>
+
+<%=render(:partial => "form_fields", :locals=>{:f=>f})%>
+
+
+<div id="form_field">
+	<span class="form_left">
+		<%= f.submit translate('CREATE_BUTTON'), :style => "width: 100px" %>    
+	</span>
+</div>
+
+<% end %>
+
+<div id="form_field">
+	<span class="form_left">
+		<%= link_to translate('BACK'), admin_primary_document_types_path %>
+	</span>
+</div>
+
+<script>	
+	elem = document.getElementById("primary_document_type_new_period");
+	elem.onkeyup = function (){
+	var len = parseInt(this.value.length);
+	len = len - 1;
+	if( this.value.substr(len,1) <'0' || this.value.substr(len,1) > '9')
+		this.value = this.value.substr(0,len)
+	}
+</script>

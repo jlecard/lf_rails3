@@ -1,0 +1,4 @@
+$Id: INSTALL.txt 1060 2007-09-13 21:13:04Z reeset $
+
+Installation Instructions can be found at: 
+https://trac.library.oregonstate.edu/projects/libraryfind/wiki/InstallingLibraryFind

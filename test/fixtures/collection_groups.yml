@@ -1,0 +1,53 @@
+# LibraryFind - Quality find done better.
+# Copyright (C) 2007 Oregon State University
+#
+# This program is free software; you can redistribute it and/or modify it under 
+# the terms of the GNU General Public License as published by the Free Software 
+# Foundation; either version 2 of the License, or (at your option) any later 
+# version.
+#
+# This program is distributed in the hope that it will be useful, but WITHOUT 
+# ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS 
+# FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License along with 
+# this program; if not, write to the Free Software Foundation, Inc., 59 Temple 
+# Place, Suite 330, Boston, MA 02111-1307 USA
+#
+# Questions or comments on this program may be addressed to:
+#
+# LibraryFind
+# 121 The Valley Library
+# Corvallis OR 97331-4501
+#
+# http://libraryfind.org
+--- 
+collection_groups_001: 
+  name: agriculture
+  enabled: "1"
+  id: "1"
+  description: Collections grouped as Agriculture
+  full_name: Agriculture
+collection_groups_002: 
+  name: general
+  enabled: "1"
+  id: "2"
+  description: ""
+  full_name: General
+collection_groups_003: 
+  name: image
+  enabled: "1"
+  id: "3"
+  description: ""
+  full_name: Images
+collection_groups_004: 
+  name: books
+  enabled: "1"
+  id: "4"
+  description: ""
+  full_name: Books and more
+collection_groups_005:
+  name: articles
+  enabled: "1"
+  id: "5"
+  full_name: Articles

@@ -1,0 +1,62 @@
+--- !ruby/object:Gem::Specification 
+name: wcapi
+version: !ruby/object:Gem::Version 
+  version: 0.0.1
+platform: ruby
+authors: 
+- Terry Reese
+autorequire: 
+bindir: bin
+cert_chain: []
+
+date: 2009-03-12 00:00:00 -07:00
+default_executable: 
+dependencies: []
+
+description: 
+email: terry.reese@oregonstate.edu
+executables: []
+
+extensions: []
+
+extra_rdoc_files: []
+
+files: 
+- lib/wcapi
+- lib/wcapi/xpath.rb
+- lib/wcapi/record.rb
+- lib/wcapi/get_location_response.rb
+- lib/wcapi/open_search_response.rb
+- lib/wcapi/client.rb
+- lib/wcapi/get_record_response.rb
+- lib/wcapi/sru_search_response.rb
+- lib/wcapi.rb
+- test.rb
+has_rdoc: false
+homepage: 
+post_install_message: 
+rdoc_options: []
+
+require_paths: 
+- lib
+required_ruby_version: !ruby/object:Gem::Requirement 
+  requirements: 
+  - - ">="
+    - !ruby/object:Gem::Version 
+      version: "0"
+  version: 
+required_rubygems_version: !ruby/object:Gem::Requirement 
+  requirements: 
+  - - ">="
+    - !ruby/object:Gem::Version 
+      version: "0"
+  version: 
+requirements: []
+
+rubyforge_project: 
+rubygems_version: 1.3.1
+signing_key: 
+specification_version: 2
+summary: Ruby component for processing the WorldCat API
+test_files: 
+- test.rb

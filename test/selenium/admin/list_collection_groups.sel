@@ -1,0 +1,6 @@
+|open|/admin||
+|includePartial|/admin/basic_admin_layout||
+|includePartial|/admin/navigation||
+|waitForVisible|link=List Collection Groups||
+|click|link=List Collection Groups||
+|includePartial|/admin/list_collection_groups||

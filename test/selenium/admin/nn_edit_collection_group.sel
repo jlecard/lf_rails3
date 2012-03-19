@@ -1,0 +1,16 @@
+|open|/admin||
+|includePartial|/admin/basic_admin_layout||
+|includePartial|/admin/navigation||
+|waitForVisible|link=List Collection Groups||
+|click|link=List Collection Groups||
+|includePartial|/admin/list_collection_groups||
+|waitForVisible|link=Edit||
+|click|link=Edit||
+|waitForTextPresent|Edit Collection Group||
+|waitForTextPresent|Name||
+|waitForTextPresent|Full Name||
+|waitForTextPresent|Description||
+|waitForTextPresent|Collections||
+|includePartial|/admin/collection_group_form||
+|click|xpath=//input[@id='saveButton']||
+|includePartial|/admin/show_collection_group||

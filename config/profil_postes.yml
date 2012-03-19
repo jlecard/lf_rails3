@@ -1,0 +1,169 @@
+
+DEFAULT:
+    Label     : "Default profil"      # name of label
+    Type      : 1                     # ip=0 / string=1
+    LinkHTTP  :  HTTP_LOCATION                     # var in HTTP Header
+    Value     : 
+        profil    : ""                  # need for String Type
+        ipStart   : 0.0.0.0           # need for ip Type
+        ipEnd     : 255.255.255.255   # need for ip Type
+
+GENERALITES:
+    Label     : "GENERALITES"
+    Type      : 1  
+    LinkHTTP  :  HTTP_LOCATION
+    Value     : 
+        profil    : GENERALITES
+        ipStart   : 
+        ipEnd     : 
+        Groups    : GD-Articles de presse,GD-Tous secteurs,GD-Aucun groupe
+
+PRESSE:
+    Label     : "PRESSE"
+    Type      : 1  
+    LinkHTTP  :  HTTP_LOCATION
+    Value     : 
+        profil    : PRESSE
+        ipStart   : 
+        ipEnd     : 
+        Groups    : GD-Articles de presse,GD-Journaux en ligne,GD-Tous secteurs,GD-Aucun groupe
+
+EAF:
+    Label     : "EAF"
+    Type      : 1  
+    LinkHTTP  :  HTTP_LOCATION
+    Value     : 
+        profil    : EAF
+        ipStart   : 
+        ipEnd     : 
+        Groups    : GD-Autoformation,GD-Documents publics informatiques
+        
+EAF_RESA:
+    Label     : "EAF_RESA"
+    Type      : 1  
+    LinkHTTP  :  HTTP_LOCATION
+    Value     : 
+        profil    : EAF_RESA
+        ipStart   : 
+        ipEnd     : 
+        Groups    : GD-Autoformation,GD-Documents publics informatiques
+
+MUSIQUE:
+    Label     : "MUSIQUE"
+    Type      : 1  
+    LinkHTTP  :  HTTP_LOCATION
+    Value     : 
+        profil    : MUSIQUE
+        ipStart   : 
+        ipEnd     : 
+        Groups    : GD-Musique en ligne,GD-Articles de presse,GD-Son,GD-Tous secteurs,GD-Aucun groupe,GD-Concerts filmés,GD-Documentaires musicaux,GD-Logiciels musicaux
+
+
+FILMS_RESA:
+    Label     : "FILMS_RESA"
+    Type      : 1  
+    LinkHTTP  :  HTTP_LOCATION
+    Value     : 
+        profil    : FILMS_RESA
+        ipStart   : 
+        ipEnd     : 
+        Groups    : GD-Documentaires musicaux,GD-Tous secteurs,GD-Réel
+
+FILMS_RESA_VOD:
+    Label     : "FILMS_RESA_VOD"
+    Type      : 1  
+    LinkHTTP  :  HTTP_LOCATION
+    Value     : 
+        profil    : FILMS_RESA_VOD
+        ipStart   : 
+        ipEnd     : 
+        Groups    : GD-Documentaires musicaux,GD-Tous secteurs
+
+MUSIQUE_RESA:
+    Label     : "MUSIQUE_RESA"
+    Type      : 1  
+    LinkHTTP  :  HTTP_LOCATION
+    Value     : 
+        profil    : MUSIQUE_RESA
+        ipStart   : 
+        ipEnd     : 
+        Groups    : GD-Son,GD-Aucun groupe
+
+CATALOGUE:
+    Label     : "CATALOGUE"
+    Type      : 1  
+    LinkHTTP  :  HTTP_LOCATION
+    Value     : 
+        profil    : CATALOGUE
+        ipStart   : 
+        ipEnd     : 
+        Groups    : GD-Aucun groupe
+
+GED:
+    Label     : "GED"
+    Type      : 1  
+    LinkHTTP  :  HTTP_LOCATION
+    Value     : 
+        profil    : GED
+        ipStart   : 
+        ipEnd     : 
+        Groups    : GD-Articles de presse
+
+LOGES:
+    Label     : "LOGES"
+    Type      : 1  
+    LinkHTTP  :  HTTP_LOCATION
+    Value     : 
+        profil    : LOGES
+        ipStart   : 
+        ipEnd     : 
+        Groups    : GD-Autoformation,GD-Documents publics informatiques
+
+PROFESSIONNEL:
+    Label     : "PROFESSIONNEL"
+    Type      : 1  
+    LinkHTTP  :  HTTP_LOCATION
+    Value     : 
+        profil    : PROFESSIONNEL
+        ipStart   : 
+        ipEnd     : 
+        Groups    : GD-Aucun groupe,GD-Tous les groupes
+
+Bureaux:
+    Label     : "Bureaux"
+    Type      : 1  
+    LinkHTTP  :  HTTP_LOCATION
+    Value     : 
+        profil    : Bureaux
+        ipStart   : 
+        ipEnd     :
+        Groups    : GD-Journaux en ligne,GD-Articles de presse,GD-Aucun groupe,GD-Tous les groupes,GD-Autoformation,GD-Concerts filmés,GD-Documentaires musicaux,GD-Tous secteurs,GD-Réel,GD-Documents publics informatiques,GD-Son 
+
+EXPO:
+    Label     : "EXPO"
+    Type      : 1  
+    LinkHTTP  :  HTTP_LOCATION
+    Value     : 
+        profil    : EXPO
+        ipStart   : 
+        ipEnd     : 
+        
+INTERNET:
+    Label     : "INTERNET"
+    Type      : 1  
+    LinkHTTP  :  HTTP_LOCATION
+    Value     : 
+        profil    : INTERNET
+        ipStart   : 
+        ipEnd     : 
+        Groups    : GD-Articles de presse,GD-Journaux en ligne,GD-Tous secteurs,GD-Documents publics informatiques
+
+INTERNET_RESA:
+    Label     : "INTERNET_RESA"
+    Type      : 1  
+    LinkHTTP  :  HTTP_LOCATION
+    Value     : 
+        profil    : INTERNET_RESA
+        ipStart   : 
+        ipEnd     : 
+        Groups    : GD-Articles de presse,GD-Journaux en ligne,GD-Tous secteurs,GD-Documents publics informatiques
