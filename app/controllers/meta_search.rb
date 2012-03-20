@@ -29,7 +29,7 @@ require 'solr'
 require 'solr/request/spellcheck.rb'
 require 'solr/response/spellcheck.rb'
 
-class MetaSearch < ActionController::Base
+class MetaSearch #< ActionController::Base
   #========================================================
   #_sets is a hash -- format passed should be
   # :set => 'oasis;aph',

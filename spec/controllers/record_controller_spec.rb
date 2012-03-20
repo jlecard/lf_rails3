@@ -122,6 +122,4 @@ describe RecordController do
     
   end
 
-  
-
 end
