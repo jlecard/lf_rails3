@@ -207,7 +207,7 @@ class JsonController < JsonApplicationController
       id = params[:id].blank? ? raise("id is null please fill it") : params[:id];
       
       # get max records by database
-      max = params[:max].blank? ? getMaxCollectionSearch() : params[:max];
+      max = params[:max].blank? ? max_search_results() : params[:max];
       
       # get booleans value
       with_total_hits = (params[:with_total_hits].blank? or (!params[:with_total_hits].blank? and params[:with_total_hits] == '1'))
@@ -287,7 +287,7 @@ class JsonController < JsonApplicationController
       logger.debug("[JsonController][GetJobRecord] filter : #{@filter.inspect}") 
       
       # set params to recordController
-      t.setResults(@results, @sort_value, @filter);
+      t.build_results(@results, @sort_value, @filter);
       # call filter results      
       t.filter_results;
       # get results to sort

@@ -1,0 +1,175 @@
+<html>
+<head>
+  <title>LibraryFind: <%= controller.action_name %></title>
+  <%= stylesheet_link_tag 'look_and_feel' %>
+  <%= stylesheet_link_tag 'library_find' %>
+  <%= javascript_include_tag :defaults %>
+  <link rel="alternate stylesheet" type="text/css" href="/stylesheets/large.css" title="large" />
+  <link rel="alternate stylesheet" type="text/css" href="/stylesheets/medium.css" title="medium" />
+  <link rel="alternate stylesheet" type="text/css" href="/stylesheets/small.css" title="small" />            
+</head>
+<body onload="isMobile();">
+  <% @page_title || "Search" %>
+
+ <div id="header">
+    <a href="http://libraryfind.org"><img alt="wordmarkMedium" src="http://blog.libraryfind.org/images/wordmarkMedium.png" /></a>
+ </div>
+
+  <div id="center" class="column">
+<% form_tag({ :action => "retrieve", :controller=>'/record'}, {:name=>"search_form", :id=>"search_form", :onsubmit=>"showWait()"})  do -%>
+  <h2><%=translate('ADVANCED_SEARCH')%></h2>
+  <div id="advanced_search">
+    <input type='hidden' name='start_search' id="start_search" value="true">
+	<input type='hidden' name='mode' id="mode" value="advanced">
+
+	  <div class="color-block"><h2><%=translate('FIND_RESULTS_FOR')%></h2></div>
+	  <%query_string=""
+	  @values=params[:query] 
+      if @values!=nil
+		query_string=@values[:string]
+	  else
+		query_string=@query[0].to_s
+	  end%> 
+	  	<div id="form_submit" class="search_group">
+		  <span class="form_left">
+		  	<label><%=translate("ALL_THE_WORDS")%></label><br/>
+		    <small><%=translate('ALL_DESCRIPTION')%></small>
+		  </span>
+		  <span id="form_center">
+		    <%=text_field_tag "query[string]", 	query_string, {:size=>"36"}%><br/>
+		    <small><%=translate('ALL_EXAMPLE')%></small>
+		  </span>
+		  <span id="form_far_right">
+			<%= submit_tag translate("FIND_IT"), {:id=>"advancedSubmitButton"}%>
+   			<span id="waitimage" class="waitimage"><img src="/images/wait.gif"/></span>
+			<br/>
+		    <%=link_to_function translate("SIMPLE_SEARCH"), "$('start_search').value='false';$('mode').value='simple';$('search_form').submit();"%>
+		  </span>
+		</div>
+	  	<div id="form_field" class="search_group">
+		  <span class="form_left">
+		  	<label><%=translate("THE_EXACT_PHRASE")%></label><br/>
+		    <small><%=translate('EXACT_DESCRIPTION')%></small>
+		  </span>
+		  <span class="form_right">
+		    <%=text_field_tag "query[string_exact]", "", {:size=>"36"}%><br/>
+		    <small><%=translate('EXACT_EXAMPLE')%></small>
+		  </span>
+		</div>
+	  	<div id="form_field" class="search_group">
+		  <span class="form_left">
+		  	<label><%=translate("ANY_OF_THESE_WORDS")%></label><br/>
+		    <small><%=translate('ANY_DESCRIPTION')%></small>
+		  </span>
+		  <span class="form_right">
+		    <%=text_field_tag "query[string_any]", 	"", {:size=>"36"}%><br/>
+		    <small><%=translate('ANY_EXAMPLE')%></small>
+		  </span>
+		</div>	
+		
+		<div id="form_field" class="search_fields">
+		  <span class="form_left">
+		  	<label><%=translate("AUTHOR")%></label><br/>
+		    <small><%=translate('AUTHOR_DESCRIPTION')%></small>
+		  </span>
+		  <span class="form_right">
+		    <%=text_field_tag "query[type_author]", "", {:size=>"36"}%><br/>
+		    <small><%=translate('AUTHOR_EXAMPLE')%></small>
+		  </span>
+		</div>	
+		<div id="form_field" class="search_fields">
+		  <span class="form_left">
+		  	<label><%=translate("SUBJECT")%></label><br/>
+		    <small><%=translate('SUBJECT_DESCRIPTION')%></small>
+		  </span>
+		  <span class="form_right">
+		    <%=text_field_tag "query[type_subject]", "", {:size=>"36"}%><br/>
+		    <small><%=translate('SUBJECT_EXAMPLE')%></small>
+		  </span>
+		</div>	
+		<div id="form_field" class="search_fields">
+		  <span class="form_left">
+		  	<label><%=translate("TITLE")%></label><br/>
+		    <small><%=translate('TITLE_DESCRIPTION')%></small>
+		  </span>
+		  <span class="form_right">
+		    <%=text_field_tag "query[type_title]", "", {:size=>"36"}%><br/>
+		    <small><%=translate('TITLE_EXAMPLE')%></small>
+		  </span>
+		</div>
+  		<div id="form_field" class="search_fields">
+		  <span class="form_left">
+		  	<label><%=translate("MAXIMUM")%></label><br/>
+		    <small><%=translate('MAXIMUM_DESCRIPTION')%></small>
+		  </span>
+		  <span class="form_right">
+		    <select class="center-advanced" id="query[max]" name="query[max]">
+  		      <%=options_for_select({ translate('MAX_10') => "10", translate('MAX_25') => "25", translate('MAX_50')=>"50",translate('MAX_100')=>"100" }, @max)%>
+  		    </select><br/>
+		    <small>&nbsp;</small>
+		  </span>
+		</div>
+  
+	  <%begin 
+        _objGroups = $objDispatch.ListGroups()
+
+      rescue
+      	#ignore any errors in this
+      ensure
+     	if _objGroups!=nil && !_objGroups.empty?%>
+		  <span id="groups" class="groups">
+		  	
+		  <div class="color-block"><h2><%=translate('GROUPS_TO_SEARCH')%></h2></div>
+		  <%_selected_sets=params[:sets]
+      		if _selected_sets!=nil and _selected_sets!=''
+        	  _selected_sets=_selected_sets.split(',')
+      		else
+        	  _selected_sets=@sets
+        	  if _selected_sets!=nil and _selected_sets!=''
+          	    _selected_sets=_selected_sets.split(',')
+       	  	  else
+          		config ||= YAML::load_file(RAILS_ROOT + "/config/config.yml")		   		
+				groups=config['DEFAULT_GROUPS'].split(',')
+				_selected_sets=""
+		    	for group in groups
+		      	  _item = $objDispatch.GetGroupMembers(group)
+		      	  _selected_sets = _selected_sets+_item.id+","
+		    	end
+          		_selected_sets=_selected_sets.split(',')
+        	  end
+      		end
+      		_count=0
+      		for collection_group in _objGroups.sort_by{ |col| col.name }
+        	  is_checked=""
+        	  for _set in _selected_sets
+          		if _set.downcase==collection_group.id.downcase
+            	  is_checked = "checked"
+           		break
+          	  end
+        	end%>
+        	<%if _count.modulo(3)==0%>
+          	  <div  class="groups">
+        	<%end%>
+        	<span class="group-check-box">
+        	  <%= check_box('collection_group', h(collection_group.id), :checked => is_checked)%>
+			  <%= link_to_function collection_group.name, "Element.show('details_"+collection_group.id.to_s+"')"%>
+			    <%=render(:partial => "record/group_details", :object => collection_group) %>
+        	</span>
+        	<%if _count.modulo(3)==2%>
+          	  </div>
+        	<%end%>
+        	<%_count=_count+1%> 
+     	  <%end %>
+     	<%end %>
+      <%end %>
+	  </span>
+	</div>
+  <%end%>
+</div>
+<script language='JavaScript'>
+	setFocus();
+	Element.hide('waitimage');
+</script>
+
+</body>
+</html>

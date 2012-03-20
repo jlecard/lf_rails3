@@ -1,0 +1,25 @@
+<!--<div>
+	 <h1>Send Email</h1>
+	<%= form_tag :action => 'sendmail' %>
+	<p><label for="email_subject">Subject</label>:
+	<%= text_field 'email', 'subject' %></p>
+	<p><label for="email_recipient">Recipient</label>:
+	<%= text_field 'email', 'recipient' %></p>
+	<p><label for="email_message">Message</label><br/>
+	<%= text_area 'email', 'message' %></p>
+	<%= submit_tag "Send" %>
+	<%= form_tag %>-->
+
+<span class="document_message"> 
+	<% if flash[:notice]%>
+		<div id="mailOk"><%= flash[:notice] %></div>
+	<% end %>
+    <% if flash[:error]%>
+		<div id="mailError"><%= flash[:error] %></div>
+	<% end %>
+</span> 
+
+<!--
+<span>
+<link rel="stylesheet" type="text/css" href="/stylesheets/bpi-print.css" title="headerBPI" />
+</span>-->

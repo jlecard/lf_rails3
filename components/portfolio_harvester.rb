@@ -171,8 +171,8 @@ class PortfolioHarvester < CommonHarvester
           logger.debug("[PortfolioHarvester] themes : #{theme}")
           identifier = portRow['dc_identifier']
           custom_document_type = portRow['dc_type']
-          type = DocumentType.save_document_type(portRow['dc_type'], row.id)
-          type = PrimaryDocumentType.getNameByDocumentType(type, row.id)
+          DocumentType.save_document_type(portRow['dc_type'], row.id)
+          type = PrimaryDocumentType.getNameByDocumentType(portRow['dc_type'], row.id)
           
           issn = normalizePortfolio(portRow['bpi_issn'])
           isbn = normalizePortfolio(portRow['bpi_isbn'])
@@ -194,8 +194,6 @@ class PortfolioHarvester < CommonHarvester
           end 
           issue_title = portRow['dc_title_revue']
           conservation = portRow['bpi_conservation'] 
-          # Saving the document_type
-          DocumentType.save_document_type(type,row['id'])
           
           # Saving date_end_new
           document_date = nil
@@ -425,7 +423,7 @@ class PortfolioHarvester < CommonHarvester
                 :isbn => isbn, :issn => issn, :cote_rebond => cote, :bdm_info => bdm_info,
                 :autocomplete => keyword, :autocomplete_creator => "#{creator}; #{normalizePortfolio(portRow['bpi_creator2'])}", :autocomplete_publisher => publisher, :autocomplete_theme => theme,
                 :autocomplete_title => "#{title} #{relation}", :autocomplete_subject => subject, :autocomplete_description => description, :barcode=>barcode_field,
-                :indice=>indice, :custom_document_type => custom_document_type)
+                :indice=>indice, :custom_document_type => custom_document_type, :broadcast_groups=>broadcast_groups)
           else
             documents.push(:id => _idD, :collection_id => row['id'], :controls_id => identifier, :collection_name => row.name,
                 :title => "#{title} #{relation}" ,:creator => "#{creator}; #{normalizePortfolio(portRow['bpi_creator2'])}", :subject => subject, :description => description, :publisher => publisher, 
@@ -433,7 +431,7 @@ class PortfolioHarvester < CommonHarvester
                 :isbn => isbn, :issn => issn, :cote_rebond => cote, :bdm_info => bdm_info, :date_end_new => date_end_new,
                 :autocomplete => keyword, :autocomplete_creator => "#{creator}; #{normalizePortfolio(portRow['bpi_creator2'])}", :autocomplete_publisher => publisher, :autocomplete_theme => theme,
                 :autocomplete_title => "#{title} #{relation}", :autocomplete_subject => subject, :autocomplete_description => description,:barcode=>barcode_field,
-                :indice=>indice, :custom_document_type => custom_document_type)
+                :indice=>indice, :custom_document_type => custom_document_type,:broadcast_groups=>broadcast_groups)
           end
 
           ptitle = ""

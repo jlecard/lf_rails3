@@ -29,4 +29,8 @@ class SearchTabFilter < ActiveRecord::Base
   def getFields()
     return ["keyword", "creator", "title", "subject", "theme", "publisher", "isbn", "issn", "cote_rebond", "document_type","barcode","indice"]
   end
+  
+  def self.load_filter(tab_id = 1)
+    return self.find(:all, :conditions => "search_tab_id=#{tab_id}")
+  end
 end

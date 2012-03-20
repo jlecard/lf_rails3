@@ -1,0 +1,13 @@
+<div id="page_contents">
+<%= render(:partial => "admin/navigation")%>
+<div id="center"  class="column">
+<h2>Settings</h2>
+<% for column in SiteConfig.content_columns %>
+<p>
+<label for="<%=column.name %>"><%=column.human_name %>:  </label><%=h @site_config.send(column.name) %>
+</p>
+<% end %>
+
+<%= link_to 'Edit', :action => 'edit', :id => @site_config %> 
+</div>
+</div>

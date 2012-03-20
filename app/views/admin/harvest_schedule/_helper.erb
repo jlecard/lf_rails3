@@ -1,0 +1,15 @@
+<div class="collection_helper_label">
+<label>
+    <%=translate("UNHARVESTED_COLLECTIONS") %>
+</label>
+</div>
+<div id="unharvested_collections" class="collection_helper">
+    <ul>
+        <% @unharvested_collections.each do |_collection| %>
+        <% div_id = "unharvested_collection_#{_collection.id}" %>
+        <li id="<%=div_id%>" ondblclick="updateCollectionSchedule('<%=_collection.name%>');">
+            <%= "#{_collection.name} (#{_collection.alt_name})" %>
+        </li>
+        <% end %>
+    </ul>
+</div>

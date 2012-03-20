@@ -1,0 +1,1574 @@
+# Logfile created on 2012-03-13 17:26:45 +0100 by logger.rb/31641
+2012-03-13 18:30:25 DEBUG  INIT MEMCACHE ["127.0.0.1", "10.1.2.111:11211", "10.1.2.112:11211"]
+2012-03-13 18:35:06 DEBUG  INIT MEMCACHE ["127.0.0.1", "10.1.2.111:11211", "10.1.2.112:11211"]
+2012-03-13 18:36:20 DEBUG  INIT MEMCACHE ["127.0.0.1", "10.1.2.111:11211", "10.1.2.112:11211"]
+2012-03-13 18:37:57 DEBUG  INIT MEMCACHE ["127.0.0.1", "10.1.2.111:11211", "10.1.2.112:11211"]
+2012-03-13 18:48:13 DEBUG  INIT MEMCACHE ["127.0.0.1", "10.1.2.111:11211", "10.1.2.112:11211"]
+2012-03-13 18:48:19 DEBUG    [1m[36m (3835.1ms)[0m  [1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+2012-03-13 18:48:21 DEBUG    [1m[35m (1671.1ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)
+2012-03-13 18:48:21 DEBUG    [1m[36m (174.5ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+2012-03-13 18:48:21 INFO  Migrating to CreateRecords (1)
+2012-03-13 18:48:24 DEBUG    [1m[35m (2469.1ms)[0m  CREATE TABLE `records` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `title` text NOT NULL, `full_text` text NOT NULL, `mat_type` varchar(255) NOT NULL, `abstract` text NOT NULL, `pub_date` date NOT NULL, `journal_url` varchar(255) NOT NULL, `journal_title` varchar(255) NOT NULL, `db_name` varchar(255) NOT NULL, `db_url` varchar(255) NOT NULL) ENGINE=InnoDB
+2012-03-13 18:48:24 DEBUG    [1m[36m (107.6ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('1')[0m
+2012-03-13 18:48:24 INFO  Migrating to CreateCollections (2)
+2012-03-13 18:48:24 DEBUG    [1m[35m (387.4ms)[0m  CREATE TABLE `collections` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `alt_name` text, `conn_type` varchar(255), `host` varchar(255), `user` text, `pass` text, `record_schema` varchar(255), `definition` text, `isword` int(11), `url` text, `mat_type` varchar(255) DEFAULT 'Article', `virtual` varchar(255), `vendor_url` text, `bib_attr` varchar(255)) ENGINE=InnoDB
+2012-03-13 18:48:24 DEBUG    [1m[36m (49.5ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('2')[0m
+2012-03-13 18:48:24 INFO  Migrating to CreateUsers (3)
+2012-03-13 18:48:25 DEBUG    [1m[35m (829.3ms)[0m  CREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(25), `full_name` varchar(100), `email` varchar(255), `hashed_password` varchar(255), `salt` varchar(255), `administrator` tinyint(1) DEFAULT 0) ENGINE=InnoDB
+2012-03-13 18:48:25 DEBUG    [1m[36m (1.1ms)[0m  [1mBEGIN[0m
+2012-03-13 18:48:26 DEBUG    [1m[35mUser Exists (284.9ms)[0m  SELECT 1 FROM `users` WHERE `users`.`name` = BINARY 'admin' LIMIT 1
+2012-03-13 18:48:26 DEBUG    [1m[36mSQL (19.8ms)[0m  [1mINSERT INTO `users` (`administrator`, `email`, `full_name`, `hashed_password`, `name`, `salt`) VALUES (1, 'you@example.com', 'LibraryFind Admin', 'b0e198fc4f0f47dae05b48a4b4ded868d7b5b4d6', 'admin', '916217000.7343143240736186')[0m
+2012-03-13 18:48:26 DEBUG    [1m[35m (660.5ms)[0m  COMMIT
+2012-03-13 18:48:26 DEBUG    [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+2012-03-13 18:48:27 DEBUG    [1m[35mUser Exists (87.0ms)[0m  SELECT 1 FROM `users` WHERE (`users`.`name` = BINARY 'admin' AND `users`.`id` != 1) LIMIT 1
+2012-03-13 18:48:27 DEBUG    [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+2012-03-13 18:48:27 DEBUG    [1m[35m (218.1ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('3')
+2012-03-13 18:48:27 INFO  Migrating to AddSessions (4)
+2012-03-13 18:48:27 DEBUG    [1m[36m (231.7ms)[0m  [1mCREATE TABLE `sessions` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `session_id` varchar(255), `data` text, `updated_at` datetime) ENGINE=InnoDB[0m
+2012-03-13 18:48:28 DEBUG    [1m[35m (1132.6ms)[0m  CREATE INDEX `index_sessions_on_session_id` ON `sessions` (`session_id`)
+2012-03-13 18:48:28 DEBUG    [1m[36m (115.9ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('4')[0m
+2012-03-13 18:48:28 INFO  Migrating to CreateCachedSearches (5)
+2012-03-13 18:48:29 DEBUG    [1m[35m (1101.4ms)[0m  CREATE TABLE `cached_searches` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `query_string` varchar(255), `query_type` varchar(255), `collection_set` varchar(255), `created_at` datetime, `in_cache` tinyint(1) DEFAULT 0, `cache_updated_at` datetime) ENGINE=InnoDB
+2012-03-13 18:48:36 DEBUG    [1m[36m (6769.8ms)[0m  [1mCREATE INDEX `query_set_index` ON `cached_searches` (`query_string`, `query_type`, `collection_set`)[0m
+2012-03-13 18:48:39 DEBUG    [1m[35m (2545.7ms)[0m  CREATE INDEX `index_cached_searches_on_created_at` ON `cached_searches` (`created_at`)
+2012-03-13 18:48:42 DEBUG    [1m[36m (3246.9ms)[0m  [1mCREATE INDEX `index_cached_searches_on_cache_updated_at_and_in_cache` ON `cached_searches` (`cache_updated_at`, `in_cache`)[0m
+2012-03-13 18:48:42 DEBUG    [1m[35m (74.2ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('5')
+2012-03-13 18:48:42 INFO  Migrating to CreateHits (6)
+2012-03-13 18:48:43 DEBUG    [1m[36m (322.9ms)[0m  [1mCREATE TABLE `hits` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `session_id` int(11), `search_id` int(11), `result_count` int(11), `action_type` varchar(255), `data` text) ENGINE=InnoDB[0m
+2012-03-13 18:48:44 DEBUG    [1m[35m (915.0ms)[0m  CREATE INDEX `index_hits_on_session_id` ON `hits` (`session_id`)
+2012-03-13 18:48:45 DEBUG    [1m[36m (1330.3ms)[0m  [1mCREATE INDEX `index_hits_on_search_id` ON `hits` (`search_id`)[0m
+2012-03-13 18:48:47 DEBUG    [1m[35m (2342.4ms)[0m  CREATE INDEX `index_hits_on_action_type` ON `hits` (`action_type`)
+2012-03-13 18:48:48 DEBUG    [1m[36m (266.2ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('6')[0m
+2012-03-13 18:48:48 INFO  Migrating to CreateCachedRecords (7)
+2012-03-13 18:48:49 DEBUG    [1m[35m (931.6ms)[0m  CREATE TABLE `cached_records` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `search_id` int(11), `data` longtext, `collection_id` int(11), `date_saved` datetime) ENGINE=InnoDB
+2012-03-13 18:48:49 DEBUG    [1m[36m (908.4ms)[0m  [1mCREATE INDEX `index_cached_records_on_search_id` ON `cached_records` (`search_id`)[0m
+2012-03-13 18:48:50 DEBUG    [1m[35m (76.8ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('7')
+2012-03-13 18:48:50 INFO  Migrating to CreateControls (8)
+2012-03-13 18:48:51 DEBUG    [1m[36m (936.6ms)[0m  [1mCREATE TABLE `controls` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `oai_identifier` varchar(255), `title` varchar(255), `collection_id` int(11), `description` varchar(255), `url` varchar(255)) ENGINE=InnoDB[0m
+2012-03-13 18:48:53 DEBUG    [1m[35m (2070.2ms)[0m  CREATE INDEX `index_controls_on_oai_identifier` ON `controls` (`oai_identifier`)
+2012-03-13 18:48:53 DEBUG    [1m[36m (147.3ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('8')[0m
+2012-03-13 18:48:53 INFO  Migrating to CreateMetadatas (9)
+2012-03-13 18:48:54 DEBUG    [1m[35m (931.6ms)[0m  CREATE TABLE `metadatas` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `collection_id` int, `controls_id` int, `dc_title` text, `dc_creator` text, `dc_subject` text, `dc_description` text, `dc_publisher` text, `dc_contributor` text, `dc_date` text, `dc_type` text, `dc_format` text, `dc_identifier` text, `dc_source` text, `dc_relation` text, `dc_coverage` text, `dc_rights` text, `osu_volume` text, `osu_issue` text, `osu_linking` text, `osu_openurl` varchar(255)) ENGINE=InnoDB
+2012-03-13 18:48:55 DEBUG    [1m[36m (933.3ms)[0m  [1mCREATE INDEX `index_metadatas_on_collection_id` ON `metadatas` (`collection_id`)[0m
+2012-03-13 18:48:56 DEBUG    [1m[35m (1185.0ms)[0m  CREATE INDEX `index_metadatas_on_controls_id` ON `metadatas` (`controls_id`)
+2012-03-13 18:48:56 DEBUG    [1m[36m (65.3ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('9')[0m
+2012-03-13 18:48:56 INFO  Migrating to CreateSiteConfigs (10)
+2012-03-13 18:48:56 DEBUG    [1m[35m (231.3ms)[0m  CREATE TABLE `site_configs` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `field` varchar(255), `value` varchar(255), `previous_value` varchar(255), `updated_at` datetime) ENGINE=InnoDB
+2012-03-13 18:48:57 DEBUG    [1m[36m (708.2ms)[0m  [1mCREATE INDEX `index_site_configs_on_field` ON `site_configs` (`field`)[0m
+2012-03-13 18:48:57 DEBUG    [1m[35m (51.9ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('10')
+2012-03-13 18:48:57 INFO  Migrating to UpdateCachedSearches (11)
+2012-03-13 18:48:58 DEBUG    [1m[36m (1144.5ms)[0m  [1mALTER TABLE `cached_searches` ADD `max_recs` int(11) DEFAULT 0[0m
+2012-03-13 18:48:58 DEBUG    [1m[35m (121.2ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('11')
+2012-03-13 18:48:58 INFO  Migrating to UpdateCachedRecords (12)
+2012-03-13 18:48:59 DEBUG    [1m[36m (1154.6ms)[0m  [1mALTER TABLE `cached_records` ADD `max_recs` int(11) DEFAULT 0[0m
+2012-03-13 18:49:00 DEBUG    [1m[35m (177.6ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('12')
+2012-03-13 18:49:00 INFO  Migrating to CreateProviders (13)
+2012-03-13 18:49:01 DEBUG    [1m[36m (1036.4ms)[0m  [1mCREATE TABLE `providers` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `provider_name` varchar(255), `title` varchar(255), `url` varchar(255), `article_type` varchar(255), `proxy` varchar(255)) ENGINE=InnoDB[0m
+2012-03-13 18:49:02 DEBUG    [1m[35m (1508.5ms)[0m  CREATE INDEX `index_providers_on_provider_name` ON `providers` (`provider_name`)
+2012-03-13 18:49:03 DEBUG    [1m[36m (908.0ms)[0m  [1mCREATE INDEX `index_providers_on_title` ON `providers` (`title`)[0m
+2012-03-13 18:49:03 DEBUG    [1m[35m (49.3ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('13')
+2012-03-13 18:49:03 INFO  Migrating to CreateCoverages (14)
+2012-03-13 18:49:03 DEBUG    [1m[36m (211.2ms)[0m  [1mCREATE TABLE `coverages` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `journal_title` varchar(255), `issn` varchar(255), `eissn` varchar(255), `isbn` varchar(255), `start_date` varchar(255), `end_date` varchar(255), `provider` varchar(255), `url` varchar(255), `mod_date` int(11)) ENGINE=InnoDB[0m
+2012-03-13 18:49:04 DEBUG    [1m[35m (482.5ms)[0m  CREATE INDEX `index_coverages_on_journal_title` ON `coverages` (`journal_title`)
+2012-03-13 18:49:04 DEBUG    [1m[36m (469.0ms)[0m  [1mCREATE INDEX `index_coverages_on_issn` ON `coverages` (`issn`)[0m
+2012-03-13 18:49:06 DEBUG    [1m[35m (1309.0ms)[0m  CREATE INDEX `index_coverages_on_eissn` ON `coverages` (`eissn`)
+2012-03-13 18:49:07 DEBUG    [1m[36m (1411.8ms)[0m  [1mCREATE INDEX `index_coverages_on_isbn` ON `coverages` (`isbn`)[0m
+2012-03-13 18:49:09 DEBUG    [1m[35m (1476.9ms)[0m  CREATE INDEX `index_coverages_on_start_date` ON `coverages` (`start_date`)
+2012-03-13 18:49:09 DEBUG    [1m[36m (698.2ms)[0m  [1mCREATE INDEX `index_coverages_on_end_date` ON `coverages` (`end_date`)[0m
+2012-03-13 18:49:10 DEBUG    [1m[35m (748.3ms)[0m  CREATE INDEX `index_coverages_on_provider` ON `coverages` (`provider`)
+2012-03-13 18:49:21 DEBUG    [1m[36m (11138.4ms)[0m  [1mCREATE INDEX `index_coverages_on_mod_date` ON `coverages` (`mod_date`)[0m
+2012-03-13 18:49:21 DEBUG    [1m[35m (132.6ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('14')
+2012-03-13 18:49:21 INFO  Migrating to CreateCollectionGroups (15)
+2012-03-13 18:49:22 DEBUG    [1m[36m (331.2ms)[0m  [1mCREATE TABLE `collection_groups` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `full_name` varchar(255), `description` text, `enabled` tinyint(1) DEFAULT 0) ENGINE=InnoDB[0m
+2012-03-13 18:49:22 DEBUG    [1m[35m (82.8ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('15')
+2012-03-13 18:49:22 INFO  Migrating to CreateCollectionGroupMembers (16)
+2012-03-13 18:49:24 DEBUG    [1m[36m (2154.4ms)[0m  [1mCREATE TABLE `collection_group_members` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `collection_group_id` int(11), `collection_id` int(11), `default_on` tinyint(1) DEFAULT 0) ENGINE=InnoDB[0m
+2012-03-13 18:49:34 DEBUG    [1m[35m (10354.3ms)[0m  CREATE INDEX `index_collection_group_members_on_collection_group_id` ON `collection_group_members` (`collection_group_id`)
+2012-03-13 18:49:36 DEBUG    [1m[36m (1330.9ms)[0m  [1mCREATE INDEX `index_collection_group_members_on_collection_id` ON `collection_group_members` (`collection_id`)[0m
+2012-03-13 18:49:37 DEBUG    [1m[35m (1133.4ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('16')
+2012-03-13 18:49:37 INFO  Migrating to UpdateProviders (17)
+2012-03-13 18:49:40 DEBUG    [1m[36m (3489.9ms)[0m  [1mALTER TABLE `providers` ADD `can_resolve` int(11) DEFAULT 1[0m
+2012-03-13 18:49:43 DEBUG    [1m[35m (941.2ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('17')
+2012-03-13 18:49:43 INFO  Migrating to UpdateCachedRecordsAddStatus (18)
+2012-03-13 18:49:56 DEBUG    [1m[36m (13161.6ms)[0m  [1mALTER TABLE `cached_records` ADD `status` int(11) DEFAULT 0[0m
+2012-03-13 18:49:57 DEBUG    [1m[35m (181.2ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('18')
+2012-03-13 18:49:57 INFO  Migrating to UpdateCachedRecordsRenameDateSaved (19)
+2012-03-13 18:49:58 DEBUG    [1m[36m (1436.4ms)[0m  [1mSHOW COLUMNS FROM `cached_records` LIKE 'date_saved'[0m
+2012-03-13 18:50:06 DEBUG    [1m[35m (7220.8ms)[0m  ALTER TABLE `cached_records` CHANGE `date_saved` `created_at` datetime DEFAULT NULL
+2012-03-13 18:50:06 DEBUG    [1m[36m (161.6ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('19')[0m
+2012-03-13 18:50:06 INFO  Migrating to UpdateCachedRecordsAddTime (20)
+2012-03-13 18:50:08 DEBUG    [1m[35m (2280.0ms)[0m  ALTER TABLE `cached_records` ADD `search_time` varchar(255)
+2012-03-13 18:50:09 DEBUG    [1m[36m (663.8ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20')[0m
+2012-03-13 18:50:09 INFO  Migrating to UpdateCollectionsAddProxy (21)
+2012-03-13 18:50:15 DEBUG    [1m[35m (6279.8ms)[0m  ALTER TABLE `collections` ADD `proxy` int(11) DEFAULT 1
+2012-03-13 18:50:15 DEBUG    [1m[36m (244.9ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('21')[0m
+2012-03-13 18:50:15 INFO  Migrating to DeleteSessions (22)
+2012-03-13 18:50:15 DEBUG    [1m[35m (201.9ms)[0m  DROP TABLE `sessions`
+2012-03-13 18:50:16 DEBUG    [1m[36m (221.0ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('22')[0m
+2012-03-13 18:50:16 INFO  Migrating to SqlSessionStoreSetup (23)
+2012-03-13 18:50:19 DEBUG    [1m[35m (2709.2ms)[0m  CREATE TABLE `sessions` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `session_id` varchar(255), `data` text, `created_at` datetime, `updated_at` datetime) ENGINE=MyISAM
+2012-03-13 18:50:22 DEBUG    [1m[36m (2199.8ms)[0m  [1mCREATE INDEX `session_id_idx` ON `sessions` (`session_id`)[0m
+2012-03-13 18:50:22 DEBUG    [1m[35m (619.7ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('23')
+2012-03-13 18:50:22 INFO  Migrating to UpdateMetadatas (24)
+2012-03-13 18:50:25 DEBUG    [1m[36m (3122.0ms)[0m  [1mALTER TABLE `metadatas` ADD `osu_thumbnail` varchar(255) DEFAULT ''[0m
+2012-03-13 18:50:25 DEBUG    [1m[35m (100.0ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('24')
+2012-03-13 18:50:25 INFO  Migrating to CreateJobQueues (25)
+2012-03-13 18:50:26 DEBUG    [1m[36m (306.4ms)[0m  [1mCREATE TABLE `job_queues` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `records_id` int(11) DEFAULT -1, `status` int DEFAULT 0, `hits` int DEFAULT 0, `error` varchar(255)) ENGINE=InnoDB[0m
+2012-03-13 18:50:26 DEBUG    [1m[35m (96.1ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('25')
+2012-03-13 18:50:26 INFO  Migrating to UpdateJobQueuesAddThreadId (26)
+2012-03-13 18:50:33 DEBUG    [1m[36m (6835.9ms)[0m  [1mALTER TABLE `job_queues` ADD `thread_id` int(11) DEFAULT 0[0m
+2012-03-13 18:50:33 DEBUG    [1m[35m (102.4ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('26')
+2012-03-13 18:50:33 INFO  Migrating to UpdateJobQueuesAddDatabaseName (27)
+2012-03-13 18:50:33 DEBUG    [1m[36m (666.4ms)[0m  [1mALTER TABLE `job_queues` ADD `database_name` varchar(255) DEFAULT ''[0m
+2012-03-13 18:50:33 DEBUG    [1m[35m (102.5ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('27')
+2012-03-13 18:50:33 INFO  Migrating to UpdateControlsAddCollectionName (28)
+2012-03-13 18:50:35 DEBUG    [1m[36m (1776.3ms)[0m  [1mALTER TABLE `controls` ADD `collection_name` varchar(255) DEFAULT ''[0m
+2012-03-13 18:50:37 DEBUG    [1m[35m (837.1ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('28')
+2012-03-13 18:50:37 INFO  Migrating to UpdateCollectionsAddHarvested (29)
+2012-03-13 18:50:39 DEBUG    [1m[36m (2532.8ms)[0m  [1mALTER TABLE `collections` ADD `harvested` varchar(255) DEFAULT ''[0m
+2012-03-13 18:50:39 DEBUG    [1m[35m (191.0ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('29')
+2012-03-13 18:50:39 INFO  Migrating to UpdateCollectionsAddIsParent (30)
+2012-03-13 18:50:42 DEBUG    [1m[36m (2866.9ms)[0m  [1mALTER TABLE `collections` ADD `is_parent` int(11) DEFAULT 0[0m
+2012-03-13 18:50:42 DEBUG    [1m[35m (104.0ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('30')
+2012-03-13 18:50:42 INFO  Migrating to CreatePrimaryDocumentTypes (101)
+2012-03-13 18:50:42 DEBUG    [1m[36m (284.5ms)[0m  [1mCREATE TABLE `primary_document_types` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+2012-03-13 18:50:43 DEBUG    [1m[35m (110.2ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('101')
+2012-03-13 18:50:43 INFO  Migrating to CreateDocumentTypes (102)
+2012-03-13 18:50:45 DEBUG    [1m[36m (1945.3ms)[0m  [1mCREATE TABLE `document_types` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `document_type` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+2012-03-13 18:50:45 DEBUG    [1m[35m (874.6ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('102')
+2012-03-13 18:50:45 INFO  Migrating to CreateSearchTabs (103)
+2012-03-13 18:50:49 DEBUG    [1m[36m (3980.0ms)[0m  [1mCREATE TABLE `search_tabs` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `label` varchar(255), `description` varchar(255)) ENGINE=InnoDB[0m
+2012-03-13 18:50:50 DEBUG    [1m[35m (0.1ms)[0m  BEGIN
+2012-03-13 18:50:50 DEBUG    [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `search_tabs` (`description`, `label`) VALUES ('', 'Tout')[0m
+2012-03-13 18:50:50 DEBUG    [1m[35m (268.9ms)[0m  COMMIT
+2012-03-13 18:50:50 DEBUG    [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+2012-03-13 18:50:50 DEBUG    [1m[35m (0.1ms)[0m  COMMIT
+2012-03-13 18:50:50 DEBUG    [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+2012-03-13 18:50:50 DEBUG    [1m[35mSQL (0.3ms)[0m  INSERT INTO `search_tabs` (`description`, `label`) VALUES ('', 'Livres')
+2012-03-13 18:50:50 DEBUG    [1m[36m (180.8ms)[0m  [1mCOMMIT[0m
+2012-03-13 18:50:50 DEBUG    [1m[35m (0.1ms)[0m  BEGIN
+2012-03-13 18:50:50 DEBUG    [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+2012-03-13 18:50:50 DEBUG    [1m[35m (0.1ms)[0m  BEGIN
+2012-03-13 18:50:50 DEBUG    [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `search_tabs` (`description`, `label`) VALUES ('', 'Revues et articles')[0m
+2012-03-13 18:50:50 DEBUG    [1m[35m (88.3ms)[0m  COMMIT
+2012-03-13 18:50:50 DEBUG    [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+2012-03-13 18:50:50 DEBUG    [1m[35m (0.1ms)[0m  COMMIT
+2012-03-13 18:50:50 DEBUG    [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+2012-03-13 18:50:50 DEBUG    [1m[35mSQL (0.2ms)[0m  INSERT INTO `search_tabs` (`description`, `label`) VALUES ('', 'Musique')
+2012-03-13 18:50:50 DEBUG    [1m[36m (96.1ms)[0m  [1mCOMMIT[0m
+2012-03-13 18:50:50 DEBUG    [1m[35m (0.1ms)[0m  BEGIN
+2012-03-13 18:50:50 DEBUG    [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+2012-03-13 18:50:50 DEBUG    [1m[35m (0.1ms)[0m  BEGIN
+2012-03-13 18:50:50 DEBUG    [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `search_tabs` (`description`, `label`) VALUES ('', 'Films')[0m
+2012-03-13 18:50:50 DEBUG    [1m[35m (103.8ms)[0m  COMMIT
+2012-03-13 18:50:50 DEBUG    [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+2012-03-13 18:50:50 DEBUG    [1m[35m (0.1ms)[0m  COMMIT
+2012-03-13 18:50:50 DEBUG    [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+2012-03-13 18:50:50 DEBUG    [1m[35mSQL (0.3ms)[0m  INSERT INTO `search_tabs` (`description`, `label`) VALUES ('', 'Autoformation')
+2012-03-13 18:50:50 DEBUG    [1m[36m (109.6ms)[0m  [1mCOMMIT[0m
+2012-03-13 18:50:50 DEBUG    [1m[35m (0.1ms)[0m  BEGIN
+2012-03-13 18:50:50 DEBUG    [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+2012-03-13 18:50:50 DEBUG    [1m[35m (0.1ms)[0m  BEGIN
+2012-03-13 18:50:50 DEBUG    [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `search_tabs` (`description`, `label`) VALUES ('', 'Sites et bases de donn&eacute;es')[0m
+2012-03-13 18:50:51 DEBUG    [1m[35m (81.1ms)[0m  COMMIT
+2012-03-13 18:50:51 DEBUG    [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+2012-03-13 18:50:51 DEBUG    [1m[35m (0.1ms)[0m  COMMIT
+2012-03-13 18:50:51 DEBUG    [1m[36m (83.0ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('103')[0m
+2012-03-13 18:50:51 INFO  Migrating to CreateSearchTabFilters (104)
+2012-03-13 18:50:51 DEBUG    [1m[35m (269.1ms)[0m  CREATE TABLE `search_tab_filters` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `label` varchar(255), `field_filter` varchar(255), `search_tab_id` int(11)) ENGINE=InnoDB
+2012-03-13 18:50:51 DEBUG    [1m[36m (84.5ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('104')[0m
+2012-03-13 18:50:51 INFO  Migrating to UpdateCollectionGroups (105)
+2012-03-13 18:50:52 DEBUG    [1m[35m (863.0ms)[0m  ALTER TABLE `collection_groups` ADD `display_advanced_search` tinyint(1) DEFAULT 0
+2012-03-13 18:50:52 DEBUG    [1m[36m (560.5ms)[0m  [1mALTER TABLE `collection_groups` ADD `tab_id` int(11) DEFAULT 0[0m
+2012-03-13 18:50:52 DEBUG    [1m[35m (93.6ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('105')
+2012-03-13 18:50:52 INFO  Migrating to UpdateCollectionGroupMembers (106)
+2012-03-13 18:50:53 DEBUG    [1m[36m (650.9ms)[0m  [1mALTER TABLE `collection_group_members` ADD `filter_query` text[0m
+2012-03-13 18:50:53 DEBUG    [1m[35m (96.4ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('106')
+2012-03-13 18:50:53 INFO  Migrating to UpdateCollections (107)
+2012-03-13 18:50:54 DEBUG    [1m[36m (570.0ms)[0m  [1mALTER TABLE `collections` ADD `filter_query` text[0m
+2012-03-13 18:50:54 DEBUG    [1m[35m (98.9ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('107')
+2012-03-13 18:50:54 INFO  Migrating to CreateSearchTabSubjects (108)
+2012-03-13 18:50:54 DEBUG    [1m[36m (310.2ms)[0m  [1mCREATE TABLE `search_tab_subjects` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `tab_id` int(11), `parent_id` int(11), `label` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+2012-03-13 18:50:54 DEBUG    [1m[35m (116.3ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('108')
+2012-03-13 18:50:54 INFO  Migrating to CreateLogConsults (109)
+2012-03-13 18:50:55 DEBUG    [1m[36m (684.5ms)[0m  [1mCREATE TABLE `log_consults` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `idDoc` varchar(255), `title` varchar(255), `nb_consult` int(11)) ENGINE=InnoDB[0m
+2012-03-13 18:50:55 DEBUG    [1m[35m (94.3ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('109')
+2012-03-13 18:50:55 INFO  Migrating to CreateLogRssUsages (110)
+2012-03-13 18:50:56 DEBUG    [1m[36m (306.3ms)[0m  [1mCREATE TABLE `log_rss_usages` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `rss_url` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+2012-03-13 18:50:56 DEBUG    [1m[35m (91.7ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('110')
+2012-03-13 18:50:56 INFO  Migrating to CreateLogPrintUsages (111)
+2012-03-13 18:50:56 DEBUG    [1m[36m (348.9ms)[0m  [1mCREATE TABLE `log_print_usages` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `idDoc` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+2012-03-13 18:50:56 DEBUG    [1m[35m (80.0ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('111')
+2012-03-13 18:50:56 INFO  Migrating to CreateLogMailUsages (112)
+2012-03-13 18:50:58 DEBUG    [1m[36m (2303.1ms)[0m  [1mCREATE TABLE `log_mail_usages` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `idDoc` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+2012-03-13 18:50:58 DEBUG    [1m[35m (116.6ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('112')
+2012-03-13 18:50:58 INFO  Migrating to CreateLogFacetteUsages (113)
+2012-03-13 18:50:59 DEBUG    [1m[36m (347.5ms)[0m  [1mCREATE TABLE `log_facette_usages` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `types` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+2012-03-13 18:50:59 DEBUG    [1m[35m (94.5ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('113')
+2012-03-13 18:50:59 INFO  Migrating to CreateLogCartUsages (114)
+2012-03-13 18:51:03 DEBUG    [1m[36m (4383.6ms)[0m  [1mCREATE TABLE `log_cart_usages` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `idDoc` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+2012-03-13 18:51:04 DEBUG    [1m[35m (728.2ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('114')
+2012-03-13 18:51:04 INFO  Migrating to CreateLogCollectionGroupUsages (115)
+2012-03-13 18:51:06 DEBUG    [1m[36m (2298.4ms)[0m  [1mCREATE TABLE `log_collection_group_usages` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `idSets` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+2012-03-13 18:51:06 DEBUG    [1m[35m (116.7ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('115')
+2012-03-13 18:51:06 INFO  Migrating to CreateLogRebonceUsages (116)
+2012-03-13 18:51:07 DEBUG    [1m[36m (523.0ms)[0m  [1mCREATE TABLE `log_rebonce_usages` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `query` varchar(255), `filter` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+2012-03-13 18:51:07 DEBUG    [1m[35m (95.5ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('116')
+2012-03-13 18:51:07 INFO  Migrating to UpdateSearchTabSubjects (117)
+2012-03-13 18:51:10 DEBUG    [1m[36m (2485.9ms)[0m  [1mALTER TABLE `search_tab_subjects` ADD `collection_group_id` int(11)[0m
+2012-03-13 18:51:10 DEBUG    [1m[35m (105.2ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('117')
+2012-03-13 18:51:10 INFO  Migrating to UpdateLogCollectionGroupUsages (118)
+2012-03-13 18:51:11 DEBUG    [1m[36m (860.2ms)[0m  [1mALTER TABLE `log_collection_group_usages` ADD `idFilter` varchar(255)[0m
+2012-03-13 18:51:11 DEBUG    [1m[35m (108.3ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('118')
+2012-03-13 18:51:11 INFO  Migrating to CreateLogSearchWords (119)
+2012-03-13 18:51:12 DEBUG    [1m[36m (473.1ms)[0m  [1mCREATE TABLE `log_search_words` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `word` varchar(255), `request` varchar(255), `nb_consult` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+2012-03-13 18:51:12 DEBUG    [1m[35m (149.4ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('119')
+2012-03-13 18:51:12 INFO  Migrating to UpdateSearchTabs (120)
+2012-03-13 18:51:12 DEBUG    [1m[36m (105.8ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('120')[0m
+2012-03-13 18:51:12 INFO  Migrating to UpdateSearchTabFilters (121)
+2012-03-13 18:51:13 DEBUG    [1m[35m (818.6ms)[0m  ALTER TABLE `search_tab_filters` ADD `description` varchar(255)
+2012-03-13 18:51:13 DEBUG    [1m[36m (99.6ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('121')[0m
+2012-03-13 18:51:13 INFO  Migrating to Update2SearchTabSubjects (122)
+2012-03-13 18:55:11 DEBUG  INIT MEMCACHE ["127.0.0.1", "10.1.2.111:11211", "10.1.2.112:11211"]
+2012-03-13 18:55:18 DEBUG    [1m[36m (128.4ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+2012-03-13 18:55:18 INFO  Migrating to CreateRecords (1)
+2012-03-13 18:55:18 INFO  Migrating to CreateCollections (2)
+2012-03-13 18:55:18 INFO  Migrating to CreateUsers (3)
+2012-03-13 18:55:18 INFO  Migrating to AddSessions (4)
+2012-03-13 18:55:18 INFO  Migrating to CreateCachedSearches (5)
+2012-03-13 18:55:18 INFO  Migrating to CreateHits (6)
+2012-03-13 18:55:18 INFO  Migrating to CreateCachedRecords (7)
+2012-03-13 18:55:18 INFO  Migrating to CreateControls (8)
+2012-03-13 18:55:18 INFO  Migrating to CreateMetadatas (9)
+2012-03-13 18:55:18 INFO  Migrating to CreateSiteConfigs (10)
+2012-03-13 18:55:18 INFO  Migrating to UpdateCachedSearches (11)
+2012-03-13 18:55:18 INFO  Migrating to UpdateCachedRecords (12)
+2012-03-13 18:55:18 INFO  Migrating to CreateProviders (13)
+2012-03-13 18:55:18 INFO  Migrating to CreateCoverages (14)
+2012-03-13 18:55:18 INFO  Migrating to CreateCollectionGroups (15)
+2012-03-13 18:55:18 INFO  Migrating to CreateCollectionGroupMembers (16)
+2012-03-13 18:55:18 INFO  Migrating to UpdateProviders (17)
+2012-03-13 18:55:18 INFO  Migrating to UpdateCachedRecordsAddStatus (18)
+2012-03-13 18:55:18 INFO  Migrating to UpdateCachedRecordsRenameDateSaved (19)
+2012-03-13 18:55:18 INFO  Migrating to UpdateCachedRecordsAddTime (20)
+2012-03-13 18:55:18 INFO  Migrating to UpdateCollectionsAddProxy (21)
+2012-03-13 18:55:18 INFO  Migrating to DeleteSessions (22)
+2012-03-13 18:55:18 INFO  Migrating to SqlSessionStoreSetup (23)
+2012-03-13 18:55:18 INFO  Migrating to UpdateMetadatas (24)
+2012-03-13 18:55:18 INFO  Migrating to CreateJobQueues (25)
+2012-03-13 18:55:18 INFO  Migrating to UpdateJobQueuesAddThreadId (26)
+2012-03-13 18:55:18 INFO  Migrating to UpdateJobQueuesAddDatabaseName (27)
+2012-03-13 18:55:18 INFO  Migrating to UpdateControlsAddCollectionName (28)
+2012-03-13 18:55:18 INFO  Migrating to UpdateCollectionsAddHarvested (29)
+2012-03-13 18:55:18 INFO  Migrating to UpdateCollectionsAddIsParent (30)
+2012-03-13 18:55:18 INFO  Migrating to CreatePrimaryDocumentTypes (101)
+2012-03-13 18:55:18 INFO  Migrating to CreateDocumentTypes (102)
+2012-03-13 18:55:18 INFO  Migrating to CreateSearchTabs (103)
+2012-03-13 18:55:18 INFO  Migrating to CreateSearchTabFilters (104)
+2012-03-13 18:55:18 INFO  Migrating to UpdateCollectionGroups (105)
+2012-03-13 18:55:18 INFO  Migrating to UpdateCollectionGroupMembers (106)
+2012-03-13 18:55:18 INFO  Migrating to UpdateCollections (107)
+2012-03-13 18:55:18 INFO  Migrating to CreateSearchTabSubjects (108)
+2012-03-13 18:55:18 INFO  Migrating to CreateLogConsults (109)
+2012-03-13 18:55:18 INFO  Migrating to CreateLogRssUsages (110)
+2012-03-13 18:55:18 INFO  Migrating to CreateLogPrintUsages (111)
+2012-03-13 18:55:18 INFO  Migrating to CreateLogMailUsages (112)
+2012-03-13 18:55:18 INFO  Migrating to CreateLogFacetteUsages (113)
+2012-03-13 18:55:18 INFO  Migrating to CreateLogCartUsages (114)
+2012-03-13 18:55:18 INFO  Migrating to CreateLogCollectionGroupUsages (115)
+2012-03-13 18:55:18 INFO  Migrating to CreateLogRebonceUsages (116)
+2012-03-13 18:55:18 INFO  Migrating to UpdateSearchTabSubjects (117)
+2012-03-13 18:55:18 INFO  Migrating to UpdateLogCollectionGroupUsages (118)
+2012-03-13 18:55:18 INFO  Migrating to CreateLogSearchWords (119)
+2012-03-13 18:55:18 INFO  Migrating to UpdateSearchTabs (120)
+2012-03-13 18:55:18 INFO  Migrating to UpdateSearchTabFilters (121)
+2012-03-13 18:55:18 INFO  Migrating to Update2SearchTabSubjects (122)
+2012-03-13 18:55:22 DEBUG    [1m[35m (4148.4ms)[0m  ALTER TABLE `search_tab_subjects` ADD `description` varchar(255)
+2012-03-13 18:55:22 DEBUG    [1m[36m (132.5ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('122')[0m
+2012-03-13 18:55:22 INFO  Migrating to Update3SearchTabSubjects (123)
+2012-03-13 18:56:09 DEBUG  INIT MEMCACHE ["127.0.0.1", "10.1.2.111:11211", "10.1.2.112:11211"]
+2012-03-13 18:56:11 DEBUG    [1m[36m (33.9ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+2012-03-13 18:56:11 INFO  Migrating to CreateRecords (1)
+2012-03-13 18:56:11 INFO  Migrating to CreateCollections (2)
+2012-03-13 18:56:11 INFO  Migrating to CreateUsers (3)
+2012-03-13 18:56:11 INFO  Migrating to AddSessions (4)
+2012-03-13 18:56:11 INFO  Migrating to CreateCachedSearches (5)
+2012-03-13 18:56:11 INFO  Migrating to CreateHits (6)
+2012-03-13 18:56:11 INFO  Migrating to CreateCachedRecords (7)
+2012-03-13 18:56:11 INFO  Migrating to CreateControls (8)
+2012-03-13 18:56:11 INFO  Migrating to CreateMetadatas (9)
+2012-03-13 18:56:11 INFO  Migrating to CreateSiteConfigs (10)
+2012-03-13 18:56:11 INFO  Migrating to UpdateCachedSearches (11)
+2012-03-13 18:56:11 INFO  Migrating to UpdateCachedRecords (12)
+2012-03-13 18:56:11 INFO  Migrating to CreateProviders (13)
+2012-03-13 18:56:11 INFO  Migrating to CreateCoverages (14)
+2012-03-13 18:56:11 INFO  Migrating to CreateCollectionGroups (15)
+2012-03-13 18:56:11 INFO  Migrating to CreateCollectionGroupMembers (16)
+2012-03-13 18:56:11 INFO  Migrating to UpdateProviders (17)
+2012-03-13 18:56:11 INFO  Migrating to UpdateCachedRecordsAddStatus (18)
+2012-03-13 18:56:11 INFO  Migrating to UpdateCachedRecordsRenameDateSaved (19)
+2012-03-13 18:56:11 INFO  Migrating to UpdateCachedRecordsAddTime (20)
+2012-03-13 18:56:11 INFO  Migrating to UpdateCollectionsAddProxy (21)
+2012-03-13 18:56:11 INFO  Migrating to DeleteSessions (22)
+2012-03-13 18:56:11 INFO  Migrating to SqlSessionStoreSetup (23)
+2012-03-13 18:56:11 INFO  Migrating to UpdateMetadatas (24)
+2012-03-13 18:56:11 INFO  Migrating to CreateJobQueues (25)
+2012-03-13 18:56:11 INFO  Migrating to UpdateJobQueuesAddThreadId (26)
+2012-03-13 18:56:11 INFO  Migrating to UpdateJobQueuesAddDatabaseName (27)
+2012-03-13 18:56:11 INFO  Migrating to UpdateControlsAddCollectionName (28)
+2012-03-13 18:56:11 INFO  Migrating to UpdateCollectionsAddHarvested (29)
+2012-03-13 18:56:11 INFO  Migrating to UpdateCollectionsAddIsParent (30)
+2012-03-13 18:56:11 INFO  Migrating to CreatePrimaryDocumentTypes (101)
+2012-03-13 18:56:11 INFO  Migrating to CreateDocumentTypes (102)
+2012-03-13 18:56:11 INFO  Migrating to CreateSearchTabs (103)
+2012-03-13 18:56:11 INFO  Migrating to CreateSearchTabFilters (104)
+2012-03-13 18:56:11 INFO  Migrating to UpdateCollectionGroups (105)
+2012-03-13 18:56:11 INFO  Migrating to UpdateCollectionGroupMembers (106)
+2012-03-13 18:56:11 INFO  Migrating to UpdateCollections (107)
+2012-03-13 18:56:11 INFO  Migrating to CreateSearchTabSubjects (108)
+2012-03-13 18:56:11 INFO  Migrating to CreateLogConsults (109)
+2012-03-13 18:56:11 INFO  Migrating to CreateLogRssUsages (110)
+2012-03-13 18:56:11 INFO  Migrating to CreateLogPrintUsages (111)
+2012-03-13 18:56:11 INFO  Migrating to CreateLogMailUsages (112)
+2012-03-13 18:56:11 INFO  Migrating to CreateLogFacetteUsages (113)
+2012-03-13 18:56:11 INFO  Migrating to CreateLogCartUsages (114)
+2012-03-13 18:56:11 INFO  Migrating to CreateLogCollectionGroupUsages (115)
+2012-03-13 18:56:11 INFO  Migrating to CreateLogRebonceUsages (116)
+2012-03-13 18:56:11 INFO  Migrating to UpdateSearchTabSubjects (117)
+2012-03-13 18:56:11 INFO  Migrating to UpdateLogCollectionGroupUsages (118)
+2012-03-13 18:56:11 INFO  Migrating to CreateLogSearchWords (119)
+2012-03-13 18:56:11 INFO  Migrating to UpdateSearchTabs (120)
+2012-03-13 18:56:11 INFO  Migrating to UpdateSearchTabFilters (121)
+2012-03-13 18:56:11 INFO  Migrating to Update2SearchTabSubjects (122)
+2012-03-13 18:56:11 INFO  Migrating to Update3SearchTabSubjects (123)
+2012-03-13 18:56:14 DEBUG    [1m[35m (3656.3ms)[0m  ALTER TABLE `search_tab_subjects` ADD `rank` int(11)
+2012-03-13 18:56:15 DEBUG    [1m[36mSearchTabSubject Load (342.6ms)[0m  [1mSELECT `search_tab_subjects`.* FROM `search_tab_subjects` ORDER BY parent_id, id[0m
+2012-03-13 18:56:20 DEBUG    [1m[35m (4985.7ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('123')
+2012-03-13 18:56:21 INFO  Migrating to Update2Collections (124)
+2012-03-13 18:56:23 DEBUG    [1m[36m (2191.0ms)[0m  [1mALTER TABLE `collections` ADD `has_right` tinyint(1) DEFAULT 0[0m
+2012-03-13 18:56:25 DEBUG    [1m[35m (2532.4ms)[0m  ALTER TABLE `collections` ADD `class_handle_right` text
+2012-03-13 18:56:26 DEBUG    [1m[36m (94.1ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('124')[0m
+2012-03-13 18:56:26 INFO  Migrating to Update2SearchTabs (125)
+2012-03-13 18:56:26 DEBUG    [1m[35m (481.3ms)[0m  TRUNCATE TABLE search_tabs
+2012-03-13 18:56:26 DEBUG    [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+2012-03-13 18:56:26 DEBUG    [1m[35mSQL (3.0ms)[0m  INSERT INTO `search_tabs` (`description`, `label`) VALUES ('', 'ALL')
+2012-03-13 18:56:26 DEBUG    [1m[36m (229.3ms)[0m  [1mCOMMIT[0m
+2012-03-13 18:56:26 DEBUG    [1m[35m (0.1ms)[0m  BEGIN
+2012-03-13 18:56:26 DEBUG    [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+2012-03-13 18:56:26 DEBUG    [1m[35m (0.1ms)[0m  BEGIN
+2012-03-13 18:56:26 DEBUG    [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `search_tabs` (`description`, `label`) VALUES ('', 'BOOK')[0m
+2012-03-13 18:56:26 DEBUG    [1m[35m (146.4ms)[0m  COMMIT
+2012-03-13 18:56:26 DEBUG    [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+2012-03-13 18:56:26 DEBUG    [1m[35m (0.1ms)[0m  COMMIT
+2012-03-13 18:56:26 DEBUG    [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+2012-03-13 18:56:26 DEBUG    [1m[35mSQL (24.9ms)[0m  INSERT INTO `search_tabs` (`description`, `label`) VALUES ('', 'ARTICLE')
+2012-03-13 18:56:27 DEBUG    [1m[36m (114.7ms)[0m  [1mCOMMIT[0m
+2012-03-13 18:56:27 DEBUG    [1m[35m (0.1ms)[0m  BEGIN
+2012-03-13 18:56:27 DEBUG    [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+2012-03-13 18:56:27 DEBUG    [1m[35m (0.1ms)[0m  BEGIN
+2012-03-13 18:56:27 DEBUG    [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `search_tabs` (`description`, `label`) VALUES ('', 'MUSIC')[0m
+2012-03-13 18:56:27 DEBUG    [1m[35m (139.5ms)[0m  COMMIT
+2012-03-13 18:56:27 DEBUG    [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+2012-03-13 18:56:27 DEBUG    [1m[35m (0.1ms)[0m  COMMIT
+2012-03-13 18:56:27 DEBUG    [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+2012-03-13 18:56:27 DEBUG    [1m[35mSQL (0.3ms)[0m  INSERT INTO `search_tabs` (`description`, `label`) VALUES ('', 'MOVIE')
+2012-03-13 18:56:27 DEBUG    [1m[36m (130.8ms)[0m  [1mCOMMIT[0m
+2012-03-13 18:56:27 DEBUG    [1m[35m (0.1ms)[0m  BEGIN
+2012-03-13 18:56:27 DEBUG    [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+2012-03-13 18:56:27 DEBUG    [1m[35m (0.1ms)[0m  BEGIN
+2012-03-13 18:56:27 DEBUG    [1m[36mSQL (1.2ms)[0m  [1mINSERT INTO `search_tabs` (`description`, `label`) VALUES ('', 'TRAINING')[0m
+2012-03-13 18:56:27 DEBUG    [1m[35m (122.0ms)[0m  COMMIT
+2012-03-13 18:56:27 DEBUG    [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+2012-03-13 18:56:27 DEBUG    [1m[35m (0.1ms)[0m  COMMIT
+2012-03-13 18:56:27 DEBUG    [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+2012-03-13 18:56:27 DEBUG    [1m[35mSQL (0.3ms)[0m  INSERT INTO `search_tabs` (`description`, `label`) VALUES ('', 'SITE')
+2012-03-13 18:56:27 DEBUG    [1m[36m (414.5ms)[0m  [1mCOMMIT[0m
+2012-03-13 18:56:27 DEBUG    [1m[35m (0.1ms)[0m  BEGIN
+2012-03-13 18:56:27 DEBUG    [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+2012-03-13 18:56:27 DEBUG    [1m[35m (56.9ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('125')
+2012-03-13 18:56:27 INFO  Migrating to UpdateCollectionTabsHarvestingDay (126)
+2012-03-13 18:56:28 DEBUG    [1m[36m (535.8ms)[0m  [1mALTER TABLE `collections` ADD `harvest_day` varchar(255) DEFAULT '0123456'[0m
+2012-03-13 18:56:28 DEBUG    [1m[35m (64.8ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('126')
+2012-03-13 18:56:28 INFO  Migrating to Update4SearchTabSubjects (127)
+2012-03-13 18:58:58 DEBUG  INIT MEMCACHE ["127.0.0.1", "10.1.2.111:11211", "10.1.2.112:11211"]
+2012-03-13 18:58:59 DEBUG    [1m[36m (0.5ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+2012-03-13 18:58:59 INFO  Migrating to CreateRecords (1)
+2012-03-13 18:58:59 INFO  Migrating to CreateCollections (2)
+2012-03-13 18:58:59 INFO  Migrating to CreateUsers (3)
+2012-03-13 18:58:59 INFO  Migrating to AddSessions (4)
+2012-03-13 18:58:59 INFO  Migrating to CreateCachedSearches (5)
+2012-03-13 18:58:59 INFO  Migrating to CreateHits (6)
+2012-03-13 18:58:59 INFO  Migrating to CreateCachedRecords (7)
+2012-03-13 18:58:59 INFO  Migrating to CreateControls (8)
+2012-03-13 18:58:59 INFO  Migrating to CreateMetadatas (9)
+2012-03-13 18:58:59 INFO  Migrating to CreateSiteConfigs (10)
+2012-03-13 18:58:59 INFO  Migrating to UpdateCachedSearches (11)
+2012-03-13 18:58:59 INFO  Migrating to UpdateCachedRecords (12)
+2012-03-13 18:58:59 INFO  Migrating to CreateProviders (13)
+2012-03-13 18:58:59 INFO  Migrating to CreateCoverages (14)
+2012-03-13 18:58:59 INFO  Migrating to CreateCollectionGroups (15)
+2012-03-13 18:58:59 INFO  Migrating to CreateCollectionGroupMembers (16)
+2012-03-13 18:58:59 INFO  Migrating to UpdateProviders (17)
+2012-03-13 18:58:59 INFO  Migrating to UpdateCachedRecordsAddStatus (18)
+2012-03-13 18:58:59 INFO  Migrating to UpdateCachedRecordsRenameDateSaved (19)
+2012-03-13 18:58:59 INFO  Migrating to UpdateCachedRecordsAddTime (20)
+2012-03-13 18:58:59 INFO  Migrating to UpdateCollectionsAddProxy (21)
+2012-03-13 18:58:59 INFO  Migrating to DeleteSessions (22)
+2012-03-13 18:58:59 INFO  Migrating to SqlSessionStoreSetup (23)
+2012-03-13 18:58:59 INFO  Migrating to UpdateMetadatas (24)
+2012-03-13 18:58:59 INFO  Migrating to CreateJobQueues (25)
+2012-03-13 18:58:59 INFO  Migrating to UpdateJobQueuesAddThreadId (26)
+2012-03-13 18:58:59 INFO  Migrating to UpdateJobQueuesAddDatabaseName (27)
+2012-03-13 18:58:59 INFO  Migrating to UpdateControlsAddCollectionName (28)
+2012-03-13 18:58:59 INFO  Migrating to UpdateCollectionsAddHarvested (29)
+2012-03-13 18:58:59 INFO  Migrating to UpdateCollectionsAddIsParent (30)
+2012-03-13 18:58:59 INFO  Migrating to CreatePrimaryDocumentTypes (101)
+2012-03-13 18:58:59 INFO  Migrating to CreateDocumentTypes (102)
+2012-03-13 18:58:59 INFO  Migrating to CreateSearchTabs (103)
+2012-03-13 18:58:59 INFO  Migrating to CreateSearchTabFilters (104)
+2012-03-13 18:58:59 INFO  Migrating to UpdateCollectionGroups (105)
+2012-03-13 18:58:59 INFO  Migrating to UpdateCollectionGroupMembers (106)
+2012-03-13 18:58:59 INFO  Migrating to UpdateCollections (107)
+2012-03-13 18:58:59 INFO  Migrating to CreateSearchTabSubjects (108)
+2012-03-13 18:58:59 INFO  Migrating to CreateLogConsults (109)
+2012-03-13 18:58:59 INFO  Migrating to CreateLogRssUsages (110)
+2012-03-13 18:58:59 INFO  Migrating to CreateLogPrintUsages (111)
+2012-03-13 18:58:59 INFO  Migrating to CreateLogMailUsages (112)
+2012-03-13 18:58:59 INFO  Migrating to CreateLogFacetteUsages (113)
+2012-03-13 18:58:59 INFO  Migrating to CreateLogCartUsages (114)
+2012-03-13 18:58:59 INFO  Migrating to CreateLogCollectionGroupUsages (115)
+2012-03-13 18:58:59 INFO  Migrating to CreateLogRebonceUsages (116)
+2012-03-13 18:58:59 INFO  Migrating to UpdateSearchTabSubjects (117)
+2012-03-13 18:58:59 INFO  Migrating to UpdateLogCollectionGroupUsages (118)
+2012-03-13 18:58:59 INFO  Migrating to CreateLogSearchWords (119)
+2012-03-13 18:58:59 INFO  Migrating to UpdateSearchTabs (120)
+2012-03-13 18:58:59 INFO  Migrating to UpdateSearchTabFilters (121)
+2012-03-13 18:58:59 INFO  Migrating to Update2SearchTabSubjects (122)
+2012-03-13 18:58:59 INFO  Migrating to Update3SearchTabSubjects (123)
+2012-03-13 18:58:59 INFO  Migrating to Update2Collections (124)
+2012-03-13 18:58:59 INFO  Migrating to Update2SearchTabs (125)
+2012-03-13 18:58:59 INFO  Migrating to UpdateCollectionTabsHarvestingDay (126)
+2012-03-13 18:58:59 INFO  Migrating to Update4SearchTabSubjects (127)
+2012-03-13 18:59:01 DEBUG    [1m[35m (1549.3ms)[0m  ALTER TABLE `search_tab_subjects` ADD `hide` tinyint(1) DEFAULT 0
+2012-03-13 18:59:01 DEBUG    [1m[36m (104.1ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('127')[0m
+2012-03-13 18:59:01 INFO  Migrating to UpdateCollectionGroupsAddRank (128)
+2012-03-13 19:00:37 DEBUG  INIT MEMCACHE ["127.0.0.1", "10.1.2.111:11211", "10.1.2.112:11211"]
+2012-03-13 19:00:38 DEBUG    [1m[36m (9.4ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+2012-03-13 19:00:38 INFO  Migrating to CreateRecords (1)
+2012-03-13 19:00:38 INFO  Migrating to CreateCollections (2)
+2012-03-13 19:00:38 INFO  Migrating to CreateUsers (3)
+2012-03-13 19:00:38 INFO  Migrating to AddSessions (4)
+2012-03-13 19:00:38 INFO  Migrating to CreateCachedSearches (5)
+2012-03-13 19:00:38 INFO  Migrating to CreateHits (6)
+2012-03-13 19:00:38 INFO  Migrating to CreateCachedRecords (7)
+2012-03-13 19:00:38 INFO  Migrating to CreateControls (8)
+2012-03-13 19:00:38 INFO  Migrating to CreateMetadatas (9)
+2012-03-13 19:00:38 INFO  Migrating to CreateSiteConfigs (10)
+2012-03-13 19:00:38 INFO  Migrating to UpdateCachedSearches (11)
+2012-03-13 19:00:38 INFO  Migrating to UpdateCachedRecords (12)
+2012-03-13 19:00:38 INFO  Migrating to CreateProviders (13)
+2012-03-13 19:00:38 INFO  Migrating to CreateCoverages (14)
+2012-03-13 19:00:38 INFO  Migrating to CreateCollectionGroups (15)
+2012-03-13 19:00:38 INFO  Migrating to CreateCollectionGroupMembers (16)
+2012-03-13 19:00:38 INFO  Migrating to UpdateProviders (17)
+2012-03-13 19:00:38 INFO  Migrating to UpdateCachedRecordsAddStatus (18)
+2012-03-13 19:00:38 INFO  Migrating to UpdateCachedRecordsRenameDateSaved (19)
+2012-03-13 19:00:38 INFO  Migrating to UpdateCachedRecordsAddTime (20)
+2012-03-13 19:00:38 INFO  Migrating to UpdateCollectionsAddProxy (21)
+2012-03-13 19:00:38 INFO  Migrating to DeleteSessions (22)
+2012-03-13 19:00:38 INFO  Migrating to SqlSessionStoreSetup (23)
+2012-03-13 19:00:38 INFO  Migrating to UpdateMetadatas (24)
+2012-03-13 19:00:38 INFO  Migrating to CreateJobQueues (25)
+2012-03-13 19:00:38 INFO  Migrating to UpdateJobQueuesAddThreadId (26)
+2012-03-13 19:00:38 INFO  Migrating to UpdateJobQueuesAddDatabaseName (27)
+2012-03-13 19:00:38 INFO  Migrating to UpdateControlsAddCollectionName (28)
+2012-03-13 19:00:38 INFO  Migrating to UpdateCollectionsAddHarvested (29)
+2012-03-13 19:00:38 INFO  Migrating to UpdateCollectionsAddIsParent (30)
+2012-03-13 19:00:38 INFO  Migrating to CreatePrimaryDocumentTypes (101)
+2012-03-13 19:00:38 INFO  Migrating to CreateDocumentTypes (102)
+2012-03-13 19:00:38 INFO  Migrating to CreateSearchTabs (103)
+2012-03-13 19:00:38 INFO  Migrating to CreateSearchTabFilters (104)
+2012-03-13 19:00:38 INFO  Migrating to UpdateCollectionGroups (105)
+2012-03-13 19:00:38 INFO  Migrating to UpdateCollectionGroupMembers (106)
+2012-03-13 19:00:38 INFO  Migrating to UpdateCollections (107)
+2012-03-13 19:00:38 INFO  Migrating to CreateSearchTabSubjects (108)
+2012-03-13 19:00:38 INFO  Migrating to CreateLogConsults (109)
+2012-03-13 19:00:38 INFO  Migrating to CreateLogRssUsages (110)
+2012-03-13 19:00:38 INFO  Migrating to CreateLogPrintUsages (111)
+2012-03-13 19:00:38 INFO  Migrating to CreateLogMailUsages (112)
+2012-03-13 19:00:38 INFO  Migrating to CreateLogFacetteUsages (113)
+2012-03-13 19:00:38 INFO  Migrating to CreateLogCartUsages (114)
+2012-03-13 19:00:38 INFO  Migrating to CreateLogCollectionGroupUsages (115)
+2012-03-13 19:00:38 INFO  Migrating to CreateLogRebonceUsages (116)
+2012-03-13 19:00:38 INFO  Migrating to UpdateSearchTabSubjects (117)
+2012-03-13 19:00:38 INFO  Migrating to UpdateLogCollectionGroupUsages (118)
+2012-03-13 19:00:38 INFO  Migrating to CreateLogSearchWords (119)
+2012-03-13 19:00:38 INFO  Migrating to UpdateSearchTabs (120)
+2012-03-13 19:00:38 INFO  Migrating to UpdateSearchTabFilters (121)
+2012-03-13 19:00:38 INFO  Migrating to Update2SearchTabSubjects (122)
+2012-03-13 19:00:38 INFO  Migrating to Update3SearchTabSubjects (123)
+2012-03-13 19:00:38 INFO  Migrating to Update2Collections (124)
+2012-03-13 19:00:38 INFO  Migrating to Update2SearchTabs (125)
+2012-03-13 19:00:38 INFO  Migrating to UpdateCollectionTabsHarvestingDay (126)
+2012-03-13 19:00:38 INFO  Migrating to Update4SearchTabSubjects (127)
+2012-03-13 19:00:38 INFO  Migrating to UpdateCollectionGroupsAddRank (128)
+2012-03-13 19:00:38 DEBUG    [1m[35m (394.5ms)[0m  ALTER TABLE `collection_groups` ADD `rank` int(11)
+2012-03-13 19:00:38 DEBUG    [1m[36mCollectionGroup Load (165.6ms)[0m  [1mSELECT `collection_groups`.* FROM `collection_groups` ORDER BY tab_id, name[0m
+2012-03-13 19:00:39 DEBUG    [1m[35m (360.3ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('128')
+2012-03-13 19:00:39 INFO  Migrating to Update5SearchTabSubjects (129)
+2012-03-13 19:00:40 DEBUG    [1m[36m (871.0ms)[0m  [1mALTER TABLE `search_tab_subjects` ADD `format` varchar(255) DEFAULT 'request'[0m
+2012-03-13 19:00:40 DEBUG    [1m[35m (574.2ms)[0m  ALTER TABLE `search_tab_subjects` ADD `url` varchar(255) DEFAULT ''
+2012-03-13 19:00:40 DEBUG    [1m[36m (157.0ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('129')[0m
+2012-03-13 19:00:40 INFO  Migrating to CreateEditorials (130)
+2012-03-13 19:00:41 DEBUG    [1m[35m (569.0ms)[0m  CREATE TABLE `editorials` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `label` varchar(255), `html` text, `activate` tinyint(1) DEFAULT 1) ENGINE=InnoDB
+2012-03-13 19:00:41 DEBUG    [1m[36m (431.6ms)[0m  [1mCREATE TABLE `editorial_group_members` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `collection_group_id` int(11), `editorial_id` int(11), `rank` int(11) DEFAULT 0) ENGINE=InnoDB[0m
+2012-03-13 19:00:42 DEBUG    [1m[35m (552.8ms)[0m  CREATE INDEX `index_editorial_group_members_on_collection_group_id` ON `editorial_group_members` (`collection_group_id`)
+2012-03-13 19:00:42 DEBUG    [1m[36m (375.2ms)[0m  [1mCREATE INDEX `index_editorial_group_members_on_editorial_id` ON `editorial_group_members` (`editorial_id`)[0m
+2012-03-13 19:00:42 DEBUG    [1m[35m (49.3ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('130')
+2012-03-13 19:00:42 INFO  Migrating to CreateRejects (131)
+2012-03-13 19:00:42 DEBUG    [1m[36m (134.5ms)[0m  [1mCREATE TABLE `rejects` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `data` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+2012-03-13 19:00:43 DEBUG    [1m[35m (49.4ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('131')
+2012-03-13 19:00:43 INFO  Migrating to UpdateCachedRecordsAddTotalHits (132)
+2012-03-13 19:00:43 DEBUG    [1m[36m (316.1ms)[0m  [1mALTER TABLE `cached_records` ADD `total_hits` int(11) DEFAULT 0[0m
+2012-03-13 19:00:43 DEBUG    [1m[35m (40.9ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('132')
+2012-03-13 19:00:43 INFO  Migrating to UpdateCollectionsAddIsPrivate (133)
+2012-03-13 19:00:43 DEBUG    [1m[36m (324.8ms)[0m  [1mALTER TABLE `collections` ADD `is_private` tinyint(1) DEFAULT 0[0m
+2012-03-13 19:00:43 DEBUG    [1m[35m (40.7ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('133')
+2012-03-13 19:00:43 INFO  Migrating to UpdateJobQueuesAddTotalHits (134)
+2012-03-13 19:00:44 DEBUG    [1m[36m (526.1ms)[0m  [1mALTER TABLE `job_queues` ADD `total_hits` int(11) DEFAULT 0[0m
+2012-03-13 19:00:44 DEBUG    [1m[35m (115.8ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('134')
+2012-03-13 19:00:44 INFO  Migrating to CreateThemes (135)
+2012-03-13 19:00:44 DEBUG    [1m[36m (289.4ms)[0m  [1mCREATE TABLE `themes` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `reference` varchar(10) NOT NULL, `label` varchar(255) NOT NULL, `sort` int DEFAULT 0, `level` int DEFAULT 1, `parent` varchar(10)) ENGINE=InnoDB[0m
+2012-03-13 19:00:45 DEBUG    [1m[35m (525.3ms)[0m  CREATE UNIQUE INDEX `index_themes_on_reference` ON `themes` (`reference`)
+2012-03-13 19:00:45 DEBUG    [1m[36m (183.1ms)[0m  [1mCREATE TABLE `themes_references` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `ref_theme` varchar(10) NOT NULL, `ref_source` varchar(255) NOT NULL, `source` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+2012-03-13 19:00:45 DEBUG    [1m[35m (334.4ms)[0m  CREATE INDEX `index_themes_references_on_ref_theme` ON `themes_references` (`ref_theme`)
+2012-03-13 19:00:46 DEBUG    [1m[36m (392.4ms)[0m  [1mCREATE INDEX `index_themes_references_on_ref_source` ON `themes_references` (`ref_source`)[0m
+2012-03-13 19:00:46 DEBUG    [1m[35m (66.1ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('135')
+2012-03-13 19:00:46 INFO  Migrating to UpdateRejects (136)
+2012-03-13 19:00:46 DEBUG    [1m[36m (310.3ms)[0m  [1mALTER TABLE `rejects` CHANGE `data` `data` text DEFAULT NULL[0m
+2012-03-13 19:00:46 DEBUG    [1m[35m (55.0ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('136')
+2012-03-13 19:00:46 INFO  Migrating to LogGenericUpdate (137)
+2012-03-13 19:00:46 DEBUG    [1m[36m (241.1ms)[0m  [1mALTER TABLE `log_cart_usages` ADD `host` varchar(255)[0m
+2012-03-13 19:00:47 DEBUG    [1m[35m (309.2ms)[0m  ALTER TABLE `log_collection_group_usages` ADD `host` varchar(255)
+2012-03-13 19:00:47 DEBUG    [1m[36m (334.7ms)[0m  [1mALTER TABLE `log_consults` ADD `host` varchar(255)[0m
+2012-03-13 19:00:47 DEBUG    [1m[35m (286.3ms)[0m  ALTER TABLE `log_facette_usages` ADD `host` varchar(255)
+2012-03-13 19:00:48 DEBUG    [1m[36m (914.1ms)[0m  [1mALTER TABLE `log_mail_usages` ADD `host` varchar(255)[0m
+2012-03-13 19:00:49 DEBUG    [1m[35m (647.7ms)[0m  ALTER TABLE `log_print_usages` ADD `host` varchar(255)
+2012-03-13 19:00:49 DEBUG    [1m[36m (518.9ms)[0m  [1mALTER TABLE `log_rebonce_usages` ADD `host` varchar(255)[0m
+2012-03-13 19:00:50 DEBUG    [1m[35m (302.8ms)[0m  ALTER TABLE `log_rss_usages` ADD `host` varchar(255)
+2012-03-13 19:00:50 DEBUG    [1m[36m (276.1ms)[0m  [1mALTER TABLE `log_search_words` ADD `host` varchar(255)[0m
+2012-03-13 19:00:50 DEBUG    [1m[35m (40.9ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('137')
+2012-03-13 19:00:50 INFO  Migrating to UpdateControlAddIndex (138)
+2012-03-13 19:00:50 DEBUG    [1m[36m (327.9ms)[0m  [1mCREATE INDEX `index_controls_on_collection_id` ON `controls` (`collection_id`)[0m
+2012-03-13 19:00:50 DEBUG    [1m[35m (49.2ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('138')
+2012-03-13 19:00:50 INFO  Migrating to UpdateMetadataAddDclanguage (139)
+2012-03-13 19:00:51 DEBUG    [1m[36m (374.5ms)[0m  [1mALTER TABLE `metadatas` ADD `dc_language` varchar(255)[0m
+2012-03-13 19:00:51 DEBUG    [1m[35m (49.3ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('139')
+2012-03-13 19:00:51 INFO  Migrating to CreateHarvestSchedule (140)
+2012-03-13 19:00:51 DEBUG    [1m[36m (211.0ms)[0m  [1mCREATE TABLE `harvest_schedules` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `time` time NOT NULL, `collection_id` int DEFAULT 0) ENGINE=InnoDB[0m
+2012-03-13 19:00:52 DEBUG    [1m[35m (827.5ms)[0m  ALTER TABLE harvest_schedules add day ENUM("Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday") NOT NULL;
+2012-03-13 19:00:52 DEBUG    [1m[36m (292.4ms)[0m  [1mCREATE INDEX `index_harvest_schedules_on_collection_id` ON `harvest_schedules` (`collection_id`)[0m
+2012-03-13 19:00:52 DEBUG    [1m[35m (333.9ms)[0m  CREATE UNIQUE INDEX `index_harvest_schedules_on_collection_id_and_day_and_time` ON `harvest_schedules` (`collection_id`, `day`, `time`)
+2012-03-13 19:00:53 DEBUG    [1m[36m (49.4ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('140')[0m
+2012-03-13 19:00:53 INFO  Migrating to UpdateCollectionAlterHarvested (141)
+2012-03-13 19:00:53 DEBUG    [1m[35m (251.1ms)[0m  ALTER TABLE `collections` CHANGE `harvested` `harvested` datetime DEFAULT NULL
+2012-03-13 19:00:53 DEBUG    [1m[36m (49.3ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('141')[0m
+2012-03-13 19:00:53 INFO  Migrating to UpdateCollectionAddOaiset (142)
+2012-03-13 19:00:53 DEBUG    [1m[35m (216.1ms)[0m  ALTER TABLE `collections` ADD `oai_set` varchar(255) DEFAULT NULL
+2012-03-13 19:00:53 DEBUG    [1m[36m (49.3ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('142')[0m
+2012-03-13 19:00:53 INFO  Migrating to CreateNotices (143)
+2012-03-13 19:00:53 DEBUG    [1m[35m (240.6ms)[0m  CREATE TABLE `notices` (`[:doc_identifier, :doc_collection_id]` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `doc_identifier` varchar(255) NOT NULL, `doc_collection_id` int(11) NOT NULL, `created_at` datetime, `dc_title` varchar(255), `dc_author` varchar(255), `dc_type` varchar(255), `notes_count` int(11) DEFAULT 0, `notes_avg` float DEFAULT 0.0, `comments_count` int(11) DEFAULT 0, `isbn` varchar(255), `ptitle` varchar(255)) ENGINE=InnoDB
+2012-03-13 19:00:53 DEBUG    [1m[36m (41.0ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('143')[0m
+2012-03-13 19:00:53 INFO  Migrating to CreateComments (144)
+2012-03-13 19:00:54 DEBUG    [1m[35m (181.5ms)[0m  CREATE TABLE `comments` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `comment_date` datetime, `content` varchar(255) NOT NULL, `uuid` varchar(255) NOT NULL, `related_note` int(11), `state` int(11), `state_manager` varchar(255), `state_date` datetime NOT NULL, `last_modified_date` datetime NOT NULL, `comment_relevance` int(11), `alias_user` varchar(255), `object` int(11), `object_id` varchar(255)) ENGINE=InnoDB
+2012-03-13 19:00:54 DEBUG    [1m[36m (41.1ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('144')[0m
+2012-03-13 19:00:54 INFO  Migrating to CreateObjectsTags (146)
+2012-03-13 19:00:54 DEBUG    [1m[35m (165.0ms)[0m  CREATE TABLE `objects_tags` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `tag_date` DateTime, `uuid` varchar(255) NOT NULL, `tag_id` int(11) NOT NULL, `state` int(11), `state_manager` varchar(255), `state_date` DateTime NOT NULL, `last_modified_date` DateTime NOT NULL, `object` int(11), `object_id` varchar(255)) ENGINE=InnoDB
+2012-03-13 19:00:54 DEBUG    [1m[36m (49.4ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('146')[0m
+2012-03-13 19:00:54 INFO  Migrating to CreateCommunityUsers (147)
+2012-03-13 19:00:54 DEBUG    [1m[35m (150.8ms)[0m  CREATE TABLE `community_users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `uuid` varchar(255) NOT NULL, `name` varchar(255)) ENGINE=InnoDB
+2012-03-13 19:00:54 DEBUG    [1m[36m (49.4ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('147')[0m
+2012-03-13 19:00:54 INFO  Migrating to UpdateJobQueuesAddCollectionId (148)
+2012-03-13 19:00:54 DEBUG    [1m[35m (291.2ms)[0m  ALTER TABLE `job_queues` ADD `collection_id` int(11) NOT NULL
+2012-03-13 19:00:55 DEBUG    [1m[36m (316.8ms)[0m  [1mCREATE INDEX `index_job_queues_on_collection_id` ON `job_queues` (`collection_id`)[0m
+2012-03-13 19:00:55 DEBUG    [1m[35m (41.0ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('148')
+2012-03-13 19:00:55 INFO  Migrating to CreateUserRecords (150)
+2012-03-13 19:00:55 DEBUG    [1m[36m (131.5ms)[0m  [1mCREATE TABLE `user_records` (`[:doc_identifier, :doc_collection_id, :uuid]` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `doc_identifier` varchar(255) NOT NULL, `doc_collection_id` int(11) NOT NULL, `uuid` varchar(255) NOT NULL, `date_insert` datetime) ENGINE=InnoDB[0m
+2012-03-13 19:00:55 DEBUG    [1m[35m (41.0ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('150')
+2012-03-13 19:00:55 INFO  Migrating to CreateLists (151)
+2012-03-13 19:00:55 DEBUG    [1m[36m (157.5ms)[0m  [1mCREATE TABLE `lists` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `state` int(11), `title` varchar(255), `ptitle` text, `description` text, `updated_at` datetime, `created_at` datetime, `uuid` varchar(255), `date_public` datetime, `date_end_public` datetime, `notes_count` int(11) DEFAULT 0, `notes_avg` float DEFAULT 0.0, `comments_count` int(11) DEFAULT 0) ENGINE=InnoDB[0m
+2012-03-13 19:00:56 DEBUG    [1m[35m (865.5ms)[0m  CREATE INDEX `index_lists_on_uuid` ON `lists` (`uuid`)
+2012-03-13 19:00:56 DEBUG    [1m[36m (90.4ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('151')[0m
+2012-03-13 19:00:56 INFO  Migrating to CreateListUserRecords (152)
+2012-03-13 19:00:56 DEBUG    [1m[35m (251.0ms)[0m  CREATE TABLE `list_user_records` (`[:doc_identifier, :doc_collection_id, :uuid, :list_id]` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `doc_identifier` varchar(255) NOT NULL, `doc_collection_id` int(11) NOT NULL, `uuid` varchar(255) NOT NULL, `list_id` int(11) NOT NULL, `date_insert` datetime) ENGINE=InnoDB
+2012-03-13 19:00:56 DEBUG    [1m[36m (105.6ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('152')[0m
+2012-03-13 19:00:56 INFO  Migrating to CreateTags (153)
+2012-03-13 19:00:57 DEBUG    [1m[35m (514.4ms)[0m  CREATE TABLE `tags` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `label` varchar(255) NOT NULL) ENGINE=InnoDB
+2012-03-13 19:00:57 DEBUG    [1m[36m (299.8ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('153')[0m
+2012-03-13 19:00:57 INFO  Migrating to CreateRssFeeds (154)
+2012-03-13 19:00:58 DEBUG    [1m[35m (462.9ms)[0m  CREATE TABLE `rss_feeds` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL, `name` varchar(255) NOT NULL, `full_name` varchar(255) NOT NULL, `primary_document_type` int(11), `new_docs` int(11), `isbn_issn_nullable` int(11), `collection_group` int(11), `solr_request` varchar(255) NOT NULL, `update_periodicity` int(11), `url` varchar(255)) ENGINE=InnoDB
+2012-03-13 19:00:58 DEBUG    [1m[36m (190.0ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('154')[0m
+2012-03-13 19:00:58 INFO  Migrating to UpdateCollectionsAddAvailability (155)
+2012-03-13 19:00:59 DEBUG    [1m[35m (729.9ms)[0m  ALTER TABLE `collections` ADD `availability` varchar(255) DEFAULT NULL
+2012-03-13 19:00:59 DEBUG    [1m[36m (40.9ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('155')[0m
+2012-03-13 19:00:59 INFO  Migrating to CreateManageRoles (156)
+2012-03-13 19:01:41 DEBUG  INIT MEMCACHE ["127.0.0.1", "10.1.2.111:11211", "10.1.2.112:11211"]
+2012-03-13 19:01:42 DEBUG    [1m[36m (0.5ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+2012-03-13 19:01:42 INFO  Migrating to CreateRecords (1)
+2012-03-13 19:01:42 INFO  Migrating to CreateCollections (2)
+2012-03-13 19:01:42 INFO  Migrating to CreateUsers (3)
+2012-03-13 19:01:42 INFO  Migrating to AddSessions (4)
+2012-03-13 19:01:42 INFO  Migrating to CreateCachedSearches (5)
+2012-03-13 19:01:42 INFO  Migrating to CreateHits (6)
+2012-03-13 19:01:42 INFO  Migrating to CreateCachedRecords (7)
+2012-03-13 19:01:42 INFO  Migrating to CreateControls (8)
+2012-03-13 19:01:42 INFO  Migrating to CreateMetadatas (9)
+2012-03-13 19:01:42 INFO  Migrating to CreateSiteConfigs (10)
+2012-03-13 19:01:42 INFO  Migrating to UpdateCachedSearches (11)
+2012-03-13 19:01:42 INFO  Migrating to UpdateCachedRecords (12)
+2012-03-13 19:01:42 INFO  Migrating to CreateProviders (13)
+2012-03-13 19:01:42 INFO  Migrating to CreateCoverages (14)
+2012-03-13 19:01:42 INFO  Migrating to CreateCollectionGroups (15)
+2012-03-13 19:01:42 INFO  Migrating to CreateCollectionGroupMembers (16)
+2012-03-13 19:01:42 INFO  Migrating to UpdateProviders (17)
+2012-03-13 19:01:42 INFO  Migrating to UpdateCachedRecordsAddStatus (18)
+2012-03-13 19:01:42 INFO  Migrating to UpdateCachedRecordsRenameDateSaved (19)
+2012-03-13 19:01:42 INFO  Migrating to UpdateCachedRecordsAddTime (20)
+2012-03-13 19:01:42 INFO  Migrating to UpdateCollectionsAddProxy (21)
+2012-03-13 19:01:42 INFO  Migrating to DeleteSessions (22)
+2012-03-13 19:01:42 INFO  Migrating to SqlSessionStoreSetup (23)
+2012-03-13 19:01:42 INFO  Migrating to UpdateMetadatas (24)
+2012-03-13 19:01:42 INFO  Migrating to CreateJobQueues (25)
+2012-03-13 19:01:42 INFO  Migrating to UpdateJobQueuesAddThreadId (26)
+2012-03-13 19:01:42 INFO  Migrating to UpdateJobQueuesAddDatabaseName (27)
+2012-03-13 19:01:42 INFO  Migrating to UpdateControlsAddCollectionName (28)
+2012-03-13 19:01:42 INFO  Migrating to UpdateCollectionsAddHarvested (29)
+2012-03-13 19:01:42 INFO  Migrating to UpdateCollectionsAddIsParent (30)
+2012-03-13 19:01:42 INFO  Migrating to CreatePrimaryDocumentTypes (101)
+2012-03-13 19:01:42 INFO  Migrating to CreateDocumentTypes (102)
+2012-03-13 19:01:42 INFO  Migrating to CreateSearchTabs (103)
+2012-03-13 19:01:42 INFO  Migrating to CreateSearchTabFilters (104)
+2012-03-13 19:01:42 INFO  Migrating to UpdateCollectionGroups (105)
+2012-03-13 19:01:42 INFO  Migrating to UpdateCollectionGroupMembers (106)
+2012-03-13 19:01:42 INFO  Migrating to UpdateCollections (107)
+2012-03-13 19:01:42 INFO  Migrating to CreateSearchTabSubjects (108)
+2012-03-13 19:01:42 INFO  Migrating to CreateLogConsults (109)
+2012-03-13 19:01:42 INFO  Migrating to CreateLogRssUsages (110)
+2012-03-13 19:01:42 INFO  Migrating to CreateLogPrintUsages (111)
+2012-03-13 19:01:42 INFO  Migrating to CreateLogMailUsages (112)
+2012-03-13 19:01:42 INFO  Migrating to CreateLogFacetteUsages (113)
+2012-03-13 19:01:42 INFO  Migrating to CreateLogCartUsages (114)
+2012-03-13 19:01:42 INFO  Migrating to CreateLogCollectionGroupUsages (115)
+2012-03-13 19:01:42 INFO  Migrating to CreateLogRebonceUsages (116)
+2012-03-13 19:01:42 INFO  Migrating to UpdateSearchTabSubjects (117)
+2012-03-13 19:01:42 INFO  Migrating to UpdateLogCollectionGroupUsages (118)
+2012-03-13 19:01:42 INFO  Migrating to CreateLogSearchWords (119)
+2012-03-13 19:01:42 INFO  Migrating to UpdateSearchTabs (120)
+2012-03-13 19:01:42 INFO  Migrating to UpdateSearchTabFilters (121)
+2012-03-13 19:01:42 INFO  Migrating to Update2SearchTabSubjects (122)
+2012-03-13 19:01:42 INFO  Migrating to Update3SearchTabSubjects (123)
+2012-03-13 19:01:42 INFO  Migrating to Update2Collections (124)
+2012-03-13 19:01:42 INFO  Migrating to Update2SearchTabs (125)
+2012-03-13 19:01:42 INFO  Migrating to UpdateCollectionTabsHarvestingDay (126)
+2012-03-13 19:01:42 INFO  Migrating to Update4SearchTabSubjects (127)
+2012-03-13 19:01:42 INFO  Migrating to UpdateCollectionGroupsAddRank (128)
+2012-03-13 19:01:42 INFO  Migrating to Update5SearchTabSubjects (129)
+2012-03-13 19:01:42 INFO  Migrating to CreateEditorials (130)
+2012-03-13 19:01:42 INFO  Migrating to CreateRejects (131)
+2012-03-13 19:01:42 INFO  Migrating to UpdateCachedRecordsAddTotalHits (132)
+2012-03-13 19:01:42 INFO  Migrating to UpdateCollectionsAddIsPrivate (133)
+2012-03-13 19:01:42 INFO  Migrating to UpdateJobQueuesAddTotalHits (134)
+2012-03-13 19:01:42 INFO  Migrating to CreateThemes (135)
+2012-03-13 19:01:42 INFO  Migrating to UpdateRejects (136)
+2012-03-13 19:01:42 INFO  Migrating to LogGenericUpdate (137)
+2012-03-13 19:01:42 INFO  Migrating to UpdateControlAddIndex (138)
+2012-03-13 19:01:42 INFO  Migrating to UpdateMetadataAddDclanguage (139)
+2012-03-13 19:01:42 INFO  Migrating to CreateHarvestSchedule (140)
+2012-03-13 19:01:42 INFO  Migrating to UpdateCollectionAlterHarvested (141)
+2012-03-13 19:01:42 INFO  Migrating to UpdateCollectionAddOaiset (142)
+2012-03-13 19:01:42 INFO  Migrating to CreateNotices (143)
+2012-03-13 19:01:42 INFO  Migrating to CreateComments (144)
+2012-03-13 19:01:42 INFO  Migrating to CreateObjectsTags (146)
+2012-03-13 19:01:42 INFO  Migrating to CreateCommunityUsers (147)
+2012-03-13 19:01:42 INFO  Migrating to UpdateJobQueuesAddCollectionId (148)
+2012-03-13 19:01:42 INFO  Migrating to CreateUserRecords (150)
+2012-03-13 19:01:42 INFO  Migrating to CreateLists (151)
+2012-03-13 19:01:42 INFO  Migrating to CreateListUserRecords (152)
+2012-03-13 19:01:42 INFO  Migrating to CreateTags (153)
+2012-03-13 19:01:42 INFO  Migrating to CreateRssFeeds (154)
+2012-03-13 19:01:42 INFO  Migrating to UpdateCollectionsAddAvailability (155)
+2012-03-13 19:01:42 INFO  Migrating to CreateManageRoles (156)
+2012-03-13 19:01:43 DEBUG    [1m[35m (545.3ms)[0m  CREATE TABLE `manage_roles` (`[:id_role]` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `id_role` varchar(255)) ENGINE=InnoDB
+2012-03-13 19:01:43 DEBUG    [1m[36m (41.0ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('156')[0m
+2012-03-13 19:01:43 INFO  Migrating to CreateManagePermissions (157)
+2012-03-13 19:02:33 DEBUG  INIT MEMCACHE ["127.0.0.1", "10.1.2.111:11211", "10.1.2.112:11211"]
+2012-03-13 19:02:34 DEBUG    [1m[36m (0.5ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+2012-03-13 19:02:34 INFO  Migrating to CreateRecords (1)
+2012-03-13 19:02:34 INFO  Migrating to CreateCollections (2)
+2012-03-13 19:02:34 INFO  Migrating to CreateUsers (3)
+2012-03-13 19:02:34 INFO  Migrating to AddSessions (4)
+2012-03-13 19:02:34 INFO  Migrating to CreateCachedSearches (5)
+2012-03-13 19:02:34 INFO  Migrating to CreateHits (6)
+2012-03-13 19:02:34 INFO  Migrating to CreateCachedRecords (7)
+2012-03-13 19:02:34 INFO  Migrating to CreateControls (8)
+2012-03-13 19:02:34 INFO  Migrating to CreateMetadatas (9)
+2012-03-13 19:02:34 INFO  Migrating to CreateSiteConfigs (10)
+2012-03-13 19:02:34 INFO  Migrating to UpdateCachedSearches (11)
+2012-03-13 19:02:34 INFO  Migrating to UpdateCachedRecords (12)
+2012-03-13 19:02:34 INFO  Migrating to CreateProviders (13)
+2012-03-13 19:02:34 INFO  Migrating to CreateCoverages (14)
+2012-03-13 19:02:34 INFO  Migrating to CreateCollectionGroups (15)
+2012-03-13 19:02:34 INFO  Migrating to CreateCollectionGroupMembers (16)
+2012-03-13 19:02:34 INFO  Migrating to UpdateProviders (17)
+2012-03-13 19:02:34 INFO  Migrating to UpdateCachedRecordsAddStatus (18)
+2012-03-13 19:02:34 INFO  Migrating to UpdateCachedRecordsRenameDateSaved (19)
+2012-03-13 19:02:34 INFO  Migrating to UpdateCachedRecordsAddTime (20)
+2012-03-13 19:02:34 INFO  Migrating to UpdateCollectionsAddProxy (21)
+2012-03-13 19:02:34 INFO  Migrating to DeleteSessions (22)
+2012-03-13 19:02:34 INFO  Migrating to SqlSessionStoreSetup (23)
+2012-03-13 19:02:34 INFO  Migrating to UpdateMetadatas (24)
+2012-03-13 19:02:34 INFO  Migrating to CreateJobQueues (25)
+2012-03-13 19:02:34 INFO  Migrating to UpdateJobQueuesAddThreadId (26)
+2012-03-13 19:02:34 INFO  Migrating to UpdateJobQueuesAddDatabaseName (27)
+2012-03-13 19:02:34 INFO  Migrating to UpdateControlsAddCollectionName (28)
+2012-03-13 19:02:34 INFO  Migrating to UpdateCollectionsAddHarvested (29)
+2012-03-13 19:02:34 INFO  Migrating to UpdateCollectionsAddIsParent (30)
+2012-03-13 19:02:34 INFO  Migrating to CreatePrimaryDocumentTypes (101)
+2012-03-13 19:02:34 INFO  Migrating to CreateDocumentTypes (102)
+2012-03-13 19:02:34 INFO  Migrating to CreateSearchTabs (103)
+2012-03-13 19:02:34 INFO  Migrating to CreateSearchTabFilters (104)
+2012-03-13 19:02:34 INFO  Migrating to UpdateCollectionGroups (105)
+2012-03-13 19:02:34 INFO  Migrating to UpdateCollectionGroupMembers (106)
+2012-03-13 19:02:34 INFO  Migrating to UpdateCollections (107)
+2012-03-13 19:02:34 INFO  Migrating to CreateSearchTabSubjects (108)
+2012-03-13 19:02:34 INFO  Migrating to CreateLogConsults (109)
+2012-03-13 19:02:34 INFO  Migrating to CreateLogRssUsages (110)
+2012-03-13 19:02:34 INFO  Migrating to CreateLogPrintUsages (111)
+2012-03-13 19:02:34 INFO  Migrating to CreateLogMailUsages (112)
+2012-03-13 19:02:34 INFO  Migrating to CreateLogFacetteUsages (113)
+2012-03-13 19:02:34 INFO  Migrating to CreateLogCartUsages (114)
+2012-03-13 19:02:34 INFO  Migrating to CreateLogCollectionGroupUsages (115)
+2012-03-13 19:02:34 INFO  Migrating to CreateLogRebonceUsages (116)
+2012-03-13 19:02:34 INFO  Migrating to UpdateSearchTabSubjects (117)
+2012-03-13 19:02:34 INFO  Migrating to UpdateLogCollectionGroupUsages (118)
+2012-03-13 19:02:34 INFO  Migrating to CreateLogSearchWords (119)
+2012-03-13 19:02:34 INFO  Migrating to UpdateSearchTabs (120)
+2012-03-13 19:02:34 INFO  Migrating to UpdateSearchTabFilters (121)
+2012-03-13 19:02:34 INFO  Migrating to Update2SearchTabSubjects (122)
+2012-03-13 19:02:34 INFO  Migrating to Update3SearchTabSubjects (123)
+2012-03-13 19:02:34 INFO  Migrating to Update2Collections (124)
+2012-03-13 19:02:34 INFO  Migrating to Update2SearchTabs (125)
+2012-03-13 19:02:34 INFO  Migrating to UpdateCollectionTabsHarvestingDay (126)
+2012-03-13 19:02:34 INFO  Migrating to Update4SearchTabSubjects (127)
+2012-03-13 19:02:34 INFO  Migrating to UpdateCollectionGroupsAddRank (128)
+2012-03-13 19:02:34 INFO  Migrating to Update5SearchTabSubjects (129)
+2012-03-13 19:02:34 INFO  Migrating to CreateEditorials (130)
+2012-03-13 19:02:34 INFO  Migrating to CreateRejects (131)
+2012-03-13 19:02:34 INFO  Migrating to UpdateCachedRecordsAddTotalHits (132)
+2012-03-13 19:02:34 INFO  Migrating to UpdateCollectionsAddIsPrivate (133)
+2012-03-13 19:02:34 INFO  Migrating to UpdateJobQueuesAddTotalHits (134)
+2012-03-13 19:02:34 INFO  Migrating to CreateThemes (135)
+2012-03-13 19:02:34 INFO  Migrating to UpdateRejects (136)
+2012-03-13 19:02:34 INFO  Migrating to LogGenericUpdate (137)
+2012-03-13 19:02:34 INFO  Migrating to UpdateControlAddIndex (138)
+2012-03-13 19:02:34 INFO  Migrating to UpdateMetadataAddDclanguage (139)
+2012-03-13 19:02:34 INFO  Migrating to CreateHarvestSchedule (140)
+2012-03-13 19:02:34 INFO  Migrating to UpdateCollectionAlterHarvested (141)
+2012-03-13 19:02:34 INFO  Migrating to UpdateCollectionAddOaiset (142)
+2012-03-13 19:02:34 INFO  Migrating to CreateNotices (143)
+2012-03-13 19:02:34 INFO  Migrating to CreateComments (144)
+2012-03-13 19:02:34 INFO  Migrating to CreateObjectsTags (146)
+2012-03-13 19:02:34 INFO  Migrating to CreateCommunityUsers (147)
+2012-03-13 19:02:34 INFO  Migrating to UpdateJobQueuesAddCollectionId (148)
+2012-03-13 19:02:34 INFO  Migrating to CreateUserRecords (150)
+2012-03-13 19:02:34 INFO  Migrating to CreateLists (151)
+2012-03-13 19:02:34 INFO  Migrating to CreateListUserRecords (152)
+2012-03-13 19:02:34 INFO  Migrating to CreateTags (153)
+2012-03-13 19:02:34 INFO  Migrating to CreateRssFeeds (154)
+2012-03-13 19:02:34 INFO  Migrating to UpdateCollectionsAddAvailability (155)
+2012-03-13 19:02:34 INFO  Migrating to CreateManageRoles (156)
+2012-03-13 19:02:34 INFO  Migrating to CreateManagePermissions (157)
+2012-03-13 19:02:34 DEBUG    [1m[35m (191.8ms)[0m  CREATE TABLE `manage_permissions` (`[:id_perm]` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `id_perm` varchar(255) NOT NULL) ENGINE=InnoDB
+2012-03-13 19:02:34 WARN  DEPRECATION WARNING: Calling set_primary_key is deprecated. Please use `self.primary_key = 'the_name'` instead. (called from <class:ManagePermission> at /srv/src/bpifs/app/models/manage_permission.rb:5)
+2012-03-13 19:02:34 DEBUG    [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+2012-03-13 19:02:34 DEBUG    [1m[35mSQL (18.2ms)[0m  INSERT INTO `manage_permissions` (`[:id_perm]`, `id_perm`) VALUES (NULL, 'REC')
+2012-03-13 19:02:35 DEBUG    [1m[36m (46.8ms)[0m  [1mCOMMIT[0m
+2012-03-13 19:02:35 DEBUG    [1m[35m (0.4ms)[0m  BEGIN
+2012-03-13 19:02:35 DEBUG    [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO `manage_permissions` (`[:id_perm]`, `id_perm`) VALUES (NULL, 'ACC')[0m
+2012-03-13 19:02:35 DEBUG    [1m[35m (46.9ms)[0m  COMMIT
+2012-03-13 19:02:35 DEBUG    [1m[36m (49.5ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('157')[0m
+2012-03-13 19:02:35 INFO  Migrating to CreateManageDroits (158)
+2012-03-13 19:02:35 DEBUG    [1m[35m (123.3ms)[0m  CREATE TABLE `manage_droits` (`[:id_perm, :id_role, :id_collection, :id_lieu]` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `id_perm` varchar(255) NOT NULL, `id_role` varchar(255) NOT NULL, `id_lieu` varchar(255) NOT NULL, `id_collection` int NOT NULL) ENGINE=InnoDB
+2012-03-13 19:02:35 DEBUG    [1m[36m (41.0ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('158')[0m
+2012-03-13 19:02:35 INFO  Migrating to UpdateDocumentTypesAddCollectionId (159)
+2012-03-13 19:02:35 DEBUG    [1m[35m (290.8ms)[0m  ALTER TABLE `document_types` DROP `document_type`
+2012-03-13 19:02:35 DEBUG    [1m[36m (250.8ms)[0m  [1mALTER TABLE `document_types` ADD `collection_id` int(11)[0m
+2012-03-13 19:02:36 DEBUG    [1m[35m (469.2ms)[0m  ALTER TABLE `document_types` ADD `primary_document_type` int(11) DEFAULT 1
+2012-03-13 19:02:36 DEBUG    [1m[36m (220.8ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('159')[0m
+2012-03-13 19:02:36 INFO  Migrating to CreateCommentUserEvaluations (160)
+2012-03-13 19:02:36 DEBUG    [1m[35m (218.2ms)[0m  CREATE TABLE `comment_user_evaluations` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `uuid` varchar(255) NOT NULL, `comment_id` int(11) NOT NULL, `comment_relevance` int(11) NOT NULL, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+2012-03-13 19:02:36 DEBUG    [1m[36m (49.4ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('160')[0m
+2012-03-13 19:02:36 INFO  Migrating to UpdateCommentsAddCommentRelevant (161)
+2012-03-13 19:02:37 DEBUG    [1m[35m (266.2ms)[0m  ALTER TABLE `comments` ADD `count_comment_relevant` int(11) DEFAULT 0
+2012-03-13 19:02:37 DEBUG    [1m[36m (225.7ms)[0m  [1mALTER TABLE `comments` ADD `count_comment_not_relevant` int(11) DEFAULT 0[0m
+2012-03-13 19:02:37 DEBUG    [1m[35m (41.0ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('161')
+2012-03-13 19:02:37 INFO  Migrating to UpdatePrimaryDocumentTypesAddNewPeriod (162)
+2012-03-13 19:02:37 DEBUG    [1m[36m (425.0ms)[0m  [1mALTER TABLE `primary_document_types` ADD `new_period` int(11)[0m
+2012-03-13 19:02:37 DEBUG    [1m[35m (0.1ms)[0m  BEGIN
+2012-03-13 19:02:38 DEBUG    [1m[36mPrimaryDocumentType Exists (69.7ms)[0m  [1mSELECT 1 FROM `primary_document_types` WHERE `primary_document_types`.`name` = BINARY 'None' LIMIT 1[0m
+2012-03-13 19:02:38 DEBUG    [1m[35mSQL (21.0ms)[0m  INSERT INTO `primary_document_types` (`created_at`, `name`, `new_period`, `updated_at`) VALUES ('2012-03-13 18:02:38', 'None', 0, '2012-03-13 18:02:38')
+2012-03-13 19:02:38 DEBUG    [1m[36m (44.5ms)[0m  [1mCOMMIT[0m
+2012-03-13 19:02:38 DEBUG    [1m[35m (49.6ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('162')
+2012-03-13 19:02:38 INFO  Migrating to UpdateNoticesAddListsCount (163)
+2012-03-13 19:02:38 DEBUG    [1m[36m (281.8ms)[0m  [1mALTER TABLE `notices` ADD `lists_count` int(11) DEFAULT 0[0m
+2012-03-13 19:02:38 DEBUG    [1m[35m (49.2ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('163')
+2012-03-13 19:02:38 INFO  Migrating to UpdateCachedRecordsAddPermissions (164)
+2012-03-13 19:02:40 DEBUG    [1m[36m (2110.3ms)[0m  [1mALTER TABLE `cached_records` ADD `id_perm` varchar(255)[0m
+2012-03-13 19:02:41 DEBUG    [1m[35m (596.3ms)[0m  ALTER TABLE `cached_records` ADD `id_role` varchar(255)
+2012-03-13 19:02:41 DEBUG    [1m[36m (556.2ms)[0m  [1mALTER TABLE `cached_records` ADD `id_lieu` varchar(255)[0m
+2012-03-13 19:02:42 DEBUG    [1m[35m (109.5ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('164')
+2012-03-13 19:02:42 INFO  Migrating to CreateLogListMovement (165)
+2012-03-13 19:02:42 DEBUG    [1m[36m (343.3ms)[0m  [1mCREATE TABLE `log_list_movement` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `idlist` varchar(255), `movement_type` varchar(255), `host` varchar(255), `uuid` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+2012-03-13 19:02:42 DEBUG    [1m[35m (136.7ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('165')
+2012-03-13 19:02:42 INFO  Migrating to CreateLogInteractionUsages (166)
+2012-03-13 19:02:42 DEBUG    [1m[36m (247.7ms)[0m  [1mCREATE TABLE `log_interaction_usages` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `idObject` varchar(255), `object_type` int(11), `interaction_type` int(11), `movement` int(11), `host` varchar(255), `uuid` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+2012-03-13 19:02:42 DEBUG    [1m[35m (103.8ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('166')
+2012-03-13 19:02:42 INFO  Migrating to CreateLogSaveNotice (167)
+2012-03-13 19:02:43 DEBUG    [1m[36m (309.7ms)[0m  [1mCREATE TABLE `log_save_notice` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `idDoc` varchar(255), `saveIn` int(11), `host` varchar(255), `uuid` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+2012-03-13 19:02:43 DEBUG    [1m[35m (96.9ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('167')
+2012-03-13 19:02:43 INFO  Migrating to CreateRegisterSearch (169)
+2012-03-13 19:02:43 DEBUG    [1m[36m (305.3ms)[0m  [1mCREATE TABLE `register_search` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `mode` int(11), `mobile` int(11), `sort_type` varchar(255), `uuid` varchar(255), `collection` varchar(255), `search_last_date` datetime) ENGINE=InnoDB[0m
+2012-03-13 19:02:43 DEBUG    [1m[35m (99.7ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('169')
+2012-03-13 19:02:43 INFO  Migrating to CreateLinkingWord (170)
+2012-03-13 19:02:43 DEBUG    [1m[36m (147.6ms)[0m  [1mCREATE TABLE `linking_word` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `id_historical_search` int(11), `word` varchar(255), `link_type` varchar(255), `query_type` varchar(255)) ENGINE=InnoDB[0m
+2012-03-13 19:02:43 DEBUG    [1m[35m (49.4ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('170')
+2012-03-13 19:02:43 INFO  Migrating to UpdateListUserRecordsAddRank (171)
+2012-03-13 19:02:44 DEBUG    [1m[36m (590.4ms)[0m  [1mALTER TABLE `list_user_records` ADD `rank` int(11) DEFAULT 0[0m
+2012-03-13 19:02:44 DEBUG    [1m[35m (66.9ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('171')
+2012-03-13 19:02:44 INFO  Migrating to CreateSubscriptions (172)
+2012-03-13 19:02:44 DEBUG    [1m[36m (150.2ms)[0m  [1mCREATE TABLE `subscriptions` (`[:object, :object_id, :uuid]` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `object_id` varchar(255), `object` int(11), `subscription_date` datetime, `modification_date` datetime, `uuid` varchar(255), `mail_notification` int(11)) ENGINE=InnoDB[0m
+2012-03-13 19:02:44 DEBUG    [1m[35m (49.5ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('172')
+2012-03-13 19:02:44 INFO  Migrating to CreateCommentsAlerts (173)
+2012-03-13 19:02:44 DEBUG    [1m[36m (173.9ms)[0m  [1mCREATE TABLE `comments_alerts` (`[:comment_id, :uuid]` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `comment_id` int(11) NOT NULL, `uuid` varchar(255) NOT NULL, `message` text, `send_date` datetime) ENGINE=InnoDB[0m
+2012-03-13 19:02:45 DEBUG    [1m[35m (220.1ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('173')
+2012-03-13 19:02:45 INFO  Migrating to UpdateComments (174)
+2012-03-13 19:02:45 DEBUG    [1m[36m (621.3ms)[0m  [1mALTER TABLE `comments` DROP `count_comment_relevant`[0m
+2012-03-13 19:02:46 DEBUG    [1m[35m (342.8ms)[0m  ALTER TABLE `comments` DROP `count_comment_not_relevant`
+2012-03-13 19:02:46 DEBUG    [1m[36m (259.9ms)[0m  [1mALTER TABLE `comments` DROP `related_note`[0m
+2012-03-13 19:02:46 DEBUG    [1m[35m (269.1ms)[0m  ALTER TABLE `comments` ADD `title` varchar(255)
+2012-03-13 19:02:46 DEBUG    [1m[36m (217.6ms)[0m  [1mALTER TABLE `comments` ADD `evaluation_count` int(11) DEFAULT 0[0m
+2012-03-13 19:02:47 DEBUG    [1m[35m (267.7ms)[0m  ALTER TABLE `comments` ADD `parent_id` int(11) DEFAULT NULL
+2012-03-13 19:02:47 DEBUG    [1m[36m (41.0ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('174')[0m
+2012-03-13 19:02:47 INFO  Migrating to UpdateNoticesAddDispo (175)
+2012-03-13 19:02:47 DEBUG    [1m[35m (266.2ms)[0m  ALTER TABLE `notices` ADD `aviability_count` int(11) DEFAULT 0
+2012-03-13 19:02:47 DEBUG    [1m[36m (40.8ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('175')[0m
+2012-03-13 19:02:47 INFO  Migrating to CreateObjectsCount (176)
+2012-03-13 19:02:47 DEBUG    [1m[35m (89.4ms)[0m  CREATE TABLE `objects_counts` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `object` int(11), `object_id` varchar(255), `lists_count` int(11) DEFAULT 0, `lists_count_public` int(11) DEFAULT 0, `comments_count` int(11) DEFAULT 0, `comments_count_public` int(11) DEFAULT 0, `subscriptions_count` int(11) DEFAULT 0, `notices_count` int(11) DEFAULT 0, `notices_count_public` int(11) DEFAULT 0, `tags_count` int(11) DEFAULT 0, `tags_count_public` int(11) DEFAULT 0) ENGINE=InnoDB
+2012-03-13 19:02:47 DEBUG    [1m[36m (49.5ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('176')[0m
+2012-03-13 19:02:47 INFO  Migrating to UpdateNoticesRemoveColumn (177)
+2012-03-13 19:02:48 DEBUG    [1m[35m (501.0ms)[0m  ALTER TABLE `notices` DROP `comments_count`
+2012-03-13 19:02:48 DEBUG    [1m[36m (484.2ms)[0m  [1mALTER TABLE `notices` DROP `lists_count`[0m
+2012-03-13 19:02:48 DEBUG    [1m[35m (41.1ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('177')
+2012-03-13 19:02:48 INFO  Migrating to UpdateCommentsRemoveColumn (179)
+2012-03-13 19:02:48 DEBUG    [1m[36m (258.4ms)[0m  [1mALTER TABLE `comments` ADD `note_id` int(11) DEFAULT 0[0m
+2012-03-13 19:02:49 DEBUG    [1m[35m (217.6ms)[0m  ALTER TABLE `comments` ADD `like_count` int(11) DEFAULT 0
+2012-03-13 19:02:49 DEBUG    [1m[36m (242.6ms)[0m  [1mALTER TABLE `comments` ADD `dont_like_count` int(11) DEFAULT 0[0m
+2012-03-13 19:02:49 DEBUG    [1m[35m (252.1ms)[0m  ALTER TABLE `comments` DROP `comment_relevance`
+2012-03-13 19:02:49 DEBUG    [1m[36m (267.7ms)[0m  [1mALTER TABLE `comments` ADD `comment_relevance` int(11) DEFAULT 0[0m
+2012-03-13 19:02:50 DEBUG    [1m[35m (217.8ms)[0m  ALTER TABLE `comments` DROP `evaluation_count`
+2012-03-13 19:02:50 DEBUG    [1m[36m (259.8ms)[0m  [1mALTER TABLE `comments` DROP `last_modified_date`[0m
+2012-03-13 19:02:50 DEBUG    [1m[35m (318.1ms)[0m  ALTER TABLE `comments` DROP `alias_user`
+2012-03-13 19:02:50 DEBUG    [1m[36m (49.3ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('179')[0m
+2012-03-13 19:02:50 INFO  Migrating to CreateNotes (181)
+2012-03-13 19:02:50 DEBUG    [1m[35m (123.1ms)[0m  CREATE TABLE `notes` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `note_date` datetime, `uuid` varchar(255), `note` int(11), `object` int(11), `object_id` varchar(255)) ENGINE=InnoDB
+2012-03-13 19:02:50 DEBUG    [1m[36m (49.4ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('181')[0m
+2012-03-13 19:02:50 INFO  Migrating to UpdateNameStateToWorkflow (182)
+2012-03-13 19:02:51 DEBUG    [1m[35m (237.6ms)[0m  ALTER TABLE `objects_tags` ADD `workflow` int(11) DEFAULT 0
+2012-03-13 19:02:51 DEBUG    [1m[36m (275.8ms)[0m  [1mALTER TABLE `comments` ADD `workflow` int(11) DEFAULT 0[0m
+2012-03-13 19:02:51 DEBUG    [1m[35m (5.3ms)[0m  SHOW COLUMNS FROM `comments` LIKE 'state_manager'
+2012-03-13 19:02:51 DEBUG    [1m[36m (298.4ms)[0m  [1mALTER TABLE `comments` CHANGE `state_manager` `workflow_manager` varchar(255) DEFAULT NULL[0m
+2012-03-13 19:02:51 DEBUG    [1m[35m (0.6ms)[0m  SHOW COLUMNS FROM `comments` LIKE 'state_date'
+2012-03-13 19:02:52 DEBUG    [1m[36m (257.2ms)[0m  [1mALTER TABLE `comments` CHANGE `state_date` `workflow_date` datetime NOT NULL[0m
+2012-03-13 19:02:52 DEBUG    [1m[35m (49.3ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('182')
+2012-03-13 19:02:52 INFO  Migrating to UpdateCommunityUsers (183)
+2012-03-13 19:02:52 DEBUG    [1m[36m (79.8ms)[0m  [1mDROP TABLE `community_users`[0m
+2012-03-13 19:02:52 DEBUG    [1m[35m (109.9ms)[0m  CREATE TABLE `community_users` (`[:uuid]` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `uuid` varchar(255) NOT NULL, `name` varchar(255), `user_type` varchar(255) DEFAULT 'default_user') ENGINE=InnoDB
+2012-03-13 19:02:52 DEBUG    [1m[36m (41.4ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('183')[0m
+2012-03-13 19:02:52 INFO  Migrating to UpdateCommunityUsersAddSubNoticesCount (184)
+2012-03-13 19:02:52 DEBUG    [1m[35m (309.4ms)[0m  ALTER TABLE `community_users` ADD `sub_notices_count` int(11) DEFAULT 0
+2012-03-13 19:02:52 DEBUG    [1m[36m (72.4ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('184')[0m
+2012-03-13 19:02:52 INFO  Migrating to UpdateObjectsTagsState (185)
+2012-03-13 19:02:52 DEBUG    [1m[35m (0.6ms)[0m  SHOW COLUMNS FROM `objects_tags` LIKE 'state_manager'
+2012-03-13 19:02:53 DEBUG    [1m[36m (464.5ms)[0m  [1mALTER TABLE `objects_tags` CHANGE `state_manager` `workflow_manager` varchar(255) DEFAULT NULL[0m
+2012-03-13 19:02:53 DEBUG    [1m[35m (0.6ms)[0m  SHOW COLUMNS FROM `objects_tags` LIKE 'state_date'
+2012-03-13 19:02:53 DEBUG    [1m[36m (640.5ms)[0m  [1mALTER TABLE `objects_tags` CHANGE `state_date` `workflow_date` datetime NOT NULL[0m
+2012-03-13 19:02:53 DEBUG    [1m[35m (116.0ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('185')
+2012-03-13 19:02:53 INFO  Migrating to UpdateCommunityUsersAddDescription (186)
+2012-03-13 19:02:54 DEBUG    [1m[36m (533.6ms)[0m  [1mALTER TABLE `community_users` ADD `description` varchar(255)[0m
+2012-03-13 19:02:54 DEBUG    [1m[35m (107.5ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('186')
+2012-03-13 19:02:54 INFO  Migrating to UpdateNoticesRemoveAviability (187)
+2012-03-13 19:02:55 DEBUG    [1m[36m (418.1ms)[0m  [1mALTER TABLE `notices` DROP `aviability_count`[0m
+2012-03-13 19:02:55 DEBUG    [1m[35m (40.9ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('187')
+2012-03-13 19:02:55 INFO  Migrating to UpdateSubscriptionsAddState (188)
+2012-03-13 19:02:55 DEBUG    [1m[36m (0.6ms)[0m  [1mSHOW COLUMNS FROM `subscriptions` LIKE 'modification_date'[0m
+2012-03-13 19:02:55 DEBUG    [1m[35m (314.6ms)[0m  ALTER TABLE `subscriptions` CHANGE `modification_date` `check_date` datetime DEFAULT NULL
+2012-03-13 19:02:55 DEBUG    [1m[36m (301.4ms)[0m  [1mALTER TABLE `subscriptions` ADD `send_mail_date` datetime[0m
+2012-03-13 19:02:56 DEBUG    [1m[35m (542.8ms)[0m  ALTER TABLE `subscriptions` ADD `change_state_date` datetime
+2012-03-13 19:02:57 DEBUG    [1m[36m (1452.7ms)[0m  [1mALTER TABLE `subscriptions` ADD `state` int(11) DEFAULT 0[0m
+2012-03-13 19:02:57 DEBUG    [1m[35m (107.7ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('188')
+2012-03-13 19:02:57 INFO  Migrating to CreateNoticesCheck (189)
+2012-03-13 19:02:58 DEBUG    [1m[36m (256.4ms)[0m  [1mCREATE TABLE `notices_checks` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `doc_collection_id` int(11) NOT NULL, `doc_identifier` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+2012-03-13 19:02:58 DEBUG    [1m[35m (41.0ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('189')
+2012-03-13 19:02:58 INFO  Migrating to UpdateTagsAddLabelFormat (190)
+2012-03-13 19:02:58 DEBUG    [1m[36m (491.5ms)[0m  [1mALTER TABLE `tags` ADD `label_format` varchar(255)[0m
+2012-03-13 19:02:58 DEBUG    [1m[35mTag Load (3.0ms)[0m  SELECT `tags`.* FROM `tags` 
+2012-03-13 19:02:58 DEBUG    [1m[36m (76.2ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('190')[0m
+2012-03-13 19:02:58 INFO  Migrating to UpdateNoticesAddUpdateDate (191)
+2012-03-13 19:02:59 DEBUG    [1m[35m (341.5ms)[0m  ALTER TABLE `notices` ADD `update_date` datetime
+2012-03-13 19:02:59 DEBUG    [1m[36m (40.9ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('191')[0m
+2012-03-13 19:02:59 INFO  Migrating to UpdateCollectionsAddActionsAllowed (192)
+2012-03-13 19:02:59 DEBUG    [1m[35m (377.6ms)[0m  ALTER TABLE `collections` ADD `actions_allowed` tinyint(1) DEFAULT 0
+2012-03-13 19:02:59 DEBUG    [1m[36m (71.2ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('192')[0m
+2012-03-13 19:02:59 INFO  Migrating to CreateHistorySearches (193)
+2012-03-13 19:02:59 DEBUG    [1m[35m (139.6ms)[0m  CREATE TABLE `history_searches` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `search_input` varchar(255) NOT NULL, `search_group` varchar(255) NOT NULL, `search_type` varchar(255) NOT NULL, `tab_filter` varchar(255) NOT NULL, `search_operator1` varchar(255), `search_input2` varchar(255), `search_type2` varchar(255), `search_operator2` varchar(255), `search_input3` varchar(255), `search_type3` varchar(255)) ENGINE=InnoDB
+2012-03-13 19:02:59 DEBUG    [1m[36m (42.3ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('193')[0m
+2012-03-13 19:02:59 INFO  Migrating to CreateUsersHistorySearches (194)
+2012-03-13 19:02:59 DEBUG    [1m[35m (123.0ms)[0m  CREATE TABLE `users_history_searches` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `uuid` varchar(255) NOT NULL, `save_date` datetime, `results_count` int(11) DEFAULT 0, `id_history_search` int(11) NOT NULL) ENGINE=InnoDB
+2012-03-13 19:02:59 DEBUG    [1m[36m (49.4ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('194')[0m
+2012-03-13 19:02:59 INFO  Migrating to UpdateCommunityUsersAddSubscriptionsCounts (195)
+2012-03-13 19:02:59 DEBUG    [1m[35m (0.6ms)[0m  SHOW COLUMNS FROM `community_users` LIKE 'sub_notices_count'
+2012-03-13 19:03:00 DEBUG    [1m[36m (320.0ms)[0m  [1mALTER TABLE `community_users` CHANGE `sub_notices_count` `alerts_availability_count` int(11) DEFAULT 0[0m
+2012-03-13 19:03:00 DEBUG    [1m[35m (259.7ms)[0m  ALTER TABLE `community_users` ADD `rss_feeds_count` int(11) DEFAULT 0
+2012-03-13 19:03:00 DEBUG    [1m[36m (217.3ms)[0m  [1mALTER TABLE `community_users` ADD `searches_history_count` int(11) DEFAULT 0[0m
+2012-03-13 19:03:00 DEBUG    [1m[35m (41.0ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('195')
+2012-03-13 19:03:00 INFO  Migrating to UpdatePrimaryDocumentTypesAddIcons (196)
+2012-03-13 19:03:01 DEBUG    [1m[36m (259.2ms)[0m  [1mALTER TABLE `primary_document_types` ADD `display_icon` varchar(255) DEFAULT 'unknown'[0m
+2012-03-13 19:03:01 DEBUG    [1m[35m (356.9ms)[0m  ALTER TABLE `primary_document_types` ADD `no_image_icon` varchar(255) DEFAULT 'unknown'
+2012-03-13 19:03:01 DEBUG    [1m[36m (49.4ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('196')[0m
+2012-03-13 19:03:01 INFO  Migrating to UpdateCommunityUsersAddMdfive (197)
+2012-03-13 19:03:01 DEBUG    [1m[35m (232.8ms)[0m  ALTER TABLE `community_users` ADD `MD5` varchar(255) NOT NULL
+2012-03-13 19:06:52 DEBUG  INIT MEMCACHE ["127.0.0.1", "10.1.2.111:11211", "10.1.2.112:11211"]
+2012-03-13 19:06:54 DEBUG    [1m[36m (124.6ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+2012-03-13 19:06:54 INFO  Migrating to CreateRecords (1)
+2012-03-13 19:06:54 INFO  Migrating to CreateCollections (2)
+2012-03-13 19:06:54 INFO  Migrating to CreateUsers (3)
+2012-03-13 19:06:54 INFO  Migrating to AddSessions (4)
+2012-03-13 19:06:54 INFO  Migrating to CreateCachedSearches (5)
+2012-03-13 19:06:54 INFO  Migrating to CreateHits (6)
+2012-03-13 19:06:54 INFO  Migrating to CreateCachedRecords (7)
+2012-03-13 19:06:54 INFO  Migrating to CreateControls (8)
+2012-03-13 19:06:54 INFO  Migrating to CreateMetadatas (9)
+2012-03-13 19:06:54 INFO  Migrating to CreateSiteConfigs (10)
+2012-03-13 19:06:54 INFO  Migrating to UpdateCachedSearches (11)
+2012-03-13 19:06:54 INFO  Migrating to UpdateCachedRecords (12)
+2012-03-13 19:06:54 INFO  Migrating to CreateProviders (13)
+2012-03-13 19:06:54 INFO  Migrating to CreateCoverages (14)
+2012-03-13 19:06:54 INFO  Migrating to CreateCollectionGroups (15)
+2012-03-13 19:06:54 INFO  Migrating to CreateCollectionGroupMembers (16)
+2012-03-13 19:06:54 INFO  Migrating to UpdateProviders (17)
+2012-03-13 19:06:54 INFO  Migrating to UpdateCachedRecordsAddStatus (18)
+2012-03-13 19:06:54 INFO  Migrating to UpdateCachedRecordsRenameDateSaved (19)
+2012-03-13 19:06:54 INFO  Migrating to UpdateCachedRecordsAddTime (20)
+2012-03-13 19:06:54 INFO  Migrating to UpdateCollectionsAddProxy (21)
+2012-03-13 19:06:54 INFO  Migrating to DeleteSessions (22)
+2012-03-13 19:06:54 INFO  Migrating to SqlSessionStoreSetup (23)
+2012-03-13 19:06:54 INFO  Migrating to UpdateMetadatas (24)
+2012-03-13 19:06:54 INFO  Migrating to CreateJobQueues (25)
+2012-03-13 19:06:54 INFO  Migrating to UpdateJobQueuesAddThreadId (26)
+2012-03-13 19:06:54 INFO  Migrating to UpdateJobQueuesAddDatabaseName (27)
+2012-03-13 19:06:54 INFO  Migrating to UpdateControlsAddCollectionName (28)
+2012-03-13 19:06:54 INFO  Migrating to UpdateCollectionsAddHarvested (29)
+2012-03-13 19:06:54 INFO  Migrating to UpdateCollectionsAddIsParent (30)
+2012-03-13 19:06:54 INFO  Migrating to CreatePrimaryDocumentTypes (101)
+2012-03-13 19:06:54 INFO  Migrating to CreateDocumentTypes (102)
+2012-03-13 19:06:54 INFO  Migrating to CreateSearchTabs (103)
+2012-03-13 19:06:54 INFO  Migrating to CreateSearchTabFilters (104)
+2012-03-13 19:06:54 INFO  Migrating to UpdateCollectionGroups (105)
+2012-03-13 19:06:54 INFO  Migrating to UpdateCollectionGroupMembers (106)
+2012-03-13 19:06:54 INFO  Migrating to UpdateCollections (107)
+2012-03-13 19:06:54 INFO  Migrating to CreateSearchTabSubjects (108)
+2012-03-13 19:06:54 INFO  Migrating to CreateLogConsults (109)
+2012-03-13 19:06:54 INFO  Migrating to CreateLogRssUsages (110)
+2012-03-13 19:06:54 INFO  Migrating to CreateLogPrintUsages (111)
+2012-03-13 19:06:54 INFO  Migrating to CreateLogMailUsages (112)
+2012-03-13 19:06:54 INFO  Migrating to CreateLogFacetteUsages (113)
+2012-03-13 19:06:54 INFO  Migrating to CreateLogCartUsages (114)
+2012-03-13 19:06:54 INFO  Migrating to CreateLogCollectionGroupUsages (115)
+2012-03-13 19:06:54 INFO  Migrating to CreateLogRebonceUsages (116)
+2012-03-13 19:06:54 INFO  Migrating to UpdateSearchTabSubjects (117)
+2012-03-13 19:06:54 INFO  Migrating to UpdateLogCollectionGroupUsages (118)
+2012-03-13 19:06:54 INFO  Migrating to CreateLogSearchWords (119)
+2012-03-13 19:06:54 INFO  Migrating to UpdateSearchTabs (120)
+2012-03-13 19:06:54 INFO  Migrating to UpdateSearchTabFilters (121)
+2012-03-13 19:06:54 INFO  Migrating to Update2SearchTabSubjects (122)
+2012-03-13 19:06:54 INFO  Migrating to Update3SearchTabSubjects (123)
+2012-03-13 19:06:54 INFO  Migrating to Update2Collections (124)
+2012-03-13 19:06:54 INFO  Migrating to Update2SearchTabs (125)
+2012-03-13 19:06:54 INFO  Migrating to UpdateCollectionTabsHarvestingDay (126)
+2012-03-13 19:06:54 INFO  Migrating to Update4SearchTabSubjects (127)
+2012-03-13 19:06:54 INFO  Migrating to UpdateCollectionGroupsAddRank (128)
+2012-03-13 19:06:54 INFO  Migrating to Update5SearchTabSubjects (129)
+2012-03-13 19:06:54 INFO  Migrating to CreateEditorials (130)
+2012-03-13 19:06:54 INFO  Migrating to CreateRejects (131)
+2012-03-13 19:06:54 INFO  Migrating to UpdateCachedRecordsAddTotalHits (132)
+2012-03-13 19:06:54 INFO  Migrating to UpdateCollectionsAddIsPrivate (133)
+2012-03-13 19:06:54 INFO  Migrating to UpdateJobQueuesAddTotalHits (134)
+2012-03-13 19:06:54 INFO  Migrating to CreateThemes (135)
+2012-03-13 19:06:54 INFO  Migrating to UpdateRejects (136)
+2012-03-13 19:06:54 INFO  Migrating to LogGenericUpdate (137)
+2012-03-13 19:06:54 INFO  Migrating to UpdateControlAddIndex (138)
+2012-03-13 19:06:54 INFO  Migrating to UpdateMetadataAddDclanguage (139)
+2012-03-13 19:06:54 INFO  Migrating to CreateHarvestSchedule (140)
+2012-03-13 19:06:54 INFO  Migrating to UpdateCollectionAlterHarvested (141)
+2012-03-13 19:06:54 INFO  Migrating to UpdateCollectionAddOaiset (142)
+2012-03-13 19:06:54 INFO  Migrating to CreateNotices (143)
+2012-03-13 19:06:54 INFO  Migrating to CreateComments (144)
+2012-03-13 19:06:54 INFO  Migrating to CreateObjectsTags (146)
+2012-03-13 19:06:54 INFO  Migrating to CreateCommunityUsers (147)
+2012-03-13 19:06:54 INFO  Migrating to UpdateJobQueuesAddCollectionId (148)
+2012-03-13 19:06:54 INFO  Migrating to CreateUserRecords (150)
+2012-03-13 19:06:54 INFO  Migrating to CreateLists (151)
+2012-03-13 19:06:54 INFO  Migrating to CreateListUserRecords (152)
+2012-03-13 19:06:54 INFO  Migrating to CreateTags (153)
+2012-03-13 19:06:54 INFO  Migrating to CreateRssFeeds (154)
+2012-03-13 19:06:54 INFO  Migrating to UpdateCollectionsAddAvailability (155)
+2012-03-13 19:06:54 INFO  Migrating to CreateManageRoles (156)
+2012-03-13 19:06:54 INFO  Migrating to CreateManagePermissions (157)
+2012-03-13 19:06:54 INFO  Migrating to CreateManageDroits (158)
+2012-03-13 19:06:54 INFO  Migrating to UpdateDocumentTypesAddCollectionId (159)
+2012-03-13 19:06:54 INFO  Migrating to CreateCommentUserEvaluations (160)
+2012-03-13 19:06:54 INFO  Migrating to UpdateCommentsAddCommentRelevant (161)
+2012-03-13 19:06:54 INFO  Migrating to UpdatePrimaryDocumentTypesAddNewPeriod (162)
+2012-03-13 19:06:54 INFO  Migrating to UpdateNoticesAddListsCount (163)
+2012-03-13 19:06:54 INFO  Migrating to UpdateCachedRecordsAddPermissions (164)
+2012-03-13 19:06:54 INFO  Migrating to CreateLogListMovement (165)
+2012-03-13 19:06:54 INFO  Migrating to CreateLogInteractionUsages (166)
+2012-03-13 19:06:54 INFO  Migrating to CreateLogSaveNotice (167)
+2012-03-13 19:06:54 INFO  Migrating to CreateRegisterSearch (169)
+2012-03-13 19:06:54 INFO  Migrating to CreateLinkingWord (170)
+2012-03-13 19:06:54 INFO  Migrating to UpdateListUserRecordsAddRank (171)
+2012-03-13 19:06:54 INFO  Migrating to CreateSubscriptions (172)
+2012-03-13 19:06:54 INFO  Migrating to CreateCommentsAlerts (173)
+2012-03-13 19:06:54 INFO  Migrating to UpdateComments (174)
+2012-03-13 19:06:54 INFO  Migrating to UpdateNoticesAddDispo (175)
+2012-03-13 19:06:54 INFO  Migrating to CreateObjectsCount (176)
+2012-03-13 19:06:54 INFO  Migrating to UpdateNoticesRemoveColumn (177)
+2012-03-13 19:06:54 INFO  Migrating to UpdateCommentsRemoveColumn (179)
+2012-03-13 19:06:54 INFO  Migrating to CreateNotes (181)
+2012-03-13 19:06:54 INFO  Migrating to UpdateNameStateToWorkflow (182)
+2012-03-13 19:06:54 INFO  Migrating to UpdateCommunityUsers (183)
+2012-03-13 19:06:54 INFO  Migrating to UpdateCommunityUsersAddSubNoticesCount (184)
+2012-03-13 19:06:54 INFO  Migrating to UpdateObjectsTagsState (185)
+2012-03-13 19:06:54 INFO  Migrating to UpdateCommunityUsersAddDescription (186)
+2012-03-13 19:06:54 INFO  Migrating to UpdateNoticesRemoveAviability (187)
+2012-03-13 19:06:54 INFO  Migrating to UpdateSubscriptionsAddState (188)
+2012-03-13 19:06:54 INFO  Migrating to CreateNoticesCheck (189)
+2012-03-13 19:06:54 INFO  Migrating to UpdateTagsAddLabelFormat (190)
+2012-03-13 19:06:54 INFO  Migrating to UpdateNoticesAddUpdateDate (191)
+2012-03-13 19:06:54 INFO  Migrating to UpdateCollectionsAddActionsAllowed (192)
+2012-03-13 19:06:54 INFO  Migrating to CreateHistorySearches (193)
+2012-03-13 19:06:54 INFO  Migrating to CreateUsersHistorySearches (194)
+2012-03-13 19:06:54 INFO  Migrating to UpdateCommunityUsersAddSubscriptionsCounts (195)
+2012-03-13 19:06:54 INFO  Migrating to UpdatePrimaryDocumentTypesAddIcons (196)
+2012-03-13 19:06:54 INFO  Migrating to UpdateCommunityUsersAddMdfive (197)
+2012-03-13 19:06:54 DEBUG    [1m[35m (0.6ms)[0m  ALTER TABLE `community_users` ADD `MD5` varchar(255) NOT NULL
+2012-03-13 19:06:54 DEBUG  Mysql2::Error: Duplicate column name 'MD5': ALTER TABLE `community_users` ADD `MD5` varchar(255) NOT NULL
+2012-03-13 19:08:38 DEBUG  INIT MEMCACHE ["127.0.0.1", "10.1.2.111:11211", "10.1.2.112:11211"]
+2012-03-13 19:08:39 DEBUG    [1m[36m (0.1ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+2012-03-13 19:08:39 INFO  Migrating to CreateRecords (1)
+2012-03-13 19:08:39 INFO  Migrating to CreateCollections (2)
+2012-03-13 19:08:39 INFO  Migrating to CreateUsers (3)
+2012-03-13 19:08:39 INFO  Migrating to AddSessions (4)
+2012-03-13 19:08:39 INFO  Migrating to CreateCachedSearches (5)
+2012-03-13 19:08:39 INFO  Migrating to CreateHits (6)
+2012-03-13 19:08:39 INFO  Migrating to CreateCachedRecords (7)
+2012-03-13 19:08:39 INFO  Migrating to CreateControls (8)
+2012-03-13 19:08:39 INFO  Migrating to CreateMetadatas (9)
+2012-03-13 19:08:39 INFO  Migrating to CreateSiteConfigs (10)
+2012-03-13 19:08:39 INFO  Migrating to UpdateCachedSearches (11)
+2012-03-13 19:08:39 INFO  Migrating to UpdateCachedRecords (12)
+2012-03-13 19:08:39 INFO  Migrating to CreateProviders (13)
+2012-03-13 19:08:39 INFO  Migrating to CreateCoverages (14)
+2012-03-13 19:08:39 INFO  Migrating to CreateCollectionGroups (15)
+2012-03-13 19:08:39 INFO  Migrating to CreateCollectionGroupMembers (16)
+2012-03-13 19:08:39 INFO  Migrating to UpdateProviders (17)
+2012-03-13 19:08:39 INFO  Migrating to UpdateCachedRecordsAddStatus (18)
+2012-03-13 19:08:39 INFO  Migrating to UpdateCachedRecordsRenameDateSaved (19)
+2012-03-13 19:08:39 INFO  Migrating to UpdateCachedRecordsAddTime (20)
+2012-03-13 19:08:39 INFO  Migrating to UpdateCollectionsAddProxy (21)
+2012-03-13 19:08:39 INFO  Migrating to DeleteSessions (22)
+2012-03-13 19:08:39 INFO  Migrating to SqlSessionStoreSetup (23)
+2012-03-13 19:08:39 INFO  Migrating to UpdateMetadatas (24)
+2012-03-13 19:08:39 INFO  Migrating to CreateJobQueues (25)
+2012-03-13 19:08:39 INFO  Migrating to UpdateJobQueuesAddThreadId (26)
+2012-03-13 19:08:39 INFO  Migrating to UpdateJobQueuesAddDatabaseName (27)
+2012-03-13 19:08:39 INFO  Migrating to UpdateControlsAddCollectionName (28)
+2012-03-13 19:08:39 INFO  Migrating to UpdateCollectionsAddHarvested (29)
+2012-03-13 19:08:39 INFO  Migrating to UpdateCollectionsAddIsParent (30)
+2012-03-13 19:08:39 INFO  Migrating to CreatePrimaryDocumentTypes (101)
+2012-03-13 19:08:39 INFO  Migrating to CreateDocumentTypes (102)
+2012-03-13 19:08:39 INFO  Migrating to CreateSearchTabs (103)
+2012-03-13 19:08:39 INFO  Migrating to CreateSearchTabFilters (104)
+2012-03-13 19:08:39 INFO  Migrating to UpdateCollectionGroups (105)
+2012-03-13 19:08:39 INFO  Migrating to UpdateCollectionGroupMembers (106)
+2012-03-13 19:08:39 INFO  Migrating to UpdateCollections (107)
+2012-03-13 19:08:39 INFO  Migrating to CreateSearchTabSubjects (108)
+2012-03-13 19:08:39 INFO  Migrating to CreateLogConsults (109)
+2012-03-13 19:08:39 INFO  Migrating to CreateLogRssUsages (110)
+2012-03-13 19:08:39 INFO  Migrating to CreateLogPrintUsages (111)
+2012-03-13 19:08:39 INFO  Migrating to CreateLogMailUsages (112)
+2012-03-13 19:08:39 INFO  Migrating to CreateLogFacetteUsages (113)
+2012-03-13 19:08:39 INFO  Migrating to CreateLogCartUsages (114)
+2012-03-13 19:08:39 INFO  Migrating to CreateLogCollectionGroupUsages (115)
+2012-03-13 19:08:39 INFO  Migrating to CreateLogRebonceUsages (116)
+2012-03-13 19:08:39 INFO  Migrating to UpdateSearchTabSubjects (117)
+2012-03-13 19:08:39 INFO  Migrating to UpdateLogCollectionGroupUsages (118)
+2012-03-13 19:08:39 INFO  Migrating to CreateLogSearchWords (119)
+2012-03-13 19:08:39 INFO  Migrating to UpdateSearchTabs (120)
+2012-03-13 19:08:39 INFO  Migrating to UpdateSearchTabFilters (121)
+2012-03-13 19:08:39 INFO  Migrating to Update2SearchTabSubjects (122)
+2012-03-13 19:08:39 INFO  Migrating to Update3SearchTabSubjects (123)
+2012-03-13 19:08:39 INFO  Migrating to Update2Collections (124)
+2012-03-13 19:08:39 INFO  Migrating to Update2SearchTabs (125)
+2012-03-13 19:08:39 INFO  Migrating to UpdateCollectionTabsHarvestingDay (126)
+2012-03-13 19:08:39 INFO  Migrating to Update4SearchTabSubjects (127)
+2012-03-13 19:08:39 INFO  Migrating to UpdateCollectionGroupsAddRank (128)
+2012-03-13 19:08:39 INFO  Migrating to Update5SearchTabSubjects (129)
+2012-03-13 19:08:39 INFO  Migrating to CreateEditorials (130)
+2012-03-13 19:08:39 INFO  Migrating to CreateRejects (131)
+2012-03-13 19:08:39 INFO  Migrating to UpdateCachedRecordsAddTotalHits (132)
+2012-03-13 19:08:39 INFO  Migrating to UpdateCollectionsAddIsPrivate (133)
+2012-03-13 19:08:39 INFO  Migrating to UpdateJobQueuesAddTotalHits (134)
+2012-03-13 19:08:39 INFO  Migrating to CreateThemes (135)
+2012-03-13 19:08:39 INFO  Migrating to UpdateRejects (136)
+2012-03-13 19:08:39 INFO  Migrating to LogGenericUpdate (137)
+2012-03-13 19:08:39 INFO  Migrating to UpdateControlAddIndex (138)
+2012-03-13 19:08:39 INFO  Migrating to UpdateMetadataAddDclanguage (139)
+2012-03-13 19:08:39 INFO  Migrating to CreateHarvestSchedule (140)
+2012-03-13 19:08:39 INFO  Migrating to UpdateCollectionAlterHarvested (141)
+2012-03-13 19:08:39 INFO  Migrating to UpdateCollectionAddOaiset (142)
+2012-03-13 19:08:39 INFO  Migrating to CreateNotices (143)
+2012-03-13 19:08:39 INFO  Migrating to CreateComments (144)
+2012-03-13 19:08:39 INFO  Migrating to CreateObjectsTags (146)
+2012-03-13 19:08:39 INFO  Migrating to CreateCommunityUsers (147)
+2012-03-13 19:08:39 INFO  Migrating to UpdateJobQueuesAddCollectionId (148)
+2012-03-13 19:08:39 INFO  Migrating to CreateUserRecords (150)
+2012-03-13 19:08:39 INFO  Migrating to CreateLists (151)
+2012-03-13 19:08:39 INFO  Migrating to CreateListUserRecords (152)
+2012-03-13 19:08:39 INFO  Migrating to CreateTags (153)
+2012-03-13 19:08:39 INFO  Migrating to CreateRssFeeds (154)
+2012-03-13 19:08:39 INFO  Migrating to UpdateCollectionsAddAvailability (155)
+2012-03-13 19:08:39 INFO  Migrating to CreateManageRoles (156)
+2012-03-13 19:08:39 INFO  Migrating to CreateManagePermissions (157)
+2012-03-13 19:08:39 INFO  Migrating to CreateManageDroits (158)
+2012-03-13 19:08:39 INFO  Migrating to UpdateDocumentTypesAddCollectionId (159)
+2012-03-13 19:08:39 INFO  Migrating to CreateCommentUserEvaluations (160)
+2012-03-13 19:08:39 INFO  Migrating to UpdateCommentsAddCommentRelevant (161)
+2012-03-13 19:08:39 INFO  Migrating to UpdatePrimaryDocumentTypesAddNewPeriod (162)
+2012-03-13 19:08:39 INFO  Migrating to UpdateNoticesAddListsCount (163)
+2012-03-13 19:08:39 INFO  Migrating to UpdateCachedRecordsAddPermissions (164)
+2012-03-13 19:08:39 INFO  Migrating to CreateLogListMovement (165)
+2012-03-13 19:08:39 INFO  Migrating to CreateLogInteractionUsages (166)
+2012-03-13 19:08:39 INFO  Migrating to CreateLogSaveNotice (167)
+2012-03-13 19:08:39 INFO  Migrating to CreateRegisterSearch (169)
+2012-03-13 19:08:39 INFO  Migrating to CreateLinkingWord (170)
+2012-03-13 19:08:39 INFO  Migrating to UpdateListUserRecordsAddRank (171)
+2012-03-13 19:08:39 INFO  Migrating to CreateSubscriptions (172)
+2012-03-13 19:08:39 INFO  Migrating to CreateCommentsAlerts (173)
+2012-03-13 19:08:39 INFO  Migrating to UpdateComments (174)
+2012-03-13 19:08:39 INFO  Migrating to UpdateNoticesAddDispo (175)
+2012-03-13 19:08:39 INFO  Migrating to CreateObjectsCount (176)
+2012-03-13 19:08:39 INFO  Migrating to UpdateNoticesRemoveColumn (177)
+2012-03-13 19:08:39 INFO  Migrating to UpdateCommentsRemoveColumn (179)
+2012-03-13 19:08:39 INFO  Migrating to CreateNotes (181)
+2012-03-13 19:08:39 INFO  Migrating to UpdateNameStateToWorkflow (182)
+2012-03-13 19:08:39 INFO  Migrating to UpdateCommunityUsers (183)
+2012-03-13 19:08:39 INFO  Migrating to UpdateCommunityUsersAddSubNoticesCount (184)
+2012-03-13 19:08:39 INFO  Migrating to UpdateObjectsTagsState (185)
+2012-03-13 19:08:39 INFO  Migrating to UpdateCommunityUsersAddDescription (186)
+2012-03-13 19:08:39 INFO  Migrating to UpdateNoticesRemoveAviability (187)
+2012-03-13 19:08:39 INFO  Migrating to UpdateSubscriptionsAddState (188)
+2012-03-13 19:08:39 INFO  Migrating to CreateNoticesCheck (189)
+2012-03-13 19:08:39 INFO  Migrating to UpdateTagsAddLabelFormat (190)
+2012-03-13 19:08:39 INFO  Migrating to UpdateNoticesAddUpdateDate (191)
+2012-03-13 19:08:39 INFO  Migrating to UpdateCollectionsAddActionsAllowed (192)
+2012-03-13 19:08:39 INFO  Migrating to CreateHistorySearches (193)
+2012-03-13 19:08:39 INFO  Migrating to CreateUsersHistorySearches (194)
+2012-03-13 19:08:39 INFO  Migrating to UpdateCommunityUsersAddSubscriptionsCounts (195)
+2012-03-13 19:08:39 INFO  Migrating to UpdatePrimaryDocumentTypesAddIcons (196)
+2012-03-13 19:08:39 INFO  Migrating to UpdateCommunityUsersAddMdfive (197)
+2012-03-13 19:09:19 DEBUG  INIT MEMCACHE ["127.0.0.1", "10.1.2.111:11211", "10.1.2.112:11211"]
+2012-03-13 19:09:20 DEBUG    [1m[36m (0.2ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+2012-03-13 19:09:20 INFO  Migrating to CreateRecords (1)
+2012-03-13 19:09:20 INFO  Migrating to CreateCollections (2)
+2012-03-13 19:09:20 INFO  Migrating to CreateUsers (3)
+2012-03-13 19:09:20 INFO  Migrating to AddSessions (4)
+2012-03-13 19:09:20 INFO  Migrating to CreateCachedSearches (5)
+2012-03-13 19:09:20 INFO  Migrating to CreateHits (6)
+2012-03-13 19:09:20 INFO  Migrating to CreateCachedRecords (7)
+2012-03-13 19:09:20 INFO  Migrating to CreateControls (8)
+2012-03-13 19:09:20 INFO  Migrating to CreateMetadatas (9)
+2012-03-13 19:09:20 INFO  Migrating to CreateSiteConfigs (10)
+2012-03-13 19:09:20 INFO  Migrating to UpdateCachedSearches (11)
+2012-03-13 19:09:20 INFO  Migrating to UpdateCachedRecords (12)
+2012-03-13 19:09:20 INFO  Migrating to CreateProviders (13)
+2012-03-13 19:09:20 INFO  Migrating to CreateCoverages (14)
+2012-03-13 19:09:20 INFO  Migrating to CreateCollectionGroups (15)
+2012-03-13 19:09:20 INFO  Migrating to CreateCollectionGroupMembers (16)
+2012-03-13 19:09:20 INFO  Migrating to UpdateProviders (17)
+2012-03-13 19:09:20 INFO  Migrating to UpdateCachedRecordsAddStatus (18)
+2012-03-13 19:09:20 INFO  Migrating to UpdateCachedRecordsRenameDateSaved (19)
+2012-03-13 19:09:20 INFO  Migrating to UpdateCachedRecordsAddTime (20)
+2012-03-13 19:09:20 INFO  Migrating to UpdateCollectionsAddProxy (21)
+2012-03-13 19:09:20 INFO  Migrating to DeleteSessions (22)
+2012-03-13 19:09:20 INFO  Migrating to SqlSessionStoreSetup (23)
+2012-03-13 19:09:20 INFO  Migrating to UpdateMetadatas (24)
+2012-03-13 19:09:20 INFO  Migrating to CreateJobQueues (25)
+2012-03-13 19:09:20 INFO  Migrating to UpdateJobQueuesAddThreadId (26)
+2012-03-13 19:09:20 INFO  Migrating to UpdateJobQueuesAddDatabaseName (27)
+2012-03-13 19:09:20 INFO  Migrating to UpdateControlsAddCollectionName (28)
+2012-03-13 19:09:20 INFO  Migrating to UpdateCollectionsAddHarvested (29)
+2012-03-13 19:09:20 INFO  Migrating to UpdateCollectionsAddIsParent (30)
+2012-03-13 19:09:20 INFO  Migrating to CreatePrimaryDocumentTypes (101)
+2012-03-13 19:09:20 INFO  Migrating to CreateDocumentTypes (102)
+2012-03-13 19:09:20 INFO  Migrating to CreateSearchTabs (103)
+2012-03-13 19:09:20 INFO  Migrating to CreateSearchTabFilters (104)
+2012-03-13 19:09:20 INFO  Migrating to UpdateCollectionGroups (105)
+2012-03-13 19:09:20 INFO  Migrating to UpdateCollectionGroupMembers (106)
+2012-03-13 19:09:20 INFO  Migrating to UpdateCollections (107)
+2012-03-13 19:09:20 INFO  Migrating to CreateSearchTabSubjects (108)
+2012-03-13 19:09:20 INFO  Migrating to CreateLogConsults (109)
+2012-03-13 19:09:20 INFO  Migrating to CreateLogRssUsages (110)
+2012-03-13 19:09:20 INFO  Migrating to CreateLogPrintUsages (111)
+2012-03-13 19:09:20 INFO  Migrating to CreateLogMailUsages (112)
+2012-03-13 19:09:20 INFO  Migrating to CreateLogFacetteUsages (113)
+2012-03-13 19:09:20 INFO  Migrating to CreateLogCartUsages (114)
+2012-03-13 19:09:20 INFO  Migrating to CreateLogCollectionGroupUsages (115)
+2012-03-13 19:09:20 INFO  Migrating to CreateLogRebonceUsages (116)
+2012-03-13 19:09:20 INFO  Migrating to UpdateSearchTabSubjects (117)
+2012-03-13 19:09:20 INFO  Migrating to UpdateLogCollectionGroupUsages (118)
+2012-03-13 19:09:20 INFO  Migrating to CreateLogSearchWords (119)
+2012-03-13 19:09:20 INFO  Migrating to UpdateSearchTabs (120)
+2012-03-13 19:09:20 INFO  Migrating to UpdateSearchTabFilters (121)
+2012-03-13 19:09:20 INFO  Migrating to Update2SearchTabSubjects (122)
+2012-03-13 19:09:20 INFO  Migrating to Update3SearchTabSubjects (123)
+2012-03-13 19:09:20 INFO  Migrating to Update2Collections (124)
+2012-03-13 19:09:20 INFO  Migrating to Update2SearchTabs (125)
+2012-03-13 19:09:20 INFO  Migrating to UpdateCollectionTabsHarvestingDay (126)
+2012-03-13 19:09:20 INFO  Migrating to Update4SearchTabSubjects (127)
+2012-03-13 19:09:20 INFO  Migrating to UpdateCollectionGroupsAddRank (128)
+2012-03-13 19:09:20 INFO  Migrating to Update5SearchTabSubjects (129)
+2012-03-13 19:09:20 INFO  Migrating to CreateEditorials (130)
+2012-03-13 19:09:20 INFO  Migrating to CreateRejects (131)
+2012-03-13 19:09:20 INFO  Migrating to UpdateCachedRecordsAddTotalHits (132)
+2012-03-13 19:09:20 INFO  Migrating to UpdateCollectionsAddIsPrivate (133)
+2012-03-13 19:09:20 INFO  Migrating to UpdateJobQueuesAddTotalHits (134)
+2012-03-13 19:09:20 INFO  Migrating to CreateThemes (135)
+2012-03-13 19:09:20 INFO  Migrating to UpdateRejects (136)
+2012-03-13 19:09:20 INFO  Migrating to LogGenericUpdate (137)
+2012-03-13 19:09:20 INFO  Migrating to UpdateControlAddIndex (138)
+2012-03-13 19:09:20 INFO  Migrating to UpdateMetadataAddDclanguage (139)
+2012-03-13 19:09:20 INFO  Migrating to CreateHarvestSchedule (140)
+2012-03-13 19:09:20 INFO  Migrating to UpdateCollectionAlterHarvested (141)
+2012-03-13 19:09:20 INFO  Migrating to UpdateCollectionAddOaiset (142)
+2012-03-13 19:09:20 INFO  Migrating to CreateNotices (143)
+2012-03-13 19:09:20 INFO  Migrating to CreateComments (144)
+2012-03-13 19:09:20 INFO  Migrating to CreateObjectsTags (146)
+2012-03-13 19:09:20 INFO  Migrating to CreateCommunityUsers (147)
+2012-03-13 19:09:20 INFO  Migrating to UpdateJobQueuesAddCollectionId (148)
+2012-03-13 19:09:20 INFO  Migrating to CreateUserRecords (150)
+2012-03-13 19:09:20 INFO  Migrating to CreateLists (151)
+2012-03-13 19:09:20 INFO  Migrating to CreateListUserRecords (152)
+2012-03-13 19:09:20 INFO  Migrating to CreateTags (153)
+2012-03-13 19:09:20 INFO  Migrating to CreateRssFeeds (154)
+2012-03-13 19:09:20 INFO  Migrating to UpdateCollectionsAddAvailability (155)
+2012-03-13 19:09:20 INFO  Migrating to CreateManageRoles (156)
+2012-03-13 19:09:20 INFO  Migrating to CreateManagePermissions (157)
+2012-03-13 19:09:20 INFO  Migrating to CreateManageDroits (158)
+2012-03-13 19:09:20 INFO  Migrating to UpdateDocumentTypesAddCollectionId (159)
+2012-03-13 19:09:20 INFO  Migrating to CreateCommentUserEvaluations (160)
+2012-03-13 19:09:20 INFO  Migrating to UpdateCommentsAddCommentRelevant (161)
+2012-03-13 19:09:20 INFO  Migrating to UpdatePrimaryDocumentTypesAddNewPeriod (162)
+2012-03-13 19:09:20 INFO  Migrating to UpdateNoticesAddListsCount (163)
+2012-03-13 19:09:20 INFO  Migrating to UpdateCachedRecordsAddPermissions (164)
+2012-03-13 19:09:20 INFO  Migrating to CreateLogListMovement (165)
+2012-03-13 19:09:20 INFO  Migrating to CreateLogInteractionUsages (166)
+2012-03-13 19:09:20 INFO  Migrating to CreateLogSaveNotice (167)
+2012-03-13 19:09:20 INFO  Migrating to CreateRegisterSearch (169)
+2012-03-13 19:09:20 INFO  Migrating to CreateLinkingWord (170)
+2012-03-13 19:09:20 INFO  Migrating to UpdateListUserRecordsAddRank (171)
+2012-03-13 19:09:20 INFO  Migrating to CreateSubscriptions (172)
+2012-03-13 19:09:20 INFO  Migrating to CreateCommentsAlerts (173)
+2012-03-13 19:09:20 INFO  Migrating to UpdateComments (174)
+2012-03-13 19:09:20 INFO  Migrating to UpdateNoticesAddDispo (175)
+2012-03-13 19:09:20 INFO  Migrating to CreateObjectsCount (176)
+2012-03-13 19:09:20 INFO  Migrating to UpdateNoticesRemoveColumn (177)
+2012-03-13 19:09:20 INFO  Migrating to UpdateCommentsRemoveColumn (179)
+2012-03-13 19:09:20 INFO  Migrating to CreateNotes (181)
+2012-03-13 19:09:20 INFO  Migrating to UpdateNameStateToWorkflow (182)
+2012-03-13 19:09:20 INFO  Migrating to UpdateCommunityUsers (183)
+2012-03-13 19:09:20 INFO  Migrating to UpdateCommunityUsersAddSubNoticesCount (184)
+2012-03-13 19:09:20 INFO  Migrating to UpdateObjectsTagsState (185)
+2012-03-13 19:09:20 INFO  Migrating to UpdateCommunityUsersAddDescription (186)
+2012-03-13 19:09:20 INFO  Migrating to UpdateNoticesRemoveAviability (187)
+2012-03-13 19:09:20 INFO  Migrating to UpdateSubscriptionsAddState (188)
+2012-03-13 19:09:20 INFO  Migrating to CreateNoticesCheck (189)
+2012-03-13 19:09:20 INFO  Migrating to UpdateTagsAddLabelFormat (190)
+2012-03-13 19:09:20 INFO  Migrating to UpdateNoticesAddUpdateDate (191)
+2012-03-13 19:09:20 INFO  Migrating to UpdateCollectionsAddActionsAllowed (192)
+2012-03-13 19:09:20 INFO  Migrating to CreateHistorySearches (193)
+2012-03-13 19:09:20 INFO  Migrating to CreateUsersHistorySearches (194)
+2012-03-13 19:09:20 INFO  Migrating to UpdateCommunityUsersAddSubscriptionsCounts (195)
+2012-03-13 19:09:20 INFO  Migrating to UpdatePrimaryDocumentTypesAddIcons (196)
+2012-03-13 19:09:20 INFO  Migrating to UpdateCommunityUsersAddMdfive (197)
+2012-03-13 19:09:21 WARN  DEPRECATION WARNING: Calling set_primary_key is deprecated. Please use `self.primary_key = 'the_name'` instead. (called from <class:CommunityUsers> at /srv/src/bpifs/app/models/community_users.rb:5)
+2012-03-13 19:09:21 DEBUG    [1m[35mCommunityUsers Load (92.8ms)[0m  SELECT `community_users`.* FROM `community_users` 
+2012-03-13 19:09:21 DEBUG    [1m[36m (88.1ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('197')[0m
+2012-03-13 19:09:21 INFO  Migrating to UpdateChangeName (198)
+2012-03-13 19:09:21 DEBUG    [1m[35m (0.8ms)[0m  SHOW COLUMNS FROM `comments` LIKE 'object_id'
+2012-03-13 19:09:21 DEBUG    [1m[36m (257.0ms)[0m  [1mALTER TABLE `comments` CHANGE `object_id` `object_uid` varchar(255) DEFAULT NULL[0m
+2012-03-13 19:09:21 DEBUG    [1m[35m (0.6ms)[0m  SHOW COLUMNS FROM `comments` LIKE 'object'
+2012-03-13 19:09:21 DEBUG    [1m[36m (231.6ms)[0m  [1mALTER TABLE `comments` CHANGE `object` `object_type` int(11) DEFAULT NULL[0m
+2012-03-13 19:09:21 DEBUG    [1m[35m (0.6ms)[0m  SHOW COLUMNS FROM `objects_tags` LIKE 'object_id'
+2012-03-13 19:09:22 DEBUG    [1m[36m (223.9ms)[0m  [1mALTER TABLE `objects_tags` CHANGE `object_id` `object_uid` varchar(255) DEFAULT NULL[0m
+2012-03-13 19:09:22 DEBUG    [1m[35m (0.8ms)[0m  SHOW COLUMNS FROM `objects_tags` LIKE 'object'
+2012-03-13 19:09:22 DEBUG    [1m[36m (257.3ms)[0m  [1mALTER TABLE `objects_tags` CHANGE `object` `object_type` int(11) DEFAULT NULL[0m
+2012-03-13 19:09:22 DEBUG    [1m[35m (0.8ms)[0m  SHOW COLUMNS FROM `subscriptions` LIKE 'object_id'
+2012-03-13 19:09:23 DEBUG    [1m[36m (1577.7ms)[0m  [1mALTER TABLE `subscriptions` CHANGE `object_id` `object_uid` varchar(255) DEFAULT NULL[0m
+2012-03-13 19:09:23 DEBUG    [1m[35m (0.6ms)[0m  SHOW COLUMNS FROM `subscriptions` LIKE 'object'
+2012-03-13 19:09:24 DEBUG    [1m[36m (248.0ms)[0m  [1mALTER TABLE `subscriptions` CHANGE `object` `object_type` int(11) DEFAULT NULL[0m
+2012-03-13 19:09:24 DEBUG    [1m[35m (0.8ms)[0m  SHOW COLUMNS FROM `objects_counts` LIKE 'object_id'
+2012-03-13 19:09:24 DEBUG    [1m[36m (256.6ms)[0m  [1mALTER TABLE `objects_counts` CHANGE `object_id` `object_uid` varchar(255) DEFAULT NULL[0m
+2012-03-13 19:09:24 DEBUG    [1m[35m (1.1ms)[0m  SHOW COLUMNS FROM `objects_counts` LIKE 'object'
+2012-03-13 19:09:24 DEBUG    [1m[36m (290.0ms)[0m  [1mALTER TABLE `objects_counts` CHANGE `object` `object_type` int(11) DEFAULT NULL[0m
+2012-03-13 19:09:24 DEBUG    [1m[35m (0.6ms)[0m  SHOW COLUMNS FROM `notes` LIKE 'object_id'
+2012-03-13 19:09:25 DEBUG    [1m[36m (224.3ms)[0m  [1mALTER TABLE `notes` CHANGE `object_id` `object_uid` varchar(255) DEFAULT NULL[0m
+2012-03-13 19:09:25 DEBUG    [1m[35m (0.6ms)[0m  SHOW COLUMNS FROM `notes` LIKE 'object'
+2012-03-13 19:09:25 DEBUG    [1m[36m (309.0ms)[0m  [1mALTER TABLE `notes` CHANGE `object` `object_type` int(11) DEFAULT NULL[0m
+2012-03-13 19:09:25 DEBUG    [1m[35m (41.0ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('198')
+2012-03-13 19:09:25 INFO  Migrating to CreateUsersPreferences (199)
+2012-03-13 19:09:25 DEBUG    [1m[36m (97.1ms)[0m  [1mCREATE TABLE `users_preferences` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `uuid` varchar(255) NOT NULL, `all_profile_public` int(11) DEFAULT 1, `all_profile_followed` int(11) DEFAULT 0, `description_public` int(11) DEFAULT 1, `description_followed` int(11) DEFAULT 0, `all_lists_public` int(11) DEFAULT 1, `all_lists_followed` int(11) DEFAULT 0, `all_comments_public` int(11) DEFAULT 1, `all_comments_followed` int(11) DEFAULT 0, `all_tags_public` int(11) DEFAULT 1, `all_tags_followed` int(11) DEFAULT 0, `all_subscriptions_public` int(11) DEFAULT 1, `all_subscriptions_followed` int(11) DEFAULT 0, `profile_subscriptions_subscribed` int(11) DEFAULT 0, `profile_subscriptions_mail_notif` int(11) DEFAULT 0, `lists_subscriptions_subscribed` int(11) DEFAULT 0, `lists_subscriptions_mail_notif` int(11) DEFAULT 0, `comments_responses_subscribed` int(11) DEFAULT 0, `comments_responses_mail_notif` int(11) DEFAULT 0, `comments_lists_subscribed` int(11) DEFAULT 0, `comments_lists_mail_notif` int(11) DEFAULT 0, `all_comments_subscribed` int(11) DEFAULT 0, `all_comments_mail_notif` int(11) DEFAULT 0, `all_tags_subscribed` int(11) DEFAULT 0, `all_tags_mail_notif` int(11) DEFAULT 0, `results_number` int(11) DEFAULT 25, `sort_value` varchar(255) DEFAULT 'relevance') ENGINE=InnoDB[0m
+2012-03-13 19:09:25 DEBUG    [1m[35m (49.4ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('199')
+2012-03-13 19:09:25 INFO  Migrating to CreateUsersTabsSearchesPreferences (200)
+2012-03-13 19:09:25 DEBUG    [1m[36m (139.5ms)[0m  [1mCREATE TABLE `users_tabs_searches_preferences` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `uuid` varchar(255) NOT NULL, `search_tab` int(11) DEFAULT 1, `search_group` varchar(255) DEFAULT 'g6', `search_type` varchar(255) DEFAULT 'keyword') ENGINE=InnoDB[0m
+2012-03-13 19:09:25 DEBUG    [1m[35m (49.4ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('200')
+2012-03-13 19:09:25 INFO  Migrating to UpdateCommunityUsersAddDefaultParams (201)
+2012-03-13 19:09:25 DEBUG    [1m[36mCommunityUsers Load (0.2ms)[0m  [1mSELECT `community_users`.* FROM `community_users` [0m
+2012-03-13 19:09:25 DEBUG    [1m[35m (47.0ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('201')
+2012-03-13 19:09:25 INFO  Migrating to UpdateJobQueuesAddDatetime (202)
+2012-03-13 19:09:26 DEBUG    [1m[36m (391.1ms)[0m  [1mALTER TABLE `job_queues` ADD `timestamp` varchar(255)[0m
+2012-03-13 19:09:26 DEBUG    [1m[35m (82.6ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('202')
+2012-03-13 19:09:26 INFO  Migrating to CreateVolumes (203)
+2012-03-13 19:09:26 DEBUG    [1m[36m (139.8ms)[0m  [1mCREATE TABLE `volumes` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `call_num` varchar(255), `collection_id` int NOT NULL, `dc_identifier` varchar(255) NOT NULL, `number` int, `availability` varchar(255), `location` varchar(255), `label` varchar(255), `link_label` varchar(255), `launch_url` varchar(255), `link` varchar(255), `support` varchar(255)) ENGINE=InnoDB[0m
+2012-03-13 19:09:26 DEBUG    [1m[35m (485.2ms)[0m  CREATE INDEX `index_volumes_on_dc_identifier_and_collection_id` ON `volumes` (`dc_identifier`, `collection_id`)
+2012-03-13 19:09:27 DEBUG    [1m[36m (358.7ms)[0m  [1mCREATE INDEX `index_volumes_on_dc_identifier` ON `volumes` (`dc_identifier`)[0m
+2012-03-13 19:09:27 DEBUG    [1m[35m (392.2ms)[0m  CREATE INDEX `index_volumes_on_collection_id` ON `volumes` (`collection_id`)
+2012-03-13 19:09:28 DEBUG    [1m[36m (450.3ms)[0m  [1mCREATE INDEX `index_volumes_on_call_num` ON `volumes` (`call_num`)[0m
+2012-03-13 19:09:28 DEBUG    [1m[35m (41.0ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('203')
+2012-03-13 19:09:28 INFO  Migrating to CreatePortfolioData (204)
+2012-03-13 19:09:28 DEBUG    [1m[36m (130.9ms)[0m  [1mCREATE TABLE `portfolio_datas` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `dc_identifier` varchar(255), `isbn` varchar(255), `issn` varchar(255), `call_num` varchar(255), `last_issue` varchar(255), `audience` varchar(255), `genre` varchar(255), `publisher_country` varchar(255), `copyright` varchar(255), `display_group` varchar(255), `broadcast_group` varchar(255), `license_info` varchar(255), `commercial_number` varchar(255), `binding` varchar(255), `theme` varchar(255), `metadata_id` int, `is_available` tinyint(1)) ENGINE=InnoDB[0m
+2012-03-13 19:09:28 DEBUG    [1m[35m (417.1ms)[0m  CREATE UNIQUE INDEX `index_portfolio_datas_on_dc_identifier_and_metadata_id` ON `portfolio_datas` (`dc_identifier`, `metadata_id`)
+2012-03-13 19:09:29 DEBUG    [1m[36m (360.4ms)[0m  [1mCREATE INDEX `index_portfolio_datas_on_call_num` ON `portfolio_datas` (`call_num`)[0m
+2012-03-13 19:09:29 DEBUG    [1m[35m (49.3ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('204')
+2012-03-13 19:09:29 INFO  Migrating to UpdateMetadatasAddDcIdentifierString (205)
+2012-03-13 19:09:29 DEBUG    [1m[36m (366.5ms)[0m  [1mALTER TABLE `metadatas` ADD `dc_identifier_string` varchar(255)[0m
+2012-03-13 19:09:29 DEBUG    [1m[35m (54.1ms)[0m  UPDATE metadatas set dc_identifier_string = dc_identifier;
+2012-03-13 19:09:29 DEBUG    [1m[36m (0.6ms)[0m  [1mSHOW COLUMNS FROM `metadatas` LIKE 'dc_identifier'[0m
+2012-03-13 19:09:29 DEBUG    [1m[35m (477.5ms)[0m  ALTER TABLE `metadatas` CHANGE `dc_identifier` `dc_identifier_text` text DEFAULT NULL
+2012-03-13 19:09:30 DEBUG    [1m[36m (29.8ms)[0m  [1mSHOW COLUMNS FROM `metadatas` LIKE 'dc_identifier_string'[0m
+2012-03-13 19:09:30 DEBUG    [1m[35m (360.8ms)[0m  ALTER TABLE `metadatas` CHANGE `dc_identifier_string` `dc_identifier` varchar(255) DEFAULT NULL
+2012-03-13 19:09:30 DEBUG    [1m[36m (260.5ms)[0m  [1mCREATE INDEX `index_metadatas_on_dc_identifier` ON `metadatas` (`dc_identifier`)[0m
+2012-03-13 19:09:30 DEBUG    [1m[35m (49.5ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('205')
+2012-03-13 19:09:30 INFO  Migrating to UpdateVolumesAddMetadataId (206)
+2012-03-13 19:09:31 DEBUG    [1m[36m (333.2ms)[0m  [1mALTER TABLE `volumes` ADD `metadata_id` int[0m
+2012-03-13 19:09:31 DEBUG    [1m[35m (42.1ms)[0m  UPDATE volumes V set metadata_id = (SELECT id from metadatas M where V.dc_identifier = M.dc_identifier AND V.collection_id = M.collection_id)
+2012-03-13 19:09:31 DEBUG    [1m[36m (502.8ms)[0m  [1mCREATE INDEX `index_volumes_on_metadata_id` ON `volumes` (`metadata_id`)[0m
+2012-03-13 19:09:31 DEBUG    [1m[35m (49.3ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('206')
+2012-03-13 19:09:31 INFO  Migrating to UpdatePortfolioDatasAddIndexes (207)
+2012-03-13 19:09:32 DEBUG    [1m[36m (926.9ms)[0m  [1mCREATE UNIQUE INDEX `index_portfolio_datas_on_metadata_id` ON `portfolio_datas` (`metadata_id`)[0m
+2012-03-13 19:09:33 DEBUG    [1m[35m (635.9ms)[0m  CREATE UNIQUE INDEX `index_portfolio_datas_on_dc_identifier` ON `portfolio_datas` (`dc_identifier`)
+2012-03-13 19:09:33 DEBUG    [1m[36m (49.3ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('207')[0m
+2012-03-13 19:09:33 INFO  Migrating to CreateLogNote (208)
+2012-03-13 19:09:33 DEBUG    [1m[35m (106.4ms)[0m  CREATE TABLE `log_notes` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `host` varchar(255), `object_uid` varchar(255), `object_type` varchar(255), `note` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+2012-03-13 19:09:33 DEBUG    [1m[36m (49.4ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('208')[0m
+2012-03-13 19:09:33 INFO  Migrating to CreateLogMailExport (209)
+2012-03-13 19:09:33 DEBUG    [1m[35m (106.7ms)[0m  CREATE TABLE `log_mail_exports` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `host` varchar(255), `idDoc` varchar(255), `document_type` varchar(255), `object_type` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+2012-03-13 19:09:33 DEBUG    [1m[36m (49.5ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('209')[0m
+2012-03-13 19:09:33 INFO  Migrating to CreateLogPrint (210)
+2012-03-13 19:09:33 DEBUG    [1m[35m (106.3ms)[0m  CREATE TABLE `log_prints` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `host` varchar(255), `idDoc` varchar(255), `document_type` varchar(255), `object_type` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+2012-03-13 19:09:33 DEBUG    [1m[36m (41.1ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('210')[0m
+2012-03-13 19:09:33 INFO  Migrating to CreateLogSearch (211)
+2012-03-13 19:09:33 DEBUG    [1m[35m (131.6ms)[0m  CREATE TABLE `log_searches` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `host` varchar(255), `search_history_id` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+2012-03-13 19:09:33 DEBUG    [1m[36m (41.1ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('211')[0m
+2012-03-13 19:09:33 INFO  Migrating to CreateLogRebonceTag (212)
+2012-03-13 19:09:34 DEBUG    [1m[35m (89.4ms)[0m  CREATE TABLE `log_rebonce_tags` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `id_mode` int(11), `mode` varchar(255), `host` varchar(255), `word` varchar(255), `uuid` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+2012-03-13 19:09:34 DEBUG    [1m[36m (41.1ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('212')[0m
+2012-03-13 19:09:34 INFO  Migrating to CreateLogCollectionUsages (213)
+2012-03-13 19:09:34 DEBUG    [1m[35m (87.6ms)[0m  CREATE TABLE `log_collection_usages` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `idSets` varchar(255), `host` varchar(255), `idFilters` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+2012-03-13 19:09:34 DEBUG    [1m[36m (41.0ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('213')[0m
+2012-03-13 19:09:34 INFO  Migrating to CreateLogComment (214)
+2012-03-13 19:09:34 DEBUG    [1m[35m (89.7ms)[0m  CREATE TABLE `log_comments` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `host` varchar(255), `object_uid` varchar(255), `object_type` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+2012-03-13 19:09:34 DEBUG    [1m[36m (41.0ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('214')[0m
+2012-03-13 19:09:34 INFO  Migrating to CreateLogRebonceMode (215)
+2012-03-13 19:09:34 DEBUG    [1m[35m (98.6ms)[0m  CREATE TABLE `log_rebonce_modes` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `mode` varchar(255), `host` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+2012-03-13 19:09:34 DEBUG    [1m[36m (49.4ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('215')[0m
+2012-03-13 19:09:34 INFO  Migrating to CreateLogSaveRequest (216)
+2012-03-13 19:09:34 DEBUG    [1m[35m (89.6ms)[0m  CREATE TABLE `log_save_requests` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `search_history_id` int(11), `host` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+2012-03-13 19:09:34 DEBUG    [1m[36m (49.4ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('216')[0m
+2012-03-13 19:09:34 INFO  Migrating to CreateLogTag (217)
+2012-03-13 19:09:35 DEBUG    [1m[35m (554.3ms)[0m  CREATE TABLE `log_tags` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `tag` varchar(255), `host` varchar(255), `object_type` varchar(255), `uuid` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+2012-03-13 19:09:35 DEBUG    [1m[36m (346.9ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('217')[0m
+2012-03-13 19:09:35 INFO  Migrating to CreateLogListConsult (218)
+2012-03-13 19:09:36 DEBUG    [1m[35m (468.8ms)[0m  CREATE TABLE `log_list_consults` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `id_list` int(11), `title` varchar(255), `nb_consult` int(11), `host` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+2012-03-13 19:09:36 DEBUG    [1m[36m (91.9ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('218')[0m
+2012-03-13 19:09:36 INFO  Migrating to UpdatePortfolioDatasAddIndice (219)
+2012-03-13 19:09:36 DEBUG    [1m[35m (498.6ms)[0m  ALTER TABLE `portfolio_datas` ADD `indice` varchar(255)
+2012-03-13 19:09:36 DEBUG    [1m[36m (40.8ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('219')[0m
+2012-03-13 19:09:36 INFO  Migrating to UpdateDocumentTypesAddIndexes (220)
+2012-03-13 19:09:36 DEBUG    [1m[35m (214.5ms)[0m  CREATE INDEX `index_document_types_on_collection_id` ON `document_types` (`collection_id`)
+2012-03-13 19:09:37 DEBUG    [1m[36m (242.4ms)[0m  [1mCREATE INDEX `index_document_types_on_primary_document_type` ON `document_types` (`primary_document_type`)[0m
+2012-03-13 19:09:37 DEBUG    [1m[35m (300.7ms)[0m  CREATE INDEX `index_document_types_on_collection_id_and_primary_document_type` ON `document_types` (`collection_id`, `primary_document_type`)
+2012-03-13 19:09:37 DEBUG    [1m[36m (301.0ms)[0m  [1mCREATE INDEX `index_primary_document_types_on_name` ON `primary_document_types` (`name`)[0m
+2012-03-13 19:09:37 DEBUG    [1m[35m (41.0ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('220')
+2012-03-13 19:09:37 INFO  Migrating to UpdateVolumesAddObjectId (221)
+2012-03-13 19:09:38 DEBUG    [1m[36m (241.6ms)[0m  [1mALTER TABLE `volumes` ADD `object_id` int[0m
+2012-03-13 19:09:38 DEBUG    [1m[35m (217.4ms)[0m  ALTER TABLE `volumes` ADD `document_id` int
+2012-03-13 19:09:38 DEBUG    [1m[36m (260.5ms)[0m  [1mALTER TABLE `volumes` ADD `barcode` int[0m
+2012-03-13 19:09:38 DEBUG    [1m[35m (242.4ms)[0m  ALTER TABLE `volumes` ADD `source` varchar(255)
+2012-03-13 19:09:38 DEBUG    [1m[36m (49.3ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('221')[0m
+2012-03-13 19:09:38 INFO  Migrating to UpdateLogSearchAddProperties (222)
+2012-03-13 19:09:39 DEBUG    [1m[35m (208.0ms)[0m  ALTER TABLE `log_searches` ADD `profil` varchar(255)
+2012-03-13 19:09:39 DEBUG    [1m[36m (234.3ms)[0m  [1mALTER TABLE `log_searches` ADD `context` varchar(255)[0m
+2012-03-13 19:09:39 DEBUG    [1m[35m (242.9ms)[0m  ALTER TABLE `log_searches` ADD `search_tab_subject_id` int DEFAULT NULL
+2012-03-13 19:09:39 DEBUG    [1m[36m (243.3ms)[0m  [1mCREATE INDEX `index_log_searches_on_context` ON `log_searches` (`context`)[0m
+2012-03-13 19:09:39 DEBUG    [1m[35m (49.3ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('222')
+2012-03-13 19:09:39 INFO  Migrating to UpdateLogCartUsageAddProperties (223)
+2012-03-13 19:09:40 DEBUG    [1m[36m (207.8ms)[0m  [1mALTER TABLE `log_cart_usages` ADD `profil` varchar(255)[0m
+2012-03-13 19:09:40 DEBUG    [1m[35m (275.8ms)[0m  ALTER TABLE `log_cart_usages` ADD `first` int(11)
+2012-03-13 19:09:40 DEBUG    [1m[36m (41.0ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('223')[0m
+2012-03-13 19:09:40 INFO  Migrating to UpdateHistorySearchesAddTheme (224)
+2012-03-13 19:09:40 DEBUG    [1m[35m (216.0ms)[0m  ALTER TABLE `history_searches` ADD `search_tab_subject_id` int(11) DEFAULT -1
+2012-03-13 19:09:40 DEBUG    [1m[36m (40.9ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('224')[0m
+2012-03-13 19:09:40 INFO  Migrating to UpdateLogSaveRequestAddProfil (225)
+2012-03-13 19:09:40 DEBUG    [1m[35m (249.8ms)[0m  ALTER TABLE `log_save_requests` ADD `profil` varchar(255)
+2012-03-13 19:09:40 DEBUG    [1m[36m (49.2ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('225')[0m
+2012-03-13 19:09:40 INFO  Migrating to UpdateLogConsultAddProperties (226)
+2012-03-13 19:09:41 DEBUG    [1m[35m (284.4ms)[0m  ALTER TABLE `log_consults` ADD `profil` varchar(255)
+2012-03-13 19:09:41 DEBUG    [1m[36m (467.5ms)[0m  [1mALTER TABLE `log_consults` ADD `action` varchar(255)[0m
+2012-03-13 19:09:41 DEBUG    [1m[35m (217.9ms)[0m  ALTER TABLE `log_consults` ADD `date` varchar(255)
+2012-03-13 19:09:42 DEBUG    [1m[36m (234.2ms)[0m  [1mALTER TABLE `log_consults` ADD `vendor_name` varchar(255)[0m
+2012-03-13 19:09:42 DEBUG    [1m[35m (250.9ms)[0m  ALTER TABLE `log_consults` ADD `context` varchar(255)
+2012-03-13 19:09:42 DEBUG    [1m[36m (250.8ms)[0m  [1mALTER TABLE `log_consults` ADD `material_type` varchar(255)[0m
+2012-03-13 19:09:42 DEBUG    [1m[35m (219.1ms)[0m  ALTER TABLE `log_consults` ADD `theme` varchar(255)
+2012-03-13 19:09:43 DEBUG    [1m[36m (217.8ms)[0m  [1mALTER TABLE `log_consults` DROP `nb_consult`[0m
+2012-03-13 19:09:43 DEBUG    [1m[35m (272.3ms)[0m  ALTER TABLE `log_consults` ADD `created_at` datetime
+2012-03-13 19:09:44 DEBUG    [1m[36m (746.9ms)[0m  [1mALTER TABLE `log_consults` ADD `updated_at` datetime[0m
+2012-03-13 19:09:44 DEBUG    [1m[35m (49.3ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('226')
+2012-03-13 19:09:44 INFO  Migrating to CreateLogConsultRessources (227)
+2012-03-13 19:09:44 DEBUG    [1m[36m (223.2ms)[0m  [1mCREATE TABLE `log_consult_ressources` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `collection_id` int(11), `host` varchar(255), `doc_identifier` varchar(255), `profil` varchar(255), `indoor` int(11), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+2012-03-13 19:09:44 DEBUG    [1m[35m (243.0ms)[0m  CREATE INDEX `index_log_consult_ressources_on_collection_id` ON `log_consult_ressources` (`collection_id`)
+2012-03-13 19:09:44 DEBUG    [1m[36m (217.5ms)[0m  [1mCREATE INDEX `index_log_consult_ressources_on_indoor` ON `log_consult_ressources` (`indoor`)[0m
+2012-03-13 19:09:44 DEBUG    [1m[35m (49.3ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('227')
+2012-03-13 19:09:44 INFO  Migrating to UpdateLogListConsultAddProperties (228)
+2012-03-13 19:09:45 DEBUG    [1m[36m (258.2ms)[0m  [1mALTER TABLE `log_list_consults` ADD `profil` varchar(255)[0m
+2012-03-13 19:09:45 DEBUG    [1m[35m (242.4ms)[0m  ALTER TABLE `log_list_consults` ADD `create_delete` int(11)
+2012-03-13 19:09:45 DEBUG    [1m[36m (209.1ms)[0m  [1mALTER TABLE `log_list_consults` DROP `nb_consult`[0m
+2012-03-13 19:09:45 DEBUG    [1m[35m (41.0ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('228')
+2012-03-13 19:09:45 INFO  Migrating to UpdateLogSaveNoticeAddProperties (229)
+2012-03-13 19:09:45 DEBUG    [1m[36m (42.6ms)[0m  [1mDROP TABLE `log_save_notice`[0m
+2012-03-13 19:09:45 DEBUG    [1m[35m (81.8ms)[0m  CREATE TABLE `log_save_notices` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `idDoc` varchar(255), `saveIn` varchar(255), `host` varchar(255), `profil` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+2012-03-13 19:09:46 DEBUG    [1m[36m (214.0ms)[0m  [1mCREATE INDEX `index_log_save_notices_on_saveIn` ON `log_save_notices` (`saveIn`)[0m
+2012-03-13 19:09:46 DEBUG    [1m[35m (52.7ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('229')
+2012-03-13 19:09:46 INFO  Migrating to UpdateLogTagAddProperties (230)
+2012-03-13 19:09:46 DEBUG    [1m[36m (325.4ms)[0m  [1mALTER TABLE `log_tags` ADD `profil` varchar(255)[0m
+2012-03-13 19:09:46 DEBUG    [1m[35m (375.9ms)[0m  ALTER TABLE `log_tags` ADD `object_uid` varchar(255)
+2012-03-13 19:09:46 DEBUG    [1m[36m (217.9ms)[0m  [1mALTER TABLE `log_tags` ADD `tag_id` int(11)[0m
+2012-03-13 19:09:47 DEBUG    [1m[35m (218.7ms)[0m  ALTER TABLE `log_tags` ADD `int_add` int(11)
+2012-03-13 19:09:47 DEBUG    [1m[36m (267.6ms)[0m  [1mALTER TABLE `log_tags` ADD `tag_label` varchar(255)[0m
+2012-03-13 19:09:47 DEBUG    [1m[35m (259.3ms)[0m  ALTER TABLE `log_tags` DROP `uuid`
+2012-03-13 19:09:47 DEBUG    [1m[36m (250.9ms)[0m  [1mALTER TABLE `log_tags` DROP `tag`[0m
+2012-03-13 19:09:48 DEBUG    [1m[35m (41.0ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('230')
+2012-03-13 19:09:48 INFO  Migrating to UpdateLogNoteCommentAddProperties (231)
+2012-03-13 19:09:48 DEBUG    [1m[36m (216.5ms)[0m  [1mALTER TABLE `log_notes` ADD `int_add` int(11)[0m
+2012-03-13 19:09:48 DEBUG    [1m[35m (235.7ms)[0m  ALTER TABLE `log_notes` ADD `profil` varchar(255)
+2012-03-13 19:09:48 DEBUG    [1m[36m (251.1ms)[0m  [1mALTER TABLE `log_comments` ADD `int_add` int(11)[0m
+2012-03-13 19:09:48 DEBUG    [1m[35m (250.8ms)[0m  ALTER TABLE `log_comments` ADD `profil` varchar(255)
+2012-03-13 19:09:49 DEBUG    [1m[36m (49.3ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('231')[0m
+2012-03-13 19:09:49 INFO  Migrating to UpdateLogRebonceTagAddProperties (232)
+2012-03-13 19:09:49 DEBUG    [1m[35m (224.3ms)[0m  ALTER TABLE `log_rebonce_tags` DROP `mode`
+2012-03-13 19:09:49 DEBUG    [1m[36m (209.0ms)[0m  [1mALTER TABLE `log_rebonce_tags` DROP `id_mode`[0m
+2012-03-13 19:09:49 DEBUG    [1m[35m (209.1ms)[0m  ALTER TABLE `log_rebonce_tags` DROP `word`
+2012-03-13 19:09:49 DEBUG    [1m[36m (219.0ms)[0m  [1mALTER TABLE `log_rebonce_tags` DROP `uuid`[0m
+2012-03-13 19:09:50 DEBUG    [1m[35m (267.9ms)[0m  ALTER TABLE `log_rebonce_tags` ADD `object_type` int(11)
+2012-03-13 19:09:50 DEBUG    [1m[36m (235.3ms)[0m  [1mALTER TABLE `log_rebonce_tags` ADD `object_uid` varchar(255)[0m
+2012-03-13 19:09:50 DEBUG    [1m[35m (208.3ms)[0m  ALTER TABLE `log_rebonce_tags` ADD `profil` varchar(255)
+2012-03-13 19:09:50 DEBUG    [1m[36m (209.1ms)[0m  [1mALTER TABLE `log_rebonce_tags` ADD `tag_id` int(11)[0m
+2012-03-13 19:09:50 DEBUG    [1m[35m (41.0ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('232')
+2012-03-13 19:09:50 INFO  Migrating to CreateLogRebonceProfil (233)
+2012-03-13 19:09:51 DEBUG    [1m[36m (131.4ms)[0m  [1mCREATE TABLE `log_rebonce_profils` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `profil` varchar(255), `host` varchar(255), `uuid_md5` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB[0m
+2012-03-13 19:09:51 DEBUG    [1m[35m (49.4ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('233')
+2012-03-13 19:09:51 INFO  Migrating to DeleteTables (234)
+2012-03-13 19:09:51 DEBUG    [1m[36m (48.0ms)[0m  [1mDROP TABLE `log_collection_group_usages`[0m
+2012-03-13 19:09:51 DEBUG    [1m[35m (45.5ms)[0m  DROP TABLE `log_collection_usages`
+2012-03-13 19:09:51 DEBUG    [1m[36m (41.6ms)[0m  [1mDROP TABLE `log_interaction_usages`[0m
+2012-03-13 19:09:51 DEBUG    [1m[35m (41.6ms)[0m  DROP TABLE `log_list_movement`
+2012-03-13 19:09:51 DEBUG    [1m[36m (41.7ms)[0m  [1mDROP TABLE `log_mail_exports`[0m
+2012-03-13 19:09:51 DEBUG    [1m[35m (49.9ms)[0m  DROP TABLE `log_prints`
+2012-03-13 19:09:51 DEBUG    [1m[36m (41.7ms)[0m  [1mDROP TABLE `log_rebonce_modes`[0m
+2012-03-13 19:09:51 DEBUG    [1m[35m (41.9ms)[0m  DROP TABLE `log_rebonce_usages`
+2012-03-13 19:09:51 DEBUG    [1m[36m (41.7ms)[0m  [1mDROP TABLE `log_search_words`[0m
+2012-03-13 19:09:51 DEBUG    [1m[35m (49.5ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('234')
+2012-03-13 19:09:51 INFO  Migrating to UpdateLogFacetteUsagesAddProperties (235)
+2012-03-13 19:09:51 DEBUG    [1m[36m (0.6ms)[0m  [1mSHOW COLUMNS FROM `log_facette_usages` LIKE 'types'[0m
+2012-03-13 19:09:51 DEBUG    [1m[35m (426.6ms)[0m  ALTER TABLE `log_facette_usages` CHANGE `types` `facette` varchar(255) DEFAULT NULL
+2012-03-13 19:09:52 DEBUG    [1m[36m (242.8ms)[0m  [1mALTER TABLE `log_facette_usages` ADD `label` varchar(255)[0m
+2012-03-13 19:09:52 DEBUG    [1m[35m (210.3ms)[0m  ALTER TABLE `log_facette_usages` ADD `profil` varchar(255)
+2012-03-13 19:09:52 DEBUG    [1m[36m (41.0ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('235')[0m
+2012-03-13 19:09:52 INFO  Migrating to UpdateLogConsultAddCollection (236)
+2012-03-13 19:09:52 DEBUG    [1m[35m (207.7ms)[0m  ALTER TABLE `log_consults` ADD `collection_id` int(11)
+2012-03-13 19:09:52 DEBUG    [1m[36m (40.9ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('236')[0m
+2012-03-13 19:09:52 INFO  Migrating to UpdateCollectionAddDefinitionSearch (237)
+2012-03-13 19:09:53 DEBUG    [1m[35m (257.8ms)[0m  ALTER TABLE `collections` ADD `definition_search` varchar(255) DEFAULT 'creator=1003;author=1003;subject=21;issn=8;isbn=7;callnum=16;publisher=1018;title=4;keyword=1016'
+2012-03-13 19:09:53 DEBUG    [1m[36m (49.1ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('237')[0m
+2012-03-13 19:09:53 INFO  Migrating to UpdateCommentChangeType (238)
+2012-03-13 19:09:53 DEBUG    [1m[35m (289.7ms)[0m  ALTER TABLE `comments` CHANGE `content` `content` text NOT NULL
+2012-03-13 19:09:53 DEBUG    [1m[36m (41.0ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('238')[0m
+2012-03-13 19:09:53 INFO  Migrating to UpdateNotices (239)
+2012-03-13 19:09:53 DEBUG    [1m[35m (224.7ms)[0m  ALTER TABLE `notices` ADD `document_type_id` int(11)
+2012-03-13 19:09:53 DEBUG    [1m[36m (42.3ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('239')[0m
+2012-03-13 19:09:53 INFO  Migrating to UpdateCollectionAddPostData (240)
+2012-03-13 19:09:53 DEBUG    [1m[35m (216.3ms)[0m  ALTER TABLE `collections` ADD `post_data` varchar(255)
+2012-03-13 19:09:53 DEBUG    [1m[36m (49.2ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('240')[0m
+2012-03-13 19:09:53 INFO  Migrating to UpdateJobQueueAlterRecordsId (241)
+2012-03-13 19:09:54 DEBUG    [1m[35m (272.8ms)[0m  ALTER TABLE `job_queues` CHANGE `records_id` `records_id` varchar(255) DEFAULT -1
+2012-03-13 19:09:54 DEBUG    [1m[36m (49.2ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('241')[0m
+2012-03-13 19:09:54 INFO  Migrating to UpdatePortfolioDatasAddDisplayGroups (242)
+2012-03-13 19:09:54 DEBUG    [1m[35m (249.5ms)[0m  ALTER TABLE `portfolio_datas` ADD `display_groups` varchar(255)
+2012-03-13 19:09:54 DEBUG    [1m[36m (44.1ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('242')[0m
+2012-03-13 19:09:54 INFO  Migrating to UpdateThemesReferencesAddExclusion (243)
+2012-03-13 19:09:54 DEBUG    [1m[35m (438.0ms)[0m  ALTER TABLE `themes_references` ADD `exclusion` varchar(255)
+2012-03-13 19:09:55 DEBUG    [1m[36m (412.4ms)[0m  [1mALTER TABLE `themes_references` CHANGE `ref_theme` `ref_theme` varchar(255) DEFAULT NULL[0m
+2012-03-13 19:09:55 DEBUG    [1m[35m (49.3ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('243')
+2012-03-13 19:09:55 INFO  Migrating to UpdatePortfolioDatasAddLastIssue (244)
+2012-03-13 19:09:55 DEBUG    [1m[36m (239.8ms)[0m  [1mALTER TABLE `portfolio_datas` ADD `issues` varchar(255)[0m
+2012-03-13 19:09:55 DEBUG    [1m[35m (49.2ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('244')
+2012-03-13 19:09:55 INFO  Migrating to UpdatePortfolioDatasAddBulletinage (245)
+2012-03-13 19:09:56 DEBUG    [1m[36m (257.6ms)[0m  [1mALTER TABLE `portfolio_datas` ADD `issue_title` varchar(255)[0m
+2012-03-13 19:09:56 DEBUG    [1m[35m (242.3ms)[0m  ALTER TABLE `portfolio_datas` ADD `conservation` varchar(255)
+2012-03-13 19:09:56 DEBUG    [1m[36m (41.0ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('245')[0m
+2012-03-13 19:09:56 INFO  Migrating to UpdatePortfolioDatasChangeIssues (246)
+2012-03-13 19:09:56 DEBUG    [1m[35m (248.4ms)[0m  ALTER TABLE `portfolio_datas` CHANGE `issues` `issues` text DEFAULT NULL
+2012-03-13 19:09:56 DEBUG    [1m[36m (56.1ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('246')[0m
+2012-03-13 19:09:56 INFO  Migrating to UpdateVolumesChangeLabel (247)
+2012-03-13 19:09:57 DEBUG    [1m[35m (531.9ms)[0m  ALTER TABLE `volumes` CHANGE `label` `label` text DEFAULT NULL
+2012-03-13 19:09:57 DEBUG    [1m[36m (266.4ms)[0m  [1mALTER TABLE `volumes` CHANGE `launch_url` `launch_url` text DEFAULT NULL[0m
+2012-03-13 19:09:57 DEBUG    [1m[35m (241.0ms)[0m  ALTER TABLE `volumes` CHANGE `location` `location` text DEFAULT NULL
+2012-03-13 19:09:57 DEBUG    [1m[36m (232.3ms)[0m  [1mALTER TABLE `volumes` CHANGE `link` `link` text DEFAULT NULL[0m
+2012-03-13 19:09:58 DEBUG    [1m[35m (425.6ms)[0m  ALTER TABLE `volumes` CHANGE `link_label` `link_label` text DEFAULT NULL
+2012-03-13 19:09:58 DEBUG    [1m[36m (49.3ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('247')[0m
+2012-03-13 19:09:58 DEBUG    [1m[35m (0.5ms)[0m  SELECT `schema_migrations`.`version` FROM `schema_migrations` 
+2012-03-16 13:47:10 DEBUG  INIT MEMCACHE ["127.0.0.1", "10.1.2.111:11211", "10.1.2.112:11211"]
+2012-03-16 14:20:59 DEBUG  INIT MEMCACHE ["127.0.0.1", "10.1.2.111:11211", "10.1.2.112:11211"]
+2012-03-16 14:25:12 DEBUG  INIT MEMCACHE ["127.0.0.1", "10.1.2.111:11211", "10.1.2.112:11211"]
+2012-03-16 14:26:14 DEBUG  INIT MEMCACHE ["127.0.0.1", "10.1.2.111:11211", "10.1.2.112:11211"]
+2012-03-16 15:09:46 DEBUG  INIT MEMCACHE ["127.0.0.1", "10.1.2.111:11211", "10.1.2.112:11211"]

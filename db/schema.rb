@@ -1,15 +1,17 @@
-# This file is auto-generated from the current state of the database. Instead of editing this file, 
-# please use the migrations feature of Active Record to incrementally modify your database, and
-# then regenerate this schema definition.
+# encoding: UTF-8
+# This file is auto-generated from the current state of the database. Instead
+# of editing this file, please use the migrations feature of Active Record to
+# incrementally modify your database, and then regenerate this schema definition.
 #
-# Note that this schema.rb definition is the authoritative source for your database schema. If you need
-# to create the application database on another system, you should be using db:schema:load, not running
-# all the migrations from scratch. The latter is a flawed and unsustainable approach (the more migrations
+# Note that this schema.rb definition is the authoritative source for your
+# database schema. If you need to create the application database on another
+# system, you should be using db:schema:load, not running all the migrations
+# from scratch. The latter is a flawed and unsustainable approach (the more migrations
 # you'll amass, the slower it'll run and the greater likelihood for issues).
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 242) do
+ActiveRecord::Schema.define(:version => 247) do
 
   create_table "cached_records", :force => true do |t|
     t.integer  "search_id"
@@ -95,8 +97,8 @@ ActiveRecord::Schema.define(:version => 242) do
     t.string   "uuid",              :null => false
     t.integer  "comment_id",        :null => false
     t.integer  "comment_relevance", :null => false
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.datetime "created_at",        :null => false
+    t.datetime "updated_at",        :null => false
   end
 
   create_table "comments", :force => true do |t|
@@ -118,13 +120,15 @@ ActiveRecord::Schema.define(:version => 242) do
   end
 
   create_table "comments_alerts", :id => false, :force => true do |t|
-    t.integer  "comment_id", :null => false
-    t.string   "uuid",       :null => false
+    t.integer  "[:comment_id, :uuid]", :null => false
+    t.integer  "comment_id",           :null => false
+    t.string   "uuid",                 :null => false
     t.text     "message"
     t.datetime "send_date"
   end
 
-  create_table "community_users", :primary_key => "uuid", :force => true do |t|
+  create_table "community_users", :primary_key => "[:uuid]", :force => true do |t|
+    t.string  "uuid",                                                  :null => false
     t.string  "name"
     t.string  "user_type",                 :default => "default_user"
     t.integer "alerts_availability_count", :default => 0
@@ -169,8 +173,8 @@ ActiveRecord::Schema.define(:version => 242) do
 
   create_table "document_types", :force => true do |t|
     t.string   "name"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.datetime "created_at",                           :null => false
+    t.datetime "updated_at",                           :null => false
     t.integer  "collection_id"
     t.integer  "primary_document_type", :default => 1
   end
@@ -195,9 +199,9 @@ ActiveRecord::Schema.define(:version => 242) do
   end
 
   create_table "harvest_schedules", :force => true do |t|
-    t.time    "time",                                                                                                            :null => false
-    t.integer "collection_id",                                                                                    :default => 0
-    t.enum    "day",           :limit => [:Monday, :Tuesday, :Wednesday, :Thursday, :Friday, :Saturday, :Sunday],                :null => false
+    t.time    "time",                                      :null => false
+    t.integer "collection_id",              :default => 0
+    t.string  "day",           :limit => 0,                :null => false
   end
 
   add_index "harvest_schedules", ["collection_id", "day", "time"], :name => "index_harvest_schedules_on_collection_id_and_day_and_time", :unique => true
@@ -251,12 +255,13 @@ ActiveRecord::Schema.define(:version => 242) do
   end
 
   create_table "list_user_records", :id => false, :force => true do |t|
-    t.string   "doc_identifier",                   :null => false
-    t.integer  "doc_collection_id",                :null => false
-    t.string   "uuid",                             :null => false
-    t.integer  "list_id",                          :null => false
+    t.integer  "[:doc_identifier, :doc_collection_id, :uuid, :list_id]",                :null => false
+    t.string   "doc_identifier",                                                        :null => false
+    t.integer  "doc_collection_id",                                                     :null => false
+    t.string   "uuid",                                                                  :null => false
+    t.integer  "list_id",                                                               :null => false
     t.datetime "date_insert"
-    t.integer  "rank",              :default => 0
+    t.integer  "rank",                                                   :default => 0
   end
 
   create_table "lists", :force => true do |t|
@@ -278,8 +283,8 @@ ActiveRecord::Schema.define(:version => 242) do
 
   create_table "log_cart_usages", :force => true do |t|
     t.string   "idDoc"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
     t.string   "host"
     t.string   "profil"
     t.integer  "first"
@@ -289,8 +294,8 @@ ActiveRecord::Schema.define(:version => 242) do
     t.string   "host"
     t.string   "object_uid"
     t.string   "object_type"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
     t.integer  "int_add"
     t.string   "profil"
   end
@@ -301,8 +306,8 @@ ActiveRecord::Schema.define(:version => 242) do
     t.string   "doc_identifier"
     t.string   "profil"
     t.integer  "indoor"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.datetime "created_at",     :null => false
+    t.datetime "updated_at",     :null => false
   end
 
   add_index "log_consult_ressources", ["collection_id"], :name => "index_log_consult_ressources_on_collection_id"
@@ -326,8 +331,8 @@ ActiveRecord::Schema.define(:version => 242) do
 
   create_table "log_facette_usages", :force => true do |t|
     t.string   "facette"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
     t.string   "host"
     t.string   "label"
     t.string   "profil"
@@ -337,16 +342,16 @@ ActiveRecord::Schema.define(:version => 242) do
     t.integer  "id_list"
     t.string   "title"
     t.string   "host"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.datetime "created_at",    :null => false
+    t.datetime "updated_at",    :null => false
     t.string   "profil"
     t.integer  "create_delete"
   end
 
   create_table "log_mail_usages", :force => true do |t|
     t.string   "idDoc"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
     t.string   "host"
   end
 
@@ -355,16 +360,16 @@ ActiveRecord::Schema.define(:version => 242) do
     t.string   "object_uid"
     t.string   "object_type"
     t.string   "note"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
     t.integer  "int_add"
     t.string   "profil"
   end
 
   create_table "log_print_usages", :force => true do |t|
     t.string   "idDoc"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
     t.string   "host"
   end
 
@@ -372,14 +377,14 @@ ActiveRecord::Schema.define(:version => 242) do
     t.string   "profil"
     t.string   "host"
     t.string   "uuid_md5"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
   create_table "log_rebonce_tags", :force => true do |t|
     t.string   "host"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
     t.integer  "object_type"
     t.string   "object_uid"
     t.string   "profil"
@@ -388,8 +393,8 @@ ActiveRecord::Schema.define(:version => 242) do
 
   create_table "log_rss_usages", :force => true do |t|
     t.string   "rss_url"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
     t.string   "host"
   end
 
@@ -398,8 +403,8 @@ ActiveRecord::Schema.define(:version => 242) do
     t.string   "saveIn"
     t.string   "host"
     t.string   "profil"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
   add_index "log_save_notices", ["saveIn"], :name => "index_log_save_notices_on_saveIn"
@@ -407,16 +412,16 @@ ActiveRecord::Schema.define(:version => 242) do
   create_table "log_save_requests", :force => true do |t|
     t.integer  "search_history_id"
     t.string   "host"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.datetime "created_at",        :null => false
+    t.datetime "updated_at",        :null => false
     t.string   "profil"
   end
 
   create_table "log_searches", :force => true do |t|
     t.string   "host"
     t.integer  "search_history_id"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.datetime "created_at",            :null => false
+    t.datetime "updated_at",            :null => false
     t.string   "profil"
     t.string   "context"
     t.integer  "search_tab_subject_id"
@@ -427,8 +432,8 @@ ActiveRecord::Schema.define(:version => 242) do
   create_table "log_tags", :force => true do |t|
     t.string   "host"
     t.string   "object_type"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
     t.string   "profil"
     t.string   "object_uid"
     t.integer  "tag_id"
@@ -437,16 +442,19 @@ ActiveRecord::Schema.define(:version => 242) do
   end
 
   create_table "manage_droits", :id => false, :force => true do |t|
-    t.string  "id_perm",       :null => false
-    t.string  "id_role",       :null => false
-    t.string  "id_lieu",       :null => false
-    t.integer "id_collection", :null => false
+    t.integer "[:id_perm, :id_role, :id_collection, :id_lieu]", :null => false
+    t.string  "id_perm",                                        :null => false
+    t.string  "id_role",                                        :null => false
+    t.string  "id_lieu",                                        :null => false
+    t.integer "id_collection",                                  :null => false
   end
 
-  create_table "manage_permissions", :primary_key => "id_perm", :force => true do |t|
+  create_table "manage_permissions", :primary_key => "[:id_perm]", :force => true do |t|
+    t.string "id_perm", :null => false
   end
 
-  create_table "manage_roles", :primary_key => "id_role", :force => true do |t|
+  create_table "manage_roles", :primary_key => "[:id_role]", :force => true do |t|
+    t.string "id_role"
   end
 
   create_table "metadatas", :force => true do |t|
@@ -488,14 +496,15 @@ ActiveRecord::Schema.define(:version => 242) do
   end
 
   create_table "notices", :id => false, :force => true do |t|
-    t.string   "doc_identifier",                     :null => false
-    t.integer  "doc_collection_id",                  :null => false
+    t.integer  "[:doc_identifier, :doc_collection_id]",                  :null => false
+    t.string   "doc_identifier",                                         :null => false
+    t.integer  "doc_collection_id",                                      :null => false
     t.datetime "created_at"
     t.string   "dc_title"
     t.string   "dc_author"
     t.string   "dc_type"
-    t.integer  "notes_count",       :default => 0
-    t.float    "notes_avg",         :default => 0.0
+    t.integer  "notes_count",                           :default => 0
+    t.float    "notes_avg",                             :default => 0.0
     t.string   "isbn"
     t.string   "ptitle"
     t.datetime "update_date"
@@ -554,6 +563,9 @@ ActiveRecord::Schema.define(:version => 242) do
     t.boolean "is_available"
     t.string  "indice"
     t.string  "display_groups"
+    t.text    "issues"
+    t.string  "issue_title"
+    t.string  "conservation"
   end
 
   add_index "portfolio_datas", ["call_num"], :name => "index_portfolio_datas_on_call_num"
@@ -563,8 +575,8 @@ ActiveRecord::Schema.define(:version => 242) do
 
   create_table "primary_document_types", :force => true do |t|
     t.string   "name"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.datetime "created_at",                           :null => false
+    t.datetime "updated_at",                           :null => false
     t.integer  "new_period"
     t.string   "display_icon",  :default => "unknown"
     t.string   "no_image_icon", :default => "unknown"
@@ -608,13 +620,13 @@ ActiveRecord::Schema.define(:version => 242) do
   create_table "rejects", :force => true do |t|
     t.string   "name"
     t.text     "data"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
   create_table "rss_feeds", :force => true do |t|
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.datetime "created_at",            :null => false
+    t.datetime "updated_at",            :null => false
     t.string   "name",                  :null => false
     t.string   "full_name",             :null => false
     t.integer  "primary_document_type"
@@ -637,8 +649,8 @@ ActiveRecord::Schema.define(:version => 242) do
     t.integer  "tab_id"
     t.integer  "parent_id"
     t.string   "label"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.datetime "created_at",                                 :null => false
+    t.datetime "updated_at",                                 :null => false
     t.integer  "collection_group_id"
     t.string   "description"
     t.integer  "rank"
@@ -671,15 +683,16 @@ ActiveRecord::Schema.define(:version => 242) do
   add_index "site_configs", ["field"], :name => "index_site_configs_on_field"
 
   create_table "subscriptions", :id => false, :force => true do |t|
-    t.string   "object_uid",        :default => "", :null => false
-    t.integer  "object_type",       :default => 0,  :null => false
+    t.integer  "[:object, :object_id, :uuid]",                :null => false
+    t.string   "object_uid"
+    t.integer  "object_type"
     t.datetime "subscription_date"
     t.datetime "check_date"
-    t.string   "uuid",              :default => "", :null => false
+    t.string   "uuid"
     t.integer  "mail_notification"
     t.datetime "send_mail_date"
     t.datetime "change_state_date"
-    t.integer  "state",             :default => 0
+    t.integer  "state",                        :default => 0
   end
 
   create_table "tags", :force => true do |t|
@@ -698,18 +711,20 @@ ActiveRecord::Schema.define(:version => 242) do
   add_index "themes", ["reference"], :name => "index_themes_on_reference", :unique => true
 
   create_table "themes_references", :force => true do |t|
-    t.string "ref_theme",  :limit => 10, :null => false
-    t.string "ref_source",               :null => false
-    t.string "source",                   :null => false
+    t.string "ref_theme"
+    t.string "ref_source", :null => false
+    t.string "source",     :null => false
+    t.string "exclusion"
   end
 
   add_index "themes_references", ["ref_source"], :name => "index_themes_references_on_ref_source"
   add_index "themes_references", ["ref_theme"], :name => "index_themes_references_on_ref_theme"
 
   create_table "user_records", :id => false, :force => true do |t|
-    t.string   "doc_identifier",    :null => false
-    t.integer  "doc_collection_id", :null => false
-    t.string   "uuid",              :null => false
+    t.integer  "[:doc_identifier, :doc_collection_id, :uuid]", :null => false
+    t.string   "doc_identifier",                               :null => false
+    t.integer  "doc_collection_id",                            :null => false
+    t.string   "uuid",                                         :null => false
     t.datetime "date_insert"
   end
 
@@ -772,11 +787,11 @@ ActiveRecord::Schema.define(:version => 242) do
     t.string  "dc_identifier", :null => false
     t.integer "number"
     t.string  "availability"
-    t.string  "location"
-    t.string  "label"
-    t.string  "link_label"
-    t.string  "launch_url"
-    t.string  "link"
+    t.text    "location"
+    t.text    "label"
+    t.text    "link_label"
+    t.text    "launch_url"
+    t.text    "link"
     t.string  "support"
     t.integer "metadata_id"
     t.integer "object_id"

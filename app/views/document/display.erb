@@ -1,0 +1,426 @@
+<link rel="stylesheet" type="text/css" href="/stylesheets/bpi-print.css" title="bpi-print.css" />
+<div id="printButton">
+    <script type="text/javascript">
+        function printpage(){
+            window.print();
+            window.close();
+        }
+    </script>
+    <input type="button" value="Imprimer" align=right onclick="printpage()"/>
+</div><!--end of div printButton --><% require "cgi" %>
+<%= render(:partial =>"navigation") %>
+<div class="middle doc">
+    <h3><%= render(:partial => "/record/messages") %>
+        <%= render(:partial => "/record/errors") %>
+        <%= render(:partial => "/record/private") %>
+    </h3>
+    <% if @record == nil %>
+    <b><h3>Le document n'est pas ou plus disponible</h3><%end %>
+        <b><h3><%= if @record != nil && @record[:title] != nil
+                @record[:title] end %>
+            </h3></b>
+        <div class="citation">
+            <% if @record != nil %>
+            <div id="preview">
+                <% if ((@moreImage != nil) && (@moreImage != "")) %>
+                <%= @moreImage %>
+                <% else %>
+                <%= image_tag("no_thumbnail.jpg") %>
+                <% end %>
+            </div>
+            <div id="barTop">
+            </div>
+            <div id="infoUtils">
+                <% if @record[:atitle] != "" %>
+                <div class="myAlign">
+                    <b><%= translate("ATITLE_FIELD") %>: </b>
+                </div>
+                <%= @record[:atitle] %>
+            </div>
+            <!--end of div elementInfoUtils -->
+            <br/>
+            <% end %>
+            <% if @record[:isbn] != "" %>
+            <div class="elementInfoUtils">
+                <div class="myAlign">
+                    <b><%= translate("ISBN_FIELD") %>: </b>
+                </div>
+                <%= @record[:isbn] %>
+            </div>
+            <!--end of div elementInfoUtils -->
+            <br/>
+            <% end %>
+            <% if @record[:issn] != "" %>
+            <div class="elementInfoUtils">
+                <div class="myAlign">
+                    <b><%= translate("ISSN_FIELD") %>: </b>
+                </div>
+                <%= @record[:issn] %>
+            </div>
+            <!--end of div elementInfoUtils -->
+            <br/>
+            <% end %>
+            <% if @record[:abstract] != "" %>
+            <div class="elementInfoUtils">
+                <div class="myAlign">
+                    <b><%= translate("ABSTRACT_FIELD") %>: </b>
+                </div>
+                <%= @record[:abstract] %>
+            </div>
+            <!--end of div elementInfoUtils -->
+            <br/>
+            <% end %>
+            <% if @record[:date] != "" %>
+            <div class="elementInfoUtils">
+                <div class="myAlign">
+                    <b><%= translate("DATE_FIELD") %>: </b>
+                </div>
+                <%= @record[:date] %>
+            </div>
+            <!--end of div elementInfoUtils -->
+            <br/>
+            <% end %>
+            <% if @record[:author] != "" %>
+            <div class="elementInfoUtils">
+                <div class="myAlign">
+                    <b><%= translate("AUTHOR_FIELD") %>: </b>
+                </div>
+                <% @record[:author].split(";").each {|authors| %>
+                <a href="/record/retrieve/?query[string1]=%22<%= authors.strip %>%22&query[field_filter1]=creator&rebonce=%22true%22"><%= authors %></a>
+                <br/>
+                <% } %>
+            </div>
+            <!--end of div elementInfoUtils -->
+            <br/>
+            <% end %>
+            <% if @record[:link] != "" %>
+            <div class="elementInfoUtils">
+                <div class="myAlign">
+                    <b><%= translate("LINK_FIELD") %>: </b>
+                </div>
+                <%= @record[:link] %>
+            </div>
+            <!--end of div elementInfoUtils -->
+            <br/>
+            <% end %>
+            <% if @record[:direct_url] != "" %>
+            <div class="elementInfoUtils">
+                <div class="myAlign">
+                    <b><%= translate("DIRECT_URL_FIELD") %>: </b>
+                </div>
+                <%= link_to "#{@record[:direct_url]}" , "#{@record[:direct_url]}", :popup => true %>
+            </div>
+            <!--end of div elementInfoUtils -->
+            <br/>
+            <% end %>
+            <% if @record[:static_url] != "" %>
+            <div class="elementInfoUtils">
+                <div class="myAlign">
+                    <b><%= translate("STATIC_URL_FIELD") %>: </b>
+                </div>
+                <%= @record[:static_url] %>
+            </div>
+            <!--end of div elementInfoUtils -->
+            <br/>
+            <% end %>
+            <% if @record[:subject] != "" %>
+            <div class="elementInfoUtils">
+                <div class="myAlign">
+                    <b><%= translate("SUBJECT_FIELD") %>: </b>
+                </div>
+                <% @record[:subject].split(";").each {|subject| %>
+                <a href="/record/retrieve/?query[string1]=%22<%=subject.strip %>%22&query[field_filter1]=subject&rebonce=%22true%22"><%= subject %></a>
+                <br/>
+                <% } %>
+            </div>
+            <!--end of div elementInfoUtils -->
+            <br/>
+            <% end %>
+            <% if @record[:publisher] != "" %>
+            <div class="elementInfoUtils">
+                <div class="myAlign">
+                    <b><%= translate("PUBLISHER_FIELD") %>: </b>
+                </div>
+                <% @publishers = @record[:publisher].split(";") %>
+                <% @publishers.each {|publisher| %>
+                <%result = " " %>
+                <% publisherString = publisher.split(",") %>
+                <% result = publisherString[0] %>
+                <% publisherString.each {|element| %>
+                <% isNumber = (true if Float(element) rescue false) %>
+                <% if !isNumber %>
+                <% if element != result %>
+                <%result << "," + element %>
+                <!--<%= link_to element, url="http://localhost:3000/record/retrieve?query[string1]=%22#{element.strip}%22&query[field_filter1]=publisher" %>--><% end %>
+                <% end %>
+                <% } %>
+                <a href="/record/retrieve/?query[string1]=%22<%= result.strip %>%22&query[field_filter1]=publisher&rebonce=%22true%22"><%= result %></a>
+                <% isNumber = (true if Float(publisherString[publisherString.length-1]) rescue false) %>
+                <% if isNumber %>
+                :<%= publisherString[publisherString.length-1] %>
+                <%end %>
+                <br/>
+                <% } %>
+            </div>
+            <!--end of div elementInfoUtils -->
+            <br/>
+            <% end %>
+            <% if @record[:relation] != "" %>
+            <div class="elementInfoUtils">
+                <div class="myAlign">
+                    <b><%= translate("RELATION_FIELD") %>: </b>
+                </div>
+                <%= @record[:relation] %>
+            </div>
+            <!--end of div elementInfoUtils -->
+            <br/>
+            <% end %>
+            <% if @record[:contributor] != "" %>
+            <div class="elementInfoUtils">
+                <div class="myAlign">
+                    <b><%= translate("CONTRIBUTOR_FIELD") %>: </b>
+                </div>
+                <%= @record[:contributor] %>
+            </div>
+            <!--end of div elementInfoUtils -->
+            <br/>
+            <% end %>
+            <% if @record[:rights] != "" %>
+            <div class="elementInfoUtils">
+                <div class="myAlign">
+                    <b><%= translate("RIGHTS_FIELD") %>: </b>
+                </div>
+                <%= @record[:rights] %>
+            </div>
+            <!--end of div elementInfoUtils -->
+            <br/>
+            <% end %>
+            <% if @record[:callnum] != "" %>
+            <div class="elementInfoUtils">
+                <div class="myAlign">
+                    <b><%= translate("CALLNUM_FIELD") %>: </b>
+                </div>
+                <%= @record[:callnum] %>
+            </div>
+            <!--end of div elementInfoUtils -->
+            <br/>
+            <% end %>
+            <% if @record[:material_type] != "" %>
+            <div class="elementInfoUtils">
+                <div class="myAlign">
+                    <b><%= translate("MATERIAL_TYPE_FIELD") %>: </b>
+                </div>
+                <%= @record[:material_type] %>
+            </div>
+            <!--end of div elementInfoUtils -->
+			
+			<br/> 
+            <% end %>
+            <% if !@record[:availability].blank? %>
+            <div class="elementInfoUtils">
+                <div class="myAlign">		
+                    <b><%= translate("AVAILABILITY_LABEL") %>: </b>
+                </div>
+               <%= translate("COLLECTION_AVAIL_LABEL_#{@record[:availability].upcase}") %> 
+            </div>
+
+			<!--end of div elementInfoUtils -->
+            <br/>
+            <% end %>
+            <% if @record[:format] != "" %>
+            <div class="elementInfoUtils">
+                <div class="myAlign">
+                    <b><%= translate("FORMAT_FIELD") %>: </b>
+                </div>
+                <%= @record[:format] %>
+            </div>
+            <!--end of div elementInfoUtils -->
+            <br/>
+            <% end %>
+            <% if @record[:theme] != "" %>
+            <div class="elementInfoUtils">
+                <div class="myAlign">
+                    <b><%= translate("THEME_FIELD") %>: </b>
+                </div>
+                <% @record[:theme].split(";").each {|theme| %>
+                <a href="/record/retrieve/?query[string1]=%22<%= theme.strip %>%22&query[field_filter1]=theme_rebond&query[max]=1000&rebonce=%22true%22"><%= theme %></a>
+                <br>
+                <% } %>
+            </div>
+            <!--end of div elementInfoUtils -->
+            <br/>
+            <% end %>
+            <% if @record[:category] != "" %>
+            <div class="elementInfoUtils">
+                <div class="myAlign">
+                    <b><%= translate("CATEGORY_FIELD") %>: </b>
+                </div>
+                <%= @record[:category] %>
+            </div>
+            <!--end of div elementInfoUtils -->
+            <br/>
+            <% end %>
+            <% if @record[:vendor_name] != "" %>
+            <div class="elementInfoUtils">
+                <div class="myAlign">
+                    <b><%= translate("VENDOR_NAME_FIELD") %>: </b>
+                </div>
+                <%= @record[:vendor_name] %>
+            </div>
+            <!--end of div elementInfoUtils -->
+            <br/>
+            <% end %>
+            <% if @record[:vendor_url] != "" %>
+            <div class="elementInfoUtils">
+                <div class="myAlign">
+                    <b><%= translate("VENDOR_URL_FIELD") %>: </b>
+                </div>
+                <%= @record[:vendor_url] %>
+            </div>
+            <!--end of div elementInfoUtils -->
+            <br/>
+            <% end %>
+            <% if @record[:volume] != "" %>
+            <div class="elementInfoUtils">
+                <div class="myAlign">
+                    <b><%= translate("VOLUME_FIELD") %>: </b>
+                </div>
+                <%= @record[:volume] %>
+            </div>
+            <!--end of div elementInfoUtils -->
+            <br/>
+            <% end %>
+            <% if @record[:issue] != "" %>
+            <div class="elementInfoUtils">
+                <div class="myAlign">
+                    <b><%= translate("ISSUE_FIELD") %>: </b>
+                </div>
+                <%= @record[:issue] %>
+            </div>
+            <!--end of div elementInfoUtils -->
+            <br/>
+            <% end %>
+            <% if @record[:number] != "" %>
+            <div class="elementInfoUtils">
+                <div class="myAlign">
+                    <b><%= translate("NUMBER_FIELD") %>: </b>
+                </div>
+                <%= @record[:number] %>
+            </div>
+            <!--end of div elementInfoUtils -->
+            <br/>
+            <% end %>
+            <% if @record[:page] != "" %>
+            <div class="elementInfoUtils">
+                <div class="myAlign">
+                    <b><%= translate("PAGE_FIELD") %>: </b>
+                </div>
+                <%= @record[:page] %>
+            </div>
+            <!--end of div elementInfoUtils -->
+            <br/>
+            <% end %>
+            <% if @record[:raw_citation] != "" %>
+            <div class="elementInfoUtils">
+                <div class="myAlign">
+                    <b><%= translate("RAW_CITATION_FIELD") %>: </b>
+                </div>
+                <%= @record[:raw_citation] %>
+            </div>
+            <!--end of div elementInfoUtils -->
+            <br/>
+            <% end %>
+            <% if @record[:oclc_num] != "" %>
+            <div class="elementInfoUtils">
+                <div class="myAlign">
+                    <b><%= translate("OCLC_NUM_FIELD") %>: </b>
+                </div>
+                <%= @record[:oclc_num] %>
+            </div>
+            <!--end of div elementInfoUtils -->
+            <br/>
+            <% end %>
+            <% if @source != "" && @source != nil %>
+            <div class="elementInfoUtils">
+                <div class="myAlign">
+                    <b><%= translate("SOURCE_FIELD") %>: </b>
+                </div>
+                <%if @objectType == "Application" %>
+                <% @source.split(';').each {|source| %>
+                <%= link_to "#{source}" , "#{source}", :popup => true %>
+                <li>
+                </li>
+                <% } %>
+                <% elsif @objectType == "Web" %>
+                <% @source.split(';').each {|sourceUrl| %>
+                <%=link_to "#{sourceUrl}" , "#{sourceUrl}", :popup => true %>
+                <li>
+                </li>
+                <% } %>
+                <%elsif @objectType == "Audio vidéo numérisé" %>
+                <%= link_to "#{@source}" , "#{@source}", :popup => true %>
+                <%else %>
+                <%= @source %>
+                <% end %>
+            </div>
+            <br/>
+            <% end %>
+        </div>
+        <% else %>
+        <%= translate("ERROR_INFO_DOC") %>
+        <% end %>
+        <% if ((@moreQuatrieme != nil) && (@moreQuatrieme != "")) %>
+        <div id="quatriemeDeCouvertureGlobal">
+            <span id='titleQuatrieme' onClick="Effect.toggle('quatriemDeCouverture', 'slide', {duration: 0.2}); return false;"><%= translate("QUATRIEME_DE_COUVERTURE") %>
+            </span>
+            <div id='quatriemDeCouverture'>
+                <%= @moreQuatrieme %>
+            </div>
+            <!--end of div 4eme de couverture -->
+        </div>
+        <!-- end of div quatrieme --><% end %>
+        <% if ((@moreTdm != nil) && ( @moreTdm != '') && (@moreTdm != "")) %>
+        <div id='tableDesMatieresGlobal'>
+            <span id='titleTdm' onClick="Effect.toggle('tableDesMatieres', 'slide', {duration: 0.2});return false;"><%= translate("TABLE_DES_MATIERES") %>
+            </span>
+            <div id="tableDesMatieres">
+                <%= @moreTdm %>
+            </div>
+            <!-- end of div tdm table des matiere -->
+            <script>
+                Effect.toggle('tableDesMatieres', 'slide', {
+                    duration: 0.2
+                });
+            </script>
+        </div>
+        <!-- end ofdiv header tdm table des matiere -->
+        </div>
+        <% end %>
+        <script>
+            function cssStyleSheetInit(){
+                document.getElementById('printButton').style.display = "none";
+                var styleSheet = document.styleSheets;
+                for (var i = 0; i != styleSheet.length; ++i) {
+                    if (styleSheet[i].title == "bpi-print.css") {
+                        styleSheet[i].disabled = true;
+                    }
+                }
+                return;
+            }
+            
+            cssStyleSheetInit();
+            function showPrintVersion(){
+                var styleSheet = document.styleSheets;
+                for (var i = 0; i != styleSheet.length; ++i) {
+                    if (styleSheet[i].title == "bpi-print.css") {
+                        document.getElementById('printButton').style.display = "";
+                        styleSheet[i].disabled = false;
+                    }
+                }
+            }
+        </script>
+        <% if (params[:print] != nil) %>
+        <script>
+            showPrintVersion()
+        </script>
+        <% end %>

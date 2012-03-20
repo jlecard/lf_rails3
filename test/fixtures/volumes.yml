@@ -1,0 +1,9001 @@
+--- 
+volume_21329: 
+  number: 1
+  label: "Casanova ou la dissipation "
+  document_id: 0
+  dc_identifier: "2062"
+  location: "Niveau 3 - Langues et litt\xC3\xA9ratures"
+  metadata_id: 36892
+  launch_url: ""
+  barcode: 0
+  id: 21329
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 840"17" CASA 5 AB
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21139: 
+  number: 1
+  label: Le secret des couleurs
+  document_id: 0
+  dc_identifier: "988993"
+  location: Niveau 3 - Arts, loisirs, sports
+  metadata_id: 36703
+  launch_url: ""
+  barcode: 0
+  id: 21139
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 75.20 SEC
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_20988: 
+  number: 1
+  label: "La morale et sa philosophie "
+  document_id: 0
+  dc_identifier: "608629"
+  location: Niveau 2 - Philo, psycho, religions
+  metadata_id: 36553
+  launch_url: ""
+  barcode: 0
+  id: 20988
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 17 BAU
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21376: 
+  number: 1
+  label: "Nathalie Granger suivie de la femme du Gange "
+  document_id: 0
+  dc_identifier: "5858"
+  location: "Niveau 3 - Langues et litt\xC3\xA9ratures"
+  metadata_id: 36938
+  launch_url: ""
+  barcode: 0
+  id: 21376
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 840"19" DURA 2
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21186: 
+  number: 1
+  label: "Philosophie: le jour d'apr\xC3\xA8s demain "
+  document_id: 0
+  dc_identifier: "1026477"
+  location: Niveau 2 - Philo, psycho, religions
+  metadata_id: 36750
+  launch_url: ""
+  barcode: 0
+  id: 21186
+  availability: En catalogage
+  support: ""
+  link_label: 
+  call_num: ""
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_20989: 
+  number: 1
+  label: "L'ar\xC3\xB4me du chemin "
+  document_id: 0
+  dc_identifier: "609599"
+  location: Niveau 3 - Arts, loisirs, sports
+  metadata_id: 36554
+  launch_url: ""
+  barcode: 0
+  id: 20989
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 70"19" CHIL 1
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21377: 
+  number: 1
+  label: "L'entretien infini "
+  document_id: 0
+  dc_identifier: "5976"
+  location: "Niveau 3 - Langues et litt\xC3\xA9ratures"
+  metadata_id: 36939
+  launch_url: ""
+  barcode: 0
+  id: 21377
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 840"19" BLAN 4 EN
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21187: 
+  number: 1
+  label: "Un mus\xC3\xA9e singulier "
+  document_id: 0
+  dc_identifier: "1027542"
+  location: Niveau 3 - Arts, loisirs, sports
+  metadata_id: 36751
+  launch_url: ""
+  barcode: 0
+  id: 21187
+  availability: En traitement
+  support: ""
+  link_label: 
+  call_num: ""
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21000: 
+  number: 1
+  label: "L'ennemi dans le blanc des yeux: Quatre histoires d'amour "
+  document_id: 0
+  dc_identifier: "636375"
+  location: "Niveau 3 - Langues et litt\xC3\xA9ratures"
+  metadata_id: 36565
+  launch_url: ""
+  barcode: 0
+  id: 21000
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 830"19" WABE 2
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21378: 
+  number: 1
+  label: "Oeuvres compl\xC3\xA8tes "
+  document_id: 0
+  dc_identifier: "6001"
+  location: "Niveau 3 - Langues et litt\xC3\xA9ratures"
+  metadata_id: 36940
+  launch_url: ""
+  barcode: 0
+  id: 21378
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 840"18" BALL 1
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21188: 
+  number: 1
+  label: "Philosophie premi\xC3\xA8re: introduction \xC3\xA0 une philosophie du presque "
+  document_id: 0
+  dc_identifier: "1028548"
+  location: Niveau 2 - Philo, psycho, religions
+  metadata_id: 36752
+  launch_url: ""
+  barcode: 0
+  id: 21188
+  availability: En catalogage
+  support: ""
+  link_label: 
+  call_num: ""
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_20850: 
+  number: 1
+  label: "Le Langage "
+  document_id: 0
+  dc_identifier: "245818"
+  location: Niveau 2 - Philo, psycho, religions
+  metadata_id: 36416
+  launch_url: ""
+  barcode: 0
+  id: 20850
+  availability: "En r\xC3\xA9paration"
+  support: ""
+  link_label: 
+  call_num: 165.5 ROC
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21001: 
+  number: 1
+  label: "Mon \xC3\xA2ge "
+  document_id: 0
+  dc_identifier: "639895"
+  location: Niveau 2 - Philo, psycho, religions
+  metadata_id: 36566
+  launch_url: ""
+  barcode: 0
+  id: 21001
+  availability: En traitement
+  support: ""
+  link_label: 
+  call_num: ""
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21379: 
+  number: 1
+  label: "Bell ringing: chimes, carillons, handbells : the world of the bells and the ringer "
+  document_id: 0
+  dc_identifier: "6134"
+  location: "Niveau 3 - Musiques et documents parl\xC3\xA9s"
+  metadata_id: 36941
+  launch_url: ""
+  barcode: 0
+  id: 21379
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 785.7 CAM
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_20851: 
+  number: 1
+  label: "La France des ann\xC3\xA9es 20 "
+  document_id: 0
+  dc_identifier: "245954"
+  location: "Niveau 3 - Histoire, g\xC3\xA9ographie"
+  metadata_id: 36417
+  launch_url: ""
+  barcode: 0
+  id: 20851
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 944-858 ABB
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21002: 
+  number: 1
+  label: "L'orangerie-l'ordalie "
+  document_id: 0
+  dc_identifier: "640626"
+  location: "Niveau 3 - Musiques et documents parl\xC3\xA9s"
+  metadata_id: 36567
+  launch_url: ""
+  barcode: 0
+  id: 21002
+  availability: En traitement
+  support: CD
+  link_label: 
+  call_num: ""
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_20852: 
+  number: 1
+  label: "Inde du nord, Bhoutan "
+  document_id: 0
+  dc_identifier: "250642"
+  location: Niveau 3 - Arts, loisirs, sports
+  metadata_id: 36418
+  launch_url: ""
+  barcode: 0
+  id: 20852
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 795(540) IND
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21050: 
+  number: 1
+  label: La rive africaine/; La orilla africana
+  document_id: 0
+  dc_identifier: "792590"
+  location: "Niveau 3 - Langues et litt\xC3\xA9ratures"
+  metadata_id: 36615
+  launch_url: ""
+  barcode: 0
+  id: 21050
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 868.01 REY. 4 OR
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_20853: 
+  number: 1
+  label: "La croissance urbaine "
+  document_id: 0
+  dc_identifier: "257215"
+  location: "Niveau 3 - Histoire, g\xC3\xA9ographie"
+  metadata_id: 36419
+  launch_url: ""
+  barcode: 0
+  id: 20853
+  availability: "En r\xC3\xA9paration"
+  support: ""
+  link_label: 
+  call_num: 913.21 MER
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21051: 
+  number: 1
+  label: "Qu'est-ce-que la bande dessin\xC3\xA9e ?"
+  document_id: 0
+  dc_identifier: "795869"
+  location: Niveau 3 - Arts, loisirs, sports
+  metadata_id: 36616
+  launch_url: ""
+  barcode: 0
+  id: 21051
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 768 QUE
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21004: 
+  number: 1
+  label: "Saint Thomas d'Aquin: biographie "
+  document_id: 0
+  dc_identifier: "648986"
+  location: Niveau 2 - Philo, psycho, religions
+  metadata_id: 36569
+  launch_url: ""
+  barcode: 0
+  id: 21004
+  availability: En traitement
+  support: ""
+  link_label: 
+  call_num: 23 THOM 2
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_20854: 
+  number: 1
+  label: "Arles "
+  document_id: 0
+  dc_identifier: "266144"
+  location: Niveau 3 - Arts, loisirs, sports
+  metadata_id: 36420
+  launch_url: ""
+  barcode: 0
+  id: 20854
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 795(449.5) BAS
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21242: 
+  number: 1
+  label: "Marx, \xC3\xB4 Marx, pourquoi m'as-tu abandonn\xC3\xA9 ? "
+  document_id: 0
+  dc_identifier: "1051627"
+  location: "Niveau 2 - Droit, \xC3\xA9conomie, sc. sociales"
+  metadata_id: 36806
+  launch_url: ""
+  barcode: 0
+  id: 21242
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 320.4 MAR
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21052: 
+  number: 1
+  label: Solo Piano
+  document_id: 0
+  dc_identifier: "801033"
+  location: "Niveau 3 - Musiques et documents parl\xC3\xA9s"
+  metadata_id: 36617
+  launch_url: ""
+  barcode: 0
+  id: 21052
+  availability: En catalogage
+  support: ""
+  link_label: 
+  call_num: ""
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21005: 
+  number: 1
+  label: "Le nain et le tr\xC3\xA8fle "
+  document_id: 0
+  dc_identifier: "652657"
+  location: "Niveau 3 - Langues et litt\xC3\xA9ratures"
+  metadata_id: 36570
+  launch_url: ""
+  barcode: 0
+  id: 21005
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 868.43 FRAN 4 NA
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_20855: 
+  number: 1
+  label: "Balthus "
+  document_id: 0
+  dc_identifier: "281235"
+  location: Niveau 3 - Arts, loisirs, sports
+  metadata_id: 36421
+  launch_url: ""
+  barcode: 0
+  id: 20855
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 70"19" BALT 2
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21243: 
+  number: 1
+  label: "L'\xC3\xA2ge roman: arts et culture en Poitou et dans les pays charentais: Xe-XIIe si\xC3\xA8cles"
+  document_id: 0
+  dc_identifier: "1051766"
+  location: Niveau 3 - Arts, loisirs, sports
+  metadata_id: 36807
+  launch_url: ""
+  barcode: 0
+  id: 21243
+  availability: En catalogage
+  support: ""
+  link_label: 
+  call_num: ""
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21053: 
+  number: 1
+  label: "S'agapo "
+  document_id: 0
+  dc_identifier: "801484"
+  location: "Niveau 3 - Langues et litt\xC3\xA9ratures"
+  metadata_id: 36618
+  launch_url: ""
+  barcode: 0
+  id: 21053
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 850"19" BIAS 2
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21006: 
+  number: 1
+  label: "Musique traditionnelle irlandaise "
+  document_id: 0
+  dc_identifier: "655894"
+  location: "Niveau 3 - Musiques et documents parl\xC3\xA9s"
+  metadata_id: 36571
+  launch_url: ""
+  barcode: 0
+  id: 21006
+  availability: En traitement
+  support: ""
+  link_label: 
+  call_num: ""
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21290: 
+  number: 1
+  label: "Casablanca "
+  document_id: 0
+  dc_identifier: "1051958"
+  location: Niveau 3 - Arts, loisirs, sports
+  metadata_id: 36853
+  launch_url: ""
+  barcode: 0
+  id: 21290
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 77.49 BAR
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_20856: 
+  number: 1
+  label: "Aventures industrielles "
+  document_id: 0
+  dc_identifier: "281447"
+  location: "Niveau 2 - Sciences, techniques, m\xC3\xA9decine"
+  metadata_id: 36422
+  launch_url: ""
+  barcode: 0
+  id: 20856
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 651.9 FOT
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21244: 
+  number: 1
+  label: "Economie et politique: le grand malentendu "
+  document_id: 0
+  dc_identifier: "1052156"
+  location: "Niveau 2 - Droit, \xC3\xA9conomie, sc. sociales"
+  metadata_id: 36808
+  launch_url: ""
+  barcode: 0
+  id: 21244
+  availability: En reliure
+  support: ""
+  link_label: 
+  call_num: ""
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21054: 
+  number: 1
+  label: "Ladr\xC3\xB3n de guante negro "
+  document_id: 0
+  dc_identifier: "802242"
+  location: Niveau 2 - Autoformation
+  metadata_id: 36619
+  launch_url: ""
+  barcode: 0
+  id: 21054
+  availability: En catalogage
+  support: ""
+  link_label: 
+  call_num: 86 ESP
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21007: 
+  number: 1
+  label: "Hip hop gold dust "
+  document_id: 0
+  dc_identifier: "655906"
+  location: "Niveau 3 - Musiques et documents parl\xC3\xA9s"
+  metadata_id: 36572
+  launch_url: ""
+  barcode: 0
+  id: 21007
+  availability: En traitement
+  support: ""
+  link_label: 
+  call_num: ""
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21291: 
+  number: 1
+  label: "E=M6 Environnement: Les \xC3\xA9nigmes du climat [DVD p\xC3\xA9dagogique]"
+  document_id: 0
+  dc_identifier: "1065966"
+  location: Niveau 2 - Poste DVD - Autoformation
+  metadata_id: 36854
+  launch_url: ""
+  barcode: 0
+  id: 21291
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: ""
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_20857: 
+  number: 1
+  label: "Dieu imm\xC3\xA9diat: entretiens "
+  document_id: 0
+  dc_identifier: "286311"
+  location: Niveau 2 - Philo, psycho, religions
+  metadata_id: 36423
+  launch_url: ""
+  barcode: 0
+  id: 20857
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 23 DREW 1
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21055: 
+  number: 1
+  label: "The drowned book "
+  document_id: 0
+  dc_identifier: "803672"
+  location: "Niveau 3 - Langues et litt\xC3\xA9ratures"
+  metadata_id: 36620
+  launch_url: ""
+  barcode: 0
+  id: 21055
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 820"19" OBRI 2
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21008: 
+  number: 1
+  label: "Les mariages islamo-chr\xC3\xA9tiens "
+  document_id: 0
+  dc_identifier: "656723"
+  location: Niveau 2 - Philo, psycho, religions
+  metadata_id: 36573
+  launch_url: ""
+  barcode: 0
+  id: 21008
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 261.2 SAA
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21292: 
+  number: 1
+  label: "Mines de cristal "
+  document_id: 0
+  dc_identifier: "1056921"
+  location: "Niveau 3 - Musiques et documents parl\xC3\xA9s"
+  metadata_id: 36855
+  launch_url: ""
+  barcode: 0
+  id: 21292
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 780.639 OXMO 1
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_20858: 
+  number: 1
+  label: "Positions et mouvement des astres "
+  document_id: 0
+  dc_identifier: "287312"
+  location: "Niveau 2 - Sciences, techniques, m\xC3\xA9decine"
+  metadata_id: 36424
+  launch_url: ""
+  barcode: 0
+  id: 20858
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 522 BOU
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21056: 
+  number: 1
+  label: La Revancha del Tango - Lunatico
+  document_id: 0
+  dc_identifier: "803894"
+  location: "Niveau 3 - Musiques et documents parl\xC3\xA9s"
+  metadata_id: 36621
+  launch_url: ""
+  barcode: 0
+  id: 21056
+  availability: En catalogage
+  support: ""
+  link_label: 
+  call_num: ""
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21009: 
+  number: 1
+  label: "La rumeur des \xC3\xAEles blanches: suivi de Grand Erg; po\xC3\xA8mes"
+  document_id: 0
+  dc_identifier: "661651"
+  location: "Niveau 3 - Langues et litt\xC3\xA9ratures"
+  metadata_id: 36574
+  launch_url: ""
+  barcode: 0
+  id: 21009
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 868.49 MIZO 2
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_20859: 
+  number: 1
+  label: "Les \xC3\xA9toiles: vie et mort des soleils lointains "
+  document_id: 0
+  dc_identifier: "293056"
+  location: "Niveau 2 - Sciences, techniques, m\xC3\xA9decine"
+  metadata_id: 36425
+  launch_url: ""
+  barcode: 0
+  id: 20859
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 524.3 KAL
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21057: 
+  number: 1
+  label: "Le th\xC3\xA9\xC3\xA2tre de Sophocle "
+  document_id: 0
+  dc_identifier: "804709"
+  location: "Niveau 3 - Langues et litt\xC3\xA9ratures"
+  metadata_id: 36622
+  launch_url: ""
+  barcode: 0
+  id: 21057
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 875 SOPH 1
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21294: 
+  number: 1
+  label: "Vagabonde "
+  document_id: 0
+  dc_identifier: "1060902"
+  location: "Niveau 3 - Musiques et documents parl\xC3\xA9s"
+  metadata_id: 36857
+  launch_url: ""
+  barcode: 0
+  id: 21294
+  availability: En traitement
+  support: ""
+  link_label: 
+  call_num: ""
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21248: 
+  number: 1
+  label: "R\xC3\xA9my Jacquier: exposition, Bignan, Domaine de Kergu\xC3\xA9hennec, du 16 octobre 2011 au 2 janvier 2012; Exposition Bignan Centre d'art contemporain Domaine de Kergu\xC3\xA9hennec 2011 2012"
+  document_id: 0
+  dc_identifier: "1052912"
+  location: Niveau 3 - Arts, loisirs, sports
+  metadata_id: 36812
+  launch_url: ""
+  barcode: 0
+  id: 21248
+  availability: En catalogage
+  support: ""
+  link_label: 
+  call_num: ""
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21058: 
+  number: 1
+  label: "La R\xC3\xA9volution fran\xC3\xA7aise 1789-1799 "
+  document_id: 0
+  dc_identifier: "806655"
+  location: "Niveau 3 - Histoire, g\xC3\xA9ographie"
+  metadata_id: 36623
+  launch_url: ""
+  barcode: 0
+  id: 21058
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 944-75(07) VOV
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21295: 
+  number: 1
+  label: "ADAC CityAtlas Hamburg 1 : 15 000"
+  document_id: 0
+  dc_identifier: "1024410"
+  location: "Niveau 3 - Histoire, g\xC3\xA9ographie"
+  metadata_id: 36858
+  launch_url: ""
+  barcode: 0
+  id: 21295
+  availability: En reliure
+  support: ""
+  link_label: 
+  call_num: ""
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21059: 
+  number: 1
+  label: "Litt\xC3\xA9rature mauricienne (La) : vol.23"
+  document_id: 0
+  dc_identifier: "806850"
+  location: "Niveau 3 - Musiques et documents parl\xC3\xA9s"
+  metadata_id: 36624
+  launch_url: ""
+  barcode: 0
+  id: 21059
+  availability: En traitement
+  support: CD
+  link_label: 
+  call_num: "846.3"
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_20910: 
+  number: 1
+  label: "Historicit\xC3\xA9 et spatialit\xC3\xA9: recherches sur le probl\xC3\xA8me de l'espace dans la pens\xC3\xA9e contemporaine "
+  document_id: 0
+  dc_identifier: "423469"
+  location: Niveau 2 - Philo, psycho, religions
+  metadata_id: 36476
+  launch_url: ""
+  barcode: 0
+  id: 20910
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 168.53 HIS
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21296: 
+  number: 1
+  label: "Wilderness "
+  document_id: 0
+  dc_identifier: "1048794"
+  location: "Niveau 3 - Musiques et documents parl\xC3\xA9s"
+  metadata_id: 36859
+  launch_url: ""
+  barcode: 0
+  id: 21296
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 780.65 MORR 1
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_20911: 
+  number: 2
+  label: "Historicit\xC3\xA9 et spatialit\xC3\xA9: recherches sur le probl\xC3\xA8me de l'espace dans la pens\xC3\xA9e contemporaine "
+  document_id: 0
+  dc_identifier: "423469"
+  location: "Niveau 3 - Histoire, g\xC3\xA9ographie"
+  metadata_id: 36476
+  launch_url: ""
+  barcode: 0
+  id: 20911
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 911 BEN
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21297: 
+  number: 1
+  label: "Les Fascismes "
+  document_id: 0
+  dc_identifier: "1051657"
+  location: "Niveau 3 - Histoire, g\xC3\xA9ographie"
+  metadata_id: 36860
+  launch_url: ""
+  barcode: 0
+  id: 21297
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 930.71 MIL
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_20912: 
+  number: 1
+  label: "Barouffe \xC3\xA0 Chioggia; Le baruffe chiozzotte"
+  document_id: 0
+  dc_identifier: "425465"
+  location: "Niveau 3 - Langues et litt\xC3\xA9ratures"
+  metadata_id: 36477
+  launch_url: ""
+  barcode: 0
+  id: 20912
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 850"17" GOLD 4 BA
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21300: 
+  number: 1
+  label: "Remembering, forgetting and city builders "
+  document_id: 0
+  dc_identifier: "985194"
+  location: "Niveau 3 - Histoire, g\xC3\xA9ographie"
+  metadata_id: 36863
+  launch_url: ""
+  barcode: 0
+  id: 21300
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 913.31 FEN
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21110: 
+  number: 1
+  label: "Sourates "
+  document_id: 0
+  dc_identifier: "926670"
+  location: "Niveau 3 - Musiques et documents parl\xC3\xA9s"
+  metadata_id: 36674
+  launch_url: ""
+  barcode: 0
+  id: 21110
+  availability: En traitement
+  support: CD
+  link_label: 
+  call_num: ""
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_20960: 
+  number: 1
+  label: "La Bible pour les nuls "
+  document_id: 0
+  dc_identifier: "564970"
+  location: Niveau 2 - Philo, psycho, religions
+  metadata_id: 36525
+  launch_url: ""
+  barcode: 0
+  id: 20960
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 22.01 DEN
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_20913: 
+  number: 1
+  label: "Jean P\xC3\xA9l\xC3\xA9gri l'alg\xC3\xA9rien ou Le scribe du caillou"
+  document_id: 0
+  dc_identifier: "428140"
+  location: "Niveau 3 - Langues et litt\xC3\xA9ratures"
+  metadata_id: 36478
+  launch_url: ""
+  barcode: 0
+  id: 20913
+  availability: En traitement
+  support: ""
+  link_label: 
+  call_num: ""
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21301: 
+  number: 1
+  label: "L'art romain des origines au IIIe si\xC3\xA8cle av. J.-C. "
+  document_id: 0
+  dc_identifier: "1050638"
+  location: Niveau 3 - Arts, loisirs, sports
+  metadata_id: 36864
+  launch_url: ""
+  barcode: 0
+  id: 21301
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 703.73 COA
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21111: 
+  number: 1
+  label: "Tour d'amour (La) "
+  document_id: 0
+  dc_identifier: "926673"
+  location: "Niveau 3 - Musiques et documents parl\xC3\xA9s"
+  metadata_id: 36675
+  launch_url: ""
+  barcode: 0
+  id: 21111
+  availability: En traitement
+  support: CD
+  link_label: 
+  call_num: ""
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21299: 
+  number: 1
+  label: "Lazard Fr\xC3\xA8res: banquiers des deux mondes, 1840-1939 "
+  document_id: 0
+  dc_identifier: "1004266"
+  location: "Niveau 2 - Droit, \xC3\xA9conomie, sc. sociales"
+  metadata_id: 36862
+  launch_url: ""
+  barcode: 0
+  id: 21299
+  availability: En reliure
+  support: ""
+  link_label: 
+  call_num: ""
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_20961: 
+  number: 1
+  label: "Paul Ricoeur "
+  document_id: 0
+  dc_identifier: "568604"
+  location: Niveau 2 - Philo, psycho, religions
+  metadata_id: 36526
+  launch_url: ""
+  barcode: 0
+  id: 20961
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 1"4" RICO 2
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_20914: 
+  number: 1
+  label: Sibir, Sibir
+  document_id: 0
+  dc_identifier: "431265"
+  location: "Niveau 3 - Histoire, g\xC3\xA9ographie"
+  metadata_id: 36479
+  launch_url: ""
+  barcode: 0
+  id: 20914
+  availability: En traitement
+  support: ""
+  link_label: 
+  call_num: ""
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21112: 
+  number: 1
+  label: "Mahu reparle "
+  document_id: 0
+  dc_identifier: "927922"
+  location: "Niveau 3 - Langues et litt\xC3\xA9ratures"
+  metadata_id: 36676
+  launch_url: ""
+  barcode: 0
+  id: 21112
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 840"19" PING.R 4 MA
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_20962: 
+  number: 1
+  label: "M\xC3\xA9moires de Satan/ "
+  document_id: 0
+  dc_identifier: "570832"
+  location: Niveau 2 - Philo, psycho, religions
+  metadata_id: 36527
+  launch_url: ""
+  barcode: 0
+  id: 20962
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 24 DID
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21350: 
+  number: 1
+  label: "A bandeira do Brasil: raizes historico- culturais "
+  document_id: 0
+  dc_identifier: "3977"
+  location: "Niveau 3 - Histoire, g\xC3\xA9ographie"
+  metadata_id: 36912
+  launch_url: ""
+  barcode: 0
+  id: 21350
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 929.2 COI
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21160: 
+  number: 1
+  label: "Autres directions: carnets, 2006-2008 "
+  document_id: 0
+  dc_identifier: "1006260"
+  location: "Niveau 2 - Droit, \xC3\xA9conomie, sc. sociales"
+  metadata_id: 36724
+  launch_url: ""
+  barcode: 0
+  id: 21160
+  availability: En catalogage
+  support: ""
+  link_label: 
+  call_num: 840"19" BLAN.A 4 AU
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_20915: 
+  number: 1
+  label: "Argent br\xC3\xBBl\xC3\xA9 "
+  document_id: 0
+  dc_identifier: "433902"
+  location: "Niveau 3 - Langues et litt\xC3\xA9ratures"
+  metadata_id: 36480
+  launch_url: ""
+  barcode: 0
+  id: 20915
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 868.3 PIGL 4 PL
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21303: 
+  number: 1
+  label: "Biologie mol\xC3\xA9culaire de la cellule: livre d'exercices "
+  document_id: 0
+  dc_identifier: "1037205"
+  location: "Niveau 2 - Sciences, techniques, m\xC3\xA9decine"
+  metadata_id: 36866
+  launch_url: ""
+  barcode: 0
+  id: 21303
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 576.6 BIO
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21113: 
+  number: 1
+  label: "Le formalisme en Russie "
+  document_id: 0
+  dc_identifier: "932187"
+  location: "Niveau 3 - Langues et litt\xC3\xA9ratures"
+  metadata_id: 36677
+  launch_url: ""
+  barcode: 0
+  id: 21113
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 882(091) DEP
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_20963: 
+  number: 1
+  label: "L'alphabet des nuits "
+  document_id: 0
+  dc_identifier: "573455"
+  location: "Niveau 3 - Langues et litt\xC3\xA9ratures"
+  metadata_id: 36528
+  launch_url: ""
+  barcode: 0
+  id: 20963
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 848 MILC 4 AL
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21351: 
+  number: 1
+  label: "Uber Od\xC3\xB6n von Horv\xC3\xA1th "
+  document_id: 0
+  dc_identifier: "4033"
+  location: "Niveau 3 - Langues et litt\xC3\xA9ratures"
+  metadata_id: 36913
+  launch_url: ""
+  barcode: 0
+  id: 21351
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 831 HORV 5 UB
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_20916: 
+  number: 1
+  label: "Le roman et la nouvelle "
+  document_id: 0
+  dc_identifier: "434227"
+  location: "Niveau 3 - Langues et litt\xC3\xA9ratures"
+  metadata_id: 36481
+  launch_url: ""
+  barcode: 0
+  id: 20916
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 81-3 REY
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21114: 
+  number: 1
+  label: "R\xC3\xA9ceptacle "
+  document_id: 0
+  dc_identifier: "932921"
+  location: "Niveau 3 - Langues et litt\xC3\xA9ratures"
+  metadata_id: 36678
+  launch_url: ""
+  barcode: 0
+  id: 21114
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 8 CNL 1
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_20964: 
+  number: 1
+  label: Les genres de la parole
+  document_id: 0
+  dc_identifier: "573705"
+  location: "Niveau 3 - Langues et litt\xC3\xA9ratures"
+  metadata_id: 36529
+  launch_url: ""
+  barcode: 0
+  id: 20964
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 80(0) LAN
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21352: 
+  number: 1
+  label: "Russkie istori\xC4\x8Deskie pesni: hresto mamaja "
+  document_id: 0
+  dc_identifier: "4141"
+  location: "Niveau 3 - Langues et litt\xC3\xA9ratures"
+  metadata_id: 36914
+  launch_url: ""
+  barcode: 0
+  id: 21352
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 882(082) IGN
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21162: 
+  number: 1
+  label: "Dictionnaire amoureux du catholicisme "
+  document_id: 0
+  dc_identifier: "1007598"
+  location: Niveau 2 - Philo, psycho, religions
+  metadata_id: 36726
+  launch_url: ""
+  barcode: 0
+  id: 21162
+  availability: En catalogage
+  support: ""
+  link_label: 
+  call_num: ""
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_20917: 
+  number: 1
+  label: "Les ombres de la caverne "
+  document_id: 0
+  dc_identifier: "436060"
+  location: Niveau 2 - Philo, psycho, religions
+  metadata_id: 36482
+  launch_url: ""
+  barcode: 0
+  id: 20917
+  availability: "En r\xC3\xA9paration"
+  support: ""
+  link_label: 
+  call_num: 1"1" PLAT 2
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21305: 
+  number: 1
+  label: "Cassandre "
+  document_id: 0
+  dc_identifier: "1056953"
+  location: "Niveau 3 - Musiques et documents parl\xC3\xA9s"
+  metadata_id: 36868
+  launch_url: ""
+  barcode: 0
+  id: 21305
+  availability: En traitement
+  support: ""
+  link_label: 
+  call_num: ""
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21115: 
+  number: 1
+  label: "La lutine: La dama duende; La dama duende"
+  document_id: 0
+  dc_identifier: "943133"
+  location: "Niveau 3 - Langues et litt\xC3\xA9ratures"
+  metadata_id: 36679
+  launch_url: ""
+  barcode: 0
+  id: 21115
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 860"16" CALD 4 DA
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_20965: 
+  number: 1
+  label: "Souvenirs oubli\xC3\xA9s "
+  document_id: 0
+  dc_identifier: "575979"
+  location: "Niveau 3 - Langues et litt\xC3\xA9ratures"
+  metadata_id: 36530
+  launch_url: ""
+  barcode: 0
+  id: 20965
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 868.091 RIVE 2
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21353: 
+  number: 1
+  label: "The Plays of Arnold Wesker "
+  document_id: 0
+  dc_identifier: "4175"
+  location: "Niveau 3 - Langues et litt\xC3\xA9ratures"
+  metadata_id: 36915
+  launch_url: ""
+  barcode: 0
+  id: 21353
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 820"19" WESK 5 LE
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21163: 
+  number: 1
+  label: "Cr\xC3\xA9ation par \xC3\xA9volution: science, philosophie et th\xC3\xA9ologie "
+  document_id: 0
+  dc_identifier: "1009129"
+  location: Niveau 2 - Philo, psycho, religions
+  metadata_id: 36727
+  launch_url: ""
+  barcode: 0
+  id: 21163
+  availability: En catalogage
+  support: ""
+  link_label: 
+  call_num: ""
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_20918: 
+  number: 1
+  label: "L'homme pr\xC3\xA9caire "
+  document_id: 0
+  dc_identifier: "438293"
+  location: Niveau 2 - Philo, psycho, religions
+  metadata_id: 36483
+  launch_url: ""
+  barcode: 0
+  id: 20918
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 139 CHI
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21116: 
+  number: 1
+  label: "Mission des souverains "
+  document_id: 0
+  dc_identifier: "943191"
+  location: Niveau 2 - Philo, psycho, religions
+  metadata_id: 36680
+  launch_url: ""
+  barcode: 0
+  id: 21116
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 191 SAI
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_20966: 
+  number: 1
+  label: "Satan h\xC3\xA9r\xC3\xA9tique "
+  document_id: 0
+  dc_identifier: "576757"
+  location: Niveau 2 - Philo, psycho, religions
+  metadata_id: 36531
+  launch_url: ""
+  barcode: 0
+  id: 20966
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 291.3 BOU
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21354: 
+  number: 1
+  label: "The life of Joseph Addison "
+  document_id: 0
+  dc_identifier: "4229"
+  location: "Niveau 3 - Langues et litt\xC3\xA9ratures"
+  metadata_id: 36916
+  launch_url: ""
+  barcode: 0
+  id: 21354
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 820"17" ADDI 5 SM
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21164: 
+  number: 1
+  label: "Sawaku: Music of Sarawak"
+  document_id: 0
+  dc_identifier: "1010350"
+  location: "Niveau 3 - Musiques et documents parl\xC3\xA9s"
+  metadata_id: 36728
+  launch_url: ""
+  barcode: 0
+  id: 21164
+  availability: En traitement
+  support: ""
+  link_label: 
+  call_num: ""
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_20919: 
+  number: 1
+  label: "Al-Riwa\xCC\x84yat\xCC\x88 fi\xCC\x84 niha\xCC\x84yat\xCC\x88 qarn "
+  document_id: 0
+  dc_identifier: "439816"
+  location: "Niveau 3 - Langues et litt\xC3\xA9ratures"
+  metadata_id: 36484
+  launch_url: ""
+  barcode: 0
+  id: 20919
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 892.7(091) RAI
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21117: 
+  number: 1
+  label: "Dolto en h\xC3\xA9ritage : vol.1 : tout comprendre, pas tout permettre"
+  document_id: 0
+  dc_identifier: "943386"
+  location: "Niveau 3 - Musiques et documents parl\xC3\xA9s"
+  metadata_id: 36681
+  launch_url: ""
+  barcode: 0
+  id: 21117
+  availability: En traitement
+  support: CD
+  link_label: 
+  call_num: ""
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_20967: 
+  number: 1
+  label: "Live 2002 "
+  document_id: 0
+  dc_identifier: "577618"
+  location: "Niveau 3 - Musiques et documents parl\xC3\xA9s"
+  metadata_id: 36532
+  launch_url: ""
+  barcode: 0
+  id: 20967
+  availability: En traitement
+  support: ""
+  link_label: 
+  call_num: ""
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21355: 
+  number: 1
+  label: "Alphonse Mucha photographs "
+  document_id: 0
+  dc_identifier: "4306"
+  location: Niveau 3 - Arts, loisirs, sports
+  metadata_id: 36917
+  launch_url: ""
+  barcode: 0
+  id: 21355
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 70"19" MUCH 2
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21165: 
+  number: 1
+  label: "Lectures vagabondes: Th\xC3\xA9r\xC3\xA8se de Lisieux "
+  document_id: 0
+  dc_identifier: "1010762"
+  location: Niveau 2 - Philo, psycho, religions
+  metadata_id: 36729
+  launch_url: ""
+  barcode: 0
+  id: 21165
+  availability: En catalogage
+  support: ""
+  link_label: 
+  call_num: ""
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21118: 
+  number: 1
+  label: "Une saison avec Bernard Frank "
+  document_id: 0
+  dc_identifier: "952876"
+  location: "Niveau 3 - Langues et litt\xC3\xA9ratures"
+  metadata_id: 36682
+  launch_url: ""
+  barcode: 0
+  id: 21118
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 840"19" FRAN.B 5 RA
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_20968: 
+  number: 1
+  label: "H\xC3\xA9catonomie "
+  document_id: 0
+  dc_identifier: "581322"
+  location: "Niveau 3 - Langues et litt\xC3\xA9ratures"
+  metadata_id: 36533
+  launch_url: ""
+  barcode: 0
+  id: 20968
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 840"19" WATE 4 HE
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21356: 
+  number: 1
+  label: "Le soleil et l'acier "
+  document_id: 0
+  dc_identifier: "4309"
+  location: "Niveau 3 - Langues et litt\xC3\xA9ratures"
+  metadata_id: 36918
+  launch_url: ""
+  barcode: 0
+  id: 21356
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 895.6 MISH 4
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21166: 
+  number: 1
+  label: "Les beaux gosses: toutes premi\xC3\xA8res fois "
+  document_id: 0
+  dc_identifier: "1011838"
+  location: Niveau 3 - Arts, loisirs, sports
+  metadata_id: 36730
+  launch_url: ""
+  barcode: 0
+  id: 21166
+  availability: En catalogage
+  support: ""
+  link_label: 
+  call_num: ""
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21309: 
+  number: 1
+  label: "Daily life in Biblical times "
+  document_id: 0
+  dc_identifier: "572855"
+  location: "Niveau 3 - Histoire, g\xC3\xA9ographie"
+  metadata_id: 36872
+  launch_url: ""
+  barcode: 0
+  id: 21309
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 935.5 BOR
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21119: 
+  number: 1
+  label: Moscou, naissance d'une nation
+  document_id: 0
+  dc_identifier: "953821"
+  location: "Niveau 3 - Histoire, g\xC3\xA9ographie"
+  metadata_id: 36683
+  launch_url: ""
+  barcode: 0
+  id: 21119
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 947.11 LOR
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_20969: 
+  number: 1
+  label: "Cambodge: la longue marche des chr\xC3\xA9tiens khmers "
+  document_id: 0
+  dc_identifier: "581706"
+  location: Niveau 2 - Philo, psycho, religions
+  metadata_id: 36534
+  launch_url: ""
+  barcode: 0
+  id: 20969
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 27(534) DUB
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21357: 
+  number: 1
+  label: "Les gens de mon pays "
+  document_id: 0
+  dc_identifier: "4355"
+  location: "Niveau 3 - Musiques et documents parl\xC3\xA9s"
+  metadata_id: 36919
+  launch_url: ""
+  barcode: 0
+  id: 21357
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 782.6 VIGN 1
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21167: 
+  number: 1
+  label: "Dessiner les mangas. 1, Sp\xC3\xA9cial personnages et expressions: 22 r\xC3\xA9alisations en pas \xC3\xA0 pas"
+  document_id: 0
+  dc_identifier: "1012025"
+  location: Niveau 3 - Arts, loisirs, sports
+  metadata_id: 36731
+  launch_url: ""
+  barcode: 0
+  id: 21167
+  availability: En catalogage
+  support: ""
+  link_label: 
+  call_num: ""
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21358: 
+  number: 1
+  label: "Swift and the church of Ireland "
+  document_id: 0
+  dc_identifier: "4373"
+  location: "Niveau 3 - Langues et litt\xC3\xA9ratures"
+  metadata_id: 36920
+  launch_url: ""
+  barcode: 0
+  id: 21358
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 820.1 SWIF 5 LA
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21168: 
+  number: 1
+  label: "Introduction \xC3\xA0 HTML5; Introducing HTML5"
+  document_id: 0
+  dc_identifier: "1012312"
+  location: "Niveau 2 - Sciences, techniques, m\xC3\xA9decine"
+  metadata_id: 36732
+  launch_url: ""
+  barcode: 0
+  id: 21168
+  availability: En catalogage
+  support: ""
+  link_label: 
+  call_num: 681.226 LAW
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21359: 
+  number: 1
+  label: "The Thousand "
+  document_id: 0
+  dc_identifier: "4508"
+  location: "Niveau 3 - Langues et litt\xC3\xA9ratures"
+  metadata_id: 36921
+  launch_url: ""
+  barcode: 0
+  id: 21359
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 826 CARL 4 TH
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21169: 
+  number: 1
+  label: "Le chant du p\xC3\xAAcheur ivre "
+  document_id: 0
+  dc_identifier: "1013047"
+  location: "Niveau 3 - Musiques et documents parl\xC3\xA9s"
+  metadata_id: 36733
+  launch_url: ""
+  barcode: 0
+  id: 21169
+  availability: En catalogage
+  support: ""
+  link_label: 
+  call_num: ""
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21410: 
+  number: 1
+  label: "Etudes d'esth\xC3\xA9tique "
+  document_id: 0
+  dc_identifier: "9406"
+  location: Niveau 2 - Philo, psycho, religions
+  metadata_id: 36968
+  launch_url: ""
+  barcode: 0
+  id: 21410
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 18 MIC
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21220: 
+  number: 1
+  label: "Les \xC3\xA2ges de la vie: psychologie du d\xC3\xA9veloppement humain "
+  document_id: 0
+  dc_identifier: "1046691"
+  location: Niveau 2 - Philo, psycho, religions
+  metadata_id: 36784
+  launch_url: ""
+  barcode: 0
+  id: 21220
+  availability: En catalogage
+  support: ""
+  link_label: 
+  call_num: ""
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21030: 
+  number: 1
+  label: "Montessori: the science behind the genius "
+  document_id: 0
+  dc_identifier: "704561"
+  location: "Niveau 2 - Droit, \xC3\xA9conomie, sc. sociales"
+  metadata_id: 36595
+  launch_url: ""
+  barcode: 0
+  id: 21030
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 371.42 LIL
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_20880: 
+  number: 1
+  label: "Le livre de l'\xC3\xA9tiquette de vin "
+  document_id: 0
+  dc_identifier: "348945"
+  location: "Niveau 2 - Sciences, techniques, m\xC3\xA9decine"
+  metadata_id: 36446
+  launch_url: ""
+  barcode: 0
+  id: 20880
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 641.6 REN
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21411: 
+  number: 1
+  label: "Goluboe mol\xC4\x8Danie "
+  document_id: 0
+  dc_identifier: "9451"
+  location: "Niveau 3 - Langues et litt\xC3\xA9ratures"
+  metadata_id: 36969
+  launch_url: ""
+  barcode: 0
+  id: 21411
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 882 MAXI.S 2
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21221: 
+  number: 1
+  label: "John Martin: Apocalypse "
+  document_id: 0
+  dc_identifier: "1046705"
+  location: Niveau 3 - Arts, loisirs, sports
+  metadata_id: 36785
+  launch_url: ""
+  barcode: 0
+  id: 21221
+  availability: En reliure
+  support: ""
+  link_label: 
+  call_num: ""
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21031: 
+  number: 1
+  label: "L'eau \xC3\xA0 la bouche; A pedir de boca"
+  document_id: 0
+  dc_identifier: "705808"
+  location: "Niveau 3 - Langues et litt\xC3\xA9ratures"
+  metadata_id: 36596
+  launch_url: ""
+  barcode: 0
+  id: 21031
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 860"19" FAJA 4 AP
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21412: 
+  number: 1
+  label: "Lie down in darkness "
+  document_id: 0
+  dc_identifier: "9501"
+  location: "Niveau 3 - Langues et litt\xC3\xA9ratures"
+  metadata_id: 36970
+  launch_url: ""
+  barcode: 0
+  id: 21412
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 821 STYR 4 LI
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21222: 
+  number: 1
+  label: "Cheerleaders "
+  document_id: 0
+  dc_identifier: "1046734"
+  location: "Niveau 3 - Musiques et documents parl\xC3\xA9s"
+  metadata_id: 36786
+  launch_url: ""
+  barcode: 0
+  id: 21222
+  availability: En traitement
+  support: CD
+  link_label: 
+  call_num: ""
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21032: 
+  number: 1
+  label: "Gradiva "
+  document_id: 0
+  dc_identifier: "709025"
+  location: "Niveau 3 - Musiques et documents parl\xC3\xA9s"
+  metadata_id: 36597
+  launch_url: ""
+  barcode: 0
+  id: 21032
+  availability: En traitement
+  support: CD
+  link_label: 
+  call_num: ""
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_20882: 
+  number: 1
+  label: "L'infr\xC3\xA9quentable Jules: Jules Grandjouan, 1875-1968 "
+  document_id: 0
+  dc_identifier: "358217"
+  location: Niveau 3 - Arts, loisirs, sports
+  metadata_id: 36448
+  launch_url: ""
+  barcode: 0
+  id: 20882
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 70"19" GRAN.U 2
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21270: 
+  number: 1
+  label: "Minuit "
+  document_id: 0
+  dc_identifier: "1022588"
+  location: "Niveau 3 - Langues et litt\xC3\xA9ratures"
+  metadata_id: 36834
+  launch_url: ""
+  barcode: 0
+  id: 21270
+  availability: En traitement
+  support: ""
+  link_label: 
+  call_num: ""
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21080: 
+  number: 1
+  label: "Folk-modern "
+  document_id: 0
+  dc_identifier: "875727"
+  location: "Niveau 3 - Musiques et documents parl\xC3\xA9s"
+  metadata_id: 36644
+  launch_url: ""
+  barcode: 0
+  id: 21080
+  availability: En traitement
+  support: ""
+  link_label: 
+  call_num: ""
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21413: 
+  number: 1
+  label: "Il brigante "
+  document_id: 0
+  dc_identifier: "9624"
+  location: "Niveau 3 - Langues et litt\xC3\xA9ratures"
+  metadata_id: 36971
+  launch_url: ""
+  barcode: 0
+  id: 21413
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 850"19" BERT 4 BR
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21223: 
+  number: 1
+  label: "Guru: op\xC3\xA9ra en trois actes "
+  document_id: 0
+  dc_identifier: "1046745"
+  location: "Niveau 3 - Musiques et documents parl\xC3\xA9s"
+  metadata_id: 36787
+  launch_url: ""
+  barcode: 0
+  id: 21223
+  availability: En traitement
+  support: CD
+  link_label: 
+  call_num: ""
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21033: 
+  number: 1
+  label: "Perdida: r\xC3\xA9cit complet "
+  document_id: 0
+  dc_identifier: "715124"
+  location: Niveau 3 - Arts, loisirs, sports
+  metadata_id: 36598
+  launch_url: ""
+  barcode: 0
+  id: 21033
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 768.1 ANG07 PER
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_20883: 
+  number: 1
+  label: "Jardin d'incendie; Horto de inc\xC3\xAAndio"
+  document_id: 0
+  dc_identifier: "358617"
+  location: "Niveau 3 - Langues et litt\xC3\xA9ratures"
+  metadata_id: 36449
+  launch_url: ""
+  barcode: 0
+  id: 20883
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 869 ALBE 2
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21081: 
+  number: 1
+  label: Ja naradziusia tut
+  document_id: 0
+  dc_identifier: "875729"
+  location: "Niveau 3 - Musiques et documents parl\xC3\xA9s"
+  metadata_id: 36645
+  launch_url: ""
+  barcode: 0
+  id: 21081
+  availability: En traitement
+  support: ""
+  link_label: 
+  call_num: ""
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21414: 
+  number: 1
+  label: "Black spring "
+  document_id: 0
+  dc_identifier: "9742"
+  location: "Niveau 3 - Langues et litt\xC3\xA9ratures"
+  metadata_id: 36972
+  launch_url: ""
+  barcode: 0
+  id: 21414
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 821 MILL 4 BL
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21034: 
+  number: 1
+  label: "Lola Alvarez Bravo "
+  document_id: 0
+  dc_identifier: "716917"
+  location: Niveau 3 - Arts, loisirs, sports
+  metadata_id: 36599
+  launch_url: ""
+  barcode: 0
+  id: 21034
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 770 ALVA.L
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_20884: 
+  number: 1
+  label: "La m\xC3\xA9ditation chr\xC3\xA9tienne "
+  document_id: 0
+  dc_identifier: "362241"
+  location: Niveau 2 - Philo, psycho, religions
+  metadata_id: 36450
+  launch_url: ""
+  barcode: 0
+  id: 20884
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 23 BALT 1
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21082: 
+  number: 1
+  label: "David Lachapelle: exposition, la Monnaie de Paris, 6 f\xC3\xA9vrier - 31 mai 2009; exposition Paris Monnaie de Paris 2009"
+  document_id: 0
+  dc_identifier: "875750"
+  location: Niveau 3 - Arts, loisirs, sports
+  metadata_id: 36646
+  launch_url: ""
+  barcode: 0
+  id: 21082
+  availability: En catalogage
+  support: ""
+  link_label: 
+  call_num: 770 LACH.D
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21415: 
+  number: 1
+  label: "Orly zemli rodnoj "
+  document_id: 0
+  dc_identifier: "9766"
+  location: "Niveau 3 - Langues et litt\xC3\xA9ratures"
+  metadata_id: 36973
+  launch_url: ""
+  barcode: 0
+  id: 21415
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 882 KOUB 4 OR
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21035: 
+  number: 1
+  label: "Sumer "
+  document_id: 0
+  dc_identifier: "718861"
+  location: Niveau 3 - Arts, loisirs, sports
+  metadata_id: 36600
+  launch_url: ""
+  barcode: 0
+  id: 21035
+  availability: "En r\xC3\xA9paration"
+  support: ""
+  link_label: 
+  call_num: 703.4 PAR
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21273: 
+  number: 1
+  label: "Baba Love "
+  document_id: 0
+  dc_identifier: "1056977"
+  location: "Niveau 3 - Musiques et documents parl\xC3\xA9s"
+  metadata_id: 36837
+  launch_url: ""
+  barcode: 0
+  id: 21273
+  availability: En traitement
+  support: ""
+  link_label: 
+  call_num: ""
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21083: 
+  number: 1
+  label: "Atlantis Nath "
+  document_id: 0
+  dc_identifier: "880201"
+  location: "Niveau 3 - Musiques et documents parl\xC3\xA9s"
+  metadata_id: 36647
+  launch_url: ""
+  barcode: 0
+  id: 21083
+  availability: En traitement
+  support: CD
+  link_label: 
+  call_num: ""
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21416: 
+  number: 1
+  label: "Sumas\xC5\xA1ed\xC5\xA1ij korabl' "
+  document_id: 0
+  dc_identifier: "9991"
+  location: "Niveau 3 - Langues et litt\xC3\xA9ratures"
+  metadata_id: 36974
+  launch_url: ""
+  barcode: 0
+  id: 21416
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 882 FORC 4 SU
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21036: 
+  number: 1
+  label: "Al\xC3\xA8s ; capitale des C\xC3\xA9vennes"
+  document_id: 0
+  dc_identifier: "721376"
+  location: "Niveau 3 - Histoire, g\xC3\xA9ographie"
+  metadata_id: 36601
+  launch_url: ""
+  barcode: 0
+  id: 21036
+  availability: En traitement
+  support: ""
+  link_label: 
+  call_num: ""
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21417: 
+  number: 1
+  label: "La lisi\xC3\xA8re "
+  document_id: 0
+  dc_identifier: "10082"
+  location: "Niveau 3 - Langues et litt\xC3\xA9ratures"
+  metadata_id: 36975
+  launch_url: ""
+  barcode: 0
+  id: 21417
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 840"19" GRAI 4 LI
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21037: 
+  number: 1
+  label: "Giacometti, la rue d'un seul ; suivi de Visite fant\xC3\xB4me de l'atelier "
+  document_id: 0
+  dc_identifier: "725331"
+  location: Niveau 3 - Arts, loisirs, sports
+  metadata_id: 36602
+  launch_url: ""
+  barcode: 0
+  id: 21037
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 70"19" GIAC 2
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_20887: 
+  number: 1
+  label: "De Tel quel \xC3\xA0 L'Infini : l'avant-garde et apr\xC3\xA8s?"
+  document_id: 0
+  dc_identifier: "366093"
+  location: "Niveau 3 - Langues et litt\xC3\xA9ratures"
+  metadata_id: 36453
+  launch_url: ""
+  barcode: 0
+  id: 20887
+  availability: En traitement
+  support: ""
+  link_label: 
+  call_num: ""
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21275: 
+  number: 1
+  label: "Le chant des sir\xC3\xA8nes "
+  document_id: 0
+  dc_identifier: "1058689"
+  location: "Niveau 3 - Musiques et documents parl\xC3\xA9s"
+  metadata_id: 36839
+  launch_url: ""
+  barcode: 0
+  id: 21275
+  availability: En traitement
+  support: ""
+  link_label: 
+  call_num: ""
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21085: 
+  number: 1
+  label: Baleines & dauphins
+  document_id: 0
+  dc_identifier: "880745"
+  location: "Niveau 2 - Sciences, techniques, m\xC3\xA9decine"
+  metadata_id: 36649
+  launch_url: ""
+  barcode: 0
+  id: 21085
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 598.0 BAL
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21418: 
+  number: 1
+  label: "La diss\xC3\xA9mination "
+  document_id: 0
+  dc_identifier: "10115"
+  location: Niveau 2 - Philo, psycho, religions
+  metadata_id: 36976
+  launch_url: ""
+  barcode: 0
+  id: 21418
+  availability: "En r\xC3\xA9paration"
+  support: ""
+  link_label: 
+  call_num: 1"4" DERR 1
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21228: 
+  number: 1
+  label: "Septembre: une peinture d'histoire de Gerhard Richter "
+  document_id: 0
+  dc_identifier: "1048497"
+  location: Niveau 3 - Arts, loisirs, sports
+  metadata_id: 36792
+  launch_url: ""
+  barcode: 0
+  id: 21228
+  availability: En catalogage
+  support: ""
+  link_label: 
+  call_num: ""
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21038: 
+  number: 1
+  label: "Manangar\xC3\xA8ze, mon amour: recueil "
+  document_id: 0
+  dc_identifier: "737201"
+  location: "Niveau 3 - Langues et litt\xC3\xA9ratures"
+  metadata_id: 36603
+  launch_url: ""
+  barcode: 0
+  id: 21038
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 895.8 LALU 2
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_20888: 
+  number: 1
+  label: "La m\xC3\xA9decine de l'\xC3\xA2me ou L'\xC3\xA9thique "
+  document_id: 0
+  dc_identifier: "369333"
+  location: Niveau 2 - Philo, psycho, religions
+  metadata_id: 36454
+  launch_url: ""
+  barcode: 0
+  id: 20888
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 217 ELA
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21276: 
+  number: 1
+  label: "Black up "
+  document_id: 0
+  dc_identifier: "1058687"
+  location: "Niveau 3 - Musiques et documents parl\xC3\xA9s"
+  metadata_id: 36840
+  launch_url: ""
+  barcode: 0
+  id: 21276
+  availability: En traitement
+  support: ""
+  link_label: 
+  call_num: ""
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21086: 
+  number: 1
+  label: "Recommanded tools "
+  document_id: 0
+  dc_identifier: "881730"
+  location: "Niveau 3 - Musiques et documents parl\xC3\xA9s"
+  metadata_id: 36650
+  launch_url: ""
+  barcode: 0
+  id: 21086
+  availability: En traitement
+  support: CD
+  link_label: 
+  call_num: ""
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21419: 
+  number: 1
+  label: "Rembrandt's hat "
+  document_id: 0
+  dc_identifier: "10161"
+  location: "Niveau 3 - Langues et litt\xC3\xA9ratures"
+  metadata_id: 36977
+  launch_url: ""
+  barcode: 0
+  id: 21419
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 821 MALA 4 RE
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21229: 
+  number: 1
+  label: "Tous r\xC3\xA9publicains !: origine et modernit\xC3\xA9 des valeurs r\xC3\xA9publicaines "
+  document_id: 0
+  dc_identifier: "1048607"
+  location: "Niveau 2 - Droit, \xC3\xA9conomie, sc. sociales"
+  metadata_id: 36793
+  launch_url: ""
+  barcode: 0
+  id: 21229
+  availability: En reliure
+  support: ""
+  link_label: 
+  call_num: ""
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21039: 
+  number: 1
+  label: "Le peigne-rose "
+  document_id: 0
+  dc_identifier: "747454"
+  location: "Niveau 3 - Langues et litt\xC3\xA9ratures"
+  metadata_id: 36604
+  launch_url: ""
+  barcode: 0
+  id: 21039
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 840"20" LEAL 4 PE
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21087: 
+  number: 1
+  label: "J'arrive o\xC3\xB9 je suis \xC3\xA9tranger "
+  document_id: 0
+  dc_identifier: "883094"
+  location: "Niveau 3 - Musiques et documents parl\xC3\xA9s"
+  metadata_id: 36651
+  launch_url: ""
+  barcode: 0
+  id: 21087
+  availability: En traitement
+  support: CD
+  link_label: 
+  call_num: ""
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21278: 
+  number: 1
+  label: "The blue book "
+  document_id: 0
+  dc_identifier: "1042239"
+  location: "Niveau 3 - Langues et litt\xC3\xA9ratures"
+  metadata_id: 36842
+  launch_url: ""
+  barcode: 0
+  id: 21278
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 820"19" KENN.A 4 BL
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21088: 
+  number: 1
+  label: "One world "
+  document_id: 0
+  dc_identifier: "884401"
+  location: "Niveau 3 - Musiques et documents parl\xC3\xA9s"
+  metadata_id: 36652
+  launch_url: ""
+  barcode: 0
+  id: 21088
+  availability: En traitement
+  support: CD
+  link_label: 
+  call_num: ""
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21279: 
+  number: 1
+  label: "Le corps en \xC3\xA9clats "
+  document_id: 0
+  dc_identifier: "1060165"
+  location: Niveau 3 - Arts, loisirs, sports
+  metadata_id: 36843
+  launch_url: ""
+  barcode: 0
+  id: 21279
+  availability: En traitement
+  support: ""
+  link_label: 
+  call_num: ""
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21089: 
+  number: 1
+  label: "Prada "
+  document_id: 0
+  dc_identifier: "885572"
+  location: Niveau 3 - Arts, loisirs, sports
+  metadata_id: 36653
+  launch_url: ""
+  barcode: 0
+  id: 21089
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 70"19" PRAD 2
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_20940: 
+  number: 1
+  label: "Initiation au soufisme "
+  document_id: 0
+  dc_identifier: "514259"
+  location: Niveau 2 - Philo, psycho, religions
+  metadata_id: 36505
+  launch_url: ""
+  barcode: 0
+  id: 20940
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 297.7 GEO
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_20941: 
+  number: 1
+  label: "N\xC2\xB0 1 bis, le m\xC3\xB4me vers le gris "
+  document_id: 0
+  dc_identifier: "515070"
+  location: Niveau 3 - Arts, loisirs, sports
+  metadata_id: 36506
+  launch_url: ""
+  barcode: 0
+  id: 20941
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 70"19" RUTA 1
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_20942: 
+  number: 1
+  label: "Le voyage "
+  document_id: 0
+  dc_identifier: "516761"
+  location: "Niveau 3 - Langues et litt\xC3\xA9ratures"
+  metadata_id: 36507
+  launch_url: ""
+  barcode: 0
+  id: 20942
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 868.0 PITO 4 VI
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21330: 
+  number: 1
+  label: "Camille Jullian: un demi-si\xC3\xA8cle de science historique et de progr\xC3\xA8s frana\xCC\xA7is, 1880-1930 "
+  document_id: 0
+  dc_identifier: "2111"
+  location: "Niveau 3 - Histoire, g\xC3\xA9ographie"
+  metadata_id: 36893
+  launch_url: ""
+  barcode: 0
+  id: 21330
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 93.0(44) GRE
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21140: 
+  number: 1
+  label: "Les origines du logement social en France: 1850-1914 "
+  document_id: 0
+  dc_identifier: "990215"
+  location: "Niveau 3 - Histoire, g\xC3\xA9ographie"
+  metadata_id: 36704
+  launch_url: ""
+  barcode: 0
+  id: 21140
+  availability: En traitement
+  support: ""
+  link_label: 
+  call_num: ""
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_20990: 
+  number: 1
+  label: "Jean-Claude Renard, po\xC3\xA8te des noces "
+  document_id: 0
+  dc_identifier: "610479"
+  location: "Niveau 3 - Langues et litt\xC3\xA9ratures"
+  metadata_id: 36555
+  launch_url: ""
+  barcode: 0
+  id: 20990
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 840"19" RENA.C 5 PR
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_20943: 
+  number: 1
+  label: "Fran\xC3\xA7ois de Sales, un sage et un saint "
+  document_id: 0
+  dc_identifier: "520245"
+  location: Niveau 2 - Philo, psycho, religions
+  metadata_id: 36508
+  launch_url: ""
+  barcode: 0
+  id: 20943
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 235 FRAN.S
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21331: 
+  number: 1
+  label: "Michele Sanmicheli, the architect of Verona: his life and works "
+  document_id: 0
+  dc_identifier: "2184"
+  location: Niveau 3 - Arts, loisirs, sports
+  metadata_id: 36894
+  launch_url: ""
+  barcode: 0
+  id: 21331
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 70"15" SANM 2
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21141: 
+  number: 1
+  label: "Junomichi: l'origine du judo "
+  document_id: 0
+  dc_identifier: "991485"
+  location: Niveau 3 - Arts, loisirs, sports
+  metadata_id: 36705
+  launch_url: ""
+  barcode: 0
+  id: 21141
+  availability: En catalogage
+  support: ""
+  link_label: 
+  call_num: ""
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_20991: 
+  number: 1
+  label: "Charles-Albert Cingria "
+  document_id: 0
+  dc_identifier: "611926"
+  location: "Niveau 3 - Langues et litt\xC3\xA9ratures"
+  metadata_id: 36556
+  launch_url: ""
+  barcode: 0
+  id: 20991
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 842 CING 5 CH
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_20944: 
+  number: 1
+  label: "A l'angle des rues parall\xC3\xA8les "
+  document_id: 0
+  dc_identifier: "521661"
+  location: "Niveau 3 - Langues et litt\xC3\xA9ratures"
+  metadata_id: 36509
+  launch_url: ""
+  barcode: 0
+  id: 20944
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 848 VICT 4 AL
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21332: 
+  number: 1
+  label: "Jean-Charles Fran\xC3\xA7ois, 1717-1769: catalogue de l'oeuvre grav\xC3\xA9, gravure mani\xC3\xA8re de crayon "
+  document_id: 0
+  dc_identifier: "2185"
+  location: Niveau 3 - Arts, loisirs, sports
+  metadata_id: 36895
+  launch_url: ""
+  barcode: 0
+  id: 21332
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 70"17" FRAN 2
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21142: 
+  number: 1
+  label: "Ancestors call "
+  document_id: 0
+  dc_identifier: "992219"
+  location: "Niveau 3 - Musiques et documents parl\xC3\xA9s"
+  metadata_id: 36706
+  launch_url: ""
+  barcode: 0
+  id: 21142
+  availability: En traitement
+  support: ""
+  link_label: 
+  call_num: ""
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_20992: 
+  number: 1
+  label: "Les races humaines selon Kant "
+  document_id: 0
+  dc_identifier: "613302"
+  location: Niveau 2 - Philo, psycho, religions
+  metadata_id: 36557
+  launch_url: ""
+  barcode: 0
+  id: 20992
+  availability: En traitement
+  support: ""
+  link_label: 
+  call_num: ""
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21380: 
+  number: 1
+  label: "Giono "
+  document_id: 0
+  dc_identifier: "6529"
+  location: "Niveau 3 - Langues et litt\xC3\xA9ratures"
+  metadata_id: 36942
+  launch_url: ""
+  barcode: 0
+  id: 21380
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 840"19" GION 5 CH
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21190: 
+  number: 1
+  label: Les philosophies de l'Inde
+  document_id: 0
+  dc_identifier: "1028894"
+  location: Niveau 2 - Philo, psycho, religions
+  metadata_id: 36754
+  launch_url: ""
+  barcode: 0
+  id: 21190
+  availability: En catalogage
+  support: ""
+  link_label: 
+  call_num: ""
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_20945: 
+  number: 1
+  label: "L'urbanisme "
+  document_id: 0
+  dc_identifier: "523047"
+  location: "Niveau 3 - Histoire, g\xC3\xA9ographie"
+  metadata_id: 36510
+  launch_url: ""
+  barcode: 0
+  id: 20945
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 913.3 WEI
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21333: 
+  number: 1
+  label: "Conjunciones y disyunciones "
+  document_id: 0
+  dc_identifier: "2337"
+  location: "Niveau 3 - Langues et litt\xC3\xA9ratures"
+  metadata_id: 36896
+  launch_url: ""
+  barcode: 0
+  id: 21333
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 868.0 PAZ. 4 CO
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21143: 
+  number: 1
+  label: "P'tite ceinture (La) "
+  document_id: 0
+  dc_identifier: "992301"
+  location: "Niveau 3 - Musiques et documents parl\xC3\xA9s"
+  metadata_id: 36707
+  launch_url: ""
+  barcode: 0
+  id: 21143
+  availability: En traitement
+  support: CD
+  link_label: 
+  call_num: ""
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_20993: 
+  number: 1
+  label: "The Jews of the United States: 1654 to 2000 "
+  document_id: 0
+  dc_identifier: "616532"
+  location: "Niveau 3 - Histoire, g\xC3\xA9ographie"
+  metadata_id: 36558
+  launch_url: ""
+  barcode: 0
+  id: 20993
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 973-4 DIN
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21381: 
+  number: 1
+  label: Epistola de tolerantia; A Letter on toleration
+  document_id: 0
+  dc_identifier: "6579"
+  location: Niveau 2 - Philo, psycho, religions
+  metadata_id: 36943
+  launch_url: ""
+  barcode: 0
+  id: 21381
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 1"3" LOCK 1
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_20946: 
+  number: 1
+  label: "Il y a "
+  document_id: 0
+  dc_identifier: "523292"
+  location: Niveau 2 - Philo, psycho, religions
+  metadata_id: 36511
+  launch_url: ""
+  barcode: 0
+  id: 20946
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 115 ROM
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21334: 
+  number: 1
+  label: Les Dix grands de la psychologie
+  document_id: 0
+  dc_identifier: "2354"
+  location: Niveau 2 - Philo, psycho, religions
+  metadata_id: 36897
+  launch_url: ""
+  barcode: 0
+  id: 21334
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 15(091) DIX
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21144: 
+  number: 1
+  label: Arts et soins
+  document_id: 0
+  dc_identifier: "992359"
+  location: Niveau 2 - Philo, psycho, religions
+  metadata_id: 36708
+  launch_url: ""
+  barcode: 0
+  id: 21144
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 39(0) AUT
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_20994: 
+  number: 1
+  label: "Eneik kaddabeen "
+  document_id: 0
+  dc_identifier: "617475"
+  location: "Niveau 3 - Musiques et documents parl\xC3\xA9s"
+  metadata_id: 36559
+  launch_url: ""
+  barcode: 0
+  id: 20994
+  availability: En traitement
+  support: ""
+  link_label: 
+  call_num: ""
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21382: 
+  number: 1
+  label: "The hot gates and other occasional pieces "
+  document_id: 0
+  dc_identifier: "6685"
+  location: "Niveau 3 - Langues et litt\xC3\xA9ratures"
+  metadata_id: 36944
+  launch_url: ""
+  barcode: 0
+  id: 21382
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 820"19" GOLD 4 HO
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21192: 
+  number: 1
+  label: "Les formes \xC3\xA9l\xC3\xA9mentaires de la nature "
+  document_id: 0
+  dc_identifier: "1029720"
+  location: "Niveau 2 - Sciences, techniques, m\xC3\xA9decine"
+  metadata_id: 36756
+  launch_url: ""
+  barcode: 0
+  id: 21192
+  availability: En catalogage
+  support: ""
+  link_label: 
+  call_num: ""
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_20947: 
+  number: 1
+  label: "La composition du jardin "
+  document_id: 0
+  dc_identifier: "524847"
+  location: "Niveau 3 - Langues et litt\xC3\xA9ratures"
+  metadata_id: 36512
+  launch_url: ""
+  barcode: 0
+  id: 20947
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 840"19" TRAS 4 CO
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21335: 
+  number: 1
+  label: "Bergson \xC3\xA9ducateur "
+  document_id: 0
+  dc_identifier: "2376"
+  location: "Niveau 2 - Droit, \xC3\xA9conomie, sc. sociales"
+  metadata_id: 36898
+  launch_url: ""
+  barcode: 0
+  id: 21335
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 37 BER
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21145: 
+  number: 1
+  label: "Le savoir-vivre philosophique: Emp\xC3\xA9docle, Socrate, Platon "
+  document_id: 0
+  dc_identifier: "994624"
+  location: Niveau 2 - Philo, psycho, religions
+  metadata_id: 36709
+  launch_url: ""
+  barcode: 0
+  id: 21145
+  availability: En catalogage
+  support: ""
+  link_label: 
+  call_num: ""
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_20995: 
+  number: 1
+  label: "Vieira da Silva, 1908-1992: \xC3\xA0 la recherche de l'espace inconnu "
+  document_id: 0
+  dc_identifier: "624299"
+  location: Niveau 3 - Arts, loisirs, sports
+  metadata_id: 36560
+  launch_url: ""
+  barcode: 0
+  id: 20995
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 70"19" VIEI 2
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21383: 
+  number: 1
+  label: "La peinture espagnole: des origines au XXe si\xC3\xA8cle "
+  document_id: 0
+  dc_identifier: "6868"
+  location: Niveau 3 - Arts, loisirs, sports
+  metadata_id: 36945
+  launch_url: ""
+  barcode: 0
+  id: 21383
+  availability: "En r\xC3\xA9paration"
+  support: ""
+  link_label: 
+  call_num: 754.6 ROU
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21193: 
+  number: 1
+  label: "Anatomie du capitalisme financier "
+  document_id: 0
+  dc_identifier: "1030845"
+  location: "Niveau 2 - Droit, \xC3\xA9conomie, sc. sociales"
+  metadata_id: 36757
+  launch_url: ""
+  barcode: 0
+  id: 21193
+  availability: En reliure
+  support: ""
+  link_label: 
+  call_num: ""
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_20948: 
+  number: 1
+  label: Bosnie
+  document_id: 0
+  dc_identifier: "528593"
+  location: Niveau 3 - Arts, loisirs, sports
+  metadata_id: 36513
+  launch_url: ""
+  barcode: 0
+  id: 20948
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 795(497) PET
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21336: 
+  number: 2
+  label: "Bergson \xC3\xA9ducateur "
+  document_id: 0
+  dc_identifier: "2376"
+  location: Niveau 2 - Philo, psycho, religions
+  metadata_id: 36898
+  launch_url: ""
+  barcode: 0
+  id: 21336
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 1"4" BERG 2
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21146: 
+  number: 1
+  label: "Husserl et l'id\xC3\xA9e de Dieu "
+  document_id: 0
+  dc_identifier: "995319"
+  location: Niveau 2 - Philo, psycho, religions
+  metadata_id: 36710
+  launch_url: ""
+  barcode: 0
+  id: 21146
+  availability: En catalogage
+  support: ""
+  link_label: 
+  call_num: ""
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_20996: 
+  number: 1
+  label: "Petit \xC3\xA0 petit l'oiseau fait son nid; De mica en mica s'omple la pica"
+  document_id: 0
+  dc_identifier: "624510"
+  location: "Niveau 3 - Langues et litt\xC3\xA9ratures"
+  metadata_id: 36561
+  launch_url: ""
+  barcode: 0
+  id: 20996
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 862 FUST 4 DE
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21384: 
+  number: 1
+  label: "Pale fire "
+  document_id: 0
+  dc_identifier: "7004"
+  location: "Niveau 3 - Langues et litt\xC3\xA9ratures"
+  metadata_id: 36946
+  launch_url: ""
+  barcode: 0
+  id: 21384
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 821 NABO 4 PA
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21194: 
+  number: 1
+  label: "Du service public \xC3\xA0 la t\xC3\xA9l\xC3\xA9-r\xC3\xA9alit\xC3\xA9: une histoire culturelle des t\xC3\xA9l\xC3\xA9visions europ\xC3\xA9ennes, 1950-2000 "
+  document_id: 0
+  dc_identifier: "1031021"
+  location: Niveau 3 - Arts, loisirs, sports
+  metadata_id: 36758
+  launch_url: ""
+  barcode: 0
+  id: 21194
+  availability: En catalogage
+  support: ""
+  link_label: 
+  call_num: ""
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_20949: 
+  number: 1
+  label: "Le Bon Coin "
+  document_id: 0
+  dc_identifier: "539806"
+  location: "Niveau 3 - Musiques et documents parl\xC3\xA9s"
+  metadata_id: 36514
+  launch_url: ""
+  barcode: 0
+  id: 20949
+  availability: En traitement
+  support: ""
+  link_label: 
+  call_num: ""
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21337: 
+  number: 1
+  label: "La menuiserie d'art "
+  document_id: 0
+  dc_identifier: "2535"
+  location: Niveau 3 - Arts, loisirs, sports
+  metadata_id: 36899
+  launch_url: ""
+  barcode: 0
+  id: 21337
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 744 AUS
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21147: 
+  number: 1
+  label: "Le son \xC3\xA0 la guitare "
+  document_id: 0
+  dc_identifier: "995783"
+  location: "Niveau 3 - Musiques et documents parl\xC3\xA9s"
+  metadata_id: 36711
+  launch_url: ""
+  barcode: 0
+  id: 21147
+  availability: En catalogage
+  support: ""
+  link_label: 
+  call_num: ""
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_20997: 
+  number: 1
+  label: "bacteriologie m\xC3\xA9dicale "
+  document_id: 0
+  dc_identifier: "628256"
+  location: "Niveau 2 - Sciences, techniques, m\xC3\xA9decine"
+  metadata_id: 36562
+  launch_url: ""
+  barcode: 0
+  id: 20997
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 616.99 COU
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21385: 
+  number: 1
+  label: "Il diavolo al Pontelungo "
+  document_id: 0
+  dc_identifier: "7216"
+  location: "Niveau 3 - Langues et litt\xC3\xA9ratures"
+  metadata_id: 36947
+  launch_url: ""
+  barcode: 0
+  id: 21385
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 850"19" BACC 4 DI
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21338: 
+  number: 1
+  label: "Les d\xC3\xA9serts "
+  document_id: 0
+  dc_identifier: "2573"
+  location: "Niveau 2 - Sciences, techniques, m\xC3\xA9decine"
+  metadata_id: 36900
+  launch_url: ""
+  barcode: 0
+  id: 21338
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 55(091) MONO 1
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21148: 
+  number: 1
+  label: "Int\xC3\xA9grale des albums studio (L') "
+  document_id: 0
+  dc_identifier: "995912"
+  location: "Niveau 3 - Musiques et documents parl\xC3\xA9s"
+  metadata_id: 36712
+  launch_url: ""
+  barcode: 0
+  id: 21148
+  availability: En traitement
+  support: CD
+  link_label: 
+  call_num: ""
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_20998: 
+  number: 1
+  label: Tamally Maak
+  document_id: 0
+  dc_identifier: "629653"
+  location: "Niveau 3 - Musiques et documents parl\xC3\xA9s"
+  metadata_id: 36563
+  launch_url: ""
+  barcode: 0
+  id: 20998
+  availability: En traitement
+  support: ""
+  link_label: 
+  call_num: ""
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21386: 
+  number: 1
+  label: "La cattedrale "
+  document_id: 0
+  dc_identifier: "7302"
+  location: "Niveau 3 - Langues et litt\xC3\xA9ratures"
+  metadata_id: 36948
+  launch_url: ""
+  barcode: 0
+  id: 21386
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 850"19" TEST 4 CA
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21196: 
+  number: 1
+  label: "La beaut\xC3\xA9 des mortels: essai sur le monde grec \xC3\xA0 l'usage des hommes d'aujourd'hui "
+  document_id: 0
+  dc_identifier: "1031731"
+  location: Niveau 2 - Philo, psycho, religions
+  metadata_id: 36760
+  launch_url: ""
+  barcode: 0
+  id: 21196
+  availability: En catalogage
+  support: ""
+  link_label: 
+  call_num: ""
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21339: 
+  number: 1
+  label: "La Communion des Saints "
+  document_id: 0
+  dc_identifier: "2652"
+  location: Niveau 2 - Philo, psycho, religions
+  metadata_id: 36901
+  launch_url: ""
+  barcode: 0
+  id: 21339
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 234 LAM
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21149: 
+  number: 1
+  label: "Infernal machines "
+  document_id: 0
+  dc_identifier: "996045"
+  location: "Niveau 3 - Musiques et documents parl\xC3\xA9s"
+  metadata_id: 36713
+  launch_url: ""
+  barcode: 0
+  id: 21149
+  availability: En traitement
+  support: CD
+  link_label: 
+  call_num: ""
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_20999: 
+  number: 1
+  label: "Daily life in Ancient Egypt "
+  document_id: 0
+  dc_identifier: "630809"
+  location: "Niveau 3 - Histoire, g\xC3\xA9ographie"
+  metadata_id: 36564
+  launch_url: ""
+  barcode: 0
+  id: 20999
+  availability: En traitement
+  support: ""
+  link_label: 
+  call_num: ""
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21387: 
+  number: 1
+  label: "La ville en loques "
+  document_id: 0
+  dc_identifier: "7414"
+  location: "Niveau 3 - Langues et litt\xC3\xA9ratures"
+  metadata_id: 36949
+  launch_url: ""
+  barcode: 0
+  id: 21387
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 840"19" LEQU 4 VI
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21197: 
+  number: 1
+  label: "Dix-septi\xC3\xA8me si\xC3\xA8cle. . 251, Journ\xC3\xA9es internationales Jean-Pierre Camus: Belley, 17-19 septembre 2009"
+  document_id: 0
+  dc_identifier: "1031920"
+  location: "Niveau 3 - Langues et litt\xC3\xA9ratures"
+  metadata_id: 36761
+  launch_url: ""
+  barcode: 0
+  id: 21197
+  availability: En catalogage
+  support: ""
+  link_label: 
+  call_num: ""
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21010: 
+  number: 1
+  label: "Tournier "
+  document_id: 0
+  dc_identifier: "661692"
+  location: "Niveau 3 - Langues et litt\xC3\xA9ratures"
+  metadata_id: 36575
+  launch_url: ""
+  barcode: 0
+  id: 21010
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 840"19" TOUR 5 PO
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21388: 
+  number: 1
+  label: "Pr\xC3\xA9cis de g\xC3\xA9ographie urbaine "
+  document_id: 0
+  dc_identifier: "7618"
+  location: "Niveau 3 - Histoire, g\xC3\xA9ographie"
+  metadata_id: 36950
+  launch_url: ""
+  barcode: 0
+  id: 21388
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 913.2 GEO
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21389: 
+  number: 1
+  label: "Il tempo e il luogo "
+  document_id: 0
+  dc_identifier: "7642"
+  location: "Niveau 3 - Langues et litt\xC3\xA9ratures"
+  metadata_id: 36951
+  launch_url: ""
+  barcode: 0
+  id: 21389
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 850"19" LONG 4 TE
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_20860: 
+  number: 1
+  label: "Carnets: 1933-1963 "
+  document_id: 0
+  dc_identifier: "295027"
+  location: Niveau 3 - Arts, loisirs, sports
+  metadata_id: 36426
+  launch_url: ""
+  barcode: 0
+  id: 20860
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 791.6 OZU. 1
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21202: 
+  number: 1
+  label: "Premiere phalange "
+  document_id: 0
+  dc_identifier: "1035572"
+  location: "Niveau 3 - Musiques et documents parl\xC3\xA9s"
+  metadata_id: 36766
+  launch_url: ""
+  barcode: 0
+  id: 21202
+  availability: En traitement
+  support: ""
+  link_label: 
+  call_num: ""
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21012: 
+  number: 1
+  label: "Hemingway "
+  document_id: 0
+  dc_identifier: "668650"
+  location: Niveau 3 - Arts, loisirs, sports
+  metadata_id: 36577
+  launch_url: ""
+  barcode: 0
+  id: 21012
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 768.1 ANG06 HEM
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21203: 
+  number: 1
+  label: "Verve et la joie (La) "
+  document_id: 0
+  dc_identifier: "1035578"
+  location: "Niveau 3 - Musiques et documents parl\xC3\xA9s"
+  metadata_id: 36767
+  launch_url: ""
+  barcode: 0
+  id: 21203
+  availability: En traitement
+  support: ""
+  link_label: 
+  call_num: ""
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21013: 
+  number: 1
+  label: "Bob Marley: la l\xC3\xA9gende "
+  document_id: 0
+  dc_identifier: "679897"
+  location: "Niveau 3 - Musiques et documents parl\xC3\xA9s"
+  metadata_id: 36578
+  launch_url: ""
+  barcode: 0
+  id: 21013
+  availability: En traitement
+  support: ""
+  link_label: 
+  call_num: ""
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_20862: 
+  number: 1
+  label: "Cigare: le guide "
+  document_id: 0
+  dc_identifier: "302893"
+  location: "Niveau 2 - Sciences, techniques, m\xC3\xA9decine"
+  metadata_id: 36428
+  launch_url: ""
+  barcode: 0
+  id: 20862
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 641.9 PER
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21250: 
+  number: 1
+  label: "Pirandello e la Francia: un stupendo esempio d'interscambio culturale"
+  document_id: 0
+  dc_identifier: "1053279"
+  location: "Niveau 3 - Langues et litt\xC3\xA9ratures"
+  metadata_id: 36814
+  launch_url: ""
+  barcode: 0
+  id: 21250
+  availability: En reliure
+  support: ""
+  link_label: 
+  call_num: ""
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21060: 
+  number: 1
+  label: "Espresso: arte oggi in Italia "
+  document_id: 0
+  dc_identifier: "809587"
+  location: Niveau 3 - Arts, loisirs, sports
+  metadata_id: 36625
+  launch_url: ""
+  barcode: 0
+  id: 21060
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 704.58 RIS
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21014: 
+  number: 1
+  label: Daniel balavoine
+  document_id: 0
+  dc_identifier: "680372"
+  location: "Niveau 3 - Musiques et documents parl\xC3\xA9s"
+  metadata_id: 36579
+  launch_url: ""
+  barcode: 0
+  id: 21014
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 78(0) CHO
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_20863: 
+  number: 1
+  label: "Guide des animaux familiers "
+  document_id: 0
+  dc_identifier: "304832"
+  location: "Niveau 2 - Sciences, techniques, m\xC3\xA9decine"
+  metadata_id: 36429
+  launch_url: ""
+  barcode: 0
+  id: 20863
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 599 BUL
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21061: 
+  number: 1
+  label: "La Grande guerre expliqu\xC3\xA9e \xC3\xA0 mon petit fils "
+  document_id: 0
+  dc_identifier: "811246"
+  location: "Niveau 3 - Musiques et documents parl\xC3\xA9s"
+  metadata_id: 36626
+  launch_url: ""
+  barcode: 0
+  id: 21061
+  availability: En traitement
+  support: CD
+  link_label: 
+  call_num: "930.72"
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21015: 
+  number: 1
+  label: "Duos II "
+  document_id: 0
+  dc_identifier: "682757"
+  location: "Niveau 3 - Musiques et documents parl\xC3\xA9s"
+  metadata_id: 36580
+  launch_url: ""
+  barcode: 0
+  id: 21015
+  availability: En traitement
+  support: ""
+  link_label: 
+  call_num: 782.8(82) SOUZ
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_20864: 
+  number: 1
+  label: "Le monde du sommeil "
+  document_id: 0
+  dc_identifier: "309099"
+  location: "Niveau 2 - Sciences, techniques, m\xC3\xA9decine"
+  metadata_id: 36430
+  launch_url: ""
+  barcode: 0
+  id: 20864
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 612.8 LAV
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21062: 
+  number: 1
+  label: "Paper magic "
+  document_id: 0
+  dc_identifier: "818245"
+  location: Niveau 3 - Arts, loisirs, sports
+  metadata_id: 36627
+  launch_url: ""
+  barcode: 0
+  id: 21062
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 742.8 GOR
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21016: 
+  number: 1
+  label: "Space and place: the perspective of experience"
+  document_id: 0
+  dc_identifier: "686911"
+  location: "Niveau 3 - Histoire, g\xC3\xA9ographie"
+  metadata_id: 36581
+  launch_url: ""
+  barcode: 0
+  id: 21016
+  availability: En traitement
+  support: ""
+  link_label: 
+  call_num: 913 TUA
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_20865: 
+  number: 1
+  label: "Les ic\xC3\xB4nes "
+  document_id: 0
+  dc_identifier: "312803"
+  location: Niveau 3 - Arts, loisirs, sports
+  metadata_id: 36431
+  launch_url: ""
+  barcode: 0
+  id: 20865
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 75.28 ICO
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21063: 
+  number: 1
+  label: "What makes a great exhibition ? "
+  document_id: 0
+  dc_identifier: "820908"
+  location: Niveau 3 - Arts, loisirs, sports
+  metadata_id: 36628
+  launch_url: ""
+  barcode: 0
+  id: 21063
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 7.3 MAR
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21206: 
+  number: 1
+  label: "La ville "
+  document_id: 0
+  dc_identifier: "1036724"
+  location: "Niveau 3 - Histoire, g\xC3\xA9ographie"
+  metadata_id: 36770
+  launch_url: ""
+  barcode: 0
+  id: 21206
+  availability: En catalogage
+  support: ""
+  link_label: 
+  call_num: ""
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_20866: 
+  number: 1
+  label: Frantz Fanon
+  document_id: 0
+  dc_identifier: "317789"
+  location: "Niveau 2 - Droit, \xC3\xA9conomie, sc. sociales"
+  metadata_id: 36432
+  launch_url: ""
+  barcode: 0
+  id: 20866
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 320 FAN 2
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21064: 
+  number: 1
+  label: "Bonheurs du leurre: proses; Trampantojos"
+  document_id: 0
+  dc_identifier: "821901"
+  location: "Niveau 3 - Langues et litt\xC3\xA9ratures"
+  metadata_id: 36629
+  launch_url: ""
+  barcode: 0
+  id: 21064
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 868.3 YURK 4 TR
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21207: 
+  number: 1
+  label: "Robert Filliou et sa recherche: les enjeux plasticognitifs de la Recherche sur l'origine, 1974 "
+  document_id: 0
+  dc_identifier: "1036998"
+  location: Niveau 3 - Arts, loisirs, sports
+  metadata_id: 36771
+  launch_url: ""
+  barcode: 0
+  id: 21207
+  availability: En reliure
+  support: ""
+  link_label: 
+  call_num: ""
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21017: 
+  number: 1
+  label: "Les banques, acteurs de globalisation financi\xC3\xA8re."
+  document_id: 0
+  dc_identifier: "690517"
+  location: Niveau 2 - Philo, psycho, religions
+  metadata_id: 36582
+  launch_url: ""
+  barcode: 0
+  id: 21017
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 3(0) ETU
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_20867: 
+  number: 1
+  label: "Les juges "
+  document_id: 0
+  dc_identifier: "324741"
+  location: "Niveau 3 - Langues et litt\xC3\xA9ratures"
+  metadata_id: 36433
+  launch_url: ""
+  barcode: 0
+  id: 20867
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 840"19" WIES 4 JU
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21255: 
+  number: 1
+  label: "Collector: exposition, Lille, Le Tripostal, 05 octobre 2011 au 1er janvier 2012; Exposition Lille Le Tripostal 2011 2012"
+  document_id: 0
+  dc_identifier: "1053739"
+  location: Niveau 3 - Arts, loisirs, sports
+  metadata_id: 36819
+  launch_url: ""
+  barcode: 0
+  id: 21255
+  availability: En catalogage
+  support: ""
+  link_label: 
+  call_num: ""
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21065: 
+  number: 1
+  label: "Skjemt og sjanti "
+  document_id: 0
+  dc_identifier: "822642"
+  location: "Niveau 3 - Musiques et documents parl\xC3\xA9s"
+  metadata_id: 36630
+  launch_url: ""
+  barcode: 0
+  id: 21065
+  availability: En traitement
+  support: ""
+  link_label: 
+  call_num: ""
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21208: 
+  number: 1
+  label: "Tschick "
+  document_id: 0
+  dc_identifier: "1037102"
+  location: "Niveau 3 - Langues et litt\xC3\xA9ratures"
+  metadata_id: 36772
+  launch_url: ""
+  barcode: 0
+  id: 21208
+  availability: En traitement
+  support: ""
+  link_label: 
+  call_num: ""
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21018: 
+  number: 1
+  label: "Elizabeth Peyton "
+  document_id: 0
+  dc_identifier: "692907"
+  location: Niveau 3 - Arts, loisirs, sports
+  metadata_id: 36583
+  launch_url: ""
+  barcode: 0
+  id: 21018
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 70"20" PEYT 2
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_20868: 
+  number: 1
+  label: "Historical dictionary of France "
+  document_id: 0
+  dc_identifier: "324969"
+  location: "Niveau 3 - Histoire, g\xC3\xA9ographie"
+  metadata_id: 36434
+  launch_url: ""
+  barcode: 0
+  id: 20868
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 944(03) RAY
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21066: 
+  number: 1
+  label: Dandy
+  document_id: 0
+  dc_identifier: "824059"
+  location: Niveau 3 - Arts, loisirs, sports
+  metadata_id: 36631
+  launch_url: ""
+  barcode: 0
+  id: 21066
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 7(0) DIT
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21209: 
+  number: 1
+  label: "M\xC3\xA9thode de mandoline"
+  document_id: 0
+  dc_identifier: "1037494"
+  location: "Niveau 3 - Musiques et documents parl\xC3\xA9s"
+  metadata_id: 36773
+  launch_url: ""
+  barcode: 0
+  id: 21209
+  availability: En reliure
+  support: ""
+  link_label: 
+  call_num: ""
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21019: 
+  number: 1
+  label: "Du c\xC3\xB4t\xC3\xA9 de chez Swann : un amour de Swann 2"
+  document_id: 0
+  dc_identifier: "694471"
+  location: "Niveau 3 - Musiques et documents parl\xC3\xA9s"
+  metadata_id: 36584
+  launch_url: ""
+  barcode: 0
+  id: 21019
+  availability: En traitement
+  support: CD
+  link_label: 
+  call_num: ""
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_20869: 
+  number: 1
+  label: "D\xC3\xA9fendre l'Europe: la tentation suisse "
+  document_id: 0
+  dc_identifier: "325628"
+  location: "Niveau 2 - Droit, \xC3\xA9conomie, sc. sociales"
+  metadata_id: 36435
+  launch_url: ""
+  barcode: 0
+  id: 20869
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 328(490).6 MON
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21067: 
+  number: 1
+  label: "Dictionnaire g\xC3\xA9n\xC3\xA9ral fran\xC3\xA7ais-turc "
+  document_id: 0
+  dc_identifier: "825544"
+  location: Niveau 2 - Autoformation
+  metadata_id: 36632
+  launch_url: ""
+  barcode: 0
+  id: 21067
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 894.35 (038) TUR
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21068: 
+  number: 2
+  label: "Dictionnaire g\xC3\xA9n\xC3\xA9ral fran\xC3\xA7ais-turc "
+  document_id: 0
+  dc_identifier: "825544"
+  location: Niveau 2 - Autoformation
+  metadata_id: 36632
+  launch_url: ""
+  barcode: 0
+  id: 21068
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 894.35 (038) TUR
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21069: 
+  number: 1
+  label: "Macaroni Christian "
+  document_id: 0
+  dc_identifier: "825550"
+  location: Niveau 3 - Arts, loisirs, sports
+  metadata_id: 36633
+  launch_url: ""
+  barcode: 0
+  id: 21069
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 77.4(5) USU
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_20920: 
+  number: 1
+  label: Hal antum muhassanun didda al-harim
+  document_id: 0
+  dc_identifier: "440178"
+  location: "Niveau 3 - Langues et litt\xC3\xA9ratures"
+  metadata_id: 36485
+  launch_url: ""
+  barcode: 0
+  id: 20920
+  availability: En traitement
+  support: ""
+  link_label: 
+  call_num: ""
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_20921: 
+  number: 1
+  label: "Le roman de Canal +/ "
+  document_id: 0
+  dc_identifier: "440538"
+  location: Niveau 2 - Philo, psycho, religions
+  metadata_id: 36486
+  launch_url: ""
+  barcode: 0
+  id: 20921
+  availability: En catalogage
+  support: ""
+  link_label: 
+  call_num: 09.7(44) LEC
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21310: 
+  number: 1
+  label: "Instrumentos musicais populares portugueses "
+  document_id: 0
+  dc_identifier: "93"
+  location: "Niveau 3 - Musiques et documents parl\xC3\xA9s"
+  metadata_id: 36873
+  launch_url: ""
+  barcode: 0
+  id: 21310
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 785 OLI
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21120: 
+  number: 1
+  label: "Plan\xC3\xA8tes musiques 2010"
+  document_id: 0
+  dc_identifier: "960121"
+  location: "Niveau 3 - Musiques et documents parl\xC3\xA9s"
+  metadata_id: 36684
+  launch_url: ""
+  barcode: 0
+  id: 21120
+  availability: En traitement
+  support: ""
+  link_label: 
+  call_num: ""
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_20922: 
+  number: 1
+  label: "Hom\xC3\xA9lies bibliques "
+  document_id: 0
+  dc_identifier: "446301"
+  location: Niveau 2 - Philo, psycho, religions
+  metadata_id: 36487
+  launch_url: ""
+  barcode: 0
+  id: 20922
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 23 RAHN 1
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21311: 
+  number: 1
+  label: "The Formation and expressive use of diminutives "
+  document_id: 0
+  dc_identifier: "111"
+  location: "Niveau 3 - Langues et litt\xC3\xA9ratures"
+  metadata_id: 36874
+  launch_url: ""
+  barcode: 0
+  id: 21311
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 882(0) BRA
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21121: 
+  number: 1
+  label: "Someday we'll all be free "
+  document_id: 0
+  dc_identifier: "960135"
+  location: "Niveau 3 - Musiques et documents parl\xC3\xA9s"
+  metadata_id: 36685
+  launch_url: ""
+  barcode: 0
+  id: 21121
+  availability: En traitement
+  support: ""
+  link_label: 
+  call_num: ""
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_20970: 
+  number: 1
+  label: "Plan de Toulouse ; Plan-Guide agglom\xC3\xA9ration toulousaine"
+  document_id: 0
+  dc_identifier: "582016"
+  location: "Niveau 3 - Histoire, g\xC3\xA9ographie"
+  metadata_id: 36535
+  launch_url: ""
+  barcode: 0
+  id: 20970
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 913.31(449) TOU
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_20923: 
+  number: 1
+  label: "Marc Sangnier: t\xC3\xA9moignages "
+  document_id: 0
+  dc_identifier: "449083"
+  location: Niveau 2 - Philo, psycho, religions
+  metadata_id: 36488
+  launch_url: ""
+  barcode: 0
+  id: 20923
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 27(44) MAR
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21122: 
+  number: 1
+  label: "Die DDR und die Juden: Eine kritische Untersuchung - mit einer Bibliografie von Renate Kirchner"
+  document_id: 0
+  dc_identifier: "968163"
+  location: "Niveau 3 - Histoire, g\xC3\xA9ographie"
+  metadata_id: 36686
+  launch_url: ""
+  barcode: 0
+  id: 21122
+  availability: En catalogage
+  support: ""
+  link_label: 
+  call_num: ""
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_20971: 
+  number: 1
+  label: Occitanie.Au coeur du Grand Sud.
+  document_id: 0
+  dc_identifier: "583242"
+  location: Niveau 3 - Arts, loisirs, sports
+  metadata_id: 36536
+  launch_url: ""
+  barcode: 0
+  id: 20971
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 795(0) GEO
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_20924: 
+  number: 1
+  label: "Taureau "
+  document_id: 0
+  dc_identifier: "453412"
+  location: "Niveau 2 - Sciences, techniques, m\xC3\xA9decine"
+  metadata_id: 36489
+  launch_url: ""
+  barcode: 0
+  id: 20924
+  availability: En traitement
+  support: ""
+  link_label: 
+  call_num: ""
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21312: 
+  number: 1
+  label: "Figures de Lukacs "
+  document_id: 0
+  dc_identifier: "185"
+  location: Niveau 2 - Philo, psycho, religions
+  metadata_id: 36875
+  launch_url: ""
+  barcode: 0
+  id: 21312
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 1"4" LUKA 2
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21123: 
+  number: 1
+  label: "Tobias Rehberger 1993-2008 "
+  document_id: 0
+  dc_identifier: "970402"
+  location: Niveau 3 - Arts, loisirs, sports
+  metadata_id: 36687
+  launch_url: ""
+  barcode: 0
+  id: 21123
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 70"20" REHB 2
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_20972: 
+  number: 1
+  label: "South African music: a century of traditions in transformation "
+  document_id: 0
+  dc_identifier: "584923"
+  location: Niveau 3 - Arts, loisirs, sports
+  metadata_id: 36537
+  launch_url: ""
+  barcode: 0
+  id: 20972
+  availability: En traitement
+  support: ""
+  link_label: 
+  call_num: ""
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21360: 
+  number: 1
+  label: "A Writer's notebook "
+  document_id: 0
+  dc_identifier: "4572"
+  location: "Niveau 3 - Langues et litt\xC3\xA9ratures"
+  metadata_id: 36922
+  launch_url: ""
+  barcode: 0
+  id: 21360
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 820"19" MAUG 4 WR
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21170: 
+  number: 1
+  label: "Zufall "
+  document_id: 0
+  dc_identifier: "1013138"
+  location: "Niveau 3 - Musiques et documents parl\xC3\xA9s"
+  metadata_id: 36734
+  launch_url: ""
+  barcode: 0
+  id: 21170
+  availability: En traitement
+  support: CD
+  link_label: 
+  call_num: ""
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_20925: 
+  number: 1
+  label: "Fragile humanit\xC3\xA9 "
+  document_id: 0
+  dc_identifier: "454995"
+  location: Niveau 2 - Philo, psycho, religions
+  metadata_id: 36490
+  launch_url: ""
+  barcode: 0
+  id: 20925
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 130 REV
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21313: 
+  number: 1
+  label: "L' Homme et la montagne "
+  document_id: 0
+  dc_identifier: "277"
+  location: "Niveau 3 - Histoire, g\xC3\xA9ographie"
+  metadata_id: 36876
+  launch_url: ""
+  barcode: 0
+  id: 21313
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 912.66 BLA
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_20973: 
+  number: 1
+  label: "Pass\xC3\xA9 simple "
+  document_id: 0
+  dc_identifier: "585531"
+  location: "Niveau 3 - Musiques et documents parl\xC3\xA9s"
+  metadata_id: 36538
+  launch_url: ""
+  barcode: 0
+  id: 20973
+  availability: En traitement
+  support: CD
+  link_label: 
+  call_num: ""
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21361: 
+  number: 1
+  label: "Storielle vane "
+  document_id: 0
+  dc_identifier: "4627"
+  location: "Niveau 3 - Langues et litt\xC3\xA9ratures"
+  metadata_id: 36923
+  launch_url: ""
+  barcode: 0
+  id: 21361
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 850"18" BOIT 2
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21171: 
+  number: 1
+  label: L'orgue de Carouge
+  document_id: 0
+  dc_identifier: "1014374"
+  location: "Niveau 3 - Musiques et documents parl\xC3\xA9s"
+  metadata_id: 36735
+  launch_url: ""
+  barcode: 0
+  id: 21171
+  availability: En catalogage
+  support: ""
+  link_label: 
+  call_num: ""
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_20926: 
+  number: 1
+  label: "La maladie de l'islam "
+  document_id: 0
+  dc_identifier: "459144"
+  location: "Niveau 2 - Droit, \xC3\xA9conomie, sc. sociales"
+  metadata_id: 36491
+  launch_url: ""
+  barcode: 0
+  id: 20926
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 320.541 MED
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21314: 
+  number: 1
+  label: The Owl and the Nightingale; Owl and nightingale
+  document_id: 0
+  dc_identifier: "497"
+  location: "Niveau 3 - Langues et litt\xC3\xA9ratures"
+  metadata_id: 36877
+  launch_url: ""
+  barcode: 0
+  id: 21314
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 820"12" OWL.
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21124: 
+  number: 1
+  label: "Tucson-Habana "
+  document_id: 0
+  dc_identifier: "970989"
+  location: "Niveau 3 - Musiques et documents parl\xC3\xA9s"
+  metadata_id: 36688
+  launch_url: ""
+  barcode: 0
+  id: 21124
+  availability: En traitement
+  support: ""
+  link_label: 
+  call_num: ""
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_20974: 
+  number: 1
+  label: "Les manifestes du soul\xC3\xA8vement de la jeunesse: 1950-1966 "
+  document_id: 0
+  dc_identifier: "586081"
+  location: "Niveau 3 - Langues et litt\xC3\xA9ratures"
+  metadata_id: 36539
+  launch_url: ""
+  barcode: 0
+  id: 20974
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 840"19" ISOU 4 MA
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21362: 
+  number: 1
+  label: "Le conte de ma vie "
+  document_id: 0
+  dc_identifier: "4702"
+  location: "Niveau 3 - Langues et litt\xC3\xA9ratures"
+  metadata_id: 36924
+  launch_url: ""
+  barcode: 0
+  id: 21362
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 839.8 ANDE 4 CO
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21172: 
+  number: 1
+  label: "L'\xC3\xA9cologie selon J\xC3\xA9sus-Christ "
+  document_id: 0
+  dc_identifier: "1014813"
+  location: Niveau 2 - Philo, psycho, religions
+  metadata_id: 36736
+  launch_url: ""
+  barcode: 0
+  id: 21172
+  availability: En traitement
+  support: ""
+  link_label: 
+  call_num: ""
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_20927: 
+  number: 1
+  label: "La nature photographique d'Andy Goldsworthy "
+  document_id: 0
+  dc_identifier: "459764"
+  location: Niveau 3 - Arts, loisirs, sports
+  metadata_id: 36492
+  launch_url: ""
+  barcode: 0
+  id: 20927
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 70"19" GOLD.A 2
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21315: 
+  number: 1
+  label: "Uroki russkoj istorii "
+  document_id: 0
+  dc_identifier: "678"
+  location: "Niveau 3 - Langues et litt\xC3\xA9ratures"
+  metadata_id: 36878
+  launch_url: ""
+  barcode: 0
+  id: 21315
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 882(091) IOU
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21125: 
+  number: 1
+  label: "Chaos "
+  document_id: 0
+  dc_identifier: "971347"
+  location: "Niveau 3 - Musiques et documents parl\xC3\xA9s"
+  metadata_id: 36689
+  launch_url: ""
+  barcode: 0
+  id: 21125
+  availability: En traitement
+  support: CD
+  link_label: 
+  call_num: ""
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_20975: 
+  number: 1
+  label: "Concepts fondamentaux de l'informatique "
+  document_id: 0
+  dc_identifier: "587665"
+  location: "Niveau 2 - Sciences, techniques, m\xC3\xA9decine"
+  metadata_id: 36540
+  launch_url: ""
+  barcode: 0
+  id: 20975
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 681.0 AHO
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21363: 
+  number: 1
+  label: "La France de Pompidou "
+  document_id: 0
+  dc_identifier: "4751"
+  location: "Niveau 3 - Histoire, g\xC3\xA9ographie"
+  metadata_id: 36925
+  launch_url: ""
+  barcode: 0
+  id: 21363
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 944-883 DEB
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21173: 
+  number: 1
+  label: "Pourquoi l'Afrique en est l\xC3\xA0 ? "
+  document_id: 0
+  dc_identifier: "1018095"
+  location: "Niveau 2 - Droit, \xC3\xA9conomie, sc. sociales"
+  metadata_id: 36737
+  launch_url: ""
+  barcode: 0
+  id: 21173
+  availability: En reliure
+  support: ""
+  link_label: 
+  call_num: ""
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_20928: 
+  number: 1
+  label: "D\xC3\xA9finitif bob "
+  document_id: 0
+  dc_identifier: "470080"
+  location: "Niveau 3 - Langues et litt\xC3\xA9ratures"
+  metadata_id: 36493
+  launch_url: ""
+  barcode: 0
+  id: 20928
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 840"19" PORT.A 4 DE
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21316: 
+  number: 1
+  label: Le Pianiste
+  document_id: 0
+  dc_identifier: "685"
+  location: "Niveau 3 - Musiques et documents parl\xC3\xA9s"
+  metadata_id: 36879
+  launch_url: ""
+  barcode: 0
+  id: 21316
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 785.12 PIA
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21126: 
+  number: 1
+  label: "Appetite for self-destruction: the spectacular crash of the record industry in the digital age "
+  document_id: 0
+  dc_identifier: "971930"
+  location: "Niveau 3 - Musiques et documents parl\xC3\xA9s"
+  metadata_id: 36690
+  launch_url: ""
+  barcode: 0
+  id: 21126
+  availability: En catalogage
+  support: ""
+  link_label: 
+  call_num: ""
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_20976: 
+  number: 1
+  label: "Toussaint Louverture, le pr\xC3\xA9curseur: roman "
+  document_id: 0
+  dc_identifier: "590043"
+  location: "Niveau 3 - Langues et litt\xC3\xA9ratures"
+  metadata_id: 36541
+  launch_url: ""
+  barcode: 0
+  id: 20976
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 848 METE 4 TO
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21364: 
+  number: 1
+  label: "Histoire de Savoie "
+  document_id: 0
+  dc_identifier: "4987"
+  location: "Niveau 3 - Histoire, g\xC3\xA9ographie"
+  metadata_id: 36926
+  launch_url: ""
+  barcode: 0
+  id: 21364
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 944.86 DUF
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21174: 
+  number: 1
+  label: "Sens et cosmos "
+  document_id: 0
+  dc_identifier: "1018224"
+  location: Niveau 2 - Philo, psycho, religions
+  metadata_id: 36738
+  launch_url: ""
+  barcode: 0
+  id: 21174
+  availability: En catalogage
+  support: ""
+  link_label: 
+  call_num: ""
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_20929: 
+  number: 1
+  label: "Madame Perfecta "
+  document_id: 0
+  dc_identifier: "471582"
+  location: "Niveau 3 - Langues et litt\xC3\xA9ratures"
+  metadata_id: 36494
+  launch_url: ""
+  barcode: 0
+  id: 20929
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 843 MAIL.A 4 MA
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21317: 
+  number: 1
+  label: "La Vertu de force "
+  document_id: 0
+  dc_identifier: "863"
+  location: Niveau 2 - Philo, psycho, religions
+  metadata_id: 36880
+  launch_url: ""
+  barcode: 0
+  id: 21317
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 171 GUS
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21127: 
+  number: 1
+  label: "Oye como va!: hybridity and identity in Latino popular music "
+  document_id: 0
+  dc_identifier: "971937"
+  location: "Niveau 3 - Musiques et documents parl\xC3\xA9s"
+  metadata_id: 36691
+  launch_url: ""
+  barcode: 0
+  id: 21127
+  availability: En traitement
+  support: ""
+  link_label: 
+  call_num: ""
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_20977: 
+  number: 1
+  label: "Pointures de sport "
+  document_id: 0
+  dc_identifier: "595778"
+  location: Niveau 3 - Arts, loisirs, sports
+  metadata_id: 36542
+  launch_url: ""
+  barcode: 0
+  id: 20977
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 743.98 PER
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21365: 
+  number: 1
+  label: "Poema umano "
+  document_id: 0
+  dc_identifier: "5047"
+  location: "Niveau 3 - Langues et litt\xC3\xA9ratures"
+  metadata_id: 36927
+  launch_url: ""
+  barcode: 0
+  id: 21365
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 850"19" DOLC 4 PO
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21318: 
+  number: 1
+  label: "Buddhism in China: a historical survey "
+  document_id: 0
+  dc_identifier: "999"
+  location: Niveau 2 - Philo, psycho, religions
+  metadata_id: 36881
+  launch_url: ""
+  barcode: 0
+  id: 21318
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 298.5 CHE
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21128: 
+  number: 1
+  label: "A language of its own: sense and meaning in the making of Western art music "
+  document_id: 0
+  dc_identifier: "971949"
+  location: "Niveau 3 - Musiques et documents parl\xC3\xA9s"
+  metadata_id: 36692
+  launch_url: ""
+  barcode: 0
+  id: 21128
+  availability: En catalogage
+  support: ""
+  link_label: 
+  call_num: ""
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_20978: 
+  number: 1
+  label: "Rumba Lolango "
+  document_id: 0
+  dc_identifier: "596124"
+  location: "Niveau 3 - Musiques et documents parl\xC3\xA9s"
+  metadata_id: 36543
+  launch_url: ""
+  barcode: 0
+  id: 20978
+  availability: En traitement
+  support: ""
+  link_label: 
+  call_num: ""
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21366: 
+  number: 1
+  label: "Don Juan en la mancebia "
+  document_id: 0
+  dc_identifier: "5118"
+  location: "Niveau 3 - Langues et litt\xC3\xA9ratures"
+  metadata_id: 36928
+  launch_url: ""
+  barcode: 0
+  id: 21366
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 860"19" SEND 4 DO
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21176: 
+  number: 1
+  label: "Fado tradicional "
+  document_id: 0
+  dc_identifier: "1018513"
+  location: "Niveau 3 - Musiques et documents parl\xC3\xA9s"
+  metadata_id: 36740
+  launch_url: ""
+  barcode: 0
+  id: 21176
+  availability: En traitement
+  support: ""
+  link_label: 
+  call_num: ""
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21319: 
+  number: 1
+  label: "Elizabethan drama: modern essays in criticism "
+  document_id: 0
+  dc_identifier: "1086"
+  location: "Niveau 3 - Langues et litt\xC3\xA9ratures"
+  metadata_id: 36882
+  launch_url: ""
+  barcode: 0
+  id: 21319
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 820-2"15" KAU
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_20979: 
+  number: 1
+  label: "100 \xC3\xA9nigmes chiffres et logique: class\xC3\xA9es par ordre de difficult\xC3\xA9 "
+  document_id: 0
+  dc_identifier: "596682"
+  location: "Niveau 2 - Sciences, techniques, m\xC3\xA9decine"
+  metadata_id: 36544
+  launch_url: ""
+  barcode: 0
+  id: 20979
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 519.6 EUR
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21367: 
+  number: 1
+  label: "Antolog\xC3\xADa "
+  document_id: 0
+  dc_identifier: "5155"
+  location: "Niveau 3 - Langues et litt\xC3\xA9ratures"
+  metadata_id: 36929
+  launch_url: ""
+  barcode: 0
+  id: 21367
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 862 SALV 3
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21177: 
+  number: 1
+  label: "Soundtrax "
+  document_id: 0
+  dc_identifier: "1018566"
+  location: "Niveau 3 - Musiques et documents parl\xC3\xA9s"
+  metadata_id: 36741
+  launch_url: ""
+  barcode: 0
+  id: 21177
+  availability: En traitement
+  support: CD
+  link_label: 
+  call_num: ""
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21368: 
+  number: 1
+  label: "Lives "
+  document_id: 0
+  dc_identifier: "5180"
+  location: "Niveau 3 - Langues et litt\xC3\xA9ratures"
+  metadata_id: 36930
+  launch_url: ""
+  barcode: 0
+  id: 21368
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 820.1 MAHO 2
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21369: 
+  number: 1
+  label: "Vtoraja kniga "
+  document_id: 0
+  dc_identifier: "5339"
+  location: "Niveau 3 - Langues et litt\xC3\xA9ratures"
+  metadata_id: 36931
+  launch_url: ""
+  barcode: 0
+  id: 21369
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 882 MAND.N 4 VT
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21179: 
+  number: 1
+  label: "Heidegger, Aristote et Platon: dialogue \xC3\xA0 trois voix "
+  document_id: 0
+  dc_identifier: "1020666"
+  location: Niveau 2 - Philo, psycho, religions
+  metadata_id: 36743
+  launch_url: ""
+  barcode: 0
+  id: 21179
+  availability: En catalogage
+  support: ""
+  link_label: 
+  call_num: ""
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21040: 
+  number: 1
+  label: "L'idieu "
+  document_id: 0
+  dc_identifier: "748478"
+  location: "Niveau 3 - Langues et litt\xC3\xA9ratures"
+  metadata_id: 36605
+  launch_url: ""
+  barcode: 0
+  id: 21040
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 840"20" MANO 4 ID
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21420: 
+  number: 1
+  label: "The life and opinions of Tristram Shandy gentleman "
+  document_id: 0
+  dc_identifier: "10272"
+  location: "Niveau 3 - Langues et litt\xC3\xA9ratures"
+  metadata_id: 36978
+  launch_url: ""
+  barcode: 0
+  id: 21420
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 820"17" STER 4 TR
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21041: 
+  number: 1
+  label: "Terramours "
+  document_id: 0
+  dc_identifier: "748953"
+  location: "Niveau 3 - Langues et litt\xC3\xA9ratures"
+  metadata_id: 36606
+  launch_url: ""
+  barcode: 0
+  id: 21041
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 860"20" ALAM 4 TE
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_20890: 
+  number: 1
+  label: "F\xC3\xA9lix ou Le livre des merveilles; F\xC3\xA8lix o el libre de meravelles"
+  document_id: 0
+  dc_identifier: "370717"
+  location: "Niveau 3 - Langues et litt\xC3\xA9ratures"
+  metadata_id: 36456
+  launch_url: ""
+  barcode: 0
+  id: 20890
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 862 LLUL 4 FE
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21421: 
+  number: 1
+  label: "The citizen Kane book : raising Kane "
+  document_id: 0
+  dc_identifier: "10301"
+  location: Niveau 3 - Arts, loisirs, sports
+  metadata_id: 36979
+  launch_url: ""
+  barcode: 0
+  id: 21421
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 791.6 WELL 1
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21231: 
+  number: 1
+  label: "L'atelier de Herv\xC3\xA9 Di Rosa "
+  document_id: 0
+  dc_identifier: "1049043"
+  location: Niveau 3 - Arts, loisirs, sports
+  metadata_id: 36795
+  launch_url: ""
+  barcode: 0
+  id: 21231
+  availability: En catalogage
+  support: ""
+  link_label: 
+  call_num: ""
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21042: 
+  number: 1
+  label: ""
+  document_id: 0
+  dc_identifier: "749961"
+  location: Niveau 2 - Poste DVD - Autoformation
+  metadata_id: 36607
+  launch_url: ""
+  barcode: 0
+  id: 21042
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: ""
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_20891: 
+  number: 1
+  label: "Le livre de Ca\xC3\xAFn; Cain's book"
+  document_id: 0
+  dc_identifier: "372181"
+  location: "Niveau 3 - Langues et litt\xC3\xA9ratures"
+  metadata_id: 36457
+  launch_url: ""
+  barcode: 0
+  id: 20891
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 820"19" TROC 4 CA
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21422: 
+  number: 1
+  label: "Val\xC3\xA9ry jeune po\xC3\xA8te "
+  document_id: 0
+  dc_identifier: "10362"
+  location: "Niveau 3 - Langues et litt\xC3\xA9ratures"
+  metadata_id: 36980
+  launch_url: ""
+  barcode: 0
+  id: 21422
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 840"19" VALE 5 WH
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21280: 
+  number: 2
+  label: "Le corps en \xC3\xA9clats "
+  document_id: 0
+  dc_identifier: "1060165"
+  location: Niveau 3 - Arts, loisirs, sports
+  metadata_id: 36843
+  launch_url: ""
+  barcode: 0
+  id: 21280
+  availability: En traitement
+  support: ""
+  link_label: 
+  call_num: ""
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21090: 
+  number: 1
+  label: "Edward Burra: twentieth-century eye "
+  document_id: 0
+  dc_identifier: "889299"
+  location: Niveau 3 - Arts, loisirs, sports
+  metadata_id: 36654
+  launch_url: ""
+  barcode: 0
+  id: 21090
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 70"19" BURR.E 2
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21423: 
+  number: 1
+  label: "The letters "
+  document_id: 0
+  dc_identifier: "10422"
+  location: "Niveau 3 - Langues et litt\xC3\xA9ratures"
+  metadata_id: 36981
+  launch_url: ""
+  barcode: 0
+  id: 21423
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 820"17" SMOL 44
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21233: 
+  number: 1
+  label: "Chapeau melon et bottes de cuir "
+  document_id: 0
+  dc_identifier: "1049152"
+  location: Niveau 2 - Presse
+  metadata_id: 36797
+  launch_url: ""
+  barcode: 0
+  id: 21233
+  availability: En traitement
+  support: ""
+  link_label: 
+  call_num: ""
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21043: 
+  number: 1
+  label: "Guide des abbayes et prieur\xC3\xA9s en r\xC3\xA9gion Rh\xC3\xB4ne-Alpes "
+  document_id: 0
+  dc_identifier: "754834"
+  location: Niveau 3 - Arts, loisirs, sports
+  metadata_id: 36608
+  launch_url: ""
+  barcode: 0
+  id: 21043
+  availability: En catalogage
+  support: ""
+  link_label: 
+  call_num: 795(448) GUI
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21281: 
+  number: 1
+  label: "Margrethe Mather and Edward Weston: a passionate collaboration"
+  document_id: 0
+  dc_identifier: "488277"
+  location: "Niveau 3 - Musiques et documents parl\xC3\xA9s"
+  metadata_id: 36844
+  launch_url: ""
+  barcode: 0
+  id: 21281
+  availability: En catalogage
+  support: ""
+  link_label: 
+  call_num: ""
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21091: 
+  number: 1
+  label: "200 tests pour progresser en italien "
+  document_id: 0
+  dc_identifier: "892181"
+  location: Niveau 2 - Autoformation
+  metadata_id: 36655
+  launch_url: ""
+  barcode: 0
+  id: 21091
+  availability: En catalogage
+  support: ""
+  link_label: 
+  call_num: 85(078) ITA
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21424: 
+  number: 1
+  label: "Sobranie so\xC4\x8Dinenij "
+  document_id: 0
+  dc_identifier: "10446"
+  location: "Niveau 3 - Langues et litt\xC3\xA9ratures"
+  metadata_id: 36982
+  launch_url: ""
+  barcode: 0
+  id: 21424
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 882 LEON 2
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21044: 
+  number: 1
+  label: "La ville est un trou ; suivi de Un jour "
+  document_id: 0
+  dc_identifier: "756398"
+  location: "Niveau 3 - Langues et litt\xC3\xA9ratures"
+  metadata_id: 36609
+  launch_url: ""
+  barcode: 0
+  id: 21044
+  availability: En catalogage
+  support: ""
+  link_label: 
+  call_num: 840"20" PENN 2
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_20894: 
+  number: 1
+  label: Mudakkirat imraa ghayr waqi'iya
+  document_id: 0
+  dc_identifier: "382294"
+  location: "Niveau 3 - Langues et litt\xC3\xA9ratures"
+  metadata_id: 36460
+  launch_url: ""
+  barcode: 0
+  id: 20894
+  availability: En traitement
+  support: ""
+  link_label: 
+  call_num: ""
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21282: 
+  number: 1
+  label: "A stazzona: Jean-Michel Battesti & Dominique Villa "
+  document_id: 0
+  dc_identifier: "1008404"
+  location: Niveau 3 - Arts, loisirs, sports
+  metadata_id: 36845
+  launch_url: ""
+  barcode: 0
+  id: 21282
+  availability: En reliure
+  support: ""
+  link_label: 
+  call_num: ""
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21092: 
+  number: 1
+  label: "Confessions et les r\xC3\xAAveries du promeneur solitaire (Les) "
+  document_id: 0
+  dc_identifier: "894995"
+  location: "Niveau 3 - Musiques et documents parl\xC3\xA9s"
+  metadata_id: 36656
+  launch_url: ""
+  barcode: 0
+  id: 21092
+  availability: En traitement
+  support: CD
+  link_label: 
+  call_num: ""
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21425: 
+  number: 2
+  label: "Sobranie so\xC4\x8Dinenij "
+  document_id: 0
+  dc_identifier: "10446"
+  location: "Niveau 3 - Langues et litt\xC3\xA9ratures"
+  metadata_id: 36982
+  launch_url: ""
+  barcode: 0
+  id: 21425
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 882 LEON 2
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21045: 
+  number: 1
+  label: "Chants de l'Am\xC3\xA9rique Latine (L') : the central american concert Managu"
+  document_id: 0
+  dc_identifier: "760541"
+  location: "Niveau 3 - Musiques et documents parl\xC3\xA9s"
+  metadata_id: 36610
+  launch_url: ""
+  barcode: 0
+  id: 21045
+  availability: En traitement
+  support: CD
+  link_label: 
+  call_num: 782.3(8)
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_20895: 
+  number: 1
+  label: "Histoire du P\xC3\xA9rigord "
+  document_id: 0
+  dc_identifier: "388788"
+  location: "Niveau 3 - Histoire, g\xC3\xA9ographie"
+  metadata_id: 36461
+  launch_url: ""
+  barcode: 0
+  id: 20895
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 944.61 HIS
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21283: 
+  number: 1
+  label: "Le vautour "
+  document_id: 0
+  dc_identifier: "1031574"
+  location: "Niveau 3 - Musiques et documents parl\xC3\xA9s"
+  metadata_id: 36846
+  launch_url: ""
+  barcode: 0
+  id: 21283
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 780.635 SCOT 1
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21093: 
+  number: 1
+  label: "Escales, Francofolies La Rochelle: une histoire de la chanson"
+  document_id: 0
+  dc_identifier: "900673"
+  location: "Niveau 3 - Musiques et documents parl\xC3\xA9s"
+  metadata_id: 36657
+  launch_url: ""
+  barcode: 0
+  id: 21093
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 780.42(44) TRO
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21426: 
+  number: 3
+  label: "Sobranie so\xC4\x8Dinenij "
+  document_id: 0
+  dc_identifier: "10446"
+  location: "Niveau 3 - Langues et litt\xC3\xA9ratures"
+  metadata_id: 36982
+  launch_url: ""
+  barcode: 0
+  id: 21426
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 882 LEON 2
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21046: 
+  number: 1
+  label: "The postmodern Beowulf: a critical casebook; Beowulf"
+  document_id: 0
+  dc_identifier: "775710"
+  location: "Niveau 3 - Langues et litt\xC3\xA9ratures"
+  metadata_id: 36611
+  launch_url: ""
+  barcode: 0
+  id: 21046
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 820"09" BEOW 5 PO
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_20896: 
+  number: 1
+  label: "L'instant soufi "
+  document_id: 0
+  dc_identifier: "390135"
+  location: Niveau 2 - Philo, psycho, religions
+  metadata_id: 36462
+  launch_url: ""
+  barcode: 0
+  id: 20896
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 297.7 GEO
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21094: 
+  number: 1
+  label: "Autour de Louis Braille : documents et t\xC3\xA9moignages 1809-2009"
+  document_id: 0
+  dc_identifier: "903129"
+  location: "Niveau 3 - Musiques et documents parl\xC3\xA9s"
+  metadata_id: 36658
+  launch_url: ""
+  barcode: 0
+  id: 21094
+  availability: En traitement
+  support: CD
+  link_label: 
+  call_num: ""
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_20849: 
+  number: 1
+  label: "Gus Bofa, l'incendiaire "
+  document_id: 0
+  dc_identifier: "156217"
+  location: Niveau 3 - Arts, loisirs, sports
+  metadata_id: 36415
+  launch_url: ""
+  barcode: 0
+  id: 20849
+  availability: "En r\xC3\xA9paration"
+  support: ""
+  link_label: 
+  call_num: 767 BOFA
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21427: 
+  number: 4
+  label: "Sobranie so\xC4\x8Dinenij "
+  document_id: 0
+  dc_identifier: "10446"
+  location: "Niveau 3 - Langues et litt\xC3\xA9ratures"
+  metadata_id: 36982
+  launch_url: ""
+  barcode: 0
+  id: 21427
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 882 LEON 2
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21047: 
+  number: 1
+  label: "L'histoire "
+  document_id: 0
+  dc_identifier: "779570"
+  location: "Niveau 3 - Histoire, g\xC3\xA9ographie"
+  metadata_id: 36612
+  launch_url: ""
+  barcode: 0
+  id: 21047
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 930(07) OST
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21428: 
+  number: 5
+  label: "Sobranie so\xC4\x8Dinenij "
+  document_id: 0
+  dc_identifier: "10446"
+  location: "Niveau 3 - Langues et litt\xC3\xA9ratures"
+  metadata_id: 36982
+  launch_url: ""
+  barcode: 0
+  id: 21428
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 882 LEON 2
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_20897: 
+  number: 1
+  label: "Le d\xC3\xA9cor "
+  document_id: 0
+  dc_identifier: "390227"
+  location: "Niveau 2 - Sciences, techniques, m\xC3\xA9decine"
+  metadata_id: 36463
+  launch_url: ""
+  barcode: 0
+  id: 20897
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 648.4 CHA
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21095: 
+  number: 1
+  label: "G\xC3\xA9opolitique du tourisme"
+  document_id: 0
+  dc_identifier: "903412"
+  location: "Niveau 3 - Histoire, g\xC3\xA9ographie"
+  metadata_id: 36659
+  launch_url: ""
+  barcode: 0
+  id: 21095
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 911(0) HER
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21048: 
+  number: 1
+  label: "Cit\xC3\xA9 de l'architecture et du patrimoine"
+  document_id: 0
+  dc_identifier: "783855"
+  location: Niveau 3 - Arts, loisirs, sports
+  metadata_id: 36613
+  launch_url: ""
+  barcode: 0
+  id: 21048
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 7.3(441.1) CITE
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_20900: 
+  number: 1
+  label: "Le regard \xC3\xA9sot\xC3\xA9rique "
+  document_id: 0
+  dc_identifier: "407823"
+  location: Niveau 2 - Philo, psycho, religions
+  metadata_id: 36466
+  launch_url: ""
+  barcode: 0
+  id: 20900
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 19 LAU
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_20898: 
+  number: 1
+  label: "Sans famille "
+  document_id: 0
+  dc_identifier: "399853"
+  location: "Niveau 3 - Langues et litt\xC3\xA9ratures"
+  metadata_id: 36464
+  launch_url: ""
+  barcode: 0
+  id: 20898
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 840"18" MALO 4 SA
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21286: 
+  number: 1
+  label: Dictionnaire des sciences du langage
+  document_id: 0
+  dc_identifier: "1056932"
+  location: "Niveau 3 - Langues et litt\xC3\xA9ratures"
+  metadata_id: 36849
+  launch_url: ""
+  barcode: 0
+  id: 21286
+  availability: En reliure
+  support: ""
+  link_label: 
+  call_num: ""
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21096: 
+  number: 1
+  label: "Batailles "
+  document_id: 0
+  dc_identifier: "909884"
+  location: "Niveau 3 - Langues et litt\xC3\xA9ratures"
+  metadata_id: 36660
+  launch_url: ""
+  barcode: 0
+  id: 21096
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 840"19" RIBE 4 BA
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21239: 
+  number: 1
+  label: "Castoriadis: critique sociale et \xC3\xA9mancipation "
+  document_id: 0
+  dc_identifier: "1050723"
+  location: "Niveau 2 - Droit, \xC3\xA9conomie, sc. sociales"
+  metadata_id: 36803
+  launch_url: ""
+  barcode: 0
+  id: 21239
+  availability: En reliure
+  support: ""
+  link_label: 
+  call_num: ""
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21049: 
+  number: 1
+  label: "Projet de loi de finances pour 2008: Ville "
+  document_id: 0
+  dc_identifier: "789969"
+  location: "Niveau 2 - Droit, \xC3\xA9conomie, sc. sociales"
+  metadata_id: 36614
+  launch_url: ""
+  barcode: 0
+  id: 21049
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 336.32 LOI
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_20901: 
+  number: 1
+  label: "Le christianisme de Constantin \xC3\xA0 la conqu\xC3\xAAte arabe "
+  document_id: 0
+  dc_identifier: "413477"
+  location: Niveau 2 - Philo, psycho, religions
+  metadata_id: 36467
+  launch_url: ""
+  barcode: 0
+  id: 20901
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 27.1 MAR
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_20899: 
+  number: 1
+  label: "Miss Harriet "
+  document_id: 0
+  dc_identifier: "403251"
+  location: "Niveau 3 - Langues et litt\xC3\xA9ratures"
+  metadata_id: 36465
+  launch_url: ""
+  barcode: 0
+  id: 20899
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 840"18" MAUP 4 MI
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21287: 
+  number: 1
+  label: "Les 100 meilleurs sites Web de l'\xC3\xA9soterisme et du paranormal "
+  document_id: 0
+  dc_identifier: "435143"
+  location: Niveau 2 - Philo, psycho, religions
+  metadata_id: 36850
+  launch_url: ""
+  barcode: 0
+  id: 21287
+  availability: En traitement
+  support: ""
+  link_label: 
+  call_num: ""
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21097: 
+  number: 1
+  label: "100 years of popular music : 90s volume two"
+  document_id: 0
+  dc_identifier: "910973"
+  location: "Niveau 3 - Langues et litt\xC3\xA9ratures"
+  metadata_id: 36661
+  launch_url: ""
+  barcode: 0
+  id: 21097
+  availability: En catalogage
+  support: ""
+  link_label: 
+  call_num: ""
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_20902: 
+  number: 1
+  label: "Le br\xC3\xBBl\xC3\xA9 des choses "
+  document_id: 0
+  dc_identifier: "413653"
+  location: "Niveau 3 - Langues et litt\xC3\xA9ratures"
+  metadata_id: 36468
+  launch_url: ""
+  barcode: 0
+  id: 20902
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 840"19" SALE 4 BR
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21100: 
+  number: 1
+  label: "Zikr: God is One "
+  document_id: 0
+  dc_identifier: "913997"
+  location: "Niveau 3 - Musiques et documents parl\xC3\xA9s"
+  metadata_id: 36664
+  launch_url: ""
+  barcode: 0
+  id: 21100
+  availability: En catalogage
+  support: ""
+  link_label: 
+  call_num: ""
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21288: 
+  number: 1
+  label: "Les Secrets de la communication "
+  document_id: 0
+  dc_identifier: "444525"
+  location: Niveau 2 - Philo, psycho, religions
+  metadata_id: 36851
+  launch_url: ""
+  barcode: 0
+  id: 21288
+  availability: En traitement
+  support: ""
+  link_label: 
+  call_num: ""
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21098: 
+  number: 1
+  label: "Maurice Barr\xC3\xA8s: le prince oubli\xC3\xA9: essai "
+  document_id: 0
+  dc_identifier: "911590"
+  location: "Niveau 3 - Langues et litt\xC3\xA9ratures"
+  metadata_id: 36662
+  launch_url: ""
+  barcode: 0
+  id: 21098
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 840"19" BARR 5 CO
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_20903: 
+  number: 1
+  label: "La voix des paroles "
+  document_id: 0
+  dc_identifier: "416127"
+  location: "Niveau 3 - Langues et litt\xC3\xA9ratures"
+  metadata_id: 36469
+  launch_url: ""
+  barcode: 0
+  id: 20903
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 840"19" BENH 4 VO
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21101: 
+  number: 1
+  label: 100 italian folk
+  document_id: 0
+  dc_identifier: "914098"
+  location: "Niveau 3 - Musiques et documents parl\xC3\xA9s"
+  metadata_id: 36665
+  launch_url: ""
+  barcode: 0
+  id: 21101
+  availability: En catalogage
+  support: ""
+  link_label: 
+  call_num: ""
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21289: 
+  number: 1
+  label: "Objet (L'). . 3 (2002), Coop\xC3\xA9ration dans les syst\xC3\xA8mes \xC3\xA0 objets "
+  document_id: 0
+  dc_identifier: "491227"
+  location: "Niveau 2 - Sciences, techniques, m\xC3\xA9decine"
+  metadata_id: 36852
+  launch_url: ""
+  barcode: 0
+  id: 21289
+  availability: En traitement
+  support: ""
+  link_label: 
+  call_num: ""
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_20950: 
+  number: 1
+  label: "Comme un lotus: \xC3\xA9criture et sagesse tib\xC3\xA9taines "
+  document_id: 0
+  dc_identifier: "540481"
+  location: Niveau 2 - Philo, psycho, religions
+  metadata_id: 36515
+  launch_url: ""
+  barcode: 0
+  id: 20950
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 298.9 (515) DOU
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_20904: 
+  number: 1
+  label: "La d\xC3\xA9pression "
+  document_id: 0
+  dc_identifier: "416394"
+  location: Niveau 2 - Philo, psycho, religions
+  metadata_id: 36470
+  launch_url: ""
+  barcode: 0
+  id: 20904
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 153.62 DEP
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21102: 
+  number: 1
+  label: Balkan Melodies for Accordion
+  document_id: 0
+  dc_identifier: "914116"
+  location: "Niveau 3 - Musiques et documents parl\xC3\xA9s"
+  metadata_id: 36666
+  launch_url: ""
+  barcode: 0
+  id: 21102
+  availability: En catalogage
+  support: ""
+  link_label: 
+  call_num: ""
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_20951: 
+  number: 1
+  label: "Philippe Jaccottet "
+  document_id: 0
+  dc_identifier: "545037"
+  location: "Niveau 3 - Langues et litt\xC3\xA9ratures"
+  metadata_id: 36516
+  launch_url: ""
+  barcode: 0
+  id: 20951
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 842 JACC 5 ST
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_20905: 
+  number: 1
+  label: "Introduction \xC3\xA0 l'enseignement et au myst\xC3\xA8re de Ren\xC3\xA9 Gu\xC3\xA9non "
+  document_id: 0
+  dc_identifier: "418644"
+  location: Niveau 2 - Philo, psycho, religions
+  metadata_id: 36471
+  launch_url: ""
+  barcode: 0
+  id: 20905
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 191 GIL
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21103: 
+  number: 1
+  label: "Le grand livre de la cuisine juive ashk\xC3\xA9naze "
+  document_id: 0
+  dc_identifier: "916468"
+  location: "Niveau 2 - Sciences, techniques, m\xC3\xA9decine"
+  metadata_id: 36667
+  launch_url: ""
+  barcode: 0
+  id: 21103
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 641.5(573) KAH
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_20952: 
+  number: 1
+  label: "Le go\xC3\xBBt de la conversation "
+  document_id: 0
+  dc_identifier: "545074"
+  location: "Niveau 2 - Droit, \xC3\xA9conomie, sc. sociales"
+  metadata_id: 36517
+  launch_url: ""
+  barcode: 0
+  id: 20952
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 301.0 SAN
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21340: 
+  number: 1
+  label: "A history of zen buddhism "
+  document_id: 0
+  dc_identifier: "3159"
+  location: Niveau 2 - Philo, psycho, religions
+  metadata_id: 36902
+  launch_url: ""
+  barcode: 0
+  id: 21340
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 298.95 DUM
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21150: 
+  number: 1
+  label: "L'orgue: souvenir et avenir "
+  document_id: 0
+  dc_identifier: "997016"
+  location: "Niveau 3 - Musiques et documents parl\xC3\xA9s"
+  metadata_id: 36714
+  launch_url: ""
+  barcode: 0
+  id: 21150
+  availability: En catalogage
+  support: ""
+  link_label: 
+  call_num: ""
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_20906: 
+  number: 1
+  label: "Joseph de Maistre "
+  document_id: 0
+  dc_identifier: "420580"
+  location: "Niveau 2 - Droit, \xC3\xA9conomie, sc. sociales"
+  metadata_id: 36472
+  launch_url: ""
+  barcode: 0
+  id: 20906
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 320 MAIS 2
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21104: 
+  number: 1
+  label: "Sylvia Plath: a biography "
+  document_id: 0
+  dc_identifier: "917432"
+  location: "Niveau 3 - Langues et litt\xC3\xA9ratures"
+  metadata_id: 36668
+  launch_url: ""
+  barcode: 0
+  id: 21104
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 821 PLAT 5 KI
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_20953: 
+  number: 1
+  label: "Socrate "
+  document_id: 0
+  dc_identifier: "546737"
+  location: Niveau 2 - Philo, psycho, religions
+  metadata_id: 36518
+  launch_url: ""
+  barcode: 0
+  id: 20953
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 1"1" SOCR 2
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21341: 
+  number: 1
+  label: "Lettres en souffrance "
+  document_id: 0
+  dc_identifier: "3308"
+  location: "Niveau 3 - Langues et litt\xC3\xA9ratures"
+  metadata_id: 36903
+  launch_url: ""
+  barcode: 0
+  id: 21341
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 884 BRZE 2
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21151: 
+  number: 1
+  label: "Anthologie de l'Oulipo "
+  document_id: 0
+  dc_identifier: "997609"
+  location: "Niveau 3 - Langues et litt\xC3\xA9ratures"
+  metadata_id: 36715
+  launch_url: ""
+  barcode: 0
+  id: 21151
+  availability: En catalogage
+  support: ""
+  link_label: 
+  call_num: ""
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_20907: 
+  number: 1
+  label: "La litt\xC3\xA9rature arabe "
+  document_id: 0
+  dc_identifier: "420949"
+  location: "Niveau 1 - Info.g\xC3\xA9n\xC3\xA9. Emploi Vie pratique"
+  metadata_id: 36473
+  launch_url: ""
+  barcode: 0
+  id: 20907
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: ENC A QSJ
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21105: 
+  number: 1
+  label: "Proth\xC3\xA8ses et implants de la trap\xC3\xA9zo-m\xC3\xA9tacarpienne "
+  document_id: 0
+  dc_identifier: "920521"
+  location: "Niveau 2 - Sciences, techniques, m\xC3\xA9decine"
+  metadata_id: 36669
+  launch_url: ""
+  barcode: 0
+  id: 21105
+  availability: En catalogage
+  support: ""
+  link_label: 
+  call_num: ""
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_20954: 
+  number: 1
+  label: "Le passage des \xC3\xA9ph\xC3\xA9m\xC3\xA8res "
+  document_id: 0
+  dc_identifier: "553232"
+  location: "Niveau 3 - Langues et litt\xC3\xA9ratures"
+  metadata_id: 36519
+  launch_url: ""
+  barcode: 0
+  id: 20954
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 841 HARP 4 PA
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21342: 
+  number: 1
+  label: "Catalogue de l'oeuvre lithographi\xC3\xA9 et grav\xC3\xA9 de R. P. Bonington "
+  document_id: 0
+  dc_identifier: "3314"
+  location: Niveau 3 - Arts, loisirs, sports
+  metadata_id: 36904
+  launch_url: ""
+  barcode: 0
+  id: 21342
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 70"18" BONI 2
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21152: 
+  number: 1
+  label: "Commentaires sur la Gen\xC3\xA8se "
+  document_id: 0
+  dc_identifier: "999671"
+  location: Niveau 2 - Philo, psycho, religions
+  metadata_id: 36716
+  launch_url: ""
+  barcode: 0
+  id: 21152
+  availability: En catalogage
+  support: ""
+  link_label: 
+  call_num: ""
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_20908: 
+  number: 1
+  label: "Le moyen court "
+  document_id: 0
+  dc_identifier: "421110"
+  location: Niveau 2 - Philo, psycho, religions
+  metadata_id: 36474
+  launch_url: ""
+  barcode: 0
+  id: 20908
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 27.36 GUY
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21106: 
+  number: 1
+  label: "Artistes 2020: variations prospectives"
+  document_id: 0
+  dc_identifier: "922118"
+  location: "Niveau 3 - Musiques et documents parl\xC3\xA9s"
+  metadata_id: 36670
+  launch_url: ""
+  barcode: 0
+  id: 21106
+  availability: En catalogage
+  support: ""
+  link_label: 
+  call_num: ""
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21390: 
+  number: 1
+  label: "Le docteur amoureux: com\xC3\xA9die du XVIIe si\xC3\xA8cle "
+  document_id: 0
+  dc_identifier: "7850"
+  location: "Niveau 3 - Langues et litt\xC3\xA9ratures"
+  metadata_id: 36952
+  launch_url: ""
+  barcode: 0
+  id: 21390
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 840"16" DOCT 1
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_20955: 
+  number: 1
+  label: "Introduction \xC3\xA0 la science de l'occulte; Vor dem Tore der Theosophie (1991)"
+  document_id: 0
+  dc_identifier: "553907"
+  location: Niveau 2 - Philo, psycho, religions
+  metadata_id: 36520
+  launch_url: ""
+  barcode: 0
+  id: 20955
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 191 STE
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21343: 
+  number: 1
+  label: "Histoire musicale du Moyen Age "
+  document_id: 0
+  dc_identifier: "3379"
+  location: "Niveau 3 - Musiques et documents parl\xC3\xA9s"
+  metadata_id: 36905
+  launch_url: ""
+  barcode: 0
+  id: 21343
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 78(091)"04/14" CHA
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21153: 
+  number: 1
+  label: "D\xC3\xA9lices et supplices de l'au-del\xC3\xA0: la vie apr\xC3\xA8s la vie: mythes et croyances "
+  document_id: 0
+  dc_identifier: "1000246"
+  location: Niveau 2 - Philo, psycho, religions
+  metadata_id: 36717
+  launch_url: ""
+  barcode: 0
+  id: 21153
+  availability: En catalogage
+  support: ""
+  link_label: 
+  call_num: ""
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21107: 
+  number: 1
+  label: "Au commencement \xC3\xA9tait le rythme..."
+  document_id: 0
+  dc_identifier: "922475"
+  location: "Niveau 2 - Sciences, techniques, m\xC3\xA9decine"
+  metadata_id: 36671
+  launch_url: ""
+  barcode: 0
+  id: 21107
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 616.8(0) REV
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21391: 
+  number: 1
+  label: "Tutta la vita "
+  document_id: 0
+  dc_identifier: "8031"
+  location: "Niveau 3 - Langues et litt\xC3\xA9ratures"
+  metadata_id: 36953
+  launch_url: ""
+  barcode: 0
+  id: 21391
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 850"19" SAVI.A 4 TU
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_20956: 
+  number: 1
+  label: "Loire sauvage "
+  document_id: 0
+  dc_identifier: "557336"
+  location: "Niveau 2 - Sciences, techniques, m\xC3\xA9decine"
+  metadata_id: 36521
+  launch_url: ""
+  barcode: 0
+  id: 20956
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 573.1(445.4) HUE
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21344: 
+  number: 1
+  label: "Por el rio abajo "
+  document_id: 0
+  dc_identifier: "3478"
+  location: "Niveau 3 - Langues et litt\xC3\xA9ratures"
+  metadata_id: 36906
+  launch_url: ""
+  barcode: 0
+  id: 21344
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 860"19" GROS 4 PO
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21154: 
+  number: 1
+  label: "Ma tante Sidonie "
+  document_id: 0
+  dc_identifier: "1000824"
+  location: "Niveau 3 - Langues et litt\xC3\xA9ratures"
+  metadata_id: 36718
+  launch_url: ""
+  barcode: 0
+  id: 21154
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 8 CNL 1
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21108: 
+  number: 1
+  label: "The Pursuit "
+  document_id: 0
+  dc_identifier: "926607"
+  location: "Niveau 3 - Musiques et documents parl\xC3\xA9s"
+  metadata_id: 36672
+  launch_url: ""
+  barcode: 0
+  id: 21108
+  availability: En traitement
+  support: CD
+  link_label: 
+  call_num: ""
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21392: 
+  number: 1
+  label: "Dvorjanskoe gnezdo "
+  document_id: 0
+  dc_identifier: "8126"
+  location: "Niveau 3 - Langues et litt\xC3\xA9ratures"
+  metadata_id: 36954
+  launch_url: ""
+  barcode: 0
+  id: 21392
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 882 TOUR 4 DV
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_20957: 
+  number: 1
+  label: "Georges Rousse "
+  document_id: 0
+  dc_identifier: "558836"
+  location: Niveau 3 - Arts, loisirs, sports
+  metadata_id: 36522
+  launch_url: ""
+  barcode: 0
+  id: 20957
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 70"19" ROUS 2
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21345: 
+  number: 1
+  label: "Direcci\xC3\xB3n prohibida "
+  document_id: 0
+  dc_identifier: "3479"
+  location: "Niveau 3 - Langues et litt\xC3\xA9ratures"
+  metadata_id: 36907
+  launch_url: ""
+  barcode: 0
+  id: 21345
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 860"19" CELA.G 4 DI
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21155: 
+  number: 1
+  label: "Les 100 mots de l'\xC3\xA9pargne "
+  document_id: 0
+  dc_identifier: "1001207"
+  location: "Niveau 1 - Info.g\xC3\xA9n\xC3\xA9. Emploi Vie pratique"
+  metadata_id: 36719
+  launch_url: ""
+  barcode: 0
+  id: 21155
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: ENC A QSJ
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21109: 
+  number: 1
+  label: "La grande famine en Ukraine 1932-33 "
+  document_id: 0
+  dc_identifier: "926664"
+  location: "Niveau 3 - Musiques et documents parl\xC3\xA9s"
+  metadata_id: 36673
+  launch_url: ""
+  barcode: 0
+  id: 21109
+  availability: En traitement
+  support: CD
+  link_label: 
+  call_num: ""
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21393: 
+  number: 1
+  label: "Conversaciones con los artistas espa\xC3\xB1oles de la escuela de Paris "
+  document_id: 0
+  dc_identifier: "8152"
+  location: Niveau 3 - Arts, loisirs, sports
+  metadata_id: 36955
+  launch_url: ""
+  barcode: 0
+  id: 21393
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 704.68 GUI
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_20958: 
+  number: 1
+  label: "Guitaristes. 1 "
+  document_id: 0
+  dc_identifier: "562239"
+  location: Niveau 3 - Arts, loisirs, sports
+  metadata_id: 36523
+  launch_url: ""
+  barcode: 0
+  id: 20958
+  availability: En traitement
+  support: ""
+  link_label: 
+  call_num: ""
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21346: 
+  number: 1
+  label: "The poetry of Stephen Crane "
+  document_id: 0
+  dc_identifier: "3534"
+  location: "Niveau 3 - Langues et litt\xC3\xA9ratures"
+  metadata_id: 36908
+  launch_url: ""
+  barcode: 0
+  id: 21346
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 821 CRAN 5 HO
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21394: 
+  number: 1
+  label: "Le pontifical de l'\xC3\xA9glise de Sens "
+  document_id: 0
+  dc_identifier: "8352"
+  location: Niveau 3 - Arts, loisirs, sports
+  metadata_id: 36956
+  launch_url: ""
+  barcode: 0
+  id: 21394
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 76.42(44) GAS
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_20959: 
+  number: 1
+  label: "Expressionnisme "
+  document_id: 0
+  dc_identifier: "562254"
+  location: Niveau 3 - Arts, loisirs, sports
+  metadata_id: 36524
+  launch_url: ""
+  barcode: 0
+  id: 20959
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 704-7 WOL
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21347: 
+  number: 1
+  label: "Pictorial history of Princeton "
+  document_id: 0
+  dc_identifier: "3560"
+  location: "Niveau 3 - Histoire, g\xC3\xA9ographie"
+  metadata_id: 36909
+  launch_url: ""
+  barcode: 0
+  id: 21347
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 973.1 LAN
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21157: 
+  number: 1
+  label: "Lanbousir "
+  document_id: 0
+  dc_identifier: "1003316"
+  location: "Niveau 3 - Musiques et documents parl\xC3\xA9s"
+  metadata_id: 36721
+  launch_url: ""
+  barcode: 0
+  id: 21157
+  availability: En traitement
+  support: ""
+  link_label: 
+  call_num: ""
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21395: 
+  number: 1
+  label: "Sobranie so\xC4\x8Dinenij "
+  document_id: 0
+  dc_identifier: "8445"
+  location: "Niveau 3 - Langues et litt\xC3\xA9ratures"
+  metadata_id: 36957
+  launch_url: ""
+  barcode: 0
+  id: 21395
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 882 PANO 2
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21348: 
+  number: 1
+  label: "Trait\xC3\xA9 d'esth\xC3\xA9tique "
+  document_id: 0
+  dc_identifier: "3744"
+  location: Niveau 2 - Philo, psycho, religions
+  metadata_id: 36910
+  launch_url: ""
+  barcode: 0
+  id: 21348
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 18(07) SEG
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21158: 
+  number: 1
+  label: "D'un pr\xC3\xA9tendu droit de mourir par humanit\xC3\xA9: l'euthanasie en question "
+  document_id: 0
+  dc_identifier: "1005375"
+  location: Niveau 2 - Philo, psycho, religions
+  metadata_id: 36722
+  launch_url: ""
+  barcode: 0
+  id: 21158
+  availability: En catalogage
+  support: ""
+  link_label: 
+  call_num: ""
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21349: 
+  number: 1
+  label: "Samuel Pepys in the diary "
+  document_id: 0
+  dc_identifier: "3946"
+  location: "Niveau 3 - Langues et litt\xC3\xA9ratures"
+  metadata_id: 36911
+  launch_url: ""
+  barcode: 0
+  id: 21349
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 820"16" PEPY 5 HU
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21396: 
+  number: 2
+  label: "Sobranie so\xC4\x8Dinenij "
+  document_id: 0
+  dc_identifier: "8445"
+  location: "Niveau 3 - Langues et litt\xC3\xA9ratures"
+  metadata_id: 36957
+  launch_url: ""
+  barcode: 0
+  id: 21396
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 882 PANO 2
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21159: 
+  number: 1
+  label: "Sainte Chantal (1572-1641) "
+  document_id: 0
+  dc_identifier: "1005956"
+  location: Niveau 2 - Philo, psycho, religions
+  metadata_id: 36723
+  launch_url: ""
+  barcode: 0
+  id: 21159
+  availability: En reliure
+  support: ""
+  link_label: 
+  call_num: ""
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21397: 
+  number: 3
+  label: "Sobranie so\xC4\x8Dinenij "
+  document_id: 0
+  dc_identifier: "8445"
+  location: "Niveau 3 - Langues et litt\xC3\xA9ratures"
+  metadata_id: 36957
+  launch_url: ""
+  barcode: 0
+  id: 21397
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 882 PANO 2
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21020: 
+  number: 1
+  label: "Les 20 ans du Ra\xC3\xAF"
+  document_id: 0
+  dc_identifier: "699718"
+  location: "Niveau 3 - Musiques et documents parl\xC3\xA9s"
+  metadata_id: 36585
+  launch_url: ""
+  barcode: 0
+  id: 21020
+  availability: En traitement
+  support: ""
+  link_label: 
+  call_num: ""
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21400: 
+  number: 1
+  label: "A history of medieval Ireland "
+  document_id: 0
+  dc_identifier: "8469"
+  location: "Niveau 3 - Histoire, g\xC3\xA9ographie"
+  metadata_id: 36958
+  launch_url: ""
+  barcode: 0
+  id: 21400
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 941.6 OTW
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21210: 
+  number: 1
+  label: "French Fun: La Serie Des Annees Folles: Chansons Coquines. (La s\xC3\xA9rie des ann\xC3\xA9es folles Voice and Piano). By Various. For piano/vocal. Vocal Collection. Softcover. 46 pages. Editions Durand #SLB5837"
+  document_id: 0
+  dc_identifier: "1037544"
+  location: "Niveau 3 - Musiques et documents parl\xC3\xA9s"
+  metadata_id: 36774
+  launch_url: ""
+  barcode: 0
+  id: 21210
+  availability: En catalogage
+  support: ""
+  link_label: 
+  call_num: ""
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21398: 
+  number: 4
+  label: "Sobranie so\xC4\x8Dinenij "
+  document_id: 0
+  dc_identifier: "8445"
+  location: "Niveau 3 - Langues et litt\xC3\xA9ratures"
+  metadata_id: 36957
+  launch_url: ""
+  barcode: 0
+  id: 21398
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 882 PANO 2
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_20870: 
+  number: 1
+  label: "Libre espace: et autres po\xC3\xA8mes "
+  document_id: 0
+  dc_identifier: "326686"
+  location: "Niveau 3 - Langues et litt\xC3\xA9ratures"
+  metadata_id: 36436
+  launch_url: ""
+  barcode: 0
+  id: 20870
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 840"19" BEDO.J 2
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21401: 
+  number: 1
+  label: "Sunday after the war "
+  document_id: 0
+  dc_identifier: "8601"
+  location: "Niveau 3 - Langues et litt\xC3\xA9ratures"
+  metadata_id: 36959
+  launch_url: ""
+  barcode: 0
+  id: 21401
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 821 MILL 4 SU
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21399: 
+  number: 5
+  label: "Sobranie so\xC4\x8Dinenij "
+  document_id: 0
+  dc_identifier: "8445"
+  location: "Niveau 3 - Langues et litt\xC3\xA9ratures"
+  metadata_id: 36957
+  launch_url: ""
+  barcode: 0
+  id: 21399
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 882 PANO 2
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21021: 
+  number: 1
+  label: "Adriana Partimpim "
+  document_id: 0
+  dc_identifier: "699755"
+  location: "Niveau 3 - Musiques et documents parl\xC3\xA9s"
+  metadata_id: 36586
+  launch_url: ""
+  barcode: 0
+  id: 21021
+  availability: En traitement
+  support: ""
+  link_label: 
+  call_num: 782.8(82) CALC
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_20871: 
+  number: 1
+  label: "Petite grammaire de l'italien "
+  document_id: 0
+  dc_identifier: "333943"
+  location: "Niveau 3 - Langues et litt\xC3\xA9ratures"
+  metadata_id: 36437
+  launch_url: ""
+  barcode: 0
+  id: 20871
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 85.5 REV
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21402: 
+  number: 1
+  label: "Asymptotic expansions: their derivation and interpretation "
+  document_id: 0
+  dc_identifier: "8699"
+  location: "Niveau 2 - Sciences, techniques, m\xC3\xA9decine"
+  metadata_id: 36960
+  launch_url: ""
+  barcode: 0
+  id: 21402
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 517.2 DIN
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21212: 
+  number: 1
+  label: "La\xC3\xAFcit\xC3\xA9 (La): histoire d'un fondement de la R\xC3\xA9publique "
+  document_id: 0
+  dc_identifier: "1042204"
+  location: "Niveau 3 - Musiques et documents parl\xC3\xA9s"
+  metadata_id: 36776
+  launch_url: ""
+  barcode: 0
+  id: 21212
+  availability: En traitement
+  support: CD
+  link_label: 
+  call_num: ""
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21022: 
+  number: 1
+  label: "Cartes sur table "
+  document_id: 0
+  dc_identifier: "699766"
+  location: "Niveau 3 - Musiques et documents parl\xC3\xA9s"
+  metadata_id: 36587
+  launch_url: ""
+  barcode: 0
+  id: 21022
+  availability: En traitement
+  support: CD
+  link_label: 
+  call_num: ""
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21070: 
+  number: 1
+  label: "Libert\xC3\xA9 et responsabilit\xC3\xA9"
+  document_id: 0
+  dc_identifier: "828902"
+  location: Niveau 2 - Philo, psycho, religions
+  metadata_id: 36634
+  launch_url: ""
+  barcode: 0
+  id: 21070
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 22(0) COM 11
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21023: 
+  number: 1
+  label: "La chanson napolitaine "
+  document_id: 0
+  dc_identifier: "699782"
+  location: "Niveau 3 - Musiques et documents parl\xC3\xA9s"
+  metadata_id: 36588
+  launch_url: ""
+  barcode: 0
+  id: 21023
+  availability: En traitement
+  support: ""
+  link_label: 
+  call_num: 782.8(45) MURO
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21213: 
+  number: 1
+  label: "Grammaire essentielle de l'espagnol "
+  document_id: 0
+  dc_identifier: "1043524"
+  location: "Niveau 3 - Langues et litt\xC3\xA9ratures"
+  metadata_id: 36777
+  launch_url: ""
+  barcode: 0
+  id: 21213
+  availability: En reliure
+  support: ""
+  link_label: 
+  call_num: ""
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21403: 
+  number: 1
+  label: "The artistry of Shakespeare's prose "
+  document_id: 0
+  dc_identifier: "8893"
+  location: "Niveau 3 - Langues et litt\xC3\xA9ratures"
+  metadata_id: 36961
+  launch_url: ""
+  barcode: 0
+  id: 21403
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 820"15" SHAK 5 SA
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_20872: 
+  number: 1
+  label: "La conjugaison allemande "
+  document_id: 0
+  dc_identifier: "335964"
+  location: "Niveau 3 - Langues et litt\xC3\xA9ratures"
+  metadata_id: 36438
+  launch_url: ""
+  barcode: 0
+  id: 20872
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 83.5 BOU
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21260: 
+  number: 1
+  label: "UE1 Atomes, biomol\xC3\xA9cules, g\xC3\xA9nome, bio\xC3\xA9nerg\xC3\xA9tique, m\xC3\xA9tabolisme "
+  document_id: 0
+  dc_identifier: "1055154"
+  location: "Niveau 2 - Sciences, techniques, m\xC3\xA9decine"
+  metadata_id: 36824
+  launch_url: ""
+  barcode: 0
+  id: 21260
+  availability: En reliure
+  support: ""
+  link_label: 
+  call_num: ""
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21404: 
+  number: 1
+  label: "Po\xC3\xA9sies "
+  document_id: 0
+  dc_identifier: "8976"
+  location: "Niveau 3 - Langues et litt\xC3\xA9ratures"
+  metadata_id: 36962
+  launch_url: ""
+  barcode: 0
+  id: 21404
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 868.091 MART 3
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21024: 
+  number: 1
+  label: The sentinel
+  document_id: 0
+  dc_identifier: "699834"
+  location: "Niveau 3 - Musiques et documents parl\xC3\xA9s"
+  metadata_id: 36589
+  launch_url: ""
+  barcode: 0
+  id: 21024
+  availability: En traitement
+  support: ""
+  link_label: 
+  call_num: ""
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21214: 
+  number: 1
+  label: "Humaniser le travail: r\xC3\xA9gimes \xC3\xA9conomiques, r\xC3\xA9gimes politiques et Organisation internationale du travail: 1929-1969 "
+  document_id: 0
+  dc_identifier: "1043599"
+  location: "Niveau 2 - Droit, \xC3\xA9conomie, sc. sociales"
+  metadata_id: 36778
+  launch_url: ""
+  barcode: 0
+  id: 21214
+  availability: En reliure
+  support: ""
+  link_label: 
+  call_num: ""
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21071: 
+  number: 1
+  label: "La derni\xC3\xA8re heure du dernier jour; La \xC3\xBAltima hora del \xC3\xBAltimo d\xC3\xADa"
+  document_id: 0
+  dc_identifier: "837878"
+  location: "Niveau 3 - Langues et litt\xC3\xA9ratures"
+  metadata_id: 36635
+  launch_url: ""
+  barcode: 0
+  id: 21071
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 868.0 SOLE 4 UL
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21072: 
+  number: 1
+  label: "Sortie d'usine "
+  document_id: 0
+  dc_identifier: "844138"
+  location: "Niveau 3 - Musiques et documents parl\xC3\xA9s"
+  metadata_id: 36636
+  launch_url: ""
+  barcode: 0
+  id: 21072
+  availability: En traitement
+  support: CD
+  link_label: 
+  call_num: "305.34"
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21025: 
+  number: 1
+  label: "Johnny: de l'idole \xC3\xA0 la l\xC3\xA9gende "
+  document_id: 0
+  dc_identifier: "701084"
+  location: "Niveau 3 - Musiques et documents parl\xC3\xA9s"
+  metadata_id: 36590
+  launch_url: ""
+  barcode: 0
+  id: 21025
+  availability: En traitement
+  support: ""
+  link_label: 
+  call_num: ""
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21262: 
+  number: 1
+  label: "Artist (The) : BO du film de Michel Hazanavicius"
+  document_id: 0
+  dc_identifier: "1056810"
+  location: "Niveau 3 - Musiques et documents parl\xC3\xA9s"
+  metadata_id: 36826
+  launch_url: ""
+  barcode: 0
+  id: 21262
+  availability: En traitement
+  support: ""
+  link_label: 
+  call_num: ""
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21405: 
+  number: 1
+  label: "Vari\xC3\xA9t\xC3\xA9s gourmandes "
+  document_id: 0
+  dc_identifier: "8990"
+  location: "Niveau 2 - Sciences, techniques, m\xC3\xA9decine"
+  metadata_id: 36963
+  launch_url: ""
+  barcode: 0
+  id: 21405
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 641.4(091) GRI
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21406: 
+  number: 1
+  label: "Il pianto ; Iambes "
+  document_id: 0
+  dc_identifier: "9064"
+  location: "Niveau 3 - Langues et litt\xC3\xA9ratures"
+  metadata_id: 36964
+  launch_url: ""
+  barcode: 0
+  id: 21406
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 840"18" BARB.A 2
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21073: 
+  number: 1
+  label: The Clash
+  document_id: 0
+  dc_identifier: "852719"
+  location: "Niveau 3 - Musiques et documents parl\xC3\xA9s"
+  metadata_id: 36637
+  launch_url: ""
+  barcode: 0
+  id: 21073
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 780.65 CLAS 2
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21026: 
+  number: 1
+  label: "Le ventriloque "
+  document_id: 0
+  dc_identifier: "704043"
+  location: "Niveau 3 - Langues et litt\xC3\xA9ratures"
+  metadata_id: 36591
+  launch_url: ""
+  barcode: 0
+  id: 21026
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 843 TREM.A 4 VE
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_20875: 
+  number: 1
+  label: "Histoire de la langue bretonne "
+  document_id: 0
+  dc_identifier: "343879"
+  location: "Niveau 3 - Langues et litt\xC3\xA9ratures"
+  metadata_id: 36441
+  launch_url: ""
+  barcode: 0
+  id: 20875
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 829.9(0) BRO
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21263: 
+  number: 1
+  label: "Complete consort music "
+  document_id: 0
+  dc_identifier: "1056891"
+  location: "Niveau 3 - Musiques et documents parl\xC3\xA9s"
+  metadata_id: 36827
+  launch_url: ""
+  barcode: 0
+  id: 21263
+  availability: En traitement
+  support: CD
+  link_label: 
+  call_num: ""
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21074: 
+  number: 1
+  label: "Tonight's the night - Sing to trumpets and strings "
+  document_id: 0
+  dc_identifier: "854201"
+  location: "Niveau 3 - Musiques et documents parl\xC3\xA9s"
+  metadata_id: 36638
+  launch_url: ""
+  barcode: 0
+  id: 21074
+  availability: En traitement
+  support: ""
+  link_label: 
+  call_num: ""
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21027: 
+  number: 1
+  label: "France : 1000 sites exceptionnels"
+  document_id: 0
+  dc_identifier: "704382"
+  location: Niveau 3 - Arts, loisirs, sports
+  metadata_id: 36592
+  launch_url: ""
+  barcode: 0
+  id: 21027
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 795(44)  FRA
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_20876: 
+  number: 1
+  label: "Soulages: la lumi\xC3\xA8re et l'espace "
+  document_id: 0
+  dc_identifier: "347262"
+  location: Niveau 3 - Arts, loisirs, sports
+  metadata_id: 36442
+  launch_url: ""
+  barcode: 0
+  id: 20876
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 70"19" SOUL 2
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21264: 
+  number: 1
+  label: "52 reprises dans l'espace "
+  document_id: 0
+  dc_identifier: "1056976"
+  location: "Niveau 3 - Musiques et documents parl\xC3\xA9s"
+  metadata_id: 36828
+  launch_url: ""
+  barcode: 0
+  id: 21264
+  availability: En traitement
+  support: ""
+  link_label: 
+  call_num: ""
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21407: 
+  number: 1
+  label: "G\xC3\xA9za R\xC3\xB3heim et l'essor de l'anthropologie psychanalytique "
+  document_id: 0
+  dc_identifier: "9110"
+  location: "Niveau 2 - Droit, \xC3\xA9conomie, sc. sociales"
+  metadata_id: 36965
+  launch_url: ""
+  barcode: 0
+  id: 21407
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 39 ROHE 2
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21408: 
+  number: 1
+  label: "Die Magdeburgische Hochzeit "
+  document_id: 0
+  dc_identifier: "9237"
+  location: "Niveau 3 - Langues et litt\xC3\xA9ratures"
+  metadata_id: 36966
+  launch_url: ""
+  barcode: 0
+  id: 21408
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 830"19" LEFO 4 MA
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21075: 
+  number: 1
+  label: "Introduction \xC3\xA0 l'h\xC3\xA9breu biblique "
+  document_id: 0
+  dc_identifier: "855221"
+  location: Niveau 2 - Philo, psycho, religions
+  metadata_id: 36639
+  launch_url: ""
+  barcode: 0
+  id: 21075
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 22.05 LAM
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21218: 
+  number: 1
+  label: Province du Brabant flamand
+  document_id: 0
+  dc_identifier: "1046333"
+  location: Niveau 3 - Arts, loisirs, sports
+  metadata_id: 36782
+  launch_url: ""
+  barcode: 0
+  id: 21218
+  availability: En traitement
+  support: ""
+  link_label: 
+  call_num: ""
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21028: 
+  number: 1
+  label: "Introduction \xC3\xA0 la psychanalyse "
+  document_id: 0
+  dc_identifier: "704415"
+  location: Niveau 2 - Philo, psycho, religions
+  metadata_id: 36593
+  launch_url: ""
+  barcode: 0
+  id: 21028
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 153 FREU 1
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_20877: 
+  number: 1
+  label: "Nathan der Weise de Lessing "
+  document_id: 0
+  dc_identifier: "347754"
+  location: "Niveau 3 - Langues et litt\xC3\xA9ratures"
+  metadata_id: 36443
+  launch_url: ""
+  barcode: 0
+  id: 20877
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 830"17" LESS 5 BA
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21029: 
+  number: 1
+  label: La rue
+  document_id: 0
+  dc_identifier: "704490"
+  location: Niveau 2 - Philo, psycho, religions
+  metadata_id: 36594
+  launch_url: ""
+  barcode: 0
+  id: 21029
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 32(0) POU
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21219: 
+  number: 1
+  label: "25 ans "
+  document_id: 0
+  dc_identifier: "1046678"
+  location: "Niveau 3 - Musiques et documents parl\xC3\xA9s"
+  metadata_id: 36783
+  launch_url: ""
+  barcode: 0
+  id: 21219
+  availability: En traitement
+  support: ""
+  link_label: 
+  call_num: ""
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21076: 
+  number: 1
+  label: L'Histoire du saxophone jazz
+  document_id: 0
+  dc_identifier: "860099"
+  location: "Niveau 3 - Musiques et documents parl\xC3\xA9s"
+  metadata_id: 36640
+  launch_url: ""
+  barcode: 0
+  id: 21076
+  availability: En traitement
+  support: CD
+  link_label: 
+  call_num: ""
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21409: 
+  number: 1
+  label: "Bei schwebendem Verfahren "
+  document_id: 0
+  dc_identifier: "9302"
+  location: "Niveau 3 - Langues et litt\xC3\xA9ratures"
+  metadata_id: 36967
+  launch_url: ""
+  barcode: 0
+  id: 21409
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 831 ROSE 4 BE
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21267: 
+  number: 1
+  label: "Ali\xC3\xA9nor d'Aquitaine "
+  document_id: 0
+  dc_identifier: "1058776"
+  location: "Niveau 3 - Histoire, g\xC3\xA9ographie"
+  metadata_id: 36831
+  launch_url: ""
+  barcode: 0
+  id: 21267
+  availability: En reliure
+  support: ""
+  link_label: 
+  call_num: ""
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21077: 
+  number: 1
+  label: "Philippines: pr\xC3\xA9delles "
+  document_id: 0
+  dc_identifier: "868555"
+  location: "Niveau 3 - Langues et litt\xC3\xA9ratures"
+  metadata_id: 36641
+  launch_url: ""
+  barcode: 0
+  id: 21077
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 840"19" CIXO 4 PH
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21078: 
+  number: 1
+  label: Le lieu perdu; El lugar perdido
+  document_id: 0
+  dc_identifier: "869927"
+  location: "Niveau 3 - Langues et litt\xC3\xA9ratures"
+  metadata_id: 36642
+  launch_url: ""
+  barcode: 0
+  id: 21078
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 868.3 HUID 4 LU
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21269: 
+  number: 1
+  label: "Le J\xC3\xA9sus du quatri\xC3\xA8me Evangile "
+  document_id: 0
+  dc_identifier: "1017766"
+  location: Niveau 2 - Philo, psycho, religions
+  metadata_id: 36833
+  launch_url: ""
+  barcode: 0
+  id: 21269
+  availability: En traitement
+  support: ""
+  link_label: 
+  call_num: ""
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_20930: 
+  number: 1
+  label: "Diasporas carib\xC3\xA9ennes"
+  document_id: 0
+  dc_identifier: "473224"
+  location: Niveau 2 - Philo, psycho, religions
+  metadata_id: 36495
+  launch_url: ""
+  barcode: 0
+  id: 20930
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 30(0) HOM 10
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21079: 
+  number: 1
+  label: "L'usure des jours: r\xC3\xA9cit "
+  document_id: 0
+  dc_identifier: "873499"
+  location: "Niveau 3 - Langues et litt\xC3\xA9ratures"
+  metadata_id: 36643
+  launch_url: ""
+  barcode: 0
+  id: 21079
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 840"20" NOBE 4 US
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_20931: 
+  number: 1
+  label: "Vida y obra de Luis Alvarez Pere\xC3\xB1a"
+  document_id: 0
+  dc_identifier: "475139"
+  location: "Niveau 3 - Langues et litt\xC3\xA9ratures"
+  metadata_id: 36496
+  launch_url: ""
+  barcode: 0
+  id: 20931
+  availability: En traitement
+  support: ""
+  link_label: 
+  call_num: ""
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21320: 
+  number: 1
+  label: "Vincenzo Catena "
+  document_id: 0
+  dc_identifier: "1138"
+  location: Niveau 3 - Arts, loisirs, sports
+  metadata_id: 36883
+  launch_url: ""
+  barcode: 0
+  id: 21320
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 70"15" CATE 2
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_20932: 
+  number: 1
+  label: "A dictionary of Chinese ceramics "
+  document_id: 0
+  dc_identifier: "477621"
+  location: Niveau 3 - Arts, loisirs, sports
+  metadata_id: 36497
+  launch_url: ""
+  barcode: 0
+  id: 20932
+  availability: "En r\xC3\xA9paration"
+  support: ""
+  link_label: 
+  call_num: 746.15(510) WAN
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21130: 
+  number: 1
+  label: "Russe pour fran\xC3\xA7ais et fran\xC3\xA7ais pour russes, [niveau d\xC3\xA9butant] "
+  document_id: 0
+  dc_identifier: "980844"
+  location: Niveau 2 - Autoformation
+  metadata_id: 36694
+  launch_url: ""
+  barcode: 0
+  id: 21130
+  availability: En catalogage
+  support: ""
+  link_label: 
+  call_num: 882(07) RUS
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21131: 
+  number: 1
+  label: "Le d\xC3\xA9mon mari\xC3\xA9 ; Pens\xC3\xA9es "
+  document_id: 0
+  dc_identifier: "984338"
+  location: "Niveau 3 - Langues et litt\xC3\xA9ratures"
+  metadata_id: 36695
+  launch_url: ""
+  barcode: 0
+  id: 21131
+  availability: En traitement
+  support: ""
+  link_label: 
+  call_num: 850"15" MACH 2
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21321: 
+  number: 1
+  label: "C\xC3\xA9sar "
+  document_id: 0
+  dc_identifier: "1148"
+  location: Niveau 3 - Arts, loisirs, sports
+  metadata_id: 36884
+  launch_url: ""
+  barcode: 0
+  id: 21321
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 70"19" CESA 1
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_20933: 
+  number: 1
+  label: Face aux sectes
+  document_id: 0
+  dc_identifier: "478294"
+  location: "Niveau 2 - Droit, \xC3\xA9conomie, sc. sociales"
+  metadata_id: 36498
+  launch_url: ""
+  barcode: 0
+  id: 20933
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 34.2 FAC
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_20980: 
+  number: 1
+  label: "Scat !: vocal improvisation techniques "
+  document_id: 0
+  dc_identifier: "597969"
+  location: "Niveau 3 - Musiques et documents parl\xC3\xA9s"
+  metadata_id: 36545
+  launch_url: ""
+  barcode: 0
+  id: 20980
+  availability: En traitement
+  support: ""
+  link_label: 
+  call_num: ""
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21132: 
+  number: 1
+  label: "L'encens "
+  document_id: 0
+  dc_identifier: "984406"
+  location: "Niveau 3 - Langues et litt\xC3\xA9ratures"
+  metadata_id: 36696
+  launch_url: ""
+  barcode: 0
+  id: 21132
+  availability: En catalogage
+  support: ""
+  link_label: 
+  call_num: ""
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21322: 
+  number: 1
+  label: "Po\xC3\xA9sie ininterrompue et la po\xC3\xA9tique de Paul Eluard "
+  document_id: 0
+  dc_identifier: "1278"
+  location: "Niveau 3 - Langues et litt\xC3\xA9ratures"
+  metadata_id: 36885
+  launch_url: ""
+  barcode: 0
+  id: 21322
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 840"19" ELUA 5 VE
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_20934: 
+  number: 1
+  label: "Les \xC3\xA9critures sc\xC3\xA9niques "
+  document_id: 0
+  dc_identifier: "478819"
+  location: Niveau 3 - Arts, loisirs, sports
+  metadata_id: 36499
+  launch_url: ""
+  barcode: 0
+  id: 20934
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 792(44)"4" CON
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_20981: 
+  number: 1
+  label: "Music in Bulgaria: experiencing music, expressing culture "
+  document_id: 0
+  dc_identifier: "598099"
+  location: "Niveau 3 - Musiques et documents parl\xC3\xA9s"
+  metadata_id: 36546
+  launch_url: ""
+  barcode: 0
+  id: 20981
+  availability: En traitement
+  support: ""
+  link_label: 
+  call_num: ""
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21370: 
+  number: 1
+  label: "Shakespeare's second globe: the missing monument "
+  document_id: 0
+  dc_identifier: "5380"
+  location: "Niveau 3 - Langues et litt\xC3\xA9ratures"
+  metadata_id: 36932
+  launch_url: ""
+  barcode: 0
+  id: 21370
+  availability: "En r\xC3\xA9paration"
+  support: ""
+  link_label: 
+  call_num: 820"15" SHAK 5 HD
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21180: 
+  number: 1
+  label: "Correspondance "
+  document_id: 0
+  dc_identifier: "1021418"
+  location: "Niveau 3 - Langues et litt\xC3\xA9ratures"
+  metadata_id: 36744
+  launch_url: ""
+  barcode: 0
+  id: 21180
+  availability: En traitement
+  support: ""
+  link_label: 
+  call_num: ""
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21323: 
+  number: 1
+  label: "Qu'est-ce que le lettrisme ? "
+  document_id: 0
+  dc_identifier: "1366"
+  location: "Niveau 3 - Langues et litt\xC3\xA9ratures"
+  metadata_id: 36886
+  launch_url: ""
+  barcode: 0
+  id: 21323
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 840"19" LEMA 4 QU
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_20935: 
+  number: 1
+  label: Aqsa al-yasar fi al-Magrib
+  document_id: 0
+  dc_identifier: "486906"
+  location: "Niveau 3 - Langues et litt\xC3\xA9ratures"
+  metadata_id: 36500
+  launch_url: ""
+  barcode: 0
+  id: 20935
+  availability: En traitement
+  support: ""
+  link_label: 
+  call_num: ""
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21133: 
+  number: 1
+  label: "The Scaffold: and Other Cruel Tales; Contes cruels"
+  document_id: 0
+  dc_identifier: "985152"
+  location: "Niveau 3 - Langues et litt\xC3\xA9ratures"
+  metadata_id: 36697
+  launch_url: ""
+  barcode: 0
+  id: 21133
+  availability: En reliure
+  support: ""
+  link_label: 
+  call_num: 8.20 VIL
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_20982: 
+  number: 1
+  label: "Luchino Visconti "
+  document_id: 0
+  dc_identifier: "598112"
+  location: Niveau 3 - Arts, loisirs, sports
+  metadata_id: 36547
+  launch_url: ""
+  barcode: 0
+  id: 20982
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 791.6 VISC 2
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_20983: 
+  number: 1
+  label: "Mares de Tempo "
+  document_id: 0
+  dc_identifier: "602487"
+  location: "Niveau 3 - Musiques et documents parl\xC3\xA9s"
+  metadata_id: 36548
+  launch_url: ""
+  barcode: 0
+  id: 20983
+  availability: En traitement
+  support: ""
+  link_label: 
+  call_num: ""
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21134: 
+  number: 1
+  label: Cajun Piano course, Vol. 1
+  document_id: 0
+  dc_identifier: "985217"
+  location: "Niveau 3 - Langues et litt\xC3\xA9ratures"
+  metadata_id: 36698
+  launch_url: ""
+  barcode: 0
+  id: 21134
+  availability: En catalogage
+  support: ""
+  link_label: 
+  call_num: ""
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_20936: 
+  number: 1
+  label: "L'une et l'autre "
+  document_id: 0
+  dc_identifier: "494055"
+  location: "Niveau 3 - Langues et litt\xC3\xA9ratures"
+  metadata_id: 36501
+  launch_url: ""
+  barcode: 0
+  id: 20936
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 868.0 SADA 4 UN
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21324: 
+  number: 1
+  label: "George Washington: l'homme et la l\xC3\xA9gende "
+  document_id: 0
+  dc_identifier: "1436"
+  location: "Niveau 3 - Histoire, g\xC3\xA9ographie"
+  metadata_id: 36887
+  launch_url: ""
+  barcode: 0
+  id: 21324
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 973-7 CUN
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21181: 
+  number: 1
+  label: "Esquisse d'une anthropo-logique "
+  document_id: 0
+  dc_identifier: "1022108"
+  location: Niveau 2 - Philo, psycho, religions
+  metadata_id: 36745
+  launch_url: ""
+  barcode: 0
+  id: 21181
+  availability: En catalogage
+  support: ""
+  link_label: 
+  call_num: ""
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21371: 
+  number: 1
+  label: "The city and the pillar "
+  document_id: 0
+  dc_identifier: "5376"
+  location: "Niveau 3 - Langues et litt\xC3\xA9ratures"
+  metadata_id: 36933
+  launch_url: ""
+  barcode: 0
+  id: 21371
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 821 VIDA 4 CI
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21372: 
+  number: 1
+  label: "Novelas completas "
+  document_id: 0
+  dc_identifier: "5533"
+  location: "Niveau 3 - Langues et litt\xC3\xA9ratures"
+  metadata_id: 36934
+  launch_url: ""
+  barcode: 0
+  id: 21372
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 860"16" ZAYA 1
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21135: 
+  number: 1
+  label: Tango
+  document_id: 0
+  dc_identifier: "985370"
+  location: "Niveau 3 - Musiques et documents parl\xC3\xA9s"
+  metadata_id: 36699
+  launch_url: ""
+  barcode: 0
+  id: 21135
+  availability: En catalogage
+  support: ""
+  link_label: 
+  call_num: ""
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21325: 
+  number: 1
+  label: "Memos "
+  document_id: 0
+  dc_identifier: "1550"
+  location: "Niveau 3 - Musiques et documents parl\xC3\xA9s"
+  metadata_id: 36888
+  launch_url: ""
+  barcode: 0
+  id: 21325
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 78 IVES 1
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_20937: 
+  number: 1
+  label: Les manuscrits des rois de France au Moyen Age
+  document_id: 0
+  dc_identifier: "498249"
+  location: "Niveau 3 - Histoire, g\xC3\xA9ographie"
+  metadata_id: 36502
+  launch_url: ""
+  barcode: 0
+  id: 20937
+  availability: En traitement
+  support: ""
+  link_label: 
+  call_num: ""
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_20984: 
+  number: 1
+  label: "Dieu "
+  document_id: 0
+  dc_identifier: "602552"
+  location: "Niveau 3 - Musiques et documents parl\xC3\xA9s"
+  metadata_id: 36549
+  launch_url: ""
+  barcode: 0
+  id: 20984
+  availability: En traitement
+  support: CD
+  link_label: 
+  call_num: ""
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21136: 
+  number: 1
+  label: Tenerife et La Gomera; Teneriffa & La Gomera ; MAP Berndtson
+  document_id: 0
+  dc_identifier: "985568"
+  location: "Niveau 3 - Histoire, g\xC3\xA9ographie"
+  metadata_id: 36700
+  launch_url: ""
+  barcode: 0
+  id: 21136
+  availability: En traitement
+  support: ""
+  link_label: 
+  call_num: ""
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21326: 
+  number: 1
+  label: "Le Viandier de Guillaume Tirel dit Taillevent "
+  document_id: 0
+  dc_identifier: "1724"
+  location: "Niveau 2 - Sciences, techniques, m\xC3\xA9decine"
+  metadata_id: 36889
+  launch_url: ""
+  barcode: 0
+  id: 21326
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 641.4(091) TAI
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_20938: 
+  number: 1
+  label: "Le philosophe amoureux: pi\xC3\xA8ce en un acte "
+  document_id: 0
+  dc_identifier: "499872"
+  location: "Niveau 3 - Langues et litt\xC3\xA9ratures"
+  metadata_id: 36503
+  launch_url: ""
+  barcode: 0
+  id: 20938
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 841 SOJC 4 PH
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21183: 
+  number: 1
+  label: "N\xC3\xA9pal "
+  document_id: 0
+  dc_identifier: "1024434"
+  location: Niveau 3 - Arts, loisirs, sports
+  metadata_id: 36747
+  launch_url: ""
+  barcode: 0
+  id: 21183
+  availability: En reliure
+  support: ""
+  link_label: 
+  call_num: ""
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21373: 
+  number: 1
+  label: "Mark Twain's satires and burlesques "
+  document_id: 0
+  dc_identifier: "5616"
+  location: "Niveau 3 - Langues et litt\xC3\xA9ratures"
+  metadata_id: 36935
+  launch_url: ""
+  barcode: 0
+  id: 21373
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 821 TWAI 2
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21374: 
+  number: 1
+  label: "The Cure of the limerick: an uninhibited history "
+  document_id: 0
+  dc_identifier: "5691"
+  location: "Niveau 3 - Langues et litt\xC3\xA9ratures"
+  metadata_id: 36936
+  launch_url: ""
+  barcode: 0
+  id: 21374
+  availability: "En r\xC3\xA9paration"
+  support: ""
+  link_label: 
+  call_num: 820(082) BAR
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21137: 
+  number: 1
+  label: "Improviser librement: ab\xC3\xA9c\xC3\xA9daire d'une exp\xC3\xA9rience "
+  document_id: 0
+  dc_identifier: "988364"
+  location: "Niveau 3 - Musiques et documents parl\xC3\xA9s"
+  metadata_id: 36701
+  launch_url: ""
+  barcode: 0
+  id: 21137
+  availability: En catalogage
+  support: ""
+  link_label: 
+  call_num: ""
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21327: 
+  number: 1
+  label: "Estudios sobre poes\xC3\xADa espa\xC3\xB1ola contempor\xC3\xA1nea: la generaci\xC3\xB3n de 1924-1925 "
+  document_id: 0
+  dc_identifier: "1749"
+  location: "Niveau 3 - Langues et litt\xC3\xA9ratures"
+  metadata_id: 36890
+  launch_url: ""
+  barcode: 0
+  id: 21327
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 860-1"19" DEB
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_20939: 
+  number: 1
+  label: Al-Ubudiyyat
+  document_id: 0
+  dc_identifier: "500279"
+  location: Niveau 2 - Philo, psycho, religions
+  metadata_id: 36504
+  launch_url: ""
+  barcode: 0
+  id: 20939
+  availability: En traitement
+  support: ""
+  link_label: 
+  call_num: ""
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_20986: 
+  number: 1
+  label: "La voix de la ferveur "
+  document_id: 0
+  dc_identifier: "602592"
+  location: "Niveau 3 - Musiques et documents parl\xC3\xA9s"
+  metadata_id: 36551
+  launch_url: ""
+  barcode: 0
+  id: 20986
+  availability: En traitement
+  support: CD
+  link_label: 
+  call_num: ""
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_20987: 
+  number: 1
+  label: "Les voix du Qu\xC3\xA9bec "
+  document_id: 0
+  dc_identifier: "602895"
+  location: "Niveau 3 - Musiques et documents parl\xC3\xA9s"
+  metadata_id: 36552
+  launch_url: ""
+  barcode: 0
+  id: 20987
+  availability: En traitement
+  support: ""
+  link_label: 
+  call_num: ""
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21328: 
+  number: 1
+  label: "L' Univers de Giraudoux "
+  document_id: 0
+  dc_identifier: "1922"
+  location: "Niveau 3 - Langues et litt\xC3\xA9ratures"
+  metadata_id: 36891
+  launch_url: ""
+  barcode: 0
+  id: 21328
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 840"19" GIRA 5 DU
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21138: 
+  number: 1
+  label: "Orties "
+  document_id: 0
+  dc_identifier: "988705"
+  location: "Niveau 3 - Langues et litt\xC3\xA9ratures"
+  metadata_id: 36702
+  launch_url: ""
+  barcode: 0
+  id: 21138
+  availability: En catalogage
+  support: ""
+  link_label: 
+  call_num: ""
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5
+volume_21375: 
+  number: 1
+  label: "Croce e delizia "
+  document_id: 0
+  dc_identifier: "5826"
+  location: "Niveau 3 - Langues et litt\xC3\xA9ratures"
+  metadata_id: 36937
+  launch_url: ""
+  barcode: 0
+  id: 21375
+  availability: Disponible
+  support: ""
+  link_label: 
+  call_num: 850"19" PENN 4 CR
+  link: ""
+  source: ""
+  object_id: 0
+  collection_id: 5

@@ -1,0 +1,11 @@
+<div id="page_contents">
+<%= render(:partial => "admin/navigation")%>
+<div id="center"  class="column">
+  <h2 ><%=translate("EDIT_COLLECTION")%></h2>
+  	<% form_for :collection, @collection, :url => { :action => "update", :id=>@collection}, :html=>{:name=>'collection_form',:id=>"edit_form"}  do |f| %>
+		<%= render :partial => 'form', :locals=>{:form=>f}  %>  
+		<%= submit_tag translate('SAVE'), {:id=>"saveButton"} %>
+	<% end %>
+  </div>       
+</div>
+

@@ -90,7 +90,7 @@ class RssController < ApplicationController
       t = RecordController.new();
       @sort_value = "harvesting_date" 
       # set params to recordController
-      t.setResults(@records, @sort_value, @filter);
+      t.build_results(@records, @sort_value, @filter);
       # call filter results      
       t.filter_results;
       # get results to sort
@@ -178,7 +178,7 @@ class RssController < ApplicationController
       
       t = RecordController.new();
       # set params to recordController
-      t.setResults(@records, @sort_value, @filter);
+      t.build_results(@records, @sort_value, @filter);
       # call filter results      
       t.filter_results;
       # get results to sort

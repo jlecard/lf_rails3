@@ -1,0 +1,11 @@
+<div id="citation_<%=image_citation.id%>" class="image-citation" style="display:none" >
+
+	<div style="float:right;width:20px">
+		<%= link_to_function image_tag("/images/close.png", :border=>0), "Element.hide('citation_"+image_citation.id.to_s+"')"%>
+            </div>
+	<label><%=translate('AUTHOR_LABEL')%>  </label><%=image_citation.author%><br/>
+	<label><%=translate('TITLE_LABEL')%>  </label><%=image_citation.ptitle%><br/>
+	<label><%=translate('DATE_LABEL')%>  </label><%=format_date(image_citation)%><br/>
+	<label><a href="<%=URI.escape(image_citation.direct_url)%>" title="<%=URI.escape(image_citation.direct_url)%>" target="_blank"><%=translate('IMAGE_URL')%></a></span></label>
+
+</div>

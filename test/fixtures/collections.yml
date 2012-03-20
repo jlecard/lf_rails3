@@ -1,568 +1,2443 @@
-# LibraryFind - Quality find done better.
-# Copyright (C) 2007 Oregon State University
-#
-# This program is free software; you can redistribute it and/or modify it under 
-# the terms of the GNU General Public License as published by the Free Software 
-# Foundation; either version 2 of the License, or (at your option) any later 
-# version.
-#
-# This program is distributed in the hope that it will be useful, but WITHOUT 
-# ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS 
-# FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
-#
-# You should have received a copy of the GNU General Public License along with 
-# this program; if not, write to the Free Software Foundation, Inc., 59 Temple 
-# Place, Suite 330, Boston, MA 02111-1307 USA
-#
-# Questions or comments on this program may be addressed to:
-#
-# LibraryFind
-# 121 The Valley Library
-# Corvallis OR 97331-4501
-#
-# http://libraryfind.org
 --- 
-collections_034: 
-  virtual: 
-  user: ""
-  name: oasis
-  vendor_url: http://oasis.oregonstate.edu
-  conn_type: z3950
-  bib_attr: "@attr 5=100"
-  mat_type: Book
-  url: http://oasis.oregonstate.edu/record=b{ass_num}
-  record_schema: MARC21;xml
-  alt_name: Oregon State University Library Catalog
-  id: "145"
-  definition: ti=245;ti=130;au=100;au=110;au=700;au=710;callnum=099;callnum=090;callnum=086;callnum=050;ass_num=907b7;note=500;pub=260b;date=260c;subject=650;subject=651
-  host: oasis.oregonstate.edu:210/INNOPAC
-  isword: "1"
+collection_00092: 
+  name: cdrap
+  isword: 0
+  is_parent: 0
+  filter_query: 
+  virtual: ""
+  vendor_url: "http://www.cdrap.org/ "
+  post_data: 
+  mat_type: "R\xC3\xA9f\xC3\xA9rence bibliographique"
+  is_private: false
+  class_handle_right: ""
+  bib_attr: ""
+  alt_name: CD-Rap
+  url: ""
+  conn_type: sru
+  proxy: 1
+  id: 92
+  availability: ""
+  record_schema: dc
+  oai_set: ""
+  has_right: false
+  pass: obpi
+  host: http://www.cdrap.org/sru/index.php
+  harvested: 
+  harvest_day: "0123456"
+  definition: description:abstract;creator:author;language:lang;atitle:title;title:source
+  actions_allowed: false
+  user: bpi
+  definition_search: creator=1003;author=1003;subject=21;issn=8;isbn=7;callnum=16;publisher=1018;title=4;keyword=1016
+collection_00106: 
+  name: em_consulte
+  isword: 0
+  is_parent: 0
+  filter_query: 
+  virtual: ""
+  vendor_url: http://www.em-consulte.com
+  post_data: ""
+  mat_type: Article
+  is_private: false
+  class_handle_right: ""
+  bib_attr: ""
+  alt_name: EM Consulte
+  url: http://www.em-consulte.com
+  conn_type: connector
+  proxy: 1
+  id: 106
+  availability: online
+  record_schema: ""
+  oai_set: Emconsulte
+  has_right: false
   pass: ""
-collections_023: 
-  virtual: 
-  user: 
-  name: hdl_1957_497
-  vendor_url: http://ir.library.oregonstate.edu/dspace/community-list
-  conn_type: oai
-  bib_attr: 
-  mat_type: Article
-  url: ""
-  record_schema: oai_dc
-  alt_name: Course Materials (BEE)
-  id: "113"
-  definition: 
-  host: http://ir.library.oregonstate.edu/dspace-oai/request
-  isword: "0"
-  pass: 
-collections_012: 
-  virtual: dspace
-  user: 
-  name: hdl_1957_12
-  vendor_url: http://ir.library.oregonstate.edu/dspace/community-list
-  conn_type: oai
-  bib_attr: 
-  mat_type: Article
-  url: ""
-  record_schema: oai_dc
-  alt_name: Publications and Reports
-  id: "102"
-  definition: 
-  host: http://ir.library.oregonstate.edu/dspace-oai/request
-  isword: "0"
-  pass: 
-collections_001: 
-  virtual: image
-  user: 
-  name: EAD
-  vendor_url: http://digitalcollections.library.oregonstate.edu/EAD
-  conn_type: oai
-  bib_attr: 
-  mat_type: Finding Aid
-  url: 
-  record_schema: oai_dc
-  alt_name: OSU EAD
-  id: "13"
-  definition: 
-  host: http://digitalcollections.library.oregonstate.edu/cgi-bin/oai.exe
-  isword: "0"
-  pass: 
-collections_024: 
-  virtual: dspace
-  user: 
-  name: hdl_1957_498
-  vendor_url: http://ir.library.oregonstate.edu/dspace/community-list
-  conn_type: oai
-  bib_attr: 
-  mat_type: Article
-  url: ""
-  record_schema: oai_dc
-  alt_name: Presentations (BEE)
-  id: "114"
-  definition: 
-  host: http://ir.library.oregonstate.edu/dspace-oai/request
-  isword: "0"
-  pass: 
-collections_013: 
-  virtual: dspace
-  user: 
-  name: hdl_1957_22
-  vendor_url: http://ir.library.oregonstate.edu/dspace/community-list
-  conn_type: oai
-  bib_attr: 
-  mat_type: Article
-  url: ""
-  record_schema: oai_dc
-  alt_name: Presentations and Posters
-  id: "103"
-  definition: 
-  host: http://ir.library.oregonstate.edu/dspace-oai/request
-  isword: "0"
-  pass: 
-collections_002: 
-  virtual: image
-  user: 
-  name: archives
-  vendor_url: http://digitalcollections.library.oregonstate.edu/archives
-  conn_type: oai
-  bib_attr: 
-  mat_type: Image
-  url: 
-  record_schema: oai_dc
-  alt_name: Archives
-  id: "14"
-  definition: 
-  host: http://digitalcollections.library.oregonstate.edu/cgi-bin/oai.exe
-  isword: "0"
-  pass: 
-collections_025: 
-  virtual: dspace
-  user: 
-  name: hdl_1957_8
-  vendor_url: http://ir.library.oregonstate.edu/dspace/community-list
-  conn_type: oai
-  bib_attr: 
-  mat_type: Article
-  url: ""
-  record_schema: oai_dc
-  alt_name: "Honors College "
-  id: "115"
-  definition: 
-  host: http://ir.library.oregonstate.edu/dspace-oai/request
-  isword: "0"
-  pass: 
-collections_014: 
-  virtual: 
-  user: 
-  name: hdl_1957_23
-  vendor_url: http://ir.library.oregonstate.edu/dspace/community-list
-  conn_type: oai
-  bib_attr: 
-  mat_type: Article
-  url: ""
-  record_schema: oai_dc
-  alt_name: "Internal Reports and White Papers "
-  id: "104"
-  definition: 
-  host: http://ir.library.oregonstate.edu/dspace-oai/request
-  isword: "0"
-  pass: 
-collections_003: 
-  virtual: image
-  user: 
-  name: bracero
-  vendor_url: http://digitalcollections.library.oregonstate.edu/bracero
-  conn_type: oai
-  bib_attr: 
-  mat_type: Image
-  url: 
-  record_schema: oai_dc
-  alt_name: Braceros in Oregon Photograph Collection
-  id: "15"
-  definition: 
-  host: http://digitalcollections.library.oregonstate.edu/cgi-bin/oai.exe
-  isword: "0"
-  pass: 
-collections_026: 
-  virtual: dspace
-  user: 
-  name: hdl_1957_83
-  vendor_url: http://ir.library.oregonstate.edu/dspace/community-list
-  conn_type: oai
-  bib_attr: 
-  mat_type: Article
-  url: ""
-  record_schema: oai_dc
-  alt_name: Electronic Books
-  id: "116"
-  definition: 
-  host: http://ir.library.oregonstate.edu/dspace-oai/request
-  isword: "0"
-  pass: 
-collections_015: 
-  virtual: dspace
-  user: 
-  name: hdl_1957_257
-  vendor_url: http://ir.library.oregonstate.edu/dspace/community-list
-  conn_type: oai
-  bib_attr: 
-  mat_type: Article
-  url: ""
-  record_schema: oai_dc
-  alt_name: The Messenger
-  id: "105"
-  definition: 
-  host: http://ir.library.oregonstate.edu/dspace-oai/request
-  isword: "0"
-  pass: 
-collections_004: 
-  virtual: image
-  user: 
-  name: chembond
-  vendor_url: http://osulibrary.oregonstate.edu/specialcollections/coll/pauling/bond/index.html
-  conn_type: oai
-  bib_attr: 
-  mat_type: Image
-  url: 
-  record_schema: oai_dc
-  alt_name: Nature of the Chemical Bond
-  id: "16"
-  definition: 
-  host: http://digitalcollections.library.oregonstate.edu/cgi-bin/oai.exe
-  isword: "0"
-  pass: 
-collections_027: 
-  virtual: dspace
-  user: 
-  name: hdl_1957_89
-  vendor_url: http://ir.library.oregonstate.edu/dspace/community-list
-  conn_type: oai
-  bib_attr: 
-  mat_type: Article
-  url: ""
-  record_schema: oai_dc
-  alt_name: Electronic Theses and Dissertations
-  id: "117"
-  definition: 
-  host: http://ir.library.oregonstate.edu/dspace-oai/request
-  isword: "0"
-  pass: 
-collections_016: 
-  virtual: dspace
-  user: 
-  name: hdl_1957_28
-  vendor_url: http://ir.library.oregonstate.edu/dspace/community-list
-  conn_type: oai
-  bib_attr: 
-  mat_type: Article
-  url: ""
-  record_schema: oai_dc
-  alt_name: Publications and Reports (ORNHIC)
-  id: "106"
-  definition: 
-  host: http://ir.library.oregonstate.edu/dspace-oai/request
-  isword: "0"
-  pass: 
-collections_005: 
-  virtual: image
-  user: 
-  name: corflood64
-  vendor_url: http://digitalcollections.library.oregonstate.edu/corflood64
-  conn_type: oai
-  bib_attr: 
-  mat_type: Image
-  url: 
-  record_schema: oai_dc
-  alt_name: 1964 Corvallis Flood
-  id: "17"
-  definition: 
-  host: http://digitalcollections.library.oregonstate.edu/cgi-bin/oai.exe
-  isword: "0"
-  pass: 
-collections_028: 
-  virtual: dspace
-  user: 
-  name: hdl_1957_93
-  vendor_url: http://ir.library.oregonstate.edu/dspace/community-list
-  conn_type: oai
-  bib_attr: 
-  mat_type: Article
-  url: ""
-  record_schema: oai_dc
-  alt_name: U.S. Forest Service Research Legacy
-  id: "118"
-  definition: 
-  host: http://ir.library.oregonstate.edu/dspace-oai/request
-  isword: "0"
-  pass: 
-collections_017: 
-  virtual: dspace
-  user: 
-  name: hdl_1957_29
-  vendor_url: http://ir.library.oregonstate.edu/dspace/community-list
-  conn_type: oai
-  bib_attr: 
-  mat_type: Article
-  url: ""
-  record_schema: oai_dc
-  alt_name: Oregon Explorer
-  id: "107"
-  definition: 
-  host: http://ir.library.oregonstate.edu/dspace-oai/request
-  isword: "0"
-  pass: 
-collections_006: 
-  virtual: image
-  user: 
-  name: cultural
-  vendor_url: http://digitalcollections.library.oregonstate.edu/cultural
-  conn_type: oai
-  bib_attr: 
-  mat_type: Image
-  url: 
-  record_schema: oai_dc
-  alt_name: Oregon Multicultural Archives
-  id: "18"
-  definition: 
-  host: http://digitalcollections.library.oregonstate.edu/cgi-bin/oai.exe
-  isword: "0"
-  pass: 
-collections_029: 
-  virtual: 
-  user: 
-  name: hdl_1957_957
-  vendor_url: http://ir.library.oregonstate.edu/dspace/community-list
-  conn_type: oai
-  bib_attr: 
-  mat_type: Article
-  url: ""
-  record_schema: oai_dc
-  alt_name: "Cooperative Institutional Research Program Reports "
-  id: "119"
-  definition: 
-  host: http://ir.library.oregonstate.edu/dspace-oai/request
-  isword: "0"
-  pass: 
-collections_018: 
-  virtual: dspace
-  user: 
-  name: hdl_1957_31
-  vendor_url: http://ir.library.oregonstate.edu/dspace/community-list
-  conn_type: oai
-  bib_attr: 
-  mat_type: Article
-  url: ""
-  record_schema: oai_dc
-  alt_name: Water and Watersheds Initiative
-  id: "108"
-  definition: 
-  host: http://ir.library.oregonstate.edu/dspace-oai/request
-  isword: "0"
-  pass: 
-collections_007: 
-  virtual: image
-  user: 
-  name: dna
-  vendor_url: http://digitalcollections.library.oregonstate.edu/dna
-  conn_type: oai
-  bib_attr: 
-  mat_type: Image
-  url: 
-  record_schema: oai_dc
-  alt_name: DNA
-  id: "19"
-  definition: 
-  host: http://digitalcollections.library.oregonstate.edu/cgi-bin/oai.exe
-  isword: "0"
-  pass: 
-collections_030: 
-  virtual: 
-  user: 
-  name: hdl_1957_958
-  vendor_url: http://ir.library.oregonstate.edu/dspace/community-list
-  conn_type: oai
-  bib_attr: 
-  mat_type: Article
-  url: ""
-  record_schema: oai_dc
-  alt_name: Faculty Survey of Student Engagement Reports
-  id: "120"
-  definition: 
-  host: http://ir.library.oregonstate.edu/dspace-oai/request
-  isword: "0"
-  pass: 
-collections_019: 
-  virtual: dspace
-  user: 
-  name: hdl_1957_4
-  vendor_url: http://ir.library.oregonstate.edu/dspace/community-list
-  conn_type: oai
-  bib_attr: 
-  mat_type: Article
-  url: ""
-  record_schema: oai_dc
-  alt_name: "Papers, Articles, and Conference Proceedings "
-  id: "109"
-  definition: 
-  host: http://ir.library.oregonstate.edu/dspace-oai/request
-  isword: "0"
-  pass: 
-collections_008: 
-  virtual: image
-  user: 
-  name: herbarium
-  vendor_url: http://digitalcollections.library.oregonstate.edu/herbarium
-  conn_type: oai
-  bib_attr: 
-  mat_type: Image
-  url: 
-  record_schema: oai_dc
-  alt_name: Herbarium Specimens Collection
-  id: "20"
-  definition: 
-  host: http://digitalcollections.library.oregonstate.edu/cgi-bin/oai.exe
-  isword: "0"
-  pass: 
-collections_031: 
-  virtual: 
-  user: 
-  name: hdl_1957_959
-  vendor_url: http://ir.library.oregonstate.edu/dspace/community-list
-  conn_type: oai
-  bib_attr: 
-  mat_type: Article
-  url: ""
-  record_schema: oai_dc
-  alt_name: National Survey of Student Engagement Reports
-  id: "121"
-  definition: 
-  host: http://ir.library.oregonstate.edu/dspace-oai/request
-  isword: "0"
-  pass: 
-collections_020: 
-  virtual: dspace
-  user: 
-  name: hdl_1957_456
-  vendor_url: http://ir.library.oregonstate.edu/dspace/community-list
-  conn_type: oai
-  bib_attr: 
-  mat_type: Article
-  url: ""
-  record_schema: oai_dc
-  alt_name: Bioresource Research
-  id: "110"
-  definition: 
-  host: http://ir.library.oregonstate.edu/dspace-oai/request
-  isword: "0"
-  pass: 
-collections_009: 
-  virtual: image
-  user: 
-  name: pawardsmedals
-  vendor_url: http://digitalcollections.library.oregonstate.edu/pawardsmedals
-  conn_type: oai
-  bib_attr: 
-  mat_type: Image
-  url: 
-  record_schema: oai_dc
-  alt_name: Pauling's Awards and Medals
-  id: "21"
-  definition: 
-  host: http://digitalcollections.library.oregonstate.edu/cgi-bin/oai.exe
-  isword: "0"
-  pass: 
-collections_032: 
-  virtual: 
-  user: 
-  name: hdl_1957_961
-  vendor_url: http://ir.library.oregonstate.edu/dspace/community-list
-  conn_type: oai
-  bib_attr: 
-  mat_type: Article
-  url: ""
-  record_schema: oai_dc
-  alt_name: Your First Year College Year Reports
-  id: "122"
-  definition: 
-  host: http://ir.library.oregonstate.edu/dspace-oai/request
-  isword: "0"
-  pass: 
-collections_021: 
-  virtual: dspace
-  user: 
-  name: hdl_1957_495
-  vendor_url: http://ir.library.oregonstate.edu/dspace/community-list
-  conn_type: oai
-  bib_attr: 
-  mat_type: Article
-  url: ""
-  record_schema: oai_dc
-  alt_name: Research Publications (BEE)
-  id: "111"
-  definition: 
-  host: http://ir.library.oregonstate.edu/dspace-oai/request
-  isword: "0"
-  pass: 
-collections_010: 
-  virtual: image
-  user: 
-  name: sickle
-  vendor_url: http://osulibrary.oregonstate.edu/specialcollections/coll/pauling/blood/index.html
-  conn_type: oai
-  bib_attr: 
-  mat_type: Image
-  url: 
-  record_schema: oai_dc
-  alt_name: Sickle-Cell Anemia Collection
-  id: "23"
-  definition: 
-  host: http://digitalcollections.library.oregonstate.edu/cgi-bin/oai.exe
-  isword: "0"
-  pass: 
-collections_033: 
-  virtual: 
+  host: http://www.em-consulte.com
+  harvested: 
+  harvest_day: "0123456"
+  definition: ""
+  actions_allowed: false
   user: ""
-  name: ORGB
-  vendor_url: http://0-infoweb.newsbank.com.oasis.oregonstate.edu/
+  definition_search: creator=1003;author=1003;subject=21;issn=8;isbn=7;callnum=16;publisher=1018;title=4;keyword=1016
+collection_00007: 
+  name: Ebsco_Historical Abstracts
+  isword: 0
+  is_parent: 0
+  filter_query: 
+  virtual: ""
+  vendor_url: http://ssur-rg2.ck.bpi.fr/MdbRG/LaunchOMM.aspx?NSNotShowWindow=0&IdDoc=1728&IdOmm=1583&IdWeb=1115
+  post_data: ""
+  mat_type: "R\xC3\xA9f\xC3\xA9rence bibliographique"
+  is_private: false
+  class_handle_right: ""
+  bib_attr: ""
+  alt_name: Historical Abstracts
+  url: ""
   conn_type: z3950
-  bib_attr: 
-  mat_type: Newspaper
-  url: ""
-  record_schema: Marc21
-  alt_name: Oregonian
-  id: "144"
-  definition: ati=245a;ti=730a;static=856u;date=0058;
-  host: catalog.newsbank.com:210/ORGB
-  isword: "0"
-  pass: ""
-collections_022: 
-  virtual: dspace
-  user: 
-  name: hdl_1957_496
-  vendor_url: http://ir.library.oregonstate.edu/dspace/community-list
-  conn_type: oai
-  bib_attr: 
+  proxy: 1
+  id: 7
+  availability: ""
+  record_schema: MARC21
+  oai_set: ""
+  has_right: false
+  pass: ebs8902
+  host: zgw.ebscohost.com:210/hia
+  harvested: 
+  harvest_day: "0123456"
+  definition: au=100a;au=700a;ati=245a;link=773t;link=773g;mat_type=72a;subject=606a;subject=650a;issn=022a;note=546a;note=520a;note=520b;date=903a;pub=260a;cnum=500a;static=856u;volume=945m;volume=945d;volume=945n;page=945p;direct_url=856u
+  actions_allowed: false
+  user: ns018102.main.z3950
+  definition_search: creator=1003;author=1003;subject=21;issn=8;isbn=7;callnum=16;publisher=1018;title=4;keyword=1016
+collection_00127: 
+  name: gallica:theme:0:07
+  isword: 0
+  is_parent: 0
+  filter_query: 
+  virtual: ""
+  vendor_url: "http://gallica.bnf.fr/editors?type=periodicals&lang=FR "
+  post_data: ""
   mat_type: Article
+  is_private: false
+  class_handle_right: 
+  bib_attr: ""
+  alt_name: "Gallica : Theme : Presse"
   url: ""
-  record_schema: oai_dc
-  alt_name: Theses and Dissertations (BEE)
-  id: "112"
-  definition: 
-  host: http://ir.library.oregonstate.edu/dspace-oai/request
-  isword: "0"
-  pass: 
-collections_011: 
-  virtual: image
-  user: 
-  name: streamsurvey
-  vendor_url: http://osulibrary.oregonstate.edu/digitalcollections/pacificNWstream/
   conn_type: oai
-  bib_attr: 
-  mat_type: Image
-  url: 
+  proxy: 1
+  id: 127
+  availability: ""
   record_schema: oai_dc
-  alt_name: NW Stream Survey
-  id: "24"
-  definition: 
-  host: http://digitalcollections.library.oregonstate.edu/cgi-bin/oai.exe
-  isword: "0"
-  pass: 
+  oai_set: gallica:theme:0:07
+  has_right: false
+  pass: ""
+  host: "http://oai.bnf.fr/oai2/OAIHandler "
+  harvested: 
+  harvest_day: "0123456"
+  definition: ""
+  actions_allowed: true
+  user: ""
+  definition_search: creator=1003;author=1003;subject=21;issn=8;isbn=7;callnum=16;publisher=1018;title=4;keyword=1016
+collection_00049: 
+  name: gallica:theme:0
+  isword: 0
+  is_parent: 0
+  filter_query: 
+  virtual: ""
+  vendor_url: ""
+  post_data: ""
+  mat_type: "Livre num\xC3\xA9rique"
+  is_private: false
+  class_handle_right: ""
+  bib_attr: ""
+  alt_name: "Gallica : G\xC3\xA9n\xC3\xA9ralit\xC3\xA9s "
+  url: ""
+  conn_type: oai
+  proxy: 1
+  id: 49
+  availability: ""
+  record_schema: oai_dc
+  oai_set: gallica:theme:0
+  has_right: false
+  pass: ""
+  host: http://oai.bnf.fr/oai2/OAIHandler
+  harvested: 1970-01-01 00:00:00 +01:00
+  harvest_day: "0123456"
+  definition: ""
+  actions_allowed: true
+  user: ""
+  definition_search: creator=1003;author=1003;subject=21;issn=8;isbn=7;callnum=16;publisher=1018;title=4;keyword=1016
+collection_00071: 
+  name: persee
+  isword: 0
+  is_parent: 1
+  filter_query: 
+  virtual: ""
+  vendor_url: ""
+  post_data: ""
+  mat_type: Article
+  is_private: false
+  class_handle_right: ""
+  bib_attr: ""
+  alt_name: "Pers\xC3\xA9e"
+  url: ""
+  conn_type: oai
+  proxy: 1
+  id: 71
+  availability: online
+  record_schema: oai_dc
+  oai_set: ""
+  has_right: false
+  pass: ""
+  host: http://oai.persee.fr/c/ext/prescript/oai
+  harvested: 2011-09-08 05:36:14 +02:00
+  harvest_day: "0"
+  definition: ""
+  actions_allowed: true
+  user: ""
+  definition_search: creator=1003;author=1003;subject=21;issn=8;isbn=7;callnum=16;publisher=1018;title=4;keyword=1016
+collection_00008: 
+  name: CSA_MLA
+  isword: 0
+  is_parent: 0
+  filter_query: 
+  virtual: ""
+  vendor_url: ""
+  post_data: ""
+  mat_type: "R\xC3\xA9f\xC3\xA9rence bibliographique"
+  is_private: false
+  class_handle_right: ""
+  bib_attr: ""
+  alt_name: MLA International Bibliography
+  url: ""
+  conn_type: z3950
+  proxy: 1
+  id: 8
+  availability: ""
+  record_schema: SUTRS
+  oai_set: ""
+  has_right: false
+  pass: bpi6868
+  host: Z3950.csa.com:210/mla-set-c
+  harvested: 
+  harvest_day: "0123456"
+  definition: identifier=an;atitle=ti;title=ti;ptitle=ti;author=au;subject=de;source=ip;abstract=ab;
+  actions_allowed: false
+  user: bpi68
+  definition_search: creator=1003;author=1003;subject=21;issn=8;isbn=7;callnum=16;publisher=1018;title=4;keyword=1016
+collection_00107: 
+  name: oxforddnb
+  isword: 0
+  is_parent: 0
+  filter_query: 
+  virtual: ""
+  vendor_url: http://www.oxforddnb.com
+  post_data: 
+  mat_type: Article
+  is_private: false
+  class_handle_right: ""
+  bib_attr: ""
+  alt_name: Oxford Dictionay of National Biography
+  url: http://www.oxforddnb.com
+  conn_type: connector
+  proxy: 1
+  id: 107
+  availability: online
+  record_schema: oxforddnb
+  oai_set: oxford
+  has_right: false
+  pass: ""
+  host: http://www.oxforddnb.com/top/top.jsp
+  harvested: 
+  harvest_day: "0123456"
+  definition: ""
+  actions_allowed: false
+  user: ""
+  definition_search: creator=1003;author=1003;subject=21;issn=8;isbn=7;callnum=16;publisher=1018;title=4;keyword=1016
+collection_00128: 
+  name: CRAWLER
+  isword: 0
+  is_parent: 0
+  filter_query: 
+  virtual: ""
+  vendor_url: ""
+  post_data: ""
+  mat_type: Site
+  is_private: false
+  class_handle_right: 
+  bib_attr: ""
+  alt_name: CRAWLER
+  url: ""
+  conn_type: connector
+  proxy: 1
+  id: 128
+  availability: ""
+  record_schema: ""
+  oai_set: Crawler
+  has_right: false
+  pass: ""
+  host: http://10.1.2.129:8180/solr/crawler-bpi
+  harvested: 
+  harvest_day: "0123456"
+  definition: collection:art
+  actions_allowed: false
+  user: ""
+  definition_search: creator=1003;author=1003;subject=21;issn=8;isbn=7;callnum=16;publisher=1018;title=4;keyword=1016
+collection_00072: 
+  name: discipline:persee:12
+  isword: 0
+  is_parent: 0
+  filter_query: 
+  virtual: ""
+  vendor_url: ""
+  post_data: 
+  mat_type: Article
+  is_private: false
+  class_handle_right: ""
+  bib_attr: ""
+  alt_name: "Pers\xC3\xA9e : Sociologie"
+  url: ""
+  conn_type: oai
+  proxy: 1
+  id: 72
+  availability: ""
+  record_schema: oai_dc
+  oai_set: discipline:persee:12
+  has_right: false
+  pass: ""
+  host: http://oai.persee.fr/c/ext/prescript/oai
+  harvested: 2011-09-08 16:35:26 +02:00
+  harvest_day: "6"
+  definition: ""
+  actions_allowed: true
+  user: ""
+  definition_search: creator=1003;author=1003;subject=21;issn=8;isbn=7;callnum=16;publisher=1018;title=4;keyword=1016
+collection_00093: 
+  name: quinzaine
+  isword: 0
+  is_parent: 0
+  filter_query: 
+  virtual: ""
+  vendor_url: ""
+  post_data: 
+  mat_type: Article
+  is_private: false
+  class_handle_right: ""
+  bib_attr: ""
+  alt_name: "La Quinzaine Litt\xC3\xA9raire"
+  url: ""
+  conn_type: quinzaine
+  proxy: 1
+  id: 93
+  availability: 
+  record_schema: ""
+  oai_set: 
+  has_right: false
+  pass: ""
+  host: /srv/quinzaine/Index_quinzaine.txt
+  harvested: 
+  harvest_day: "0123456"
+  definition: ""
+  actions_allowed: false
+  user: ""
+  definition_search: creator=1003;author=1003;subject=21;issn=8;isbn=7;callnum=16;publisher=1018;title=4;keyword=1016
+collection_00129: 
+  name: PublieNet
+  isword: 0
+  is_parent: 0
+  filter_query: 
+  virtual: ""
+  vendor_url: ""
+  post_data: ""
+  mat_type: Article
+  is_private: false
+  class_handle_right: 
+  bib_attr: ""
+  alt_name: PublieNet
+  url: ""
+  conn_type: connector
+  proxy: 1
+  id: 129
+  availability: ""
+  record_schema: ""
+  oai_set: PublieNet
+  has_right: false
+  pass: ""
+  host: http://ws.immateriel.fr
+  harvested: 2012-02-23 16:35:12 +01:00
+  harvest_day: "0123456"
+  definition: ""
+  actions_allowed: false
+  user: ""
+  definition_search: creator=1003;author=1003;subject=21;issn=8;isbn=7;callnum=16;publisher=1018;title=4;keyword=1016
+collection_00010: 
+  name: Ovid_Pascal
+  isword: 0
+  is_parent: 0
+  filter_query: 
+  virtual: ""
+  vendor_url: ""
+  post_data: ""
+  mat_type: "R\xC3\xA9f\xC3\xA9rence bibliographique"
+  is_private: false
+  class_handle_right: ""
+  bib_attr: "@attr 4=1 @attr 3=3"
+  alt_name: Pascal
+  url: ""
+  conn_type: z3950
+  proxy: 1
+  id: 10
+  availability: ""
+  record_schema: usmarc
+  oai_set: ""
+  has_right: false
+  pass: federate
+  host: z3950.ovid.com:210/PASC
+  harvested: 
+  harvest_day: "0123456"
+  definition: title=245a;publisher=550a;contributor=700a;direct_url=856u;subject=650a;abstract=520a;author=100a;lang=041a;coverage=260a;
+  actions_allowed: false
+  user: z3950bpi
+  definition_search: creator=1003;author=1003;subject=21;issn=8;isbn=7;callnum=16;publisher=1018;title=4;keyword=1016
+collection_00108: 
+  name: oxfordart
+  isword: 0
+  is_parent: 0
+  filter_query: 
+  virtual: ""
+  vendor_url: http://www.oxfordartonline.com
+  post_data: ""
+  mat_type: Article
+  is_private: false
+  class_handle_right: ""
+  bib_attr: ""
+  alt_name: Oxford Art Online
+  url: http://www.oxfordartonline.com
+  conn_type: connector
+  proxy: 1
+  id: 108
+  availability: online
+  record_schema: Oxfordgeneric
+  oai_set: oxford
+  has_right: false
+  pass: ""
+  host: http://www.oxfordartonline.com
+  harvested: 
+  harvest_day: "0123456"
+  definition: ""
+  actions_allowed: false
+  user: ""
+  definition_search: creator=1003;author=1003;subject=21;issn=8;isbn=7;callnum=16;publisher=1018;title=4;keyword=1016
+collection_00009: 
+  name: Ovid_Francis
+  isword: 0
+  is_parent: 0
+  filter_query: 
+  virtual: ""
+  vendor_url: http://ssur-rg2.ck.bpi.fr/MdbRG/LaunchOMM.aspx?NSNotShowWindow=0&IdDoc=1965&IdOmm=1849&IdWeb=1146
+  post_data: ""
+  mat_type: "R\xC3\xA9f\xC3\xA9rence bibliographique"
+  is_private: false
+  class_handle_right: ""
+  bib_attr: "@attr 4=1 @attr 3=3"
+  alt_name: Francis
+  url: ""
+  conn_type: z3950
+  proxy: 1
+  id: 9
+  availability: ""
+  record_schema: usmarc
+  oai_set: ""
+  has_right: false
+  pass: federate
+  host: z3950.ovid.com:210/FNCS
+  harvested: 
+  harvest_day: "0123456"
+  definition: ptitle=245a;author=100a;contributor=700a;direct_url=856u;coverage=260a;subject=650a;rights=017a;abstract=520a;coverage=773t;lang=041a;title=245a;
+  actions_allowed: false
+  user: z3950bpi
+  definition_search: creator=1003;author=1003;subject=21;issn=8;isbn=7;callnum=16;publisher=1018;title=4;keyword=1016
+collection_00073: 
+  name: discipline:persee:3
+  isword: 0
+  is_parent: 0
+  filter_query: 
+  virtual: ""
+  vendor_url: ""
+  post_data: 
+  mat_type: Article
+  is_private: false
+  class_handle_right: ""
+  bib_attr: ""
+  alt_name: "Pers\xC3\xA9e : Anthropologie"
+  url: ""
+  conn_type: oai
+  proxy: 1
+  id: 73
+  availability: ""
+  record_schema: oai_dc
+  oai_set: discipline:persee:3
+  has_right: false
+  pass: ""
+  host: http://oai.persee.fr/c/ext/prescript/oai
+  harvested: 1970-01-01 00:00:00 +01:00
+  harvest_day: "1"
+  definition: ""
+  actions_allowed: true
+  user: ""
+  definition_search: creator=1003;author=1003;subject=21;issn=8;isbn=7;callnum=16;publisher=1018;title=4;keyword=1016
+collection_00094: 
+  name: Contemporary authors_Gale
+  isword: 0
+  is_parent: 0
+  filter_query: 
+  virtual: ""
+  vendor_url: ""
+  post_data: ""
+  mat_type: Article
+  is_private: false
+  class_handle_right: ""
+  bib_attr: ""
+  alt_name: Contemporary Authors
+  url: ""
+  conn_type: z3950
+  proxy: 1
+  id: 94
+  availability: online
+  record_schema: marc21
+  oai_set: ""
+  has_right: false
+  pass: ""
+  host: z3950.iacenter.com:210/CA
+  harvested: 
+  harvest_day: "0123456"
+  definition: ptitle=245a;title=245a;abstract=900s;date=997a;subject=900o;relation=900v;author=900c;direct_url=856u;
+  actions_allowed: false
+  user: bibpi
+  definition_search: creator=1003;author=1003;subject=21;issn=8;isbn=7;callnum=16;publisher=1018;title=4;keyword=1016
+collection_00011: 
+  name: CSA_IBSS
+  isword: 0
+  is_parent: 0
+  filter_query: 
+  virtual: ""
+  vendor_url: ""
+  post_data: ""
+  mat_type: "R\xC3\xA9f\xC3\xA9rence bibliographique"
+  is_private: false
+  class_handle_right: ""
+  bib_attr: ""
+  alt_name: International Bibliography of the Social Sciences (IBSS)
+  url: ""
+  conn_type: z3950
+  proxy: 1
+  id: 11
+  availability: ""
+  record_schema: SUTRS
+  oai_set: ""
+  has_right: false
+  pass: bpi6868
+  host: z3950.csa.com:210/ibss-set-c
+  harvested: 
+  harvest_day: "0123456"
+  definition: identifier=an;atitle=ti;title=ti;ptitle=ti;author=au;subject=de;source=ip;abstract=ab;
+  actions_allowed: false
+  user: bpi68
+  definition_search: creator=1003;author=1003;subject=21;issn=8;isbn=7;callnum=16;publisher=1018;title=4;keyword=1016
+collection_00109: 
+  name: oxfordmusic
+  isword: 0
+  is_parent: 0
+  filter_query: 
+  virtual: ""
+  vendor_url: http://www.oxfordmusiconline.com
+  post_data: 
+  mat_type: Article
+  is_private: false
+  class_handle_right: ""
+  bib_attr: ""
+  alt_name: Oxford Music Online
+  url: http://www.oxfordmusiconline.com
+  conn_type: connector
+  proxy: 1
+  id: 109
+  availability: online
+  record_schema: Oxfordgeneric
+  oai_set: oxford
+  has_right: false
+  pass: ""
+  host: http://www.oxfordmusiconline.com
+  harvested: 
+  harvest_day: "0123456"
+  definition: ""
+  actions_allowed: false
+  user: ""
+  definition_search: creator=1003;author=1003;subject=21;issn=8;isbn=7;callnum=16;publisher=1018;title=4;keyword=1016
+collection_00053: 
+  name: gallica:1
+  isword: 0
+  is_parent: 0
+  filter_query: 
+  virtual: ""
+  vendor_url: ""
+  post_data: 
+  mat_type: "Livre num\xC3\xA9rique"
+  is_private: false
+  class_handle_right: ""
+  bib_attr: ""
+  alt_name: "Gallica : Philosophie"
+  url: ""
+  conn_type: oai
+  proxy: 1
+  id: 53
+  availability: ""
+  record_schema: oai_dc
+  oai_set: gallica:1
+  has_right: false
+  pass: ""
+  host: http://oai.bnf.fr/oai2/OAIHandler
+  harvested: 1970-01-01 00:00:00 +01:00
+  harvest_day: "5"
+  definition: ""
+  actions_allowed: false
+  user: ""
+  definition_search: creator=1003;author=1003;subject=21;issn=8;isbn=7;callnum=16;publisher=1018;title=4;keyword=1016
+collection_00074: 
+  name: discipline:persee:16
+  isword: 0
+  is_parent: 0
+  filter_query: 
+  virtual: ""
+  vendor_url: ""
+  post_data: 
+  mat_type: Article
+  is_private: false
+  class_handle_right: ""
+  bib_attr: ""
+  alt_name: "Pers\xC3\xA9e : Sciences de l'\xC3\xA9ducation"
+  url: ""
+  conn_type: oai
+  proxy: 1
+  id: 74
+  availability: ""
+  record_schema: oai_dc
+  oai_set: discipline:persee:16
+  has_right: false
+  pass: ""
+  host: http://oai.persee.fr/c/ext/prescript/oai
+  harvested: 2011-09-08 16:36:45 +02:00
+  harvest_day: "3"
+  definition: ""
+  actions_allowed: true
+  user: ""
+  definition_search: creator=1003;author=1003;subject=21;issn=8;isbn=7;callnum=16;publisher=1018;title=4;keyword=1016
+collection_00095: 
+  name: OvidSP_RILM
+  isword: 0
+  is_parent: 0
+  filter_query: 
+  virtual: ""
+  vendor_url: ""
+  post_data: ""
+  mat_type: "R\xC3\xA9f\xC3\xA9rence bibliographique"
+  is_private: false
+  class_handle_right: ""
+  bib_attr: ""
+  alt_name: RILM Abstracts of Music Literature
+  url: ""
+  conn_type: z3950
+  proxy: 1
+  id: 95
+  availability: ""
+  record_schema: marc21
+  oai_set: ""
+  has_right: false
+  pass: federate
+  host: z3950.ovid.com:210/RILM
+  harvested: 
+  harvest_day: "0123456"
+  definition: title=245a;atitle=773i;author=100a;author=700a;abstract=500a;subject=650a;direct_url=957u;
+  actions_allowed: false
+  user: z3950bpi
+  definition_search: creator=1003;author=1003;subject=21;issn=8;isbn=7;callnum=16;publisher=1018;title=4;keyword=1016
+collection_00012: 
+  name: CSA_FIAF
+  isword: 0
+  is_parent: 0
+  filter_query: 
+  virtual: ""
+  vendor_url: ""
+  post_data: ""
+  mat_type: "R\xC3\xA9f\xC3\xA9rence bibliographique"
+  is_private: false
+  class_handle_right: ""
+  bib_attr: ""
+  alt_name: FIAF
+  url: ""
+  conn_type: z3950
+  proxy: 1
+  id: 12
+  availability: ""
+  record_schema: USMARC
+  oai_set: ""
+  has_right: false
+  pass: renard25
+  host: fiaf.chadwyck.co.uk:210/filmperiodicals
+  harvested: 
+  harvest_day: "0123456"
+  definition: title=245a;subject=773a;author=100a;contributor=700a;issn=773x;abstract=500a;abstract=540a;direct_url=856u;
+  actions_allowed: false
+  user: bpiparis
+  definition_search: creator=1003;author=1003;subject=21;issn=8;isbn=7;callnum=16;publisher=1018;title=4;keyword=1016
+collection_00054: 
+  name: gallica:2
+  isword: 0
+  is_parent: 0
+  filter_query: 
+  virtual: ""
+  vendor_url: ""
+  post_data: 
+  mat_type: "Livre num\xC3\xA9rique"
+  is_private: false
+  class_handle_right: ""
+  bib_attr: ""
+  alt_name: "Gallica : Religion"
+  url: ""
+  conn_type: oai
+  proxy: 1
+  id: 54
+  availability: ""
+  record_schema: oai_dc
+  oai_set: gallica:2
+  has_right: false
+  pass: ""
+  host: http://oai.bnf.fr/oai2/OAIHandler
+  harvested: 1970-01-01 00:00:00 +01:00
+  harvest_day: "6"
+  definition: ""
+  actions_allowed: false
+  user: ""
+  definition_search: creator=1003;author=1003;subject=21;issn=8;isbn=7;callnum=16;publisher=1018;title=4;keyword=1016
+collection_00075: 
+  name: discipline:persee:8
+  isword: 0
+  is_parent: 0
+  filter_query: 
+  virtual: ""
+  vendor_url: ""
+  post_data: 
+  mat_type: Article
+  is_private: false
+  class_handle_right: ""
+  bib_attr: ""
+  alt_name: "Pers\xC3\xA9e : Linguistique"
+  url: ""
+  conn_type: oai
+  proxy: 1
+  id: 75
+  availability: ""
+  record_schema: oai_dc
+  oai_set: discipline:persee:8
+  has_right: false
+  pass: ""
+  host: http://oai.persee.fr/c/ext/prescript/oai
+  harvested: 1970-01-01 00:00:00 +01:00
+  harvest_day: "1"
+  definition: ""
+  actions_allowed: true
+  user: ""
+  definition_search: creator=1003;author=1003;subject=21;issn=8;isbn=7;callnum=16;publisher=1018;title=4;keyword=1016
+collection_00096: 
+  name: professionpolitique
+  isword: 0
+  is_parent: 0
+  filter_query: 
+  virtual: ""
+  vendor_url: ""
+  post_data: 
+  mat_type: Article
+  is_private: false
+  class_handle_right: ""
+  bib_attr: ""
+  alt_name: Profession Politique
+  url: ""
+  conn_type: ProfessionPolitique
+  proxy: 1
+  id: 96
+  availability: online
+  record_schema: ""
+  oai_set: ""
+  has_right: false
+  pass: ""
+  host: http://www.professionpolitique.info/xml/feed
+  harvested: 2011-09-08 19:32:11 +02:00
+  harvest_day: "0123456"
+  definition: ""
+  actions_allowed: true
+  user: ""
+  definition_search: creator=1003;author=1003;subject=21;issn=8;isbn=7;callnum=16;publisher=1018;title=4;keyword=1016
+collection_00112: 
+  name: classiques_garnier
+  isword: 0
+  is_parent: 0
+  filter_query: 
+  virtual: ""
+  vendor_url: http://www.classiques-garnier.com
+  post_data: 
+  mat_type: "Encyclop\xC3\xA9die et dictionnaire"
+  is_private: false
+  class_handle_right: ""
+  bib_attr: ""
+  alt_name: Classiques Garnier
+  url: http://www.classiques-garnier.com
+  conn_type: connector
+  proxy: 1
+  id: 112
+  availability: online
+  record_schema: ""
+  oai_set: ClassiquesGarnier
+  has_right: false
+  pass: ""
+  host: http://www.classiques-garnier.com
+  harvested: 2012-02-20 15:07:10 +01:00
+  harvest_day: "0123456"
+  definition: ""
+  actions_allowed: true
+  user: ""
+  definition_search: creator=1003;author=1003;subject=21;issn=8;isbn=7;callnum=16;publisher=1018;title=4;keyword=1016
+collection_00013: 
+  name: Ovid_Atla Religion
+  isword: 0
+  is_parent: 0
+  filter_query: 
+  virtual: ""
+  vendor_url: http://ssur-rg2.ck.bpi.fr/MdbRG/LaunchOMM.aspx?NSNotShowWindow=0&IdDoc=1744&IdOmm=1598&IdWeb=964
+  post_data: ""
+  mat_type: "R\xC3\xA9f\xC3\xA9rence bibliographique"
+  is_private: false
+  class_handle_right: ""
+  bib_attr: ""
+  alt_name: Atla Religion
+  url: ""
+  conn_type: z3950
+  proxy: 1
+  id: 13
+  availability: ""
+  record_schema: marc21
+  oai_set: ""
+  has_right: false
+  pass: federate
+  host: z3950.ovid.com:210/ATLA
+  harvested: 
+  harvest_day: "0123456"
+  definition: atitle=245a;ptitle=245a;lang=041a;material_type=567a;ptitle=245a;subject=260b;title=245a;
+  actions_allowed: false
+  user: z3950bpi
+  definition_search: creator=1003;author=1003;subject=21;issn=8;isbn=7;callnum=16;publisher=1018;title=4;keyword=1016
+collection_00055: 
+  name: gallica:cartes
+  isword: 0
+  is_parent: 0
+  filter_query: 
+  virtual: ""
+  vendor_url: ""
+  post_data: ""
+  mat_type: Carte
+  is_private: false
+  class_handle_right: ""
+  bib_attr: ""
+  alt_name: "Gallica : Documents cartographiques"
+  url: ""
+  conn_type: oai
+  proxy: 1
+  id: 55
+  availability: online
+  record_schema: oai_dc
+  oai_set: gallica:typedoc:cartes
+  has_right: false
+  pass: ""
+  host: http://oai.bnf.fr/oai2/OAIHandler
+  harvested: 2011-09-08 10:01:41 +02:00
+  harvest_day: "0"
+  definition: ""
+  actions_allowed: true
+  user: ""
+  definition_search: creator=1003;author=1003;subject=21;issn=8;isbn=7;callnum=16;publisher=1018;title=4;keyword=1016
+collection_00097: 
+  name: gallica:audio
+  isword: 0
+  is_parent: 0
+  filter_query: 
+  virtual: ""
+  vendor_url: ""
+  post_data: 
+  mat_type: "R\xC3\xA9f\xC3\xA9rence bibliographique"
+  is_private: false
+  class_handle_right: ""
+  bib_attr: ""
+  alt_name: "Gallica : Paroles et musiques"
+  url: ""
+  conn_type: oai
+  proxy: 1
+  id: 97
+  availability: ""
+  record_schema: oai_dc
+  oai_set: gallica:audio
+  has_right: false
+  pass: ""
+  host: http://oai.bnf.fr/oai2/OAIHandler
+  harvested: 1970-01-01 00:00:00 +01:00
+  harvest_day: "3245"
+  definition: ""
+  actions_allowed: true
+  user: ""
+  definition_search: creator=1003;author=1003;subject=21;issn=8;isbn=7;callnum=16;publisher=1018;title=4;keyword=1016
+collection_00113: 
+  name: europresse
+  isword: 0
+  is_parent: 0
+  filter_query: 
+  virtual: ""
+  vendor_url: ""
+  post_data: ctl00$Main$ucLoginBiblio$txbUserName=pompi|ctl00$Main$ucLoginBiblio$txbPassword=biblio
+  mat_type: Article
+  is_private: false
+  class_handle_right: ""
+  bib_attr: ""
+  alt_name: Europresse
+  url: ""
+  conn_type: connector
+  proxy: 1
+  id: 113
+  availability: online
+  record_schema: ""
+  oai_set: europresse
+  has_right: false
+  pass: biblio
+  host: http://www.bpe.europresse.com/ip/intro.asp?user=pompi
+  harvested: 
+  harvest_day: "0123456"
+  definition: ""
+  actions_allowed: false
+  user: pompi
+  definition_search: creator=1003;author=1003;subject=21;issn=8;isbn=7;callnum=16;publisher=1018;title=4;keyword=1016
+collection_00014: 
+  name: DeGruyter_Germanistik
+  isword: 0
+  is_parent: 0
+  filter_query: 
+  virtual: ""
+  vendor_url: ""
+  post_data: ""
+  mat_type: Article
+  is_private: false
+  class_handle_right: ""
+  bib_attr: ""
+  alt_name: Germanistik Journal
+  url: ""
+  conn_type: z3950
+  proxy: 1
+  id: 14
+  availability: ""
+  record_schema: usmarc
+  oai_set: ""
+  has_right: false
+  pass: ""
+  host: www.reference-global.com:210/default
+  harvested: 
+  harvest_day: "0123456"
+  definition: author=700a;static_url=856u;direct_url=856u;title=245a;date=260c;source=260b;format=505a;volume=362a;issue=362a;ptitle=245a;atitle=245a;
+  actions_allowed: false
+  user: ""
+  definition_search: creator=1003;author=1003;subject=21;issn=8;isbn=7;callnum=16;publisher=1018;title=4;keyword=1016
+collection_00056: 
+  name: gallica:typedoc:partitions
+  isword: 0
+  is_parent: 0
+  filter_query: 
+  virtual: ""
+  vendor_url: ""
+  post_data: ""
+  mat_type: Partition
+  is_private: false
+  class_handle_right: ""
+  bib_attr: ""
+  alt_name: "Gallica : Partitions"
+  url: ""
+  conn_type: oai
+  proxy: 1
+  id: 56
+  availability: online
+  record_schema: oai_dc
+  oai_set: gallica:typedoc:partitions
+  has_right: false
+  pass: ""
+  host: http://oai.bnf.fr/oai2/OAIHandler
+  harvested: 2012-01-13 11:37:49 +01:00
+  harvest_day: "1"
+  definition: ""
+  actions_allowed: true
+  user: ""
+  definition_search: creator=1003;author=1003;subject=21;issn=8;isbn=7;callnum=16;publisher=1018;title=4;keyword=1016
+collection_00077: 
+  name: Grolier-MultimEncyclopedia 2
+  isword: 0
+  is_parent: 0
+  filter_query: 
+  virtual: ""
+  vendor_url: ""
+  post_data: ""
+  mat_type: Article
+  is_private: false
+  class_handle_right: ""
+  bib_attr: ""
+  alt_name: Encyclopedia Multimedia
+  url: http://go.grolier.com/
+  conn_type: z3950
+  proxy: 1
+  id: 77
+  availability: ""
+  record_schema: MARC21
+  oai_set: ""
+  has_right: false
+  pass: z3950
+  host: z3950.grolier.com:210/gme
+  harvested: 
+  harvest_day: "0123456"
+  definition: atitle=245a;direct_url=856u;title=245a;source=786n;publisher=260b;abstract=520a;rights=540a;lang=041a;author=700a;
+  actions_allowed: false
+  user: zbpi
+  definition_search: creator=1003;author=1003;subject=21;issn=8;isbn=7;callnum=16;publisher=1018;title=4;keyword=1016
+collection_00098: 
+  name: Ebsco_Multilingual Health Databases
+  isword: 0
+  is_parent: 0
+  filter_query: 
+  virtual: ""
+  vendor_url: ""
+  post_data: 
+  mat_type: Article
+  is_private: false
+  class_handle_right: ""
+  bib_attr: ""
+  alt_name: Multilingual Health Databases
+  url: ""
+  conn_type: z3950
+  proxy: 1
+  id: 98
+  availability: ""
+  record_schema: MARC21
+  oai_set: ""
+  has_right: false
+  pass: ebs8902
+  host: zgw.ebscohost.com:210/hxh
+  harvested: 
+  harvest_day: "0123456"
+  definition: au=100a;au=700a;ati=245a;ti=242a;link=773t;link=773g;mat_type=72a;subject=606a;subject=650a;note=546a;note=520a;note=520b
+  actions_allowed: false
+  user: ns018102.main.z3950
+  definition_search: creator=1003;author=1003;subject=21;issn=8;isbn=7;callnum=16;publisher=1018;title=4;keyword=1016
+collection_00114: 
+  name: CO
+  isword: 0
+  is_parent: 0
+  filter_query: 
+  virtual: ""
+  vendor_url: ""
+  post_data: 
+  mat_type: "D\xC3\xA9bat et enregistrement"
+  is_private: false
+  class_handle_right: ""
+  bib_attr: ""
+  alt_name: "Concerts de la Cit\xC3\xA9 de la Musique"
+  url: ""
+  conn_type: oai
+  proxy: 1
+  id: 114
+  availability: ""
+  record_schema: oai_dc
+  oai_set: CO
+  has_right: false
+  pass: ""
+  host: http://194.250.19.133/scripts/oaiserver.asp
+  harvested: 1970-01-01 00:00:00 +01:00
+  harvest_day: "0123456"
+  definition: ""
+  actions_allowed: true
+  user: ""
+  definition_search: creator=1003;author=1003;subject=21;issn=8;isbn=7;callnum=16;publisher=1018;title=4;keyword=1016
+collection_00015: 
+  name: CSA_ArtBibModern
+  isword: 0
+  is_parent: 0
+  filter_query: 
+  virtual: ""
+  vendor_url: ""
+  post_data: ""
+  mat_type: "R\xC3\xA9f\xC3\xA9rence bibliographique"
+  is_private: false
+  class_handle_right: ""
+  bib_attr: ""
+  alt_name: Art Bibliographies Modern
+  url: ""
+  conn_type: z3950
+  proxy: 0
+  id: 15
+  availability: ""
+  record_schema: SUTRS
+  oai_set: ""
+  has_right: false
+  pass: bpi6868
+  host: Z3950.csa.com:210/artbm-set-c
+  harvested: 
+  harvest_day: "0123456"
+  definition: identifier=an;atitle=ti;title=ti;ptitle=ti;author=au;subject=sa;source=ip;abstract=ab;date=py;issn=is
+  actions_allowed: false
+  user: bpi68
+  definition_search: creator=1003;author=1003;subject=21;issn=8;isbn=7;callnum=16;publisher=1018;title=4;keyword=1016
+collection_00057: 
+  name: gallica:monographies
+  isword: 0
+  is_parent: 0
+  filter_query: 
+  virtual: ""
+  vendor_url: ""
+  post_data: 
+  mat_type: "Livre num\xC3\xA9rique"
+  is_private: false
+  class_handle_right: ""
+  bib_attr: ""
+  alt_name: "Gallica : Monographies"
+  url: ""
+  conn_type: oai
+  proxy: 1
+  id: 57
+  availability: ""
+  record_schema: oai_dc
+  oai_set: gallica:monographies
+  has_right: false
+  pass: ""
+  host: http://oai.bnf.fr/oai2/OAIHandler
+  harvested: 1970-01-01 00:00:00 +01:00
+  harvest_day: "2"
+  definition: ""
+  actions_allowed: true
+  user: ""
+  definition_search: creator=1003;author=1003;subject=21;issn=8;isbn=7;callnum=16;publisher=1018;title=4;keyword=1016
+collection_00078: 
+  name: Oregon State University
+  isword: 0
+  is_parent: 0
+  filter_query: 
+  virtual: ""
+  vendor_url: ""
+  post_data: 
+  mat_type: Article
+  is_private: false
+  class_handle_right: ""
+  bib_attr: ""
+  alt_name: Oregon State University (INNOPAC)
+  url: ""
+  conn_type: z3950
+  proxy: 1
+  id: 78
+  availability: 
+  record_schema: ""
+  oai_set: 
+  has_right: false
+  pass: ""
+  host: oasis.orst.edu:210/INNOPAC
+  harvested: 
+  harvest_day: "0123456"
+  definition: ati=245a;ti=773a;au=100a;au=700a;au=710a;issn=773x;bn=020a;date=008;note=513a;note=520a;note=516a;ti=440a;subject=650a;subject=651a;note=546a;note=545a;note=596a;doi=856b;link=856u
+  actions_allowed: false
+  user: ""
+  definition_search: creator=1003;author=1003;subject=21;issn=8;isbn=7;callnum=16;publisher=1018;title=4;keyword=1016
+collection_00099: 
+  name: Wilson_Art Museum Image Gallery
+  isword: 0
+  is_parent: 0
+  filter_query: 
+  virtual: ""
+  vendor_url: http://vnweb.hwwilsonweb.com/hww/advancedsearch/advanced_search.jhtml;hwwilsonid=W4RV1IYTBRCBFQA3DILSFGOADUNGIIV0?prod=
+  post_data: ""
+  mat_type: Image
+  is_private: false
+  class_handle_right: ""
+  bib_attr: ""
+  alt_name: Art Museum Image Gallery
+  url: ""
+  conn_type: z3950
+  proxy: 1
+  id: 99
+  availability: online
+  record_schema: marc21
+  oai_set: ""
+  has_right: false
+  pass: ""
+  host: z3950.hwwilsonweb.com:210/ARTIG
+  harvested: 
+  harvest_day: "0123456"
+  definition: atitle=245a;material_type=072a;date=046t;format=300c;subject=600a;subject=600g;direct_url=856u;publisher=540a;source=541f;source=720a;contributor=650a
+  actions_allowed: false
+  user: ""
+  definition_search: artist=1002;author=1003;subject=1009;callnum=16;publisher=1018;title=41;keyword=1016;abstract=62
+collection_00080: 
+  name: irevues.inist
+  isword: 0
+  is_parent: 1
+  filter_query: 
+  virtual: ""
+  vendor_url: ""
+  post_data: 
+  mat_type: Revue
+  is_private: false
+  class_handle_right: ""
+  bib_attr: ""
+  alt_name: I-Revues
+  url: ""
+  conn_type: oai
+  proxy: 1
+  id: 80
+  availability: ""
+  record_schema: oai_dc
+  oai_set: ""
+  has_right: false
+  pass: ""
+  host: http://documents.irevues.inist.fr/dspace-oai/request
+  harvested: 2011-08-26 16:57:40 +02:00
+  harvest_day: "0123456"
+  definition: ""
+  actions_allowed: true
+  user: ""
+  definition_search: creator=1003;author=1003;subject=21;issn=8;isbn=7;callnum=16;publisher=1018;title=4;keyword=1016
+collection_00079: 
+  name: Classiques Garnier Bis
+  isword: 0
+  is_parent: 0
+  filter_query: 
+  virtual: ""
+  vendor_url: ""
+  post_data: 
+  mat_type: "Encyclop\xC3\xA9die et dictionnaire"
+  is_private: false
+  class_handle_right: ""
+  bib_attr: ""
+  alt_name: Classiques Garnier Bis
+  url: ""
+  conn_type: z3950
+  proxy: 1
+  id: 79
+  availability: 
+  record_schema: XML
+  oai_set: 
+  has_right: false
+  pass: ""
+  host: classiques-garnier.com
+  harvested: 
+  harvest_day: "0123456"
+  definition: ati=245a;ti=773a;au=100a;au=700a
+  actions_allowed: false
+  user: "@attr 1=1003 @attr 4=1 \"crime\""
+  definition_search: creator=1003;author=1003;subject=21;issn=8;isbn=7;callnum=16;publisher=1018;title=4;keyword=1016
+collection_00016: 
+  name: CSA_FilmIndexInter
+  isword: 0
+  is_parent: 0
+  filter_query: 
+  virtual: ""
+  vendor_url: ""
+  post_data: ""
+  mat_type: Article
+  is_private: false
+  class_handle_right: ""
+  bib_attr: ""
+  alt_name: Film Index International (FII)
+  url: ""
+  conn_type: z3950
+  proxy: 1
+  id: 16
+  availability: ""
+  record_schema: SUTRS
+  oai_set: ""
+  has_right: false
+  pass: bpiwtuk
+  host: fii.chadwyck.co.uk:210/fii
+  harvested: 
+  harvest_day: "0123456"
+  definition: title=245a;subject=773t;author=700a;date=260c;abstract=540a;direct_url=856u;
+  actions_allowed: false
+  user: bpi
+  definition_search: creator=1003;author=1003;subject=21;issn=8;isbn=7;callnum=16;publisher=1018;title=4;keyword=1016
+collection_00116: 
+  name: IM_cite_musique
+  isword: 0
+  is_parent: 0
+  filter_query: 
+  virtual: ""
+  vendor_url: ""
+  post_data: 
+  mat_type: Image
+  is_private: false
+  class_handle_right: ""
+  bib_attr: ""
+  alt_name: "Cit\xC3\xA9 de la Musique : Images du Mus\xC3\xA9e de la Musique"
+  url: ""
+  conn_type: oai
+  proxy: 1
+  id: 116
+  availability: ""
+  record_schema: oai_dc
+  oai_set: IM
+  has_right: false
+  pass: ""
+  host: http://194.250.19.133/scripts/oaiserver.asp
+  harvested: 2011-08-29 15:51:44 +02:00
+  harvest_day: "0123456"
+  definition: ""
+  actions_allowed: false
+  user: ""
+  definition_search: creator=1003;author=1003;subject=21;issn=8;isbn=7;callnum=16;publisher=1018;title=4;keyword=1016
+collection_00017: 
+  name: CSA_IntIndMusicPerio
+  isword: 0
+  is_parent: 0
+  filter_query: 
+  virtual: ""
+  vendor_url: ""
+  post_data: ""
+  mat_type: Article
+  is_private: false
+  class_handle_right: ""
+  bib_attr: ""
+  alt_name: International Index to Music Periodicals
+  url: http://ssur-rg2.ck.bpi.fr/MdbRG/LaunchOMM.aspx?IdDoc=1771&IdOmm=1624&IdWeb=989
+  conn_type: z3950
+  proxy: 1
+  id: 17
+  availability: ""
+  record_schema: usmarc
+  oai_set: ""
+  has_right: false
+  pass: renard25
+  host: iimp.chadwyck.com:210/iimp
+  harvested: 
+  harvest_day: "0123456"
+  definition: title=245a;author=100a;publisher=260b;publisher=260a;date=260c;contributor=700a;direct_url=856u;issn=022a;abstract=520a;subject=650a
+  actions_allowed: false
+  user: bpiparis
+  definition_search: creator=1003;author=1003;subject=21;issn=8;isbn=7;callnum=16;publisher=1018;title=4;keyword=1016
+collection_00060: 
+  name: discipline:persee:10
+  isword: 0
+  is_parent: 0
+  filter_query: 
+  virtual: ""
+  vendor_url: ""
+  post_data: ""
+  mat_type: Article
+  is_private: false
+  class_handle_right: ""
+  bib_attr: ""
+  alt_name: "Pers\xC3\xA9e : Philosophie"
+  url: ""
+  conn_type: oai
+  proxy: 1
+  id: 60
+  availability: ""
+  record_schema: oai_dc
+  oai_set: discipline:persee:10
+  has_right: false
+  pass: ""
+  host: http://oai.persee.fr/c/ext/prescript/oai
+  harvested: 2011-09-08 16:01:22 +02:00
+  harvest_day: "1"
+  definition: ""
+  actions_allowed: true
+  user: ""
+  definition_search: creator=1003;author=1003;subject=21;issn=8;isbn=7;callnum=16;publisher=1018;title=4;keyword=1016
+collection_00117: 
+  name: IM_citemusique
+  isword: 0
+  is_parent: 0
+  filter_query: 
+  virtual: ""
+  vendor_url: http://mediatheque.cite-musique.fr/
+  post_data: 
+  mat_type: Image
+  is_private: false
+  class_handle_right: ""
+  bib_attr: ""
+  alt_name: "Images du Mus\xC3\xA9e de la Musique"
+  url: ""
+  conn_type: oai
+  proxy: 1
+  id: 117
+  availability: online
+  record_schema: oai_dc
+  oai_set: IM
+  has_right: false
+  pass: ""
+  host: http://194.250.19.133/scripts/oaiserver.asp
+  harvested: 1970-01-01 00:00:00 +01:00
+  harvest_day: "0123456"
+  definition: ""
+  actions_allowed: true
+  user: ""
+  definition_search: creator=1003;author=1003;subject=21;issn=8;isbn=7;callnum=16;publisher=1018;title=4;keyword=1016
+collection_00018: 
+  name: CSA_IntIndPerformingArts
+  isword: 0
+  is_parent: 0
+  filter_query: 
+  virtual: ""
+  vendor_url: http://ssur-rg2.ck.bpi.fr/MdbRG/LaunchOMM.aspx?NSNotShowWindow=0&IdDoc=1639&IdOmm=1492&IdWeb=867
+  post_data: ""
+  mat_type: Article
+  is_private: false
+  class_handle_right: ""
+  bib_attr: ""
+  alt_name: International Index to the Performing Arts
+  url: ""
+  conn_type: z3950
+  proxy: 1
+  id: 18
+  availability: ""
+  record_schema: MARC21
+  oai_set: ""
+  has_right: false
+  pass: renard25
+  host: iipa.chadwyck.com:211/iipa
+  harvested: 
+  harvest_day: "0123456"
+  definition: atitle=245a;ptitle=245a;title=245a;author=100a;coverage=260a;coverage=260c;source=260b;publisher=773g;direct_url=856u;rights=540a;subject=650a;abstract=520a;
+  actions_allowed: false
+  user: bpiparis
+  definition_search: creator=1003;author=1003;subject=21;issn=8;isbn=7;callnum=16;publisher=1018;title=4;keyword=1016
+collection_00061: 
+  name: discipline:persee:6
+  isword: 0
+  is_parent: 0
+  filter_query: 
+  virtual: ""
+  vendor_url: ""
+  post_data: 
+  mat_type: Article
+  is_private: false
+  class_handle_right: ""
+  bib_attr: ""
+  alt_name: "Pers\xC3\xA9e : G\xC3\xA9ographie"
+  url: ""
+  conn_type: oai
+  proxy: 1
+  id: 61
+  availability: ""
+  record_schema: oai_dc
+  oai_set: discipline:persee:6
+  has_right: false
+  pass: ""
+  host: http://oai.persee.fr/c/ext/prescript/oai
+  harvested: 2011-08-29 17:36:17 +02:00
+  harvest_day: "6"
+  definition: ""
+  actions_allowed: true
+  user: ""
+  definition_search: creator=1003;author=1003;subject=21;issn=8;isbn=7;callnum=16;publisher=1018;title=4;keyword=1016
+collection_00020: 
+  name: CSA_DesignAppliedArtsIndex
+  isword: 0
+  is_parent: 0
+  filter_query: 
+  virtual: ""
+  vendor_url: ""
+  post_data: ""
+  mat_type: "R\xC3\xA9f\xC3\xA9rence bibliographique"
+  is_private: false
+  class_handle_right: ""
+  bib_attr: ""
+  alt_name: Design and Applied Arts Index
+  url: ""
+  conn_type: z3950
+  proxy: 1
+  id: 20
+  availability: ""
+  record_schema: SUTRS
+  oai_set: ""
+  has_right: false
+  pass: bpi6868
+  host: z3950.csa.com:210/daai-set-c
+  harvested: 
+  harvest_day: "0123456"
+  definition: identifier=an;atitle=ti;title=ti;ptitle=ti;author=au;subject=de;source=ip;abstract=ab;
+  actions_allowed: false
+  user: bpi68
+  definition_search: creator=1003;author=1003;subject=21;issn=8;isbn=7;callnum=16;publisher=1018;title=4;keyword=1016
+collection_00118: 
+  name: NP_citemusique
+  isword: 0
+  is_parent: 0
+  filter_query: 
+  virtual: ""
+  vendor_url: http://mediatheque.cite-musique.fr/
+  post_data: 
+  mat_type: Article
+  is_private: false
+  class_handle_right: ""
+  bib_attr: ""
+  alt_name: "Notes de programmes Cit\xC3\xA9 de la Musique"
+  url: ""
+  conn_type: oai
+  proxy: 1
+  id: 118
+  availability: online
+  record_schema: oai_dc
+  oai_set: NP
+  has_right: false
+  pass: ""
+  host: http://194.250.19.133/scripts/oaiserver.asp
+  harvested: 2011-09-06 12:30:20 +02:00
+  harvest_day: "0123456"
+  definition: ""
+  actions_allowed: true
+  user: ""
+  definition_search: creator=1003;author=1003;subject=21;issn=8;isbn=7;callnum=16;publisher=1018;title=4;keyword=1016
+collection_00019: 
+  name: CSA_PaisInternational
+  isword: 0
+  is_parent: 0
+  filter_query: 
+  virtual: ""
+  vendor_url: ""
+  post_data: ""
+  mat_type: "R\xC3\xA9f\xC3\xA9rence bibliographique"
+  is_private: false
+  class_handle_right: ""
+  bib_attr: ""
+  alt_name: PAIS International
+  url: ""
+  conn_type: z3950
+  proxy: 1
+  id: 19
+  availability: ""
+  record_schema: SUTRS
+  oai_set: ""
+  has_right: false
+  pass: bpi6868
+  host: z3950.csa.com:210/pais-set-c
+  harvested: 
+  harvest_day: "0123456"
+  definition: identifier=an;atitle=ti;title=ti;ptitle=ti;author=au;subject=de;source=ip;abstract=ab;
+  actions_allowed: false
+  user: bpi68
+  definition_search: creator=1003;author=1003;subject=21;issn=8;isbn=7;callnum=16;publisher=1018;title=4;keyword=1016
+collection_00062: 
+  name: discipline:persee:15
+  isword: 0
+  is_parent: 0
+  filter_query: 
+  virtual: ""
+  vendor_url: ""
+  post_data: 
+  mat_type: Article
+  is_private: false
+  class_handle_right: ""
+  bib_attr: ""
+  alt_name: "Pers\xC3\xA9e : Sciences de l'information et de la communication"
+  url: ""
+  conn_type: oai
+  proxy: 1
+  id: 62
+  availability: ""
+  record_schema: oai_dc
+  oai_set: discipline:persee:15
+  has_right: false
+  pass: ""
+  host: http://oai.persee.fr/c/ext/prescript/oai
+  harvested: 2011-09-08 16:02:47 +02:00
+  harvest_day: "3"
+  definition: ""
+  actions_allowed: true
+  user: ""
+  definition_search: creator=1003;author=1003;subject=21;issn=8;isbn=7;callnum=16;publisher=1018;title=4;keyword=1016
+collection_00120: 
+  name: EU_citemusique
+  isword: 0
+  is_parent: 0
+  filter_query: 
+  virtual: ""
+  vendor_url: http://mediatheque.cite-musique.fr/
+  post_data: 
+  mat_type: None
+  is_private: false
+  class_handle_right: ""
+  bib_attr: ""
+  alt_name: "Concerts et oeuvres Cit\xC3\xA9 de la musique"
+  url: ""
+  conn_type: oai
+  proxy: 1
+  id: 120
+  availability: online
+  record_schema: oai_dc
+  oai_set: EU
+  has_right: false
+  pass: ""
+  host: http://194.250.19.133/scripts/oaiserver.asp
+  harvested: 1970-01-01 00:00:00 +01:00
+  harvest_day: "0123456"
+  definition: ""
+  actions_allowed: true
+  user: ""
+  definition_search: creator=1003;author=1003;subject=21;issn=8;isbn=7;callnum=16;publisher=1018;title=4;keyword=1016
+collection_00021: 
+  name: Ovid_ArtIndex
+  isword: 0
+  is_parent: 0
+  filter_query: 
+  virtual: ""
+  vendor_url: "http://ssur-rg2.ck.bpi.fr/MdbRG/LaunchOMM.aspx?IdDoc=1771&IdOmm=1624&IdWeb=989 "
+  post_data: ""
+  mat_type: "R\xC3\xA9f\xC3\xA9rence bibliographique"
+  is_private: false
+  class_handle_right: ""
+  bib_attr: ""
+  alt_name: Art Index
+  url: "http://ssur-rg2.ck.bpi.fr/MdbRG/LaunchOMM.aspx?IdDoc=1771&IdOmm=1624&IdWeb=989 "
+  conn_type: z3950
+  proxy: 1
+  id: 21
+  availability: ""
+  record_schema: marc21
+  oai_set: ""
+  has_right: false
+  pass: federate
+  host: z3950.ovid.com:210/WAIX
+  harvested: 
+  harvest_day: "0123456"
+  definition: atitle=245a;title=245a;lang=041a;author=100a;volume=773d;issue=773d;date=590a;coverage=260a;subject=650a;subject=500a;
+  actions_allowed: false
+  user: z3950bpi
+  definition_search: creator=1003;author=1003;subject=21;issn=8;isbn=7;callnum=16;publisher=1018;title=4;keyword=1016
+collection_00119: 
+  name: IN_citemusique
+  isword: 0
+  is_parent: 0
+  filter_query: 
+  virtual: ""
+  vendor_url: http://mediatheque.cite-musique.fr/
+  post_data: 
+  mat_type: Article
+  is_private: false
+  class_handle_right: ""
+  bib_attr: ""
+  alt_name: "Instruments Cit\xC3\xA9 de la Musique"
+  url: ""
+  conn_type: oai
+  proxy: 1
+  id: 119
+  availability: online
+  record_schema: oai_dc
+  oai_set: IN
+  has_right: false
+  pass: ""
+  host: http://194.250.19.133/scripts/oaiserver.asp
+  harvested: 2011-08-30 13:00:16 +02:00
+  harvest_day: "0123456"
+  definition: ""
+  actions_allowed: true
+  user: ""
+  definition_search: creator=1003;author=1003;subject=21;issn=8;isbn=7;callnum=16;publisher=1018;title=4;keyword=1016
+collection_00063: 
+  name: discipline:persee:13
+  isword: 0
+  is_parent: 0
+  filter_query: 
+  virtual: ""
+  vendor_url: ""
+  post_data: 
+  mat_type: Article
+  is_private: false
+  class_handle_right: ""
+  bib_attr: ""
+  alt_name: "Pers\xC3\xA9e : Sciences Sociales"
+  url: ""
+  conn_type: oai
+  proxy: 1
+  id: 63
+  availability: ""
+  record_schema: oai_dc
+  oai_set: discipline:persee:13
+  has_right: false
+  pass: ""
+  host: http://oai.persee.fr/c/ext/prescript/oai
+  harvested: 2011-09-08 16:04:12 +02:00
+  harvest_day: "5"
+  definition: ""
+  actions_allowed: true
+  user: ""
+  definition_search: creator=1003;author=1003;subject=21;issn=8;isbn=7;callnum=16;publisher=1018;title=4;keyword=1016
+collection_00100: 
+  name: Times_Digital_Archive_Gale
+  isword: 0
+  is_parent: 0
+  filter_query: 
+  virtual: ""
+  vendor_url: ""
+  post_data: ""
+  mat_type: Article
+  is_private: false
+  class_handle_right: ""
+  bib_attr: ""
+  alt_name: Times Digital Archive
+  url: ""
+  conn_type: z3950
+  proxy: 1
+  id: 100
+  availability: online
+  record_schema: marc21
+  oai_set: ""
+  has_right: false
+  pass: ""
+  host: z3950.iacenter.com:210/TTDA
+  harvested: 
+  harvest_day: "0123456"
+  definition: atitle=245a;title=245a;direct_url=856u;source=773t;publisher=773t;issue=773g;format=773g;abstract=856y;volume=773g;subject=245k;relation=773g;subject=245b;
+  actions_allowed: false
+  user: bibpi
+  definition_search: creator=1003;author=1003;subject=21;issn=8;isbn=7;callnum=16;publisher=1018;title=4;keyword=1016
+collection_00121: 
+  name: MU_citemusique
+  isword: 0
+  is_parent: 0
+  filter_query: 
+  virtual: ""
+  vendor_url: ""
+  post_data: 
+  mat_type: Article
+  is_private: false
+  class_handle_right: ""
+  bib_attr: ""
+  alt_name: "Mus\xC3\xA9es Cit\xC3\xA9 de la Musique"
+  url: ""
+  conn_type: oai
+  proxy: 1
+  id: 121
+  availability: online
+  record_schema: oai_dc
+  oai_set: MU
+  has_right: false
+  pass: ""
+  host: http://194.250.19.133/scripts/oaiserver_lido.asp
+  harvested: 1970-01-01 00:00:00 +01:00
+  harvest_day: "0123456"
+  definition: ""
+  actions_allowed: true
+  user: ""
+  definition_search: creator=1003;author=1003;subject=21;issn=8;isbn=7;callnum=16;publisher=1018;title=4;keyword=1016
+collection_00064: 
+  name: discipline:persee:4
+  isword: 0
+  is_parent: 0
+  filter_query: 
+  virtual: ""
+  vendor_url: ""
+  post_data: 
+  mat_type: Article
+  is_private: false
+  class_handle_right: ""
+  bib_attr: ""
+  alt_name: "Pers\xC3\xA9e : Droit"
+  url: ""
+  conn_type: oai
+  proxy: 1
+  id: 64
+  availability: ""
+  record_schema: oai_dc
+  oai_set: discipline:persee:4
+  has_right: false
+  pass: ""
+  host: http://oai.persee.fr/c/ext/prescript/oai
+  harvested: 2011-08-29 19:11:28 +02:00
+  harvest_day: "4"
+  definition: ""
+  actions_allowed: true
+  user: ""
+  definition_search: creator=1003;author=1003;subject=21;issn=8;isbn=7;callnum=16;publisher=1018;title=4;keyword=1016
+collection_00101: 
+  name: Archives sonores
+  isword: 0
+  is_parent: 1
+  filter_query: 
+  virtual: ""
+  vendor_url: http://archives-sonores.bpi.fr/index.php
+  post_data: ""
+  mat_type: "D\xC3\xA9bat et enregistrement"
+  is_private: false
+  class_handle_right: ""
+  bib_attr: ""
+  alt_name: Archives sonores
+  url: ""
+  conn_type: oai
+  proxy: 1
+  id: 101
+  availability: online
+  record_schema: oai_dc
+  oai_set: ""
+  has_right: false
+  pass: ""
+  host: http://archives-sonores.bpi.fr/oai.php
+  harvested: 2012-02-03 18:26:20 +01:00
+  harvest_day: "0123456"
+  definition: ""
+  actions_allowed: true
+  user: ""
+  definition_search: creator=1003;author=1003;subject=21;issn=8;isbn=7;callnum=16;publisher=1018;title=4;keyword=1016
+collection_00122: 
+  name: factiva
+  isword: 0
+  is_parent: 0
+  filter_query: 
+  virtual: ""
+  vendor_url: http://global.factiva.com
+  post_data: XSID=S00YdBfZWva5DEs5DEoMDUpMD2pOTVyMHn0YqYvMq382rbRQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQQAA
+  mat_type: Article
+  is_private: false
+  class_handle_right: 
+  bib_attr: ""
+  alt_name: Factiva
+  url: http://global.factiva.com
+  conn_type: connector
+  proxy: 1
+  id: 122
+  availability: ""
+  record_schema: Factiva
+  oai_set: Factiva
+  has_right: false
+  pass: ""
+  host: https://global.factiva.com/fr/sess/login.asp
+  harvested: 
+  harvest_day: "0123456"
+  definition: ""
+  actions_allowed: false
+  user: ""
+  definition_search: creator=1003;author=1003;subject=21;issn=8;isbn=7;callnum=16;publisher=1018;title=4;keyword=1016
+collection_00023: 
+  name: Grolier-MultimEncyclopedia
+  isword: 0
+  is_parent: 0
+  filter_query: 
+  virtual: ""
+  vendor_url: ""
+  post_data: ""
+  mat_type: Article
+  is_private: false
+  class_handle_right: ""
+  bib_attr: ""
+  alt_name: Encyclopedia Americana
+  url: http://go.grolier.com/
+  conn_type: z3950
+  proxy: 1
+  id: 23
+  availability: ""
+  record_schema: MARC21
+  oai_set: ""
+  has_right: false
+  pass: z3950
+  host: z3950.grolier.com:210/ea
+  harvested: 
+  harvest_day: "0123456"
+  definition: atitle=245a;direct_url=856u;ptitle=245a;source=786n;publisher=260b;abstract=520a;rights=540a;lang=041a;author=700a;title=245a;
+  actions_allowed: false
+  user: zbpi
+  definition_search: creator=1003;author=1003;subject=21;issn=8;isbn=7;callnum=16;publisher=1018;title=4;keyword=1016
+collection_00065: 
+  name: discipline:persee:11
+  isword: 0
+  is_parent: 0
+  filter_query: 
+  virtual: ""
+  vendor_url: ""
+  post_data: 
+  mat_type: Article
+  is_private: false
+  class_handle_right: ""
+  bib_attr: ""
+  alt_name: "Pers\xC3\xA9e : Sciences politiques"
+  url: ""
+  conn_type: oai
+  proxy: 1
+  id: 65
+  availability: ""
+  record_schema: oai_dc
+  oai_set: discipline:persee:11
+  has_right: false
+  pass: ""
+  host: http://oai.persee.fr/c/ext/prescript/oai
+  harvested: 2011-09-08 16:05:10 +02:00
+  harvest_day: "4"
+  definition: ""
+  actions_allowed: true
+  user: ""
+  definition_search: creator=1003;author=1003;subject=21;issn=8;isbn=7;callnum=16;publisher=1018;title=4;keyword=1016
+collection_00066: 
+  name: discipline:persee:14
+  isword: 0
+  is_parent: 0
+  filter_query: 
+  virtual: ""
+  vendor_url: ""
+  post_data: 
+  mat_type: Article
+  is_private: false
+  class_handle_right: ""
+  bib_attr: ""
+  alt_name: "Pers\xC3\xA9e : Psychologie"
+  url: ""
+  conn_type: oai
+  proxy: 1
+  id: 66
+  availability: ""
+  record_schema: oai_dc
+  oai_set: discipline:persee:14
+  has_right: false
+  pass: ""
+  host: http://oai.persee.fr/c/ext/prescript/oai
+  harvested: 2011-09-08 16:06:31 +02:00
+  harvest_day: "2"
+  definition: ""
+  actions_allowed: true
+  user: ""
+  definition_search: creator=1003;author=1003;subject=21;issn=8;isbn=7;callnum=16;publisher=1018;title=4;keyword=1016
+collection_00102: 
+  name: Wilson_Cinema Image Gallery
+  isword: 0
+  is_parent: 0
+  filter_query: 
+  virtual: ""
+  vendor_url: http://vnweb.hwwilsonweb.com/hww/advancedsearch/advanced_search.jhtml;hwwilsonid=HITLONUKSWNIHQA3DIMSFGOADUNGIIV0?prod=ARTIG
+  post_data: ""
+  mat_type: Image
+  is_private: false
+  class_handle_right: ""
+  bib_attr: ""
+  alt_name: Cinema Image Gallery
+  url: ""
+  conn_type: z3950
+  proxy: 1
+  id: 102
+  availability: online
+  record_schema: marc21
+  oai_set: ""
+  has_right: false
+  pass: ""
+  host: z3950.hwwilsonweb.com:210/ACIG
+  harvested: 
+  harvest_day: "0123456"
+  definition: title=245a;material_type=072a;contributor=508a;subject=600a;vendor_name=956y;author=508a;
+  actions_allowed: false
+  user: ""
+  definition_search: creator=1003;author=1003;subject=21;issn=8;isbn=7;callnum=16;publisher=1018;title=4;keyword=1016
+collection_00123: 
+  name: lextenso
+  isword: 0
+  is_parent: 0
+  filter_query: 
+  virtual: ""
+  vendor_url: http://www.lextenso.com
+  post_data: ""
+  mat_type: Article
+  is_private: false
+  class_handle_right: 
+  bib_attr: ""
+  alt_name: Lextenso
+  url: http://www.lextenso.com
+  conn_type: connector
+  proxy: 1
+  id: 123
+  availability: online
+  record_schema: ""
+  oai_set: Lextenso
+  has_right: false
+  pass: ""
+  host: http://www.lextenso.com
+  harvested: 
+  harvest_day: "0123456"
+  definition: ""
+  actions_allowed: false
+  user: ""
+  definition_search: creator=1003;author=1003;subject=21;issn=8;isbn=7;callnum=16;publisher=1018;title=4;keyword=1016
+collection_00024: 
+  name: Grolier_LandsPeople
+  isword: 0
+  is_parent: 0
+  filter_query: 
+  virtual: ""
+  vendor_url: ""
+  post_data: 
+  mat_type: Article
+  is_private: false
+  class_handle_right: ""
+  bib_attr: ""
+  alt_name: Lands and People
+  url: ""
+  conn_type: z3950
+  proxy: 1
+  id: 24
+  availability: 
+  record_schema: MARC21
+  oai_set: 
+  has_right: false
+  pass: z3950
+  host: z3950.grolier.com:210/lp
+  harvested: 
+  harvest_day: "0123456"
+  definition: ati=245a;ti=773i;au=100a;au=700a;note=500a;subject=650a;static=856u;link=773;pub=260b
+  actions_allowed: false
+  user: zbpi
+  definition_search: creator=1003;author=1003;subject=21;issn=8;isbn=7;callnum=16;publisher=1018;title=4;keyword=1016
+collection_00067: 
+  name: discipline:persee:2
+  isword: 0
+  is_parent: 0
+  filter_query: 
+  virtual: ""
+  vendor_url: ""
+  post_data: 
+  mat_type: Article
+  is_private: false
+  class_handle_right: ""
+  bib_attr: ""
+  alt_name: "Pers\xC3\xA9e : Arts"
+  url: ""
+  conn_type: oai
+  proxy: 1
+  id: 67
+  availability: ""
+  record_schema: oai_dc
+  oai_set: discipline:persee:2
+  has_right: false
+  pass: ""
+  host: http://oai.persee.fr/c/ext/prescript/oai
+  harvested: 2011-09-08 16:32:35 +02:00
+  harvest_day: "3"
+  definition: ""
+  actions_allowed: true
+  user: ""
+  definition_search: creator=1003;author=1003;subject=21;issn=8;isbn=7;callnum=16;publisher=1018;title=4;keyword=1016
+collection_00103: 
+  name: Encyclopedia Judaica_Gale
+  isword: 0
+  is_parent: 0
+  filter_query: 
+  virtual: ""
+  vendor_url: ""
+  post_data: ""
+  mat_type: Article
+  is_private: false
+  class_handle_right: ""
+  bib_attr: ""
+  alt_name: Encyclopedia Judaica
+  url: ""
+  conn_type: z3950
+  proxy: 1
+  id: 103
+  availability: online
+  record_schema: marc21
+  oai_set: ""
+  has_right: false
+  pass: ""
+  host: z3950.iacenter.com:210/EB26
+  harvested: 
+  harvest_day: "0123456"
+  definition: "doi=028a;atitle=245a;title=773t;author=100a;author=110a;author=700a;author=710a;isbn=020a;issn=022a;abstract=520a;direct_url=856u; "
+  actions_allowed: false
+  user: bibpi
+  definition_search: creator=1003;author=1003;subject=21;issn=8;isbn=7;callnum=16;publisher=1018;title=4;keyword=1016
+collection_00025: 
+  name: Grolier-NewBookPopularScience
+  isword: 0
+  is_parent: 0
+  filter_query: 
+  virtual: ""
+  vendor_url: ""
+  post_data: ""
+  mat_type: Article
+  is_private: false
+  class_handle_right: ""
+  bib_attr: ""
+  alt_name: New Book of Popular Science
+  url: ""
+  conn_type: z3950
+  proxy: 1
+  id: 25
+  availability: ""
+  record_schema: MARC21
+  oai_set: ""
+  has_right: false
+  pass: z3950
+  host: z3950.grolier.com:210/nbps
+  harvested: 
+  harvest_day: "0123456"
+  definition: atitle=245a;title=773i;author=100a;author=700a;abstract=500a;abstract=520a;subject=650a;direct_url=856u;link=773;publisher=260b;
+  actions_allowed: false
+  user: zbpi
+  definition_search: creator=1003;author=1003;subject=21;issn=8;isbn=7;callnum=16;publisher=1018;title=4;keyword=1016
+collection_00124: 
+  name: Gallica:periodiques
+  isword: 0
+  is_parent: 0
+  filter_query: 
+  virtual: ""
+  vendor_url: http://gallica.bnf.fr/editors?type=periodicals&lang=FR
+  post_data: ""
+  mat_type: Revue, journal
+  is_private: false
+  class_handle_right: 
+  bib_attr: ""
+  alt_name: "Gallica : Presse"
+  url: ""
+  conn_type: oai
+  proxy: 1
+  id: 124
+  availability: ""
+  record_schema: oai_dc
+  oai_set: gallica:typedoc:periodiques:titres
+  has_right: false
+  pass: ""
+  host: http://oai.bnf.fr/oai2/OAIHandler
+  harvested: 2011-09-08 11:04:32 +02:00
+  harvest_day: "0123456"
+  definition: ""
+  actions_allowed: false
+  user: ""
+  definition_search: creator=1003;author=1003;subject=21;issn=8;isbn=7;callnum=16;publisher=1018;title=4;keyword=1016
+collection_00125: 
+  name: revues.org
+  isword: 0
+  is_parent: 0
+  filter_query: 
+  virtual: ""
+  vendor_url: http://www.revues.org/
+  post_data: ""
+  mat_type: Article
+  is_private: false
+  class_handle_right: 
+  bib_attr: ""
+  alt_name: Revues.org
+  url: ""
+  conn_type: oai
+  proxy: 1
+  id: 125
+  availability: online
+  record_schema: oai_dc
+  oai_set: oai:revues.org:journal
+  has_right: false
+  pass: ""
+  host: http://oai.revues.org
+  harvested: 
+  harvest_day: "0123456"
+  definition: ""
+  actions_allowed: true
+  user: ""
+  definition_search: creator=1003;author=1003;subject=21;issn=8;isbn=7;callnum=16;publisher=1018;title=4;keyword=1016
+collection_00005: 
+  name: portfoliodw
+  isword: 0
+  is_parent: 0
+  filter_query: 
+  virtual: ""
+  vendor_url: ""
+  post_data: 
+  mat_type: Article
+  is_private: false
+  class_handle_right: ""
+  bib_attr: ""
+  alt_name: Catalogue Bpi
+  url: ""
+  conn_type: portfolio
+  proxy: 1
+  id: 5
+  availability: ""
+  record_schema: public
+  oai_set: ""
+  has_right: false
+  pass: postgresbpi
+  host: 10.1.2.100
+  harvested: 2012-02-06 10:58:28 +01:00
+  harvest_day: "0123456"
+  definition: ""
+  actions_allowed: true
+  user: postgres
+  definition_search: creator=1003;author=1003;subject=21;issn=8;isbn=7;callnum=16;publisher=1018;title=4;keyword=1016
+collection_00090: 
+  name: ircam:musique:post1945
+  isword: 0
+  is_parent: 0
+  filter_query: 
+  virtual: ""
+  vendor_url: ""
+  post_data: 
+  mat_type: "R\xC3\xA9f\xC3\xA9rence bibliographique"
+  is_private: false
+  class_handle_right: ""
+  bib_attr: ""
+  alt_name: "M\xC3\xA9diath\xC3\xA8que de l'Ircam : Musique apr\xC3\xA8s 1945"
+  url: ""
+  conn_type: oai
+  proxy: 1
+  id: 90
+  availability: ""
+  record_schema: oai_dc
+  oai_set: musique:post1945
+  has_right: false
+  pass: ""
+  host: http://mediatheque.ircam.fr/catalogue/oai/oai2.php
+  harvested: 2011-08-29 00:34:46 +02:00
+  harvest_day: "0123456"
+  definition: |-
+    *******************************************
+    NOTE: le resumptionToken ne marche pas !!!!
+    *******************************************
+  actions_allowed: true
+  user: ""
+  definition_search: creator=1003;author=1003;subject=21;issn=8;isbn=7;callnum=16;publisher=1018;title=4;keyword=1016
+collection_00068: 
+  name: discipline:persee:1
+  isword: 0
+  is_parent: 0
+  filter_query: 
+  virtual: ""
+  vendor_url: ""
+  post_data: 
+  mat_type: Article
+  is_private: false
+  class_handle_right: ""
+  bib_attr: ""
+  alt_name: "Pers\xC3\xA9e : Arch\xC3\xA9ologie"
+  url: ""
+  conn_type: oai
+  proxy: 1
+  id: 68
+  availability: ""
+  record_schema: oai_dc
+  oai_set: discipline:persee:1
+  has_right: false
+  pass: ""
+  host: http://oai.persee.fr/c/ext/prescript/oai
+  harvested: 2011-09-08 16:33:32 +02:00
+  harvest_day: "2"
+  definition: ""
+  actions_allowed: true
+  user: ""
+  definition_search: creator=1003;author=1003;subject=21;issn=8;isbn=7;callnum=16;publisher=1018;title=4;keyword=1016
+collection_00026: 
+  name: cairn.info
+  isword: 0
+  is_parent: 1
+  filter_query: 
+  virtual: ""
+  vendor_url: http://www.cairn.info
+  post_data: ""
+  mat_type: Article
+  is_private: false
+  class_handle_right: ""
+  bib_attr: ""
+  alt_name: Cairn
+  url: http://www.cairn.info
+  conn_type: oai
+  proxy: 1
+  id: 26
+  availability: online
+  record_schema: oai_dc
+  oai_set: ""
+  has_right: false
+  pass: ""
+  host: http://oai.cairn.info/oai.php
+  harvested: 2011-09-08 16:00:25 +02:00
+  harvest_day: "0123456"
+  definition: ""
+  actions_allowed: true
+  user: ""
+  definition_search: creator=1003;author=1003;subject=21;issn=8;isbn=7;callnum=16;publisher=1018;title=4;keyword=1016
+collection_00089: 
+  name: ircam:musique
+  isword: 0
+  is_parent: 0
+  filter_query: 
+  virtual: ""
+  vendor_url: ""
+  post_data: 
+  mat_type: "R\xC3\xA9f\xC3\xA9rence bibliographique"
+  is_private: false
+  class_handle_right: ""
+  bib_attr: ""
+  alt_name: "M\xC3\xA9diath\xC3\xA8que de l'Ircam : Musique"
+  url: ""
+  conn_type: oai
+  proxy: 1
+  id: 89
+  availability: ""
+  record_schema: oai_dc
+  oai_set: musique
+  has_right: false
+  pass: ""
+  host: http://mediatheque.ircam.fr/catalogue/oai/oai2.php
+  harvested: 2011-08-29 00:20:41 +02:00
+  harvest_day: "0123456"
+  definition: |-
+    *******************************************
+    NOTE: le resumptionToken ne marche pas !!!!
+    *******************************************
+  actions_allowed: false
+  user: ""
+  definition_search: creator=1003;author=1003;subject=21;issn=8;isbn=7;callnum=16;publisher=1018;title=4;keyword=1016
+collection_00104: 
+  name: Urbadoc_Archinet
+  isword: 0
+  is_parent: 0
+  filter_query: 
+  virtual: ""
+  vendor_url: ""
+  post_data: 
+  mat_type: "R\xC3\xA9f\xC3\xA9rence bibliographique"
+  is_private: false
+  class_handle_right: ""
+  bib_attr: ""
+  alt_name: Urbadoc (Archinet)
+  url: ""
+  conn_type: z3950
+  proxy: 1
+  id: 104
+  availability: ""
+  record_schema: info:srw/schema/1/dc-v1.1
+  oai_set: ""
+  has_right: false
+  pass: ""
+  host: www.urbadoc.com:2101/w8012
+  harvested: 
+  harvest_day: "0123456"
+  definition: doi=028a;ati=245a;ti=773t;au=100a;au=110a;au=700a;au=710a;ass_num=001;bn=020a;issn=022a;date=0086;note=520a;static=856u;link=773
+  actions_allowed: false
+  user: ""
+  definition_search: creator=1003;author=1003;subject=21;issn=8;isbn=7;callnum=16;publisher=1018;title=4;keyword=1016
+collection_00105: 
+  name: "CSA_AmericanFilmIndex "
+  isword: 0
+  is_parent: 0
+  filter_query: 
+  virtual: ""
+  vendor_url: ""
+  post_data: ""
+  mat_type: Article
+  is_private: false
+  class_handle_right: ""
+  bib_attr: ""
+  alt_name: American Film Index (AFI)
+  url: ""
+  conn_type: z3950
+  proxy: 1
+  id: 105
+  availability: ""
+  record_schema: USMARC
+  oai_set: ""
+  has_right: false
+  pass: bpiwtuk
+  host: afi.chadwyck.co.uk:210/film
+  harvested: 
+  harvest_day: "0123456"
+  definition: doi=028a;ati=245a;ti=773t;au=700a;au=710a;date=086;note=540a;static=856u;link=856u;
+  actions_allowed: false
+  user: bpi
+  definition_search: creator=1003;author=1003;subject=21;issn=8;isbn=7;callnum=16;publisher=1018;title=4;keyword=1016
+collection_00070: 
+  name: discipline:persee:5
+  isword: 0
+  is_parent: 0
+  filter_query: 
+  virtual: ""
+  vendor_url: ""
+  post_data: 
+  mat_type: Article
+  is_private: false
+  class_handle_right: ""
+  bib_attr: ""
+  alt_name: "Pers\xC3\xA9e : Economie"
+  url: ""
+  conn_type: oai
+  proxy: 1
+  id: 70
+  availability: ""
+  record_schema: oai_dc
+  oai_set: discipline:persee:5
+  has_right: false
+  pass: ""
+  host: http://oai.persee.fr/c/ext/prescript/oai
+  harvested: 1970-01-01 00:00:00 +01:00
+  harvest_day: "5"
+  definition: ""
+  actions_allowed: true
+  user: ""
+  definition_search: creator=1003;author=1003;subject=21;issn=8;isbn=7;callnum=16;publisher=1018;title=4;keyword=1016
+collection_00069: 
+  name: discipline:persee:7
+  isword: 0
+  is_parent: 0
+  filter_query: 
+  virtual: ""
+  vendor_url: ""
+  post_data: 
+  mat_type: Article
+  is_private: false
+  class_handle_right: ""
+  bib_attr: ""
+  alt_name: "Pers\xC3\xA9e : Histoire"
+  url: ""
+  conn_type: oai
+  proxy: 1
+  id: 69
+  availability: ""
+  record_schema: oai_dc
+  oai_set: discipline:persee:7
+  has_right: false
+  pass: ""
+  host: http://oai.persee.fr/c/ext/prescript/oai
+  harvested: 1970-01-01 00:00:00 +01:00
+  harvest_day: "0"
+  definition: ""
+  actions_allowed: true
+  user: ""
+  definition_search: creator=1003;author=1003;subject=21;issn=8;isbn=7;callnum=16;publisher=1018;title=4;keyword=1016
+collection_00006: 
+  name: ged
+  isword: 0
+  is_parent: 0
+  filter_query: 
+  virtual: ""
+  vendor_url: http://sged.ck.bpi.fr/Edip.Client/Default.aspx?UserName=avecGed&Password=dip&Application=BPI2&Action=DefinirFrameset%7CPrincipal,60%,H%7CLIST,40%,H;AfficherVue%7CRsimp%7CPrincipal;AfficherPage%7C../Pages/BPI2/rechaideSimp.htm%7CDIP_FRM_LIST;AfficherFramese
+  post_data: ""
+  mat_type: Article
+  is_private: false
+  class_handle_right: ""
+  bib_attr: ""
+  alt_name: Bpi-Doc
+  url: http://sged.ck.bpi.fr/Edip.Client/Default.aspx?UserName=avecGed&Password=dip&Application=BPI2&Action=DefinirFrameset%7CPrincipal,60%,H%7CLIST,40%,H;AfficherVue%7CRsimp%7CPrincipal;AfficherPage%7C../Pages/BPI2/rechaideSimp.htm%7CDIP_FRM_LIST;AfficherFramese
+  conn_type: ged
+  proxy: 1
+  id: 6
+  availability: online
+  record_schema: ""
+  oai_set: ""
+  has_right: false
+  pass: ""
+  host: /srv/ged/exportTab.txt
+  harvested: 2011-12-14 07:12:07 +01:00
+  harvest_day: "0123456"
+  definition: ""
+  actions_allowed: true
+  user: ""
+  definition_search: creator=1003;author=1003;subject=21;issn=8;isbn=7;callnum=16;publisher=1018;title=4;keyword=1016
+collection_00126: 
+  name: keesings
+  isword: 0
+  is_parent: 0
+  filter_query: 
+  virtual: ""
+  vendor_url: http://www.keesings.com
+  post_data: ""
+  mat_type: Article
+  is_private: false
+  class_handle_right: 
+  bib_attr: ""
+  alt_name: Keesings World News Archives
+  url: http://www.keesings.com
+  conn_type: connector
+  proxy: 1
+  id: 126
+  availability: online
+  record_schema: Keesing
+  oai_set: Keesing
+  has_right: false
+  pass: ""
+  host: http://www.keesings.com
+  harvested: 
+  harvest_day: "0123456"
+  definition: ""
+  actions_allowed: false
+  user: ""
+  definition_search: creator=1003;author=1003;subject=21;issn=8;isbn=7;callnum=16;publisher=1018;title=4;keyword=1016

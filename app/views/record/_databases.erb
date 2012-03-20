@@ -1,0 +1,54 @@
+<%if @databases!=nil or @filter.assoc("vendor_name")!=nil %>
+<div id="bDatabases" class="navigation">
+    <b><%=translate('DATABASES') %></b>
+    <%if @filter.assoc("vendor_name")!=nil
+    filter=build_unfilter_string("vendor_name")
+    params=build_filter_params(filter,@tab_template) %>
+    <%=link_to translate('UNFILTER_DATABASES'),
+    {  :action => 'retrieve_page',
+    :controller=>'record',
+    :params=>params},	:onclick=>"scroll(0,0);showWait()", :class=>"unfilter" %>
+    <%end %>
+    <div name="menuItem" id="tDatabases" class="expanded" init="0">
+        <div id='databases_0'>
+            <%count=0
+            @databases.each{|_vendor_name, _hits|
+            if count<10
+            count=count+1
+            filter=build_filter_string("vendor_name",_vendor_name)
+            params=build_filter_params(filter,@tab_template) %>
+            <%=link_to translate('RESULTS',[_vendor_name, _hits.to_s]),
+            {  :action => 'retrieve_page',
+            :controller=>'record',
+            :params=>params},	:onclick=>"scroll(0,0);showWait()" %>
+            <%end
+            }
+            if @databases.length>10 %>
+            <%=link_to_function translate('MORE_DATABASES'), "Element.hide('more_databases_0');Element.show('more_databases');Element.show('databases_1')", {:style=>"text-decoration:underline", :id=>'more_databases_0'} %>
+            <%end %>
+        </div>
+        <%if @databases.length>10 %>
+        <div id='more_databases'>
+            <%multiples=((@databases.length)/10).ceil
+            1.upto(multiples) { |i| %>
+            <div id=<%='databases_'+i.to_s %> style='display:none;'>
+                <%@databases[i*10..(i+1)*10-1].each{|_vendor_name, _hits|
+                filter=build_filter_string("vendor_name",_vendor_name)
+                params=build_filter_params(filter,@tab_template) %>
+                <%=link_to translate('RESULTS',[_vendor_name, _hits.to_s]),
+                {  :action => 'retrieve_page',
+                :controller=>'record',
+                :params=>params},	:onclick=>"scroll(0,0);showWait()" %>
+                <%} %>
+                <span id=<%='more_databases_'+i.to_s %>><%=link_to_function translate('TOP_DATABASES'), "Element.hide('more_databases');Element.show('more_databases_0')", :style=>"text-decoration:underline" %>
+                    <%if i<multiples %>
+                    <%=link_to_function translate('MORE_DATABASES'), "Element.hide('more_databases_"+i.to_s+"');Element.show('databases_"+(i+1).to_s+"');Element.show('more_databases_"+(i+1).to_s+"')", :style=>"text-decoration:underline" %>
+                    <%end %>
+                </span>
+            </div>
+            <%} %>
+        </div>
+        <%end %>
+    </div>
+</div>
+<%end %>

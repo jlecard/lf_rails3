@@ -1,0 +1,5 @@
+--- 
+manage_permission_REC: 
+  id_perm: REC
+manage_permission_ACC: 
+  id_perm: ACC

@@ -1,0 +1,54 @@
+<div id="page_contents">
+<%= render(:partial => "admin/navigation")%>
+<div id="center"  class="column">
+<h2><%=translate("COVERAGES")%></h2>
+<div id="edit_form">
+   <div class="admin-list">
+   <% columns_hash=Coverage.columns_hash 
+	 for column in @display_columns 
+      _class_name="medium-column"
+      if column=="journal_title" || column=="provider"
+        _class_name="large-column"
+      end 
+      if column=="start_date" || column=="end_date"
+        _class_name="small-column"
+      end 
+      %> 
+      <label class="<%=_class_name%>"><%= columns_hash[column].human_name%></label>
+  <% end %>
+    <span class="action-links">&nbsp;</span>
+  </div>
+  <br/>
+ 
+<% for coverage in @coverages %>
+   <div class="admin-list">
+  <%  for column in @display_columns 
+        _class_name="medium-column"
+      if column=="journal_title" || column=="provider"
+        _class_name="large-column"
+      end 
+       if column=="start_date" || column=="end_date" 
+        _class_name="small-column"
+      end 
+        if coverage.send(column)==nil or coverage.send(column)=="" %>
+           <span class="<%=_class_name%>">&nbsp;</span>		       
+		    <%elsif column=="journal_title"%>
+     <span class="<%=_class_name%>"><%= link_to h(coverage.send(column)), :action => 'show', :id => coverage %></span>
+      <%else%>
+    <span class="<%=_class_name%>"><%=h coverage.send(column) %></span>
+     <% end %>
+  <% end %>
+    <span class="action-links">
+      <%= link_to translate("EDIT"), :action => 'edit', :id => coverage %>&nbsp;&nbsp;
+      <%= link_to translate("DESTROY"), { :action => 'destroy', :id => coverage }, :confirm => translate("ARE_YOU_SURE"), :method => "post" %>&nbsp;&nbsp;
+    </span>
+  </div>
+  <br/>
+<% end %>
+
+<%= link_to translate("PREVIOUS_PAGE"), { :page => @coverage_pages.current.previous } if @coverage_pages.current.previous %>
+<%= link_to translate("NEXT_PAGE"), { :page => @coverage_pages.current.next } if @coverage_pages.current.next %> 
+
+</div>
+</div>
+</div>

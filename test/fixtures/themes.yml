@@ -1,0 +1,578 @@
+--- 
+theme_00903: 
+  reference: "2040"
+  label: Photographie
+  parent: "20"
+  level: 2
+  id: 903
+  sort: 1
+theme_00924: 
+  reference: "3520"
+  label: "Histoire m\xC3\xA9di\xC3\xA9vale et moderne"
+  parent: "35"
+  level: 2
+  id: 924
+  sort: 1
+theme_00945: 
+  reference: "6010"
+  label: !binary |
+    R8OpbsOpcmFsaXTDqXM=
+
+  parent: "60"
+  level: 2
+  id: 945
+  sort: 1
+theme_00966: 
+  reference: "7015"
+  label: "D\xC3\xA9marches administratives et juridiques"
+  parent: "70"
+  level: 2
+  id: 966
+  sort: 1
+theme_00904: 
+  reference: "2045"
+  label: "Cin\xC3\xA9ma"
+  parent: "20"
+  level: 2
+  id: 904
+  sort: 1
+theme_00925: 
+  reference: "3525"
+  label: Histoire contemporaine
+  parent: "35"
+  level: 2
+  id: 925
+  sort: 1
+theme_00946: 
+  reference: "6015"
+  label: "Math\xC3\xA9matiques, physique, chimie"
+  parent: "60"
+  level: 2
+  id: 946
+  sort: 1
+theme_00967: 
+  reference: "7020"
+  label: Famille et couple
+  parent: "70"
+  level: 2
+  id: 967
+  sort: 1
+theme_00905: 
+  reference: "2050"
+  label: Musique
+  parent: "20"
+  level: 2
+  id: 905
+  sort: 1
+theme_00926: 
+  reference: "3530"
+  label: "Histoire de France, g\xC3\xA9n\xC3\xA9alogie"
+  parent: "35"
+  level: 2
+  id: 926
+  sort: 1
+theme_00970: 
+  reference: "7035"
+  label: Handicap
+  parent: "70"
+  level: 2
+  id: 970
+  sort: 1
+theme_00947: 
+  reference: "6020"
+  label: Sciences de la Terre et de l'univers
+  parent: "60"
+  level: 2
+  id: 947
+  sort: 1
+theme_00968: 
+  reference: "7025"
+  label: Logement
+  parent: "70"
+  level: 2
+  id: 968
+  sort: 1
+theme_00892: 
+  reference: "15"
+  label: "Actualit\xC3\xA9s, m\xC3\xA9dias, presse"
+  parent: 
+  level: 0
+  id: 892
+  sort: 1
+theme_00927: 
+  reference: "3535"
+  label: Histoire des continents et des pays
+  parent: "35"
+  level: 2
+  id: 927
+  sort: 1
+theme_00950: 
+  reference: "6035"
+  label: "Sciences de l'ing\xC3\xA9nieur"
+  parent: "60"
+  level: 2
+  id: 950
+  sort: 1
+theme_00971: 
+  reference: "7040"
+  label: Consommation, budget
+  parent: "70"
+  level: 2
+  id: 971
+  sort: 1
+theme_00948: 
+  reference: "6025"
+  label: Sciences de la vie
+  parent: "60"
+  level: 2
+  id: 948
+  sort: 1
+theme_00969: 
+  reference: "7030"
+  label: "Solidarit\xC3\xA9, sant\xC3\xA9"
+  parent: "70"
+  level: 2
+  id: 969
+  sort: 1
+theme_00893: 
+  reference: "1510"
+  label: Articles de journaux et de magazines
+  parent: "15"
+  level: 2
+  id: 893
+  sort: 1
+theme_00906: 
+  reference: "2055"
+  label: Spectacle vivant
+  parent: "20"
+  level: 2
+  id: 906
+  sort: 1
+theme_00972: 
+  reference: "7045"
+  label: Paris et Ile-de-France
+  parent: "70"
+  level: 2
+  id: 972
+  sort: 1
+theme_00949: 
+  reference: "6030"
+  label: "M\xC3\xA9decine"
+  parent: "60"
+  level: 2
+  id: 949
+  sort: 1
+theme_00894: 
+  reference: "1515"
+  label: Sites de journaux et de magazines
+  parent: "15"
+  level: 2
+  id: 894
+  sort: 1
+theme_00907: 
+  reference: "25"
+  label: Droit, administration, institutions
+  parent: 
+  level: 0
+  id: 907
+  sort: 1
+theme_00951: 
+  reference: "6040"
+  label: Agriculture
+  parent: "60"
+  level: 2
+  id: 951
+  sort: 1
+theme_00928: 
+  reference: "40"
+  label: "Langues, litt\xC3\xA9ratures"
+  parent: 
+  level: 0
+  id: 928
+  sort: 1
+theme_00895: 
+  reference: "1520"
+  label: "Documentation sur les m\xC3\xA9dias et l\xC2\x92\xC3\xA9dition"
+  parent: "15"
+  level: 2
+  id: 895
+  sort: 1
+theme_00908: 
+  reference: "2510"
+  label: "Administration, institutions "
+  parent: "25"
+  level: 2
+  id: 908
+  sort: 1
+theme_00930: 
+  reference: "4015"
+  label: Linguistique
+  parent: "40"
+  level: 2
+  id: 930
+  sort: 1
+theme_00929: 
+  reference: "4010"
+  label: Langues
+  parent: "40"
+  level: 2
+  id: 929
+  sort: 1
+theme_00910: 
+  reference: "30"
+  label: Economie, entreprise, gestion
+  parent: 
+  level: 0
+  id: 910
+  sort: 1
+theme_00931: 
+  reference: "4020"
+  label: "Litt\xC3\xA9rature g\xC3\xA9n\xC3\xA9rale"
+  parent: "40"
+  level: 2
+  id: 931
+  sort: 1
+theme_00909: 
+  reference: "2515"
+  label: Droit
+  parent: "25"
+  level: 2
+  id: 909
+  sort: 1
+theme_00952: 
+  reference: "6045"
+  label: Transports
+  parent: "60"
+  level: 2
+  id: 952
+  sort: 1
+theme_00896: 
+  reference: "20"
+  label: Arts
+  parent: 
+  level: 0
+  id: 896
+  sort: 1
+theme_00911: 
+  reference: "3010"
+  label: Economie
+  parent: "30"
+  level: 2
+  id: 911
+  sort: 1
+theme_00932: 
+  reference: "4025"
+  label: "Litt\xC3\xA9ratures de langue fran\xC3\xA7aise"
+  parent: "40"
+  level: 2
+  id: 932
+  sort: 1
+theme_00953: 
+  reference: "6050"
+  label: Informatique
+  parent: "60"
+  level: 2
+  id: 953
+  sort: 1
+theme_00912: 
+  reference: "3015"
+  label: Entreprise, gestion
+  parent: "30"
+  level: 2
+  id: 912
+  sort: 1
+theme_00933: 
+  reference: "4030"
+  label: "Litt\xC3\xA9ratures \xC3\xA9trang\xC3\xA8res"
+  parent: "40"
+  level: 2
+  id: 933
+  sort: 1
+theme_00954: 
+  reference: "6055"
+  label: Industrie, artisanat
+  parent: "60"
+  level: 2
+  id: 954
+  sort: 1
+theme_00897: 
+  reference: "2010"
+  label: !binary |
+    R8OpbsOpcmFsaXTDqXM=
+
+  parent: "20"
+  level: 2
+  id: 897
+  sort: 1
+theme_00913: 
+  reference: "10"
+  label: !binary |
+    R8OpbsOpcmFsaXTDqXM=
+
+  parent: 
+  level: 0
+  id: 913
+  sort: 1
+theme_00934: 
+  reference: "45"
+  label: Loisirs, sports, tourisme
+  parent: 
+  level: 0
+  id: 934
+  sort: 1
+theme_00955: 
+  reference: "65"
+  label: Sciences humaines et sociales
+  parent: 
+  level: 0
+  id: 955
+  sort: 1
+theme_00898: 
+  reference: "2015"
+  label: "Art jusqu'au 19\xC3\xA8me si\xC3\xA8cle"
+  parent: "20"
+  level: 2
+  id: 898
+  sort: 1
+theme_00914: 
+  reference: "1010"
+  label: Bibliographies, livres en librairie
+  parent: "10"
+  level: 2
+  id: 914
+  sort: 1
+theme_00935: 
+  reference: "4510"
+  label: Loisirs
+  parent: "45"
+  level: 0
+  id: 935
+  sort: 1
+theme_00956: 
+  reference: "6510"
+  label: !binary |
+    R8OpbsOpcmFsaXTDqXM=
+
+  parent: "65"
+  level: 2
+  id: 956
+  sort: 1
+theme_00899: 
+  reference: "2020"
+  label: "Art des 20\xC3\xA8me et 21\xC3\xA8me si\xC3\xA8cles"
+  parent: "20"
+  level: 2
+  id: 899
+  sort: 1
+theme_00915: 
+  reference: "1015"
+  label: "Biblioth\xC3\xA8ques et catalogues"
+  parent: "10"
+  level: 2
+  id: 915
+  sort: 1
+theme_00936: 
+  reference: "4515"
+  label: Sports
+  parent: "45"
+  level: 0
+  id: 936
+  sort: 1
+theme_00957: 
+  reference: "6515"
+  label: Psychologie, psychanalyse
+  parent: "65"
+  level: 2
+  id: 957
+  sort: 1
+theme_00916: 
+  reference: "1020"
+  label: "Biblioth\xC3\xA8ques num\xC3\xA9riques"
+  parent: "10"
+  level: 2
+  id: 916
+  sort: 1
+theme_00960: 
+  reference: "6530"
+  label: Politique
+  parent: "65"
+  level: 2
+  id: 960
+  sort: 1
+theme_00937: 
+  reference: "4520"
+  label: Tourisme
+  parent: "45"
+  level: 0
+  id: 937
+  sort: 1
+theme_00958: 
+  reference: "6520"
+  label: "Sociologie, d\xC3\xA9mographie"
+  parent: "65"
+  level: 2
+  id: 958
+  sort: 1
+theme_00961: 
+  reference: "6535"
+  label: Education
+  parent: "65"
+  level: 2
+  id: 961
+  sort: 1
+theme_00938: 
+  reference: "50"
+  label: Philosophie, religions
+  parent: 
+  level: 0
+  id: 938
+  sort: 1
+theme_00959: 
+  reference: "6525"
+  label: Ethnologie
+  parent: "65"
+  level: 2
+  id: 959
+  sort: 1
+theme_00917: 
+  reference: "1025"
+  label: "Encyclop\xC3\xA9dies"
+  parent: "10"
+  level: 2
+  id: 917
+  sort: 1
+theme_00940: 
+  reference: "5015"
+  label: Religions
+  parent: "50"
+  level: 2
+  id: 940
+  sort: 1
+theme_00918: 
+  reference: "1030"
+  label: Dictionnaires de langues, de sigles
+  parent: "10"
+  level: 2
+  id: 918
+  sort: 1
+theme_00962: 
+  reference: "6540"
+  label: Sciences de l'information et de la communication
+  parent: "65"
+  level: 2
+  id: 962
+  sort: 1
+theme_00939: 
+  reference: "5010"
+  label: Philosophie
+  parent: "50"
+  level: 2
+  id: 939
+  sort: 1
+theme_00941: 
+  reference: "55"
+  label: "Recherche d'emploi, m\xC3\xA9tiers, formation"
+  parent: 
+  level: 0
+  id: 941
+  sort: 1
+theme_00920: 
+  reference: "1040"
+  label: "Donn\xC3\xA9es sur les pays"
+  parent: "10"
+  level: 2
+  id: 920
+  sort: 1
+theme_00919: 
+  reference: "1035"
+  label: Dictionnaires biographiques
+  parent: "10"
+  level: 2
+  id: 919
+  sort: 1
+theme_00942: 
+  reference: "5510"
+  label: "Orientation, formation, m\xC3\xA9tiers"
+  parent: "55"
+  level: 2
+  id: 942
+  sort: 1
+theme_00921: 
+  reference: "35"
+  label: Histoire
+  parent: 
+  level: 0
+  id: 921
+  sort: 1
+theme_00900: 
+  reference: "2025"
+  label: Architecture
+  parent: "20"
+  level: 2
+  id: 900
+  sort: 1
+theme_00963: 
+  reference: "6545"
+  label: "G\xC3\xA9ographie, urbanisme"
+  parent: "65"
+  level: 2
+  id: 963
+  sort: 1
+theme_00964: 
+  reference: "70"
+  label: Vie pratique
+  parent: 
+  level: 0
+  id: 964
+  sort: 1
+theme_00943: 
+  reference: "5515"
+  label: Recherche d'emploi
+  parent: "55"
+  level: 2
+  id: 943
+  sort: 1
+theme_00901: 
+  reference: "2030"
+  label: "Arts d\xC3\xA9coratifs, design, mode"
+  parent: "20"
+  level: 2
+  id: 901
+  sort: 1
+theme_00922: 
+  reference: "3510"
+  label: !binary |
+    R8OpbsOpcmFsaXTDqXM=
+
+  parent: "35"
+  level: 2
+  id: 922
+  sort: 1
+theme_00923: 
+  reference: "3515"
+  label: "Pr\xC3\xA9histoire, arch\xC3\xA9ologie, antiquit\xC3\xA9"
+  parent: "35"
+  level: 2
+  id: 923
+  sort: 1
+theme_00902: 
+  reference: "2035"
+  label: "Graphisme, bande dessin\xC3\xA9e"
+  parent: "20"
+  level: 2
+  id: 902
+  sort: 1
+theme_00944: 
+  reference: "60"
+  label: "Sciences, techniques, m\xC3\xA9decine"
+  parent: 
+  level: 0
+  id: 944
+  sort: 1
+theme_00965: 
+  reference: "7010"
+  label: "R\xC3\xA9pertoires g\xC3\xA9n\xC3\xA9raux d'adresses"
+  parent: "70"
+  level: 2
+  id: 965
+  sort: 1

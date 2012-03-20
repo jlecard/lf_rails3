@@ -1,3 +1,4 @@
+#encoding: utf-8
 # $Id: collection_controller.rb 1239 2008-03-13 16:55:13Z herlockt $
 
 # LibraryFind - Quality find done better.
@@ -310,9 +311,9 @@ class Admin::CollectionController < ApplicationController
   def initialize
     super
     seek = SearchController.new();
-    @filter_tab = seek.load_filter;
+    @filter_tab = SearchTabFilter.load_filter;
     @linkMenu = seek.load_menu;
-    @groups_tab = seek.load_groups;
+    @groups_tab = SearchTab.load_groups;
     @primaryDocumentTypes = PrimaryDocumentType.find(:all)
   end
   

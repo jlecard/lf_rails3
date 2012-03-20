@@ -1,0 +1,61 @@
+<%if @availabilities!=nil and !@availabilities.empty?%> 
+  <div id="bAvailabilities"  class="navigation">
+  	<b><%=translate('AVAILABILITIES')%></b
+   <%if @filter.assoc("availability")!=nil
+	  filter=build_unfilter_string("availability")	
+	  params=build_filter_params(filter,@tab_template)%>
+      <%=link_to translate('UNFILTER_AVAILABILITIES'), 
+		    {  :action => 'retrieve_page', 
+				:controller=>'record', 
+				:params=>params},	:onclick=>"scroll(0,0);showWait()", :class=>"unfilter"%>
+    <%end%>  
+	<div name="menuItem" id="tAvailability" class="expanded" init="0">
+      <div id="availabilities_0">
+	    <%count=0
+		@availabilities.each{|_availability, _number|
+		  if count < 5
+			  if _availability!=nil and _availability!='' and _availability.to_s.strip!='undefined' 
+				count=count+1
+				filter=build_filter_string("availability",_availability)
+				params=build_filter_params(filter,@tab_template)%>							  
+	            <%=link_to translate('RESULTS',[translate("COLLECTION_AVAIL_LABEL_" + _availability.upcase), _number.to_s]), 
+	                     {  :action => 'retrieve_page', 
+							:controller=>'record', 
+							:params=>params},	:onclick=>"scroll(0,0);showWait()"%>
+			  <%end  
+		  end
+		}  
+ 
+
+		if @availabilities.length > 5%>
+		    <%=link_to_function translate('MORE_AVAILABILITIES'), "Element.hide('more_availabilities_0');Element.show('more_availabilities');Element.show('availabilities_1')", {:style=>"text-decoration:underline", :id=>'more_availabilities_0'}%>
+		<%end%>
+	  </div>
+	  <%if @availabilities.length > 5%>
+	    <div id='more_availabilities'>
+	      <%multiples=((@availabilities.length)/5).ceil
+		  1.upto(multiples) { |i|%>
+			  <div id=<%='availabilities_'+i.to_s%> style='display:none;'>
+		        <%@availabilities[i*5..(i+1)*5-1].each{|_availability, _number| 
+				  if _availability!=nil and _availability!='' and _availability.to_s.strip!='undefined'		
+					filter=build_filter_string("availability",_availability[0,4])
+					params=build_filter_params(filter,@tab_template)%>	
+		            <%=link_to translate('RESULTS',[translate(COLLECTION_AVAIL_LABEL_ + _availability.upcase),_number.to_s]), 
+		                     {  :action => 'retrieve_page', 
+								:controller=>'record', 
+								:params=>params},	:onclick=>"scroll(0,0);showWait()"%>
+		          <%end  
+				}%>
+		        <span id=<%='more_availabilities_'+i.to_s%>>
+	  				<%=link_to_function translate('TOP_AVAILABILITIES'), "Element.hide('more_availabilities');Element.show('more_availabilities_0')", :style=>"text-decoration:underline"%>
+					<%if i<multiples%>
+						<%=link_to_function translate('MORE_AVAILABILITIES'), "Element.hide('more_availabilities_"+i.to_s+"');Element.show('availabilities_"+(i+1).to_s+"');Element.show('more_availabilities_"+(i+1).to_s+"')", :style=>"text-decoration:underline"%>
+			  		<%end%> 
+				</span>
+		  	 </div>
+	      <%}%>
+	    </div>
+	  <%end%>
+	</div>
+  </div>
+<%end%>

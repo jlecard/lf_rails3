@@ -1,0 +1,1729 @@
+--- 
+objects_tag_00138: 
+  workflow: 1
+  tag_id: 94
+  workflow_date: 2011-06-16 15:53:13 +02:00
+  uuid: karine.meneghetti@bpi.fr
+  id: 138
+  workflow_manager: 
+  object_uid: "156"
+  last_modified_date: 2011-06-16 15:53:13 +02:00
+  tag_date: 2011-06-16 15:53:13 +02:00
+  state: 0
+  object_type: 2
+objects_tag_00081: 
+  workflow: 1
+  tag_id: 55
+  workflow_date: 2011-05-12 12:36:36 +02:00
+  uuid: james.lecard@bpi.fr
+  id: 81
+  workflow_manager: 
+  object_uid: 48942;5
+  last_modified_date: 2011-05-12 12:36:36 +02:00
+  tag_date: 2011-05-12 12:36:36 +02:00
+  state: 1
+  object_type: 1
+objects_tag_00053: 
+  workflow: 1
+  tag_id: 41
+  workflow_date: 2011-05-06 18:22:54 +02:00
+  uuid: jerome.villeminoz@bpi.fr
+  id: 53
+  workflow_manager: 
+  object_uid: 153696;6
+  last_modified_date: 2011-05-06 18:22:54 +02:00
+  tag_date: 2011-05-06 18:22:54 +02:00
+  state: 1
+  object_type: 1
+objects_tag_00166: 
+  workflow: 1
+  tag_id: 117
+  workflow_date: 2011-08-31 17:48:46 +02:00
+  uuid: jerome.villeminoz@bpi.fr
+  id: 166
+  workflow_manager: 
+  object_uid: "161"
+  last_modified_date: 2011-08-31 17:48:46 +02:00
+  tag_date: 2011-08-31 17:48:46 +02:00
+  state: 1
+  object_type: 2
+objects_tag_00024: 
+  workflow: 1
+  tag_id: 20
+  workflow_date: 2011-03-16 16:17:45 +01:00
+  uuid: claire.lebreton@bpi.fr
+  id: 24
+  workflow_manager: 
+  object_uid: 647080;5
+  last_modified_date: 2011-03-16 16:17:45 +01:00
+  tag_date: 2011-03-16 16:17:45 +01:00
+  state: 1
+  object_type: 1
+objects_tag_00139: 
+  workflow: 1
+  tag_id: 95
+  workflow_date: 2011-06-16 15:53:18 +02:00
+  uuid: laurence.eme@bpi.fr
+  id: 139
+  workflow_manager: 
+  object_uid: "160"
+  last_modified_date: 2011-06-16 15:53:18 +02:00
+  tag_date: 2011-06-16 15:53:18 +02:00
+  state: 1
+  object_type: 2
+objects_tag_00082: 
+  workflow: 1
+  tag_id: 9
+  workflow_date: 2011-05-12 12:37:10 +02:00
+  uuid: james.lecard@bpi.fr
+  id: 82
+  workflow_manager: 
+  object_uid: 2251;5
+  last_modified_date: 2011-05-12 12:37:10 +02:00
+  tag_date: 2011-05-12 12:37:10 +02:00
+  state: 1
+  object_type: 1
+objects_tag_00054: 
+  workflow: 1
+  tag_id: 39
+  workflow_date: 2011-05-06 18:23:10 +02:00
+  uuid: jerome.villeminoz@bpi.fr
+  id: 54
+  workflow_manager: 
+  object_uid: 153696;6
+  last_modified_date: 2011-05-06 18:23:10 +02:00
+  tag_date: 2011-05-06 18:23:10 +02:00
+  state: 1
+  object_type: 1
+objects_tag_00167: 
+  workflow: 1
+  tag_id: 118
+  workflow_date: 2011-08-31 17:48:58 +02:00
+  uuid: jerome.villeminoz@bpi.fr
+  id: 167
+  workflow_manager: 
+  object_uid: "161"
+  last_modified_date: 2011-08-31 17:48:58 +02:00
+  tag_date: 2011-08-31 17:48:58 +02:00
+  state: 0
+  object_type: 2
+objects_tag_00025: 
+  workflow: 1
+  tag_id: 21
+  workflow_date: 2011-03-16 16:17:52 +01:00
+  uuid: claire.lebreton@bpi.fr
+  id: 25
+  workflow_manager: 
+  object_uid: 647080;5
+  last_modified_date: 2011-03-16 16:17:52 +01:00
+  tag_date: 2011-03-16 16:17:52 +01:00
+  state: 1
+  object_type: 1
+objects_tag_00083: 
+  workflow: 1
+  tag_id: 8
+  workflow_date: 2011-05-12 12:37:19 +02:00
+  uuid: james.lecard@bpi.fr
+  id: 83
+  workflow_manager: 
+  object_uid: 2251;5
+  last_modified_date: 2011-05-12 12:37:19 +02:00
+  tag_date: 2011-05-12 12:37:19 +02:00
+  state: 0
+  object_type: 1
+objects_tag_00168: 
+  workflow: 1
+  tag_id: 74
+  workflow_date: 2011-09-06 16:07:55 +02:00
+  uuid: james.lecard@bpi.fr
+  id: 168
+  workflow_manager: 
+  object_uid: "209"
+  last_modified_date: 2011-09-06 16:07:55 +02:00
+  tag_date: 2011-09-06 16:07:55 +02:00
+  state: 1
+  object_type: 2
+objects_tag_00026: 
+  workflow: 1
+  tag_id: 22
+  workflow_date: 2011-03-16 16:18:49 +01:00
+  uuid: claire.lebreton@bpi.fr
+  id: 26
+  workflow_manager: 
+  object_uid: 70534;5
+  last_modified_date: 2011-03-16 16:18:49 +01:00
+  tag_date: 2011-03-16 16:18:49 +01:00
+  state: 1
+  object_type: 1
+objects_tag_00084: 
+  workflow: 1
+  tag_id: 55
+  workflow_date: 2011-05-12 12:37:26 +02:00
+  uuid: james.lecard@bpi.fr
+  id: 84
+  workflow_manager: 
+  object_uid: 2251;5
+  last_modified_date: 2011-05-12 12:37:26 +02:00
+  tag_date: 2011-05-12 12:37:26 +02:00
+  state: 1
+  object_type: 1
+objects_tag_00055: 
+  workflow: 1
+  tag_id: 35
+  workflow_date: 2011-05-06 18:23:48 +02:00
+  uuid: jerome.villeminoz@bpi.fr
+  id: 55
+  workflow_manager: 
+  object_uid: 153696;6
+  last_modified_date: 2011-05-06 18:23:48 +02:00
+  tag_date: 2011-05-06 18:23:48 +02:00
+  state: 1
+  object_type: 1
+objects_tag_00110: 
+  workflow: 1
+  tag_id: 75
+  workflow_date: 2011-05-30 12:48:37 +02:00
+  uuid: james.lecard@bpi.fr
+  id: 110
+  workflow_manager: 
+  object_uid: 785376;5
+  last_modified_date: 2011-05-30 12:48:37 +02:00
+  tag_date: 2011-05-30 12:48:37 +02:00
+  state: 1
+  object_type: 1
+objects_tag_00169: 
+  workflow: 1
+  tag_id: 119
+  workflow_date: 2011-09-06 16:12:46 +02:00
+  uuid: james.lecard@bpi.fr
+  id: 169
+  workflow_manager: 
+  object_uid: "15"
+  last_modified_date: 2011-09-06 16:12:46 +02:00
+  tag_date: 2011-09-06 16:12:46 +02:00
+  state: 0
+  object_type: 2
+objects_tag_00027: 
+  workflow: 1
+  tag_id: 23
+  workflow_date: 2011-03-16 16:19:04 +01:00
+  uuid: claire.lebreton@bpi.fr
+  id: 27
+  workflow_manager: 
+  object_uid: 70534;5
+  last_modified_date: 2011-03-16 16:19:04 +01:00
+  tag_date: 2011-03-16 16:19:04 +01:00
+  state: 1
+  object_type: 1
+objects_tag_00085: 
+  workflow: 1
+  tag_id: 56
+  workflow_date: 2011-05-13 16:16:54 +02:00
+  uuid: admin
+  id: 85
+  workflow_manager: 
+  object_uid: 487639;5
+  last_modified_date: 2011-05-13 16:16:54 +02:00
+  tag_date: 2011-05-13 16:16:54 +02:00
+  state: 0
+  object_type: 1
+objects_tag_00140: 
+  workflow: 1
+  tag_id: 67
+  workflow_date: 2011-06-16 15:54:12 +02:00
+  uuid: anne-marie.mottin@bpi.fr
+  id: 140
+  workflow_manager: 
+  object_uid: "158"
+  last_modified_date: 2011-06-16 15:54:12 +02:00
+  tag_date: 2011-06-16 15:54:12 +02:00
+  state: 1
+  object_type: 2
+objects_tag_00056: 
+  workflow: 1
+  tag_id: 35
+  workflow_date: 2011-05-06 18:24:19 +02:00
+  uuid: jerome.villeminoz@bpi.fr
+  id: 56
+  workflow_manager: 
+  object_uid: 53957;6
+  last_modified_date: 2011-05-06 18:24:19 +02:00
+  tag_date: 2011-05-06 18:24:19 +02:00
+  state: 1
+  object_type: 1
+objects_tag_00111: 
+  workflow: 1
+  tag_id: 57
+  workflow_date: 2011-05-30 12:48:42 +02:00
+  uuid: james.lecard@bpi.fr
+  id: 111
+  workflow_manager: 
+  object_uid: 785376;5
+  last_modified_date: 2011-05-30 12:48:42 +02:00
+  tag_date: 2011-05-30 12:48:42 +02:00
+  state: 1
+  object_type: 1
+objects_tag_00028: 
+  workflow: 1
+  tag_id: 24
+  workflow_date: 2011-03-16 16:19:11 +01:00
+  uuid: claire.lebreton@bpi.fr
+  id: 28
+  workflow_manager: 
+  object_uid: 70534;5
+  last_modified_date: 2011-03-16 16:19:11 +01:00
+  tag_date: 2011-03-16 16:19:11 +01:00
+  state: 1
+  object_type: 1
+objects_tag_00086: 
+  workflow: 1
+  tag_id: 57
+  workflow_date: 2011-05-13 16:17:11 +02:00
+  uuid: admin
+  id: 86
+  workflow_manager: 
+  object_uid: 487639;5
+  last_modified_date: 2011-05-13 16:17:11 +02:00
+  tag_date: 2011-05-13 16:17:11 +02:00
+  state: 0
+  object_type: 1
+objects_tag_00141: 
+  workflow: 1
+  tag_id: 94
+  workflow_date: 2011-06-16 15:54:33 +02:00
+  uuid: karine.meneghetti@bpi.fr
+  id: 141
+  workflow_manager: 
+  object_uid: 296347;5
+  last_modified_date: 2011-06-16 15:54:33 +02:00
+  tag_date: 2011-06-16 15:54:33 +02:00
+  state: 1
+  object_type: 1
+objects_tag_00057: 
+  workflow: 1
+  tag_id: 42
+  workflow_date: 2011-05-06 18:25:29 +02:00
+  uuid: jerome.villeminoz@bpi.fr
+  id: 57
+  workflow_manager: 
+  object_uid: 130074;6
+  last_modified_date: 2011-05-06 18:25:29 +02:00
+  tag_date: 2011-05-06 18:25:29 +02:00
+  state: 1
+  object_type: 1
+objects_tag_00112: 
+  workflow: 1
+  tag_id: 76
+  workflow_date: 2011-05-30 16:13:37 +02:00
+  uuid: admin
+  id: 112
+  workflow_manager: 
+  object_uid: 296347;5
+  last_modified_date: 2011-05-30 16:13:37 +02:00
+  tag_date: 2011-05-30 16:13:37 +02:00
+  state: 0
+  object_type: 1
+objects_tag_00029: 
+  workflow: 1
+  tag_id: 25
+  workflow_date: 2011-03-16 16:19:22 +01:00
+  uuid: claire.lebreton@bpi.fr
+  id: 29
+  workflow_manager: 
+  object_uid: 70534;5
+  last_modified_date: 2011-03-16 16:19:22 +01:00
+  tag_date: 2011-03-16 16:19:22 +01:00
+  state: 1
+  object_type: 1
+objects_tag_00142: 
+  workflow: 1
+  tag_id: 96
+  workflow_date: 2011-06-16 15:55:05 +02:00
+  uuid: nathalie.daigne@bpi.fr
+  id: 142
+  workflow_manager: 
+  object_uid: 417020;5
+  last_modified_date: 2011-06-16 15:55:05 +02:00
+  tag_date: 2011-06-16 15:55:05 +02:00
+  state: 1
+  object_type: 1
+objects_tag_00058: 
+  workflow: 1
+  tag_id: 43
+  workflow_date: 2011-05-06 18:29:23 +02:00
+  uuid: admin
+  id: 58
+  workflow_manager: 
+  object_uid: 124298;6
+  last_modified_date: 2011-05-06 18:29:23 +02:00
+  tag_date: 2011-05-06 18:29:23 +02:00
+  state: 0
+  object_type: 1
+objects_tag_00170: 
+  workflow: 1
+  tag_id: 120
+  workflow_date: 2011-09-07 10:39:50 +02:00
+  uuid: admin
+  id: 170
+  workflow_manager: 
+  object_uid: 1018462;5
+  last_modified_date: 2011-09-07 10:39:50 +02:00
+  tag_date: 2011-09-07 10:39:50 +02:00
+  state: 1
+  object_type: 1
+objects_tag_00087: 
+  workflow: 1
+  tag_id: 58
+  workflow_date: 2011-05-16 11:40:13 +02:00
+  uuid: dominique.crest@bpi.fr
+  id: 87
+  workflow_manager: 
+  object_uid: 673928;5
+  last_modified_date: 2011-05-16 11:40:13 +02:00
+  tag_date: 2011-05-16 11:40:13 +02:00
+  state: 1
+  object_type: 1
+objects_tag_00059: 
+  workflow: 1
+  tag_id: 44
+  workflow_date: 2011-05-06 18:29:32 +02:00
+  uuid: admin
+  id: 59
+  workflow_manager: 
+  object_uid: 124298;6
+  last_modified_date: 2011-05-06 18:29:32 +02:00
+  tag_date: 2011-05-06 18:29:32 +02:00
+  state: 0
+  object_type: 1
+objects_tag_00114: 
+  workflow: 1
+  tag_id: 67
+  workflow_date: 2011-05-30 16:14:04 +02:00
+  uuid: marie-noelle.franchino@bpi.fr
+  id: 114
+  workflow_manager: 
+  object_uid: 296347;5
+  last_modified_date: 2011-05-30 16:14:04 +02:00
+  tag_date: 2011-05-30 16:14:04 +02:00
+  state: 1
+  object_type: 1
+objects_tag_00171: 
+  workflow: 1
+  tag_id: 121
+  workflow_date: 2011-09-20 16:24:25 +02:00
+  uuid: admin
+  id: 171
+  workflow_manager: 
+  object_uid: "210"
+  last_modified_date: 2011-09-20 16:24:25 +02:00
+  tag_date: 2011-09-20 16:24:25 +02:00
+  state: 1
+  object_type: 2
+objects_tag_00001: 
+  workflow: 1
+  tag_id: 1
+  workflow_date: 2011-03-11 11:23:31 +01:00
+  uuid: james.lecard@bpi.fr
+  id: 1
+  workflow_manager: 
+  object_uid: 221165;5
+  last_modified_date: 2011-03-11 11:23:31 +01:00
+  tag_date: 2011-03-11 11:23:31 +01:00
+  state: 1
+  object_type: 1
+objects_tag_00115: 
+  workflow: 1
+  tag_id: 78
+  workflow_date: 2011-06-06 15:44:27 +02:00
+  uuid: veronique.abot@bpi.fr
+  id: 115
+  workflow_manager: 
+  object_uid: 295654;5
+  last_modified_date: 2011-06-06 15:44:27 +02:00
+  tag_date: 2011-06-06 15:44:27 +02:00
+  state: 1
+  object_type: 1
+objects_tag_00172: 
+  workflow: 1
+  tag_id: 119
+  workflow_date: 2011-09-20 16:24:35 +02:00
+  uuid: admin
+  id: 172
+  workflow_manager: 
+  object_uid: "210"
+  last_modified_date: 2011-09-20 16:24:35 +02:00
+  tag_date: 2011-09-20 16:24:35 +02:00
+  state: 0
+  object_type: 2
+objects_tag_00088: 
+  workflow: 1
+  tag_id: 59
+  workflow_date: 2011-05-16 11:40:16 +02:00
+  uuid: anne.barbier@bpi.fr
+  id: 88
+  workflow_manager: 
+  object_uid: 673928;5
+  last_modified_date: 2011-05-16 11:40:16 +02:00
+  tag_date: 2011-05-16 11:40:16 +02:00
+  state: 1
+  object_type: 1
+objects_tag_00143: 
+  workflow: 1
+  tag_id: 97
+  workflow_date: 2011-06-16 15:55:16 +02:00
+  uuid: laurence.eme@bpi.fr
+  id: 143
+  workflow_manager: 
+  object_uid: 171480;5
+  last_modified_date: 2011-06-16 15:55:16 +02:00
+  tag_date: 2011-06-16 15:55:16 +02:00
+  state: 1
+  object_type: 1
+objects_tag_00116: 
+  workflow: 1
+  tag_id: 79
+  workflow_date: 2011-06-06 16:08:42 +02:00
+  uuid: philippe.charrier@bpi.fr
+  id: 116
+  workflow_manager: 
+  object_uid: 673928;5
+  last_modified_date: 2011-06-06 16:08:42 +02:00
+  tag_date: 2011-06-06 16:08:42 +02:00
+  state: 1
+  object_type: 1
+objects_tag_00173: 
+  workflow: 1
+  tag_id: 122
+  workflow_date: 2011-09-20 16:24:55 +02:00
+  uuid: admin
+  id: 173
+  workflow_manager: 
+  object_uid: "210"
+  last_modified_date: 2011-09-20 16:24:55 +02:00
+  tag_date: 2011-09-20 16:24:55 +02:00
+  state: 1
+  object_type: 2
+objects_tag_00089: 
+  workflow: 1
+  tag_id: 60
+  workflow_date: 2011-05-16 11:42:04 +02:00
+  uuid: christophe.chardey@bpi.fr
+  id: 89
+  workflow_manager: 
+  object_uid: "47"
+  last_modified_date: 2011-05-16 11:42:04 +02:00
+  tag_date: 2011-05-16 11:42:04 +02:00
+  state: 0
+  object_type: 2
+objects_tag_00002: 
+  workflow: 1
+  tag_id: 2
+  workflow_date: 2011-03-11 11:23:45 +01:00
+  uuid: james.lecard@bpi.fr
+  id: 2
+  workflow_manager: 
+  object_uid: 221165;5
+  last_modified_date: 2011-03-11 11:23:45 +01:00
+  tag_date: 2011-03-11 11:23:45 +01:00
+  state: 1
+  object_type: 1
+objects_tag_00117: 
+  workflow: 1
+  tag_id: 59
+  workflow_date: 2011-06-06 16:09:02 +02:00
+  uuid: philippe.charrier@bpi.fr
+  id: 117
+  workflow_manager: 
+  object_uid: 673928;5
+  last_modified_date: 2011-06-06 16:09:02 +02:00
+  tag_date: 2011-06-06 16:09:02 +02:00
+  state: 1
+  object_type: 1
+objects_tag_00060: 
+  workflow: 1
+  tag_id: 45
+  workflow_date: 2011-05-06 18:29:43 +02:00
+  uuid: admin
+  id: 60
+  workflow_manager: 
+  object_uid: 124298;6
+  last_modified_date: 2011-05-06 18:29:43 +02:00
+  tag_date: 2011-05-06 18:29:43 +02:00
+  state: 0
+  object_type: 1
+objects_tag_00174: 
+  workflow: 1
+  tag_id: 123
+  workflow_date: 2011-09-20 16:25:04 +02:00
+  uuid: admin
+  id: 174
+  workflow_manager: 
+  object_uid: "210"
+  last_modified_date: 2011-09-20 16:25:04 +02:00
+  tag_date: 2011-09-20 16:25:04 +02:00
+  state: 0
+  object_type: 2
+objects_tag_00145: 
+  workflow: 1
+  tag_id: 99
+  workflow_date: 2011-06-20 15:46:24 +02:00
+  uuid: melanie.archambaud@bpi.fr
+  id: 145
+  workflow_manager: 
+  object_uid: 673928;5
+  last_modified_date: 2011-06-20 15:46:24 +02:00
+  tag_date: 2011-06-20 15:46:24 +02:00
+  state: 1
+  object_type: 1
+objects_tag_00003: 
+  workflow: 1
+  tag_id: 3
+  workflow_date: 2011-03-11 11:23:58 +01:00
+  uuid: james.lecard@bpi.fr
+  id: 3
+  workflow_manager: 
+  object_uid: 221165;5
+  last_modified_date: 2011-03-11 11:23:58 +01:00
+  tag_date: 2011-03-11 11:23:58 +01:00
+  state: 1
+  object_type: 1
+objects_tag_00118: 
+  workflow: 1
+  tag_id: 80
+  workflow_date: 2011-06-06 16:09:06 +02:00
+  uuid: veronique.abot@bpi.fr
+  id: 118
+  workflow_manager: 
+  object_uid: 281190;5
+  last_modified_date: 2011-06-06 16:09:06 +02:00
+  tag_date: 2011-06-06 16:09:06 +02:00
+  state: 1
+  object_type: 1
+objects_tag_00061: 
+  workflow: 1
+  tag_id: 46
+  workflow_date: 2011-05-06 18:29:57 +02:00
+  uuid: admin
+  id: 61
+  workflow_manager: 
+  object_uid: 124298;6
+  last_modified_date: 2011-05-06 18:29:57 +02:00
+  tag_date: 2011-05-06 18:29:57 +02:00
+  state: 0
+  object_type: 1
+objects_tag_00175: 
+  workflow: 1
+  tag_id: 124
+  workflow_date: 2011-09-20 16:28:13 +02:00
+  uuid: james.lecard@bpi.fr
+  id: 175
+  workflow_manager: 
+  object_uid: "210"
+  last_modified_date: 2011-09-20 16:28:13 +02:00
+  tag_date: 2011-09-20 16:28:13 +02:00
+  state: 1
+  object_type: 2
+objects_tag_00146: 
+  workflow: 1
+  tag_id: 100
+  workflow_date: 2011-06-20 15:47:16 +02:00
+  uuid: claudine.villette@bpi.fr
+  id: 146
+  workflow_manager: 
+  object_uid: 188837;5
+  last_modified_date: 2011-06-20 15:47:16 +02:00
+  tag_date: 2011-06-20 15:47:16 +02:00
+  state: 1
+  object_type: 1
+objects_tag_00119: 
+  workflow: 1
+  tag_id: 81
+  workflow_date: 2011-06-09 11:58:26 +02:00
+  uuid: francoise.hurault@bpi.fr
+  id: 119
+  workflow_manager: 
+  object_uid: 188837;5
+  last_modified_date: 2011-06-09 11:58:26 +02:00
+  tag_date: 2011-06-09 11:58:26 +02:00
+  state: 1
+  object_type: 1
+objects_tag_00062: 
+  workflow: 1
+  tag_id: 44
+  workflow_date: 2011-05-06 18:30:21 +02:00
+  uuid: admin
+  id: 62
+  workflow_manager: 
+  object_uid: 123217;6
+  last_modified_date: 2011-05-06 18:30:21 +02:00
+  tag_date: 2011-05-06 18:30:21 +02:00
+  state: 0
+  object_type: 1
+objects_tag_00147: 
+  workflow: 1
+  tag_id: 101
+  workflow_date: 2011-06-20 15:47:18 +02:00
+  uuid: reno.etu@gmail.com
+  id: 147
+  workflow_manager: 
+  object_uid: 673928;5
+  last_modified_date: 2011-06-20 15:47:18 +02:00
+  tag_date: 2011-06-20 15:47:18 +02:00
+  state: 1
+  object_type: 1
+objects_tag_00090: 
+  workflow: 1
+  tag_id: 58
+  workflow_date: 2011-05-16 11:49:33 +02:00
+  uuid: abdelkader.belkhiter@bpi.fr
+  id: 90
+  workflow_manager: 
+  object_uid: 673928;5
+  last_modified_date: 2011-05-16 11:49:33 +02:00
+  tag_date: 2011-05-16 11:49:33 +02:00
+  state: 1
+  object_type: 1
+objects_tag_00176: 
+  workflow: 1
+  tag_id: 125
+  workflow_date: 2011-09-20 16:28:23 +02:00
+  uuid: james.lecard@bpi.fr
+  id: 176
+  workflow_manager: 
+  object_uid: "210"
+  last_modified_date: 2011-09-20 16:28:23 +02:00
+  tag_date: 2011-09-20 16:28:23 +02:00
+  state: 1
+  object_type: 2
+objects_tag_00063: 
+  workflow: 1
+  tag_id: 47
+  workflow_date: 2011-05-06 18:30:34 +02:00
+  uuid: admin
+  id: 63
+  workflow_manager: 
+  object_uid: 123217;6
+  last_modified_date: 2011-05-06 18:30:34 +02:00
+  tag_date: 2011-05-06 18:30:34 +02:00
+  state: 0
+  object_type: 1
+objects_tag_00148: 
+  workflow: 1
+  tag_id: 61
+  workflow_date: 2011-06-20 15:52:32 +02:00
+  uuid: admin
+  id: 148
+  workflow_manager: 
+  object_uid: 296347;5
+  last_modified_date: 2011-06-20 15:52:32 +02:00
+  tag_date: 2011-06-20 15:52:32 +02:00
+  state: 0
+  object_type: 1
+objects_tag_00091: 
+  workflow: 1
+  tag_id: 61
+  workflow_date: 2011-05-16 11:49:45 +02:00
+  uuid: abdelkader.belkhiter@bpi.fr
+  id: 91
+  workflow_manager: 
+  object_uid: 673928;5
+  last_modified_date: 2011-05-16 11:49:45 +02:00
+  tag_date: 2011-05-16 11:49:45 +02:00
+  state: 1
+  object_type: 1
+objects_tag_00064: 
+  workflow: 1
+  tag_id: 48
+  workflow_date: 2011-05-06 18:30:50 +02:00
+  uuid: admin
+  id: 64
+  workflow_manager: 
+  object_uid: 123217;6
+  last_modified_date: 2011-05-06 18:30:50 +02:00
+  tag_date: 2011-05-06 18:30:50 +02:00
+  state: 0
+  object_type: 1
+objects_tag_00149: 
+  workflow: 1
+  tag_id: 102
+  workflow_date: 2011-06-21 15:41:19 +02:00
+  uuid: admin
+  id: 149
+  workflow_manager: 
+  object_uid: 68937;5
+  last_modified_date: 2011-06-21 15:41:19 +02:00
+  tag_date: 2011-06-21 15:41:19 +02:00
+  state: 0
+  object_type: 1
+objects_tag_00092: 
+  workflow: 1
+  tag_id: 62
+  workflow_date: 2011-05-16 11:52:52 +02:00
+  uuid: bruno.beguet@bpi.fr
+  id: 92
+  workflow_manager: 
+  object_uid: 188837;5
+  last_modified_date: 2011-05-16 11:52:52 +02:00
+  tag_date: 2011-05-16 11:52:52 +02:00
+  state: 1
+  object_type: 1
+objects_tag_00065: 
+  workflow: 1
+  tag_id: 49
+  workflow_date: 2011-05-06 18:31:01 +02:00
+  uuid: admin
+  id: 65
+  workflow_manager: 
+  object_uid: 123217;6
+  last_modified_date: 2011-05-06 18:31:01 +02:00
+  tag_date: 2011-05-06 18:31:01 +02:00
+  state: 0
+  object_type: 1
+objects_tag_00120: 
+  workflow: 1
+  tag_id: 6
+  workflow_date: 2011-06-09 11:59:34 +02:00
+  uuid: frederique.lucas-bizouillier@bpi.fr
+  id: 120
+  workflow_manager: 
+  object_uid: 102386;5
+  last_modified_date: 2011-06-09 11:59:34 +02:00
+  tag_date: 2011-06-09 11:59:34 +02:00
+  state: 1
+  object_type: 1
+objects_tag_00008: 
+  workflow: 1
+  tag_id: 7
+  workflow_date: 2011-03-11 16:51:48 +01:00
+  uuid: james.lecard@bpi.fr
+  id: 8
+  workflow_manager: 
+  object_uid: 158221;5
+  last_modified_date: 2011-03-11 16:51:48 +01:00
+  tag_date: 2011-03-11 16:51:48 +01:00
+  state: 0
+  object_type: 1
+objects_tag_00093: 
+  workflow: 1
+  tag_id: 19
+  workflow_date: 2011-05-23 11:42:43 +02:00
+  uuid: james.lecard@bpi.fr
+  id: 93
+  workflow_manager: 
+  object_uid: "13"
+  last_modified_date: 2011-05-23 11:42:43 +02:00
+  tag_date: 2011-05-23 11:42:43 +02:00
+  state: 0
+  object_type: 2
+objects_tag_00009: 
+  workflow: 1
+  tag_id: 8
+  workflow_date: 2011-03-11 17:16:42 +01:00
+  uuid: james.lecard@bpi.fr
+  id: 9
+  workflow_manager: 
+  object_uid: 271304;5
+  last_modified_date: 2011-03-11 17:16:42 +01:00
+  tag_date: 2011-03-11 17:16:42 +01:00
+  state: 0
+  object_type: 1
+objects_tag_00121: 
+  workflow: 1
+  tag_id: 69
+  workflow_date: 2011-06-09 11:59:36 +02:00
+  uuid: jeanne.mininno@bpi.fr
+  id: 121
+  workflow_manager: 
+  object_uid: 23428;5
+  last_modified_date: 2011-06-09 11:59:36 +02:00
+  tag_date: 2011-06-09 11:59:36 +02:00
+  state: 1
+  object_type: 1
+objects_tag_00038: 
+  workflow: 1
+  tag_id: 12
+  workflow_date: 2011-03-17 10:15:31 +01:00
+  uuid: james.lecard@bpi.fr
+  id: 38
+  workflow_manager: 
+  object_uid: 783782;5
+  last_modified_date: 2011-03-17 10:15:31 +01:00
+  tag_date: 2011-03-17 10:15:31 +01:00
+  state: 1
+  object_type: 1
+objects_tag_00095: 
+  workflow: 1
+  tag_id: 63
+  workflow_date: 2011-05-23 11:44:16 +02:00
+  uuid: anne.gourhand@bpi.fr
+  id: 95
+  workflow_manager: 
+  object_uid: 673928;5
+  last_modified_date: 2011-05-23 11:44:16 +02:00
+  tag_date: 2011-05-23 11:44:16 +02:00
+  state: 1
+  object_type: 1
+objects_tag_00150: 
+  workflow: 1
+  tag_id: 103
+  workflow_date: 2011-06-23 16:06:30 +02:00
+  uuid: isabelle.bastian-dupleix@bpi.fr
+  id: 150
+  workflow_manager: 
+  object_uid: "192"
+  last_modified_date: 2011-06-23 16:06:30 +02:00
+  tag_date: 2011-06-23 16:06:30 +02:00
+  state: 1
+  object_type: 2
+objects_tag_00066: 
+  workflow: 1
+  tag_id: 44
+  workflow_date: 2011-05-06 18:31:18 +02:00
+  uuid: admin
+  id: 66
+  workflow_manager: 
+  object_uid: 126989;6
+  last_modified_date: 2011-05-06 18:31:18 +02:00
+  tag_date: 2011-05-06 18:31:18 +02:00
+  state: 0
+  object_type: 1
+objects_tag_00039: 
+  workflow: 1
+  tag_id: 34
+  workflow_date: 2011-03-17 10:15:40 +01:00
+  uuid: james.lecard@bpi.fr
+  id: 39
+  workflow_manager: 
+  object_uid: 783782;5
+  last_modified_date: 2011-03-17 10:15:40 +01:00
+  tag_date: 2011-03-17 10:15:40 +01:00
+  state: 1
+  object_type: 1
+objects_tag_00096: 
+  workflow: 1
+  tag_id: 64
+  workflow_date: 2011-05-23 11:47:46 +02:00
+  uuid: stephanie.lanoe@bpi.fr
+  id: 96
+  workflow_manager: 
+  object_uid: 296347;5
+  last_modified_date: 2011-05-23 11:47:46 +02:00
+  tag_date: 2011-05-23 11:47:46 +02:00
+  state: 1
+  object_type: 1
+objects_tag_00151: 
+  workflow: 1
+  tag_id: 104
+  workflow_date: 2011-06-23 16:07:48 +02:00
+  uuid: isabelle.bastian-dupleix@bpi.fr
+  id: 151
+  workflow_manager: 
+  object_uid: "192"
+  last_modified_date: 2011-06-23 16:07:48 +02:00
+  tag_date: 2011-06-23 16:07:48 +02:00
+  state: 1
+  object_type: 2
+objects_tag_00067: 
+  workflow: 1
+  tag_id: 46
+  workflow_date: 2011-05-06 18:31:27 +02:00
+  uuid: admin
+  id: 67
+  workflow_manager: 
+  object_uid: 126989;6
+  last_modified_date: 2011-05-06 18:31:27 +02:00
+  tag_date: 2011-05-06 18:31:27 +02:00
+  state: 0
+  object_type: 1
+objects_tag_00152: 
+  workflow: 1
+  tag_id: 105
+  workflow_date: 2011-06-23 16:09:13 +02:00
+  uuid: isabelle.bastian-dupleix@bpi.fr
+  id: 152
+  workflow_manager: 
+  object_uid: 113287;5
+  last_modified_date: 2011-06-23 16:09:13 +02:00
+  tag_date: 2011-06-23 16:09:13 +02:00
+  state: 1
+  object_type: 1
+objects_tag_00010: 
+  workflow: 1
+  tag_id: 9
+  workflow_date: 2011-03-11 17:16:51 +01:00
+  uuid: james.lecard@bpi.fr
+  id: 10
+  workflow_manager: 
+  object_uid: 271304;5
+  last_modified_date: 2011-03-11 17:16:51 +01:00
+  tag_date: 2011-03-11 17:16:51 +01:00
+  state: 1
+  object_type: 1
+objects_tag_00068: 
+  workflow: 1
+  tag_id: 45
+  workflow_date: 2011-05-06 18:31:35 +02:00
+  uuid: admin
+  id: 68
+  workflow_manager: 
+  object_uid: 126989;6
+  last_modified_date: 2011-05-06 18:31:35 +02:00
+  tag_date: 2011-05-06 18:31:35 +02:00
+  state: 0
+  object_type: 1
+objects_tag_00123: 
+  workflow: 1
+  tag_id: 79
+  workflow_date: 2011-06-09 11:59:51 +02:00
+  uuid: francoise.hurault@bpi.fr
+  id: 123
+  workflow_manager: 
+  object_uid: 188837;5
+  last_modified_date: 2011-06-09 11:59:51 +02:00
+  tag_date: 2011-06-09 11:59:51 +02:00
+  state: 1
+  object_type: 1
+objects_tag_00098: 
+  workflow: 1
+  tag_id: 66
+  workflow_date: 2011-05-23 11:48:27 +02:00
+  uuid: stephanie.lanoe@bpi.fr
+  id: 98
+  workflow_manager: 
+  object_uid: 673928;5
+  last_modified_date: 2011-05-23 11:48:27 +02:00
+  tag_date: 2011-05-23 11:48:27 +02:00
+  state: 1
+  object_type: 1
+objects_tag_00153: 
+  workflow: 1
+  tag_id: 58
+  workflow_date: 2011-06-23 16:09:20 +02:00
+  uuid: admin
+  id: 153
+  workflow_manager: 
+  object_uid: 673928;5
+  last_modified_date: 2011-06-23 16:09:20 +02:00
+  tag_date: 2011-06-23 16:09:20 +02:00
+  state: 0
+  object_type: 1
+objects_tag_00069: 
+  workflow: 1
+  tag_id: 50
+  workflow_date: 2011-05-06 18:33:48 +02:00
+  uuid: admin
+  id: 69
+  workflow_manager: 
+  object_uid: 14344;6
+  last_modified_date: 2011-05-06 18:33:48 +02:00
+  tag_date: 2011-05-06 18:33:48 +02:00
+  state: 0
+  object_type: 1
+objects_tag_00124: 
+  workflow: 1
+  tag_id: 78
+  workflow_date: 2011-06-09 11:59:52 +02:00
+  uuid: sylvie.granger@bpi.fr
+  id: 124
+  workflow_manager: 
+  object_uid: 171480;5
+  last_modified_date: 2011-06-09 11:59:52 +02:00
+  tag_date: 2011-06-09 11:59:52 +02:00
+  state: 1
+  object_type: 1
+objects_tag_00040: 
+  workflow: 1
+  tag_id: 11
+  workflow_date: 2011-03-17 10:15:48 +01:00
+  uuid: james.lecard@bpi.fr
+  id: 40
+  workflow_manager: 
+  object_uid: 783782;5
+  last_modified_date: 2011-03-17 10:15:48 +01:00
+  tag_date: 2011-03-17 10:15:48 +01:00
+  state: 1
+  object_type: 1
+objects_tag_00041: 
+  workflow: 1
+  tag_id: 35
+  workflow_date: 2011-05-02 13:13:04 +02:00
+  uuid: jerome.villeminoz@bpi.fr
+  id: 41
+  workflow_manager: 
+  object_uid: 130402;6
+  last_modified_date: 2011-05-02 13:13:04 +02:00
+  tag_date: 2011-05-02 13:13:04 +02:00
+  state: 1
+  object_type: 1
+objects_tag_00126: 
+  workflow: 1
+  tag_id: 83
+  workflow_date: 2011-06-09 11:59:58 +02:00
+  uuid: jean-pierre.berthon@bpi.fr
+  id: 126
+  workflow_manager: 
+  object_uid: 281872;5
+  last_modified_date: 2011-06-09 11:59:58 +02:00
+  tag_date: 2011-06-09 11:59:58 +02:00
+  state: 1
+  object_type: 1
+objects_tag_00042: 
+  workflow: 1
+  tag_id: 36
+  workflow_date: 2011-05-03 15:39:11 +02:00
+  uuid: bpi.beaubourg@gmail.com
+  id: 42
+  workflow_manager: 
+  object_uid: 24537;6
+  last_modified_date: 2011-05-03 15:39:11 +02:00
+  tag_date: 2011-05-03 15:39:11 +02:00
+  state: 1
+  object_type: 1
+objects_tag_00070: 
+  workflow: 1
+  tag_id: 39
+  workflow_date: 2011-05-06 18:33:59 +02:00
+  uuid: admin
+  id: 70
+  workflow_manager: 
+  object_uid: 14344;6
+  last_modified_date: 2011-05-06 18:33:59 +02:00
+  tag_date: 2011-05-06 18:33:59 +02:00
+  state: 0
+  object_type: 1
+objects_tag_00043: 
+  workflow: 1
+  tag_id: 37
+  workflow_date: 2011-05-03 15:39:21 +02:00
+  uuid: bpi.beaubourg@gmail.com
+  id: 43
+  workflow_manager: 
+  object_uid: 24537;6
+  last_modified_date: 2011-05-03 15:39:21 +02:00
+  tag_date: 2011-05-03 15:39:21 +02:00
+  state: 1
+  object_type: 1
+objects_tag_00014: 
+  workflow: 1
+  tag_id: 11
+  workflow_date: 2011-03-16 16:08:23 +01:00
+  uuid: admin
+  id: 14
+  workflow_manager: 
+  object_uid: 647080;5
+  last_modified_date: 2011-03-16 16:08:23 +01:00
+  tag_date: 2011-03-16 16:08:23 +01:00
+  state: 0
+  object_type: 1
+objects_tag_00128: 
+  workflow: 1
+  tag_id: 85
+  workflow_date: 2011-06-09 14:53:10 +02:00
+  uuid: admin
+  id: 128
+  workflow_manager: 
+  object_uid: "110"
+  last_modified_date: 2011-06-09 14:53:10 +02:00
+  tag_date: 2011-06-09 14:53:10 +02:00
+  state: 0
+  object_type: 2
+objects_tag_00071: 
+  workflow: 1
+  tag_id: 51
+  workflow_date: 2011-05-06 18:34:54 +02:00
+  uuid: admin
+  id: 71
+  workflow_manager: 
+  object_uid: 14344;6
+  last_modified_date: 2011-05-06 18:34:54 +02:00
+  tag_date: 2011-05-06 18:34:54 +02:00
+  state: 0
+  object_type: 1
+objects_tag_00015: 
+  workflow: 1
+  tag_id: 12
+  workflow_date: 2011-03-16 16:08:31 +01:00
+  uuid: admin
+  id: 15
+  workflow_manager: 
+  object_uid: 647080;5
+  last_modified_date: 2011-03-16 16:08:31 +01:00
+  tag_date: 2011-03-16 16:08:31 +01:00
+  state: 0
+  object_type: 1
+objects_tag_00129: 
+  workflow: 1
+  tag_id: 65
+  workflow_date: 2011-06-10 11:44:07 +02:00
+  uuid: marc.boilloux@bpi.fr
+  id: 129
+  workflow_manager: 
+  object_uid: 673928;5
+  last_modified_date: 2011-06-10 11:44:07 +02:00
+  tag_date: 2011-06-10 11:44:07 +02:00
+  state: 1
+  object_type: 1
+objects_tag_00072: 
+  workflow: 1
+  tag_id: 52
+  workflow_date: 2011-05-06 18:35:45 +02:00
+  uuid: admin
+  id: 72
+  workflow_manager: 
+  object_uid: 153399;6
+  last_modified_date: 2011-05-06 18:35:45 +02:00
+  tag_date: 2011-05-06 18:35:45 +02:00
+  state: 0
+  object_type: 1
+objects_tag_00158: 
+  workflow: 1
+  tag_id: 110
+  workflow_date: 2011-07-12 14:16:59 +02:00
+  uuid: mng.alex@gmail.com
+  id: 158
+  workflow_manager: 
+  object_uid: "196"
+  last_modified_date: 2011-07-12 14:16:59 +02:00
+  tag_date: 2011-07-12 14:16:59 +02:00
+  state: 1
+  object_type: 2
+objects_tag_00016: 
+  workflow: 1
+  tag_id: 13
+  workflow_date: 2011-03-16 16:08:38 +01:00
+  uuid: admin
+  id: 16
+  workflow_manager: 
+  object_uid: 647080;5
+  last_modified_date: 2011-03-16 16:08:38 +01:00
+  tag_date: 2011-03-16 16:08:38 +01:00
+  state: 0
+  object_type: 1
+objects_tag_00073: 
+  workflow: 1
+  tag_id: 53
+  workflow_date: 2011-05-06 18:36:02 +02:00
+  uuid: admin
+  id: 73
+  workflow_manager: 
+  object_uid: 153399;6
+  last_modified_date: 2011-05-06 18:36:02 +02:00
+  tag_date: 2011-05-06 18:36:02 +02:00
+  state: 0
+  object_type: 1
+objects_tag_00044: 
+  workflow: 1
+  tag_id: 38
+  workflow_date: 2011-05-04 17:02:47 +02:00
+  uuid: admin
+  id: 44
+  workflow_manager: 
+  object_uid: 153395;6
+  last_modified_date: 2011-05-04 17:02:47 +02:00
+  tag_date: 2011-05-04 17:02:47 +02:00
+  state: 0
+  object_type: 1
+objects_tag_00159: 
+  workflow: 1
+  tag_id: 111
+  workflow_date: 2011-07-14 16:05:14 +02:00
+  uuid: admin
+  id: 159
+  workflow_manager: 
+  object_uid: 988547;5
+  last_modified_date: 2011-07-14 16:05:14 +02:00
+  tag_date: 2011-07-14 16:05:14 +02:00
+  state: 1
+  object_type: 1
+objects_tag_00017: 
+  workflow: 1
+  tag_id: 12
+  workflow_date: 2011-03-16 16:09:23 +01:00
+  uuid: claire.lebreton@bpi.fr
+  id: 17
+  workflow_manager: 
+  object_uid: 647080;5
+  last_modified_date: 2011-03-16 16:09:23 +01:00
+  tag_date: 2011-03-16 16:09:23 +01:00
+  state: 1
+  object_type: 1
+objects_tag_00074: 
+  workflow: 1
+  tag_id: 52
+  workflow_date: 2011-05-06 18:36:40 +02:00
+  uuid: admin
+  id: 74
+  workflow_manager: 
+  object_uid: 153870;6
+  last_modified_date: 2011-05-06 18:36:40 +02:00
+  tag_date: 2011-05-06 18:36:40 +02:00
+  state: 0
+  object_type: 1
+objects_tag_00045: 
+  workflow: 1
+  tag_id: 14
+  workflow_date: 2011-05-06 18:18:39 +02:00
+  uuid: admin
+  id: 45
+  workflow_manager: 
+  object_uid: 153959;6
+  last_modified_date: 2011-05-06 18:18:39 +02:00
+  tag_date: 2011-05-06 18:18:39 +02:00
+  state: 0
+  object_type: 1
+objects_tag_00018: 
+  workflow: 1
+  tag_id: 14
+  workflow_date: 2011-03-16 16:13:13 +01:00
+  uuid: claire.lebreton@bpi.fr
+  id: 18
+  workflow_manager: 
+  object_uid: 803248;5
+  last_modified_date: 2011-03-16 16:13:13 +01:00
+  tag_date: 2011-03-16 16:13:13 +01:00
+  state: 1
+  object_type: 1
+objects_tag_00075: 
+  workflow: 1
+  tag_id: 52
+  workflow_date: 2011-05-06 18:36:54 +02:00
+  uuid: admin
+  id: 75
+  workflow_manager: 
+  object_uid: 153824;6
+  last_modified_date: 2011-05-06 18:36:54 +02:00
+  tag_date: 2011-05-06 18:36:54 +02:00
+  state: 0
+  object_type: 1
+objects_tag_00130: 
+  workflow: 1
+  tag_id: 86
+  workflow_date: 2011-06-10 11:44:38 +02:00
+  uuid: chantal.sibille@bpi.fr
+  id: 130
+  workflow_manager: 
+  object_uid: "149"
+  last_modified_date: 2011-06-10 11:44:38 +02:00
+  tag_date: 2011-06-10 11:44:38 +02:00
+  state: 1
+  object_type: 2
+objects_tag_00046: 
+  workflow: 1
+  tag_id: 39
+  workflow_date: 2011-05-06 18:19:07 +02:00
+  uuid: admin
+  id: 46
+  workflow_manager: 
+  object_uid: 153959;6
+  last_modified_date: 2011-05-06 18:19:07 +02:00
+  tag_date: 2011-05-06 18:19:07 +02:00
+  state: 0
+  object_type: 1
+objects_tag_00101: 
+  workflow: 1
+  tag_id: 67
+  workflow_date: 2011-05-23 16:11:28 +02:00
+  uuid: claire.lebreton@bpi.fr
+  id: 101
+  workflow_manager: 
+  object_uid: 673928;5
+  last_modified_date: 2011-05-23 16:11:28 +02:00
+  tag_date: 2011-05-23 16:11:28 +02:00
+  state: 1
+  object_type: 1
+objects_tag_00102: 
+  workflow: 1
+  tag_id: 67
+  workflow_date: 2011-05-23 16:11:42 +02:00
+  uuid: evelyne.favennec@bpi.fr
+  id: 102
+  workflow_manager: 
+  object_uid: 23428;5
+  last_modified_date: 2011-05-23 16:11:42 +02:00
+  tag_date: 2011-05-23 16:11:42 +02:00
+  state: 1
+  object_type: 1
+objects_tag_00019: 
+  workflow: 1
+  tag_id: 15
+  workflow_date: 2011-03-16 16:16:24 +01:00
+  uuid: claire.lebreton@bpi.fr
+  id: 19
+  workflow_manager: 
+  object_uid: 647080;5
+  last_modified_date: 2011-03-16 16:16:24 +01:00
+  tag_date: 2011-03-16 16:16:24 +01:00
+  state: 1
+  object_type: 1
+objects_tag_00076: 
+  workflow: 1
+  tag_id: 52
+  workflow_date: 2011-05-06 18:37:10 +02:00
+  uuid: admin
+  id: 76
+  workflow_manager: 
+  object_uid: 154516;6
+  last_modified_date: 2011-05-06 18:37:10 +02:00
+  tag_date: 2011-05-06 18:37:10 +02:00
+  state: 0
+  object_type: 1
+objects_tag_00131: 
+  workflow: 1
+  tag_id: 87
+  workflow_date: 2011-06-10 11:45:24 +02:00
+  uuid: marianne.genetine@bpi.fr
+  id: 131
+  workflow_manager: 
+  object_uid: 153195;5
+  last_modified_date: 2011-06-10 11:45:24 +02:00
+  tag_date: 2011-06-10 11:45:24 +02:00
+  state: 1
+  object_type: 1
+objects_tag_00047: 
+  workflow: 1
+  tag_id: 40
+  workflow_date: 2011-05-06 18:19:19 +02:00
+  uuid: admin
+  id: 47
+  workflow_manager: 
+  object_uid: 153959;6
+  last_modified_date: 2011-05-06 18:19:19 +02:00
+  tag_date: 2011-05-06 18:19:19 +02:00
+  state: 0
+  object_type: 1
+objects_tag_00048: 
+  workflow: 1
+  tag_id: 39
+  workflow_date: 2011-05-06 18:20:16 +02:00
+  uuid: admin
+  id: 48
+  workflow_manager: 
+  object_uid: 153696;6
+  last_modified_date: 2011-05-06 18:20:16 +02:00
+  tag_date: 2011-05-06 18:20:16 +02:00
+  state: 0
+  object_type: 1
+objects_tag_00160: 
+  workflow: 1
+  tag_id: 5
+  workflow_date: 2011-07-14 17:56:12 +02:00
+  uuid: james.lecard@bpi.fr
+  id: 160
+  workflow_manager: 
+  object_uid: 158221;5
+  last_modified_date: 2011-07-14 17:56:12 +02:00
+  tag_date: 2011-07-14 17:56:12 +02:00
+  state: 0
+  object_type: 1
+objects_tag_00103: 
+  workflow: 1
+  tag_id: 68
+  workflow_date: 2011-05-26 09:32:52 +02:00
+  uuid: admin
+  id: 103
+  workflow_manager: 
+  object_uid: 158221;5
+  last_modified_date: 2011-05-26 09:32:52 +02:00
+  tag_date: 2011-05-26 09:32:52 +02:00
+  state: 0
+  object_type: 1
+objects_tag_00104: 
+  workflow: 1
+  tag_id: 69
+  workflow_date: 2011-05-26 11:53:07 +02:00
+  uuid: francoise.gaudet@bpi.fr
+  id: 104
+  workflow_manager: 
+  object_uid: "83"
+  last_modified_date: 2011-05-26 11:53:07 +02:00
+  tag_date: 2011-05-26 11:53:07 +02:00
+  state: 1
+  object_type: 2
+objects_tag_00077: 
+  workflow: 1
+  tag_id: 52
+  workflow_date: 2011-05-06 18:37:33 +02:00
+  uuid: admin
+  id: 77
+  workflow_manager: 
+  object_uid: 153822;6
+  last_modified_date: 2011-05-06 18:37:33 +02:00
+  tag_date: 2011-05-06 18:37:33 +02:00
+  state: 0
+  object_type: 1
+objects_tag_00161: 
+  workflow: 1
+  tag_id: 112
+  workflow_date: 2011-07-14 17:57:21 +02:00
+  uuid: james.lecard@bpi.fr
+  id: 161
+  workflow_manager: 
+  object_uid: "10"
+  last_modified_date: 2011-07-14 17:57:21 +02:00
+  tag_date: 2011-07-14 17:57:21 +02:00
+  state: 1
+  object_type: 2
+objects_tag_00132: 
+  workflow: 1
+  tag_id: 88
+  workflow_date: 2011-06-10 11:45:26 +02:00
+  uuid: nathalie.niang@bpi.fr
+  id: 132
+  workflow_manager: 
+  object_uid: 928797;5
+  last_modified_date: 2011-06-10 11:45:26 +02:00
+  tag_date: 2011-06-10 11:45:26 +02:00
+  state: 1
+  object_type: 1
+objects_tag_00049: 
+  workflow: 1
+  tag_id: 36
+  workflow_date: 2011-05-06 18:20:24 +02:00
+  uuid: admin
+  id: 49
+  workflow_manager: 
+  object_uid: 153696;6
+  last_modified_date: 2011-05-06 18:20:24 +02:00
+  tag_date: 2011-05-06 18:20:24 +02:00
+  state: 0
+  object_type: 1
+objects_tag_00162: 
+  workflow: 1
+  tag_id: 113
+  workflow_date: 2011-07-14 17:57:33 +02:00
+  uuid: james.lecard@bpi.fr
+  id: 162
+  workflow_manager: 
+  object_uid: "10"
+  last_modified_date: 2011-07-14 17:57:33 +02:00
+  tag_date: 2011-07-14 17:57:33 +02:00
+  state: 1
+  object_type: 2
+objects_tag_00133: 
+  workflow: 1
+  tag_id: 89
+  workflow_date: 2011-06-10 11:46:14 +02:00
+  uuid: chantal.sibille@bpi.fr
+  id: 133
+  workflow_manager: 
+  object_uid: 625815;5
+  last_modified_date: 2011-06-10 11:46:14 +02:00
+  tag_date: 2011-06-10 11:46:14 +02:00
+  state: 1
+  object_type: 1
+objects_tag_00020: 
+  workflow: 1
+  tag_id: 16
+  workflow_date: 2011-03-16 16:16:33 +01:00
+  uuid: claire.lebreton@bpi.fr
+  id: 20
+  workflow_manager: 
+  object_uid: 647080;5
+  last_modified_date: 2011-03-16 16:16:33 +01:00
+  tag_date: 2011-03-16 16:16:33 +01:00
+  state: 1
+  object_type: 1
+objects_tag_00105: 
+  workflow: 1
+  tag_id: 70
+  workflow_date: 2011-05-26 13:53:53 +02:00
+  uuid: sandra.aubry@bpi.fr
+  id: 105
+  workflow_manager: 
+  object_uid: 281872;5
+  last_modified_date: 2011-05-26 13:53:53 +02:00
+  tag_date: 2011-05-26 13:53:53 +02:00
+  state: 1
+  object_type: 1
+objects_tag_00134: 
+  workflow: 1
+  tag_id: 90
+  workflow_date: 2011-06-10 11:49:00 +02:00
+  uuid: marie-claude.nouaille@bpi.fr
+  id: 134
+  workflow_manager: 
+  object_uid: 69462;5
+  last_modified_date: 2011-06-10 11:49:00 +02:00
+  tag_date: 2011-06-10 11:49:00 +02:00
+  state: 1
+  object_type: 1
+objects_tag_00079: 
+  workflow: 1
+  tag_id: 9
+  workflow_date: 2011-05-12 12:36:13 +02:00
+  uuid: james.lecard@bpi.fr
+  id: 79
+  workflow_manager: 
+  object_uid: 48942;5
+  last_modified_date: 2011-05-12 12:36:13 +02:00
+  tag_date: 2011-05-12 12:36:13 +02:00
+  state: 1
+  object_type: 1
+objects_tag_00021: 
+  workflow: 1
+  tag_id: 17
+  workflow_date: 2011-03-16 16:16:40 +01:00
+  uuid: claire.lebreton@bpi.fr
+  id: 21
+  workflow_manager: 
+  object_uid: 647080;5
+  last_modified_date: 2011-03-16 16:16:40 +01:00
+  tag_date: 2011-03-16 16:16:40 +01:00
+  state: 1
+  object_type: 1
+objects_tag_00106: 
+  workflow: 1
+  tag_id: 71
+  workflow_date: 2011-05-26 16:19:50 +02:00
+  uuid: claire.lebreton@bpi.fr
+  id: 106
+  workflow_manager: 
+  object_uid: 673928;5
+  last_modified_date: 2011-05-26 16:19:50 +02:00
+  tag_date: 2011-05-26 16:19:50 +02:00
+  state: 1
+  object_type: 1
+objects_tag_00163: 
+  workflow: 1
+  tag_id: 114
+  workflow_date: 2011-07-28 17:11:29 +02:00
+  uuid: james.lecard@bpi.fr
+  id: 163
+  workflow_manager: 
+  object_uid: 993458;5
+  last_modified_date: 2011-07-28 17:11:29 +02:00
+  tag_date: 2011-07-28 17:11:29 +02:00
+  state: 1
+  object_type: 1
+objects_tag_00164: 
+  workflow: 1
+  tag_id: 115
+  workflow_date: 2011-08-31 17:46:07 +02:00
+  uuid: jerome.villeminoz@bpi.fr
+  id: 164
+  workflow_manager: 
+  object_uid: "24"
+  last_modified_date: 2011-08-31 17:46:07 +02:00
+  tag_date: 2011-08-31 17:46:07 +02:00
+  state: 0
+  object_type: 2
+objects_tag_00135: 
+  workflow: 1
+  tag_id: 91
+  workflow_date: 2011-06-14 16:29:34 +02:00
+  uuid: christelle.joussain@bpi.fr
+  id: 135
+  workflow_manager: 
+  object_uid: 443189;5
+  last_modified_date: 2011-06-14 16:29:34 +02:00
+  tag_date: 2011-06-14 16:29:34 +02:00
+  state: 1
+  object_type: 1
+objects_tag_00050: 
+  workflow: 1
+  tag_id: 39
+  workflow_date: 2011-05-06 18:20:43 +02:00
+  uuid: admin
+  id: 50
+  workflow_manager: 
+  object_uid: 130074;6
+  last_modified_date: 2011-05-06 18:20:43 +02:00
+  tag_date: 2011-05-06 18:20:43 +02:00
+  state: 0
+  object_type: 1
+objects_tag_00051: 
+  workflow: 1
+  tag_id: 27
+  workflow_date: 2011-05-06 18:21:15 +02:00
+  uuid: admin
+  id: 51
+  workflow_manager: 
+  object_uid: 81285;6
+  last_modified_date: 2011-05-06 18:21:15 +02:00
+  tag_date: 2011-05-06 18:21:15 +02:00
+  state: 0
+  object_type: 1
+objects_tag_00022: 
+  workflow: 1
+  tag_id: 18
+  workflow_date: 2011-03-16 16:17:17 +01:00
+  uuid: claire.lebreton@bpi.fr
+  id: 22
+  workflow_manager: 
+  object_uid: 647080;5
+  last_modified_date: 2011-03-16 16:17:17 +01:00
+  tag_date: 2011-03-16 16:17:17 +01:00
+  state: 1
+  object_type: 1
+objects_tag_00136: 
+  workflow: 1
+  tag_id: 92
+  workflow_date: 2011-06-16 15:52:14 +02:00
+  uuid: delphine.nicolas@bpi.fr
+  id: 136
+  workflow_manager: 
+  object_uid: 23428;5
+  last_modified_date: 2011-06-16 15:52:14 +02:00
+  tag_date: 2011-06-16 15:52:14 +02:00
+  state: 1
+  object_type: 1
+objects_tag_00023: 
+  workflow: 1
+  tag_id: 19
+  workflow_date: 2011-03-16 16:17:29 +01:00
+  uuid: claire.lebreton@bpi.fr
+  id: 23
+  workflow_manager: 
+  object_uid: 647080;5
+  last_modified_date: 2011-03-16 16:17:29 +01:00
+  tag_date: 2011-03-16 16:17:29 +01:00
+  state: 1
+  object_type: 1
+objects_tag_00137: 
+  workflow: 1
+  tag_id: 93
+  workflow_date: 2011-06-16 15:52:45 +02:00
+  uuid: laurence.eme@bpi.fr
+  id: 137
+  workflow_manager: 
+  object_uid: "160"
+  last_modified_date: 2011-06-16 15:52:45 +02:00
+  tag_date: 2011-06-16 15:52:45 +02:00
+  state: 1
+  object_type: 2
+objects_tag_00080: 
+  workflow: 1
+  tag_id: 8
+  workflow_date: 2011-05-12 12:36:22 +02:00
+  uuid: james.lecard@bpi.fr
+  id: 80
+  workflow_manager: 
+  object_uid: 48942;5
+  last_modified_date: 2011-05-12 12:36:22 +02:00
+  tag_date: 2011-05-12 12:36:22 +02:00
+  state: 0
+  object_type: 1
+objects_tag_00052: 
+  workflow: 1
+  tag_id: 39
+  workflow_date: 2011-05-06 18:21:26 +02:00
+  uuid: admin
+  id: 52
+  workflow_manager: 
+  object_uid: 81285;6
+  last_modified_date: 2011-05-06 18:21:26 +02:00
+  tag_date: 2011-05-06 18:21:26 +02:00
+  state: 0
+  object_type: 1
+objects_tag_00165: 
+  workflow: 1
+  tag_id: 116
+  workflow_date: 2011-08-31 17:46:54 +02:00
+  uuid: jerome.villeminoz@bpi.fr
+  id: 165
+  workflow_manager: 
+  object_uid: "31"
+  last_modified_date: 2011-08-31 17:46:54 +02:00
+  tag_date: 2011-08-31 17:46:54 +02:00
+  state: 1
+  object_type: 2

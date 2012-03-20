@@ -1,3 +1,4 @@
+# encoding: utf-8
 # LibraryFind - Quality find done better.
 # Copyright (C) 2007 Oregon State University
 #
@@ -592,7 +593,8 @@ class RecordSet  < ActionController::Base
     _pos = -1
     while _x==nil
       _x = _haystack.index(_x,_needle)
-      if _x!=nil : _pos = _x end
+      if _x!=nil 
+        _pos = _x end
     end
     return _pos
   end
@@ -640,24 +642,37 @@ class RecordSet  < ActionController::Base
   
   def getLabel(_s)
     case _s.downcase
-      when 'linking' : return 'link'
-      when 'staticurl' : return 'static'
-      when 'bn' : return 'isbn'
-      when 'ti' : return 'title'
-      when 'ati' : return 'atitle'
-      when 'au' : return 'author'
-      when 'an' : return 'ass_num'
-      when 'note' : return 'abstract'
-      when 'abs' : return 'abstract'
-      when 'cnum' : return 'callnum'
-      when 'pub' : return 'publisher'
+      when 'linking' 
+        return 'link'
+      when 'staticurl' 
+        return 'static'
+      when 'bn' 
+        return 'isbn'
+      when 'ti' 
+        return 'title'
+      when 'ati' 
+        return 'atitle'
+      when 'au'
+        return 'author'
+      when 'an' 
+        return 'ass_num'
+      when 'note'
+        return 'abstract'
+      when 'abs'
+        return 'abstract'
+      when 'cnum' 
+        return 'callnum'
+      when 'pub'
+        return 'publisher'
     else return _s.downcase
     end
   end
   
   def buildopenlink(_val, _stem) 
-    if _stem == "": return "" end
-    if _stem.index('?')==nil: _stem + '?' end
+    if _stem == ""
+      return "" end
+    if _stem.index('?')==nil
+      _stem + '?' end
     co = OpenURL::ContextObject.new
     if _val['rft_id']!='' 
       if _val['rft_id'].index("info:doi/")!=nil

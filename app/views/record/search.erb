@@ -1,0 +1,62 @@
+<% if @IsMobile != true %>
+<div id="page_contents" >
+  <div id="white_space">
+  	<%= render(:partial => "messages") %><br/>
+ <h3><font color="#f79247"><%=translate('LIBRARY_FIND_IS')%></font></h3>
+	<%=translate('OPEN_SOURCE')%>
+	<br>
+	<br>
+	
+	
+	<font color="#f79247"><%=translate('FIND_IT_LABEL')%></font>
+	<ul>
+		<li><%=translate('FIND_IT_1')%></li>
+		<li><%=translate('FIND_IT_2')%></li>
+	</ul>
+	
+	<font color="#f79247"><%=translate('GET_IT_LABEL')%></font>
+	<ul>
+		<li><%=translate('GET_IT_1')%></li>
+	</ul>
+	
+	<font color="#f79247"><%=translate('REFINE_IT_LABEL')%></font>
+	<ul>
+		<li><%=translate('REFINE_IT_1')%></li>
+		<li><%=translate('REFINE_IT_2')%></li>
+	</ul>
+
+
+	<font color="#f79247"><%=translate('FEATURES_LABEL')%></font>
+	<ul>
+		<li><%=translate('FEATURES_1')%></li>
+		<li><%=translate('FEATURES_2')%></li>
+		<li><%=translate('FEATURES_3')%></li>
+		<li><%=translate('FEATURES_4')%></li>
+		<li><%=translate('FEATURES_5')%></li>
+		<li><%=translate('FEATURES_6')%></li>
+	</ul>
+
+        <font color="#f79247">Sample Queries:</font>
+        <ul>
+	    <li>linus pauling<br />
+                Demonstrates mix of images and text</li>
+            <li>harry potter<br />
+	        Demonstrates ability to pull cover art from Open Library</li>
+            <li>principles of government accounting<br />
+	        Demonstrates Google Fulltext linking</li>
+        </ul>
+
+        <font color="#f79247">About LibraryFind:</font>
+        <ul>
+	   <li><a href="/gwla_lf.ppt">Powerpoint Presentation</a></li>
+        </ul>
+	
+		<div id="footer">
+			<p><%=translate('FOOTER')%></p>
+		</div>
+
+	
+  </div>
+</div><!-- end page contents -->
+  
+<%end%>

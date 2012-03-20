@@ -1,0 +1,107 @@
+<%_from=display_source(generic) %>
+<div>
+    <%    if !params.nil? and !params[:query].nil? and params[:query][:string].blank?
+    underLine = params[:query][:string];
+    underLine = underLine.gsub(/,,,/, '|') || underLine;
+    _from.gsub!(/(#{underLine})/i, '<span class="keyword">\1</span>')
+    end
+    if @image_isbn_list == nil
+    @image_isbn_list = ""
+    end
+    if @isbn_list == nil
+    @isbn_list = ""
+    end
+    pisbn = '' %>
+    <!--
+    <%
+    if generic.thumbnail_url != nil && generic.thumbnail_url != ''
+    %>
+    <span style="display:inline;float:left;padding-right:0.5em;" name="open_lib_image"><img src="<%=generic.thumbnail_url%>" border="0" /></span>
+    <%
+    elsif ((defined?(OPENLIBRARY_COVERS)) or (defined?(GOOGLE_COVERS)) && generic.isbn != nil && generic.isbn != '')
+    pisbn = generic.isbn
+    if generic.isbn.index(";")
+    _tisbna = pisbn.split(";")
+    pisbn = _tisbna[0]
+    if pisbn.index(' ')
+    pisbn = pisbn.slice(0, pisbn.index(' '))
+    end
+    else
+    if pisbn.index(' ')
+    pisbn = pisbn.slice(0, pisbn.index(' '))
+    end
+    end
+    logger.debug("COVER ISBN: " + pisbn)
+    %>
+    <% if pisbn != '' %>
+    <span style="display:none;float:left;padding-right:0.5em;" name="open_lib_image" id="OL:ISBN:<%=pisbn%>"></span>
+    <% @image_isbn_list += "ISBN:" + pisbn + "," %>
+    <%else%>
+    <span style="display:none;float:left;padding-right:0.5em;" name="open_lib_image" id="OL:00-<%=generic.id.to_s%>"></span>
+    <% @image_isbn_list += "ISBN:" + generic.id.to_s + "," %>
+    <%end%>
+    <%elsif ((defined?(OPENLIBRARY_COVERS)) or (defined?(GOOGLE_COVERS)) && generic.oclc_num != nil && generic.oclc_num != '') %>
+    <span style="display:none; float:left;padding-right:0.5em;" name="open_lib_image" id="OL:OCLC:<%=generic.oclc_num%>"></span>
+    <% @image_isbn_list += "OCLC:" + generic.oclc_num + "," %>
+    <%end %> -->
+    <% 
+        if generic.isbn != nil && generic.isbn != '' %>
+    <img src="/electre_webservice/show_image/<%=generic.isbn.split('-').join()%>">
+    <%  end %>
+</div>
+<div id="result-row">
+    <% if generic.material_type!="" %>
+    [<%=generic.material_type %>]&nbsp;&nbsp;<%end %>
+    <span id="ptitle"><%if generic.direct_url != " " %>
+        <span id="ptitle">
+            <%= link_to generic.ptitle, :controller=>"document", :action=>"display", :doc=>generic.id, :idTab=>params[:idTab] %>
+        </span><%else %>
+        <%=generic.ptitle %>
+        <%end %>
+    </span>
+</div>
+<% if generic.author != '' and generic.subject!='' %>
+<div id="result-row">
+    <% if generic.author!='' %>
+    <%=generic.author %>
+    <%if generic.subject!='' %>
+    | <%=generic.subject %>
+    <%end %>
+    <%else %>
+    <%if generic.subject!='' %>
+    <%=generic.subject %>
+    <%end %>
+    <%end %>
+</div>
+<%end %>
+<div id="result-row">
+    <%if generic.date!='' and generic.date!='00000000' %>
+    <%=display_date(generic) %>&#160;<%end %>
+    <span id="source"">   
+        <%=_from %>
+    </span>
+</div>
+<%=render(:partial => "/record/details/generic_citation", :object => generic) %>
+<div id="result-row" class='vr'>
+    <%= link_to_function translate('CITATION'), "Element.toggle('citation_"+generic.id.to_s+"')" %>&#160;<span id="add_to_cart_<%=generic.id%>"><%if session[:cart]==nil ||  !session[:cart].include?(generic.id) %>
+        <%=link_to_remote translate('SAVE_THIS_ITEM'), {
+        :update => 'add_to_cart_%s' % generic.id,
+        :url => { :action => 'add', :controller=>'/cart'},
+        :with => "'doc=%s'" % generic.id,
+        :complete => "loadCart('/record/getCart', 'listMyCart')"
+        } %>
+        <% else
+        if @cart_page!=nil and !@cart_page.empty? %>
+        <%=link_to_remote translate('REMOVE_FROM_SAVED_ITEMS'), {
+        :update => 'row_%s' % generic.id,
+        :url => { :action => 'remove', :controller=>'/cart'},
+        :with => "'doc=%s'" % generic.id,
+        :loading => "scroll(0,0);Element.show('waitimage')",
+        :complete => "Element.hide('waitimage');"
+        } %>
+        <%end %>
+    </span>&#160;<%end %>
+    <% if generic.vendor_url!=nil and generic.vendor_url!='' %>
+    <a href=<%=h(generic.vendor_url)%>target="_blank"><%=translate('MORE_FROM',[escape_quote(generic.vendor_name)]) %>
+    </a>&#160;<%end %>
+</div>

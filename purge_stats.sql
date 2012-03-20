@@ -1,0 +1,16 @@
+truncate log_cart_usages; 
+truncate log_comments;                     
+truncate log_consult_ressources;           
+truncate log_consults;                     
+truncate log_facette_usages;               
+truncate log_list_consults;                
+truncate log_mail_usages;                  
+truncate log_notes;                        
+truncate log_print_usages;                 
+truncate log_rebonce_profils;              
+truncate log_rebonce_tags;                 
+truncate log_rss_usages;                   
+truncate log_save_notices;                 
+truncate log_save_requests;                
+truncate log_searches;                     
+truncate log_tags; 

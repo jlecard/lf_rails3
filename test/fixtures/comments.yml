@@ -1,0 +1,1607 @@
+# encoding: utf-8
+--- 
+comment_00136: 
+  workflow: 1
+  like_count: 0
+  note_id: 0
+  title: 
+  workflow_date: 2011-06-23 16:13:08 +02:00
+  uuid: gerald.gros@bpi.fr
+  id: 136
+  comment_relevance: 0
+  workflow_manager: ""
+  parent_id: 133
+  object_uid: gerald.gros@bpi.fr
+  content: "ça tague grave"
+  comment_date: 2011-06-23 16:13:08 +02:00
+  state: 1
+  object_type: 5
+  dont_like_count: 0
+comment_00058: 
+  workflow: 1
+  like_count: 0
+  note_id: 61
+  title: recette pot au feu
+  workflow_date: 2011-05-23 16:07:47 +02:00
+  uuid: emmanuelle.sune@bpi.fr
+  id: 58
+  comment_relevance: 0
+  workflow_manager: ""
+  parent_id: 
+  object_uid: 673928;5
+  content: Je mets plus de lard dans le pot au feu
+  comment_date: 2011-05-23 16:07:47 +02:00
+  state: 1
+  object_type: 1
+  dont_like_count: 0
+comment_00080: 
+  workflow: 1
+  like_count: 0
+  note_id: 71
+  title: C'est vraiment super la Bretagne
+  workflow_date: 2011-05-30 12:05:43 +02:00
+  uuid: claire.lebreton@bpi.fr
+  id: 80
+  comment_relevance: 0
+  workflow_manager: ""
+  parent_id: 
+  object_uid: 673928;5
+  content: On s'y croirait
+  comment_date: 2011-05-30 12:05:43 +02:00
+  state: 1
+  object_type: 1
+  dont_like_count: 0
+comment_00079: 
+  workflow: 1
+  like_count: 0
+  note_id: 0
+  title: Y allez c'est renoncer
+  workflow_date: 2011-05-30 12:05:31 +02:00
+  uuid: claire.lebreton@bpi.fr
+  id: 79
+  comment_relevance: 0
+  workflow_manager: ""
+  parent_id: 
+  object_uid: 673928;5
+  content: "On aura beau dire, on aura beau faire la vie s'y cl\xC3\xB4t"
+  comment_date: 2011-05-30 12:05:31 +02:00
+  state: 1
+  object_type: 1
+  dont_like_count: 0
+comment_00060: 
+  workflow: 1
+  like_count: 0
+  note_id: 62
+  title: 
+  workflow_date: 2011-05-23 16:12:32 +02:00
+  uuid: corinne.loyer@bpi.fr
+  id: 60
+  comment_relevance: 0
+  workflow_manager: ""
+  parent_id: 
+  object_uid: 673928;5
+  content: "Tout \xC3\xA7a ne vaut pas le pain-beurre..."
+  comment_date: 2011-05-23 16:12:32 +02:00
+  state: 1
+  object_type: 1
+  dont_like_count: 0
+comment_00038: 
+  workflow: 1
+  like_count: 2
+  note_id: 0
+  title: 
+  workflow_date: 2011-05-16 11:35:02 +02:00
+  uuid: bruno.beguet@bpi.fr
+  id: 38
+  comment_relevance: 2
+  workflow_manager: ""
+  parent_id: 
+  object_uid: 673928;5
+  content: C'est bien pointu comme bouquin...
+  comment_date: 2011-05-16 11:35:02 +02:00
+  state: 1
+  object_type: 1
+  dont_like_count: 0
+comment_00081: 
+  workflow: 1
+  like_count: 0
+  note_id: 0
+  title: 
+  workflow_date: 2011-05-30 12:06:10 +02:00
+  uuid: jean-luc.meubry@bpi.fr
+  id: 81
+  comment_relevance: 0
+  workflow_manager: ""
+  parent_id: 
+  object_uid: 673928;5
+  content: ".......La galette \xC3\xA0 l'logger.debugcume de Carnac servi sur son lit de Granit ......est un rlogger.debuggal...."
+  comment_date: 2011-05-30 12:06:10 +02:00
+  state: 1
+  object_type: 1
+  dont_like_count: 0
+comment_00059: 
+  workflow: 1
+  like_count: 0
+  note_id: 0
+  title: 
+  workflow_date: 2011-05-23 16:09:30 +02:00
+  uuid: emmanuelle.sune@bpi.fr
+  id: 59
+  comment_relevance: 0
+  workflow_manager: ""
+  parent_id: 50
+  object_uid: 673928;5
+  content: ouais bof !
+  comment_date: 2011-05-23 16:09:30 +02:00
+  state: 1
+  object_type: 1
+  dont_like_count: 0
+comment_00117: 
+  workflow: 1
+  like_count: 0
+  note_id: 82
+  title: 
+  workflow_date: 2011-06-16 15:48:34 +02:00
+  uuid: karine.meneghetti@bpi.fr
+  id: 117
+  comment_relevance: 0
+  workflow_manager: ""
+  parent_id: 
+  object_uid: 153195;5
+  content: excellent!
+  comment_date: 2011-06-16 15:48:34 +02:00
+  state: 0
+  object_type: 1
+  dont_like_count: 0
+comment_00040: 
+  workflow: 1
+  like_count: 0
+  note_id: 0
+  title: 
+  workflow_date: 2011-05-16 11:37:12 +02:00
+  uuid: anne.barbier@bpi.fr
+  id: 40
+  comment_relevance: -1
+  workflow_manager: ""
+  parent_id: 
+  object_uid: 673928;5
+  content: "avec des logger.debugpices tout peut se rlogger.debugveiller"
+  comment_date: 2011-05-16 11:37:12 +02:00
+  state: 1
+  object_type: 1
+  dont_like_count: 1
+comment_00039: 
+  workflow: 1
+  like_count: 0
+  note_id: 0
+  title: 
+  workflow_date: 2011-05-16 11:35:52 +02:00
+  uuid: dominique.crest@bpi.fr
+  id: 39
+  comment_relevance: 0
+  workflow_manager: ""
+  parent_id: 
+  object_uid: 673928;5
+  content: "C'est dilogger.debugtlogger.debugtique mais ce n'est pas tr\xC3\xA8s bon !"
+  comment_date: 2011-05-16 11:35:52 +02:00
+  state: 1
+  object_type: 1
+  dont_like_count: 0
+comment_00061: 
+  workflow: 1
+  like_count: 0
+  note_id: 63
+  title: Un livre vraiment accrocheur pour pas grand chose
+  workflow_date: 2011-05-23 16:12:38 +02:00
+  uuid: claire.lebreton@bpi.fr
+  id: 61
+  comment_relevance: 0
+  workflow_manager: ""
+  parent_id: 
+  object_uid: 673928;5
+  content: Je n'ai rien appris sur la cuisine bretonne!
+  comment_date: 2011-05-23 16:12:38 +02:00
+  state: 1
+  object_type: 1
+  dont_like_count: 0
+comment_00118: 
+  workflow: 1
+  like_count: 0
+  note_id: 0
+  title: 
+  workflow_date: 2011-06-16 15:48:34 +02:00
+  uuid: delphine.nicolas@bpi.fr
+  id: 118
+  comment_relevance: 0
+  workflow_manager: ""
+  parent_id: 
+  object_uid: 23428;5
+  content: "Grand classique de la cuisine bretonne; "
+  comment_date: 2011-06-16 15:48:34 +02:00
+  state: 1
+  object_type: 1
+  dont_like_count: 0
+comment_00041: 
+  workflow: 1
+  like_count: 0
+  note_id: 0
+  title: 
+  workflow_date: 2011-05-16 11:38:00 +02:00
+  uuid: dominique.crest@bpi.fr
+  id: 41
+  comment_relevance: 0
+  workflow_manager: ""
+  parent_id: 40
+  object_uid: 673928;5
+  content: "pourquoi des logger.debugpices ? c'est clogger.debugder \xC3\xA0 la mode"
+  comment_date: 2011-05-16 11:38:00 +02:00
+  state: 1
+  object_type: 1
+  dont_like_count: 0
+comment_00019: 
+  workflow: 1
+  like_count: 1
+  note_id: 22
+  title: Commentaire usager
+  workflow_date: 2011-03-17 11:06:57 +01:00
+  uuid: jameslecard@gmail.com
+  id: 19
+  comment_relevance: 1
+  workflow_manager: ""
+  parent_id: 
+  object_uid: 647080;5
+  content: "S'affiche d'une couleur difflogger.debugrente et peut \xC3\xAAtre trilogger.debug"
+  comment_date: 2011-03-17 11:06:57 +01:00
+  state: 1
+  object_type: 1
+  dont_like_count: 0
+comment_00139: 
+  workflow: 1
+  like_count: 0
+  note_id: 0
+  title: aaa
+  workflow_date: 2011-07-14 14:38:23 +02:00
+  uuid: frederique.lucas-bizouillier@bpi.fr
+  id: 139
+  comment_relevance: 0
+  workflow_manager: ""
+  parent_id: 
+  object_uid: 102386;5
+  content: genial
+  comment_date: 2011-07-14 14:38:23 +02:00
+  state: 1
+  object_type: 1
+  dont_like_count: 0
+comment_00062: 
+  workflow: 1
+  like_count: 0
+  note_id: 0
+  title: 
+  workflow_date: 2011-05-25 15:57:47 +02:00
+  uuid: liliane.colin@bpi.fr
+  id: 62
+  comment_relevance: 0
+  workflow_manager: ""
+  parent_id: 43
+  object_uid: 673928;5
+  content: CQFD!
+  comment_date: 2011-05-25 15:57:47 +02:00
+  state: 1
+  object_type: 1
+  dont_like_count: 0
+comment_00083: 
+  workflow: 1
+  like_count: 0
+  note_id: 0
+  title: Plein far sur la bretagne
+  workflow_date: 2011-05-30 12:06:24 +02:00
+  uuid: yannick.henrio@bpi.fr
+  id: 83
+  comment_relevance: 0
+  workflow_manager: ""
+  parent_id: 
+  object_uid: 673928;5
+  content: "Du beurre, du beurre oui mais du beurre sallogger.debug "
+  comment_date: 2011-05-30 12:06:24 +02:00
+  state: 1
+  object_type: 1
+  dont_like_count: 0
+comment_00021: 
+  workflow: 1
+  like_count: 0
+  note_id: 23
+  title: "ce doit \xC3\xAAtre une erreur"
+  workflow_date: 2011-03-17 11:10:32 +01:00
+  uuid: jameslecard@gmail.com
+  id: 21
+  comment_relevance: 0
+  workflow_manager: ""
+  parent_id: 
+  object_uid: 779116;5
+  content: "placlogger.debug l\xC3\xA0 par erreur"
+  comment_date: 2011-03-17 11:10:32 +01:00
+  state: 1
+  object_type: 1
+  dont_like_count: 0
+comment_00119: 
+  workflow: 1
+  like_count: 1
+  note_id: 0
+  title: "\xC3\xA0 tester"
+  workflow_date: 2011-06-16 15:48:38 +02:00
+  uuid: nathalie.daigne@bpi.fr
+  id: 119
+  comment_relevance: 1
+  workflow_manager: ""
+  parent_id: 
+  object_uid: 810704;5
+  content: "dlogger.debuglicieuse et simplicime glace au lait d'amande"
+  comment_date: 2011-06-16 15:48:38 +02:00
+  state: 1
+  object_type: 1
+  dont_like_count: 0
+comment_00042: 
+  workflow: 1
+  like_count: 0
+  note_id: 0
+  title: 
+  workflow_date: 2011-05-16 11:38:07 +02:00
+  uuid: christophe.chardey@bpi.fr
+  id: 42
+  comment_relevance: 0
+  workflow_manager: ""
+  parent_id: 
+  object_uid: 673928;5
+  content: Bof
+  comment_date: 2011-05-16 11:38:07 +02:00
+  state: 0
+  object_type: 1
+  dont_like_count: 0
+comment_00063: 
+  workflow: 1
+  like_count: 0
+  note_id: 0
+  title: 
+  workflow_date: 2011-05-25 15:57:47 +02:00
+  uuid: marc.trouillet@bpi.fr
+  id: 63
+  comment_relevance: 0
+  workflow_manager: ""
+  parent_id: 
+  object_uid: 673928;5
+  content: "arnak  \xC3\xA0 karnak grrrrhh"
+  comment_date: 2011-05-25 15:57:47 +02:00
+  state: 0
+  object_type: 1
+  dont_like_count: 0
+comment_00084: 
+  workflow: 1
+  like_count: 0
+  note_id: 72
+  title: Je n'y connais rien
+  workflow_date: 2011-05-30 12:07:09 +02:00
+  uuid: claire.lebreton@bpi.fr
+  id: 84
+  comment_relevance: 0
+  workflow_manager: ""
+  parent_id: 
+  object_uid: 673928;5
+  content: "Il faudra que j'aille vlogger.debugrifier sur place."
+  comment_date: 2011-05-30 12:07:08 +02:00
+  state: 1
+  object_type: 1
+  dont_like_count: 0
+comment_00100: 
+  workflow: 1
+  like_count: 0
+  note_id: 0
+  title: "la cr\xC3\xAApe !"
+  workflow_date: 2011-06-06 16:06:10 +02:00
+  uuid: philippe.charrier@bpi.fr
+  id: 100
+  comment_relevance: 0
+  workflow_manager: ""
+  parent_id: 
+  object_uid: 673928;5
+  content: bretonne
+  comment_date: 2011-06-06 16:06:10 +02:00
+  state: 1
+  object_type: 1
+  dont_like_count: 0
+comment_00121: 
+  workflow: 1
+  like_count: 0
+  note_id: 0
+  title: 
+  workflow_date: 2011-06-16 15:49:21 +02:00
+  uuid: nathalie.daigne@bpi.fr
+  id: 121
+  comment_relevance: 0
+  workflow_manager: ""
+  parent_id: 119
+  object_uid: nathalie.daigne@bpi.fr
+  content: "c'est vraiment tr\xC3\xA8s intlogger.debugressant"
+  comment_date: 2011-06-16 15:49:21 +02:00
+  state: 1
+  object_type: 5
+  dont_like_count: 0
+comment_00142: 
+  workflow: 1
+  like_count: 0
+  note_id: 0
+  title: Ah bon ?
+  workflow_date: 2011-08-31 17:51:22 +02:00
+  uuid: jerome.villeminoz@bpi.fr
+  id: 142
+  comment_relevance: 0
+  workflow_manager: ""
+  parent_id: 
+  object_uid: "24"
+  content: C'est fou
+  comment_date: 2011-08-31 17:51:22 +02:00
+  state: 0
+  object_type: 2
+  dont_like_count: 0
+comment_00043: 
+  workflow: 1
+  like_count: 0
+  note_id: 52
+  title: commentaire d'une bretonne convaincue
+  workflow_date: 2011-05-16 11:39:13 +02:00
+  uuid: catherine.brodard@bpi.fr
+  id: 43
+  comment_relevance: 0
+  workflow_manager: ""
+  parent_id: 
+  object_uid: 673928;5
+  content: cuisineg bene delectabilic mais pas dietezounec
+  comment_date: 2011-05-16 11:39:13 +02:00
+  state: 1
+  object_type: 1
+  dont_like_count: 0
+comment_00064: 
+  workflow: 1
+  like_count: 0
+  note_id: 0
+  title: 
+  workflow_date: 2011-05-26 09:50:24 +02:00
+  uuid: jerome.villeminoz@bpi.fr
+  id: 64
+  comment_relevance: 0
+  workflow_manager: ""
+  parent_id: 32
+  object_uid: jerome.villeminoz@bpi.fr
+  content: Ahlala
+  comment_date: 2011-05-26 09:50:24 +02:00
+  state: 1
+  object_type: 5
+  dont_like_count: 0
+comment_00085: 
+  workflow: 1
+  like_count: 0
+  note_id: 0
+  title: "des cr\xC3\xAApes????"
+  workflow_date: 2011-05-30 12:09:20 +02:00
+  uuid: vastie.jasor@bpi.fr
+  id: 85
+  comment_relevance: 0
+  workflow_manager: ""
+  parent_id: 
+  object_uid: 673928;5
+  content: "pas seulement et on fait des dlogger.debugcouvertes logger.debugtonnantes. bon applogger.debugtit!"
+  comment_date: 2011-05-30 12:09:20 +02:00
+  state: 1
+  object_type: 1
+  dont_like_count: 0
+comment_00101: 
+  workflow: 1
+  like_count: 0
+  note_id: 0
+  title: 
+  workflow_date: 2011-06-06 16:06:25 +02:00
+  uuid: marc-andre.grosy@bpi.fr
+  id: 101
+  comment_relevance: 0
+  workflow_manager: ""
+  parent_id: 71
+  object_uid: 153195;5
+  content: "En effet "
+  comment_date: 2011-06-06 16:06:25 +02:00
+  state: 1
+  object_type: 1
+  dont_like_count: 0
+comment_00122: 
+  workflow: 1
+  like_count: 0
+  note_id: 0
+  title: 
+  workflow_date: 2011-06-20 11:52:52 +02:00
+  uuid: c.lloretlinares@gmail.com
+  id: 122
+  comment_relevance: 0
+  workflow_manager: ""
+  parent_id: 
+  object_uid: 476169;5
+  content: "Super ouvrage, bien documentlogger.debug"
+  comment_date: 2011-06-20 11:52:52 +02:00
+  state: 1
+  object_type: 1
+  dont_like_count: 0
+comment_00143: 
+  workflow: 1
+  like_count: 0
+  note_id: 0
+  title: la Bretagne aux Bretons ?
+  workflow_date: 2011-08-31 17:52:02 +02:00
+  uuid: jerome.villeminoz@bpi.fr
+  id: 143
+  comment_relevance: 0
+  workflow_manager: ""
+  parent_id: 
+  object_uid: "161"
+  content: Ou pas
+  comment_date: 2011-08-31 17:52:02 +02:00
+  state: 1
+  object_type: 2
+  dont_like_count: 0
+comment_00044: 
+  workflow: 1
+  like_count: 1
+  note_id: 0
+  title: opinion
+  workflow_date: 2011-05-16 11:41:06 +02:00
+  uuid: abdelkader.belkhiter@bpi.fr
+  id: 44
+  comment_relevance: 1
+  workflow_manager: ""
+  parent_id: 
+  object_uid: 673928;5
+  content: "c'est dlogger.debuglicieux et logger.debugquilibrlogger.debug"
+  comment_date: 2011-05-16 11:41:06 +02:00
+  state: 0
+  object_type: 1
+  dont_like_count: 0
+comment_00065: 
+  workflow: 1
+  like_count: 1
+  note_id: 64
+  title: "Faut arr\xC3\xAAter"
+  workflow_date: 2011-05-26 09:53:15 +02:00
+  uuid: jerome.villeminoz@bpi.fr
+  id: 65
+  comment_relevance: 1
+  workflow_manager: ""
+  parent_id: 
+  object_uid: "24"
+  content: "Ca sert \xC3\xA0 rien"
+  comment_date: 2011-05-26 09:53:15 +02:00
+  state: 1
+  object_type: 2
+  dont_like_count: 0
+comment_00102: 
+  workflow: 1
+  like_count: 0
+  note_id: 0
+  title: 
+  workflow_date: 2011-06-06 16:07:25 +02:00
+  uuid: veronique.abot@bpi.fr
+  id: 102
+  comment_relevance: 0
+  workflow_manager: ""
+  parent_id: 
+  object_uid: 941059;5
+  content: le choc des casseroles
+  comment_date: 2011-06-06 16:07:25 +02:00
+  state: 1
+  object_type: 1
+  dont_like_count: 0
+comment_00123: 
+  workflow: 1
+  like_count: 0
+  note_id: 0
+  title: formation
+  workflow_date: 2011-06-20 11:53:07 +02:00
+  uuid: lucille.besombes@gmail.com
+  id: 123
+  comment_relevance: 0
+  workflow_manager: ""
+  parent_id: 
+  object_uid: 673928;5
+  content: "vive le beurre sallogger.debug!"
+  comment_date: 2011-06-20 11:53:07 +02:00
+  state: 1
+  object_type: 1
+  dont_like_count: 0
+comment_00144: 
+  workflow: 1
+  like_count: 0
+  note_id: 0
+  title: La cuisine aux cuisiniers ?
+  workflow_date: 2011-08-31 17:52:30 +02:00
+  uuid: jerome.villeminoz@bpi.fr
+  id: 144
+  comment_relevance: 0
+  workflow_manager: ""
+  parent_id: 
+  object_uid: "161"
+  content: !binary |
+    SMOpaMOp
+
+  comment_date: 2011-08-31 17:52:30 +02:00
+  state: 1
+  object_type: 2
+  dont_like_count: 0
+comment_00045: 
+  workflow: 1
+  like_count: 0
+  note_id: 54
+  title: Pas terrible
+  workflow_date: 2011-05-16 11:42:56 +02:00
+  uuid: catherine.brodard@bpi.fr
+  id: 45
+  comment_relevance: 0
+  workflow_manager: ""
+  parent_id: 
+  object_uid: 296347;5
+  content: "Les ch\xC3\xA2teaux sont tr\xC3\xA8s beaux mais la cuisine pas fameuse. Ecrit par des esth\xC3\xA8tes pas dilogger.debugtlogger.debugticiens"
+  comment_date: 2011-05-16 11:42:56 +02:00
+  state: 1
+  object_type: 1
+  dont_like_count: 0
+comment_00066: 
+  workflow: 1
+  like_count: 0
+  note_id: 65
+  title: !binary |
+    ZXQgbMOg
+
+  workflow_date: 2011-05-26 09:53:54 +02:00
+  uuid: jerome.villeminoz@bpi.fr
+  id: 66
+  comment_relevance: 0
+  workflow_manager: ""
+  parent_id: 
+  object_uid: 681907;5
+  content: "\xC3\xA7a va marcher ?"
+  comment_date: 2011-05-26 09:53:54 +02:00
+  state: 1
+  object_type: 1
+  dont_like_count: 0
+comment_00087: 
+  workflow: 1
+  like_count: 0
+  note_id: 74
+  title: 
+  workflow_date: 2011-05-30 16:10:48 +02:00
+  uuid: marie-noelle.franchino@bpi.fr
+  id: 87
+  comment_relevance: 0
+  workflow_manager: ""
+  parent_id: 
+  object_uid: 296347;5
+  content: histoire et gastronomie un plat d'exception !
+  comment_date: 2011-05-30 16:10:48 +02:00
+  state: 1
+  object_type: 1
+  dont_like_count: 0
+comment_00103: 
+  workflow: 1
+  like_count: 0
+  note_id: 0
+  title: cccc
+  workflow_date: 2011-06-09 11:52:47 +02:00
+  uuid: sylvie.granger@bpi.fr
+  id: 103
+  comment_relevance: 0
+  workflow_manager: ""
+  parent_id: 
+  object_uid: 171480;5
+  content: aaaa
+  comment_date: 2011-06-09 11:52:47 +02:00
+  state: 0
+  object_type: 1
+  dont_like_count: 0
+comment_00124: 
+  workflow: 1
+  like_count: 0
+  note_id: 0
+  title: 
+  workflow_date: 2011-06-20 15:42:56 +02:00
+  uuid: melanie.archambaud@bpi.fr
+  id: 124
+  comment_relevance: -1
+  workflow_manager: ""
+  parent_id: 
+  object_uid: 673928;5
+  content: Super bouquin!
+  comment_date: 2011-06-20 15:42:56 +02:00
+  state: 1
+  object_type: 1
+  dont_like_count: 1
+comment_00145: 
+  workflow: 1
+  like_count: 0
+  note_id: 0
+  title: La Bretagne aux cuisiniers ?
+  workflow_date: 2011-08-31 17:52:54 +02:00
+  uuid: jerome.villeminoz@bpi.fr
+  id: 145
+  comment_relevance: 0
+  workflow_manager: ""
+  parent_id: 
+  object_uid: "161"
+  content: Haha
+  comment_date: 2011-08-31 17:52:54 +02:00
+  state: 0
+  object_type: 2
+  dont_like_count: 0
+comment_00046: 
+  workflow: 1
+  like_count: 1
+  note_id: 0
+  title: excellent
+  workflow_date: 2011-05-16 11:43:38 +02:00
+  uuid: christophe.chardey@bpi.fr
+  id: 46
+  comment_relevance: 1
+  workflow_manager: ""
+  parent_id: 
+  object_uid: 191916;5
+  content: sniff!!
+  comment_date: 2011-05-16 11:43:38 +02:00
+  state: 0
+  object_type: 1
+  dont_like_count: 0
+comment_00067: 
+  workflow: 1
+  like_count: 0
+  note_id: 66
+  title: Incroyable
+  workflow_date: 2011-05-26 09:54:50 +02:00
+  uuid: jerome.villeminoz@bpi.fr
+  id: 67
+  comment_relevance: 0
+  workflow_manager: ""
+  parent_id: 
+  object_uid: 572225;5
+  content: "si \xC3\xA7a marche"
+  comment_date: 2011-05-26 09:54:50 +02:00
+  state: 1
+  object_type: 1
+  dont_like_count: 0
+comment_00088: 
+  workflow: 1
+  like_count: 0
+  note_id: 0
+  title: Carnac
+  workflow_date: 2011-05-30 16:10:50 +02:00
+  uuid: gisele.burda@bpi.fr
+  id: 88
+  comment_relevance: 0
+  workflow_manager: ""
+  parent_id: 
+  object_uid: 673928;5
+  content: "Fraise de Plougastel uniquement "
+  comment_date: 2011-05-30 16:10:50 +02:00
+  state: 0
+  object_type: 1
+  dont_like_count: 0
+comment_00125: 
+  workflow: 1
+  like_count: 0
+  note_id: 83
+  title: Wonderfull
+  workflow_date: 2011-06-20 15:42:59 +02:00
+  uuid: reno.etu@gmail.com
+  id: 125
+  comment_relevance: 0
+  workflow_manager: ""
+  parent_id: 
+  object_uid: 673928;5
+  content: La cuisine du maquis breton
+  comment_date: 2011-06-20 15:42:59 +02:00
+  state: 1
+  object_type: 1
+  dont_like_count: 0
+comment_00146: 
+  workflow: 1
+  like_count: 0
+  note_id: 0
+  title: "commentaire privé"
+  workflow_date: 2011-09-06 16:14:13 +02:00
+  uuid: james.lecard@bpi.fr
+  id: 146
+  comment_relevance: 0
+  workflow_manager: ""
+  parent_id: 
+  object_uid: 113434;5
+  content: "commentaire privlogger.debug"
+  comment_date: 2011-09-06 16:14:13 +02:00
+  state: 0
+  object_type: 1
+  dont_like_count: 0
+comment_00047: 
+  workflow: 1
+  like_count: 0
+  note_id: 0
+  title: 
+  workflow_date: 2011-05-16 11:44:38 +02:00
+  uuid: bruno.beguet@bpi.fr
+  id: 47
+  comment_relevance: 0
+  workflow_manager: ""
+  parent_id: 
+  object_uid: 83985;5
+  content: "C'est bien vieux et bien splogger.debugcialislogger.debug, \xC3\xA0 dlogger.debugsherber !"
+  comment_date: 2011-05-16 11:44:38 +02:00
+  state: 1
+  object_type: 1
+  dont_like_count: 0
+comment_00090: 
+  workflow: 1
+  like_count: 0
+  note_id: 0
+  title: Beurre et sucre
+  workflow_date: 2011-05-30 16:11:16 +02:00
+  uuid: didier.demeyere@bpi.fr
+  id: 90
+  comment_relevance: 0
+  workflow_manager: ""
+  parent_id: 
+  object_uid: 673928;5
+  content: "Kouign amann : la fin du rlogger.debuggime"
+  comment_date: 2011-05-30 16:11:16 +02:00
+  state: 0
+  object_type: 1
+  dont_like_count: 0
+comment_00126: 
+  workflow: 1
+  like_count: 0
+  note_id: 0
+  title: 
+  workflow_date: 2011-06-20 15:44:53 +02:00
+  uuid: reno.etu@gmail.com
+  id: 126
+  comment_relevance: 0
+  workflow_manager: ""
+  parent_id: 124
+  object_uid: 673928;5
+  content: Un brin concis comme commentaire
+  comment_date: 2011-06-20 15:44:53 +02:00
+  state: 1
+  object_type: 1
+  dont_like_count: 0
+comment_00147: 
+  workflow: 1
+  like_count: 0
+  note_id: 0
+  title: "Plusieurs exemplaires \xC3\xA0 tester"
+  workflow_date: 2011-09-20 16:29:52 +02:00
+  uuid: james.lecard@bpi.fr
+  id: 147
+  comment_relevance: 0
+  workflow_manager: ""
+  parent_id: 
+  object_uid: "210"
+  content: zzzz
+  comment_date: 2011-09-20 16:29:52 +02:00
+  state: 1
+  object_type: 2
+  dont_like_count: 0
+comment_00048: 
+  workflow: 1
+  like_count: 0
+  note_id: 0
+  title: 
+  workflow_date: 2011-05-16 11:46:43 +02:00
+  uuid: benedicte.marty@bpi.fr
+  id: 48
+  comment_relevance: 0
+  workflow_manager: ""
+  parent_id: 
+  object_uid: 188837;5
+  content: Un peu ancien comme livre
+  comment_date: 2011-05-16 11:46:43 +02:00
+  state: 1
+  object_type: 1
+  dont_like_count: 0
+comment_00069: 
+  workflow: 1
+  like_count: 0
+  note_id: 67
+  title: Je change d'avis
+  workflow_date: 2011-05-26 10:35:01 +02:00
+  uuid: claire.lebreton@bpi.fr
+  id: 69
+  comment_relevance: 0
+  workflow_manager: ""
+  parent_id: 
+  object_uid: 673928;5
+  content: C'est pas si mal
+  comment_date: 2011-05-26 10:35:01 +02:00
+  state: 1
+  object_type: 1
+  dont_like_count: 0
+comment_00105: 
+  workflow: 1
+  like_count: 0
+  note_id: 0
+  title: "Cuisine rlogger.debuggionale"
+  workflow_date: 2011-06-09 11:57:10 +02:00
+  uuid: francoise.hurault@bpi.fr
+  id: 105
+  comment_relevance: 0
+  workflow_manager: ""
+  parent_id: 
+  object_uid: 188837;5
+  content: "Tr\xC3\xA8s bons plats."
+  comment_date: 2011-06-09 11:57:10 +02:00
+  state: 1
+  object_type: 1
+  dont_like_count: 0
+comment_00148: 
+  workflow: 1
+  like_count: 0
+  note_id: 92
+  title: "commentaire privlogger.debug"
+  workflow_date: 2011-09-20 16:30:17 +02:00
+  uuid: james.lecard@bpi.fr
+  id: 148
+  comment_relevance: 0
+  workflow_manager: ""
+  parent_id: 
+  object_uid: "210"
+  content: "commentaire et note privlogger.debuge"
+  comment_date: 2011-09-20 16:30:17 +02:00
+  state: 1
+  object_type: 2
+  dont_like_count: 0
+comment_00049: 
+  workflow: 1
+  like_count: 0
+  note_id: 0
+  title: 
+  workflow_date: 2011-05-16 11:48:16 +02:00
+  uuid: bruno.beguet@bpi.fr
+  id: 49
+  comment_relevance: 0
+  workflow_manager: ""
+  parent_id: 48
+  object_uid: 188837;5
+  content: "Oh oui c'est bien trop vieux, quarante ans ! A dlogger.debugsherber !!"
+  comment_date: 2011-05-16 11:48:16 +02:00
+  state: 1
+  object_type: 1
+  dont_like_count: 0
+comment_00071: 
+  workflow: 1
+  like_count: 0
+  note_id: 68
+  title: 
+  workflow_date: 2011-05-26 11:53:11 +02:00
+  uuid: isabelle.morin@bpi.fr
+  id: 71
+  comment_relevance: 0
+  workflow_manager: ""
+  parent_id: 
+  object_uid: 153195;5
+  content: jolies photos
+  comment_date: 2011-05-26 11:53:11 +02:00
+  state: 1
+  object_type: 1
+  dont_like_count: 0
+comment_00106: 
+  workflow: 1
+  like_count: 0
+  note_id: 0
+  title: 
+  workflow_date: 2011-06-09 11:57:26 +02:00
+  uuid: jeanne.mininno@bpi.fr
+  id: 106
+  comment_relevance: -1
+  workflow_manager: ""
+  parent_id: 
+  object_uid: 23428;5
+  content: bonne recette
+  comment_date: 2011-06-09 11:57:26 +02:00
+  state: 1
+  object_type: 1
+  dont_like_count: 1
+comment_00127: 
+  workflow: 1
+  like_count: 0
+  note_id: 0
+  title: 
+  workflow_date: 2011-06-20 15:46:23 +02:00
+  uuid: francine.figuiere@bpi.fr
+  id: 127
+  comment_relevance: 0
+  workflow_manager: ""
+  parent_id: 
+  object_uid: "180"
+  content: recettes
+  comment_date: 2011-06-20 15:46:23 +02:00
+  state: 0
+  object_type: 2
+  dont_like_count: 0
+comment_00050: 
+  workflow: 1
+  like_count: 0
+  note_id: 0
+  title: "recette de cr\xC3\xA8pes"
+  workflow_date: 2011-05-23 11:43:21 +02:00
+  uuid: anne.gourhand@bpi.fr
+  id: 50
+  comment_relevance: 0
+  workflow_manager: ""
+  parent_id: 
+  object_uid: 673928;5
+  content: "les recettes de ce livre sont tr\xC3\xA8s bonnes"
+  comment_date: 2011-05-23 11:43:21 +02:00
+  state: 1
+  object_type: 1
+  dont_like_count: 0
+comment_00093: 
+  workflow: 1
+  like_count: 0
+  note_id: 0
+  title: livre indispensable
+  workflow_date: 2011-06-06 16:03:25 +02:00
+  uuid: marie-helene.gatto@bpi.fr
+  id: 93
+  comment_relevance: 0
+  workflow_manager: ""
+  parent_id: 
+  object_uid: 810704;5
+  content: Pour tous ceux qui ne savent pas monter une mayonnaise
+  comment_date: 2011-06-06 16:03:25 +02:00
+  state: 1
+  object_type: 1
+  dont_like_count: 0
+comment_00051: 
+  workflow: 1
+  like_count: 0
+  note_id: 57
+  title: " un regal"
+  workflow_date: 2011-05-23 11:43:52 +02:00
+  uuid: stephanie.lanoe@bpi.fr
+  id: 51
+  comment_relevance: 0
+  workflow_manager: ""
+  parent_id: 
+  object_uid: 673928;5
+  content: humm miam miam
+  comment_date: 2011-05-23 11:43:52 +02:00
+  state: 1
+  object_type: 1
+  dont_like_count: 0
+comment_00029: 
+  workflow: 1
+  like_count: 0
+  note_id: 0
+  title: A boire
+  workflow_date: 2011-03-24 15:15:21 +01:00
+  uuid: amelie.fresneau@laposte.net
+  id: 29
+  comment_relevance: 0
+  workflow_manager: ""
+  parent_id: 
+  object_uid: 158221;5
+  content: A paris
+  comment_date: 2011-03-24 15:15:20 +01:00
+  state: 1
+  object_type: 1
+  dont_like_count: 0
+comment_00072: 
+  workflow: 1
+  like_count: 0
+  note_id: 0
+  title: 
+  workflow_date: 2011-05-26 13:52:42 +02:00
+  uuid: sandra.aubry@bpi.fr
+  id: 72
+  comment_relevance: 0
+  workflow_manager: ""
+  parent_id: 
+  object_uid: 673928;5
+  content: "mais où est passlogger.debug le beurre sallogger.debug?!"
+  comment_date: 2011-05-26 13:52:42 +02:00
+  state: 1
+  object_type: 1
+  dont_like_count: 0
+comment_00094: 
+  workflow: 1
+  like_count: 0
+  note_id: 0
+  title: miam miam
+  workflow_date: 2011-06-06 16:03:36 +02:00
+  uuid: florence.verdeille@bpi.fr
+  id: 94
+  comment_relevance: 0
+  workflow_manager: ""
+  parent_id: 
+  object_uid: 281190;5
+  content: je te conseille ce livre avec des recettes faciles pour tous les jours
+  comment_date: 2011-06-06 16:03:36 +02:00
+  state: 1
+  object_type: 1
+  dont_like_count: 0
+comment_00129: 
+  workflow: 1
+  like_count: 1
+  note_id: 0
+  title: 
+  workflow_date: 2011-06-23 16:06:59 +02:00
+  uuid: sylvie.colley@bpi.fr
+  id: 129
+  comment_relevance: 1
+  workflow_manager: ""
+  parent_id: 
+  object_uid: 154686;5
+  content: vivement  ce week end
+  comment_date: 2011-06-23 16:06:59 +02:00
+  state: 1
+  object_type: 1
+  dont_like_count: 0
+comment_00130: 
+  workflow: 1
+  like_count: 0
+  note_id: 0
+  title: Andouille
+  workflow_date: 2011-06-23 16:07:06 +02:00
+  uuid: veronique.poirier@bpi.fr
+  id: 130
+  comment_relevance: 0
+  workflow_manager: ""
+  parent_id: 
+  object_uid: 645478;5
+  content: "Je vous recommande la fricasslogger.debuge d'andouille (de Gulogger.debugmlogger.debugnlogger.debuge bien s\xC3\xBBr\xC2\xA7)"
+  comment_date: 2011-06-23 16:07:06 +02:00
+  state: 0
+  object_type: 1
+  dont_like_count: 0
+comment_00108: 
+  workflow: 1
+  like_count: 0
+  note_id: 0
+  title: chapitre
+  workflow_date: 2011-06-10 11:41:49 +02:00
+  uuid: chantal.sibille@bpi.fr
+  id: 108
+  comment_relevance: 0
+  workflow_manager: ""
+  parent_id: 
+  object_uid: 754229;5
+  content: 1 chapitre sur la cuisine tunisienne
+  comment_date: 2011-06-10 11:41:49 +02:00
+  state: 1
+  object_type: 1
+  dont_like_count: 0
+comment_00010: 
+  workflow: 1
+  like_count: 0
+  note_id: 10
+  title: blablabla
+  workflow_date: 2011-03-11 17:26:13 +01:00
+  uuid: jameslecard@gmail.com
+  id: 10
+  comment_relevance: 0
+  workflow_manager: ""
+  parent_id: 
+  object_uid: 469803;5
+  content: blabla
+  comment_date: 2011-03-11 17:26:13 +01:00
+  state: 1
+  object_type: 1
+  dont_like_count: 0
+comment_00009: 
+  workflow: 1
+  like_count: 3
+  note_id: 9
+  title: commentaire usager
+  workflow_date: 2011-03-11 17:22:19 +01:00
+  uuid: jameslecard@gmail.com
+  id: 9
+  comment_relevance: 3
+  workflow_manager: ""
+  parent_id: 
+  object_uid: 158221;5
+  content: Je suis un simple utilisateur qui fait un commentaire mais je ne fais partie du personnel... Si vous filtrez par type d'utilisateur, j'apparais ou je disparais...
+  comment_date: 2011-03-11 17:22:19 +01:00
+  state: 1
+  object_type: 1
+  dont_like_count: 0
+comment_00031: 
+  workflow: 1
+  like_count: 0
+  note_id: 35
+  title: Sollers a-t-il lu Debord ?
+  workflow_date: 2011-05-02 13:13:44 +02:00
+  uuid: jerome.villeminoz@bpi.fr
+  id: 31
+  comment_relevance: 0
+  workflow_manager: ""
+  parent_id: 
+  object_uid: 130402;6
+  content: Non mais franchement.
+  comment_date: 2011-05-02 13:13:43 +02:00
+  state: 1
+  object_type: 1
+  dont_like_count: 0
+comment_00052: 
+  workflow: 1
+  like_count: 0
+  note_id: 58
+  title: 
+  workflow_date: 2011-05-23 11:43:57 +02:00
+  uuid: catherine.burtin@bpi.fr
+  id: 52
+  comment_relevance: 0
+  workflow_manager: ""
+  parent_id: 
+  object_uid: 673928;5
+  content: "La recette des rochers s'apparente plut\xC3\xB4t aux menhirs : c'est dur comme du granit."
+  comment_date: 2011-05-23 11:43:57 +02:00
+  state: 1
+  object_type: 1
+  dont_like_count: 0
+comment_00073: 
+  workflow: 1
+  like_count: 0
+  note_id: 0
+  title: 
+  workflow_date: 2011-05-26 16:17:56 +02:00
+  uuid: angelique.bellec@bpi.fr
+  id: 73
+  comment_relevance: 0
+  workflow_manager: ""
+  parent_id: 
+  object_uid: 673928;5
+  content: "un vrai rlogger.debuggal"
+  comment_date: 2011-05-26 16:17:56 +02:00
+  state: 1
+  object_type: 1
+  dont_like_count: 0
+comment_00095: 
+  workflow: 1
+  like_count: 0
+  note_id: 0
+  title: 
+  workflow_date: 2011-06-06 16:03:41 +02:00
+  uuid: florian.leroy@bpi.fr
+  id: 95
+  comment_relevance: 0
+  workflow_manager: ""
+  parent_id: 
+  object_uid: 290193;5
+  content: excellent
+  comment_date: 2011-06-06 16:03:41 +02:00
+  state: 0
+  object_type: 1
+  dont_like_count: 0
+comment_00109: 
+  workflow: 1
+  like_count: 0
+  note_id: 0
+  title: 
+  workflow_date: 2011-06-10 11:44:08 +02:00
+  uuid: nathalie.niang@bpi.fr
+  id: 109
+  comment_relevance: 0
+  workflow_manager: ""
+  parent_id: 
+  object_uid: 928797;5
+  content: antilles antilles antilles
+  comment_date: 2011-06-10 11:44:08 +02:00
+  state: 1
+  object_type: 1
+  dont_like_count: 0
+comment_00032: 
+  workflow: 1
+  like_count: 0
+  note_id: 36
+  title: In girum imus
+  workflow_date: 2011-05-02 13:21:04 +02:00
+  uuid: jerome.villeminoz@bpi.fr
+  id: 32
+  comment_relevance: 0
+  workflow_manager: ""
+  parent_id: 
+  object_uid: 36235;6
+  content: nocte et consumimur igni
+  comment_date: 2011-05-02 13:21:04 +02:00
+  state: 1
+  object_type: 1
+  dont_like_count: 0
+comment_00074: 
+  workflow: 1
+  like_count: 0
+  note_id: 0
+  title: cuisine bretonne
+  workflow_date: 2011-05-26 16:18:01 +02:00
+  uuid: francoise.lenoir@bpi.fr
+  id: 74
+  comment_relevance: 0
+  workflow_manager: ""
+  parent_id: 
+  object_uid: 673928;5
+  content: "Attention cholestlogger.debugrol assurlogger.debug"
+  comment_date: 2011-05-26 16:18:01 +02:00
+  state: 1
+  object_type: 1
+  dont_like_count: 0
+comment_00132: 
+  workflow: 1
+  like_count: 0
+  note_id: 0
+  title: 
+  workflow_date: 2011-06-23 16:09:10 +02:00
+  uuid: sylvie.colley@bpi.fr
+  id: 132
+  comment_relevance: 0
+  workflow_manager: ""
+  parent_id: 129
+  object_uid: 154686;5
+  content: il va faire beau
+  comment_date: 2011-06-23 16:09:10 +02:00
+  state: 1
+  object_type: 1
+  dont_like_count: 0
+comment_00075: 
+  workflow: 1
+  like_count: 0
+  note_id: 0
+  title: 
+  workflow_date: 2011-05-26 16:18:38 +02:00
+  uuid: catherine.pichonneau@bpi.fr
+  id: 75
+  comment_relevance: 0
+  workflow_manager: ""
+  parent_id: 
+  object_uid: 673928;5
+  content: "\xC3\xA0 proposer \xC3\xA0 la boulangerie, du dilogger.debugtlogger.debugtique sans salade verte!"
+  comment_date: 2011-05-26 16:18:38 +02:00
+  state: 1
+  object_type: 1
+  dont_like_count: 0
+comment_00054: 
+  workflow: 1
+  like_count: 0
+  note_id: 0
+  title: 
+  workflow_date: 2011-05-23 11:44:35 +02:00
+  uuid: stephanie.lanoe@bpi.fr
+  id: 54
+  comment_relevance: 0
+  workflow_manager: ""
+  parent_id: 39
+  object_uid: d67d8ab4f4c10bf22aa353e27879133c
+  content: je ne suis pas d'accord!!!
+  comment_date: 2011-05-23 11:44:35 +02:00
+  state: 1
+  object_type: 8
+  dont_like_count: 0
+comment_00096: 
+  workflow: 1
+  like_count: 0
+  note_id: 0
+  title: "un cuisinier espagnol \xC3\xA0 Vienne"
+  workflow_date: 2011-06-06 16:04:13 +02:00
+  uuid: veronique.abot@bpi.fr
+  id: 96
+  comment_relevance: 0
+  workflow_manager: ""
+  parent_id: 
+  object_uid: 43849;5
+  content: De l'Apfelstrudel au Goulasch
+  comment_date: 2011-06-06 16:04:13 +02:00
+  state: 1
+  object_type: 1
+  dont_like_count: 0
+comment_00076: 
+  workflow: 1
+  like_count: 0
+  note_id: 0
+  title: 
+  workflow_date: 2011-05-26 16:18:57 +02:00
+  uuid: barbara.arellano@bpi.fr
+  id: 76
+  comment_relevance: 0
+  workflow_manager: ""
+  parent_id: 
+  object_uid: 673928;5
+  content: j'y gouterais bien
+  comment_date: 2011-05-26 16:18:57 +02:00
+  state: 0
+  object_type: 1
+  dont_like_count: 0
+comment_00112: 
+  workflow: 1
+  like_count: 0
+  note_id: 0
+  title: 
+  workflow_date: 2011-06-16 15:47:11 +02:00
+  uuid: catherine.rollinat@bpi.fr
+  id: 112
+  comment_relevance: 0
+  workflow_manager: ""
+  parent_id: 
+  object_uid: 23428;5
+  content: super
+  comment_date: 2011-06-16 15:47:11 +02:00
+  state: 1
+  object_type: 1
+  dont_like_count: 0
+comment_00034: 
+  workflow: 1
+  like_count: 1
+  note_id: 0
+  title: Vialatte
+  workflow_date: 2011-05-03 15:44:45 +02:00
+  uuid: bpi.beaubourg@gmail.com
+  id: 34
+  comment_relevance: 0
+  workflow_manager: ""
+  parent_id: 
+  object_uid: 24537;6
+  content: |-
+    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+    Why do we use it?
+    
+    It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+     
+    Where does it come from?
+    
+    Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+    
+    The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the
+    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+    Why do we use it?
+    
+    It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+     
+    Where does it come from?
+    
+    Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+    
+    The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the
+  comment_date: 2011-05-03 15:44:45 +02:00
+  state: 1
+  object_type: 1
+  dont_like_count: 1
+comment_00133: 
+  workflow: 1
+  like_count: 1
+  note_id: 0
+  title: Les Palets des Palais
+  workflow_date: 2011-06-23 16:09:28 +02:00
+  uuid: gerald.gros@bpi.fr
+  id: 133
+  comment_relevance: 1
+  workflow_manager: ""
+  parent_id: 
+  object_uid: 296347;5
+  content: "du beurre sans les logger.debugpinards"
+  comment_date: 2011-06-23 16:09:28 +02:00
+  state: 1
+  object_type: 1
+  dont_like_count: 0
+comment_00134: 
+  workflow: 1
+  like_count: 0
+  note_id: 88
+  title: diners
+  workflow_date: 2011-06-23 16:10:43 +02:00
+  uuid: isabelle.bastian-dupleix@bpi.fr
+  id: 134
+  comment_relevance: 0
+  workflow_manager: ""
+  parent_id: 
+  object_uid: 113287;5
+  content: pas mal du tout
+  comment_date: 2011-06-23 16:10:43 +02:00
+  state: 1
+  object_type: 1
+  dont_like_count: 0
+comment_00098: 
+  workflow: 1
+  like_count: 0
+  note_id: 0
+  title: 
+  workflow_date: 2011-06-06 16:05:22 +02:00
+  uuid: veronique.abot@bpi.fr
+  id: 98
+  comment_relevance: 0
+  workflow_manager: ""
+  parent_id: 96
+  object_uid: 43849;5
+  content: "ou du Goulasch \xC3\xA0 l'Apfelstrudel !"
+  comment_date: 2011-06-06 16:05:22 +02:00
+  state: 1
+  object_type: 1
+  dont_like_count: 0
+comment_00078: 
+  workflow: 1
+  like_count: 0
+  note_id: 70
+  title: miam
+  workflow_date: 2011-05-30 12:05:24 +02:00
+  uuid: christine.mora@bpi.fr
+  id: 78
+  comment_relevance: 0
+  workflow_manager: ""
+  parent_id: 
+  object_uid: 673928;5
+  content: Remiam
+  comment_date: 2011-05-30 12:05:24 +02:00
+  state: 0
+  object_type: 1
+  dont_like_count: 0
+comment_00057: 
+  workflow: 1
+  like_count: 0
+  note_id: 0
+  title: 
+  workflow_date: 2011-05-23 11:45:53 +02:00
+  uuid: catherine.burtin@bpi.fr
+  id: 57
+  comment_relevance: 0
+  workflow_manager: ""
+  parent_id: 51
+  object_uid: 673928;5
+  content: Serais-tu bretonne? Je te sens de parti pris.
+  comment_date: 2011-05-23 11:45:53 +02:00
+  state: 1
+  object_type: 1
+  dont_like_count: 0
+comment_00114: 
+  workflow: 1
+  like_count: 0
+  note_id: 81
+  title: Beurk
+  workflow_date: 2011-06-16 15:47:36 +02:00
+  uuid: laurence.eme@bpi.fr
+  id: 114
+  comment_relevance: 0
+  workflow_manager: ""
+  parent_id: 
+  object_uid: 281872;5
+  content: Des recettes ignobles!!!!
+  comment_date: 2011-06-16 15:47:36 +02:00
+  state: 1
+  object_type: 1
+  dont_like_count: 0
+comment_00099: 
+  workflow: 1
+  like_count: 0
+  note_id: 0
+  title: 
+  workflow_date: 2011-06-06 16:05:33 +02:00
+  uuid: marie-helene.gatto@bpi.fr
+  id: 99
+  comment_relevance: 0
+  workflow_manager: ""
+  parent_id: 94
+  object_uid: 281190;5
+  content: "où trouver les ingrlogger.debugdients ?"
+  comment_date: 2011-06-06 16:05:33 +02:00
+  state: 1
+  object_type: 1
+  dont_like_count: 0
+comment_00135: 
+  workflow: 1
+  like_count: 0
+  note_id: 0
+  title: 
+  workflow_date: 2011-06-23 16:12:42 +02:00
+  uuid: gerald.gros@bpi.fr
+  id: 135
+  comment_relevance: 0
+  workflow_manager: ""
+  parent_id: 133
+  object_uid: gerald.gros@bpi.fr
+  content: super jeu de mot !
+  comment_date: 2011-06-23 16:12:42 +02:00
+  state: 1
+  object_type: 5
+  dont_like_count: 0

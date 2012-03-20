@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?><collection xmlns="http://www.loc.gov/MARC21/slim">
+  <record>
+    <leader>00779nam  2200181uu 4500</leader>
+    <controlfield tag="001">classiques-garnier.ColGodefroy.GodAD02Comp</controlfield>
+    <controlfield tag="008">020101s2002       |||||||||||||||||fre||</controlfield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="a">Classiques Garnier</subfield>
+    </datafield>
+    <datafield tag="041" ind1="0" ind2=" ">
+      <subfield code="a">fre</subfield>
+    </datafield>
+    <datafield tag="100" ind1="1" ind2=" ">
+      <subfield code="a">Godefroy (Frédéric)</subfield>
+      <subfield code="e">creator</subfield>
+    </datafield>
+    <datafield tag="245" ind1="1" ind2="0">
+      <subfield code="a">Dictionnaire de l'ancienne langue française et de tous ses dialectes du IXe au XVe siècle [Complément]</subfield>
+    </datafield>
+    <datafield tag="260" ind1=" " ind2=" ">
+      <subfield code="a">Paris</subfield>
+      <subfield code="b">F. Vieweg, Émile Bouillon</subfield>
+      <subfield code="c">2002</subfield>
+    </datafield>
+    <datafield tag="490" ind1=" " ind2=" ">
+      <subfield code="a">Godefroy, Dictionnaire de l'ancienne langue française</subfield>
+    </datafield>
+    <datafield tag="650" ind1="1" ind2=" ">
+      <subfield code="a">Dictionnaire</subfield>
+    </datafield>
+    <datafield tag="655" ind1=" " ind2="7">
+      <subfield code="a">dictionary</subfield>
+      <subfield code="2">lcsh</subfield>
+    </datafield>
+    <datafield tag="776" ind1=" " ind2=" ">
+      <subfield code="d">Paris: F. Vieweg, Émile Bouillon, 1881-1902</subfield>
+    </datafield>
+    <datafield tag="856" ind1=" " ind2="2">
+      <subfield code="q">text/html</subfield>
+    </datafield>
+    <datafield tag="856" ind1=" " ind2=" ">
+      <subfield code="u">http://www.classiques-garnier.com/numerique-bases/index.php?module=App&amp;action=FrameMain&amp;colname=ColGodefroy&amp;filename=GodAD02Comp</subfield>
+    </datafield>
+  </record>
+  <record>
+    <leader>00757nam  2200181uu 4500</leader>
+    <controlfield tag="001">classiques-garnier.ColGodefroy.GodAD02</controlfield>
+    <controlfield tag="008">020101s2002       |||||||||||||||||fre||</controlfield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="a">Classiques Garnier</subfield>
+    </datafield>
+    <datafield tag="041" ind1="0" ind2=" ">
+      <subfield code="a">fre</subfield>
+    </datafield>
+    <datafield tag="100" ind1="1" ind2=" ">
+      <subfield code="a">Godefroy (Frédéric)</subfield>
+      <subfield code="e">creator</subfield>
+    </datafield>
+    <datafield tag="245" ind1="1" ind2="0">
+      <subfield code="a">Dictionnaire de l'ancienne langue française et de tous ses dialectes du IXe au XVe siècle</subfield>
+    </datafield>
+    <datafield tag="260" ind1=" " ind2=" ">
+      <subfield code="a">Paris</subfield>
+      <subfield code="b">F. Vieweg, Émile Bouillon</subfield>
+      <subfield code="c">2002</subfield>
+    </datafield>
+    <datafield tag="490" ind1=" " ind2=" ">
+      <subfield code="a">Godefroy, Dictionnaire de l'ancienne langue française</subfield>
+    </datafield>
+    <datafield tag="650" ind1="1" ind2=" ">
+      <subfield code="a">Dictionnaire</subfield>
+    </datafield>
+    <datafield tag="655" ind1=" " ind2="7">
+      <subfield code="a">dictionary</subfield>
+      <subfield code="2">lcsh</subfield>
+    </datafield>
+    <datafield tag="776" ind1=" " ind2=" ">
+      <subfield code="d">Paris: F. Vieweg, Émile Bouillon, 1881-1902</subfield>
+    </datafield>
+    <datafield tag="856" ind1=" " ind2="2">
+      <subfield code="q">text/html</subfield>
+    </datafield>
+    <datafield tag="856" ind1=" " ind2=" ">
+      <subfield code="u">http://www.classiques-garnier.com/numerique-bases/index.php?module=App&amp;action=FrameMain&amp;colname=ColGodefroy&amp;filename=GodAD02</subfield>
+    </datafield>
+  </record>
+</collection>

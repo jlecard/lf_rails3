@@ -1,0 +1,46 @@
+<!-- parameters: headers, items, params -->
+<table>
+    <thead>
+        <tr>
+            <% headers.each do |h|
+            if (h != "date" || !params[:unit].blank?) %>
+            <td>
+                <%= translate(h) %>
+            </td>
+            <% end
+            end %>
+        </tr>
+    </thead>
+    <tbody>
+        <% items.each do |i| %>
+        <tr class="<%= cycle("even","odd") %>">
+            <% headers.each do |header| %>
+            <% case header
+            when "date" %>
+            <% if !params[:unit].blank? %>
+            <td>
+                <%= format_date_stats(i) %>
+            </td>
+            <% end
+			when "indoor" %>
+		   	<% if i[header] == "0" %>
+		 	 <td> <%= translate("l_outdoor") %> </td>
+			<% else %>
+		 	 <td> <%= translate("l_indoor") %> </td>
+			<% end
+			when "facette" %>
+				<td> <%= translate(i[header]) %> </td> 
+			<% when "search_group" %>
+				<td> <%= get_label_gc(group_collections, i[header]) %> </td>
+			<% when "search_tab_subject_id" %>
+				<td> <%= get_label_search_tab_subject(search_tabs_subjects, i[header]) %> </td>
+            <% else %>
+            <td>
+                <%= i[header] %>
+            </td>
+            <% end %>
+            <% end %>
+        </tr>
+        <% end %>
+    </tbody>
+</table>

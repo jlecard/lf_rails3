@@ -1,0 +1,11 @@
+--- 
+subscription_00001: 
+  uuid: oceane.ventura@atos.net
+  change_state_date: 2011-07-19 14:39:58 +02:00
+  object_uid: 998885;5
+  check_date: 2011-09-09 12:00:09 +02:00
+  mail_notification: 1
+  subscription_date: 2011-07-19 14:39:58 +02:00
+  send_mail_date: 
+  state: 0
+  object_type: 1

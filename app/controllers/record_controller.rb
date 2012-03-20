@@ -29,22 +29,22 @@ class RecordController < ApplicationController
   include SearchHelper
   include CartHelper 
   include ERB::Util
-  layout "libraryfind", :except => [:spell_check,:advanced_search, :getCart, :setResults, :see_also]
+  layout "libraryfind", :except => [:spell_check,:advanced_search, :cart, :build_results, :see_also]
   
-  def setResults(_results, _sort_value, _filter)
-    @results    = _results;
-    @sort_value = _sort_value;
-    @filter     = _filter;
+  def build_results(_results, _sort_value, _filter)
+    @results    = _results
+    @sort_value = _sort_value
+    @filter     = _filter
   end
   
   def index
     begin
       consult = LogConsult.new
-      @mostViewed = consult.topConsulted
+      @mostViewed = consult.top_consulted
     rescue
       @mostViewed = nil
     end
-    setDefaultsRecord
+    init_defaults
     render(:action => 'accueil_all')
   end
   
@@ -53,72 +53,121 @@ class RecordController < ApplicationController
     @client_host = request.env["HOST"]
     @client_url = request.url
     @IsMobile = false
-    if params[:mobile] != nil and  params[:mobile] == 'true'
-      @IsMobile = true;
+    if params[:mobile] and params[:mobile] == "true"
+      @IsMobile = true
     end
-    setDefaultsRecord
+    init_defaults
     render(:action=>'accueil_all')
   end
   
+  def set_query_and_operator
+    
+   @values=params[:query]
+   @tab_query_string = []
+   if @values!=nil
+     @query_string=@values
+      if @query_string != nil && @query_string != ""
+        @query_string = @query_string.gsub(/(.*),,,(.*)/, '\1|LF_DEL|\2')
+        @query_string = @query_string.gsub(/(.*),,,(.*)/, '\1|LF_DEL|\2')
+        @tab_query_string = @query_string.split("|LF_DEL|")
+      end
+   else
+     if @query != nil
+       @query_string=@query*', '.to_s
+       @tab_query_string=@query;
+     end
+   end
+   if (params[:query] != nil && params[:string1] != nil)
+     @tab_query_string << params[:string1] || "";
+     @tab_query_string << params[:string2] || "";
+     @tab_query_string << params[:string3] || "";
+   end
+   @sets ||= params[:sets]
+   
+    @field_filter = Array.new(3)
+    if ((params[:query] != nil) && (params[:type] != nil))
+      @field_filter = params[:type].split(",")
+    elsif ((params[:query] != nil) && (params[:field_filter1] != nil))
+      @field_filter[0] = params[:field_filter1] || ""
+      @field_filter[1] = params[:field_filter2] || ""
+      @field_filter[2] = params[:field_filter3] || ""
+    end
+    @operator = Array.new(2);
+    @operator[0] = "AND";
+    @operator[1] = "AND";
+    if ((!params[:query].nil?) && (!params[:operator1].nil?))
+      @operator[0] = params[:operator1];
+    end
+    if ((!params[:query].nil?) && (!params[:operator2].nil?))
+      @operator[1] = params[:operator2];
+    end
+    if ((!params[:query].nil?) && (!params[:operator].nil?))
+      @operator[0] = params[:operator].split(',')[0] || 'AND';
+      @operator[1] = params[:operator].split(',')[1] || 'AND';
+    end
+        
+  end
+  
   def advanced_search
-    setDefaultsRecord
+    init_defaults
     render(:action=>'advanced_search')
   end
   
   def retrieve
-    setSessionPagination
-    setGetSessionMaxCollectionSearch
-    
-    @idTab	=	html_escape(params[:idTab]);
-    logger.debug("[retrieve]")
+    session_pagination
+    session_max_search_results
+    default_tab
+ 
+    logger.debug("[RecordController][retrieve]")
     if (params[:start_search] != "false")
       if (params[:query] != nil)
         if (params[:rebonce] != nil)
           items = {:query => "#{html_escape(params[:query][:string1])}", :filter =>"#{html_escape(params[:query][:field_filter1])}", :host => "#{request.remote_addr}"};
-          LogGeneric.addToFile("LogRebonceUsage", items);
+          LogGeneric.addToFile("LogRebonceUsage", items)
         end
         logger.debug("[retrieve] idTab:#{@idTab}")
         
-        setDefaultsRecord
-        initQueryAndType(params)
-        if ((@query[0] != nil) and (@query[0].to_s.strip != ""))
+        init_defaults
+        init_query_and_type(params)
+        if !@query[0].nil? and !@query[0].to_s.strip.blank?
           init_search  
-          if ((@sets != nil) && (!@sets.empty?))
+          if @sets and !@sets.empty?
             logger.debug("[retrieve] searching for query: " + @query.to_s + " and type: " + @type.to_s)
-            if ((@IsMobile == true) and (request.user_agent.downcase.index('opera mini') != nil))
+            if @IsMobile and !request.user_agent.downcase.index('opera mini').nil?
               dep_find_search_results
               render(:action => @tab_template)
             else
               @jobs = $objDispatch.SearchAsync(@sets, @type, @query, @start, @max, @operator)
-              _sTime = Time.now().to_f
               render(:action => 'intermediate')
-              logger.debug("#STAT# [RENDER] intermediate " + sprintf( "%.2f",(Time.now().to_f - _sTime)).to_s) if LOG_STATS
             end
           else
+            flash.now[:notice]="No collection group selected"
             render(:action=>"accueil_all")
           end
         else
+          flash.now[:notice] = "No query or empty query"
           render(:action=>"accueil_all")
         end
       else
+        flash.now[:notice] = "No query"
         render(:action=>"accueil_all")
       end 
     else
-      setDefaultsRecord
-      if (params[:query] != nil)
-        initQueryAndType(params)
+      init_defaults
+      if !params[:query].blank?
+        init_query_and_type(params)
       else
         @query=['']
       end
-      if ((params[:sets] != nil) && (params[:sets]!=''))
+      if params[:sets].blank?
         @sets=params[:sets]
       else
-        @sets=getSelectedSets
-        if ((@sets == nil) || (@sets.empty?))
+        @sets=selected_sets
+        if !@sets or @sets.empty?
           init_sets
         end
       end
-      if (@sets.rindex(',') == (@sets.length - 1))
+      if @sets.rindex(',') == @sets.length - 1
         @sets=@sets.chop
       end
       render(:action=>"accueil_all")
@@ -129,48 +178,40 @@ class RecordController < ApplicationController
   #if a user is paging through results that have been sorted, this method will forward to those
   #sorted results.
   def retrieve_page
-#    if ((params[:filter] != nil) && (params[:filter] != ""))
-#      subValue = params[:filter].split(/\//);
-#      if (subValue.length > 0)
-#        items = {:types => "#{subValue[subValue.length - 1].split(/:/)[0]}", :host => "#{request.remote_addr}"};
-#      else
-#        items = {:types => "#{subValue[0].split(/#{FACETTE_SEPARATOR}/)[0]}", :host => "#{request.remote_addr}"};
-#      end
-#      LogGeneric.addToFile("LogFacetteUsage", items);
-#    end
-    setDefaultsRecord
+    init_defaults
     set_query_values
     init_search
     find_search_results
     render(:action => @tab_template)
   end
+  alias :show :retrieve_page
   
   
   # When clicking on exploration by theme
   # link made like : /record/retrieve_theme?sets=g4
   #
   def retrieve_theme
-    @idTab	= params[:idTab];
+    @idTab	= params[:idTab]
     items		= {:types => params[:sets]}
     
-    if ((params[:filter] != nil) && (params[:filter] != ""))
+    if params[:filter].blank?
       subValue	= params[:filter].split(/\//);
       if (subValue.length > 0)
-        items		= {:types => "#{subValue[subValue.length - 1].split(/:/)[0]}", :host => "#{request.remote_addr}"};
+        items		= {:types => "#{subValue[subValue.length - 1].split(/:/)[0]}", :host => "#{request.remote_addr}"}
       else
-        items		= {:types => "#{subValue[0].split(/#{FILTER_SEPARATOR}/)[0]}", :host => "#{request.remote_addr}"};
+        items		= {:types => "#{subValue[0].split(/#{FILTER_SEPARATOR}/)[0]}", :host => "#{request.remote_addr}"}
       end
     end
-    LogGeneric.addToFile("LogFacetteUsage", items);
-    if ((params[:sets] != nil) and (params[:sets].to_s.strip != ""))
-      setDefaultsRecord
+    LogGeneric.addToFile("LogFacetteUsage", items)
+    if params[:sets].nil? and !params[:sets].to_s.strip.blank?
+      init_defaults
       @query		= []
       @type			= []
       @operator	= []
       
       init_search
       logger.debug("searching for query: " + @query.to_s + " and type: " + @type.to_s)
-      if ((@IsMobile == true) and (request.user_agent.downcase.index('opera mini') != nil))
+      if @IsMobile and !request.user_agent.downcase.index('opera mini').nil?
         dep_find_search_results
         render(:action => @tab_template)
       else
@@ -178,7 +219,7 @@ class RecordController < ApplicationController
         render(:action => 'intermediate')
       end
     else
-      setDefaultsRecord
+      init_defaults
       redirect_to(:action=>"accueil_all")
     end 
   end 
@@ -187,16 +228,13 @@ class RecordController < ApplicationController
     logger.debug("searching for type="+_type.to_s+" query="+_query.to_s+" sets="+_sets.to_s+" start="+_start.to_s+" max="+_max.to_s)
     @results = dep_ping_for_results(_sets, _type, _query, _start, _max) 
     logger.debug("Results Found: " + @results.length.to_s)
-    if ((@results == nil) or (@results.empty?))
+    if @results.nil? or @results.empty?
       flash.now[:notice]	= translate('NO_RESULTS')
     else
-      collectDBErrors
-      buildAllDatabases
+      collect_database_errors
+      build_all_databases
       filter_results
       sort_results
-      #This is where I will drop building the database_subjects_authors. This will occur if it's a 
-      #mobile interface
-      #build_databases_subjects_authors
       filter_images
     end
   rescue Exception => e
@@ -233,7 +271,7 @@ class RecordController < ApplicationController
     return ($objDispatch.GetJobsRecords(completed, _max, 4))
   end
   
-  def collectDBErrors
+  def collect_database_errors
     errors	= ""
     vendors	= Array.new
     for record in @results
@@ -250,8 +288,8 @@ class RecordController < ApplicationController
   end
   
   def find_search_results
-    @results	= $objDispatch.GetJobsRecords(@completed, getMaxCollectionSearch);
-    if ((@results==nil) or (@results.empty?))
+    @results	= $objDispatch.GetJobsRecords(@completed, max_search_results)
+    if @results.nil? or @results.empty?
       flash.now[:notice]=translate('NO_RESULTS')
     else
       process_results
@@ -263,7 +301,7 @@ class RecordController < ApplicationController
   end
   
   def process_results
-    buildAllDatabases
+    build_all_databases
     #
     # Process here the document type
     #   ---
@@ -277,11 +315,8 @@ class RecordController < ApplicationController
   end
   
   def init_pinging_params
-    if (params[:jobs] == nil)
-      @jobs = []
-    else
-      @jobs = params[:jobs].split(',')
-    end
+    @jobs = params[:jobs].nil? ? [] : params[:jobs].split(',') 
+    @jobs 
   end
   
   def check_job_status
@@ -319,7 +354,7 @@ class RecordController < ApplicationController
     logger.warn("----------------------------------------------------------------------------------") if LOG_STATS
     _sTime = Time.now().to_f
     @completed=[]
-    @idTab = params[:idTab];
+    @idTab = params[:idTab]
     @errors=Hash.new
     @private = Hash.new
     init_pinging_params
@@ -352,7 +387,7 @@ class RecordController < ApplicationController
     end 
     logger.debug("#STAT# [FINISH_SEARCH] get_jobs " + sprintf( "%.2f",(Time.now().to_f - _sTime)).to_s) if LOG_STATS
    
-    setDefaultsRecord
+    init_defaults
     @jobs=[]
     @results= $objDispatch.GetJobsRecords(@completed, @max, nil)
     logger.debug("#STAT# [FINISH_SEARCH] get_records " + sprintf( "%.2f",(Time.now().to_f - _sTime)).to_s) if LOG_STATS
@@ -376,37 +411,43 @@ class RecordController < ApplicationController
     logger.warn("----------------------------------------------------------------------------------") if LOG_STATS
   end
   
-  def setDefaultsRecord
-      logger.debug("[setDefaultsRecord]")
-      setDefaults
-      @jobs=nil
-      seek = SearchController.new();
-      @filter_tab = seek.load_filter;
-      @linkMenu = seek.load_menu;
-      @groups_tab = seek.load_groups;
-      @theme = SearchTabSubject.new();
-      @TreeObject = @theme.CreateSubMenuTree;
-      @editorials = nil;
-      #Most viewed documents
-      begin
-        consult = LogConsult.new
-        @mostViewed = consult.topConsulted
-      rescue
-        @mostViewed = nil
-      end
-      
-      begin
-        paginate_cart(2)
-      rescue
-        logger.debug("no cookie found !")
-      end
-      
-      @page_size = NB_RESULTAT_MAX
-      
-      @seeAlso = []
+  def default_tab
+    @idTab ||= params[:idTab] || 1
   end
   
-  def buildAllDatabases
+  def init_defaults
+    logger.debug("[RecordController][init_defaults]")
+    #default_tab
+    defaults
+    @jobs=nil
+    
+    @filter_tab = SearchTabFilter.load_filter(default_tab)
+    @linkMenu = SearchTab.load_menu
+    @groups_tab = SearchTab.load_groups(default_tab)
+    @theme = SearchTabSubject.new
+    @TreeObject = @theme.CreateSubMenuTree
+    @editorials = nil
+    #Most viewed documents
+    begin
+      consult = LogConsult.new
+      @mostViewed = consult.top_consulted
+    rescue
+      @mostViewed = nil
+    end
+    
+    begin
+      paginate_cart(2)
+    rescue
+      logger.debug("no cookie found !")
+    end
+    
+    @page_size = NB_RESULTAT_MAX
+    
+    @seeAlso = []
+    set_query_and_operator
+  end
+  
+  def build_all_databases
     @all_databases = $objDispatch.GetTotalHitsByJobs(@completed)
   end
      
@@ -527,11 +568,11 @@ class RecordController < ApplicationController
        _record.theme.split(";").each do |t|
           _tTab = t.split(THEME_SEPARATOR)
     		  if !_tTab[0].nil?
-    			 _h = helpTheme(_theme_hash, _tTab[0].strip)
+    			 _h = help_theme(_theme_hash, _tTab[0].strip)
     			 if !_tTab[1].nil?
-    				  _h = helpTheme(_h, _tTab[1].strip)
+    				  _h = help_theme(_h, _tTab[1].strip)
     				  if !_tTab[2].nil?
-    					 helpTheme(_h, _tTab[2].strip)
+    					 help_theme(_h, _tTab[2].strip)
     				  end
     			 end
     		  end
@@ -581,7 +622,7 @@ class RecordController < ApplicationController
             };
   end
   
-  def helpTheme(hash, indice)
+  def help_theme(hash, indice)
     if hash[indice] == nil
         hash[indice] = Array.new()
         hash[indice][0] = 1
@@ -592,7 +633,7 @@ class RecordController < ApplicationController
     return hash[indice][1]
   end
   
-  def getSelectedSets
+  def selected_sets
    checkboxes=params[:collection_group]
    if checkboxes!=nil
       for group in checkboxes 
@@ -615,7 +656,7 @@ class RecordController < ApplicationController
         groups=@config["DEFAULT_GROUPS"].to_s.split(',')
         for group in groups
           _item = $objDispatch.GetGroupMembers(group)
-          @sets = @sets + _item.id + ","
+          @sets = "#{@sets}#{_item.id},"
         end
       rescue Exception => e
         logger.error("RecordController caught ERROR: " + e.to_s)
@@ -625,7 +666,7 @@ class RecordController < ApplicationController
   end    
   
   def filter_results
-    if @filter!=nil and @filter!="" and @results!=nil and !@filter.empty?
+    if !@filter.blank? and !@results.blank? 
       for filter_pair in @filter
         if filter_pair!=nil and !filter_pair.empty?
           filter_type=filter_pair[0].to_s
@@ -737,7 +778,7 @@ class RecordController < ApplicationController
           @results.sort!{|a,b| b.date_indexed.to_f <=> a.date_indexed.to_f;  } 
       end
     end
-    return (@results);
+    return @results
   end
   
   def image_tooltip
@@ -767,7 +808,7 @@ class RecordController < ApplicationController
   		@spelling_list	= $objDispatch.spellCheck(_query);
   end        
   
-  def getCart
+  def cart
     begin
       paginate_cart(2)
     rescue

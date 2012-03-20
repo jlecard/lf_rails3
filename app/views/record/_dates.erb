@@ -1,0 +1,58 @@
+<%if @dates!=nil and !@dates.empty?%>
+  <div id="bDate"  class="navigation"><b><%=translate('DATES')%></b>
+    <%if @filter.assoc("date")!=nil
+	  filter=build_unfilter_string("date")	
+	  params=build_filter_params(filter,@tab_template)%>
+      <%=link_to translate('UNFILTER_DATES'), 
+		    {  :action => 'retrieve_page', 
+				:controller=>'record', 
+				:params=>params},	:onclick=>"scroll(0,0);showWait()", :class=>"unfilter"%>
+    <%end%>  
+	<div name="menuItem" id="tDate" class="expanded" init="0">
+      <div id="dates_0">
+	    <%count=0
+		@dates.each{|_date, _number|
+		  if count < 5
+			  if _date!=nil and _date!='' and _date.to_s.strip!='undefined' 
+				count=count+1
+				filter=build_filter_string("date",_date)
+				params=build_filter_params(filter,@tab_template)%>						  
+	            <%=link_to translate('RESULTS',[_date,_number.to_s]), 
+	                     {  :action => 'retrieve_page', 
+							:controller=>'record', 
+							:params=>params},	:onclick=>"scroll(0,0);showWait()"%>
+			  <%end  
+		  end
+		}  
+		if @dates.length > 5%>
+		    <%=link_to_function translate('MORE_DATES'), "Element.hide('more_dates_0');Element.show('more_dates');Element.show('dates_1')", {:style=>"text-decoration:underline", :id=>'more_dates_0'}%>
+		<%end%>
+	  </div>
+	  <%if @dates.length > 5%>
+	    <div id='more_dates'>
+	      <%multiples=((@dates.length)/5).ceil
+		  1.upto(multiples) { |i|%>
+			  <div id=<%='dates_'+i.to_s%> style='display:none;'>
+		        <%@dates[i*5..(i+1)*5-1].each{|_date, _number| 
+				  if _date!=nil and _date!='' and _date.to_s.strip!='undefined'		
+					filter=build_filter_string("date",_date[0,4])
+					params=build_filter_params(filter,@tab_template)%>				  
+		            <%=link_to translate('RESULTS',[_date,_number.to_s]), 
+		                     {  :action => 'retrieve_page', 
+								:controller=>'record', 
+								:params=>params},	:onclick=>"scroll(0,0);showWait()"%>
+		          <%end  
+				}%>
+		        <span id=<%='more_dates_'+i.to_s%>>
+	  				<%=link_to_function translate('TOP_DATES'), "Element.hide('more_dates');Element.show('more_dates_0')", :style=>"text-decoration:underline"%>
+					<%if i<multiples%>
+						<%=link_to_function translate('MORE_DATES'), "Element.hide('more_dates_"+i.to_s+"');Element.show('dates_"+(i+1).to_s+"');Element.show('more_dates_"+(i+1).to_s+"')", :style=>"text-decoration:underline"%>
+			  		<%end%> 
+				</span>
+		  	 </div>
+	      <%}%>
+	    </div>
+	  <%end%>
+	</div>
+  </div>
+<%end%>

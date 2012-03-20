@@ -218,12 +218,12 @@ class WcapiSearchClass < ActionController::Base
     return "" if _string == nil
     _string = _string.gsub(/[^0-9]/, "").chomp
     case _string.length
-    when 8:
+    when 8
       if _string.slice(4,2).to_i > 12: return _string.slice(0,4) end
       return _string.slice(0,4) + _string.slice(4,2) + _string.slice(6,2)
-    when 6:
+    when 6
       return _string.slice(0,4) + _string.slice(4,2) + "00"
-    when 4:
+    when 4
       return _string + "0000"
     else return ""
     end

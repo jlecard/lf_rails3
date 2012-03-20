@@ -1,0 +1,21 @@
+<%if !@seeAlso.nil? and !@seeAlso.empty? %>
+<div>
+	<br/>
+    <span id="waitimage_see" class="waitimage"><img src="/images/wait.gif"/></span>
+    <script>
+        Element.hide('waitimage_see');
+    </script>
+    <b style='color: #ce5500'><%=translate('SEE_ALSO') %></b>&nbsp;&nbsp;<%=link_to_function @seeAlso[0], 'scroll(0,0);showWait("waitimage_see");spellCorrection("'+h(@seeAlso[0])+'")' %>
+    &nbsp;
+	<% if @seeAlso.length>1 %>
+    <span id="more_also">&nbsp;&nbsp;<%=link_to_function translate('MORE'), "Element.show('all_also');Element.hide('more_also')" %>
+    </span>
+    <span id="all_also" style="display:none"><% for i in 1..@seeAlso.length %>
+        <%=link_to_function @seeAlso[i], 'scroll(0,0);showWait("waitimage_see");spellCorrection("'+h(@seeAlso[i])+'")' %>
+		&nbsp;
+        <% end %>
+        &nbsp;&nbsp;<%=link_to_function translate('LESS'), "Element.hide('all_also');Element.show('more_also')" %></span>
+    <% end %>
+</div>
+<br/>
+<% end %>

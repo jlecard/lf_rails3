@@ -1,0 +1,18 @@
+<span id="sort">
+<% form_tag({ :action => "retrieve_page", :controller=>'/record'}, {:id=>"sort_form", :name=>"sort_form"})  do -%>
+<input type="hidden" id="filter" name="filter" value="<%=build_string_from_filter(@filter)%>"/>
+<input type="hidden" id="query[max]" name="query[max]" value="<%=@max%>"/>
+<input type="hidden" id="query[mod]" name="query[mod]" value="<%=@mod%>"/>
+<input type="hidden" id="mode" name="mode" value="<%=@mode%>"/>
+<input type="hidden" id="sets" name="sets" value="<%=@sets%>"/>
+<input type="hidden" id="query[start]" name="query[start]" value="<%=@start%>"/>
+<input type="hidden" id="query[string]" name="query[string]" value="<%=escape_quote(@query*',')%>"/>
+<input type="hidden" id="tab_template" name="tab_template" value="<%=@tab_template%>"/>
+<input type="hidden" id="completed" name="completed" value="<%=@completed*','%>"/>
+<input type="hidden" id="query[type]" name="query[type]" value="<%=@type*','%>"/>
+<span><select id="sort_value" name="sort_value" onchange="$('sort_form').submit()" >
+    <%=options_for_select({ translate('RELEVANCE') => "relevance",  translate('NEWEST_FIRST') => "datedown", translate('OLDEST_FIRST')=>"dateup",  translate('AUTHOR_UP') => "authorup", translate('AUTHOR_DOWN')=>"authordown", translate('TITLE_UP')=>"titleup", translate('TITLE_DOWN')=>"titledown"}, @sort_value)%>
+  </select></span>
+  <span ><%=translate('SORT_BY')%></span>
+<%end%>
+</span>

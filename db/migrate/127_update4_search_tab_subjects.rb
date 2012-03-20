@@ -6,7 +6,7 @@ class Update4SearchTabSubjects < ActiveRecord::Migration
   end
   
   def self.down
-    remove_column (:search_tab_subjects, :hide)
+    remove_column :search_tab_subjects, :hide
   end
 
 end

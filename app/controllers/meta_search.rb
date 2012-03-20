@@ -26,8 +26,8 @@
 
 require 'monitor'
 require 'solr'
-require 'solr/request_spellcheck.rb'
-require 'solr/response_spellcheck.rb'
+require 'solr/request/spellcheck.rb'
+require 'solr/response/spellcheck.rb'
 
 class MetaSearch < ActionController::Base
   #========================================================
@@ -179,7 +179,8 @@ class MetaSearch < ActionController::Base
             eval("_tmparray = #{_collect.conn_type.capitalize}SearchClass.SearchCollection(_collect, _qtype, _qstring, _start.to_i, _max.to_i, _last_id, job_id, @infos_user, options, _session_id, _action_type, _data, _bool_obj)")
             _end_thread =  Time.now().to_f - _start_thread
             CachedSearch.save_execution_time(_last_id, _collect.id, _end_thread.to_s, @infos_user)
-            if _tmparray != nil: record.concat(_tmparray) end
+            if _tmparray != nil 
+              record.concat(_tmparray) end
           rescue
             logger.debug("Error generating oai search class")
           end
@@ -282,6 +283,8 @@ class MetaSearch < ActionController::Base
     end
     _collections = Collection.find_resources(_sets, no_externe)
     
+    logger.debug("[SearchAsync] collections #{_collections}")
+    
     #================================================
     # Check the cache
     #================================================
@@ -305,7 +308,7 @@ class MetaSearch < ActionController::Base
       else
         # _last_id is the id of the matching search
         _last_id = cached_recs[0].id
-        logger.debug("[SearchAsync] Matching search: %s" % _last_id)
+        logger.debug("[SearchAsync] Matching search: #{ _last_id}")
         # _search_id starts with same id, but is modified later
         _search_id = cached_recs[0].id
         # _max_recs is the saved number of hits per collection 
@@ -341,7 +344,7 @@ class MetaSearch < ActionController::Base
         end
       end
       
-      job_id = JobQueue.create_job(_collections[_index].id)
+      job_id = JobQueue.create_job(_collections[_index].id, 0, 0, _collections[_index].alt_name)
       if (!job_id.nil?)
         logger.debug("[SearchAsync] create job ; #{_collections[_index].id} ==> #{job_id}")
         myjob[_index] = job_id
@@ -369,6 +372,7 @@ class MetaSearch < ActionController::Base
         if _pre_filtered_search 
           logger.debug("[SearchAsync] Entering in pre filtered search mode")
           _my_search_id, my_cached_recs = CachedSearch.check_cache(_myqstring, _qtype,  '', _max, @infos_user)
+          
           if my_cached_recs.nil? #or my_cached_recs.length==0 
             _my_last_id = CachedSearch.set_query(_myqstring, _qtype, '', _max.to_i, @infos_user)
           else
@@ -531,6 +535,7 @@ class MetaSearch < ActionController::Base
   end
   
   def expand_query_with_synonyms(_query, _qtype)
+    logger.info("SOLR HOST = #{LIBRARYFIND_SOLR_HOST}")
     conn = Solr::Connection.new(LIBRARYFIND_SOLR_HOST)
     synonyms = Array.new 
     types = Array.new
@@ -879,7 +884,7 @@ class MetaSearch < ActionController::Base
   end
   
   def topTenMostViewed()
-    return LogConsult.topConsulted()
+    return LogConsult.top_consulted()
   end
   
   def getCollectionAuthenticationInfo(collection_id)

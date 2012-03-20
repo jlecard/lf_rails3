@@ -1,0 +1,47 @@
+<div id="page_contents">
+    <%= render(:partial => "admin/navigation") %>
+	<%= render :partial => "collection_group_filter" %>
+    <div id="center" class="column">
+        <h2><%=translate("COLLECTION_GROUPS_HEADER") %></h2>
+        <br/>
+        <%= link_to translate('ADD_A_NEW_COLLECTION_GROUP'), :controller => '/admin/collection_group', :action => 'new' %>
+		<%= render :partial => "admin/admin_pagination", :locals=>{:pages=>@collection_group_pages, :params=> params} %>
+        <div id="edit_form">
+            <div class="admin-list">
+                <% columns_hash=CollectionGroup.columns_hash
+                for column in @display_columns
+                _class_name="medium-column"
+                if column=="full_name"
+                _class_name="large-column"
+                end %>
+                <label class="<%=_class_name%>">
+                    <%= translate("#{columns_hash[column].name.upcase}_COLUMN") %>
+                </label>
+                <% end %>
+                <span class="action-links">&nbsp;</span>
+            </div>
+            <br/>
+            <% for collection_group in @collection_groups %>
+            <div class="admin-list">
+                <% for column in @display_columns
+                _class_name="medium-column"
+                if column=="full_name"
+                _class_name="large-column"
+                end
+                if collection_group.send(column)==nil or collection_group.send(column)=="" %>
+                <span class="<%=_class_name%>">&nbsp;</span>
+                <%elsif column=="full_name" %>
+                <span class="<%=_class_name%>"><%= link_to h(collection_group.send(column)), :action => 'show', :id => collection_group %></span>
+                <%else %>
+                <span class="<%=_class_name%>"><%=h collection_group.send(column) %></span>
+                <% end %>
+                <% end %>
+                <span class="action-links"><%= link_to translate("EDIT"), :action => 'edit', :id => collection_group %>&nbsp;&nbsp;<%= link_to translate("DESTROY"), { :action => 'destroy', :id => collection_group }, :confirm => translate("ARE_YOU_SURE"), :method => "post" %></span>
+            </div>
+            <br/>
+            <% end %>
+            <br/>
+        </div>
+    </div>
+	<%= render :partial => "admin/admin_pagination", :locals=>{:pages=>@collection_group_pages, :params=> params} %>
+</div>

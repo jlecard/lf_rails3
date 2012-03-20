@@ -128,7 +128,7 @@ class Admin::LogViewGenericController < ApplicationController
       @types = LogConsult.get_material_type()
       @title = "Top notice consultées"
       @headers = ["idDoc", "collection_id", "alt_name", "title", "material_type", "date", "total", ]
-      method = "topConsulted"
+      method = "top_consulted"
       when "export"
       @title = "Nombre de notices exportées"
       @headers =  ["context", "date","total"]

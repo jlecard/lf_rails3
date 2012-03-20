@@ -1,0 +1,14 @@
+<div>
+<%
+if ((article_citation.ptitle==nil) || (article_citation.volume == nil && article_citation.date==nil))
+  article_citation.raw_citation
+else
+citation=author_citation(article_citation)+title_citation(article_citation)%>
+<%=citation%>
+<%if article_citation.title!=nil && article_citation.title!=''%>
+  <span class="citation_title"><%=trim_punctuation(article_citation.title)%></span>.
+<%end
+  citation=volume_citation(article_citation)+page_date_citation(article_citation)%>
+  <%=citation%>
+<%end%>
+</div>

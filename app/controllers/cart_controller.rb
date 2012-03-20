@@ -84,7 +84,7 @@ class CartController < ApplicationController
   def list
     begin
       consult = LogConsult.new
-      @mostViewed = consult.topConsulted
+      @mostViewed = consult.top_consulted
     rescue
       @mostViewed = nil
     end

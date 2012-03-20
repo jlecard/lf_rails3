@@ -55,9 +55,9 @@ module CartHelper
     @page_list = []
     #declaration for searh and menu bar
     seek = SearchController.new();
-    @filter_tab = seek.load_filter;
+    @filter_tab = SearchTabFilter.load_filter;
     @linkMenu = seek.load_menu;
-    @groups_tab = seek.load_groups;
+    @groups_tab = SearchTab.load_groups;
     
     # Check for obvious errors
     #for this case, we add _page_size to the result count to handle the case of the last page

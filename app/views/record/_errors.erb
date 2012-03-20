@@ -1,0 +1,18 @@
+  <% if @errors!=nil and !@errors.empty?%>
+  <div id="error"><%= translate('DB_ERRORS')%><br/>
+    <%= link_to_function translate('ERROR_DETAILS'), "Element.toggle('db_errors')"%>&#160;
+  <div id="db_errors" class="citation" style="display:none">
+	<div style="float:right">
+		<%= link_to_function image_tag("/images/close.png", :border=>0), "Element.hide('db_errors')"%>
+            </div>
+			<% error_string = ""
+				@errors.each{|x|
+				error_string=error_string+x*':'
+				error_string=error_string+'<br/>'
+				}%>
+<%= error_string.to_s%>
+
+</div>
+</div>
+
+  <% end %>

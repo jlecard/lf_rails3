@@ -1,0 +1,35 @@
+<div class="middle">
+<%count=0
+  @config ||= YAML::load_file(RAILS_ROOT + "/config/config.yml")
+	tab_template=@config["GENERAL_TEMPLATE"]
+	params=build_filter_params("",tab_template)
+	results_string=translate('SEARCH_RESULTS_FOR')
+	if @mode=='advanced'
+		results_string=translate('ADVANCED_SEARCH_RESULTS_FOR')
+	end
+   %>
+   <span id="result"> <%=results_string%>
+   <%=link_to "'"+@query*", "+"'", 
+         {  :action => 'retrieve_page', 
+			:controller=>'record', 
+			:params=>params},	:onclick=>"scroll(0,0);showWait()"%>
+  <%if @filter!=nil and @filter!="" and !@filter.empty?
+	  new_filter=[]
+      for filter_pair in @filter
+		new_filter<<(filter_pair.join(':'))
+		filter_value=filter_pair[1].to_s
+		params=build_filter_params(new_filter.join('/'),@tab_template)%>
+		&nbsp;>&nbsp
+	    <%=link_to "'"+filter_value+"'", 
+         {  :action => 'retrieve_page', 
+			:controller=>'record', 
+			:params=>params},	:onclick=>"scroll(0,0);showWait()"%>
+      <%end%>
+  <%end%>	
+  <%feed_params = build_rss_params(build_string_from_filter(@filter))%>
+  <%=link_to "<img src=\"/images/rss.png\" border=\"0\" />", 
+	     { :action => 'search',
+	       :controller => 'rss',
+	       :params=>feed_params}%>
+  </span>
+</div>

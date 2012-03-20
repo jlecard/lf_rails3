@@ -1,0 +1,23 @@
+
+<div id="collection_group_filter_form" class="admin_filter_form">
+    <h2><%= translate("SEARCH_BOX_TITLE") %>
+    </h2>
+    <% form_tag('/admin/collection_group') do -%>
+    <%= label_tag("name_filter", translate("NAME_LABEL")) %>
+	 <% display_value = params[:collection_group][:name] unless params[:collection_group].nil? or params[:collection_group][:name].blank? %>
+	<%= text_field_with_auto_complete(:collection_group, :name, {:value=>display_value}, {:skip_style=>true}) %>
+    <span id="tab_label">
+    <%= label_tag("tab_id_filter", translate("TAB_LABEL")) %>
+	</span>
+	<span id="tab_value">
+    <% selected_value = params[:tab_id_filter][0].to_i unless params[:tab_id_filter].nil? %>
+    <%= select("tab_id_filter", "",
+              SearchTab.all.collect {|t| [ t.label, t.id ] },
+              {:include_blank => translate("ANY_VALUE"), :selected => selected_value}) %>
+    </span>
+    <%= submit_tag translate("APPLY_FILTER") %>
+    <% end -%>
+
+</div>
+
+

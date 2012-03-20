@@ -1,0 +1,449 @@
+--- 
+note_00082: 
+  uuid: karine.meneghetti@bpi.fr
+  id: 82
+  object_uid: 153195;5
+  note: 4
+  note_date: 2011-06-16 15:48:34 +02:00
+  object_type: 1
+note_00048: 
+  uuid: james.lecard@bpi.fr
+  id: 48
+  object_uid: 143102;5
+  note: 2
+  note_date: 2011-05-16 10:44:34 +02:00
+  object_type: 1
+note_00004: 
+  uuid: james.lecard@bpi.fr
+  id: 4
+  object_uid: 312640;5
+  note: 5
+  note_date: 2011-03-11 11:21:43 +01:00
+  object_type: 1
+note_00015: 
+  uuid: james.lecard@bpi.fr
+  id: 15
+  object_uid: "16"
+  note: 5
+  note_date: 2011-03-17 10:09:29 +01:00
+  object_type: 2
+note_00071: 
+  uuid: claire.lebreton@bpi.fr
+  id: 71
+  object_uid: 673928;5
+  note: 5
+  note_date: 2011-05-30 12:05:43 +02:00
+  object_type: 1
+note_00072: 
+  uuid: claire.lebreton@bpi.fr
+  id: 72
+  object_uid: 673928;5
+  note: 1
+  note_date: 2011-05-30 12:07:08 +02:00
+  object_type: 1
+note_00050: 
+  uuid: james.lecard@bpi.fr
+  id: 50
+  object_uid: 143102;5
+  note: 5
+  note_date: 2011-05-16 10:44:47 +02:00
+  object_type: 1
+note_00016: 
+  uuid: james.lecard@bpi.fr
+  id: 16
+  object_uid: "16"
+  note: 5
+  note_date: 2011-03-17 10:09:38 +01:00
+  object_type: 2
+note_00027: 
+  uuid: james.lecard@bpi.fr
+  id: 27
+  object_uid: 907081;5
+  note: 5
+  note_date: 2011-03-24 17:20:58 +01:00
+  object_type: 1
+note_00049: 
+  uuid: james.lecard@bpi.fr
+  id: 49
+  object_uid: 143102;5
+  note: 4
+  note_date: 2011-05-16 10:44:40 +02:00
+  object_type: 1
+note_00061: 
+  uuid: emmanuelle.sune@bpi.fr
+  id: 61
+  object_uid: 673928;5
+  note: 2
+  note_date: 2011-05-23 16:07:47 +02:00
+  object_type: 1
+note_00083: 
+  uuid: reno.etu@gmail.com
+  id: 83
+  object_uid: 673928;5
+  note: 5
+  note_date: 2011-06-20 15:42:59 +02:00
+  object_type: 1
+note_00084: 
+  uuid: claudine.villette@bpi.fr
+  id: 84
+  object_uid: 188837;5
+  note: 2
+  note_date: 2011-06-20 15:44:37 +02:00
+  object_type: 1
+note_00062: 
+  uuid: corinne.loyer@bpi.fr
+  id: 62
+  object_uid: 673928;5
+  note: 2
+  note_date: 2011-05-23 16:12:32 +02:00
+  object_type: 1
+note_00040: 
+  uuid: james.lecard@bpi.fr
+  id: 40
+  object_uid: 118002;5
+  note: 5
+  note_date: 2011-05-16 10:40:14 +02:00
+  object_type: 1
+note_00051: 
+  uuid: james.lecard@bpi.fr
+  id: 51
+  object_uid: 143102;5
+  note: 2
+  note_date: 2011-05-16 10:44:53 +02:00
+  object_type: 1
+note_00073: 
+  uuid: james.lecard@bpi.fr
+  id: 73
+  object_uid: 785376;5
+  note: 4
+  note_date: 2011-05-30 12:49:00 +02:00
+  object_type: 1
+note_00029: 
+  uuid: admin
+  id: 29
+  object_uid: "16"
+  note: 4
+  note_date: 2011-04-26 11:50:23 +02:00
+  object_type: 2
+note_00074: 
+  uuid: marie-noelle.franchino@bpi.fr
+  id: 74
+  object_uid: 296347;5
+  note: 3
+  note_date: 2011-05-30 16:10:48 +02:00
+  object_type: 1
+note_00052: 
+  uuid: catherine.brodard@bpi.fr
+  id: 52
+  object_uid: 673928;5
+  note: 5
+  note_date: 2011-05-16 11:39:13 +02:00
+  object_type: 1
+note_00030: 
+  uuid: admin
+  id: 30
+  object_uid: 342903;5
+  note: 3
+  note_date: 2011-04-29 17:26:40 +02:00
+  object_type: 1
+note_00041: 
+  uuid: james.lecard@bpi.fr
+  id: 41
+  object_uid: 126312;5
+  note: 5
+  note_date: 2011-05-16 10:43:40 +02:00
+  object_type: 1
+note_00063: 
+  uuid: claire.lebreton@bpi.fr
+  id: 63
+  object_uid: 673928;5
+  note: 1
+  note_date: 2011-05-23 16:12:38 +02:00
+  object_type: 1
+note_00064: 
+  uuid: jerome.villeminoz@bpi.fr
+  id: 64
+  object_uid: "24"
+  note: 2
+  note_date: 2011-05-26 09:53:15 +02:00
+  object_type: 2
+note_00042: 
+  uuid: james.lecard@bpi.fr
+  id: 42
+  object_uid: 130736;5
+  note: 5
+  note_date: 2011-05-16 10:43:49 +02:00
+  object_type: 1
+note_00031: 
+  uuid: admin
+  id: 31
+  object_uid: 342903;5
+  note: 4
+  note_date: 2011-04-29 17:26:54 +02:00
+  object_type: 1
+note_00009: 
+  uuid: jameslecard@gmail.com
+  id: 9
+  object_uid: 158221;5
+  note: 3
+  note_date: 2011-03-11 17:22:19 +01:00
+  object_type: 1
+note_00053: 
+  uuid: bruno.beguet@bpi.fr
+  id: 53
+  object_uid: 673928;5
+  note: 2
+  note_date: 2011-05-16 11:40:46 +02:00
+  object_type: 1
+note_00086: 
+  uuid: admin
+  id: 86
+  object_uid: 673928;5
+  note: 5
+  note_date: 2011-06-23 16:09:52 +02:00
+  object_type: 1
+note_00087: 
+  uuid: gerald.gros@bpi.fr
+  id: 87
+  object_uid: 296347;5
+  note: 5
+  note_date: 2011-06-23 16:10:05 +02:00
+  object_type: 1
+note_00054: 
+  uuid: catherine.brodard@bpi.fr
+  id: 54
+  object_uid: 296347;5
+  note: 2
+  note_date: 2011-05-16 11:42:56 +02:00
+  object_type: 1
+note_00010: 
+  uuid: jameslecard@gmail.com
+  id: 10
+  object_uid: 469803;5
+  note: 5
+  note_date: 2011-03-11 17:26:13 +01:00
+  object_type: 1
+note_00021: 
+  uuid: james.lecard@bpi.fr
+  id: 21
+  object_uid: 980343;5
+  note: 5
+  note_date: 2011-03-17 10:26:17 +01:00
+  object_type: 1
+note_00032: 
+  uuid: admin
+  id: 32
+  object_uid: 342903;5
+  note: 5
+  note_date: 2011-04-29 17:27:07 +02:00
+  object_type: 1
+note_00043: 
+  uuid: james.lecard@bpi.fr
+  id: 43
+  object_uid: 140400;5
+  note: 5
+  note_date: 2011-05-16 10:43:57 +02:00
+  object_type: 1
+note_00065: 
+  uuid: jerome.villeminoz@bpi.fr
+  id: 65
+  object_uid: 681907;5
+  note: 2
+  note_date: 2011-05-26 09:53:54 +02:00
+  object_type: 1
+note_00066: 
+  uuid: jerome.villeminoz@bpi.fr
+  id: 66
+  object_uid: 572225;5
+  note: 3
+  note_date: 2011-05-26 09:54:50 +02:00
+  object_type: 1
+note_00044: 
+  uuid: james.lecard@bpi.fr
+  id: 44
+  object_uid: 143102;5
+  note: 3
+  note_date: 2011-05-16 10:44:12 +02:00
+  object_type: 1
+note_00033: 
+  uuid: admin
+  id: 33
+  object_uid: 342903;5
+  note: 1
+  note_date: 2011-04-29 17:27:16 +02:00
+  object_type: 1
+note_00022: 
+  uuid: jameslecard@gmail.com
+  id: 22
+  object_uid: 647080;5
+  note: 5
+  note_date: 2011-03-17 11:06:57 +01:00
+  object_type: 1
+note_00055: 
+  uuid: christophe.chardey@bpi.fr
+  id: 55
+  object_uid: 191916;5
+  note: 5
+  note_date: 2011-05-16 11:42:58 +02:00
+  object_type: 1
+note_00077: 
+  uuid: florian.leroy@bpi.fr
+  id: 77
+  object_uid: 290193;5
+  note: 3
+  note_date: 2011-06-06 16:07:48 +02:00
+  object_type: 1
+note_00088: 
+  uuid: isabelle.bastian-dupleix@bpi.fr
+  id: 88
+  object_uid: 113287;5
+  note: 5
+  note_date: 2011-06-23 16:10:43 +02:00
+  object_type: 1
+note_00090: 
+  uuid: marc.boilloux@bpi.fr
+  id: 90
+  object_uid: 614872;5
+  note: 5
+  note_date: 2011-07-12 16:14:21 +02:00
+  object_type: 1
+note_00056: 
+  uuid: dominique.crest@bpi.fr
+  id: 56
+  object_uid: 673928;5
+  note: 1
+  note_date: 2011-05-16 11:43:18 +02:00
+  object_type: 1
+note_00023: 
+  uuid: jameslecard@gmail.com
+  id: 23
+  object_uid: 779116;5
+  note: 3
+  note_date: 2011-03-17 11:10:32 +01:00
+  object_type: 1
+note_00034: 
+  uuid: admin
+  id: 34
+  object_uid: 342903;5
+  note: 5
+  note_date: 2011-04-29 17:29:25 +02:00
+  object_type: 1
+note_00045: 
+  uuid: james.lecard@bpi.fr
+  id: 45
+  object_uid: 143102;5
+  note: 1
+  note_date: 2011-05-16 10:44:17 +02:00
+  object_type: 1
+note_00067: 
+  uuid: claire.lebreton@bpi.fr
+  id: 67
+  object_uid: 673928;5
+  note: 4
+  note_date: 2011-05-26 10:35:01 +02:00
+  object_type: 1
+note_00080: 
+  uuid: nathalie.daigne@bpi.fr
+  id: 80
+  object_uid: 478288;5
+  note: 4
+  note_date: 2011-06-16 15:43:22 +02:00
+  object_type: 1
+note_00068: 
+  uuid: isabelle.morin@bpi.fr
+  id: 68
+  object_uid: 153195;5
+  note: 4
+  note_date: 2011-05-26 11:53:11 +02:00
+  object_type: 1
+note_00046: 
+  uuid: james.lecard@bpi.fr
+  id: 46
+  object_uid: 143102;5
+  note: 3
+  note_date: 2011-05-16 10:44:24 +02:00
+  object_type: 1
+note_00035: 
+  uuid: jerome.villeminoz@bpi.fr
+  id: 35
+  object_uid: 130402;6
+  note: 3
+  note_date: 2011-05-02 13:13:43 +02:00
+  object_type: 1
+note_00024: 
+  uuid: admin
+  id: 24
+  object_uid: 879773;5
+  note: 3
+  note_date: 2011-03-18 11:21:30 +01:00
+  object_type: 1
+note_00057: 
+  uuid: stephanie.lanoe@bpi.fr
+  id: 57
+  object_uid: 673928;5
+  note: 5
+  note_date: 2011-05-23 11:43:52 +02:00
+  object_type: 1
+note_00091: 
+  uuid: james.lecard@bpi.fr
+  id: 91
+  object_uid: "210"
+  note: 5
+  note_date: 2011-09-20 16:29:28 +02:00
+  object_type: 2
+note_00092: 
+  uuid: james.lecard@bpi.fr
+  id: 92
+  object_uid: "210"
+  note: 5
+  note_date: 2011-09-20 16:30:17 +02:00
+  object_type: 2
+note_00070: 
+  uuid: christine.mora@bpi.fr
+  id: 70
+  object_uid: 673928;5
+  note: 4
+  note_date: 2011-05-30 12:05:24 +02:00
+  object_type: 1
+note_00058: 
+  uuid: catherine.burtin@bpi.fr
+  id: 58
+  object_uid: 673928;5
+  note: 1
+  note_date: 2011-05-23 11:43:57 +02:00
+  object_type: 1
+note_00003: 
+  uuid: james.lecard@bpi.fr
+  id: 3
+  object_uid: 494321;5
+  note: 5
+  note_date: 2011-03-11 11:18:48 +01:00
+  object_type: 1
+note_00036: 
+  uuid: jerome.villeminoz@bpi.fr
+  id: 36
+  object_uid: 36235;6
+  note: 5
+  note_date: 2011-05-02 13:21:04 +02:00
+  object_type: 1
+note_00047: 
+  uuid: james.lecard@bpi.fr
+  id: 47
+  object_uid: 143102;5
+  note: 1
+  note_date: 2011-05-16 10:44:29 +02:00
+  object_type: 1
+note_00069: 
+  uuid: claire.lebreton@bpi.fr
+  id: 69
+  object_uid: 673928;5
+  note: 3
+  note_date: 2011-05-26 16:18:16 +02:00
+  object_type: 1
+note_00081: 
+  uuid: laurence.eme@bpi.fr
+  id: 81
+  object_uid: 281872;5
+  note: 1
+  note_date: 2011-06-16 15:47:36 +02:00
+  object_type: 1

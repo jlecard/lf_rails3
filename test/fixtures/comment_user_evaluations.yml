@@ -1,0 +1,120 @@
+--- 
+comment_user_evaluation_00020: 
+  created_at: 2011-03-24 17:17:51 +01:00
+  uuid: james.lecard@bpi.fr
+  updated_at: 2011-03-24 17:17:51 +01:00
+  id: 20
+  comment_relevance: 1
+  comment_id: 9
+comment_user_evaluation_00032: 
+  created_at: 2011-06-16 15:46:40 +02:00
+  uuid: anne-marie.mottin@bpi.fr
+  updated_at: 2011-06-16 15:46:40 +02:00
+  id: 32
+  comment_relevance: -1
+  comment_id: 106
+comment_user_evaluation_00021: 
+  created_at: 2011-05-03 15:45:08 +02:00
+  uuid: bpi.beaubourg@gmail.com
+  updated_at: 2011-05-03 15:45:08 +02:00
+  id: 21
+  comment_relevance: -1
+  comment_id: 34
+comment_user_evaluation_00011: 
+  created_at: 2011-03-11 17:25:14 +01:00
+  uuid: jameslecard@gmail.com
+  updated_at: 2011-03-11 17:25:17 +01:00
+  id: 11
+  comment_relevance: 1
+  comment_id: 9
+comment_user_evaluation_00022: 
+  created_at: 2011-05-03 15:54:27 +02:00
+  uuid: admin
+  updated_at: 2011-05-03 15:54:27 +02:00
+  id: 22
+  comment_relevance: 1
+  comment_id: 34
+comment_user_evaluation_00033: 
+  created_at: 2011-06-16 15:48:56 +02:00
+  uuid: nathalie.daigne@bpi.fr
+  updated_at: 2011-06-16 15:48:56 +02:00
+  id: 33
+  comment_relevance: 1
+  comment_id: 119
+comment_user_evaluation_00035: 
+  created_at: 2011-06-20 15:44:22 +02:00
+  uuid: reno.etu@gmail.com
+  updated_at: 2011-06-20 15:44:22 +02:00
+  id: 35
+  comment_relevance: -1
+  comment_id: 124
+comment_user_evaluation_00036: 
+  created_at: 2011-06-20 15:52:09 +02:00
+  uuid: claudine.villette@bpi.fr
+  updated_at: 2011-06-20 15:52:09 +02:00
+  id: 36
+  comment_relevance: 1
+  comment_id: 38
+comment_user_evaluation_00037: 
+  created_at: 2011-06-23 16:08:49 +02:00
+  uuid: sylvie.colley@bpi.fr
+  updated_at: 2011-06-23 16:08:49 +02:00
+  id: 37
+  comment_relevance: 1
+  comment_id: 129
+comment_user_evaluation_00026: 
+  created_at: 2011-05-16 11:42:47 +02:00
+  uuid: abdelkader.belkhiter@bpi.fr
+  updated_at: 2011-05-16 11:42:47 +02:00
+  id: 26
+  comment_relevance: 1
+  comment_id: 44
+comment_user_evaluation_00016: 
+  created_at: 2011-03-17 11:07:23 +01:00
+  uuid: jameslecard@gmail.com
+  updated_at: 2011-03-17 11:07:28 +01:00
+  id: 16
+  comment_relevance: 1
+  comment_id: 19
+comment_user_evaluation_00027: 
+  created_at: 2011-05-16 11:43:53 +02:00
+  uuid: christophe.chardey@bpi.fr
+  updated_at: 2011-05-16 11:43:53 +02:00
+  id: 27
+  comment_relevance: 1
+  comment_id: 46
+comment_user_evaluation_00038: 
+  created_at: 2011-06-23 16:12:07 +02:00
+  uuid: gerald.gros@bpi.fr
+  updated_at: 2011-06-23 16:12:07 +02:00
+  id: 38
+  comment_relevance: 1
+  comment_id: 133
+comment_user_evaluation_00039: 
+  created_at: 2011-09-02 11:19:44 +02:00
+  uuid: james.lecard@bpi.fr
+  updated_at: 2011-09-02 11:19:44 +02:00
+  id: 39
+  comment_relevance: 1
+  comment_id: 65
+comment_user_evaluation_00028: 
+  created_at: 2011-05-16 11:46:27 +02:00
+  uuid: dominique.crest@bpi.fr
+  updated_at: 2011-05-16 11:46:27 +02:00
+  id: 28
+  comment_relevance: -1
+  comment_id: 40
+comment_user_evaluation_00017: 
+  created_at: 2011-03-24 13:37:17 +01:00
+  uuid: admin
+  updated_at: 2011-03-24 13:37:17 +01:00
+  id: 17
+  comment_relevance: 1
+  comment_id: 9
+comment_user_evaluation_00029: 
+  created_at: 2011-05-23 16:20:58 +02:00
+  uuid: evelyne.favennec@bpi.fr
+  updated_at: 2011-05-23 16:20:58 +02:00
+  id: 29
+  comment_relevance: 1
+  comment_id: 38

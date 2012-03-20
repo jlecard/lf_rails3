@@ -33,11 +33,12 @@ class Admin::DashboardController < ApplicationController
     :msg => 'Access to this page is restricted.'
 
   def initialize
+    logger.info("ADMIN CONTROLLER")
     super
     seek = SearchController.new();
-    @filter_tab = seek.load_filter;
+    @filter_tab = SearchTabFilter.load_filter;
     @linkMenu = seek.load_menu;
-    @groups_tab = seek.load_groups;
+    @groups_tab = SearchTab.load_groups;
   end
   
   def index

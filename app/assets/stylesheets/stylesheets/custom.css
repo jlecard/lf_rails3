@@ -1,0 +1,29 @@
+body { background-color: #edf8ed; 
+font-family: Verdana, Geneva, Arial, sans-serif; } 
+.tabbar {
+  border-bottom: 1px solid #649064;
+}
+h1 {
+	color:#649064;
+	background-color: #edf8ed;
+	}
+	#hits { 
+  border-bottom: 1px solid #649064;
+}
+#source { color: #649064; }
+#source-italic { color: #649064; font-style: italic;}
+#date { color: #3a543a; }
+#date-future { color: #3a543a;font-size:11px;font-weight:bold }
+a:hover { color: #649064; }
+a.vr:hover {color: #649064;  }
+
+.xtop {background:#edf8ed;}
+.xb1, .xb4 {background:#edf8ed;}
+.xb4 {border-left:2px solid #649064; border-right:2px solid #649064;}
+.xb1 {margin:0 2px; background:#649064;}
+.xboxcontent {display:block; border:0 solid #649064; border-width:0 2px; background:#fff;}
+.xsnazzy {background: transparent; clear:both;}
+h2#browsetitle {
+	background: #edf8ed;
+	}
+#t_nav a:hover {color: #649064;}

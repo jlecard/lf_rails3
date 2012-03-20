@@ -38,24 +38,24 @@ class ObjectsCount < ActiveRecord::Base
       logger.debug("[ObjectsCount][incrementObjectsCount] increment objects count BY #{objects_count} for object #{object_type} and object_uid = #{object_uid} ")
       
       case count_type
-        when ENUM_NOTICE:
+        when ENUM_NOTICE
         obj.notices_count += objects_count;
         if(state==1 and (object_type == ENUM_TAG or object_type == ENUM_COMMUNITY_USER))
           obj.notices_count_public +=objects_count 
         end
-        when ENUM_LIST:
+        when ENUM_LIST
         obj.lists_count += objects_count;         
         if(state==1) 
           obj.lists_count_public +=objects_count 
         end 
-        when ENUM_COMMENT:      
+        when ENUM_COMMENT      
         if(object_type != ENUM_COMMENT)
           obj.comments_count += objects_count;
           if(state==1)
             obj.comments_count_public += objects_count;
           end
         end
-        when ENUM_SUBSCRIPTION: 
+        when ENUM_SUBSCRIPTION
         obj.subscriptions_count += objects_count;
         # create notices_check line
         if(object_type == ENUM_NOTICE)
@@ -64,7 +64,7 @@ class ObjectsCount < ActiveRecord::Base
             NoticesCheck.addNotice(object_uid)
           end
         end
-        when ENUM_TAG:
+        when ENUM_TAG
         obj.tags_count += objects_count;          
         if(state==1)
           obj.tags_count_public +=objects_count 

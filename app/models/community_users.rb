@@ -75,11 +75,11 @@ class CommunityUsers < ActiveRecord::Base
   
   def self.incrementSubscriptionsCount(community_user, object_type, objects_count=1)
     case object_type
-      when ENUM_NOTICE:
+      when ENUM_NOTICE
         community_user.alerts_availability_count += objects_count
-      when ENUM_RSS_FEED:
+      when ENUM_RSS_FEED
         community_user.rss_feeds_count += objects_count
-      when ENUM_SEARCH_HISTORY:
+      when ENUM_SEARCH_HISTORY
         community_user.searches_history_count += objects_count
     end
     community_user.save!
@@ -88,17 +88,17 @@ class CommunityUsers < ActiveRecord::Base
  
   def self.decrementSubscriptionsCount(community_user, object_type, objects_count=1)
     case object_type
-      when ENUM_NOTICE:
+      when ENUM_NOTICE
         community_user.alerts_availability_count -= objects_count
         if(community_user.alerts_availability_count < 0)
           community_user.alerts_availability_count = 0
         end
-      when ENUM_RSS_FEED:
+      when ENUM_RSS_FEED
         community_user.rss_feeds_count -= objects_count
         if(community_user.rss_feeds_count < 0)
           community_user.rss_feeds_count = 0
         end
-      when ENUM_SEARCH_HISTORY:
+      when ENUM_SEARCH_HISTORY
         community_user.searches_history_count -= objects_count
         if(community_user.searches_history_count < 0)
           community_user.searches_history_count = 0

@@ -1,0 +1,92 @@
+    # $Id$
+
+#=========================================================================
+# LIBRARYFIND_FERRET_PATH:  Local path to ferret index
+#   Example:
+#   LIBRARYFIND_FERRET_PATH: /tmp/LibraryFind/ferret_index
+#=========================================================================
+LIBRARYFIND_INDEXER: solr
+LIBRARYFIND_FERRET_PATH: 
+
+# NO END SLASH /
+LIBRARYFIND_SOLR_HOST: http://127.0.0.1:8080/solr
+LIBRARYFIND_SOLR_HARVESTING_URL: http://127.0.0.1:8080/solr
+
+MEMCACHED_SERVERS: 127.0.0.1,10.1.2.111:11211,10.1.2.112:11211
+
+NB_RESULTAT_MAX: 10
+MAX_COLLECTION_SEARCH: 25
+
+#=========================================================================
+# PARSER_TYPE:  Which Ruby XML parser to use for metadata harvesting and
+#				for internal XML transforms
+#   Values:
+#	PARSER_TYPE = rexml  # Built-in, native Ruby parser
+#	PARSER_TYPE = libxml # Requires separate libxml gem, but much faster
+#=========================================================================
+PARSER_TYPE: nokogiri
+LANGUAGE: FR
+LANGUAGES: FR,EN,ES
+DEFAULT_GROUPS: a_tout_generalites
+GENERAL_TEMPLATE: general
+IMAGES_TEMPLATE: images
+
+ILL_URL: https://yourlibrary.edu/illiad.dll/OpenURL?
+
+#LibraryFind API Developers key for pulling cover art.  Only uncomment if 
+#this is defined.
+#LIBRARYTHING_DEVKEY: 80b31ab911bf0e9b26c86c57a456c865
+OPENLIBRARY_COVERS: 1
+
+# Separator for ged url
+GED_URL_SEPARATOR: /
+GED_URL_PATH: http://adresse_srv/doc/
+GED_NB_CAR_REP: 8
+GED_NAME_FILE: GED_00000000.pdf
+
+# config base url lf et timeout 
+CFG_LF_URL_BASE: http://localhost/
+CFG_LF_TIMEOUT: 30
+CFG_LF_TIMEOUT_SOLR: 30000
+
+# info SMTP
+SMTP_ADRESS: smtp.mail.atosorigin.com
+SMTP_PORT: 465
+SMTP_DOMAIN: web.mail.atosorigin.com
+SMTP_LOGIN: login
+SMTP_PWD: pwd
+SMTP_MAIL_EMETTEUR: no
+
+LINK_SATISFACTION_URL: http://toot.fr
+LINK_MESSAGERIE_URL: http://taot.fr
+
+# info Widget
+WIDGET_SETS: 'g6'
+
+# see also activate
+SEE_ALSO_ACTIVATE: '1'
+SEE_ALSO_MAX: 15
+SYNONYMS_FILE_INPUT: '/srv/libraryfind/components/synonymes/synonyms.csv'
+SYNONYMS_FILE_OUTPUT_SOLR: '/srv/libraryfind/components/synonymes/synonyms.txt'
+SYNONYMS_SEPARATOR_MULTI_VALUES: '@;@'
+SYNONYMS_SEPARATOR_CSV: ';"'
+
+# SpellCheck
+
+COUNT: 5
+SPELL_ACTIVATE: '1'
+
+
+# Save log from file to DataBases
+# with / at the end
+# eg: LOG_FILE_LOCATION: /var/log/ (/!\ dont forget permission)
+
+LOG_FILE_LOCATION: /srv/stats/
+LOG_NAME_FILE: log_statistic_bpi.log
+
+# indicate if LF run on AMD64
+AMD64: 0
+
+FREE_ACCESS_GROUPS: 'GD-Articles de presse,GD-Ged,GD-Journaux en ligne,GD-Mezzanine,GD-Réel,GD-Tous secteurs'
+
+

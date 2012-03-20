@@ -229,6 +229,7 @@ class PortfolioSearchClass < ActionController::Base
       
       _response = conn.query(raw_query_string, opt)
       @total_hits = _response.total_hits
+      logger.info("[PortfolioSearchClass][RetrievePortfolio] SOLR RESPONSE GIVE #{@total_hits}")
       _query = Array.new
       _response.each do |hit|
         if _query != ""

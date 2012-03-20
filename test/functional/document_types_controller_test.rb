@@ -1,6 +1,7 @@
 require 'test_helper'
 
 class DocumentTypesControllerTest < ActionController::TestCase
+  tests Admin::DocumentTypesController
   test "should get index" do
     get :index
     assert_response :success

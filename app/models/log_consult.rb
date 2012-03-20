@@ -28,7 +28,7 @@ class LogConsult < ActiveRecord::Base
     return LogConsult.find_by_sql("select distinct(material_type) from log_consults order by material_type ASC")
   end
   
-  def self.topConsulted(unit = "", date_from_str = nil, date_to_str = nil, profil = nil, order = "total",  page = 1, max = 10, type = nil)
+  def self.top_consulted(unit = "", date_from_str = nil, date_to_str = nil, profil = nil, order = "total",  page = 1, max = 10, type = nil)
     select_clause = "idDoc, title, collection_id, c.alt_name, material_type, count(idDoc) total"
     from_clause = " , collections c" 
     where_clause = "action='consult' and context='notice' and c.id=l.collection_id" 
@@ -168,7 +168,7 @@ class LogConsult < ActiveRecord::Base
     end
     
     # PAGINATE
-    if page > 0:
+    if page > 0
       offset = (page.to_i-1) * max.to_i
       requete += " limit #{offset}, #{max}"
     end

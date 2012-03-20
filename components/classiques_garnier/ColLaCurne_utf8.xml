@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?><collection xmlns="http://www.loc.gov/MARC21/slim">
+  <record>
+    <leader>00832nam  2200181uu 4500</leader>
+    <controlfield tag="001">classiques-garnier.ColLaCurne.LacAD01</controlfield>
+    <controlfield tag="008">070101s2007       |||||||||||||||||fre||</controlfield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="a">Classiques Garnier</subfield>
+    </datafield>
+    <datafield tag="041" ind1="0" ind2=" ">
+      <subfield code="a">fre</subfield>
+    </datafield>
+    <datafield tag="100" ind1="1" ind2=" ">
+      <subfield code="a">La Curne de Sainte-Palaye (Jean-Baptiste de)</subfield>
+      <subfield code="e">creator</subfield>
+    </datafield>
+    <datafield tag="245" ind1="1" ind2="0">
+      <subfield code="a">Dictionnaire historique de l'ancien langage françois ou Glossaire de la langue françoise depuis son origine jusqu'au siècle de Louis XIV</subfield>
+    </datafield>
+    <datafield tag="260" ind1=" " ind2=" ">
+      <subfield code="a">Niort, Paris</subfield>
+      <subfield code="b">Classiques Garnier Numérique</subfield>
+      <subfield code="c">2007</subfield>
+    </datafield>
+    <datafield tag="490" ind1=" " ind2=" ">
+      <subfield code="a">La Curne, Dictionnaire de l'ancien français</subfield>
+    </datafield>
+    <datafield tag="650" ind1="1" ind2=" ">
+      <subfield code="a">Dictionnaire</subfield>
+    </datafield>
+    <datafield tag="655" ind1=" " ind2="7">
+      <subfield code="a">dictionary</subfield>
+      <subfield code="2">lcsh</subfield>
+    </datafield>
+    <datafield tag="776" ind1=" " ind2=" ">
+      <subfield code="d">Niort, Paris: Favre (L.), Champion (H.), 1875-1882</subfield>
+    </datafield>
+    <datafield tag="856" ind1=" " ind2="2">
+      <subfield code="q">text/html</subfield>
+    </datafield>
+    <datafield tag="856" ind1=" " ind2=" ">
+      <subfield code="u">http://www.classiques-garnier.com/numerique-bases/index.php?module=App&amp;action=FrameMain&amp;colname=ColLaCurne&amp;filename=LacAD01</subfield>
+    </datafield>
+  </record>
+</collection>

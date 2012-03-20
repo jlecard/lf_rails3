@@ -31,7 +31,7 @@ class CollectionGroup < ActiveRecord::Base
   has_many :editorial_group_members, :dependent => :destroy
   has_many :editorials, :through => :editorial_group_members
   has_many :searchTabSubjects, :dependent => :nullify
-
+  belongs_to :search_tab, :foreign_key => :tab_id
 
   def self.get_all(bool_advanced=false)
     advanced = "" #tab_id > 0 "

@@ -39,10 +39,10 @@ class DocumentController < ApplicationController
     # id[1] : idCollection
     # id[2] : idSearch
     ###################################
-    seek = SearchController.new();
-    @filter_tab = seek.load_filter;
-    @linkMenu = seek.load_menu;
-    @groups_tab = seek.load_groups;
+    
+    @filter_tab = SearchTabFilter.load_filter
+    @linkMenu = SearchTab.load_menu
+    @groups_tab = SearchTab.load_groups
     
     begin
       paginate_cart(2)
@@ -196,7 +196,7 @@ class DocumentController < ApplicationController
       # The first element MUST be the RT Tag !!
       # TODO Faire correspondre le type de la notice avec la liste des TAG autorisés par RefWorks
       @val = "RT Book, Section\n"
-      @val += "UL #{::LIBRARYFIND_BASEURL + request.request_uri[1,request.request_uri.length].to_s}\n"
+      @val += "UL #{::LIBRARYFIND_BASEURL + request.url[1,request.request_uri.length].to_s}\n"
       datas.each {|item|
         @val += "\n"
         item.each {|key, value|

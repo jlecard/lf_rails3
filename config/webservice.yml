@@ -1,0 +1,33 @@
+
+#=========================================================================
+#
+# config Web Service variables
+#
+#=========================================================================
+
+
+#  _____________
+# |_Web_Service_|
+#
+
+# login Web service
+WS_USERNAME: 'eldemows'
+# Password Web service
+WS_PASSWORD: 'ur76Pu73'
+
+#  _______
+# |_Proxy_|
+#
+
+# if you don't wanna use proxy let all variables like '' or 0
+
+# Address of proxy sample ('myProxy.myDomain.com')
+PROXY_HTTP_ADR: 'http://spxy.bpi.fr'
+# Port of proxy sample (3128)
+PROXY_HTTP_PORT: 3128
+# Username for logon on proxy if require
+PROXY_HTTP_LOGIN: ''
+# Password for logon on proxy if require
+PROXY_HTTP_PWD: ''
+
+

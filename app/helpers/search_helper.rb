@@ -32,11 +32,11 @@ module SearchHelper
   def init_search
     @isbn_list = ""
     @image_isbn_list = ""
-    setDefaults
+    defaults
     logger.debug(params.to_s)
-    initQueryAndType(params)
-    if (!params[:query].nil? and params[:query][:mod] != "0") 
-      initAttributeSearch(params[:query][:mod])
+    init_query_and_type(params)
+    if (!params[:query].nil? and params[:mod] != "0") 
+      initAttributeSearch(params[:mod])
     end
     if !params[:filter].blank? && !params[:filter].empty?
       @filter=[]
@@ -47,8 +47,8 @@ module SearchHelper
       end
     end  
     
-    if !params[:query].nil? and !params[:query][:max].blank?
-      @max = params[:query][:max]
+    if !params[:query].nil? and !params[:max].blank?
+      @max = params[:max]
     end
     
     if params[:mobile]!=nil and params[:mobile]=='true'
@@ -64,8 +64,8 @@ module SearchHelper
     if !params[:completed].blank? 
       @completed = params[:completed].split(',')
     end
-    if !params[:query].nil? and !params[:query][:mod].blank?
-      @mod = params[:query][:mod]
+    if !params[:query].nil? and !params[:mod].blank?
+      @mod = params[:mod]
     end 
     if !params[:mode].blank? 
       @mode = params[:mode]
@@ -73,8 +73,8 @@ module SearchHelper
     if !params[:sort_value].blank?
       @sort_value=params[:sort_value]
     end
-    if !params[:query].nil? and !params[:query][:start].blank? 
-      @start = params[:query][:start]
+    if !params[:query].nil? and !params[:start].blank? 
+      @start = params[:start]
     end
     if !params[:tab_template].blank? 
       @tab_template = params[:tab_template]
@@ -113,9 +113,9 @@ module SearchHelper
       end
   end    
   
-  def setDefaults
+  def defaults
     @filter=[]
-    @max = getMaxCollectionSearch
+    @max = max_search_results
     @mod="0"
     @mode="simple"
     @query=[""]
@@ -126,22 +126,21 @@ module SearchHelper
     @tab_template=@config["GENERAL_TEMPLATE"]
   end
   
-  def initQueryAndType(params)
+  def init_query_and_type(params)
   
     @query=[]
-    @type=[]
     @operator=[]
     if !params[:query].nil?
-      q  = params[:query][:string]
-      t  = params[:query][:type]
-      q1 = params[:query][:string1]
-      q2 = params[:query][:string2]
-      q3 = params[:query][:string3]
-      t1 = params[:query][:field_filter1]
-      t2 = params[:query][:field_filter2]
-      t3 = params[:query][:field_filter3]
-      o1 = params[:query][:operator1]
-      o2 = params[:query][:operator2]
+      q  = params[:query]
+      t  = params[:type]
+      q1 = params[:string1]
+      q2 = params[:string2]
+      q3 = params[:string3]
+      t1 = params[:field_filter1]
+      t2 = params[:field_filter2]
+      t3 = params[:field_filter3]
+      o1 = params[:operator1]
+      o2 = params[:operator2]
       
       if !q1.blank?
         @query << q1
@@ -171,11 +170,8 @@ module SearchHelper
 
       end
     end
-    
     # set default value if empty
-    if @type.empty? or @type =="" or @type.nil?
-      @type=["keyword"]
-    end
+    @type ||= ["keyword"]
   end
   
   def initAttributeSearch(word_modifier)
@@ -207,8 +203,12 @@ module SearchHelper
   end
   
   def set_query_values
-    @query=params[:query][:string].to_s.split(',')
-    @type=params[:query][:type].to_s.split(',')
+    logger.debug("SET QUERY VALUES QUERY => #{@query.inspect}")
+    logger.debug("SET QUERY VALUES PARAMS => #{params.inspect}")
+    if @query.blank?
+      @query=params[:query].to_s.split(',')
+      @type=params[:type].to_s.split(',')
+    end
   end
   
   def defaultNilValues

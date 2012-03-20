@@ -13,12 +13,12 @@ class CleanSolrIndex < CommonHarvester
   end
   
   def clean_all_oai
-    query = "select * from collections where conn_type = 'oai'"
+    query = "select id from collections where conn_type = 'oai'"
     collections = Collection.find_by_sql(query)
-    collections.each do |collection|
-      clean_solr_index(collection.id)
-      clean_sql_data(collection.id)
-      reset_harvest_date(collection.id)
+    collections.each do |collection_id|
+      clean_solr_index(collection_id)
+      clean_sql_data(collection_id)
+      reset_harvest_date(collection_id)
     end
   end
   

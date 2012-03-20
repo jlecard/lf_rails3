@@ -2,7 +2,7 @@
 class CreateManageDroits < ActiveRecord::Migration
 
     def self.up
-        create_table (:manage_droits, :primary_key => [:id_perm, :id_role, :id_collection, :id_lieu]) do |t|
+        create_table(:manage_droits, :primary_key => [:id_perm, :id_role, :id_collection, :id_lieu]) do |t|
             t.column :id_perm, :string, :null => false
             t.column :id_role, :string, :null => false
             t.column :id_lieu, :string, :null => false

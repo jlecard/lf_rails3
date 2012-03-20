@@ -24,6 +24,6 @@
 #
 # http://libraryfind.org
 
-module RZOOMHelper
+module RzoomHelper
 
 end

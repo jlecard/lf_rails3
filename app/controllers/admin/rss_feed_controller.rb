@@ -13,9 +13,9 @@ class Admin::RssFeedController < ApplicationController
   def initialize
     super
     seek = SearchController.new();
-    @filter_tab = seek.load_filter;
+    @filter_tab = SearchTabFilter.load_filter;
     @linkMenu = seek.load_menu;
-    @groups_tab = seek.load_groups;
+    @groups_tab = SearchTab.load_groups;
     
     @primary_document_types = load_primary_document_types;
   end
@@ -145,13 +145,13 @@ class Admin::RssFeedController < ApplicationController
         @records = []
       end
       
-      t = RecordController.new();
+      t = RecordController.new()
       # set params to recordController
-      t.setResults(@records, @sort_value, @filter);
+      t.build_results(@records, @sort_value, @filter)
       # call filter results      
-      t.filter_results;
+      t.filter_results
       # get results to sort
-      @records = t.sort_results;
+      @records = t.sort_results
     rescue => e
       logger.error("[RssFeedController] error : #{e.message}")
       logger.error("[RssFeedController] error : #{e.backtrace.join("\n")}")

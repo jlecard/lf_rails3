@@ -1,0 +1,21 @@
+en:
+  #_index.rhtml
+  COLLECTIONS: Collections
+  COLLECTION_GROUPS: Collection Groups
+  COVERAGES: Coverages
+  PROVIDERS: Providers
+  USERS: Users
+fr:
+  #_index.rhtml
+  COLLECTIONS: Collections
+  COLLECTION_GROUPS: Groupes de collection
+  COVERAGES: Couvertures OpenURL
+  PROVIDERS: Fournisseurs OpenURL
+  USERS: Utilisateurs
+es:
+  #_index.rhtml
+  COLLECTIONS: SPANISH Collections
+  COLLECTION_GROUPS: SPANISH Collection Groups
+  COVERAGES: SPANISH Coverages
+  PROVIDERS: SPANISH Providers
+  USERS: SPANISH Users

@@ -69,7 +69,7 @@ class JobQueue < ActiveRecord::Base
   
   def self.update_thread_id (id, thread_id) 
     begin
-      objRecord = JobQueue.find(id, :lock=>true)
+      objRecord = JobQueue.find(id, :lock=>false)
       return nil if objRecord == nil
       objRecord.thread_id = thread_id
       objRecord.save

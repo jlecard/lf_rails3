@@ -7,19 +7,20 @@ class PublieNet
 
   
   def self.download_marc_files(download_dir, proxy_host, proxy_port, logger)
-    url = 'ws.immateriel.fr'
+    url = 'http://ws.immateriel.fr'
     begin
       if !proxy_host.nil?
-          Net::HTTP.Proxy(proxy_host, proxy_port).start(url) do |http|
-            resp = http.get("/fr/web_service/publisher_unimarc?company=publienet")
-            open("/#{download_dir}/publienet.iso2709", "wb") do |file|
-              file.write(resp.body)
-            end
+        proxy_host = proxy_host.gsub(/http:\/\//,"")
+        Net::HTTP.Proxy(proxy_host, proxy_port).start(url) do |http|
+          resp = http.get("#{url}/fr/web_service/publisher_unimarc?company=publienet")
+          open("/#{download_dir}/publienet.iso2709", "wb") do |file|
+            file.write(resp.body)
           end
+        end
       else
         FILES.each do |collection_name|
           Net::HTTP.start(url) do |http|
-            resp = http.get("/fr/web_service/publisher_unimarc?company=publienet")
+            resp = http.get("#{url}/fr/web_service/publisher_unimarc?company=publienet")
             open("/#{download_dir}/publienet.iso2709", "wb") do |file|
               file.write(resp.body)
             end

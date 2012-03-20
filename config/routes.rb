@@ -1,6 +1,12 @@
 # $Id: routes.rb 493 2006-10-25 15:57:02Z dchud $
 
-ActionController::Routing::Routes.draw do |map|
+LfRails3::Application.routes.draw do 
+  namespace :admin do resources :search_tab_filters end
+
+  resources :search_tab_filters
+
+  resources :records
+
   # The priority is based upon order of creation: first created -> highest priority.
   
   # Sample of regular route:
@@ -17,23 +23,30 @@ ActionController::Routing::Routes.draw do |map|
 
   # Allow downloading Web Service WSDL as a file with an extension
   # instead of a file named 'wsdl'
-  map.connect ':controller/service.wsdl', :action => 'wsdl'
+  resources :record
+  resources :user
+  
+  match ':controller/service.wsdl', :action => 'wsdl'
 
   # Install the default route as the lowest priority.
-  map.connect ':controller/:action/:id'
-  map.connect '', :controller => "record", :action => 'search'
-  map.connect 'admin', :controller => 'admin/dashboard', :action => 'index'
-  map.resources :admin
-  map.namespace :admin do |admin|
-     admin.resources :manage_roles
-     admin.resources :manage_droits
-     admin.resources :collection
-     admin.resources :harvest_schedule
-     admin.resources :primary_document_types
-     admin.resources :document_types
-     admin.resources :search_tab_filters
-     admin.resources :search_tab_subjects
-     admin.resources :search_tabs
-     admin.resources :editorials
+  #match ':controller/:action'
+  match ':controller(/:action/:id)'
+  match 'record/search', :to=>'record#search'
+  match 'record/retrieve', :to=>'record#retrieve'
+  match '', :to=>"record#search"
+  match 'admin', :controller => 'admin/dashboard', :action => 'index'
+  match 'javascripts', :to=>'public/javascripts'
+  resources :admin
+  namespace :admin do 
+     resources :manage_roles
+     resources :manage_droits
+     resources :collection
+     resources :harvest_schedule
+     resources :primary_document_types
+     resources :document_types
+     resources :search_tab_filters
+     resources :search_tab_subjects
+     resources :search_tabs
+     resources :editorials
   end
 end

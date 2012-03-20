@@ -1,0 +1,10 @@
+<div id="page_contents">
+<%= render(:partial => "admin/navigation")%>
+<div id="center"  class="column">
+<h2>Edit Settings</h2>
+	<% form_for :site_config, @site_config, :url => { :action => "update", :id=>@site_config}  do |f| %>
+		<%= render :partial => 'form', :locals=>{:form=>f}  %>  
+		<%= submit_tag "Save", {:id=>"saveButton"} %>
+	<% end %>
+</div>
+</div>

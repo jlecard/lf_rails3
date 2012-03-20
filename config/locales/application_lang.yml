@@ -1,0 +1,625 @@
+en:
+  LIBRARY_FIND_TITLE: "LibraryFind: "
+  LIBRARY_FIND_HEADER: "Library Find "
+  SEARCH: "Search "
+  OREGON_STATE_UNIVERSITY: "Oregon State University"
+  LIBRARIES: "Libraries"
+  MY_ACCOUNT: "My Account"
+  VALLEY_LIBRARY: "Valley Library"
+  GUIN_LIBRARY: "Guin Library"
+  CASCADES_LIBRARY: "OSU Cascades Library"
+  ECAMPUS_LIBRARY: "Ecampus Library"
+  OSU_ARCHIVES: "ENLISH OSU Archives"
+  SPECIAL_COLLECTIONS: "Special Collections"
+  INTERLIBRARY_LOAN: Interlibrary Loan
+  FULL_ABSTRACT: Full Abstract
+  CITATION: Citation
+  SAVE_THIS_ITEM: Save This Item
+  REMOVE_FROM_SAVED_ITEMS: Remove from Saved Items
+  MORE_FROM: " \"more from '#{args[0]}' \""
+  TITLE_ALL: "All"
+  TITLE_BOOK: "Book"
+  TITLE_ARTICLE: "Revue and Article"
+  TITLE_MUSIC: "Music" 
+  TITLE_MOVIE: "Movies and Clips"
+  TITLE_TRAINING: "Self-Trainning"
+  TITLE_SITE: "WebSites and Databases"
+  AVAILABILITY_LABEL: "Content :"
+  COLLECTION_AVAILABILITY: Collection's Content
+  COLLECTION_AVAILABILITY_DESCRIPTION: Choose the type of content (by default)
+  COLLECTION_AVAIL_LABEL_ONLINE: Online
+  COLLECTION_AVAIL_LABEL_ONSHELF: On shelf
+  COLLECTION_AVAIL_LABEL_: No 
+  
+  #list.rhtml
+  SAVED_ITEMS_HEADER: My Saved Items
+  SAVED_ITEMS_NOTICE: "NOTE This list of saved items will only remain active for the current browser session.  A future implementation of LibraryFind will allow you to login and store results."
+  #_search_box.rhtml
+  MY_SAVED_ITEMS: My Saved Items
+  LOGIN_PROXY: Login
+  ADMIN: Admin
+  LOG_OUT: Log Out
+  HELP: Help
+  REPORT_A_PROBLEM: Report a Problem
+  PROBLEM_REPORT: Problem report for LibraryFind
+  #_simple_search.rhtml
+  FIND_IT: Find It!
+  ADVANCED_SEARCH: Advanced Search
+  FROM: "from"
+  FROM_TITLE: "filter"
+  IN: "in"
+  IN_TITLE: "collection"
+  MAX_SEARCH_RESULTS: Number of results to search
+  MAX_SHOW_RESULTS: Number of results to print
+  DEFAULT: Default
+  NEED_HELP: "Need help ?"
+  CRITERION: "tous critère"
+  TITLE: "titre"
+  REVUE_TITLE: "titre de revue"
+  SUBJECT: "sujet.."
+  GENERALITY: "generality"
+  #ADMIN ACTIONS
+  SAVE: Save
+  EDIT: Edit
+  DESTROY: Destroy
+  ARE_YOU_SURE: "Are You Sure?"
+  NEXT_PAGE: Next page
+  PREVIOUS_PAGE: Previous page
+  ADMINISTRATION: Administration
+  ADD_A_NEW_COLLECTION: Add a New Collection
+  COLLECTIONS: Collections
+  COLLECTION_GROUPS: Collection Groups
+  COVERAGES: Coverages
+  PROVIDERS: Providers
+  USERS: Users
+  ADMIN_HOME: Admin Home
+  LIST_COLLECTIONS: List Collections
+  ADD_A_NEW_COLLECTION: Add a New Collection
+  LIST_COLLECTION_GROUPS: List Collection Groups
+  ADD_A_NEW_COLLECTION_GROUP: Add a New Collection Group
+  LIST_COVERAGES: List Coverages
+  ADD_A_NEW_COVERAGE: Add a New Coverage
+  LIST_PROVIDERS: List Providers
+  ADD_A_NEW_PROVIDER: Add a New Provider
+  STATS: Statistics
+  SHOW_LOG_CART: Carts
+  SHOW_LOG_COLLECTION: Collections
+  SHOW_LOG_CONSULT: Consults
+  SHOW_LOG_FACETTE: Facettes
+  SHOW_LOG_MAIL: Mails
+  SHOW_LOG_PRINT: Prints
+  SHOW_LOG_REBONCE: Rebounces
+  SHOW_LOG_RSS: Rss
+  SHOW_LOG_WORD: Keyword
+  SHOW_LOG_HISTORYSEARCH: Searches
+  
+  LIST_USERS: List Users
+  ADD_A_NEW_USER: Add a New User
+  COLLECTIONS_IN_THIS_GROUP: Collections in this Group
+  TABS_SUBJECT: Tab Subjects
+  LIST_TAB_SUBJECTS: List Tab subjects
+  ADD_A_NEW_TAB_SUBJECT:  Add a New Tab Subject
+  TABS_FILTER: Tab filters
+  LIST_TAB_FILTERS: List Tab Filters
+  ADD_A_NEW_TAB_FILTER:  Add a New Tab Filter
+  #details _article_citation.rhtml
+  AUTHOR_LABEL: "Author:"
+  ARTICLE_TITLE_LABEL: "Article Title:"
+  JOURNAL_TITLE_LABEL: "Journal Title:"
+  VOLUME_LABEL: "Volume:"
+  ISSUE_LABEL: "Issue:"
+  PAGES_LABEL: "Page(s):"
+  DATE_LABEL: "Date:"
+  TITLE_LABEL: "Title:"
+  PUBLISHER_LABEL: "Publisher:"
+  ISBN_LABEL: "ISBN:"
+  URL_LABEL: "URL:"
+  RAW_CITATION_LABEL: "Unformatted Citation:"
+  IMAGE_URL: "Image URL"
+  RESULTS_FROM_LIBRARYFIND: The following items are selected search results from LibraryFind
+  RESULTS_FROM_BPI: The following document is selected search result from BPI databases.
+  ITEM_SAVED: Item Saved
+  #application.rb
+  PLEASE_LOG_IN: Please log in
+  AUTHORIZATION_REQUIRED: Authorization required to view this page.
+  LIST_REJECTS: Reject list
+  REJECTED: Reject
+  DOCUMENT_TYPES: Document types
+  PRIMARY_DOCUMENT_TYPE: LibraryFind Document Types
+  CUSTOM_DOCUMENT_TYPE: Custom Document Types 
+  REJECTED: Reject
+  LIST_REJECTS: Global reject list
+  DB_REJECTS: Specific database reject list
+  DOCUMENT_TABS: Tabs
+  LIST_TABS: list tabs
+  EDITORIAL: Editorial
+  LIST_EDITORIAL: list editorial
+  ADD_EDITORIAL: add editorial
+  AFFECTE_EDITORIAL: affecte editorial
+  PTITLE_FIELD : Ptitle
+  TITLE_FIELD : Title
+  ATITLE_FIELD : Atitle
+  ISBN_FIELD : Isbn
+  ISSN_FIELD : Issn
+  ABSTRACT_FIELD : Abstract
+  DATE_FIELD : Date
+  AUTHOR_FIELD : Author
+  LINK_FIELD : Link
+  DIRECT_URL_FIELD : Direct url
+  THUMBNAIL_URL_FIELD : Thumbnail url
+  STATIC_URL_FIELD : Static
+  SUBJECT_FIELD : Subject
+  PUBLISHER_FIELD : Publisher
+  RELATION_FIELD : Relation
+  CONTRIBUTOR_FIELD : Contributor
+  RIGHTS_FIELD : Rights
+  CALLNUM_FIELD : Callnum
+  MATERIAL_TYPE_FIELD : Material type
+  FORMAT_FIELD : Format
+  THEME_FIELD : Theme(s)
+  CATEGORY_FIELD : Category
+  VENDOR_NAME_FIELD : Vendor name
+  VENDOR_URL_FIELD : Vendor url
+  VOLUME_FIELD : Volume
+  ISSUE_FIELD : Issue
+  NUMBER_FIELD : Number
+  PAGE_FIELD : Page
+  RAW_CITATION_FIELD : Raw citation
+  OCLC_NUM_FIELD : Oclc num
+  SOURCE_FIELD : Source
+   #_Right
+  PERSONNAL_SPACE: "Personnal Space"  
+  LOG_ON: "Log On"
+  FORGOT_PWD: "Forgot Password ?"
+  CREATE_ACCOUNT: "Create an account"
+  BASKET: "Document basket"
+  INFO_BASKET: "identify yourself to access your records Cart"
+  SEARCH_HISTORY: "Search History"
+  INFO_HISTORY: "You don't have any request"
+  RESEARCH_TOOLBOX: "Research Toolbox"
+  INFO_TOOLBOX: "Tools to install on your browser, your phone ..."
+  INFO2_TOOLBOX: "to do your research and find your personal space from everywhere"
+  LISTS: "Lists"
+  TODAY: "Today : "
+  YESTERDAY: "Yesterday : "
+  ALL_LISTS: "All Lists"
+  MOST_VIEWED: "Most viewed"
+  FOLLOW_US: "Follow us online : "
+  EMPTY_CART: "Empty cart"
+  LINK_EXTERNE_LABEL: "Feedback"
+  LINK_SATISFACTION_LABEL: "formulaire statisfacation"
+  LINK_MESSAGERIE_LABEL: "formulaire messagerie"
+  LANG_frm: "French Middle"
+  LANG_fre: "French"
+  LANG_fra: "French"
+  LANG_fr: "French"
+  LANG_eng: "English"
+  LANG_ger: "Germany"
+  LANG_grc: "Greek"
+  LANG_lat: "Latin"
+  ADD_NEW_ROLE: "Add new role"
+  MANAGE_ROLE_LIST: "List of roles"
+  MANAGE_DROIT: "Rights"
+  MANAGE_DROIT_LIST: "List of rights"
+  
+
+fr:
+  LIBRARY_FIND_TITLE: "Recherche documentaire - Bibliotheque publique d'information :"
+  LIBRARY_FIND_HEADER: "Recherche documentaire - Bibliotheque publique d'information"
+  SEARCH: "Rechercher"
+  OREGON_STATE_UNIVERSITY: "Université de l'etat d'Oregon"
+  LIBRARIES: "Bibliothèques"
+  MY_ACCOUNT: "Mon compte"
+  VALLEY_LIBRARY: "Valley Library"
+  GUIN_LIBRARY: "Guin Library"
+  CASCADES_LIBRARY: "OSU Cascades Library"
+  ECAMPUS_LIBRARY: "Ecampus Library"
+  OSU_ARCHIVES: "OSU Archives"
+  SPECIAL_COLLECTIONS: "Collections spéciales"
+  INTERLIBRARY_LOAN: Pret inter-bibliotheque
+  FULL_ABSTRACT: Résumé
+  CITATION: Citer ce document
+  SAVE_THIS_ITEM: Mettre dans le panier
+  REMOVE_FROM_SAVED_ITEMS: Enlever du panier
+  MORE_FROM: " \"Plus de résultats de '#{args[0]}' \""
+  TITLE_ALL: "Tout"
+  TITLE_BOOK: "Livres"
+  TITLE_ARTICLE: "Revues et Articles"
+  TITLE_MUSIC: "Musique" 
+  TITLE_MOVIE: "Films"
+  TITLE_TRAINING: "Autoformation"
+  TITLE_SITE: "Site et base de données"
+  AVAILABILITY_LABEL: "Contenu :"
+  COLLECTION_AVAILABILITY: Contenu de collection
+  COLLECTION_AVAILABILITY_DESCRIPTION: Choisir le type du contenu (par défaut)
+  COLLECTION_AVAIL_LABEL_ONLINE: Consultable en ligne
+  COLLECTION_AVAIL_LABEL_ONSHELF: Disponible en rayon
+  COLLECTION_AVAIL_LABEL_: Non
+  ACTIONS_ALLOWED_LABEL : "Actions autorisées"
+  COLLECTION_ACTIONS_ALLOWED_LABEL : "Actions autorisées"
+  COLLECTION_ACTIONS_ALLOWED_DESCRIPTION : "Actions sur les documents provenants de la collection (abonnements, commentaires, etc)" 
+  online : en 
+  #list.rhtml
+  SAVED_ITEMS_HEADER: Mes objets dans le panier
+  SAVED_ITEMS_NOTICE: Les objets mis en panier le resteront durant le temps de votre visite sur le site.
+  #_search_box.rhtml
+  MY_SAVED_ITEMS: Mes objets sauvegardés
+  LOGIN_PROXY: Identifiant
+  ADMIN: Admnistration
+  LOG_OUT: Déconnection
+  HELP: Aide
+  REPORT_A_PROBLEM: Rapporter un problème
+  PROBLEM_REPORT: Rapporter un probleme du moteur de recherche
+  #_simple_search.rhtml
+  FIND_IT: CHERCHER
+  ADVANCED_SEARCH: Recherche avancée
+  FROM: "par"
+  FROM_TITLE: "filter"
+  IN_TITLE: "collection"
+  IN: "dans"
+  MAX_SEARCH_RESULTS: Nombre de résultats
+  MAX_SHOW_RESULTS: Résultats par page
+  DEFAULT: Défaut
+  NEED_HELP: "Besoin d'aide ?"
+  CRITERION: "tous critère"
+  TITLE: "titre"
+  REVUE_TITLE: "titre de revue"
+  SUBJECT: "sujet.."
+  GENERALITY: "Généralité"
+  #ADMIN ACTIONS
+  LIST_RSS_FEEDS : Liste des flux RSS
+  NEW_RSS_FEED : Nouveau flux RSS
+  LOG_RSS_FEED : Journal des mises à jour des flux RSS
+  RSS_FEEDS : Gestion des flux RSS
+  HARVEST: Moissons
+  LIST_HARVEST_SCHEDULES: Liste des programmes de moisson
+  NEW_HARVEST_SCHEDULE: Nouveau programme de moisson
+  HARVEST_LOG: Journal de moisson
+  APPLY_FILTER: Filtrer
+  SHOW: Afficher
+  BACK: Retour
+  SAVE: Enregistrer
+  EDIT: Editer
+  DESTROY: Supprimer
+  ARE_YOU_SURE: "Etes vous sûr ?"
+  NEXT_PAGE: Page suivante
+  PREVIOUS_PAGE: Page précédante
+  ADMINISTRATION: Administration
+  ADD_A_NEW_COLLECTION: Ajouter une nouvelle collection
+  COLLECTIONS: Collections
+  COLLECTION_GROUPS: Groupes de collection
+  COVERAGES: Bases OpenURL
+  PROVIDERS: Fournisseurs OpenURL
+  USERS: Utilisateurs
+  ADMIN_HOME: Accueil administration
+  LIST_COLLECTIONS: Liste des collections
+  LIST_COLLECTION_GROUPS: Liste des groupes de collection
+  ADD_A_NEW_COLLECTION_GROUP: Ajouter un nouveau groupe de collection
+  LIST_COVERAGES: Liste des documents
+  ADD_A_NEW_COVERAGE: Ajouter une référence
+  LIST_PROVIDERS: Liste des fournisseurs
+  ADD_A_NEW_PROVIDER: Ajouter un nouveau fournisseur
+  STATS: Statistiques
+  SHOW_LOG_CART: Panier
+  SHOW_LOG_COLLECTION: Collections
+  SHOW_LOG_CONSULT: Consultation
+  SHOW_LOG_FACETTE: Facettes
+  SHOW_LOG_MAIL: Mails
+  SHOW_LOG_PRINT: Impression
+  SHOW_LOG_REBONCE: Rebonds
+  SHOW_LOG_RSS: Rss
+  SHOW_LOG_WORD: Mots clés
+  SHOW_LOG_MAILEXPORT: Mail et Export
+  SHOW_LOG_REBONCETAG: Rebonce sur Tags
+  SHOW_LOG_REBONCEMODE: Rebonce sur profile - tag - liste
+  SHOW_LOG_REQ: Sauvegarde de requête
+  SHOW_LOG_HISTORYSEARCH: Recherches
+  SHOW_LOG_TAG: Tag
+  SHOW_LOG_COMMENT_NOTE: Commentaire - Note
+  LIST_USERS: Liste des utilisateurs
+  ADD_A_NEW_USER: Ajouter un nouvel utilisateur
+  COLLECTIONS_IN_THIS_GROUP: Collections dans ce groupe
+  TABS_SUBJECT: Thèmes
+  LIST_TAB_SUBJECTS: Liste des thèmes par onglet
+  ADD_A_NEW_TAB_SUBJECT:  Ajouter un thème à un onglet
+  TABS_FILTER: Filtre de recherche par onglet
+  LIST_TAB_FILTERS: Liste des filtres par onglet
+  ADD_A_NEW_TAB_FILTER:  Ajouter un filtre à un onglet
+  #details _article_citation.rhtml
+  AUTHOR_LABEL: "Auteur :"
+  ARTICLE_TITLE_LABEL: "Titre de l'article :"
+  JOURNAL_TITLE_LABEL: "Titre du journal :"
+  VOLUME_LABEL: "Volume :"
+  ISSUE_LABEL: "Tome :"
+  PAGES_LABEL: "Page(s) :"
+  DATE_LABEL: "Date :"
+  TITLE_LABEL: "Titre :"
+  PUBLISHER_LABEL: "Editeur :"
+  ISBN_LABEL:  "ISBN :"
+  URL_LABEL: "URL :"
+  RAW_CITATION: "Citation non formatée:"
+  IMAGE_URL: "URL de l'image"
+  RESULTS_FROM_LIBRARYFIND: Les résultats suivants ont étés sélectionnés par le moteur de recherche
+  ITEM_SAVED: Objet Sauvegardé
+  #application.rb
+  PLEASE_LOG_IN: Merci de s'authentifier
+  AUTHORIZATION_REQUIRED: Une authentification est necessaire pour afficher cette page
+  REJECTED: Rejets
+  DOCUMENT_TYPES: Types de documents
+  PRIMARY_DOCUMENT_TYPE: Type de documents primaires
+  CUSTOM_DOCUMENT_TYPE: Type de documents personnalisés
+  LIST_REJECTS: Liste de rejet globale
+  DB_REJECTS: Liste de rejet par base
+  DOCUMENT_TABS: Onglets
+  LIST_TABS: Liste des onglets
+  EDITORIAL: Editoriaux
+  LIST_EDITORIAL: Liste des éditoriaux
+  ADD_EDITORIAL: Ajouter un éditorial
+  AFFECTE_EDITORIAL: Affecter un éditorial
+  PTITLE_FIELD : Ptitle
+  TITLE_FIELD : Titre
+  ATITLE_FIELD : Atitle
+  ISBN_FIELD : ISBN
+  ISSN_FIELD : ISSN
+  ABSTRACT_FIELD : Résumé
+  DATE_FIELD : Date
+  AUTHOR_FIELD : Auteur
+  LINK_FIELD : Lien
+  DIRECT_URL_FIELD : URL
+  THUMBNAIL_URL_FIELD : URL de la vignette
+  STATIC_URL_FIELD : URL Statique
+  SUBJECT_FIELD : Sujet
+  PUBLISHER_FIELD : Editeur
+  RELATION_FIELD : Collection
+  CONTRIBUTOR_FIELD : Autre auteur
+  RIGHTS_FIELD : Accès
+  CALLNUM_FIELD : Localisation
+  MATERIAL_TYPE_FIELD : Type de document
+  FORMAT_FIELD : Format
+  THEME_FIELD : Thème(s)
+  CATEGORY_FIELD : Catégorie 
+  VENDOR_NAME_FIELD : Fournisseur
+  VENDOR_URL_FIELD : URL fournisseur
+  VOLUME_FIELD : Volume
+  ISSUE_FIELD : Tome
+  NUMBER_FIELD : Numéro
+  PAGE_FIELD : Page
+  RAW_CITATION_FIELD : Citation non formatée
+  OCLC_NUM_FIELD : Numéro OCLC
+  SOURCE_FIELD : Adresse
+  #_Right
+  SESSION_BASKET: "Votre panier"
+  PERSONNAL_SPACE: "Espace personnel"  
+  LOG_ON: "S'identifier"
+  FORGOT_PWD: "Mot de passe perdu ?"
+  CREATE_ACCOUNT: "Créer un compte"
+  BASKET: "Panier de document"
+  INFO_BASKET: "identify yourself to access your records Cart"
+  SEARCH_HISTORY: "Historique de recherche"
+  INFO_HISTORY: "Vous n'avez aucune requẽte dans l'historique"
+  RESEARCH_TOOLBOX: "Boîte à outils de recherche"
+  INFO_TOOLBOX: "Outils à installer sur votre navigateur, téléphone... "
+  INFO2_TOOLBOX: "pour rechercher et retrouver votre espace personnel depuis n'importe où."
+  LISTS: "Listes"
+  TODAY: "Aujourd'hui : "
+  YESTERDAY: "Hier : "
+  ALL_LISTS: "Toutes les listes"
+  MOST_VIEWED: "Les plus consultés"
+  FOLLOW_US: " La Bpi est aussi sur :"
+  EMPTY_CART: "Vider le panier"
+  LINK_EXTERNE_LABEL: "Feedback"
+  LINK_SATISFACTION_LABEL: "Accès au formulaire de statisfaction"
+  LINK_MESSAGERIE_LABEL: "Accès au formulaire de messagerie"
+  LANG_frm: "Français Moyen"
+  LANG_fre: "Français"
+  LANG_fra: "Français"
+  LANG_fr: "Français"
+  LANG_eng: "Anglais"
+  LANG_ger: "Allemand"
+  LANG_grc: "Grec"
+  LANG_lat: "Latin"
+  ADD_NEW_ROLE: "Nouveau rôle"
+  MANAGE_ROLE_LIST: "Liste des rôles"
+  MANAGE_DROIT: "Droits"
+  MANAGE_DROIT_LIST: "Liste des droits"
+  
+es:
+  LIBRARY_FIND_TITLE: "SPANISH LibraryFind: "
+  LIBRARY_FIND_HEADER: "SPANISH Library Find "
+  SEARCH: "SPANISH Search "
+  OREGON_STATE_UNIVERSITY: "SPANISH Oregon State University"
+  LIBRARIES: "SPANISH Libraries"
+  MY_ACCOUNT: "SPANISH My Account"
+  VALLEY_LIBRARY: "SPANISH Valley Library"
+  GUIN_LIBRARY: "SPANISH Guin Library"
+  CASCADES_LIBRARY: "SPANISH OSU Cascades Library"
+  ECAMPUS_LIBRARY: "SPANISH Ecampus Library"
+  OSU_ARCHIVES: "SPANISH OSU Archives"
+  SPECIAL_COLLECTIONS: "SPANISH Special Collections"
+  INTERLIBRARY_LOAN: SPANISH Interlibrary Loan
+  FULL_ABSTRACT: SPANISH Full Abstract
+  CITATION: SPANISH Citation
+  SAVE_THIS_ITEM: SPANISH Save This Item
+  REMOVE_FROM_SAVED_ITEMS: SPANISH Remove from Saved Items
+  MORE_FROM: " \"SPANISH more from '#{args[0]}' \""
+  TITLE_ALL: "Todos"
+  TITLE_BOOK: "Books ES"
+  TITLE_ARTICLE: "Revues et Articles es"
+  TITLE_MUSIC: "Music es" 
+  TITLE_MOVIE: "Movies and Clips es"
+  TITLE_TRAINING: "Self-Trainning es"
+  TITLE_SITE: "WebSites and Databases es"
+  AVAILABILITY_LABEL : "Availability"
+  COLLECTION_AVAILABILITY: Collection availability
+  COLLECTION_AVAILABILITY_DESCRIPTION: Choose the type of availability (by default)
+  COLLECTION_AVAIL_LABEL_ONLINE: Online
+  COLLECTION_AVAIL_LABEL_ONSHELF: On shelf
+  COLLECTION_AVAIL_LABEL_: No 
+  #list.rhtml
+  SAVED_ITEMS_HEADER: SPANISH My Saved Items
+  SAVED_ITEMS_NOTICE: "SPANISH NOTE This list of saved items will only remain active for the current browser session.  A future implementation of LibraryFind will allow you to login and store results."
+  #_search_box.rhtml
+  MY_SAVED_ITEMS: SPANISH My Saved Items
+  LOGIN_PROXY: SPANISH Login
+  ADMIN: SPANISH Admin
+  LOG_OUT: SPANISH Log Out
+  HELP: SPANISH Help
+  REPORT_A_PROBLEM: SPANISH Report a Problem
+  PROBLEM_REPORT: SPANISH Problem report for LibraryFind
+  #_simple_search.rhtml
+  FIND_IT: SPANISH Find It!
+  ADVANCED_SEARCH: SPANISH Advanced Search
+  FROM: "FROM"
+  FROM_TITLE: "filter"
+  IN_TITLE: "collection"
+  IN: "IN"
+  MAX_SEARCH_RESULTS: Nombre de resultats
+  MAX_SHOW_RESULTS: Résultats par page
+  DEFAULT: Défaut
+  NEED_HELP: "Need help ?"
+  CRITERION: "tous critère"
+  TITLE: "titre"
+  REVUE_TITLE: "titre de revue"
+  SUBJECT: "sujet.."
+  GENERALITY: "generality"
+  #ADMIN ACTIONS
+  SAVE: SPANISH Save
+  EDIT: SPANISH Edit
+  DESTROY: SPANISH Destroy
+  ARE_YOU_SURE: "SPANISH Are You Sure?"
+  NEXT_PAGE: SPANISH Next page
+  PREVIOUS_PAGE: SPANISH Previous page
+  ADMINISTRATION: SPANISH Administration
+  ADD_A_NEW_COLLECTION: SPANISH Add a New Collection
+  COLLECTIONS: SPANISH Collections
+  COLLECTION_GROUPS: SPANISH Collection Groups
+  COVERAGES: SPANISH Coverages
+  PROVIDERS: SPANISH Providers
+  USERS: SPANISH Users
+  ADMIN_HOME: SPANISH Admin Home
+  LIST_COLLECTIONS: SPANISH List Collections
+  ADD_A_NEW_COLLECTION: SPANISH Add a New Collection
+  LIST_COLLECTION_GROUPS: SPANISH List Collection Groups
+  ADD_A_NEW_COLLECTION_GROUP: SPANISH Add a New Collection Group
+  LIST_COVERAGES: SPANISH List Coverages
+  ADD_A_NEW_COVERAGE: SPANISH Add a New Coverage
+  LIST_PROVIDERS: SPANISH List Providers
+  ADD_A_NEW_PROVIDER: SPANISH Add a New Provider
+  STATS: Statistics
+  SHOW_LOG_COLLECTION: Collections
+  SHOW_LOG_CONSULT: Consults
+  SHOW_LOG_FACETTE: Facettes
+  SHOW_LOG_MAIL: Mails
+  SHOW_LOG_PRINT: Prints
+  SHOW_LOG_REBONCE: Rebonces
+  SHOW_LOG_RSS: Rss
+  SHOW_LOG_WORD: Keyword
+  LIST_USERS: SPANISH List Users
+  ADD_A_NEW_USER: SPANISH Add a New User
+  COLLECTIONS_IN_THIS_GROUP: SPANISH Collections in this Group
+  TABS_SUBJECT: Tab Subjects
+  LIST_TAB_SUBJECTS: List Tab subjects
+  ADD_A_NEW_TAB_SUBJECT:  Add a New Tab Subject
+  TABS_FILTER: Tab filters
+  LIST_TAB_FILTERS: List Tab Filters
+  ADD_A_NEW_TAB_FILTER:  Add a New Tab Filter
+  #details _article_citation.rhtml
+  AUTHOR_LABEL: "SPANISH Author:"
+  ARTICLE_TITLE_LABEL: "SPANISH Article Title:"
+  JOURNAL_TITLE_LABEL: "SPANISH Journal Title:"
+  VOLUME_LABEL: "SPANISH Volume:"
+  ISSUE_LABEL: "SPANISH Issue:"
+  PAGES_LABEL: "SPANISH Page(s):"
+  DATE_LABEL: "SPANISH Date:"
+  TITLE_LABEL: "SPANISH Title:"
+  PUBLISHER_LABEL: "SPANISH Publisher:"
+  ISBN_LABEL: "SPANISH ISBN: "
+  URL_LABEL: "SPANISH URL:"
+  RAW_CITATION_LABEL: "SPANISH Unformatted Citation:"
+  IMAGE_URL: "SPANISH Image URL"
+  RESULTS_FROM_LIBRARYFIND: SPANISH The following items are selected search results from LibraryFind
+  ITEM_SAVED: SPANISH Item Saved
+  #application.rb
+  PLEASE_LOG_IN: SPANISH Please log in
+  AUTHORIZATION_REQUIRED: SPANISH Authorization required to view this page.
+  LIST_REJECTS: Reject list
+  REJECTED: Reject
+  DOCUMENT_TYPES: Document types
+  PRIMARY_DOCUMENT_TYPE: LibraryFind Document Types
+  CUSTOM_DOCUMENT_TYPE: Custom Document Types
+  REJECTED: Reject
+  LIST_REJECTS: Global reject list
+  DB_REJECTS: Specific database reject list
+  DOCUMENT_TABS: Tabs
+  LIST_TABS: list tabs  
+  EDITORIAL: Editorial
+  LIST_EDITORIAL: list editorial
+  ADD_EDITORIAL: add editorial
+  AFFECTE_EDITORIAL: affecte editorial
+  PTITLE_FIELD : Ptitle
+  TITLE_FIELD : Title
+  ATITLE_FIELD : Atitle
+  ISBN_FIELD : Isbn
+  ISSN_FIELD : Issn
+  ABSTRACT_FIELD : Abstract
+  DATE_FIELD : Date
+  AUTHOR_FIELD : Author
+  LINK_FIELD : Link
+  DIRECT_URL_FIELD : Direct url
+  THUMBNAIL_URL_FIELD : Thumbnail url
+  STATIC_URL_FIELD : Static
+  SUBJECT_FIELD : Subject
+  PUBLISHER_FIELD : Publisher
+  RELATION_FIELD : Relation
+  CONTRIBUTOR_FIELD : Contributor
+  RIGHTS_FIELD : Rights
+  CALLNUM_FIELD : Callnum
+  MATERIAL_TYPE_FIELD : Material type
+  FORMAT_FIELD : Format
+  THEME_FIELD : Theme(s)
+  CATEGORY_FIELD : Category
+  VENDOR_NAME_FIELD : Vendor name
+  VENDOR_URL_FIELD : Vendor url
+  VOLUME_FIELD : Volume
+  ISSUE_FIELD : Issue
+  NUMBER_FIELD : Number
+  PAGE_FIELD : Page
+  RAW_CITATION_FIELD : Raw citation
+  OCLC_NUM_FIELD : Oclc num
+  SOURCE_FIELD : Source
+   #_Right
+  PERSONNAL_SPACE: "Personnal Space"  
+  LOG_ON: "Log On"
+  FORGOT_PWD: "Forgot Password ?"
+  CREATE_ACCOUNT: "Create an account"
+  BASKET: "Document basket"
+  INFO_BASKET: "identify yourself to access your records Cart"
+  SEARCH_HISTORY: "Search History"
+  INFO_HISTORY: "You don't have any request"
+  RESEARCH_TOOLBOX: "Research Toolbox"
+  INFO_TOOLBOX: "Tools to install on your browser, your phone ..."
+  INFO2_TOOLBOX: "to do your research and find your personal space from everywhere"
+  LISTS: "Lists"
+  TODAY: "Today : "
+  YESTERDAY: "Yesterday : "
+  ALL_LISTS: "All Lists"
+  MOST_VIEWED: "Most viewed"
+  FOLLOW_US: "Follow us online : "
+  EMPTY_CART: "Empty cart"
+  LINK_EXTERNE_LABEL: "Feedback"
+  LINK_SATISFACTION_LABEL: "formulaire statisfacation"
+  LINK_MESSAGERIE_LABEL: "formulaire messagerie"
+  LANG_frm: "French Middle"
+  LANG_fre: "French"
+  LANG_fra: "French"
+  LANG_fr: "French"
+  LANG_eng: "English"
+  LANG_ger: "Germany"
+  LANG_grc: "Greek"
+  LANG_lat: "Latin"
+  ADD_NEW_ROLE: "Add new role"
+  MANAGE_ROLE_LIST: "Liste les roles"
+  MANAGE_DROIT: "Manage droit"
+  MANAGE_DROIT_LIST: "Liste des droits"
+
+  

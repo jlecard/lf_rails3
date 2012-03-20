@@ -1,0 +1,398 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* @group GENERIC CLASSES */
+
+/* all stuff to hide */
+.hidden-D{ display:none;}
+.hidden-L{ left:-2000px;position: absolute;width: 200px; float: left;}
+.hidden-T{ text-indent:-200em;}
+
+/* all stuff to clear */
+.clear-B{ clear:both;}
+.clear-R{ clear:right;}
+.clear-L{ clear:left;}
+
+/* txt to align */
+.align-R{ text-align: right;}
+.align-L{ text-align: left;}
+
+/* Majuscule */
+.maj{ text-transform: uppercase; font-size: 85%;}
+
+/* stuff to resize img with ems, whitout using width and height attributes in img element -according to WAI-AAA, WCAG2 and html5 - prairycat saying */
+.wh-100pc{ width:100%; height:100%;}
+
+/* all stuff to say goodby to style attribute and use spaces in class attribute -according to WAI-AAA, WCAG2 and html5 - prairycat saying */
+.m-0{ margin:0px;}
+.m-2{ margin:2em;}
+
+/* list */
+dl, dt, dd, ul, li {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+/* Border */
+.border-top{
+	border-top: 1px solid #D1D1D1;
+}
+
+/* Picto (double côte) avant certains liens */
+.picto-before:before{
+	 content: "» ";
+}
+	.picto-before{
+		text-decoration: none;
+	}
+	.picto-before:hover{
+		text-decoration: underline;
+	}
+.picto-before2:before{
+	 content: "« ";
+}
+
+/* Accentuation taille police */
+.font-up1{
+	 font-size: 120%;
+}
+/* @end */
+
+
+/* @group Layout */
+
+html {
+/*height:100%;*/
+}
+body {
+	margin:0;
+	padding:0;
+	line-height: 1.5em;
+	min-height:100%;
+	font-family:Arial, Verdana, Helvetica, sans-serif;
+	font-size:62.5%;
+	/*background :transparent url(/images/home-body-background.gif) repeat-y 51.2em 0;*/
+}
+
+a, a img{ border:none; outline: none;}
+div{ 
+	position:relative;
+	margin: 0;
+	padding: 0;
+}
+form{margin:0;}
+
+/* @group titrage */
+h1 a {/* this ruleset keeps the root link in the title from standing out */
+	font-weight: normal;
+	color: #000;
+	}
+
+h1 {
+	font-size: 2.0em;
+	font-weight: normal;
+	margin-top: 0em;
+	/*both set to zero and padding in header div used intead to deal with compound ie pc problems that are beyound summary in a simple comment.*/
+	margin-bottom: 0em;	}
+
+h2 {
+	font-size: 1.6em;
+	font-weight: normal;
+	}
+
+h3 {
+	font-size: 1.4em;
+	font-weight: bold;
+	margin: 12px 0 8px;
+	/* Voir feuille de style couleur */
+	}
+
+h4 {
+	font-size: 1.3em;
+	font-weight: bold;
+	text-decoration: underline;
+	margin: 10px 0 6px;
+	}
+
+h5 {
+	font-size: 1.3em;
+	font-weight: normal;
+	margin: 12px 0 4px;
+	}
+
+h6 {
+	font-size: 1.3em;
+	font-weight: normal;
+	margin: 4px 0 4px;
+	color: #666;
+	}
+
+
+/* @end */
+
+
+
+/* @group Access - liens d'évitements */
+.easy-access{
+	position:absolute;
+}
+
+/* @end */
+
+/* @group Blocs */
+.container{width:100%; margin:0 auto 20px 0;}
+.wrapper{ width:940px; _width:965px; margin:0px 0 0px 25px;}
+.content-column{
+	margin-left: 20px;
+	_margin-left: 10px;
+	width:765px; 
+	float:left;
+	}
+.left-column{float:left;width:15.5em;}
+.right-column{float:left;width:20em;}
+.footer{clear:left;; width:96.1em; margin:0 0 0 25px;}
+
+/* @end */
+
+/* @end */
+
+/* @group Header */
+
+.header{
+	background : url(/images/logo-bpi.png) no-repeat 25px 12px;
+	_background : url(/images/logo-bpi-ie6-mauve.gif) no-repeat 28px 25px;
+	display: block;
+	width: 100%;
+	height: 144px;
+	border-bottom: 5px solid red;
+}
+
+/* @group Liens */
+
+	.links{
+		display: block;
+		width: 96em;
+		padding-top: 4px;
+		text-align: right;
+		height: 1.6em;
+	}
+		.links ul{
+			float: right;
+			margin-right:100px;
+			_margin-right:46px;
+		}
+		.links li{
+			display: inline;
+		}
+			.links a{
+				display: block;
+				height: 16px;
+				padding: 0 11px 0 0;
+				margin: 0 10px 0 0;
+				float: left;
+				border-right: 1px solid #fff;
+				font-size: 1.2em;
+				text-decoration: none;
+			}
+				.links a:hover{
+					text-decoration: underline;
+				}
+			.links a.last{
+				margin: 0;
+				padding: 0;
+				border: none;
+			}
+			.links a.lang{
+				color: #fff;
+			}
+		
+		.links ul.group1{
+      			float: left;
+			margin-left: 24px;
+			_margin-left: 20px;
+    		}
+    
+	   .links ul.group1 a {
+       margin:0 8px 0 0;
+       padding:0 8px 0 0;
+    }
+      .links ul.group1 a.unselect {
+        color:white;
+      }
+      .links ul.group1 a.select:hover {
+        text-decoration:none;
+      }
+      
+div.tx-iframeflexform-pi1 { height: 100%;}
+
+/* @end */
+
+/* @group Recherche */
+	.recherche{
+		display: block;
+		width: 655px;
+		height: 30px;
+		margin: 22px 0 36px 315px;
+		font-weight: bold;
+		background-repeat: no-repeat;
+		/*background-position: right 1px;*/
+		background-color:#30036D;
+	}
+			.recherche .research{
+			padding: 27px 0 0 55.5em;
+			}			
+		div.recherche input[type=text]{
+			border:none;
+			margin:11px 33px 0 12px;
+			font-size:13px;
+			width:250px;
+		}
+			.recherche input[type=image]{
+				vertical-align: top;
+				margin-top: 7px;
+			}
+		.recherche p{
+			margin: 2px 0 4px;
+			font-size: 1.3em;
+			/*font-weight: bold;*/
+		}
+		.recherche label{
+			margin-right: 1.5em;
+			font-weight:bold;
+		}
+
+/* @end */
+
+/* @group Menu Niv 1 */
+
+.menu-niv1{
+	width: 96em;
+	margin: 0 0 0 21px;
+}
+	.menu-niv1 li{
+		display: inline;
+	}
+		.menu-niv1 li a{
+			display: block;
+			float: left;
+			height: 33px;
+			width: 105px;
+			margin-left: 4px;
+			border-bottom: 3px solid red;
+			background-repeat: no-repeat;
+			background-position: 5px 2px;
+		}
+			
+			.menu-niv1 li a.actif{
+				/* voir css couleur */
+			}
+			.menu-niv1 li a.profil{
+				/* voir css couleur */
+			}
+
+/* @group Items Menu Niv1 */
+	.menu-niv1 li a.accueil{
+		width: 64px;
+		background-image : url(/images/header-menu-accueil.png);
+		_background-image : url(/images/header-menu-accueil-mauve.gif);
+	}
+	.menu-niv1 li a.decouvrir{
+		background-image:url(/images/header-menu-decouvrir.png);
+		_background-image:url(/images/header-menu-decouvrir-mauve.gif);
+	}
+	.menu-niv1 li a.recherche{
+		background-image:url(/images/header-menu-recherche.png); visibility:visible;
+		_background-image:url(/images/header-menu-recherche-mauve.gif);
+		margin:0 0 0 4px;
+	}
+	.menu-niv1 li a.pratique{
+		background-image:url(/images/header-menu-pratique.png);
+		_background-image:url(/images/header-menu-pratique-mauve.gif);
+	}
+	.menu-niv1 li a.labpi{
+		background-image:url(/images/header-menu-labpi.png);
+		_background-image:url(/images/header-menu-labpi-mauve.gif);
+	}
+	.menu-niv1 li a.saisoncult{
+		background-image:url(/images/header-menu-saisoncult.png);
+		_background-image:url(/images/header-menu-saisoncult-mauve.gif);
+	}
+	.menu-niv1 li a.biblionum{
+		background-image:url(/images/header-menu-biblionum.png);
+		_background-image:url(/images/header-menu-biblionum-mauve.gif);
+	}
+	.menu-niv1 li a.pro{
+		background-image:url(/images/header-menu-pro.png);
+		_background-image:url(/images/header-menu-pro-mauve.gif);
+	}
+	.menu-niv1 li a.journaliste{
+		background-image:url(/images/header-menu-journaliste.png);
+		_background-image:url(/images/header-menu-journaliste-mauve.gif);
+	}
+
+/* @end */
+					
+
+/* @end */
+
+
+/* @end */
+
+/* @group Bdx Images */
+.bdx-images{
+	width: 100%;
+	height: 50px;
+	background : url(/images/bdx-images.jpg) repeat-x 0 0;
+}
+
+
+/* @end */
+
+/* @group Footer */
+.footer{
+	border-top:1px solid red;
+}
+	.footer p{
+		position: relative;
+		margin: 4px 0 0 -5px;
+		font-size: 1.2em;
+		float: left;
+		color: #666;
+	}
+		.footer p.group2{
+			left: 64px;
+		}
+		.footer p.group3{
+			left: 138px;
+		}
+		.footer p.group4{
+			left: 192px;
+		}
+	.footer p a{
+		color: #666;
+		text-decoration: none;
+		margin:0 5px;
+	}
+		.footer p a:hover{
+			text-decoration: underline;	
+		}
+		
+
+/* @end */
+
+
+/* 
+ * LOG MAIL EXPORT
+ */
+table{
+	 margin: 50px 50px;
+	 float:left;
+	 border-collapse:collapse;
+	 text-align: center;
+} 
+
+table, td, th{
+	border:2px solid black;
+    width: 800px;
+}

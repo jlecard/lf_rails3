@@ -210,9 +210,9 @@ class UtilFormat
     end
     case lang.downcase
       when "fr"
-      return "Français"
+      return "Francais"
       when "fr_fr"
-      return "Français"
+      return "Francais"
       when "en"
       return "Anglais"
       when "en_en"
@@ -224,7 +224,7 @@ class UtilFormat
       when "us_us"
       return "Anglais"
       when "fre"
-      return "Français"
+      return "Francais"
       when "de"
       return "Allemand"
       when "es"
@@ -285,21 +285,21 @@ class UtilFormat
   
   def self.remove_accents (str)
     value = str.dup
-    accents = { 
-      ['á','à','â','ä','ã','Ã','Ä','Â','À'] => 'a',
-      ['é','è','ê','ë','Ë','É','È','Ê']     => 'e',
-      ['í','ì','î','ï','I','Î','Ì']         => 'i',
-      ['ó','ò','ô','ö','õ','Õ','Ö','Ô','Ò'] => 'o',
-      ['œ']                                 => 'oe',
-      ['ß']                                 => 'ss',
-      ['ú','ù','û','ü','U','Û','Ù']         => 'u',
-      ['ç']                                 => 'c'
-    };
-    accents.each do |ac,rep|
-      ac.each do |s|
-        value.gsub!(s, rep)
-      end
-    end
+    # accents = { 
+      # ['á','à','â','ä','ã','Ã','Ä','Â','À'] => 'a',
+      # ['é','è','ê','ë','Ë','É','È','Ê']     => 'e',
+      # ['í','ì','î','ï','I','Î','Ì']         => 'i',
+      # ['ó','ò','ô','ö','õ','Õ','Ö','Ô','Ò'] => 'o',
+      # ['œ']                                 => 'oe',
+      # ['ß']                                 => 'ss',
+      # ['ú','ù','û','ü','U','Û','Ù']         => 'u',
+      # ['ç']                                 => 'c'
+    # };
+    # accents.each do |ac,rep|
+      # ac.each do |s|
+        # value.gsub!(s, rep)
+      # end
+    # end
     return (value)
   end
   

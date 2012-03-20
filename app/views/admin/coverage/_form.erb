@@ -1,0 +1,92 @@
+<div id="error"><%= error_messages_for 'coverage' %></div>
+
+<div id="form_field">
+  <span class="form_left">
+  	<label for="coverage_journal_title"><%=translate("JOURNAL_TITLE_LABEL")%></label><br/>
+    <small><%=translate("JOURNAL_TITLE_DESCRIPTION")%></small>
+  </span>
+  <span class="form_right">
+    <%= form.text_field :journal_title %><br/>
+    <small><%=translate("JOURNAL_TITLE_EXAMPLE")%></small>
+  </span>
+</div>
+<div id="form_field">
+  <span class="form_left">
+  	<label for="coverage_issn"><%=translate("ISSN_LABEL")%></label><br/>
+    <small><%=translate("ISSN_DESCRIPTION")%></small>
+  </span>
+  <span class="form_right">
+    <%= form.text_field :issn %><br/>
+    <small><%=translate("ISSN_EXAMPLE")%></small>
+  </span>
+</div>
+<div id="form_field">
+  <span class="form_left">
+  	<label for="coverage_eissn"><%=translate("EISSN_LABEL")%></label><br/>
+    <small><%=translate("EISSN_DESCRIPTION")%></small>
+  </span>
+  <span class="form_right">
+    <%= form.text_field :eissn %><br/>
+    <small><%=translate("EISSN_EXAMPLE")%></small>
+  </span>
+</div>
+<div id="form_field">
+  <span class="form_left">
+  	<label for="coverage_isbn"><%=translate("ISBN_LABEL")%></label><br/>
+    <small><%=translate("ISBN_DESCRIPTION")%></small>
+  </span>
+  <span class="form_right">
+    <%= form.text_field :isbn%><br/>
+    <small><%=translate("ISBN_EXAMPLE")%></small>
+  </span>
+</div>
+<div id="form_field">
+  <span class="form_left">
+  	<label for="coverage_start_date"><%=translate("START_DATE_LABEL")%></label><br/>
+    <small><%=translate("START_DATE_DESCRIPTION")%></small>
+  </span>
+  <span class="form_right">
+    <%= form.text_field :start_date %><br/>
+    <small><%=translate("START_DATE_EXAMPLE")%></small>
+  </span>
+</div>	
+<div id="form_field">
+  <span class="form_left">
+  	<label for="coverage_end_date"><%=translate("END_DATE_LABEL")%></label><br/>
+    <small><%=translate("END_DATE_DESCRIPTION")%></small>
+  </span>
+  <span class="form_right">
+    <%= form.text_field :end_date %><br/>
+    <small><%=translate("END_DATE_EXAMPLE")%></small>
+  </span>
+</div>
+<div id="form_field">
+  <span class="form_left">
+  	<label for="coverage_provider"><%=translate("PROVIDER_LABEL")%></label><br/>
+    <small><%=translate("PROVIDER_DESCRIPTION")%></small>
+  </span>
+  <span class="form_right">
+    <%= form.text_field :provider %><br/>
+    <small><%=translate("PROVIDER_EXAMPLE")%></small>
+  </span>
+</div>
+<div id="form_field">
+  <span class="form_left">
+  	<label for="coverage_url"><%=translate("URL_LABEL")%></label><br/>
+    <small><%=translate("URL_DESCRIPTION")%></small>
+  </span>
+  <span class="form_right">
+    <%= form.text_field :url %><br/>
+    <small><%=translate("URL_EXAMPLE")%></small>
+  </span>
+</div>
+<div id="form_field">
+  <span class="form_left">
+  	<label for="coverage_mod_date"><%=translate("MODIFICATION_DATE_LABEL")%></label><br/>
+    <small><%=translate("MOD_DATE_DESCRIPTION")%></small>
+  </span>
+  <span class="form_right">
+    <%= form.text_field :mod_date %><br/>
+    <small><%=translate("MOD_DATE_EXAMPLE")%></small>
+  </span>
+</div>	

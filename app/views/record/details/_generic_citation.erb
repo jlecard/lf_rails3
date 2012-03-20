@@ -1,0 +1,25 @@
+<div id="citation_<%=h(generic_citation.id)%>" class="citation" style="display:none">
+	<div style="float:right">
+		<%= link_to_function image_tag("/images/close.png", :border=>0), "Element.hide('citation_"+generic_citation.id.to_s+"')"%>
+            </div>
+	<label><%=translate('AUTHOR_LABEL')%>  </label><%=generic_citation.author%><br/>
+	<label><%=translate('TITLE_LABEL')%>  </label><%=generic_citation.ptitle%><br/>
+	<%if format_date(generic_citation)!=nil and format_date(generic_citation)!="" %>
+		<label><%=translate('DATE_LABEL')%>  </label><%=format_date(generic_citation)%><br/>
+	<%end%>
+	<%if generic_citation.direct_url!=nil and generic_citation.direct_url!="" %>
+	  <label><%=translate('URL_LABEL')%>  </label><a href="<%=generic_citation.direct_url%>" target="_blank"><%=generic_citation.direct_url%></a><br/>
+	<%end%>
+	<%if generic_citation.publisher!=nil and generic_citation.publisher!="" %>
+	  <label><%=translate('PUBLISHER_LABEL')%>  </label><%=generic_citation.publisher%><br/>
+	<%end%>
+	<%if generic_citation.volume!=nil and generic_citation.volume!="" %>
+	  <label><%=translate('VOLUME_LABEL')%>  </label><%=generic_citation.volume%><br/>
+	<%end%>
+	<%if generic_citation.issue!=nil and generic_citation.issue!="" %>
+	  <label><%=translate('ISSUE_LABEL')%>  </label><%=generic_citation.issue%><br/>
+	<%end%>
+	<%if generic_citation.page!=nil and generic_citation.page!="" %>
+	  <label><%=translate('PAGES_LABEL')%>  </label><%=generic_citation.page%><br/>
+	<%end%>
+</div>

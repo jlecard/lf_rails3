@@ -1,0 +1,304 @@
+<link rel="stylesheet" type="text/css" href="/stylesheets/bpi-print.css" title="headerBPI" />
+
+<div class="middle doc">
+	
+    <b><h3><%= if @record_found != nil && @record_found[:title] != nil
+            @record_found[:title] end %>
+        </h3></b>
+	
+	
+    <div class="citation">	
+    	<% if @record_found != nil %>
+	        <div id="preview">
+	            <% if @record_found[:thumbnail_url] != "" %>
+	            <%= image_tag("@record[:thumbnail_url]") %>
+	            <% else %>
+	            <%= image_tag("no_thumbnail.jpg") %>
+	            <% end %>
+	        </div>
+	        <div id="barTop">
+	        </div>
+	        <div id="infoUtils">
+	            <% if @record_found[:atitle] != "" %>
+	            <div class="myAlign">
+	                <b><%= translate("ATITLE_FIELD") %>: </b>
+	            </div>
+	            <%= @record_found[:atitle] %>
+	        </div>
+        <!--end of div elementInfoUtils -->
+	        <br/>
+	        <% end %>
+	        <% if @record_found[:isbn] != "" %>
+	        <div class="elementInfoUtils">
+	            <div class="myAlign">
+	                <b><%= translate("ISBN_FIELD") %>: </b>
+	            </div>
+	            <%= @record_found[:isbn] %>
+	        </div>
+	        <!--end of div elementInfoUtils -->
+	        <br/>
+	        <% end %>
+	        <% if @record_found[:issn] != "" %>
+	        <div class="elementInfoUtils">
+	            <div class="myAlign">
+	                <b><%= translate("ISSN_FIELD") %>: </b>
+	            </div>
+	            <%= @record_found[:issn] %>
+	        </div>
+	        <!--end of div elementInfoUtils -->
+	        <br/>
+	        <% end %>
+	        <% if @record_found[:abstract] != "" %>
+	        <div class="elementInfoUtils">
+	            <div class="myAlign">
+	                <b><%= translate("ABSTRACT_FIELD") %>: </b>
+	            </div>
+	            <%= @record_found[:abstract] %>
+	        </div>
+	        <!--end of div elementInfoUtils -->
+	        <br/>
+	        <% end %>
+	        <% if @record_found[:date] != "" %>
+	        <div class="elementInfoUtils">
+	            <div class="myAlign">
+	                <b><%= translate("DATE_FIELD") %>: </b>
+	            </div>
+	            <%= @record_found[:date] %>
+	        </div>
+	        <!--end of div elementInfoUtils -->
+	        <br/>
+	        <% end %>
+	        <% if @record_found[:author] != "" %>
+	        <div class="elementInfoUtils">
+	            <div class="myAlign">
+	                <b><%= translate("AUTHOR_FIELD") %>: </b>
+	            </div>
+	            <%= @record_found[:author] %>
+	        </div>
+	        <!--end of div elementInfoUtils -->
+	        <br/>
+	        <% end %>
+	        <% if @record_found[:link] != "" %>
+	        <div class="elementInfoUtils">
+	            <div class="myAlign">
+	                <b><%= translate("LINK_FIELD") %>: </b>
+	            </div>
+	            <%= @record_found[:link] %>
+	        </div>
+	        <!--end of div elementInfoUtils -->
+	        <br/>
+	        <% end %>
+	        <% if @record_found[:direct_url] != "" %>
+	        <div class="elementInfoUtils">
+	            <div class="myAlign">
+	                <b><%= translate("DIRECT_URL_FIELD") %>: </b>
+	            </div>
+	            <%= @record_found[:direct_url] %>
+	        </div>
+	        <!--end of div elementInfoUtils -->
+	        <br/>
+	        <% end %>
+	        <% if @record_found[:static_url] != "" %>
+	        <div class="elementInfoUtils">
+	            <div class="myAlign">
+	                <b><%= translate("STATIC_URL_FIELD") %>: </b>
+	            </div>
+	            <%= @record_found[:static_url] %>
+	        </div>
+	        <!--end of div elementInfoUtils -->
+	        <br/>
+	        <% end %>
+	        <% if @record_found[:subject] != "" %>
+	        <div class="elementInfoUtils">
+	            <div class="myAlign">
+	                <b><%= translate("SUBJECT_FIELD") %>: </b>
+	            </div>
+	            <%= @record_found[:subject] %>
+	        </div>
+	        <!--end of div elementInfoUtils -->
+	        <br/>
+	        <% end %>
+	        <% if @record_found[:publisher] != "" %>
+	        <div class="elementInfoUtils">
+	            <div class="myAlign">
+	                <b><%= translate("PUBLISHER_FIELD") %>: </b>
+	            </div>
+	            <%= @record_found[:publisher] %>
+	        </div>
+	        <!--end of div elementInfoUtils -->
+	        <br/>
+	        <% end %>
+	        <% if @record_found[:relation] != "" %>
+	        <div class="elementInfoUtils">
+	            <div class="myAlign">
+	                <b><%= translate("RELATION_FIELD") %>: </b>
+	            </div>
+	            <%= @record_found[:relation] %>
+	        </div>
+	        <!--end of div elementInfoUtils -->
+	        <br/>
+	        <% end %>
+	        <% if @record_found[:contributor] != "" %>
+	        <div class="elementInfoUtils">
+	            <div class="myAlign">
+	                <b><%= translate("CONTRIBUTOR_FIELD") %>: </b>
+	            </div>
+	            <%= @record_found[:contributor] %>
+	        </div>
+	        <!--end of div elementInfoUtils -->
+	        <br/>
+	        <% end %>
+	        <% if @record_found[:rights] != "" %>
+	        <div class="elementInfoUtils">
+	            <div class="myAlign">
+	                <b><%= translate("RIGHTS_FIELD") %>: </b>
+	            </div>
+	            <%= @record_found[:rights] %>
+	        </div>
+	        <!--end of div elementInfoUtils -->
+	        <br/>
+	        <% end %>
+	        <% if @record_found[:callnum] != "" %>
+	        <div class="elementInfoUtils">
+	            <div class="myAlign">
+	                <b><%= translate("CALLNUM_FIELD") %>: </b>
+	            </div>
+	            <%= @record_found[:callnum] %>
+	        </div>
+	        <!--end of div elementInfoUtils -->
+	        <br/>
+	        <% end %>
+	        <% if @record_found[:material_type] != "" %>
+	        <div class="elementInfoUtils">
+	            <div class="myAlign">
+	                <b><%= translate("MATERIAL_TYPE_FIELD") %>: </b>
+	            </div>
+	            <%= @record_found[:material_type] %>
+	        </div>
+	        <!--end of div elementInfoUtils -->
+	        <br/>
+	        <% end %>
+	        <% if @record_found[:format] != "" %>
+	        <div class="elementInfoUtils">
+	            <div class="myAlign">
+	                <b><%= translate("FORMAT_FIELD") %>: </b>
+	            </div>
+	            <%= @record_found[:format] %>
+	        </div>
+	        <!--end of div elementInfoUtils -->
+		    <br/>
+	        <% end %>
+	        <% if @record_found[:theme] != "" %>
+	        <div class="elementInfoUtils">
+	            <div class="myAlign">
+	                <b><%= translate("THEME_FIELD") %>: </b>
+	            </div>
+	            <%= @record_found[:theme] %>
+	        </div>
+	        <!--end of div elementInfoUtils -->
+			<br/>
+	        <% end %>
+	        <% if @record_found[:category] != "" %>
+	        <div class="elementInfoUtils">
+	            <div class="myAlign">
+	                <b><%= translate("CATEGORY_FIELD") %>: </b>
+	            </div>
+	            <%= @record_found[:category] %>
+	        </div>
+	        <!--end of div elementInfoUtils -->
+	        <br/>
+	        <% end %>
+	        <% if @record_found[:vendor_name] != "" %>
+	        <div class="elementInfoUtils">
+	            <div class="myAlign">
+	                <b><%= translate("VENDOR_NAME_FIELD") %>: </b>
+	            </div>
+	            <%= @record_found[:vendor_name] %>
+	        </div>
+	        <!--end of div elementInfoUtils -->
+	        <br/>
+	        <% end %>
+	        <% if @record_found[:vendor_url] != "" %>
+	        <div class="elementInfoUtils">
+	            <div class="myAlign">
+	                <b><%= translate("VENDOR_URL_FIELD") %>: </b>
+	            </div>
+	            <%= @record_found[:vendor_url] %>
+	        </div>
+	        <!--end of div elementInfoUtils -->
+	        <br/>
+	        <% end %>
+	        <% if @record_found[:volume] != "" %>
+	        <div class="elementInfoUtils">
+	            <div class="myAlign">
+	                <b><%= translate("VOLUME_FIELD") %>: </b>
+	            </div>
+	            <%= @record_found[:volume] %>
+	        </div>
+	        <!--end of div elementInfoUtils -->
+	        <br/>
+	        <% end %>
+	        <% if @record_found[:issue] != "" %>
+	        <div class="elementInfoUtils">
+	            <div class="myAlign">
+	                <b><%= translate("ISSUE_FIELD") %>: </b>
+	            </div>
+	            <%= @record_found[:issue] %>
+	        </div>
+	        <!--end of div elementInfoUtils -->
+	        <br/>
+	        <% end %>
+	        <% if @record_found[:number] != "" %>
+	        <div class="elementInfoUtils">
+	            <div class="myAlign">
+	                <b><%= translate("NUMBER_FIELD") %>: </b>
+	            </div>
+	            <%= @record_found[:number] %>
+	        </div>
+	        <!--end of div elementInfoUtils -->
+	        <br/>
+	        <% end %>
+	        <% if @record_found[:page] != "" %>
+	        <div class="elementInfoUtils">
+	            <div class="myAlign">
+	                <b><%= translate("PAGE_FIELD") %>: </b>
+	            </div>
+	            <%= @record_found[:page] %>
+	        </div>
+	        <!--end of div elementInfoUtils -->
+	        <br/>
+	        <% end %>
+	        <% if @record_found[:raw_citation] != "" %>
+	        <div class="elementInfoUtils">
+	            <div class="myAlign">
+	                <b><%= translate("RAW_CITATION_FIELD") %>: </b>
+	            </div>
+	            <%= @record_found[:raw_citation] %>
+	        </div>
+	        <!--end of div elementInfoUtils -->
+	        <br/>
+	        <% end %>
+	        <% if @record_found[:oclc_num] != "" %>
+	        <div class="elementInfoUtils">
+	            <div class="myAlign">
+	                <b><%= translate("OCLC_NUM_FIELD") %>: </b>
+	            </div>
+	            <%= @record_found[:oclc_num] %>
+	        </div>
+	        <!--end of div elementInfoUtils -->
+	        <br/>
+	     <% end %>
+	     <% else %>
+	     <%= translate("ERROR_INFO_DOC") %>
+	     <% end %>
+	</div>
+	
+</div>
+<script type="text/javascript">
+				function printpage()
+		  		{
+		  			 window.print();
+					 window.close();
+		  		}
+			</script>
+<input type="button" value="Imprimer" align=right onclick="printpage()" />

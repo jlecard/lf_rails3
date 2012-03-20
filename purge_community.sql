@@ -1,0 +1,16 @@
+truncate tags;
+truncate notices;
+truncate comments;
+truncate comment_user_evaluations;
+truncate comments_alerts;
+truncate lists;
+truncate list_user_records;
+truncate notes;
+delete from objects_counts where object_type != 5;
+update objects_counts set lists_count=0, lists_count_public=0, comments_count=0, comments_count_public=0, subscriptions_count=0, notices_count=0, notices_count_public=0, tags_count=0, tags_count_public=0 where object_type=5;
+truncate objects_tags;
+truncate subscriptions;
+update community_users set rss_feeds_count=0, searches_history_count=0, alerts_availability_count=0;
+truncate history_searches;
+truncate notices_checks;
+truncate users_history_searches;

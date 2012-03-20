@@ -1,7 +1,171 @@
-# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+--- 
+primary_document_type_00013: 
+  new_period: 100
+  name: Musique
+  display_icon: icon_musique.gif
+  created_at: 2009-10-07 09:49:32 +02:00
+  updated_at: 2011-04-26 14:18:48 +02:00
+  id: 13
+  no_image_icon: COUV_MUSIQUE.gif
+primary_document_type_00014: 
+  new_period: 100
+  name: Livre audio
+  display_icon: icon_livreaudio.gif
+  created_at: 2009-10-07 09:49:41 +02:00
+  updated_at: 2011-04-26 14:19:11 +02:00
+  id: 14
+  no_image_icon: COUV_LIVRE_AUDIO.gif
+primary_document_type_00003: 
+  new_period: 100
+  name: Livre
+  display_icon: icon_livre.gif
+  created_at: 2009-10-07 09:47:43 +02:00
+  updated_at: 2011-05-16 17:29:05 +02:00
+  id: 3
+  no_image_icon: COUV_LIVRE.gif
+primary_document_type_00004: 
+  new_period: 100
+  name: "Livre num\xC3\xA9rique"
+  display_icon: icon_elec.gif
+  created_at: 2009-10-07 09:47:52 +02:00
+  updated_at: 2011-04-26 14:07:53 +02:00
+  id: 4
+  no_image_icon: COUV_LIVRE_NUM.gif
+primary_document_type_00015: 
+  new_period: 100
+  name: "D\xC3\xA9bat et enregistrement"
+  display_icon: icon_debat.gif
+  created_at: 2009-10-07 09:49:57 +02:00
+  updated_at: 2011-04-26 14:19:28 +02:00
+  id: 15
+  no_image_icon: COUV_DEBAT.gif
+primary_document_type_00016: 
+  new_period: 100
+  name: !binary |
+    Vmlkw6lv
 
-one:
-  name: MyString
-
-two:
-  name: MyString
+  display_icon: icon_films.gif
+  created_at: 2009-10-07 09:50:32 +02:00
+  updated_at: 2011-04-26 14:19:40 +02:00
+  id: 16
+  no_image_icon: COUV_VIDEO.gif
+primary_document_type_00005: 
+  new_period: 100
+  name: "Encyclop\xC3\xA9die et dictionnaire"
+  display_icon: icon_dico.gif
+  created_at: 2009-10-07 09:48:10 +02:00
+  updated_at: 2011-04-26 14:15:35 +02:00
+  id: 5
+  no_image_icon: COUV_DICO.gif
+primary_document_type_00006: 
+  new_period: 100
+  name: Dossier de presse
+  display_icon: icon_presse.gif
+  created_at: 2009-10-07 09:48:23 +02:00
+  updated_at: 2011-04-26 14:16:29 +02:00
+  id: 6
+  no_image_icon: COUV_DOSSIER_PRESSE.gif
+primary_document_type_00017: 
+  new_period: 100
+  name: Site
+  display_icon: icon_web.gif
+  created_at: 2009-10-07 09:51:10 +02:00
+  updated_at: 2011-04-26 14:20:01 +02:00
+  id: 17
+  no_image_icon: COUV_WEB.gif
+primary_document_type_00018: 
+  new_period: 100
+  name: "Base de donn\xC3\xA9es"
+  display_icon: icon_bdd.gif
+  created_at: 2009-10-07 09:51:26 +02:00
+  updated_at: 2011-04-26 14:20:19 +02:00
+  id: 18
+  no_image_icon: COUV_BASE.gif
+primary_document_type_00007: 
+  new_period: 100
+  name: Carte
+  display_icon: icon_carte.gif
+  created_at: 2009-10-07 09:48:30 +02:00
+  updated_at: 2011-04-26 14:16:48 +02:00
+  id: 7
+  no_image_icon: COUV_CARTE.gif
+primary_document_type_00008: 
+  new_period: 100
+  name: Image
+  display_icon: icon_image.gif
+  created_at: 2009-10-07 09:48:41 +02:00
+  updated_at: 2011-04-26 14:17:01 +02:00
+  id: 8
+  no_image_icon: COUV_IMAGE.gif
+primary_document_type_00019: 
+  new_period: 100
+  name: "Ev\xC3\xA8nement"
+  display_icon: icon_event.gif
+  created_at: 2009-10-07 09:51:36 +02:00
+  updated_at: 2011-04-26 14:20:36 +02:00
+  id: 19
+  no_image_icon: COUV_EVENEMENT.gif
+primary_document_type_00020: 
+  new_period: 100
+  name: "R\xC3\xA9f\xC3\xA9rence bibliographique"
+  display_icon: icon_reference.gif
+  created_at: 2010-01-29 13:53:00 +01:00
+  updated_at: 2011-04-26 14:21:52 +02:00
+  id: 20
+  no_image_icon: COUV_REF_ART.gif
+primary_document_type_00009: 
+  new_period: 100
+  name: Partition
+  display_icon: icon_partition.gif
+  created_at: 2009-10-07 09:48:51 +02:00
+  updated_at: 2011-04-26 14:17:21 +02:00
+  id: 9
+  no_image_icon: COUV_PARTITION.gif
+primary_document_type_00010: 
+  new_period: 100
+  name: Revue, journal
+  display_icon: icon_revue.gif
+  created_at: 2009-10-07 09:48:58 +02:00
+  updated_at: 2011-07-11 16:25:26 +02:00
+  id: 10
+  no_image_icon: COUV_REVUE.gif
+primary_document_type_00021: 
+  new_period: 100
+  name: Brochure
+  display_icon: icon_brochure.gif
+  created_at: 2010-11-03 16:42:10 +01:00
+  updated_at: 2011-04-26 14:22:10 +02:00
+  id: 21
+  no_image_icon: COUV_BROCHURE.gif
+primary_document_type_00022: 
+  new_period: 100
+  name: Livre + CD
+  display_icon: icon_livre.gif
+  created_at: 2010-11-12 15:55:51 +01:00
+  updated_at: 2011-04-26 14:22:28 +02:00
+  id: 22
+  no_image_icon: COUV_LIVRE.gif
+primary_document_type_00011: 
+  new_period: 100
+  name: Article
+  display_icon: icon_article.gif
+  created_at: 2009-10-07 09:49:13 +02:00
+  updated_at: 2011-04-26 14:17:56 +02:00
+  id: 11
+  no_image_icon: COUV_ARTICLE.gif
+primary_document_type_00012: 
+  new_period: 100
+  name: Didacticiel
+  display_icon: icon_didacticiel.gif
+  created_at: 2009-10-07 09:49:24 +02:00
+  updated_at: 2011-07-14 15:25:55 +02:00
+  id: 12
+  no_image_icon: COUV_DIDACTICIEL.gif
+primary_document_type_00001: 
+  new_period: 100
+  name: None
+  display_icon: icon_livre.gif
+  created_at: 2010-08-13 11:13:07 +02:00
+  updated_at: 2011-05-30 17:25:15 +02:00
+  id: 1
+  no_image_icon: visu-bpi.gif

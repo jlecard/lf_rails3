@@ -142,8 +142,8 @@ LIBRARYFIND_OCLC_SYMBOL= 'ORE'
 LIBRARYFIND_SERVER_IP = '128.193.163.0'
 LIBRARYFIND_IP_RANGE = '128.193.;10.;140.211.24.;'
 
-ActiveRecord::Base.allow_concurrency  = true
-ActiveRecord::Base.verification_timeout  = 590
+#ActiveRecord::Base.allow_concurrency  = true
+#ActiveRecord::Base.verification_timeout  = 590
 
 # Param for GED Connector
 GED_URL_SEPARATOR = yp['GED_URL_SEPARATOR']

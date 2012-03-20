@@ -424,18 +424,30 @@ module OpenURL
 
         if keys["date"] != ""
           tmpDate = keys["date"].substring(0,4)
-          if keys["date"].index("jan"): keys["date"] = tmpDate + "01" 
-          elsif keys["date"].index("feb"): keys["date"] = tmpDate + "02"
-          elsif keys["date"].index("mar"): keys["date"] = tmpDate + "03"
-          elsif keys["date"].index("apr"): keys["date"] = tmpDate + "04"
-          elsif keys["date"].index("may"): keys["date"] = tmpDate + "05"
-          elsif keys["date"].index("jun"): keys["date"] = tmpDate + "06"
-          elsif keys["date"].index("jul"): keys["date"] = tmpDate + "07"
-          elsif keys["date"].index("aug"): keys["date"] = tmpDate + "08"
-          elsif keys["date"].index("sep"): keys["date"] = tmpDate + "09"
-          elsif keys["date"].index("oct"): keys["date"] = tmpDate + "10"
-          elsif keys["date"].index("nov"): keys["date"] = tmpDate + "11"
-          elsif keys["date"].index("dec"): keys["date"] = tmpDate + "12"
+          if keys["date"].index("jan")
+            keys["date"] = tmpDate + "01" 
+          elsif keys["date"].index("feb")
+            keys["date"] = tmpDate + "02"
+          elsif keys["date"].index("mar")
+            keys["date"] = tmpDate + "03"
+          elsif keys["date"].index("apr")
+            keys["date"] = tmpDate + "04"
+          elsif keys["date"].index("may")
+            keys["date"] = tmpDate + "05"
+          elsif keys["date"].index("jun")
+            keys["date"] = tmpDate + "06"
+          elsif keys["date"].index("jul")
+            keys["date"] = tmpDate + "07"
+          elsif keys["date"].index("aug")
+            keys["date"] = tmpDate + "08"
+          elsif keys["date"].index("sep")
+            keys["date"] = tmpDate + "09"
+          elsif keys["date"].index("oct")
+            keys["date"] = tmpDate + "10"
+          elsif keys["date"].index("nov")
+            keys["date"] = tmpDate + "11"
+          elsif keys["date"].index("dec")
+            keys["date"] = tmpDate + "12"
           end
         end
         co.import_hash(keys)

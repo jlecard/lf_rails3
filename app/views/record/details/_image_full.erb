@@ -1,0 +1,87 @@
+<%_from=display_source(image_full)%>
+  <%url = image_full.direct_url
+    if url!=nil and url!=''
+      thumbnail_url = image_full.thumbnail_url
+      if thumbnail_url != nil and thumbnail_url != ''
+  %>
+  <span class="image-full">
+        <div>
+          <a target="_blank"  href="<%=h(url)%>" >
+            <img style="max-height:160px; max-width:150px;" src="<%=h(thumbnail_url)%>" border="0"/>
+          </a>
+        </div>
+		</span>
+      <%end%>
+    <%end%>
+	<span >
+<div id="image-full-row">
+  [<%=image_full.material_type%>]&nbsp;&nbsp;
+  <span id="ptitle">
+    <%if image_full.direct_url != "" %>
+      <a href=<%=h(image_full.direct_url)%> target="_blank">
+        <%=image_full.ptitle%>
+      </a>
+    <%else %>
+      <%=image_full.ptitle%>
+    <%end %>
+  </span>
+</div>
+<div id="image-full-row">
+  <% if image_full.author!=''%>
+    <%=image_full.author%> 
+    <%if image_full.subject!=''%>
+      | <%=image_full.subject%> 
+    <%end%>     
+  <%else%>
+    <%if image_full.subject!=''%>
+      <%=image_full.subject%> 
+    <%end%>   
+  <%end%>   
+</div>
+
+<%if image_full.abstract!=''%>
+  <div id="abstract">
+    <%=short_abstract(image_full)%>
+  </div>
+<%end %>
+
+
+<div id="image-full-row">
+  <%if image_full.date!='' and image_full.date!='00000000'%>
+    <%=display_date(image_full)%>  &#160;
+  <%end%>
+    <span id="source"">   
+      <%=_from%>
+    </span>
+</div>
+<%=render(:partial => "/record/details/image_citation", :object => image_full) %>
+<div id="image-full-row" class='vr' >
+  <%= link_to_function translate('CITATION'), "Element.toggle('citation_"+image_full.id.to_s+"')"%>&#160;
+  <span id="add_to_cart_<%=image_full.id%>"> 
+         <%if session[:cart]==nil ||  !session[:cart].include?(image_full.id) %>
+         <%=link_to_remote translate('SAVE_THIS_ITEM'), {
+                                              :update => 'add_to_cart_%s' % image_full.id,
+                                              :url => { :action => 'add', :controller=>'/cart'},
+                                              :with => "'id=%s'" % image_full.id
+                                              }%>
+        <% else 
+             if @cart_page!=nil and !@cart_page.empty? %>
+              <%=link_to_remote translate('REMOVE_FROM_SAVED_ITEMS'), {
+                                              :update => 'row_%s' % image_full.id,
+                                              :url => { :action => 'remove', :controller=>'/cart'},
+                                              :with => "'id=%s'" % image_full.id,
+                                              :loading => "scroll(0,0);Element.show('waitimage')",
+                                              :complete => "Element.hide('waitimage');"
+                                              }%>
+          <%end%>
+        <%end%>
+     
+      </span>&#160;
+ <% if image_full.vendor_url!=nil and image_full.vendor_url!='' %>
+         <a href=<%=h(image_full.vendor_url)%> target="_blank">
+                  <%=translate('MORE_FROM',escape_quote(image_full.vendor_name))%>
+                </a>&#160;
+  <%end%>           
+   
+</div>  
+</span>

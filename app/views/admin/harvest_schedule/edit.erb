@@ -1,0 +1,48 @@
+<div id="page_contents">
+    <%= render(:partial => "admin/navigation") %>
+    <div id="center" class="middle">
+        <h1><%=translate("EDIT_SCHEDULE_AT", [translate(params[:day].upcase), params[:time]]) %></h1>
+        <br/>
+        <span class="collection_helper_left">
+            <label>
+                <%=translate("REMOVE_COLLECTION_LABEL") %>
+            </label>
+            <br/>
+            <small>
+                <%=translate("COLLECTION_INSTRUCTIONS") %>
+            </small>
+        </span>
+        <br/>
+        <div id="scheduled_collections" class="collection_helper">
+            <ul id="scheduled_collections_list">
+                <% @harvest_schedules.each do |schedule| %>
+                <% func_name = "removeCollection(\"item__#{schedule.collection_id}__#{schedule.id}\");" %>
+                <% list_id = "item_#{schedule.collection_id}" %>
+                <li id='<%= list_id %>' ondblclick='<%= func_name %>'>
+                    <%=schedule.collection.name %>
+                </li>
+                <% end %>
+            </ul>
+        </div>
+        <div id="form_field">
+            <span class="form_left">
+            <label for="collection_name">
+                <%=translate("ADD_COLLECTION_LABEL") %>
+            </label>
+            <small>
+                <%=translate("ADD_COLLECTION_EXAMPLE") %>
+            </small>
+            </label>
+        </span>
+        <span class="form_right"><%= text_field_with_auto_complete :collection, :name, {:style=> 'width:355px', :skip_syle=>true} %>
+        </span>
+    </div>
+    <div id="form_field">
+        <% func_name = "addCollection(\"#{params[:time]}\",\"#{params[:day]}\");" %>
+        <input type="button" value='<%=translate("ADD")%>' onclick='<%=func_name%>'/>
+    </div>
+    <br/>
+    <%= render(:partial => "helper") %>
+    <%=link_to translate("BACK_TO_LIST"), :action=>'list' %>
+</div>
+</div>

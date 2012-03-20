@@ -1,0 +1,15 @@
+ <link rel="stylesheet" type="text/css" href="/stylesheets/bpi-page.css" title="headerBPI" />
+<% if @cart_page!=nil and !@cart_page.empty?
+	for _record in @cart_page %>
+		<div id="arow_<%=_record.id%>" class="arow">
+			<%= render(:partial => "/record/details/generic_list", :object => _record) %>
+		</div>
+	<% end %>
+	<span id="session_basket">
+	<%= link_to translate('SESSION_BASKET'), :controller=>"/cart", :action=>"list" %>
+	</span> <!-- end of span session_basket -->
+<% else %>
+	<div class="row">
+		<%= translate('EMPTY_CART') %>
+	</div>
+<% end %>

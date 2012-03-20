@@ -34,8 +34,9 @@ class AdminSimpleTest < ActionController::IntegrationTest
   end
   
   def login
-    admin = users(:admintest)
-    post 'user/login', {:name => admin.name, :password => 'secret'}
+    admin = users(:user_00001)
+    post 'user/login', {:name => admin.name, :password => 'lfadministrator'}
+    assert_response :success
   end
   
 

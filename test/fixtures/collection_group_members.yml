@@ -1,154 +1,2305 @@
-# LibraryFind - Quality find done better.
-# Copyright (C) 2007 Oregon State University
-#
-# This program is free software; you can redistribute it and/or modify it under 
-# the terms of the GNU General Public License as published by the Free Software 
-# Foundation; either version 2 of the License, or (at your option) any later 
-# version.
-#
-# This program is distributed in the hope that it will be useful, but WITHOUT 
-# ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS 
-# FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
-#
-# You should have received a copy of the GNU General Public License along with 
-# this program; if not, write to the Free Software Foundation, Inc., 59 Temple 
-# Place, Suite 330, Boston, MA 02111-1307 USA
-#
-# Questions or comments on this program may be addressed to:
-#
-# LibraryFind
-# 121 The Valley Library
-# Corvallis OR 97331-4501
-#
-# http://libraryfind.org
 --- 
-collection_group_members_024: 
-  default_on: "1"
-  id: "26"
-  collection_group_id: "3"
-  collection_id: "19"
-collection_group_members_013: 
-  default_on: "1"
-  id: "13"
-  collection_group_id: "2"
-  collection_id: "110"
-collection_group_members_025: 
-  default_on: "1"
-  id: "27"
-  collection_group_id: "3"
-  collection_id: "13"
-collection_group_members_014: 
-  default_on: "1"
-  id: "14"
-  collection_group_id: "2"
-  collection_id: "111"
-collection_group_members_026: 
-  default_on: "1"
-  id: "28"
-  collection_group_id: "3"
-  collection_id: "21"
-collection_group_members_015: 
-  default_on: "1"
-  id: "15"
-  collection_group_id: "2"
-  collection_id: "112"
-collection_group_members_027: 
-  default_on: "1"
-  id: "29"
-  collection_group_id: "3"
-  collection_id: "23"
-collection_group_members_016: 
-  default_on: "1"
-  id: "17"
-  collection_group_id: "2"
-  collection_id: "114"
-collection_group_members_005: 
-  default_on: "1"
-  id: "5"
-  collection_group_id: "2"
-  collection_id: "102"
-collection_group_members_028: 
-  default_on: "1"
-  id: "30"
-  collection_group_id: "3"
-  collection_id: "24"
-collection_group_members_017: 
-  default_on: "1"
-  id: "18"
-  collection_group_id: "2"
-  collection_id: "115"
-collection_group_members_006: 
-  default_on: "1"
-  id: "6"
-  collection_group_id: "2"
-  collection_id: "103"
-collection_group_members_029: 
-  default_on: "1"
-  id: "31"
-  collection_group_id: "4"
-  collection_id: "145"
-collection_group_members_018: 
-  default_on: "1"
-  id: "19"
-  collection_group_id: "2"
-  collection_id: "116"
-collection_group_members_007: 
-  default_on: "1"
-  id: "7"
-  collection_group_id: "2"
-  collection_id: "104"
-collection_group_members_030: 
-  default_on: "1"
-  id: "32"
-  collection_group_id: "2"
-  collection_id: "145"
-collection_group_members_019: 
-  default_on: "1"
-  id: "20"
-  collection_group_id: "2"
-  collection_id: "117"
-collection_group_members_008: 
-  default_on: "1"
-  id: "8"
-  collection_group_id: "2"
-  collection_id: "105"
-collection_group_members_020: 
-  default_on: "1"
-  id: "21"
-  collection_group_id: "2"
-  collection_id: "118"
-collection_group_members_009: 
-  default_on: "1"
-  id: "9"
-  collection_group_id: "2"
-  collection_id: "106"
-collection_group_members_021: 
-  default_on: "1"
-  id: "23"
-  collection_group_id: "3"
-  collection_id: "15"
-collection_group_members_010: 
-  default_on: "1"
-  id: "10"
-  collection_group_id: "2"
-  collection_id: "107"
-collection_group_members_022: 
-  default_on: "1"
-  id: "24"
-  collection_group_id: "3"
-  collection_id: "16"
-collection_group_members_011: 
-  default_on: "1"
-  id: "11"
-  collection_group_id: "2"
-  collection_id: "108"
-collection_group_members_023: 
-  default_on: "1"
-  id: "25"
-  collection_group_id: "3"
-  collection_id: "18"
-collection_group_members_012: 
-  default_on: "1"
-  id: "12"
-  collection_group_id: "2"
-  collection_id: "109"
+collection_group_member_01622: 
+  filter_query: ""
+  id: 1622
+  collection_group_id: 9
+  default_on: true
+  collection_id: 92
+collection_group_member_01810: 
+  filter_query: ""
+  id: 1810
+  collection_group_id: 6
+  default_on: true
+  collection_id: 71
+collection_group_member_01272: 
+  filter_query: ""
+  id: 1272
+  collection_group_id: 8
+  default_on: true
+  collection_id: 6
+collection_group_member_01353: 
+  filter_query: ""
+  id: 1353
+  collection_group_id: 3
+  default_on: true
+  collection_id: 15
+collection_group_member_01408: 
+  filter_query: "theme:(cinema) OR document_type:(FILM OR FILMANIM OR FILMAUTO OR FILMREEL OR SPECTAFI) "
+  id: 1408
+  collection_group_id: 41
+  default_on: true
+  collection_id: 5
+collection_group_member_01434: 
+  filter_query: theme:(litteratures de langue francaise)
+  id: 1434
+  collection_group_id: 372
+  default_on: true
+  collection_id: 5
+collection_group_member_01460: 
+  filter_query: theme:(agriculture)
+  id: 1460
+  collection_group_id: 108
+  default_on: true
+  collection_id: 5
+collection_group_member_01623: 
+  filter_query: ""
+  id: 1623
+  collection_group_id: 9
+  default_on: true
+  collection_id: 26
+collection_group_member_01704: 
+  filter_query: ""
+  id: 1704
+  collection_group_id: 16
+  default_on: true
+  collection_id: 71
+collection_group_member_01811: 
+  filter_query: ""
+  id: 1811
+  collection_group_id: 6
+  default_on: true
+  collection_id: 10
+collection_group_member_01273: 
+  filter_query: ""
+  id: 1273
+  collection_group_id: 8
+  default_on: true
+  collection_id: 101
+collection_group_member_01328: 
+  filter_query: "theme:(d\xC3\xA9marches)"
+  id: 1328
+  collection_group_id: 115
+  default_on: true
+  collection_id: 5
+collection_group_member_01354: 
+  filter_query: ""
+  id: 1354
+  collection_group_id: 597
+  default_on: true
+  collection_id: 117
+collection_group_member_01409: 
+  filter_query: theme:(Bibliographies, livres en librairie)
+  id: 1409
+  collection_group_id: 72
+  default_on: true
+  collection_id: 5
+collection_group_member_01435: 
+  filter_query: theme:(langues)
+  id: 1435
+  collection_group_id: 369
+  default_on: true
+  collection_id: 5
+collection_group_member_01461: 
+  filter_query: "(theme:(\"sciences, techniques, medecine\") AND cote_rebond:(ENC)) "
+  id: 1461
+  collection_group_id: 103
+  default_on: true
+  collection_id: 5
+collection_group_member_01624: 
+  filter_query: ""
+  id: 1624
+  collection_group_id: 9
+  default_on: true
+  collection_id: 11
+collection_group_member_01812: 
+  filter_query: ""
+  id: 1812
+  collection_group_id: 6
+  default_on: true
+  collection_id: 95
+collection_group_member_01274: 
+  filter_query: ""
+  id: 1274
+  collection_group_id: 8
+  default_on: true
+  collection_id: 107
+collection_group_member_01436: 
+  filter_query: theme:(linguistique)
+  id: 1436
+  collection_group_id: 370
+  default_on: true
+  collection_id: 5
+collection_group_member_01462: 
+  filter_query: "theme_rebond:(\"Sciences, techniques, m\xC3\xA9decine > Industrie, artisanat\")"
+  id: 1462
+  collection_group_id: 112
+  default_on: true
+  collection_id: 5
+collection_group_member_01651: 
+  filter_query: ""
+  id: 1651
+  collection_group_id: 8
+  default_on: true
+  collection_id: 71
+collection_group_member_01813: 
+  filter_query: ""
+  id: 1813
+  collection_group_id: 6
+  default_on: true
+  collection_id: 125
+collection_group_member_01382: 
+  filter_query: document_type:(PARTIT)
+  id: 1382
+  collection_group_id: 537
+  default_on: true
+  collection_id: 5
+collection_group_member_01437: 
+  filter_query: theme:(litterature generale)
+  id: 1437
+  collection_group_id: 371
+  default_on: true
+  collection_id: 5
+collection_group_member_01463: 
+  filter_query: theme:(informatique)
+  id: 1463
+  collection_group_id: 111
+  default_on: true
+  collection_id: 5
+collection_group_member_00682: 
+  filter_query: ""
+  id: 682
+  collection_group_id: 29
+  default_on: true
+  collection_id: 17
+collection_group_member_01814: 
+  filter_query: document_type:(musique) AND cote_rebond:(781(6*)) NOT cote_rebond:(781(61*))
+  id: 1814
+  collection_group_id: 519
+  default_on: true
+  collection_id: 5
+collection_group_member_01840: 
+  filter_query: ""
+  id: 1840
+  collection_group_id: 11
+  default_on: true
+  collection_id: 126
+collection_group_member_01383: 
+  filter_query: ""
+  id: 1383
+  collection_group_id: 29
+  default_on: true
+  collection_id: 116
+collection_group_member_01438: 
+  filter_query: theme:(loisirs)
+  id: 1438
+  collection_group_id: 90
+  default_on: true
+  collection_id: 5
+collection_group_member_01464: 
+  filter_query: theme:(mathematiques)
+  id: 1464
+  collection_group_id: 104
+  default_on: true
+  collection_id: 5
+collection_group_member_01571: 
+  filter_query: ""
+  id: 1571
+  collection_group_id: 1
+  default_on: true
+  collection_id: 5
+collection_group_member_01734: 
+  filter_query: ""
+  id: 1734
+  collection_group_id: 29
+  default_on: true
+  collection_id: 92
+collection_group_member_01815: 
+  filter_query: cote_rebond:(781(61*)) AND document_type:(musique)
+  id: 1815
+  collection_group_id: 520
+  default_on: true
+  collection_id: 5
+collection_group_member_01841: 
+  filter_query: ""
+  id: 1841
+  collection_group_id: 11
+  default_on: true
+  collection_id: 9
+collection_group_member_01277: 
+  filter_query: ""
+  id: 1277
+  collection_group_id: 8
+  default_on: true
+  collection_id: 15
+collection_group_member_01384: 
+  filter_query: ""
+  id: 1384
+  collection_group_id: 29
+  default_on: true
+  collection_id: 120
+collection_group_member_01465: 
+  filter_query: "theme:(m\xC3\xA9decine)"
+  id: 1465
+  collection_group_id: 106
+  default_on: true
+  collection_id: 5
+collection_group_member_00495: 
+  filter_query: +subject:(manuels)
+  id: 495
+  collection_group_id: 48
+  default_on: true
+  collection_id: 5
+collection_group_member_01572: 
+  filter_query: ""
+  id: 1572
+  collection_group_id: 1
+  default_on: true
+  collection_id: 6
+collection_group_member_01680: 
+  filter_query: ""
+  id: 1680
+  collection_group_id: 15
+  default_on: true
+  collection_id: 26
+collection_group_member_01735: 
+  filter_query: ""
+  id: 1735
+  collection_group_id: 29
+  default_on: true
+  collection_id: 101
+collection_group_member_01761: 
+  filter_query: cote_rebond:(782.6) AND document_type:(musique)
+  id: 1761
+  collection_group_id: 529
+  default_on: true
+  collection_id: 5
+collection_group_member_01816: 
+  filter_query: (cote_rebond:(781(73*)) AND document_type:(musique)) OR (cote_rebond:(781(71*)) AND document_type:(musique))
+  id: 1816
+  collection_group_id: 521
+  default_on: true
+  collection_id: 5
+collection_group_member_01842: 
+  filter_query: "keyword:(publication en s\xC3\xA9rie)"
+  id: 1842
+  collection_group_id: 56
+  default_on: true
+  collection_id: 127
+collection_group_member_01278: 
+  filter_query: ""
+  id: 1278
+  collection_group_id: 8
+  default_on: true
+  collection_id: 21
+collection_group_member_01385: 
+  filter_query: ""
+  id: 1385
+  collection_group_id: 29
+  default_on: true
+  collection_id: 121
+collection_group_member_01466: 
+  filter_query: "theme:(\"Sciences de l'ing\xC3\xA9nieur\")"
+  id: 1466
+  collection_group_id: 107
+  default_on: true
+  collection_id: 5
+collection_group_member_01573: 
+  filter_query: ""
+  id: 1573
+  collection_group_id: 1
+  default_on: true
+  collection_id: 101
+collection_group_member_01736: 
+  filter_query: ""
+  id: 1736
+  collection_group_id: 29
+  default_on: true
+  collection_id: 15
+collection_group_member_01762: 
+  filter_query: "keyword:(\"P\xC3\xA9riode classique\") AND document_type:(musique)"
+  id: 1762
+  collection_group_id: 490
+  default_on: true
+  collection_id: 5
+collection_group_member_01817: 
+  filter_query: cote_rebond:(781(8*)) AND document_type:(musique)
+  id: 1817
+  collection_group_id: 522
+  default_on: true
+  collection_id: 5
+collection_group_member_01843: 
+  filter_query: ""
+  id: 1843
+  collection_group_id: 15
+  default_on: true
+  collection_id: 126
+collection_group_member_01386: 
+  filter_query: ""
+  id: 1386
+  collection_group_id: 29
+  default_on: true
+  collection_id: 118
+collection_group_member_01467: 
+  filter_query: theme:("Sciences de la Terre et de l'univers")
+  id: 1467
+  collection_group_id: 113
+  default_on: true
+  collection_id: 5
+collection_group_member_01574: 
+  filter_query: ""
+  id: 1574
+  collection_group_id: 1
+  default_on: true
+  collection_id: 77
+collection_group_member_01737: 
+  filter_query: ""
+  id: 1737
+  collection_group_id: 29
+  default_on: true
+  collection_id: 108
+collection_group_member_01763: 
+  filter_query: keyword:("Baroque") AND document_type:(musique)
+  id: 1763
+  collection_group_id: 68
+  default_on: true
+  collection_id: 5
+collection_group_member_01199: 
+  filter_query: subject:(musique OR chanson)
+  id: 1199
+  collection_group_id: 29
+  default_on: true
+  collection_id: 97
+collection_group_member_01818: 
+  filter_query: cote_rebond:(781(5*)) AND document_type:(musique)
+  id: 1818
+  collection_group_id: 518
+  default_on: true
+  collection_id: 5
+collection_group_member_01844: 
+  filter_query: ""
+  id: 1844
+  collection_group_id: 15
+  default_on: true
+  collection_id: 77
+collection_group_member_01870: 
+  filter_query: theme:(graphisme) AND document_type:(site OR base OR revuelec)
+  id: 1870
+  collection_group_id: 393
+  default_on: true
+  collection_id: 5
+collection_group_member_01387: 
+  filter_query: ""
+  id: 1387
+  collection_group_id: 29
+  default_on: true
+  collection_id: 117
+collection_group_member_01468: 
+  filter_query: theme:("Sciences de la vie")
+  id: 1468
+  collection_group_id: 105
+  default_on: true
+  collection_id: 5
+collection_group_member_00013: 
+  filter_query: ""
+  id: 13
+  collection_group_id: 5
+  default_on: true
+  collection_id: 5
+collection_group_member_01575: 
+  filter_query: ""
+  id: 1575
+  collection_group_id: 1
+  default_on: true
+  collection_id: 23
+collection_group_member_01764: 
+  filter_query: "keyword:(\"P\xC3\xA9riode contemporaine\") AND document_type:(musique)"
+  id: 1764
+  collection_group_id: 493
+  default_on: true
+  collection_id: 5
+collection_group_member_01790: 
+  filter_query: ""
+  id: 1790
+  collection_group_id: 6
+  default_on: true
+  collection_id: 113
+collection_group_member_01819: 
+  filter_query: cote_rebond:(781(4*)) AND document_type:(musique)
+  id: 1819
+  collection_group_id: 517
+  default_on: true
+  collection_id: 5
+collection_group_member_01845: 
+  filter_query: ""
+  id: 1845
+  collection_group_id: 15
+  default_on: true
+  collection_id: 23
+collection_group_member_01871: 
+  filter_query: theme:(musique) AND document_type:(site OR base OR revuelec)
+  id: 1871
+  collection_group_id: 396
+  default_on: true
+  collection_id: 5
+collection_group_member_01388: 
+  filter_query: ""
+  id: 1388
+  collection_group_id: 29
+  default_on: true
+  collection_id: 119
+collection_group_member_01469: 
+  filter_query: theme:("Transports")
+  id: 1469
+  collection_group_id: 109
+  default_on: true
+  collection_id: 5
+collection_group_member_01576: 
+  filter_query: ""
+  id: 1576
+  collection_group_id: 1
+  default_on: true
+  collection_id: 26
+collection_group_member_01791: 
+  filter_query: ""
+  id: 1791
+  collection_group_id: 6
+  default_on: true
+  collection_id: 19
+collection_group_member_01846: 
+  filter_query: ""
+  id: 1846
+  collection_group_id: 15
+  default_on: true
+  collection_id: 6
+collection_group_member_01872: 
+  filter_query: theme:(photographie) AND document_type:(site OR base OR revuelec)
+  id: 1872
+  collection_group_id: 394
+  default_on: true
+  collection_id: 5
+collection_group_member_01389: 
+  filter_query: ""
+  id: 1389
+  collection_group_id: 32
+  default_on: true
+  collection_id: 120
+collection_group_member_01739: 
+  filter_query: ""
+  id: 1739
+  collection_group_id: 29
+  default_on: true
+  collection_id: 89
+collection_group_member_01792: 
+  filter_query: ""
+  id: 1792
+  collection_group_id: 6
+  default_on: true
+  collection_id: 80
+collection_group_member_01847: 
+  filter_query: ""
+  id: 1847
+  collection_group_id: 9
+  default_on: true
+  collection_id: 126
+collection_group_member_01873: 
+  filter_query: theme:(spectacle vivant) AND document_type:(site OR base OR revuelec)
+  id: 1873
+  collection_group_id: 397
+  default_on: true
+  collection_id: 5
+collection_group_member_01793: 
+  filter_query: ""
+  id: 1793
+  collection_group_id: 6
+  default_on: true
+  collection_id: 14
+collection_group_member_01848: 
+  filter_query: ""
+  id: 1848
+  collection_group_id: 16
+  default_on: true
+  collection_id: 126
+collection_group_member_01874: 
+  filter_query: theme:(administration, institutions) AND document_type:(site OR base OR revuelec)
+  id: 1874
+  collection_group_id: 398
+  default_on: true
+  collection_id: 5
+collection_group_member_01686: 
+  filter_query: ""
+  id: 1686
+  collection_group_id: 15
+  default_on: true
+  collection_id: 71
+collection_group_member_01767: 
+  filter_query: document_type:(Bases)
+  id: 1767
+  collection_group_id: 53
+  default_on: true
+  collection_id: 5
+collection_group_member_01794: 
+  filter_query: ""
+  id: 1794
+  collection_group_id: 6
+  default_on: true
+  collection_id: 100
+collection_group_member_01849: 
+  filter_query: ""
+  id: 1849
+  collection_group_id: 16
+  default_on: true
+  collection_id: 77
+collection_group_member_01875: 
+  filter_query: theme:("Droit, administration, institutions > Droit") AND document_type:(site OR base OR revuelec)
+  id: 1875
+  collection_group_id: 399
+  default_on: true
+  collection_id: 5
+collection_group_member_01014: 
+  filter_query: ""
+  id: 1014
+  collection_group_id: 29
+  default_on: true
+  collection_id: 56
+collection_group_member_00070: 
+  filter_query: +subject:(cinema)
+  id: 70
+  collection_group_id: 39
+  default_on: true
+  collection_id: 5
+collection_group_member_01310: 
+  filter_query: ""
+  id: 1310
+  collection_group_id: 16
+  default_on: true
+  collection_id: 11
+collection_group_member_01876: 
+  filter_query: "theme:(\xC3\xA9conomie) AND document_type:(site OR base OR revuelec)"
+  id: 1876
+  collection_group_id: 400
+  default_on: true
+  collection_id: 5
+collection_group_member_01769: 
+  filter_query: "document_type:(Sites) "
+  id: 1769
+  collection_group_id: 52
+  default_on: true
+  collection_id: 5
+collection_group_member_01795: 
+  filter_query: ""
+  id: 1795
+  collection_group_id: 6
+  default_on: true
+  collection_id: 96
+collection_group_member_01311: 
+  filter_query: ""
+  id: 1311
+  collection_group_id: 16
+  default_on: true
+  collection_id: 80
+collection_group_member_01877: 
+  filter_query: theme:(Economie, entreprise, gestion > Entreprise, gestion) AND document_type:(site OR base OR revuelec)
+  id: 1877
+  collection_group_id: 401
+  default_on: true
+  collection_id: 5
+collection_group_member_00503: 
+  filter_query: ""
+  id: 503
+  collection_group_id: 9
+  default_on: true
+  collection_id: 5
+collection_group_member_01796: 
+  filter_query: ""
+  id: 1796
+  collection_group_id: 6
+  default_on: true
+  collection_id: 13
+collection_group_member_01878: 
+  filter_query: "theme:(orientation, m\xC3\xA9tiers, formation) AND document_type:(site OR base OR revuelec)"
+  id: 1878
+  collection_group_id: 418
+  default_on: true
+  collection_id: 5
+collection_group_member_01797: 
+  filter_query: ""
+  id: 1797
+  collection_group_id: 6
+  default_on: true
+  collection_id: 21
+collection_group_member_01313: 
+  filter_query: ""
+  id: 1313
+  collection_group_id: 16
+  default_on: true
+  collection_id: 19
+collection_group_member_01879: 
+  filter_query: "theme:(\"Recherche d'emploi, m\xC3\xA9tiers, formation > Recherche d'emploi\") AND document_type:(site OR base OR revuelec)"
+  id: 1879
+  collection_group_id: 419
+  default_on: true
+  collection_id: 5
+collection_group_member_01798: 
+  filter_query: ""
+  id: 1798
+  collection_group_id: 6
+  default_on: true
+  collection_id: 26
+collection_group_member_01340: 
+  filter_query: ""
+  id: 1340
+  collection_group_id: 56
+  default_on: true
+  collection_id: 21
+collection_group_member_01421: 
+  filter_query: "theme:(\xC3\xA9conomie)"
+  id: 1421
+  collection_group_id: 93
+  default_on: true
+  collection_id: 5
+collection_group_member_00075: 
+  filter_query: +autocomplete:(cinema)
+  id: 75
+  collection_group_id: 40
+  default_on: true
+  collection_id: 5
+collection_group_member_01207: 
+  filter_query: ""
+  id: 1207
+  collection_group_id: 593
+  default_on: true
+  collection_id: 5
+collection_group_member_01799: 
+  filter_query: ""
+  id: 1799
+  collection_group_id: 6
+  default_on: true
+  collection_id: 20
+collection_group_member_01314: 
+  filter_query: ""
+  id: 1314
+  collection_group_id: 16
+  default_on: true
+  collection_id: 100
+collection_group_member_01422: 
+  filter_query: "theme:(histoire > g\xC3\xA9n\xC3\xA9ralit\xC3\xA9s)"
+  id: 1422
+  collection_group_id: 60
+  default_on: true
+  collection_id: 5
+collection_group_member_01530: 
+  filter_query: theme:(blues, jazz) AND document_type:(film)
+  id: 1530
+  collection_group_id: 546
+  default_on: true
+  collection_id: 5
+collection_group_member_01316: 
+  filter_query: ""
+  id: 1316
+  collection_group_id: 15
+  default_on: true
+  collection_id: 5
+collection_group_member_01424: 
+  filter_query: theme:(bibliotheques numeriques)
+  id: 1424
+  collection_group_id: 77
+  default_on: true
+  collection_id: 5
+collection_group_member_01531: 
+  filter_query: "theme:(chanson fran\xC3\xA7aise) AND document_type:(film)"
+  id: 1531
+  collection_group_id: 547
+  default_on: true
+  collection_id: 5
+collection_group_member_01800: 
+  filter_query: ""
+  id: 1800
+  collection_group_id: 6
+  default_on: true
+  collection_id: 106
+collection_group_member_01317: 
+  filter_query: ""
+  id: 1317
+  collection_group_id: 15
+  default_on: true
+  collection_id: 101
+collection_group_member_01425: 
+  filter_query: theme:(dictionnaires biographiques)
+  id: 1425
+  collection_group_id: 74
+  default_on: true
+  collection_id: 5
+collection_group_member_01451: 
+  filter_query: theme:(psychologie, psychanalyse)
+  id: 1451
+  collection_group_id: 96
+  default_on: true
+  collection_id: 5
+collection_group_member_01801: 
+  filter_query: ""
+  id: 1801
+  collection_group_id: 6
+  default_on: true
+  collection_id: 12
+collection_group_member_01318: 
+  filter_query: ""
+  id: 1318
+  collection_group_id: 15
+  default_on: true
+  collection_id: 106
+collection_group_member_01344: 
+  filter_query: ""
+  id: 1344
+  collection_group_id: 597
+  default_on: true
+  collection_id: 114
+collection_group_member_01426: 
+  filter_query: theme:(dictionnaires de langues)
+  id: 1426
+  collection_group_id: 75
+  default_on: true
+  collection_id: 5
+collection_group_member_01452: 
+  filter_query: "theme:(Orientation, formation, m\xC3\xA9tiers)"
+  id: 1452
+  collection_group_id: 58
+  default_on: true
+  collection_id: 5
+collection_group_member_01533: 
+  filter_query: theme:(documentaires musicaux)
+  id: 1533
+  collection_group_id: 599
+  default_on: true
+  collection_id: 5
+collection_group_member_01802: 
+  filter_query: ""
+  id: 1802
+  collection_group_id: 6
+  default_on: true
+  collection_id: 9
+collection_group_member_01290: 
+  filter_query: ""
+  id: 1290
+  collection_group_id: 11
+  default_on: true
+  collection_id: 6
+collection_group_member_01319: 
+  filter_query: ""
+  id: 1319
+  collection_group_id: 15
+  default_on: true
+  collection_id: 80
+collection_group_member_01371: 
+  filter_query: ""
+  id: 1371
+  collection_group_id: 11
+  default_on: true
+  collection_id: 5
+collection_group_member_01427: 
+  filter_query: "theme:(donn\xC3\xA9es sur les pays)"
+  id: 1427
+  collection_group_id: 78
+  default_on: true
+  collection_id: 5
+collection_group_member_01453: 
+  filter_query: "theme:(\xC3\xA9ducation)"
+  id: 1453
+  collection_group_id: 100
+  default_on: true
+  collection_id: 5
+collection_group_member_01534: 
+  filter_query: cote_rebond:(78*) AND document_type:(Livre)
+  id: 1534
+  collection_group_id: 556
+  default_on: true
+  collection_id: 5
+collection_group_member_01803: 
+  filter_query: ""
+  id: 1803
+  collection_group_id: 6
+  default_on: true
+  collection_id: 7
+collection_group_member_01291: 
+  filter_query: ""
+  id: 1291
+  collection_group_id: 11
+  default_on: true
+  collection_id: 101
+collection_group_member_01346: 
+  filter_query: ""
+  id: 1346
+  collection_group_id: 597
+  default_on: true
+  collection_id: 116
+collection_group_member_01454: 
+  filter_query: theme:(ethnologie)
+  id: 1454
+  collection_group_id: 98
+  default_on: true
+  collection_id: 5
+collection_group_member_01480: 
+  filter_query: "theme:(recherche d'emploi, m\xC3\xA9tiers, formation) AND document_type:(revue OR revuelec OR Dospresse OR BDD)"
+  id: 1480
+  collection_group_id: 586
+  default_on: true
+  collection_id: 5
+collection_group_member_01535: 
+  filter_query: document_type:(REVUE OR REVUELEC) AND cote_rebond:(78*)
+  id: 1535
+  collection_group_id: 557
+  default_on: true
+  collection_id: 5
+collection_group_member_01642: 
+  filter_query: ""
+  id: 1642
+  collection_group_id: 8
+  default_on: true
+  collection_id: 116
+collection_group_member_01804: 
+  filter_query: ""
+  id: 1804
+  collection_group_id: 6
+  default_on: true
+  collection_id: 11
+collection_group_member_01830: 
+  filter_query: ""
+  id: 1830
+  collection_group_id: 579
+  default_on: true
+  collection_id: 6
+collection_group_member_01347: 
+  filter_query: ""
+  id: 1347
+  collection_group_id: 597
+  default_on: true
+  collection_id: 120
+collection_group_member_01428: 
+  filter_query: theme:(histoire contemporaine)
+  id: 1428
+  collection_group_id: 70
+  default_on: true
+  collection_id: 5
+collection_group_member_01455: 
+  filter_query: theme:("sciences humaines et sociales") AND cote_rebond:(ENC)
+  id: 1455
+  collection_group_id: 95
+  default_on: true
+  collection_id: 5
+collection_group_member_01481: 
+  filter_query: theme:(histoire) AND document_type:(revue OR revuelec OR Dospresse OR BDD)
+  id: 1481
+  collection_group_id: 582
+  default_on: true
+  collection_id: 5
+collection_group_member_01643: 
+  filter_query: ""
+  id: 1643
+  collection_group_id: 8
+  default_on: true
+  collection_id: 92
+collection_group_member_01805: 
+  filter_query: ""
+  id: 1805
+  collection_group_id: 6
+  default_on: true
+  collection_id: 17
+collection_group_member_01831: 
+  filter_query: ""
+  id: 1831
+  collection_group_id: 579
+  default_on: true
+  collection_id: 92
+collection_group_member_01293: 
+  filter_query: ""
+  id: 1293
+  collection_group_id: 11
+  default_on: true
+  collection_id: 26
+collection_group_member_01348: 
+  filter_query: ""
+  id: 1348
+  collection_group_id: 597
+  default_on: true
+  collection_id: 119
+collection_group_member_01429: 
+  filter_query: theme:(histoire des continents et des pays)
+  id: 1429
+  collection_group_id: 71
+  default_on: true
+  collection_id: 5
+collection_group_member_01482: 
+  filter_query: "theme:(langues, litt\xC3\xA9rature) AND document_type:(revue OR revuelec OR Dospresse OR BDD)"
+  id: 1482
+  collection_group_id: 583
+  default_on: true
+  collection_id: 5
+collection_group_member_01644: 
+  filter_query: ""
+  id: 1644
+  collection_group_id: 8
+  default_on: true
+  collection_id: 120
+collection_group_member_01751: 
+  filter_query: theme:(courts metrages)
+  id: 1751
+  collection_group_id: 606
+  default_on: true
+  collection_id: 5
+collection_group_member_01806: 
+  filter_query: ""
+  id: 1806
+  collection_group_id: 6
+  default_on: true
+  collection_id: 18
+collection_group_member_01832: 
+  filter_query: ""
+  id: 1832
+  collection_group_id: 4
+  default_on: true
+  collection_id: 126
+collection_group_member_01294: 
+  filter_query: ""
+  id: 1294
+  collection_group_id: 11
+  default_on: true
+  collection_id: 94
+collection_group_member_01349: 
+  filter_query: ""
+  id: 1349
+  collection_group_id: 597
+  default_on: true
+  collection_id: 118
+collection_group_member_01456: 
+  filter_query: theme:(geographie)
+  id: 1456
+  collection_group_id: 102
+  default_on: true
+  collection_id: 5
+collection_group_member_01483: 
+  filter_query: theme:(loisirs, sport, tourisme) AND document_type:(revue OR revuelec OR Dospresse OR BDD)
+  id: 1483
+  collection_group_id: 584
+  default_on: true
+  collection_id: 5
+collection_group_member_01538: 
+  filter_query: theme:(ressources musicales en ligne)
+  id: 1538
+  collection_group_id: 602
+  default_on: true
+  collection_id: 5
+collection_group_member_01645: 
+  filter_query: ""
+  id: 1645
+  collection_group_id: 8
+  default_on: true
+  collection_id: 114
+collection_group_member_01752: 
+  filter_query: ""
+  id: 1752
+  collection_group_id: 4
+  default_on: true
+  collection_id: 124
+collection_group_member_01807: 
+  filter_query: ""
+  id: 1807
+  collection_group_id: 6
+  default_on: true
+  collection_id: 93
+collection_group_member_01833: 
+  filter_query: ""
+  id: 1833
+  collection_group_id: 579
+  default_on: true
+  collection_id: 100
+collection_group_member_01295: 
+  filter_query: ""
+  id: 1295
+  collection_group_id: 11
+  default_on: true
+  collection_id: 112
+collection_group_member_01753: 
+  filter_query: document_type:(partition)
+  id: 1753
+  collection_group_id: 31
+  default_on: true
+  collection_id: 5
+collection_group_member_01808: 
+  filter_query: ""
+  id: 1808
+  collection_group_id: 6
+  default_on: true
+  collection_id: 123
+collection_group_member_01834: 
+  filter_query: ""
+  id: 1834
+  collection_group_id: 579
+  default_on: true
+  collection_id: 113
+collection_group_member_01458: 
+  filter_query: theme:(politique)
+  id: 1458
+  collection_group_id: 99
+  default_on: true
+  collection_id: 5
+collection_group_member_01484: 
+  filter_query: theme:(philosophie, religions) AND document_type:(revue OR revuelec OR Dospresse OR BDD)
+  id: 1484
+  collection_group_id: 585
+  default_on: true
+  collection_id: 5
+collection_group_member_01754: 
+  filter_query: ""
+  id: 1754
+  collection_group_id: 31
+  default_on: true
+  collection_id: 56
+collection_group_member_01780: 
+  filter_query: cote_rebond:(780.632) AND document_type:(musique)
+  id: 1780
+  collection_group_id: 496
+  default_on: true
+  collection_id: 5
+collection_group_member_01809: 
+  filter_query: ""
+  id: 1809
+  collection_group_id: 6
+  default_on: true
+  collection_id: 8
+collection_group_member_01835: 
+  filter_query: ""
+  id: 1835
+  collection_group_id: 8
+  default_on: true
+  collection_id: 126
+collection_group_member_01861: 
+  filter_query: "document_type:(site OR base OR revuelec) AND theme:(documentation sur les m\xC3\xA9dias)"
+  id: 1861
+  collection_group_id: 387
+  default_on: true
+  collection_id: 5
+collection_group_member_01297: 
+  filter_query: ""
+  id: 1297
+  collection_group_id: 11
+  default_on: true
+  collection_id: 14
+collection_group_member_01459: 
+  filter_query: theme:("sociologie, demographie")
+  id: 1459
+  collection_group_id: 97
+  default_on: true
+  collection_id: 5
+collection_group_member_01485: 
+  filter_query: theme:(vie pratique) AND document_type:(revue OR revuelec OR Dospresse OR BDD)
+  id: 1485
+  collection_group_id: 589
+  default_on: true
+  collection_id: 5
+collection_group_member_01593: 
+  filter_query: ""
+  id: 1593
+  collection_group_id: 1
+  default_on: true
+  collection_id: 92
+collection_group_member_01755: 
+  filter_query: "(theme:(concerts) AND document_type:(vid\xC3\xA9o)) "
+  id: 1755
+  collection_group_id: 600
+  default_on: true
+  collection_id: 5
+collection_group_member_01781: 
+  filter_query: "cote_rebond:(780.637) AND document_type:(musique)  "
+  id: 1781
+  collection_group_id: 500
+  default_on: true
+  collection_id: 5
+collection_group_member_01836: 
+  filter_query: ""
+  id: 1836
+  collection_group_id: 579
+  default_on: true
+  collection_id: 122
+collection_group_member_01862: 
+  filter_query: "theme:(sites de journaux) "
+  id: 1862
+  collection_group_id: 386
+  default_on: true
+  collection_id: 5
+collection_group_member_01298: 
+  filter_query: ""
+  id: 1298
+  collection_group_id: 11
+  default_on: true
+  collection_id: 8
+collection_group_member_01486: 
+  filter_query: theme:(sciences humaines et sociales) AND document_type:(revue OR revuelec OR Dospresse OR BDD)
+  id: 1486
+  collection_group_id: 588
+  default_on: true
+  collection_id: 5
+collection_group_member_01568: 
+  filter_query: "(theme:(r\xC3\xA9sum\xC3\xA9s d'articles) OR theme:(articles en texte int\xC3\xA9gral)) "
+  id: 1568
+  collection_group_id: 24
+  default_on: true
+  collection_id: 5
+collection_group_member_01594: 
+  filter_query: ""
+  id: 1594
+  collection_group_id: 4
+  default_on: true
+  collection_id: 92
+collection_group_member_01756: 
+  filter_query: "(document_type:(Site) OR document_type:(base de donn\xC3\xA9es)) AND theme:(Musique)"
+  id: 1756
+  collection_group_id: 601
+  default_on: true
+  collection_id: 5
+collection_group_member_01782: 
+  filter_query: "document_type:(revue) AND cote_rebond:(78) "
+  id: 1782
+  collection_group_id: 34
+  default_on: true
+  collection_id: 5
+collection_group_member_01837: 
+  filter_query: ""
+  id: 1837
+  collection_group_id: 8
+  default_on: true
+  collection_id: 95
+collection_group_member_01863: 
+  filter_query: "theme:(Art jusqu'au 19\xC3\xA8me si\xC3\xA8cle)"
+  id: 1863
+  collection_group_id: 80
+  default_on: true
+  collection_id: 5
+collection_group_member_01299: 
+  filter_query: ""
+  id: 1299
+  collection_group_id: 11
+  default_on: true
+  collection_id: 93
+collection_group_member_01487: 
+  filter_query: "theme:(sciences, techniques, m\xC3\xA9decine) AND document_type:(revue OR revuelec OR Dospresse OR BDD)"
+  id: 1487
+  collection_group_id: 587
+  default_on: true
+  collection_id: 5
+collection_group_member_01595: 
+  filter_query: ""
+  id: 1595
+  collection_group_id: 4
+  default_on: true
+  collection_id: 26
+collection_group_member_01757: 
+  filter_query: ""
+  id: 1757
+  collection_group_id: 1
+  default_on: true
+  collection_id: 125
+collection_group_member_01783: 
+  filter_query: "theme:(documentaires musicaux) "
+  id: 1783
+  collection_group_id: 32
+  default_on: true
+  collection_id: 5
+collection_group_member_01838: 
+  filter_query: ""
+  id: 1838
+  collection_group_id: 579
+  default_on: true
+  collection_id: 96
+collection_group_member_01864: 
+  filter_query: "theme:(Art jusqu'au 19\xC3\xA8me si\xC3\xA8cle) AND document_type:(site OR base OR revuelec)"
+  id: 1864
+  collection_group_id: 389
+  default_on: true
+  collection_id: 5
+collection_group_member_01890: 
+  filter_query: theme:(histoire des continents et des pays) AND document_type:(Site OR base OR revuelec)
+  id: 1890
+  collection_group_id: 407
+  default_on: true
+  collection_id: 5
+collection_group_member_01596: 
+  filter_query: ""
+  id: 1596
+  collection_group_id: 4
+  default_on: true
+  collection_id: 5
+collection_group_member_01758: 
+  filter_query: ""
+  id: 1758
+  collection_group_id: 8
+  default_on: true
+  collection_id: 99
+collection_group_member_01839: 
+  filter_query: ""
+  id: 1839
+  collection_group_id: 579
+  default_on: true
+  collection_id: 124
+collection_group_member_01865: 
+  filter_query: "theme:(Art des 20\xC3\xA8me et 21\xC3\xA8me si\xC3\xA8cles) AND document_type:(site OR base OR revuelec)"
+  id: 1865
+  collection_group_id: 390
+  default_on: true
+  collection_id: 5
+collection_group_member_01891: 
+  filter_query: "theme:(Histoire de France, g\xC3\xA9n\xC3\xA9alogie) AND document_type:(Site OR base OR revuelec)"
+  id: 1891
+  collection_group_id: 406
+  default_on: true
+  collection_id: 5
+collection_group_member_01597: 
+  filter_query: ""
+  id: 1597
+  collection_group_id: 4
+  default_on: true
+  collection_id: 6
+collection_group_member_01785: 
+  filter_query: document_type:(musique)
+  id: 1785
+  collection_group_id: 30
+  default_on: true
+  collection_id: 5
+collection_group_member_01300: 
+  filter_query: ""
+  id: 1300
+  collection_group_id: 16
+  default_on: true
+  collection_id: 5
+collection_group_member_01866: 
+  filter_query: theme:(Architecture) AND document_type:(site OR base OR revuelec)
+  id: 1866
+  collection_group_id: 391
+  default_on: true
+  collection_id: 5
+collection_group_member_01892: 
+  filter_query: "theme:(Histoire > G\xC3\xA9n\xC3\xA9ralit\xC3\xA9s) AND document_type:(site OR base OR revuelec)"
+  id: 1892
+  collection_group_id: 402
+  default_on: true
+  collection_id: 5
+collection_group_member_01031: 
+  filter_query: ""
+  id: 1031
+  collection_group_id: 41
+  default_on: true
+  collection_id: 21
+collection_group_member_01679: 
+  filter_query: ""
+  id: 1679
+  collection_group_id: 15
+  default_on: true
+  collection_id: 92
+collection_group_member_01786: 
+  filter_query: "cote_rebond:(78*) AND (document_type:(site) OR document_type:(Base de donn\xC3\xA9es))"
+  id: 1786
+  collection_group_id: 35
+  default_on: true
+  collection_id: 5
+collection_group_member_01301: 
+  filter_query: ""
+  id: 1301
+  collection_group_id: 16
+  default_on: true
+  collection_id: 6
+collection_group_member_01867: 
+  filter_query: "theme:(Arts d\xC3\xA9coratifs) AND document_type:(site OR base OR revuelec)"
+  id: 1867
+  collection_group_id: 392
+  default_on: true
+  collection_id: 5
+collection_group_member_01893: 
+  filter_query: "theme:(Histoire m\xC3\xA9di\xC3\xA9vale et moderne) AND document_type:(site OR base OR revuelec)"
+  id: 1893
+  collection_group_id: 404
+  default_on: true
+  collection_id: 5
+collection_group_member_01598: 
+  filter_query: ""
+  id: 1598
+  collection_group_id: 4
+  default_on: true
+  collection_id: 101
+collection_group_member_01599: 
+  filter_query: ""
+  id: 1599
+  collection_group_id: 4
+  default_on: true
+  collection_id: 77
+collection_group_member_01894: 
+  filter_query: theme:(prehistoire) AND document_type:(site OR base OR revuelec)
+  id: 1894
+  collection_group_id: 403
+  default_on: true
+  collection_id: 5
+collection_group_member_01787: 
+  filter_query: "document_type:(revue OR dossier OR base) OR theme:(Actualit\xC3\xA9s, m\xC3\xA9dias, presse > Articles de journaux et de magazines)"
+  id: 1787
+  collection_group_id: 6
+  default_on: true
+  collection_id: 5
+collection_group_member_01221: 
+  filter_query: ""
+  id: 1221
+  collection_group_id: 29
+  default_on: true
+  collection_id: 109
+collection_group_member_01140: 
+  filter_query: ""
+  id: 1140
+  collection_group_id: 18
+  default_on: true
+  collection_id: 5
+collection_group_member_01302: 
+  filter_query: ""
+  id: 1302
+  collection_group_id: 16
+  default_on: true
+  collection_id: 101
+collection_group_member_01868: 
+  filter_query: theme:(cinema) AND document_type:(site OR base OR revuelec)
+  id: 1868
+  collection_group_id: 395
+  default_on: true
+  collection_id: 5
+collection_group_member_01410: 
+  filter_query: theme:(articles)
+  id: 1410
+  collection_group_id: 365
+  default_on: true
+  collection_id: 5
+collection_group_member_01788: 
+  filter_query: ""
+  id: 1788
+  collection_group_id: 6
+  default_on: true
+  collection_id: 6
+collection_group_member_01303: 
+  filter_query: ""
+  id: 1303
+  collection_group_id: 16
+  default_on: true
+  collection_id: 107
+collection_group_member_01869: 
+  filter_query: "theme:(Arts > G\xC3\xA9n\xC3\xA9ralit\xC3\xA9s) AND document_type:(site OR base OR revuelec)"
+  id: 1869
+  collection_group_id: 388
+  default_on: true
+  collection_id: 5
+collection_group_member_01895: 
+  filter_query: "theme:(litt\xC3\xA9ratures \xC3\xA9trang\xC3\xA8res) AND document_type:(site OR base OR revuelec)"
+  id: 1895
+  collection_group_id: 412
+  default_on: true
+  collection_id: 5
+collection_group_member_01896: 
+  filter_query: "theme:(litt\xC3\xA9ratures de langue fran\xC3\xA7aise) AND document_type:(site OR base OR revuelec)"
+  id: 1896
+  collection_group_id: 411
+  default_on: true
+  collection_id: 5
+collection_group_member_01009: 
+  filter_query: ""
+  id: 1009
+  collection_group_id: 5
+  default_on: true
+  collection_id: 57
+collection_group_member_01789: 
+  filter_query: ""
+  id: 1789
+  collection_group_id: 6
+  default_on: true
+  collection_id: 92
+collection_group_member_00172: 
+  filter_query: subject:(plans) OR subject:(cartes) OR title:(atlas)
+  id: 172
+  collection_group_id: 123
+  default_on: true
+  collection_id: 5
+collection_group_member_01116: 
+  filter_query: ""
+  id: 1116
+  collection_group_id: 29
+  default_on: true
+  collection_id: 18
+collection_group_member_00415: 
+  filter_query: ""
+  id: 415
+  collection_group_id: 39
+  default_on: true
+  collection_id: 12
+collection_group_member_01411: 
+  filter_query: "theme:(Art des 20\xC3\xA8me et 21\xC3\xA8me si\xC3\xA8cles)"
+  id: 1411
+  collection_group_id: 81
+  default_on: true
+  collection_id: 5
+collection_group_member_01412: 
+  filter_query: theme:(Architecture)
+  id: 1412
+  collection_group_id: 82
+  default_on: true
+  collection_id: 5
+collection_group_member_00416: 
+  filter_query: ""
+  id: 416
+  collection_group_id: 41
+  default_on: true
+  collection_id: 12
+collection_group_member_01305: 
+  filter_query: ""
+  id: 1305
+  collection_group_id: 16
+  default_on: true
+  collection_id: 13
+collection_group_member_01331: 
+  filter_query: theme:(logement)
+  id: 1331
+  collection_group_id: 118
+  default_on: true
+  collection_id: 5
+collection_group_member_01600: 
+  filter_query: ""
+  id: 1600
+  collection_group_id: 4
+  default_on: true
+  collection_id: 23
+collection_group_member_01897: 
+  filter_query: "theme:(litt\xC3\xA9ratures g\xC3\xA9n\xC3\xA9rale) AND document_type:(site OR base OR revuelec)"
+  id: 1897
+  collection_group_id: 410
+  default_on: true
+  collection_id: 5
+collection_group_member_01037: 
+  filter_query: ""
+  id: 1037
+  collection_group_id: 39
+  default_on: true
+  collection_id: 16
+collection_group_member_01601: 
+  filter_query: ""
+  id: 1601
+  collection_group_id: 4
+  default_on: true
+  collection_id: 113
+collection_group_member_01306: 
+  filter_query: ""
+  id: 1306
+  collection_group_id: 16
+  default_on: true
+  collection_id: 26
+collection_group_member_01332: 
+  filter_query: theme:(consommation)
+  id: 1332
+  collection_group_id: 121
+  default_on: true
+  collection_id: 5
+collection_group_member_01413: 
+  filter_query: "theme:(Arts d\xC3\xA9coratifs)"
+  id: 1413
+  collection_group_id: 83
+  default_on: true
+  collection_id: 5
+collection_group_member_00093: 
+  filter_query: ""
+  id: 93
+  collection_group_id: 41
+  default_on: true
+  collection_id: 6
+collection_group_member_01899: 
+  filter_query: "(document_type:(Base OR Site) OR custom_document_type:(Revuelec)) "
+  id: 1899
+  collection_group_id: 51
+  default_on: true
+  collection_id: 5
+collection_group_member_01602: 
+  filter_query: ""
+  id: 1602
+  collection_group_id: 4
+  default_on: true
+  collection_id: 100
+collection_group_member_01414: 
+  filter_query: theme:(cinema)
+  id: 1414
+  collection_group_id: 86
+  default_on: true
+  collection_id: 5
+collection_group_member_01307: 
+  filter_query: ""
+  id: 1307
+  collection_group_id: 16
+  default_on: true
+  collection_id: 103
+collection_group_member_01119: 
+  filter_query: ""
+  id: 1119
+  collection_group_id: 29
+  default_on: true
+  collection_id: 95
+collection_group_member_01441: 
+  filter_query: theme:(sport)
+  id: 1441
+  collection_group_id: 91
+  default_on: true
+  collection_id: 5
+collection_group_member_01308: 
+  filter_query: ""
+  id: 1308
+  collection_group_id: 16
+  default_on: true
+  collection_id: 9
+collection_group_member_01415: 
+  filter_query: "theme:(Arts > G\xC3\xA9n\xC3\xA9ralit\xC3\xA9s)"
+  id: 1415
+  collection_group_id: 79
+  default_on: true
+  collection_id: 5
+collection_group_member_01630: 
+  filter_query: ""
+  id: 1630
+  collection_group_id: 9
+  default_on: true
+  collection_id: 71
+collection_group_member_01361: 
+  filter_query: ""
+  id: 1361
+  collection_group_id: 34
+  default_on: true
+  collection_id: 6
+collection_group_member_01335: 
+  filter_query: (document_type:(didactic OR methlang OR docpedag OR filmauto) OR subject:(manuels))
+  id: 1335
+  collection_group_id: 46
+  default_on: true
+  collection_id: 5
+collection_group_member_01280: 
+  filter_query: ""
+  id: 1280
+  collection_group_id: 8
+  default_on: true
+  collection_id: 20
+collection_group_member_01416: 
+  filter_query: "theme:(graphisme, bande dessin\xC3\xA9e)"
+  id: 1416
+  collection_group_id: 84
+  default_on: true
+  collection_id: 5
+collection_group_member_01442: 
+  filter_query: theme:(tourisme)
+  id: 1442
+  collection_group_id: 92
+  default_on: true
+  collection_id: 5
+collection_group_member_01443: 
+  filter_query: theme:(philosophie)
+  id: 1443
+  collection_group_id: 374
+  default_on: true
+  collection_id: 5
+collection_group_member_01417: 
+  filter_query: theme:(photographie)
+  id: 1417
+  collection_group_id: 85
+  default_on: true
+  collection_id: 5
+collection_group_member_01336: 
+  filter_query: document_type:(FILMAUTO)
+  id: 1336
+  collection_group_id: 47
+  default_on: true
+  collection_id: 5
+collection_group_member_01362: 
+  filter_query: ""
+  id: 1362
+  collection_group_id: 34
+  default_on: true
+  collection_id: 92
+collection_group_member_01174: 
+  filter_query: ""
+  id: 1174
+  collection_group_id: 29
+  default_on: true
+  collection_id: 6
+collection_group_member_01900: 
+  filter_query: ""
+  id: 1900
+  collection_group_id: 607
+  default_on: true
+  collection_id: 92
+collection_group_member_01444: 
+  filter_query: theme:(religions)
+  id: 1444
+  collection_group_id: 376
+  default_on: true
+  collection_id: 5
+collection_group_member_01282: 
+  filter_query: ""
+  id: 1282
+  collection_group_id: 8
+  default_on: true
+  collection_id: 9
+collection_group_member_01256: 
+  filter_query: subject:(manuels d'enseignement) AND document_type:(livre)
+  id: 1256
+  collection_group_id: 596
+  default_on: true
+  collection_id: 5
+collection_group_member_01337: 
+  filter_query: document_type:(METHLANG)
+  id: 1337
+  collection_group_id: 50
+  default_on: true
+  collection_id: 5
+collection_group_member_01418: 
+  filter_query: theme:(spectacle vivant)
+  id: 1418
+  collection_group_id: 87
+  default_on: true
+  collection_id: 5
+collection_group_member_01820: 
+  filter_query: cote_rebond:(781(9*)) AND document_type:(musique)
+  id: 1820
+  collection_group_id: 523
+  default_on: true
+  collection_id: 5
+collection_group_member_01821: 
+  filter_query: (cote_rebond:(783.5) OR cote_rebond:(783.51)) AND document_type:(musique)
+  id: 1821
+  collection_group_id: 525
+  default_on: true
+  collection_id: 5
+collection_group_member_01364: 
+  filter_query: ""
+  id: 1364
+  collection_group_id: 34
+  default_on: true
+  collection_id: 17
+collection_group_member_01338: 
+  filter_query: ""
+  id: 1338
+  collection_group_id: 16
+  default_on: true
+  collection_id: 55
+collection_group_member_01445: 
+  filter_query: theme:(handicap)
+  id: 1445
+  collection_group_id: 120
+  default_on: true
+  collection_id: 5
+collection_group_member_01903: 
+  filter_query: ""
+  id: 1903
+  collection_group_id: 607
+  default_on: true
+  collection_id: 6
+collection_group_member_01608: 
+  filter_query: ""
+  id: 1608
+  collection_group_id: 4
+  default_on: true
+  collection_id: 71
+collection_group_member_01472: 
+  filter_query: ""
+  id: 1472
+  collection_group_id: 9
+  default_on: true
+  collection_id: 123
+collection_group_member_01365: 
+  filter_query: ""
+  id: 1365
+  collection_group_id: 34
+  default_on: true
+  collection_id: 18
+collection_group_member_00395: 
+  filter_query: ""
+  id: 395
+  collection_group_id: 39
+  default_on: true
+  collection_id: 6
+collection_group_member_01446: 
+  filter_query: theme:(Paris et Ile-de-France)
+  id: 1446
+  collection_group_id: 116
+  default_on: true
+  collection_id: 5
+collection_group_member_01741: 
+  filter_query: "document_type:(base de donn\xC3\xA9es) AND cote_rebond:(78*)"
+  id: 1741
+  collection_group_id: 559
+  default_on: true
+  collection_id: 5
+collection_group_member_01822: 
+  filter_query: cote_rebond:(780.635) AND document_type:(musique)
+  id: 1822
+  collection_group_id: 603
+  default_on: true
+  collection_id: 5
+collection_group_member_01823: 
+  filter_query: cote_rebond:(780.64) AND document_type:(musique)
+  id: 1823
+  collection_group_id: 577
+  default_on: true
+  collection_id: 5
+collection_group_member_01473: 
+  filter_query: document_type:(revuelec)
+  id: 1473
+  collection_group_id: 125
+  default_on: true
+  collection_id: 5
+collection_group_member_01447: 
+  filter_query: theme:(solidarite)
+  id: 1447
+  collection_group_id: 119
+  default_on: true
+  collection_id: 5
+collection_group_member_01285: 
+  filter_query: ""
+  id: 1285
+  collection_group_id: 8
+  default_on: true
+  collection_id: 18
+collection_group_member_01366: 
+  filter_query: ""
+  id: 1366
+  collection_group_id: 34
+  default_on: true
+  collection_id: 109
+collection_group_member_01392: 
+  filter_query: document_type:(revue)
+  id: 1392
+  collection_group_id: 580
+  default_on: true
+  collection_id: 5
+collection_group_member_01742: 
+  filter_query: "document_type:(base de donn\xC3\xA9es) AND cote_rebond:(791)"
+  id: 1742
+  collection_group_id: 482
+  default_on: true
+  collection_id: 5
+collection_group_member_01904: 
+  filter_query: ""
+  id: 1904
+  collection_group_id: 608
+  default_on: true
+  collection_id: 126
+collection_group_member_01905: 
+  filter_query: ""
+  id: 1905
+  collection_group_id: 609
+  default_on: true
+  collection_id: 128
+collection_group_member_01743: 
+  filter_query: theme:(cinema) AND (document_type:(debat et enregistrement) OR document_type:(livre audio))
+  id: 1743
+  collection_group_id: 488
+  default_on: true
+  collection_id: 5
+collection_group_member_01474: 
+  filter_query: document_type:(revue)
+  id: 1474
+  collection_group_id: 26
+  default_on: true
+  collection_id: 5
+collection_group_member_01448: 
+  filter_query: "theme_rebond:(\"Recherche d'emploi, m\xC3\xA9tiers, formation > Recherche d'emploi\")"
+  id: 1448
+  collection_group_id: 57
+  default_on: true
+  collection_id: 5
+collection_group_member_01286: 
+  filter_query: ""
+  id: 1286
+  collection_group_id: 8
+  default_on: true
+  collection_id: 108
+collection_group_member_01367: 
+  filter_query: ""
+  id: 1367
+  collection_group_id: 34
+  default_on: true
+  collection_id: 95
+collection_group_member_01529: 
+  filter_query: document_type:(dospresse)
+  id: 1529
+  collection_group_id: 598
+  default_on: true
+  collection_id: 5
+collection_group_member_01662: 
+  filter_query: ""
+  id: 1662
+  collection_group_id: 11
+  default_on: true
+  collection_id: 92
+collection_group_member_01824: 
+  filter_query: cote_rebond:(780.65) AND document_type:(musique)
+  id: 1824
+  collection_group_id: 604
+  default_on: true
+  collection_id: 5
+collection_group_member_01850: 
+  filter_query: ""
+  id: 1850
+  collection_group_id: 16
+  default_on: true
+  collection_id: 23
+collection_group_member_01851: 
+  filter_query: ""
+  id: 1851
+  collection_group_id: 34
+  default_on: true
+  collection_id: 26
+collection_group_member_01825: 
+  filter_query: cote_rebond:(783.6) AND document_type:(musique)
+  id: 1825
+  collection_group_id: 527
+  default_on: true
+  collection_id: 5
+collection_group_member_01770: 
+  filter_query: "keyword:(\"P\xC3\xA9riode moderne\") AND document_type:(musique)"
+  id: 1770
+  collection_group_id: 492
+  default_on: true
+  collection_id: 5
+collection_group_member_01744: 
+  filter_query: theme:(cinema) AND document_type:(didacticiel)
+  id: 1744
+  collection_group_id: 489
+  default_on: true
+  collection_id: 5
+collection_group_member_01449: 
+  filter_query: ""
+  id: 1449
+  collection_group_id: 3
+  default_on: true
+  collection_id: 19
+collection_group_member_01394: 
+  filter_query: document_type:(revuelec)
+  id: 1394
+  collection_group_id: 25
+  default_on: true
+  collection_id: 5
+collection_group_member_01475: 
+  filter_query: theme:(sites de journaux et de magazines)
+  id: 1475
+  collection_group_id: 27
+  default_on: true
+  collection_id: 5
+collection_group_member_01582: 
+  filter_query: ""
+  id: 1582
+  collection_group_id: 1
+  default_on: true
+  collection_id: 71
+collection_group_member_01287: 
+  filter_query: ""
+  id: 1287
+  collection_group_id: 8
+  default_on: true
+  collection_id: 109
+collection_group_member_01906: 
+  filter_query: ""
+  id: 1906
+  collection_group_id: 608
+  default_on: true
+  collection_id: 113
+collection_group_member_01907: 
+  filter_query: ""
+  id: 1907
+  collection_group_id: 608
+  default_on: true
+  collection_id: 92
+collection_group_member_01771: 
+  filter_query: "keyword:(\"P\xC3\xA9riode Renaissance\") AND document_type:(musique)"
+  id: 1771
+  collection_group_id: 67
+  default_on: true
+  collection_id: 5
+collection_group_member_01638: 
+  filter_query: ""
+  id: 1638
+  collection_group_id: 9
+  default_on: true
+  collection_id: 19
+collection_group_member_01745: 
+  filter_query: theme:(cinema) AND document_type:(livre)
+  id: 1745
+  collection_group_id: 480
+  default_on: true
+  collection_id: 5
+collection_group_member_01826: 
+  filter_query: cote_rebond:(782) OR cote_rebond:(782.1) OR cote_rebond:(782.13) OR cote_rebond:(782.14) OR cote_rebond:(782.16) OR cote_rebond:(782.2) OR cote_rebond:(782.3) AND document_type:(musique)
+  id: 1826
+  collection_group_id: 524
+  default_on: true
+  collection_id: 5
+collection_group_member_01852: 
+  filter_query: ""
+  id: 1852
+  collection_group_id: 34
+  default_on: true
+  collection_id: 71
+collection_group_member_01853: 
+  filter_query: ""
+  id: 1853
+  collection_group_id: 34
+  default_on: true
+  collection_id: 15
+collection_group_member_01827: 
+  filter_query: ""
+  id: 1827
+  collection_group_id: 8
+  default_on: true
+  collection_id: 102
+collection_group_member_01772: 
+  filter_query: "keyword:(\"P\xC3\xA9riode romantique\") AND document_type:(musique)"
+  id: 1772
+  collection_group_id: 491
+  default_on: true
+  collection_id: 5
+collection_group_member_01477: 
+  filter_query: theme:(art) AND document_type:(revue OR revuelec OR Dospresse OR BDD)
+  id: 1477
+  collection_group_id: 28
+  default_on: true
+  collection_id: 5
+collection_group_member_01908: 
+  filter_query: ""
+  id: 1908
+  collection_group_id: 608
+  default_on: true
+  collection_id: 106
+collection_group_member_01909: 
+  filter_query: ""
+  id: 1909
+  collection_group_id: 610
+  default_on: true
+  collection_id: 15
+collection_group_member_01880: 
+  filter_query: theme_rebond:("Economie, entreprise, gestion > Entreprise, gestion")
+  id: 1880
+  collection_group_id: 94
+  default_on: true
+  collection_id: 5
+collection_group_member_01478: 
+  filter_query: theme:(droit, administration, institutions) AND document_type:(revue OR revuelec OR Dospresse OR BDD)
+  id: 1478
+  collection_group_id: 578
+  default_on: true
+  collection_id: 5
+collection_group_member_01747: 
+  filter_query: theme:(cinema) AND document_type:(revue)
+  id: 1747
+  collection_group_id: 481
+  default_on: true
+  collection_id: 5
+collection_group_member_01773: 
+  filter_query: cote_rebond:(780.66) AND document_type:(musique)
+  id: 1773
+  collection_group_id: 515
+  default_on: true
+  collection_id: 5
+collection_group_member_01828: 
+  filter_query: ""
+  id: 1828
+  collection_group_id: 1
+  default_on: true
+  collection_id: 126
+collection_group_member_01854: 
+  filter_query: ""
+  id: 1854
+  collection_group_id: 34
+  default_on: true
+  collection_id: 21
+collection_group_member_01855: 
+  filter_query: ""
+  id: 1855
+  collection_group_id: 34
+  default_on: true
+  collection_id: 108
+collection_group_member_01829: 
+  filter_query: "document_type:(base) AND theme:(Actualit\xC3\xA9s, m\xC3\xA9dias, presse)"
+  id: 1829
+  collection_group_id: 579
+  default_on: true
+  collection_id: 5
+collection_group_member_01774: 
+  filter_query: cote_rebond:(783.7) AND document_type:(musique)
+  id: 1774
+  collection_group_id: 536
+  default_on: true
+  collection_id: 5
+collection_group_member_01479: 
+  filter_query: "theme:(\xC3\xA9conomie, entreprise, gestion) AND document_type:(revue OR revuelec OR Dospresse OR BDD)"
+  id: 1479
+  collection_group_id: 581
+  default_on: true
+  collection_id: 5
+collection_group_member_01748: 
+  filter_query: theme:(longs et moyens metrages)
+  id: 1748
+  collection_group_id: 605
+  default_on: true
+  collection_id: 5
+collection_group_member_01881: 
+  filter_query: theme_rebond:("Droit, administration, institutions > Droit")
+  id: 1881
+  collection_group_id: 88
+  default_on: true
+  collection_id: 5
+collection_group_member_01882: 
+  filter_query: theme:(Droit, administration, institutions > Administration, institutions)
+  id: 1882
+  collection_group_id: 89
+  default_on: true
+  collection_id: 5
+collection_group_member_01749: 
+  filter_query: "theme:(courts metrages d'\xC3\xA9cole)"
+  id: 1749
+  collection_group_id: 465
+  default_on: true
+  collection_id: 5
+collection_group_member_01102: 
+  filter_query: ""
+  id: 1102
+  collection_group_id: 21
+  default_on: true
+  collection_id: 23
+collection_group_member_01668: 
+  filter_query: ""
+  id: 1668
+  collection_group_id: 11
+  default_on: true
+  collection_id: 71
+collection_group_member_01775: 
+  filter_query: cote_rebond:(780.631) AND document_type:(musique)
+  id: 1775
+  collection_group_id: 495
+  default_on: true
+  collection_id: 5
+collection_group_member_01856: 
+  filter_query: cote_rebond:(78*) AND document_type:(livre)
+  id: 1856
+  collection_group_id: 33
+  default_on: true
+  collection_id: 5
+collection_group_member_01857: 
+  filter_query: "keyword:(\"P\xC3\xA9riode m\xC3\xA9di\xC3\xA9vale\") AND document_type:(musique)"
+  id: 1857
+  collection_group_id: 66
+  default_on: true
+  collection_id: 5
+collection_group_member_01776: 
+  filter_query: cote_rebond:(780.634) AND document_type:(musique)
+  id: 1776
+  collection_group_id: 498
+  default_on: true
+  collection_id: 5
+collection_group_member_01883: 
+  filter_query: "theme:(biblioth\xC3\xA8ques et catalogues) AND document_type:(Site OR base OR revuelec)"
+  id: 1883
+  collection_group_id: 379
+  default_on: true
+  collection_id: 5
+collection_group_member_01884: 
+  filter_query: "theme_rebond:(\"G\xC3\xA9n\xC3\xA9ralit\xC3\xA9s > Biblioth\xC3\xA8ques num\xC3\xA9riques\") AND document_type:(Site OR base OR revuelec)"
+  id: 1884
+  collection_group_id: 380
+  default_on: true
+  collection_id: 5
+collection_group_member_01777: 
+  filter_query: cote_rebond:(780.638) AND document_type:(musique)
+  id: 1777
+  collection_group_id: 501
+  default_on: true
+  collection_id: 5
+collection_group_member_01858: 
+  filter_query: document_type:(site OR base) AND theme:(Bibliographies, livres en librairie)
+  id: 1858
+  collection_group_id: 378
+  default_on: true
+  collection_id: 5
+collection_group_member_01859: 
+  filter_query: document_type:(site OR base OR revuelec) AND theme:(articles de journaux)
+  id: 1859
+  collection_group_id: 385
+  default_on: true
+  collection_id: 5
+collection_group_member_01778: 
+  filter_query: cote_rebond:(780.636) AND document_type:(musique)
+  id: 1778
+  collection_group_id: 499
+  default_on: true
+  collection_id: 5
+collection_group_member_01400: 
+  filter_query: ""
+  id: 1400
+  collection_group_id: 34
+  default_on: true
+  collection_id: 113
+collection_group_member_01024: 
+  filter_query: ""
+  id: 1024
+  collection_group_id: 29
+  default_on: true
+  collection_id: 21
+collection_group_member_01105: 
+  filter_query: ""
+  id: 1105
+  collection_group_id: 5
+  default_on: true
+  collection_id: 25
+collection_group_member_01697: 
+  filter_query: ""
+  id: 1697
+  collection_group_id: 16
+  default_on: true
+  collection_id: 53
+collection_group_member_01885: 
+  filter_query: "theme:(G\xC3\xA9n\xC3\xA9ralit\xC3\xA9s > Dictionnaires biographiques) AND document_type:(site OR base OR revuelec)"
+  id: 1885
+  collection_group_id: 383
+  default_on: true
+  collection_id: 5
+collection_group_member_01886: 
+  filter_query: "theme:(G\xC3\xA9n\xC3\xA9ralit\xC3\xA9s > Dictionnaires de langues) AND document_type:(site OR base OR revuelec)"
+  id: 1886
+  collection_group_id: 382
+  default_on: true
+  collection_id: 5
+collection_group_member_01698: 
+  filter_query: ""
+  id: 1698
+  collection_group_id: 16
+  default_on: true
+  collection_id: 54
+collection_group_member_01779: 
+  filter_query: cote_rebond:(780.633) AND document_type:(musique)
+  id: 1779
+  collection_group_id: 497
+  default_on: true
+  collection_id: 5
+collection_group_member_01321: 
+  filter_query: ""
+  id: 1321
+  collection_group_id: 15
+  default_on: true
+  collection_id: 25
+collection_group_member_01887: 
+  filter_query: "theme_rebond:(\"G\xC3\xA9n\xC3\xA9ralit\xC3\xA9s > Encyclop\xC3\xA9dies\") AND document_type:(site OR base OR revuelec)"
+  id: 1887
+  collection_group_id: 381
+  default_on: true
+  collection_id: 5
+collection_group_member_01888: 
+  filter_query: "theme:(G\xC3\xA9n\xC3\xA9ralit\xC3\xA9s > Donn\xC3\xA9es sur les pays) AND document_type:(Site OR base OR revuelec)"
+  id: 1888
+  collection_group_id: 384
+  default_on: true
+  collection_id: 5
+collection_group_member_01403: 
+  filter_query: ""
+  id: 1403
+  collection_group_id: 41
+  default_on: true
+  collection_id: 105
+collection_group_member_01322: 
+  filter_query: ""
+  id: 1322
+  collection_group_id: 15
+  default_on: true
+  collection_id: 10
+collection_group_member_01404: 
+  filter_query: ""
+  id: 1404
+  collection_group_id: 41
+  default_on: true
+  collection_id: 102
+collection_group_member_01323: 
+  filter_query: theme:(encyclopedies et dictionnaires)
+  id: 1323
+  collection_group_id: 76
+  default_on: true
+  collection_id: 5
+collection_group_member_01430: 
+  filter_query: "theme:(g\xC3\xA9n\xC3\xA9alogie)"
+  id: 1430
+  collection_group_id: 59
+  default_on: true
+  collection_id: 5
+collection_group_member_01889: 
+  filter_query: theme:(histoire contemporaine) AND document_type:(Site OR base OR revuelec)
+  id: 1889
+  collection_group_id: 405
+  default_on: true
+  collection_id: 5
+collection_group_member_01405: 
+  filter_query: ""
+  id: 1405
+  collection_group_id: 41
+  default_on: true
+  collection_id: 16
+collection_group_member_01350: 
+  filter_query: ""
+  id: 1350
+  collection_group_id: 597
+  default_on: true
+  collection_id: 121
+collection_group_member_01324: 
+  filter_query: "theme:(documentation sur les m\xC3\xA9dias et l'\xC3\xA9dition)"
+  id: 1324
+  collection_group_id: 367
+  default_on: true
+  collection_id: 5
+collection_group_member_01431: 
+  filter_query: "theme:(histoire m\xC3\xA9di\xC3\xA9vale)"
+  id: 1431
+  collection_group_id: 368
+  default_on: true
+  collection_id: 5
+collection_group_member_01432: 
+  filter_query: theme:(Prehistoire, archeologie, antiquite)
+  id: 1432
+  collection_group_id: 61
+  default_on: true
+  collection_id: 5
+collection_group_member_01620: 
+  filter_query: ""
+  id: 1620
+  collection_group_id: 9
+  default_on: true
+  collection_id: 101
+collection_group_member_01325: 
+  filter_query: document_type:(revue)
+  id: 1325
+  collection_group_id: 366
+  default_on: true
+  collection_id: 5
+collection_group_member_00518: 
+  filter_query: creator:"Clarke, Arthur Charles" OR creator:"Wells, Herbert George" OR creator:"Le Guin, Ursula Kroeber" OR creator:"Card, Orson Scott" OR creator:"Asimov, Isaac" OR creator:"Van Vogt, Alfred Elton" OR creator:"Dick, Philip Kindred" OR creator:"Egan, Greg"
+  id: 518
+  collection_group_id: 375
+  default_on: true
+  collection_id: 5
+collection_group_member_01271: 
+  filter_query: ""
+  id: 1271
+  collection_group_id: 8
+  default_on: true
+  collection_id: 5
+collection_group_member_01219: 
+  filter_query: "theme:(Biblioth\xC3\xA8ques et catalogues)"
+  id: 1219
+  collection_group_id: 73
+  default_on: true
+  collection_id: 5
+collection_group_member_01621: 
+  filter_query: ""
+  id: 1621
+  collection_group_id: 9
+  default_on: true
+  collection_id: 6
+collection_group_member_01352: 
+  filter_query: cote_rebond:78*
+  id: 1352
+  collection_group_id: 29
+  default_on: true
+  collection_id: 5
+collection_group_member_01433: 
+  filter_query: theme:(litteratures etrangeres)
+  id: 1433
+  collection_group_id: 373
+  default_on: true
+  collection_id: 5

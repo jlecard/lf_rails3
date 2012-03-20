@@ -1,0 +1,7 @@
+--- 
+manage_role_professional: 
+  id_role: professional
+manage_role_basic: 
+  id_role: basic
+manage_role_anonym: 
+  id_role: anonym

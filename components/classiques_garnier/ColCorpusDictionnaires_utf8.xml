@@ -1,0 +1,1008 @@
+<?xml version="1.0" encoding="UTF-8"?><collection xmlns="http://www.loc.gov/MARC21/slim">
+  <record>
+    <leader>00698nam  2200169uu 4500</leader>
+    <controlfield tag="001">classiques-garnier.ColCorpusDictionnaires.AcfAD09</controlfield>
+    <controlfield tag="008">070101s2007       |||||||||||||||||fre||</controlfield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="a">Classiques Garnier</subfield>
+    </datafield>
+    <datafield tag="041" ind1="0" ind2=" ">
+      <subfield code="a">fre</subfield>
+    </datafield>
+    <datafield tag="245" ind1="1" ind2="0">
+      <subfield code="a">Dictionnaire de l'Académie française, 1835 [Sixième édition]</subfield>
+    </datafield>
+    <datafield tag="260" ind1=" " ind2=" ">
+      <subfield code="a">Paris</subfield>
+      <subfield code="b">Didot (Firmin frères)</subfield>
+      <subfield code="c">2007</subfield>
+    </datafield>
+    <datafield tag="490" ind1=" " ind2=" ">
+      <subfield code="a">Grand Corpus des dictionnaires [9e-20e s.]</subfield>
+    </datafield>
+    <datafield tag="650" ind1="1" ind2=" ">
+      <subfield code="a">Dictionnaire</subfield>
+    </datafield>
+    <datafield tag="655" ind1=" " ind2="7">
+      <subfield code="a">dictionary</subfield>
+      <subfield code="2">lcsh</subfield>
+    </datafield>
+    <datafield tag="776" ind1=" " ind2=" ">
+      <subfield code="d">Paris: Didot (Firmin frères), 1835 (1ère éd. 1694)</subfield>
+    </datafield>
+    <datafield tag="856" ind1=" " ind2="2">
+      <subfield code="q">text/html</subfield>
+    </datafield>
+    <datafield tag="856" ind1=" " ind2=" ">
+      <subfield code="u">http://www.classiques-garnier.com/numerique-bases/index.php?module=App&amp;action=FrameMain&amp;colname=ColCorpusDictionnaires&amp;filename=AcfAD09</subfield>
+    </datafield>
+  </record>
+  <record>
+    <leader>00693nam  2200169uu 4500</leader>
+    <controlfield tag="001">classiques-garnier.ColCorpusDictionnaires.AcfAD13</controlfield>
+    <controlfield tag="008">070101s2007       |||||||||||||||||fre||</controlfield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="a">Classiques Garnier</subfield>
+    </datafield>
+    <datafield tag="041" ind1="0" ind2=" ">
+      <subfield code="a">fre</subfield>
+    </datafield>
+    <datafield tag="245" ind1="1" ind2="0">
+      <subfield code="a">Dictionnaire de l'Académie française, 1879 [Septième édition]</subfield>
+    </datafield>
+    <datafield tag="260" ind1=" " ind2=" ">
+      <subfield code="a">Paris</subfield>
+      <subfield code="b">Firmin-Didot et Cie</subfield>
+      <subfield code="c">2007</subfield>
+    </datafield>
+    <datafield tag="490" ind1=" " ind2=" ">
+      <subfield code="a">Grand Corpus des dictionnaires [9e-20e s.]</subfield>
+    </datafield>
+    <datafield tag="650" ind1="1" ind2=" ">
+      <subfield code="a">Dictionnaire</subfield>
+    </datafield>
+    <datafield tag="655" ind1=" " ind2="7">
+      <subfield code="a">dictionary</subfield>
+      <subfield code="2">lcsh</subfield>
+    </datafield>
+    <datafield tag="776" ind1=" " ind2=" ">
+      <subfield code="d">Paris: Firmin-Didot et Cie, 1879 (1ère éd. 1694)</subfield>
+    </datafield>
+    <datafield tag="856" ind1=" " ind2="2">
+      <subfield code="q">text/html</subfield>
+    </datafield>
+    <datafield tag="856" ind1=" " ind2=" ">
+      <subfield code="u">http://www.classiques-garnier.com/numerique-bases/index.php?module=App&amp;action=FrameMain&amp;colname=ColCorpusDictionnaires&amp;filename=AcfAD13</subfield>
+    </datafield>
+  </record>
+  <record>
+    <leader>00681nam  2200169uu 4500</leader>
+    <controlfield tag="001">classiques-garnier.ColCorpusDictionnaires.AcfAD10</controlfield>
+    <controlfield tag="008">070101s2007       |||||||||||||||||fre||</controlfield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="a">Classiques Garnier</subfield>
+    </datafield>
+    <datafield tag="041" ind1="0" ind2=" ">
+      <subfield code="a">fre</subfield>
+    </datafield>
+    <datafield tag="245" ind1="1" ind2="0">
+      <subfield code="a">Dictionnaire de l'Académie française, 1932-1935 [Huitième édition]</subfield>
+    </datafield>
+    <datafield tag="260" ind1=" " ind2=" ">
+      <subfield code="a">Paris</subfield>
+      <subfield code="b">Hachette</subfield>
+      <subfield code="c">2007</subfield>
+    </datafield>
+    <datafield tag="490" ind1=" " ind2=" ">
+      <subfield code="a">Grand Corpus des dictionnaires [9e-20e s.]</subfield>
+    </datafield>
+    <datafield tag="650" ind1="1" ind2=" ">
+      <subfield code="a">Dictionnaire</subfield>
+    </datafield>
+    <datafield tag="655" ind1=" " ind2="7">
+      <subfield code="a">dictionary</subfield>
+      <subfield code="2">lcsh</subfield>
+    </datafield>
+    <datafield tag="776" ind1=" " ind2=" ">
+      <subfield code="d">Paris: Hachette, 1932-1935 (1ère éd. 1694)</subfield>
+    </datafield>
+    <datafield tag="856" ind1=" " ind2="2">
+      <subfield code="q">text/html</subfield>
+    </datafield>
+    <datafield tag="856" ind1=" " ind2=" ">
+      <subfield code="u">http://www.classiques-garnier.com/numerique-bases/index.php?module=App&amp;action=FrameMain&amp;colname=ColCorpusDictionnaires&amp;filename=AcfAD10</subfield>
+    </datafield>
+  </record>
+  <record>
+    <leader>00704nam  2200169uu 4500</leader>
+    <controlfield tag="001">classiques-garnier.ColCorpusDictionnaires.AcfAD06</controlfield>
+    <controlfield tag="008">070101s2007       |||||||||||||||||fre||</controlfield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="a">Classiques Garnier</subfield>
+    </datafield>
+    <datafield tag="041" ind1="0" ind2=" ">
+      <subfield code="a">fre</subfield>
+    </datafield>
+    <datafield tag="245" ind1="1" ind2="0">
+      <subfield code="a">Dictionnaire de l'Académie françoise, 1740 [Troisième édition]</subfield>
+    </datafield>
+    <datafield tag="260" ind1=" " ind2=" ">
+      <subfield code="a">Paris</subfield>
+      <subfield code="b">Coignard (Jean-Baptiste)</subfield>
+      <subfield code="c">2007</subfield>
+    </datafield>
+    <datafield tag="490" ind1=" " ind2=" ">
+      <subfield code="a">Grand Corpus des dictionnaires [9e-20e s.]</subfield>
+    </datafield>
+    <datafield tag="650" ind1="1" ind2=" ">
+      <subfield code="a">Dictionnaire</subfield>
+    </datafield>
+    <datafield tag="655" ind1=" " ind2="7">
+      <subfield code="a">dictionary</subfield>
+      <subfield code="2">lcsh</subfield>
+    </datafield>
+    <datafield tag="776" ind1=" " ind2=" ">
+      <subfield code="d">Paris: Coignard (Jean-Baptiste), 1740 (1ère éd. 1694)</subfield>
+    </datafield>
+    <datafield tag="856" ind1=" " ind2="2">
+      <subfield code="q">text/html</subfield>
+    </datafield>
+    <datafield tag="856" ind1=" " ind2=" ">
+      <subfield code="u">http://www.classiques-garnier.com/numerique-bases/index.php?module=App&amp;action=FrameMain&amp;colname=ColCorpusDictionnaires&amp;filename=AcfAD06</subfield>
+    </datafield>
+  </record>
+  <record>
+    <leader>00706nam  2200169uu 4500</leader>
+    <controlfield tag="001">classiques-garnier.ColCorpusDictionnaires.AcfAD07</controlfield>
+    <controlfield tag="008">070101s2007       |||||||||||||||||fre||</controlfield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="a">Classiques Garnier</subfield>
+    </datafield>
+    <datafield tag="041" ind1="0" ind2=" ">
+      <subfield code="a">fre</subfield>
+    </datafield>
+    <datafield tag="245" ind1="1" ind2="0">
+      <subfield code="a">Dictionnaire de l'Académie françoise, 1762 [Quatrième édition]</subfield>
+    </datafield>
+    <datafield tag="260" ind1=" " ind2=" ">
+      <subfield code="a">Paris</subfield>
+      <subfield code="b">Brunet (Veuve de Bernard)</subfield>
+      <subfield code="c">2007</subfield>
+    </datafield>
+    <datafield tag="490" ind1=" " ind2=" ">
+      <subfield code="a">Grand Corpus des dictionnaires [9e-20e s.]</subfield>
+    </datafield>
+    <datafield tag="650" ind1="1" ind2=" ">
+      <subfield code="a">Dictionnaire</subfield>
+    </datafield>
+    <datafield tag="655" ind1=" " ind2="7">
+      <subfield code="a">dictionary</subfield>
+      <subfield code="2">lcsh</subfield>
+    </datafield>
+    <datafield tag="776" ind1=" " ind2=" ">
+      <subfield code="d">Paris: Brunet (Veuve de Bernard), 1762 (1ère éd. 1694)</subfield>
+    </datafield>
+    <datafield tag="856" ind1=" " ind2="2">
+      <subfield code="q">text/html</subfield>
+    </datafield>
+    <datafield tag="856" ind1=" " ind2=" ">
+      <subfield code="u">http://www.classiques-garnier.com/numerique-bases/index.php?module=App&amp;action=FrameMain&amp;colname=ColCorpusDictionnaires&amp;filename=AcfAD07</subfield>
+    </datafield>
+  </record>
+  <record>
+    <leader>00694nam  2200169uu 4500</leader>
+    <controlfield tag="001">classiques-garnier.ColCorpusDictionnaires.AcfAD08</controlfield>
+    <controlfield tag="008">070101s2007       |||||||||||||||||fre||</controlfield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="a">Classiques Garnier</subfield>
+    </datafield>
+    <datafield tag="041" ind1="0" ind2=" ">
+      <subfield code="a">fre</subfield>
+    </datafield>
+    <datafield tag="245" ind1="1" ind2="0">
+      <subfield code="a">Dictionnaire de l'Académie françoise, 1798 [Cinquième édition]</subfield>
+    </datafield>
+    <datafield tag="260" ind1=" " ind2=" ">
+      <subfield code="a">Paris</subfield>
+      <subfield code="b">Smits (J. J.) et Ce</subfield>
+      <subfield code="c">2007</subfield>
+    </datafield>
+    <datafield tag="490" ind1=" " ind2=" ">
+      <subfield code="a">Grand Corpus des dictionnaires [9e-20e s.]</subfield>
+    </datafield>
+    <datafield tag="650" ind1="1" ind2=" ">
+      <subfield code="a">Dictionnaire</subfield>
+    </datafield>
+    <datafield tag="655" ind1=" " ind2="7">
+      <subfield code="a">dictionary</subfield>
+      <subfield code="2">lcsh</subfield>
+    </datafield>
+    <datafield tag="776" ind1=" " ind2=" ">
+      <subfield code="d">Paris: Smits (J. J.) et Ce, 1798 (1ère éd. 1694)</subfield>
+    </datafield>
+    <datafield tag="856" ind1=" " ind2="2">
+      <subfield code="q">text/html</subfield>
+    </datafield>
+    <datafield tag="856" ind1=" " ind2=" ">
+      <subfield code="u">http://www.classiques-garnier.com/numerique-bases/index.php?module=App&amp;action=FrameMain&amp;colname=ColCorpusDictionnaires&amp;filename=AcfAD08</subfield>
+    </datafield>
+  </record>
+  <record>
+    <leader>00702nam  2200169uu 4500</leader>
+    <controlfield tag="001">classiques-garnier.ColCorpusDictionnaires.AcfAD01</controlfield>
+    <controlfield tag="008">070101s2007       |||||||||||||||||fre||</controlfield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="a">Classiques Garnier</subfield>
+    </datafield>
+    <datafield tag="041" ind1="0" ind2=" ">
+      <subfield code="a">fre</subfield>
+    </datafield>
+    <datafield tag="245" ind1="1" ind2="0">
+      <subfield code="a">Le Dictionaire de l'Académie françoise, 1687 [Avant-Première 1]</subfield>
+    </datafield>
+    <datafield tag="260" ind1=" " ind2=" ">
+      <subfield code="a">Francfort</subfield>
+      <subfield code="b">Arnaud (Frédéric)</subfield>
+      <subfield code="c">2007</subfield>
+    </datafield>
+    <datafield tag="490" ind1=" " ind2=" ">
+      <subfield code="a">Grand Corpus des dictionnaires [9e-20e s.]</subfield>
+    </datafield>
+    <datafield tag="650" ind1="1" ind2=" ">
+      <subfield code="a">Dictionnaire</subfield>
+    </datafield>
+    <datafield tag="655" ind1=" " ind2="7">
+      <subfield code="a">dictionary</subfield>
+      <subfield code="2">lcsh</subfield>
+    </datafield>
+    <datafield tag="776" ind1=" " ind2=" ">
+      <subfield code="d">Francfort: Arnaud (Frédéric), 1687 (1ère éd. 1694)</subfield>
+    </datafield>
+    <datafield tag="856" ind1=" " ind2="2">
+      <subfield code="q">text/html</subfield>
+    </datafield>
+    <datafield tag="856" ind1=" " ind2=" ">
+      <subfield code="u">http://www.classiques-garnier.com/numerique-bases/index.php?module=App&amp;action=FrameMain&amp;colname=ColCorpusDictionnaires&amp;filename=AcfAD01</subfield>
+    </datafield>
+  </record>
+  <record>
+    <leader>00702nam  2200169uu 4500</leader>
+    <controlfield tag="001">classiques-garnier.ColCorpusDictionnaires.AcfAD02</controlfield>
+    <controlfield tag="008">070101s2007       |||||||||||||||||fre||</controlfield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="a">Classiques Garnier</subfield>
+    </datafield>
+    <datafield tag="041" ind1="0" ind2=" ">
+      <subfield code="a">fre</subfield>
+    </datafield>
+    <datafield tag="245" ind1="1" ind2="0">
+      <subfield code="a">Le Dictionaire de l'Académie françoise, 1687 [Avant-Première 2]</subfield>
+    </datafield>
+    <datafield tag="260" ind1=" " ind2=" ">
+      <subfield code="a">Francfort</subfield>
+      <subfield code="b">Arnaud (Frédéric)</subfield>
+      <subfield code="c">2007</subfield>
+    </datafield>
+    <datafield tag="490" ind1=" " ind2=" ">
+      <subfield code="a">Grand Corpus des dictionnaires [9e-20e s.]</subfield>
+    </datafield>
+    <datafield tag="650" ind1="1" ind2=" ">
+      <subfield code="a">Dictionnaire</subfield>
+    </datafield>
+    <datafield tag="655" ind1=" " ind2="7">
+      <subfield code="a">dictionary</subfield>
+      <subfield code="2">lcsh</subfield>
+    </datafield>
+    <datafield tag="776" ind1=" " ind2=" ">
+      <subfield code="d">Francfort: Arnaud (Frédéric), 1687 (1ère éd. 1694)</subfield>
+    </datafield>
+    <datafield tag="856" ind1=" " ind2="2">
+      <subfield code="q">text/html</subfield>
+    </datafield>
+    <datafield tag="856" ind1=" " ind2=" ">
+      <subfield code="u">http://www.classiques-garnier.com/numerique-bases/index.php?module=App&amp;action=FrameMain&amp;colname=ColCorpusDictionnaires&amp;filename=AcfAD02</subfield>
+    </datafield>
+  </record>
+  <record>
+    <leader>00666nam  2200169uu 4500</leader>
+    <controlfield tag="001">classiques-garnier.ColCorpusDictionnaires.AcfAD03</controlfield>
+    <controlfield tag="008">070101s2007       |||||||||||||||||fre||</controlfield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="a">Classiques Garnier</subfield>
+    </datafield>
+    <datafield tag="041" ind1="0" ind2=" ">
+      <subfield code="a">fre</subfield>
+    </datafield>
+    <datafield tag="245" ind1="1" ind2="0">
+      <subfield code="a">Le Dictionaire de l'Académie françoise, 1687 [Avant-Première 3]</subfield>
+    </datafield>
+    <datafield tag="260" ind1=" " ind2=" ">
+      <subfield code="a">Paris</subfield>
+      <subfield code="b">Petit</subfield>
+      <subfield code="c">2007</subfield>
+    </datafield>
+    <datafield tag="490" ind1=" " ind2=" ">
+      <subfield code="a">Grand Corpus des dictionnaires [9e-20e s.]</subfield>
+    </datafield>
+    <datafield tag="650" ind1="1" ind2=" ">
+      <subfield code="a">Dictionnaire</subfield>
+    </datafield>
+    <datafield tag="655" ind1=" " ind2="7">
+      <subfield code="a">dictionary</subfield>
+      <subfield code="2">lcsh</subfield>
+    </datafield>
+    <datafield tag="776" ind1=" " ind2=" ">
+      <subfield code="d">Paris: Petit, 1687 (1ère éd. 1694)</subfield>
+    </datafield>
+    <datafield tag="856" ind1=" " ind2="2">
+      <subfield code="q">text/html</subfield>
+    </datafield>
+    <datafield tag="856" ind1=" " ind2=" ">
+      <subfield code="u">http://www.classiques-garnier.com/numerique-bases/index.php?module=App&amp;action=FrameMain&amp;colname=ColCorpusDictionnaires&amp;filename=AcfAD03</subfield>
+    </datafield>
+  </record>
+  <record>
+    <leader>00784nam  2200169uu 4500</leader>
+    <controlfield tag="001">classiques-garnier.ColCorpusDictionnaires.AcfAD04</controlfield>
+    <controlfield tag="008">070101s2007       |||||||||||||||||fre||</controlfield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="a">Classiques Garnier</subfield>
+    </datafield>
+    <datafield tag="041" ind1="0" ind2=" ">
+      <subfield code="a">fre</subfield>
+    </datafield>
+    <datafield tag="245" ind1="1" ind2="0">
+      <subfield code="a">Le Dictionnaire de l'Académie françoise dedié au Roy, 1694 [Première édition]</subfield>
+    </datafield>
+    <datafield tag="260" ind1=" " ind2=" ">
+      <subfield code="a">Paris</subfield>
+      <subfield code="b">Coignard (Veuve Jean-Baptiste), Coignard (Jean-Baptiste)</subfield>
+      <subfield code="c">2007</subfield>
+    </datafield>
+    <datafield tag="490" ind1=" " ind2=" ">
+      <subfield code="a">Grand Corpus des dictionnaires [9e-20e s.]</subfield>
+    </datafield>
+    <datafield tag="650" ind1="1" ind2=" ">
+      <subfield code="a">Dictionnaire</subfield>
+    </datafield>
+    <datafield tag="655" ind1=" " ind2="7">
+      <subfield code="a">dictionary</subfield>
+      <subfield code="2">lcsh</subfield>
+    </datafield>
+    <datafield tag="776" ind1=" " ind2=" ">
+      <subfield code="d">Paris: Coignard (Veuve Jean-Baptiste), Coignard (Jean-Baptiste), 1694 (1ère éd. 1694)</subfield>
+    </datafield>
+    <datafield tag="856" ind1=" " ind2="2">
+      <subfield code="q">text/html</subfield>
+    </datafield>
+    <datafield tag="856" ind1=" " ind2=" ">
+      <subfield code="u">http://www.classiques-garnier.com/numerique-bases/index.php?module=App&amp;action=FrameMain&amp;colname=ColCorpusDictionnaires&amp;filename=AcfAD04</subfield>
+    </datafield>
+  </record>
+  <record>
+    <leader>00711nam  2200169uu 4500</leader>
+    <controlfield tag="001">classiques-garnier.ColCorpusDictionnaires.AcfAD05</controlfield>
+    <controlfield tag="008">070101s2007       |||||||||||||||||fre||</controlfield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="a">Classiques Garnier</subfield>
+    </datafield>
+    <datafield tag="041" ind1="0" ind2=" ">
+      <subfield code="a">fre</subfield>
+    </datafield>
+    <datafield tag="245" ind1="1" ind2="0">
+      <subfield code="a">Nouveau Dictionnaire de l'Académie françoise, 1718 [Deuxième édition]</subfield>
+    </datafield>
+    <datafield tag="260" ind1=" " ind2=" ">
+      <subfield code="a">Paris</subfield>
+      <subfield code="b">Coignard (Jean-Baptiste)</subfield>
+      <subfield code="c">2007</subfield>
+    </datafield>
+    <datafield tag="490" ind1=" " ind2=" ">
+      <subfield code="a">Grand Corpus des dictionnaires [9e-20e s.]</subfield>
+    </datafield>
+    <datafield tag="650" ind1="1" ind2=" ">
+      <subfield code="a">Dictionnaire</subfield>
+    </datafield>
+    <datafield tag="655" ind1=" " ind2="7">
+      <subfield code="a">dictionary</subfield>
+      <subfield code="2">lcsh</subfield>
+    </datafield>
+    <datafield tag="776" ind1=" " ind2=" ">
+      <subfield code="d">Paris: Coignard (Jean-Baptiste), 1718 (1ère éd. 1694)</subfield>
+    </datafield>
+    <datafield tag="856" ind1=" " ind2="2">
+      <subfield code="q">text/html</subfield>
+    </datafield>
+    <datafield tag="856" ind1=" " ind2=" ">
+      <subfield code="u">http://www.classiques-garnier.com/numerique-bases/index.php?module=App&amp;action=FrameMain&amp;colname=ColCorpusDictionnaires&amp;filename=AcfAD05</subfield>
+    </datafield>
+  </record>
+  <record>
+    <leader>00711nam  2200181uu 4500</leader>
+    <controlfield tag="001">classiques-garnier.ColCorpusDictionnaires.AcfAD12</controlfield>
+    <controlfield tag="008">070101s2007       |||||||||||||||||fre||</controlfield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="a">Classiques Garnier</subfield>
+    </datafield>
+    <datafield tag="041" ind1="0" ind2=" ">
+      <subfield code="a">fre</subfield>
+    </datafield>
+    <datafield tag="100" ind1="1" ind2=" ">
+      <subfield code="a">Barré (Louis)</subfield>
+      <subfield code="e">creator</subfield>
+    </datafield>
+    <datafield tag="245" ind1="1" ind2="0">
+      <subfield code="a">Complément du Dictionnaire de l'Académie française</subfield>
+    </datafield>
+    <datafield tag="260" ind1=" " ind2=" ">
+      <subfield code="a">Paris</subfield>
+      <subfield code="b">Didot (Firmin)</subfield>
+      <subfield code="c">2007</subfield>
+    </datafield>
+    <datafield tag="490" ind1=" " ind2=" ">
+      <subfield code="a">Grand Corpus des dictionnaires [9e-20e s.]</subfield>
+    </datafield>
+    <datafield tag="650" ind1="1" ind2=" ">
+      <subfield code="a">Dictionnaire</subfield>
+    </datafield>
+    <datafield tag="655" ind1=" " ind2="7">
+      <subfield code="a">dictionary</subfield>
+      <subfield code="2">lcsh</subfield>
+    </datafield>
+    <datafield tag="776" ind1=" " ind2=" ">
+      <subfield code="d">Paris: Didot (Firmin), 1842 (1ère éd. 1842)</subfield>
+    </datafield>
+    <datafield tag="856" ind1=" " ind2="2">
+      <subfield code="q">text/html</subfield>
+    </datafield>
+    <datafield tag="856" ind1=" " ind2=" ">
+      <subfield code="u">http://www.classiques-garnier.com/numerique-bases/index.php?module=App&amp;action=FrameMain&amp;colname=ColCorpusDictionnaires&amp;filename=AcfAD12</subfield>
+    </datafield>
+  </record>
+  <record>
+    <leader>00768nam  2200181uu 4500</leader>
+    <controlfield tag="001">classiques-garnier.ColCorpusDictionnaires.CorAD01</controlfield>
+    <controlfield tag="008">070101s2007       |||||||||||||||||fre||</controlfield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="a">Classiques Garnier</subfield>
+    </datafield>
+    <datafield tag="041" ind1="0" ind2=" ">
+      <subfield code="a">fre</subfield>
+    </datafield>
+    <datafield tag="100" ind1="1" ind2=" ">
+      <subfield code="a">Corneille (Thomas)</subfield>
+      <subfield code="e">creator</subfield>
+    </datafield>
+    <datafield tag="245" ind1="1" ind2="0">
+      <subfield code="a">Le Dictionnaire des Arts et des Sciences</subfield>
+    </datafield>
+    <datafield tag="260" ind1=" " ind2=" ">
+      <subfield code="a">Paris</subfield>
+      <subfield code="b">Coignard (Veuve Jean-Baptiste), Coignard (Jean-Baptiste)</subfield>
+      <subfield code="c">2007</subfield>
+    </datafield>
+    <datafield tag="490" ind1=" " ind2=" ">
+      <subfield code="a">Grand Corpus des dictionnaires [9e-20e s.]</subfield>
+    </datafield>
+    <datafield tag="650" ind1="1" ind2=" ">
+      <subfield code="a">Dictionnaire</subfield>
+    </datafield>
+    <datafield tag="655" ind1=" " ind2="7">
+      <subfield code="a">dictionary</subfield>
+      <subfield code="2">lcsh</subfield>
+    </datafield>
+    <datafield tag="776" ind1=" " ind2=" ">
+      <subfield code="d">Paris: Coignard (Veuve Jean-Baptiste), Coignard (Jean-Baptiste), 1694</subfield>
+    </datafield>
+    <datafield tag="856" ind1=" " ind2="2">
+      <subfield code="q">text/html</subfield>
+    </datafield>
+    <datafield tag="856" ind1=" " ind2=" ">
+      <subfield code="u">http://www.classiques-garnier.com/numerique-bases/index.php?module=App&amp;action=FrameMain&amp;colname=ColCorpusDictionnaires&amp;filename=CorAD01</subfield>
+    </datafield>
+  </record>
+  <record>
+    <leader>00692nam  2200181uu 4500</leader>
+    <controlfield tag="001">classiques-garnier.ColCorpusDictionnaires.CotAD01</controlfield>
+    <controlfield tag="008">070101s2007       |||||||||||||||||fre||</controlfield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="a">Classiques Garnier</subfield>
+    </datafield>
+    <datafield tag="041" ind1="0" ind2=" ">
+      <subfield code="a">fre</subfield>
+    </datafield>
+    <datafield tag="100" ind1="1" ind2=" ">
+      <subfield code="a">Cotgrave (Randle)</subfield>
+      <subfield code="e">creator</subfield>
+    </datafield>
+    <datafield tag="245" ind1="1" ind2="0">
+      <subfield code="a">A Dictionarie of the french and english tongues</subfield>
+    </datafield>
+    <datafield tag="260" ind1=" " ind2=" ">
+      <subfield code="a">Londres</subfield>
+      <subfield code="b">Iƒlip (Adam)</subfield>
+      <subfield code="c">2007</subfield>
+    </datafield>
+    <datafield tag="490" ind1=" " ind2=" ">
+      <subfield code="a">Grand Corpus des dictionnaires [9e-20e s.]</subfield>
+    </datafield>
+    <datafield tag="650" ind1="1" ind2=" ">
+      <subfield code="a">Dictionnaire</subfield>
+    </datafield>
+    <datafield tag="655" ind1=" " ind2="7">
+      <subfield code="a">dictionary</subfield>
+      <subfield code="2">lcsh</subfield>
+    </datafield>
+    <datafield tag="776" ind1=" " ind2=" ">
+      <subfield code="d">Londres: Iƒlip (Adam), 1611</subfield>
+    </datafield>
+    <datafield tag="856" ind1=" " ind2="2">
+      <subfield code="q">text/html</subfield>
+    </datafield>
+    <datafield tag="856" ind1=" " ind2=" ">
+      <subfield code="u">http://www.classiques-garnier.com/numerique-bases/index.php?module=App&amp;action=FrameMain&amp;colname=ColCorpusDictionnaires&amp;filename=CotAD01</subfield>
+    </datafield>
+  </record>
+  <record>
+    <leader>00675nam  2200181uu 4500</leader>
+    <controlfield tag="001">classiques-garnier.ColCorpusDictionnaires.EstAD01</controlfield>
+    <controlfield tag="008">070101s2007       |||||||||||||||||fre||</controlfield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="a">Classiques Garnier</subfield>
+    </datafield>
+    <datafield tag="041" ind1="0" ind2=" ">
+      <subfield code="a">fre</subfield>
+    </datafield>
+    <datafield tag="100" ind1="1" ind2=" ">
+      <subfield code="a">Estienne (Robert)</subfield>
+      <subfield code="e">creator</subfield>
+    </datafield>
+    <datafield tag="245" ind1="1" ind2="0">
+      <subfield code="a">Dictionaire Francoiƒlatin</subfield>
+    </datafield>
+    <datafield tag="260" ind1=" " ind2=" ">
+      <subfield code="a">Paris</subfield>
+      <subfield code="b">Estienne (Robert)</subfield>
+      <subfield code="c">2007</subfield>
+    </datafield>
+    <datafield tag="490" ind1=" " ind2=" ">
+      <subfield code="a">Grand Corpus des dictionnaires [9e-20e s.]</subfield>
+    </datafield>
+    <datafield tag="650" ind1="1" ind2=" ">
+      <subfield code="a">Dictionnaire</subfield>
+    </datafield>
+    <datafield tag="655" ind1=" " ind2="7">
+      <subfield code="a">dictionary</subfield>
+      <subfield code="2">lcsh</subfield>
+    </datafield>
+    <datafield tag="776" ind1=" " ind2=" ">
+      <subfield code="d">Paris: Estienne (Robert), 1549</subfield>
+    </datafield>
+    <datafield tag="856" ind1=" " ind2="2">
+      <subfield code="q">text/html</subfield>
+    </datafield>
+    <datafield tag="856" ind1=" " ind2=" ">
+      <subfield code="u">http://www.classiques-garnier.com/numerique-bases/index.php?module=App&amp;action=FrameMain&amp;colname=ColCorpusDictionnaires&amp;filename=EstAD01</subfield>
+    </datafield>
+  </record>
+  <record>
+    <leader>00717nam  2200181uu 4500</leader>
+    <controlfield tag="001">classiques-garnier.ColCorpusDictionnaires.FurAD01</controlfield>
+    <controlfield tag="008">070101s2007       |||||||||||||||||fre||</controlfield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="a">Classiques Garnier</subfield>
+    </datafield>
+    <datafield tag="041" ind1="0" ind2=" ">
+      <subfield code="a">fre</subfield>
+    </datafield>
+    <datafield tag="100" ind1="1" ind2=" ">
+      <subfield code="a">Furetière (Antoine)</subfield>
+      <subfield code="e">creator</subfield>
+    </datafield>
+    <datafield tag="245" ind1="1" ind2="0">
+      <subfield code="a">Dictionaire Universel</subfield>
+    </datafield>
+    <datafield tag="260" ind1=" " ind2=" ">
+      <subfield code="a">La Haye et Rotterdam</subfield>
+      <subfield code="b">Leers (Arnout &amp; Reinier)</subfield>
+      <subfield code="c">2007</subfield>
+    </datafield>
+    <datafield tag="490" ind1=" " ind2=" ">
+      <subfield code="a">Grand Corpus des dictionnaires [9e-20e s.]</subfield>
+    </datafield>
+    <datafield tag="650" ind1="1" ind2=" ">
+      <subfield code="a">Dictionnaire</subfield>
+    </datafield>
+    <datafield tag="655" ind1=" " ind2="7">
+      <subfield code="a">dictionary</subfield>
+      <subfield code="2">lcsh</subfield>
+    </datafield>
+    <datafield tag="776" ind1=" " ind2=" ">
+      <subfield code="d">La Haye et Rotterdam: Leers (Arnout &amp; Reinier), 1690</subfield>
+    </datafield>
+    <datafield tag="856" ind1=" " ind2="2">
+      <subfield code="q">text/html</subfield>
+    </datafield>
+    <datafield tag="856" ind1=" " ind2=" ">
+      <subfield code="u">http://www.classiques-garnier.com/numerique-bases/index.php?module=App&amp;action=FrameMain&amp;colname=ColCorpusDictionnaires&amp;filename=FurAD01</subfield>
+    </datafield>
+  </record>
+  <record>
+    <leader>00692nam  2200181uu 4500</leader>
+    <controlfield tag="001">classiques-garnier.ColCorpusDictionnaires.FurAD02</controlfield>
+    <controlfield tag="008">070101s2007       |||||||||||||||||fre||</controlfield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="a">Classiques Garnier</subfield>
+    </datafield>
+    <datafield tag="041" ind1="0" ind2=" ">
+      <subfield code="a">fre</subfield>
+    </datafield>
+    <datafield tag="100" ind1="1" ind2=" ">
+      <subfield code="a">Furetière (Antoine)</subfield>
+      <subfield code="e">creator</subfield>
+    </datafield>
+    <datafield tag="245" ind1="1" ind2="0">
+      <subfield code="a">Essai d'un Dictionaire universel</subfield>
+    </datafield>
+    <datafield tag="260" ind1=" " ind2=" ">
+      <subfield code="a">Amsterdam</subfield>
+      <subfield code="b">Desbordes (Henri)</subfield>
+      <subfield code="c">2007</subfield>
+    </datafield>
+    <datafield tag="490" ind1=" " ind2=" ">
+      <subfield code="a">Grand Corpus des dictionnaires [9e-20e s.]</subfield>
+    </datafield>
+    <datafield tag="650" ind1="1" ind2=" ">
+      <subfield code="a">Dictionnaire</subfield>
+    </datafield>
+    <datafield tag="655" ind1=" " ind2="7">
+      <subfield code="a">dictionary</subfield>
+      <subfield code="2">lcsh</subfield>
+    </datafield>
+    <datafield tag="776" ind1=" " ind2=" ">
+      <subfield code="d">Amsterdam: Desbordes (Henri), 1687</subfield>
+    </datafield>
+    <datafield tag="856" ind1=" " ind2="2">
+      <subfield code="q">text/html</subfield>
+    </datafield>
+    <datafield tag="856" ind1=" " ind2=" ">
+      <subfield code="u">http://www.classiques-garnier.com/numerique-bases/index.php?module=App&amp;action=FrameMain&amp;colname=ColCorpusDictionnaires&amp;filename=FurAD02</subfield>
+    </datafield>
+  </record>
+  <record>
+    <leader>00789nam  2200181uu 4500</leader>
+    <controlfield tag="001">classiques-garnier.ColCorpusDictionnaires.GodAD02Comp</controlfield>
+    <controlfield tag="008">070101s2007       |||||||||||||||||fre||</controlfield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="a">Classiques Garnier</subfield>
+    </datafield>
+    <datafield tag="041" ind1="0" ind2=" ">
+      <subfield code="a">fre</subfield>
+    </datafield>
+    <datafield tag="100" ind1="1" ind2=" ">
+      <subfield code="a">Godefroy (Frédéric)</subfield>
+      <subfield code="e">creator</subfield>
+    </datafield>
+    <datafield tag="245" ind1="1" ind2="0">
+      <subfield code="a">Dictionnaire de l'ancienne langue française et de tous ses dialectes du IXe au XVe siècle [Complément]</subfield>
+    </datafield>
+    <datafield tag="260" ind1=" " ind2=" ">
+      <subfield code="a">Paris</subfield>
+      <subfield code="b">F. Vieweg, Émile Bouillon</subfield>
+      <subfield code="c">2007</subfield>
+    </datafield>
+    <datafield tag="490" ind1=" " ind2=" ">
+      <subfield code="a">Grand Corpus des dictionnaires [9e-20e s.]</subfield>
+    </datafield>
+    <datafield tag="650" ind1="1" ind2=" ">
+      <subfield code="a">Dictionnaire</subfield>
+    </datafield>
+    <datafield tag="655" ind1=" " ind2="7">
+      <subfield code="a">dictionary</subfield>
+      <subfield code="2">lcsh</subfield>
+    </datafield>
+    <datafield tag="776" ind1=" " ind2=" ">
+      <subfield code="d">Paris: F. Vieweg, Émile Bouillon, 1881-1902</subfield>
+    </datafield>
+    <datafield tag="856" ind1=" " ind2="2">
+      <subfield code="q">text/html</subfield>
+    </datafield>
+    <datafield tag="856" ind1=" " ind2=" ">
+      <subfield code="u">http://www.classiques-garnier.com/numerique-bases/index.php?module=App&amp;action=FrameMain&amp;colname=ColCorpusDictionnaires&amp;filename=GodAD02Comp</subfield>
+    </datafield>
+  </record>
+  <record>
+    <leader>00767nam  2200181uu 4500</leader>
+    <controlfield tag="001">classiques-garnier.ColCorpusDictionnaires.GodAD02</controlfield>
+    <controlfield tag="008">070101s2007       |||||||||||||||||fre||</controlfield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="a">Classiques Garnier</subfield>
+    </datafield>
+    <datafield tag="041" ind1="0" ind2=" ">
+      <subfield code="a">fre</subfield>
+    </datafield>
+    <datafield tag="100" ind1="1" ind2=" ">
+      <subfield code="a">Godefroy (Frédéric)</subfield>
+      <subfield code="e">creator</subfield>
+    </datafield>
+    <datafield tag="245" ind1="1" ind2="0">
+      <subfield code="a">Dictionnaire de l'ancienne langue française et de tous ses dialectes du IXe au XVe siècle</subfield>
+    </datafield>
+    <datafield tag="260" ind1=" " ind2=" ">
+      <subfield code="a">Paris</subfield>
+      <subfield code="b">F. Vieweg, Émile Bouillon</subfield>
+      <subfield code="c">2007</subfield>
+    </datafield>
+    <datafield tag="490" ind1=" " ind2=" ">
+      <subfield code="a">Grand Corpus des dictionnaires [9e-20e s.]</subfield>
+    </datafield>
+    <datafield tag="650" ind1="1" ind2=" ">
+      <subfield code="a">Dictionnaire</subfield>
+    </datafield>
+    <datafield tag="655" ind1=" " ind2="7">
+      <subfield code="a">dictionary</subfield>
+      <subfield code="2">lcsh</subfield>
+    </datafield>
+    <datafield tag="776" ind1=" " ind2=" ">
+      <subfield code="d">Paris: F. Vieweg, Émile Bouillon, 1881-1902</subfield>
+    </datafield>
+    <datafield tag="856" ind1=" " ind2="2">
+      <subfield code="q">text/html</subfield>
+    </datafield>
+    <datafield tag="856" ind1=" " ind2=" ">
+      <subfield code="u">http://www.classiques-garnier.com/numerique-bases/index.php?module=App&amp;action=FrameMain&amp;colname=ColCorpusDictionnaires&amp;filename=GodAD02</subfield>
+    </datafield>
+  </record>
+  <record>
+    <leader>00786nam  2200181uu 4500</leader>
+    <controlfield tag="001">classiques-garnier.ColCorpusDictionnaires.HugAD01</controlfield>
+    <controlfield tag="008">070101s2007       |||||||||||||||||fre||</controlfield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="a">Classiques Garnier</subfield>
+    </datafield>
+    <datafield tag="041" ind1="0" ind2=" ">
+      <subfield code="a">fre</subfield>
+    </datafield>
+    <datafield tag="100" ind1="1" ind2=" ">
+      <subfield code="a">Huguet (Edmond)</subfield>
+      <subfield code="e">creator</subfield>
+    </datafield>
+    <datafield tag="245" ind1="1" ind2="0">
+      <subfield code="a">Dictionnaire de la langue française du seizième siècle</subfield>
+    </datafield>
+    <datafield tag="260" ind1=" " ind2=" ">
+      <subfield code="a">Paris</subfield>
+      <subfield code="b">Classiques Garnier Numérique</subfield>
+      <subfield code="c">2007</subfield>
+    </datafield>
+    <datafield tag="490" ind1=" " ind2=" ">
+      <subfield code="a">Grand Corpus des dictionnaires [9e-20e s.]</subfield>
+    </datafield>
+    <datafield tag="650" ind1="1" ind2=" ">
+      <subfield code="a">Dictionnaire</subfield>
+    </datafield>
+    <datafield tag="655" ind1=" " ind2="7">
+      <subfield code="a">dictionary</subfield>
+      <subfield code="2">lcsh</subfield>
+    </datafield>
+    <datafield tag="776" ind1=" " ind2=" ">
+      <subfield code="d">Paris: Librairie ancienne Édouard Champion, Didier, 1928 [1925], 1932, 1946, 1950, 1961, 1965, 1967</subfield>
+    </datafield>
+    <datafield tag="856" ind1=" " ind2="2">
+      <subfield code="q">text/html</subfield>
+    </datafield>
+    <datafield tag="856" ind1=" " ind2=" ">
+      <subfield code="u">http://www.classiques-garnier.com/numerique-bases/index.php?module=App&amp;action=FrameMain&amp;colname=ColCorpusDictionnaires&amp;filename=HugAD01</subfield>
+    </datafield>
+  </record>
+  <record>
+    <leader>00854nam  2200181uu 4500</leader>
+    <controlfield tag="001">classiques-garnier.ColCorpusDictionnaires.LacAD01</controlfield>
+    <controlfield tag="008">070101s2007       |||||||||||||||||fre||</controlfield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="a">Classiques Garnier</subfield>
+    </datafield>
+    <datafield tag="041" ind1="0" ind2=" ">
+      <subfield code="a">fre</subfield>
+    </datafield>
+    <datafield tag="100" ind1="1" ind2=" ">
+      <subfield code="a">La Curne de Sainte-Palaye (Jean-Baptiste de)</subfield>
+      <subfield code="e">creator</subfield>
+    </datafield>
+    <datafield tag="245" ind1="1" ind2="0">
+      <subfield code="a">Dictionnaire historique de l'ancien langage françois ou Glossaire de la langue françoise depuis son origine jusqu'au siècle de Louis XIV</subfield>
+    </datafield>
+    <datafield tag="260" ind1=" " ind2=" ">
+      <subfield code="a">Niort, Paris</subfield>
+      <subfield code="b">Classiques Garnier Numérique</subfield>
+      <subfield code="c">2007</subfield>
+    </datafield>
+    <datafield tag="490" ind1=" " ind2=" ">
+      <subfield code="a">Grand Corpus des dictionnaires [9e-20e s.]</subfield>
+    </datafield>
+    <datafield tag="650" ind1="1" ind2=" ">
+      <subfield code="a">Dictionnaire</subfield>
+    </datafield>
+    <datafield tag="655" ind1=" " ind2="7">
+      <subfield code="a">dictionary</subfield>
+      <subfield code="2">lcsh</subfield>
+    </datafield>
+    <datafield tag="776" ind1=" " ind2=" ">
+      <subfield code="d">Niort, Paris: Favre (L.), Champion (H.), 1875-1882</subfield>
+    </datafield>
+    <datafield tag="856" ind1=" " ind2="2">
+      <subfield code="q">text/html</subfield>
+    </datafield>
+    <datafield tag="856" ind1=" " ind2=" ">
+      <subfield code="u">http://www.classiques-garnier.com/numerique-bases/index.php?module=App&amp;action=FrameMain&amp;colname=ColCorpusDictionnaires&amp;filename=LacAD01</subfield>
+    </datafield>
+  </record>
+  <record>
+    <leader>00704nam  2200181uu 4500</leader>
+    <controlfield tag="001">classiques-garnier.ColCorpusDictionnaires.MenAD02</controlfield>
+    <controlfield tag="008">070101s2007       |||||||||||||||||fre||</controlfield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="a">Classiques Garnier</subfield>
+    </datafield>
+    <datafield tag="041" ind1="0" ind2=" ">
+      <subfield code="a">fre</subfield>
+    </datafield>
+    <datafield tag="100" ind1="1" ind2=" ">
+      <subfield code="a">Ménage (Gilles)</subfield>
+      <subfield code="e">creator</subfield>
+    </datafield>
+    <datafield tag="245" ind1="1" ind2="0">
+      <subfield code="a">Dictionnaire étymologique ou Origines de la langue françoise</subfield>
+    </datafield>
+    <datafield tag="260" ind1=" " ind2=" ">
+      <subfield code="a">Paris</subfield>
+      <subfield code="b">Anisson (Jean)</subfield>
+      <subfield code="c">2007</subfield>
+    </datafield>
+    <datafield tag="490" ind1=" " ind2=" ">
+      <subfield code="a">Grand Corpus des dictionnaires [9e-20e s.]</subfield>
+    </datafield>
+    <datafield tag="650" ind1="1" ind2=" ">
+      <subfield code="a">Dictionnaire</subfield>
+    </datafield>
+    <datafield tag="655" ind1=" " ind2="7">
+      <subfield code="a">dictionary</subfield>
+      <subfield code="2">lcsh</subfield>
+    </datafield>
+    <datafield tag="776" ind1=" " ind2=" ">
+      <subfield code="d">Paris: Anisson (Jean), 1694</subfield>
+    </datafield>
+    <datafield tag="856" ind1=" " ind2="2">
+      <subfield code="q">text/html</subfield>
+    </datafield>
+    <datafield tag="856" ind1=" " ind2=" ">
+      <subfield code="u">http://www.classiques-garnier.com/numerique-bases/index.php?module=App&amp;action=FrameMain&amp;colname=ColCorpusDictionnaires&amp;filename=MenAD02</subfield>
+    </datafield>
+  </record>
+  <record>
+    <leader>00686nam  2200181uu 4500</leader>
+    <controlfield tag="001">classiques-garnier.ColCorpusDictionnaires.MenAD01</controlfield>
+    <controlfield tag="008">070101s2007       |||||||||||||||||fre||</controlfield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="a">Classiques Garnier</subfield>
+    </datafield>
+    <datafield tag="041" ind1="0" ind2=" ">
+      <subfield code="a">fre</subfield>
+    </datafield>
+    <datafield tag="100" ind1="1" ind2=" ">
+      <subfield code="a">Ménage (Gilles)</subfield>
+      <subfield code="e">creator</subfield>
+    </datafield>
+    <datafield tag="245" ind1="1" ind2="0">
+      <subfield code="a">Les Origines de la langue françoise</subfield>
+    </datafield>
+    <datafield tag="260" ind1=" " ind2=" ">
+      <subfield code="a">Paris</subfield>
+      <subfield code="b">Courbé (Augustin)</subfield>
+      <subfield code="c">2007</subfield>
+    </datafield>
+    <datafield tag="490" ind1=" " ind2=" ">
+      <subfield code="a">Grand Corpus des dictionnaires [9e-20e s.]</subfield>
+    </datafield>
+    <datafield tag="650" ind1="1" ind2=" ">
+      <subfield code="a">Dictionnaire</subfield>
+    </datafield>
+    <datafield tag="655" ind1=" " ind2="7">
+      <subfield code="a">dictionary</subfield>
+      <subfield code="2">lcsh</subfield>
+    </datafield>
+    <datafield tag="776" ind1=" " ind2=" ">
+      <subfield code="d">Paris: Courbé (Augustin), 1650</subfield>
+    </datafield>
+    <datafield tag="856" ind1=" " ind2="2">
+      <subfield code="q">text/html</subfield>
+    </datafield>
+    <datafield tag="856" ind1=" " ind2=" ">
+      <subfield code="u">http://www.classiques-garnier.com/numerique-bases/index.php?module=App&amp;action=FrameMain&amp;colname=ColCorpusDictionnaires&amp;filename=MenAD01</subfield>
+    </datafield>
+  </record>
+  <record>
+    <leader>00699nam  2200181uu 4500</leader>
+    <controlfield tag="001">classiques-garnier.ColCorpusDictionnaires.NicAD01</controlfield>
+    <controlfield tag="008">070101s2007       |||||||||||||||||fre||</controlfield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="a">Classiques Garnier</subfield>
+    </datafield>
+    <datafield tag="041" ind1="0" ind2=" ">
+      <subfield code="a">fre</subfield>
+    </datafield>
+    <datafield tag="100" ind1="1" ind2=" ">
+      <subfield code="a">Nicot (Jean)</subfield>
+      <subfield code="e">creator</subfield>
+    </datafield>
+    <datafield tag="245" ind1="1" ind2="0">
+      <subfield code="a">Thrésor de la langue françoyse, tant ancienne que moderne</subfield>
+    </datafield>
+    <datafield tag="260" ind1=" " ind2=" ">
+      <subfield code="a">Paris</subfield>
+      <subfield code="b">Douceur (David)</subfield>
+      <subfield code="c">2007</subfield>
+    </datafield>
+    <datafield tag="490" ind1=" " ind2=" ">
+      <subfield code="a">Grand Corpus des dictionnaires [9e-20e s.]</subfield>
+    </datafield>
+    <datafield tag="650" ind1="1" ind2=" ">
+      <subfield code="a">Dictionnaire</subfield>
+    </datafield>
+    <datafield tag="655" ind1=" " ind2="7">
+      <subfield code="a">dictionary</subfield>
+      <subfield code="2">lcsh</subfield>
+    </datafield>
+    <datafield tag="776" ind1=" " ind2=" ">
+      <subfield code="d">Paris: Douceur (David), 1606</subfield>
+    </datafield>
+    <datafield tag="856" ind1=" " ind2="2">
+      <subfield code="q">text/html</subfield>
+    </datafield>
+    <datafield tag="856" ind1=" " ind2=" ">
+      <subfield code="u">http://www.classiques-garnier.com/numerique-bases/index.php?module=App&amp;action=FrameMain&amp;colname=ColCorpusDictionnaires&amp;filename=NicAD01</subfield>
+    </datafield>
+  </record>
+  <record>
+    <leader>00683nam  2200181uu 4500</leader>
+    <controlfield tag="001">classiques-garnier.ColCorpusDictionnaires.RicAD01</controlfield>
+    <controlfield tag="008">070101s2007       |||||||||||||||||fre||</controlfield>
+    <datafield tag="040" ind1=" " ind2=" ">
+      <subfield code="a">Classiques Garnier</subfield>
+    </datafield>
+    <datafield tag="041" ind1="0" ind2=" ">
+      <subfield code="a">fre</subfield>
+    </datafield>
+    <datafield tag="100" ind1="1" ind2=" ">
+      <subfield code="a">Richelet (Pierre)</subfield>
+      <subfield code="e">creator</subfield>
+    </datafield>
+    <datafield tag="245" ind1="1" ind2="0">
+      <subfield code="a">Dictionnaire françois</subfield>
+    </datafield>
+    <datafield tag="260" ind1=" " ind2=" ">
+      <subfield code="a">Genève</subfield>
+      <subfield code="b">Jean Herman Widerhold</subfield>
+      <subfield code="c">2007</subfield>
+    </datafield>
+    <datafield tag="490" ind1=" " ind2=" ">
+      <subfield code="a">Grand Corpus des dictionnaires [9e-20e s.]</subfield>
+    </datafield>
+    <datafield tag="650" ind1="1" ind2=" ">
+      <subfield code="a">Dictionnaire</subfield>
+    </datafield>
+    <datafield tag="655" ind1=" " ind2="7">
+      <subfield code="a">dictionary</subfield>
+      <subfield code="2">lcsh</subfield>
+    </datafield>
+    <datafield tag="776" ind1=" " ind2=" ">
+      <subfield code="d">Genève: Jean Herman Widerhold, 1680</subfield>
+    </datafield>
+    <datafield tag="856" ind1=" " ind2="2">
+      <subfield code="q">text/html</subfield>
+    </datafield>
+    <datafield tag="856" ind1=" " ind2=" ">
+      <subfield code="u">http://www.classiques-garnier.com/numerique-bases/index.php?module=App&amp;action=FrameMain&amp;colname=ColCorpusDictionnaires&amp;filename=RicAD01</subfield>
+    </datafield>
+  </record>
+</collection>

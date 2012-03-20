@@ -1,0 +1,20 @@
+<link rel="stylesheet" type="text/css" href="/stylesheets/bpi-print.css" title="headerBPI" />
+
+<div class="middle doc">
+	
+	<div class="refworksForm">	
+    	<% if @val != nil %>
+			<FORM id="idFormRefWorks" name="ExportRWForm" method="POST"	target="RefWorksMain" action="http://www.refworks.com/express/ExpressImport.asp?vendor=Refer%20Format&filter=RefWorks%20Tagged%20Format&encoding=65001">
+				<TEXTAREA name="ImportData" style="display:none;"><%= @val %></TEXTAREA>
+				<INPUT type="submit" value="Envoyer sur RefWorks" />
+			</FORM>
+			<script>
+				document.getElementById("idFormRefWorks").submit();
+				self.close();
+			</script>
+	    <% else %>
+			<%= translate("ERROR_INFO_DOC") %>
+	    <% end %>
+	</div>
+		
+</div>

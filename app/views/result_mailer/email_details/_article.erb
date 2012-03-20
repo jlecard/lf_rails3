@@ -1,0 +1,45 @@
+<%_from=display_source(article)%>
+<div id="result-row">
+  <%_localopenurl = nil%>
+  <%if article.openurl!=nil%>
+  <%_tmppos = article.openurl.index("?")%>
+  <%if _tmppos != nil %>
+  <%_localopenurl = article.openurl.slice(_tmppos+1, (article.openurl.length-(_tmppos+1)))%>
+  <span class="Z3988" title="<%=_localopenurl%>"></span>
+  <%end%>
+  <%end%>
+  [<%=article.material_type%>]&nbsp;&nbsp;
+  <span id="ptitle">
+    <%if article.direct_url != "" %>
+      <a href=<%=h(article.direct_url)%> target="_blank">
+        <%=article.ptitle%>
+      </a>
+    <%else %>
+      <%=article.ptitle%>
+    <%end %>
+  </span>
+</div>
+<%if article.abstract!=''%>
+  <div id="abstract">
+    <%=short_abstract(article)%>
+  </div>
+<%end %>
+<div id="result-row">
+  <%if article.date!='' and article.date!='00000000'%>
+    <%=display_date(article)%>  &#160;
+  <%end%>
+    <span id="source-italic"">
+      <%=_from%>
+    </span>
+</div>
+<div id="result-row" class='vr' >
+  <%if article.direct_url==nil || article.direct_url==''
+    _settings ||= YAML::load_file(RAILS_ROOT + "/config/config.yml") 
+    _ill_url=_settings['ILL_URL']
+    if _localopenurl!=nil
+      if _ill_url!=nil && _ill_url!=''%>
+        &#160;<a href="<%=_ill_url+_localopenurl%>" target="_blank"><%=translate('INTERLIBRARY_LOAN')%></a>
+      <%end%>
+    <%end%>
+  <%end%>
+</div>  

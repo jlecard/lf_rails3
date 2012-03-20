@@ -51,7 +51,6 @@ class PrimaryDocumentType < ActiveRecord::Base
           cndt = conditions
           #logger.debug("[PrimaryDocumentType] Primary Document Type Name: #{primary_document_type.name} conditions:#{conditions}")
           Notice.update_all("dc_type = '#{primary_document_type.name.gsub(/'/, "\\\\'")}'", "#{conditions}")
-          Collection.update_all("mat_type = '#{primary_document_type.name.gsub(/'/, "\\\\'")}'", "mat_type = '#{old_name}'")
           #Notice.update_all("dc_type = '#{primary_document_type.name}'")
         end
       end

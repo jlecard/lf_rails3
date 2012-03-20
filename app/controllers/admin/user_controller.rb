@@ -35,9 +35,9 @@ class Admin::UserController < ApplicationController
   def initialize
     super
     seek = SearchController.new();
-    @filter_tab = seek.load_filter;
+    @filter_tab = SearchTabFilter.load_filter;
     @linkMenu = seek.load_menu;
-    @groups_tab = seek.load_groups;
+    @groups_tab = SearchTab.load_groups;
   end
 
   def index

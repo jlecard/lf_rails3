@@ -1,0 +1,507 @@
+--- 
+tag_00116: 
+  label: bizarre
+  label_format: bizarre
+  id: 116
+tag_00030: 
+  label: voyage
+  label_format: voyage
+  id: 30
+tag_00089: 
+  label: kaq wak
+  label_format: kaq wak
+  id: 89
+tag_00002: 
+  label: musique classique
+  label_format: musique classique
+  id: 2
+tag_00117: 
+  label: "int\xC3\xA9ressant"
+  label_format: interessant
+  id: 117
+tag_00031: 
+  label: routard
+  label_format: routard
+  id: 31
+tag_00003: 
+  label: mozart
+  label_format: mozart
+  id: 3
+tag_00118: 
+  label: "inint\xC3\xA9ressant"
+  label_format: ininteressant
+  id: 118
+tag_00060: 
+  label: affreux
+  label_format: affreux
+  id: 60
+tag_00032: 
+  label: lonely planet
+  label_format: lonely planet
+  id: 32
+tag_00004: 
+  label: compositeurs
+  label_format: compositeurs
+  id: 4
+tag_00061: 
+  label: "cuisine sal\xC3\xA9e"
+  label_format: cuisine salee
+  id: 61
+tag_00033: 
+  label: liste d'alcoolique
+  label_format: liste d'alcoolique
+  id: 33
+tag_00005: 
+  label: vampire
+  label_format: vampire
+  id: 5
+tag_00119: 
+  label: !binary |
+    cHJpdsOp
+
+  label_format: prive
+  id: 119
+tag_00062: 
+  label: Vieille cuisine bretonne
+  label_format: vieille cuisine bretonne
+  id: 62
+tag_00034: 
+  label: alcool
+  label_format: alcool
+  id: 34
+tag_00006: 
+  label: cuisine
+  label_format: cuisine
+  id: 6
+tag_00090: 
+  label: condorcet
+  label_format: condorcet
+  id: 90
+tag_00035: 
+  label: Situ
+  label_format: situ
+  id: 35
+tag_00007: 
+  label: dracula
+  label_format: dracula
+  id: 7
+tag_00091: 
+  label: ASH
+  label_format: ash
+  id: 91
+tag_00063: 
+  label: gerboulade
+  label_format: gerboulade
+  id: 63
+tag_00036: 
+  label: Vialatte
+  label_format: vialatte
+  id: 36
+tag_00008: 
+  label: "vieux fran\xC3\xA7ais"
+  label_format: vieux francais
+  id: 8
+tag_00092: 
+  label: chouchen
+  label_format: chouchen
+  id: 92
+tag_00064: 
+  label: regalez vous
+  label_format: regalez vous
+  id: 64
+tag_00037: 
+  label: Paulhan
+  label_format: paulhan
+  id: 37
+tag_00009: 
+  label: "fran\xC3\xA7oys"
+  label_format: francoys
+  id: 9
+tag_00093: 
+  label: artichaud
+  label_format: artichaud
+  id: 93
+tag_00065: 
+  label: dietetique
+  label_format: dietetique
+  id: 65
+tag_00120: 
+  label: swift
+  label_format: swift
+  id: 120
+tag_00038: 
+  label: chomage
+  label_format: chomage
+  id: 38
+tag_00094: 
+  label: cuisine sympa
+  label_format: cuisine sympa
+  id: 94
+tag_00066: 
+  label: delice
+  label_format: delice
+  id: 66
+tag_00121: 
+  label: public
+  label_format: public
+  id: 121
+tag_00039: 
+  label: champignon
+  label_format: champignon
+  id: 39
+tag_00095: 
+  label: chou fleur
+  label_format: chou fleur
+  id: 95
+tag_00067: 
+  label: bretagne gastronomie
+  label_format: bretagne gastronomie
+  id: 67
+tag_00122: 
+  label: public2
+  label_format: public2
+  id: 122
+tag_00096: 
+  label: vichy
+  label_format: vichy
+  id: 96
+tag_00068: 
+  label: vampires
+  label_format: vampires
+  id: 68
+tag_00123: 
+  label: "priv\xC3\xA92"
+  label_format: prive2
+  id: 123
+tag_00097: 
+  label: rien
+  label_format: rien
+  id: 97
+tag_00010: 
+  label: langues anciennes
+  label_format: langues anciennes
+  id: 10
+tag_00069: 
+  label: Cuisine Bretagne
+  label_format: cuisine bretagne
+  id: 69
+tag_00124: 
+  label: public 3
+  label_format: public 3
+  id: 124
+tag_00125: 
+  label: "priv\xC3\xA9 3"
+  label_format: prive 3
+  id: 125
+tag_00098: 
+  label: "Gr\xC3\xA8ce "
+  label_format: "grece "
+  id: 98
+tag_00011: 
+  label: mondovino
+  label_format: mondovino
+  id: 11
+tag_00040: 
+  label: "encyclop\xC3\xA9die"
+  label_format: encyclopedie
+  id: 40
+tag_00099: 
+  label: regime
+  label_format: regime
+  id: 99
+tag_00012: 
+  label: vin
+  label_format: vin
+  id: 12
+tag_00041: 
+  label: "lut\xC3\xA8ce"
+  label_format: lutece
+  id: 41
+tag_00013: 
+  label: globalisation
+  label_format: globalisation
+  id: 13
+tag_00014: 
+  label: mondialisation
+  label_format: mondialisation
+  id: 14
+tag_00070: 
+  label: vacances
+  label_format: vacances
+  id: 70
+tag_00042: 
+  label: new york
+  label_format: new york
+  id: 42
+tag_00015: 
+  label: "uniformisation du go\xC3\xBBt"
+  label_format: uniformisation du gout
+  id: 15
+tag_00071: 
+  label: fan de bretagne
+  label_format: fan de bretagne
+  id: 71
+tag_00043: 
+  label: "Lib\xC3\xA9ration"
+  label_format: liberation
+  id: 43
+tag_00016: 
+  label: Etats-Unis
+  label_format: etats-unis
+  id: 16
+tag_00072: 
+  label: "cin\xC3\xA9ma"
+  label_format: cinema
+  id: 72
+tag_00044: 
+  label: Deleuze
+  label_format: deleuze
+  id: 44
+tag_00017: 
+  label: Languedoc
+  label_format: languedoc
+  id: 17
+tag_00073: 
+  label: musique de chambre
+  label_format: musique de chambre
+  id: 73
+tag_00045: 
+  label: Gilles Deleuze
+  label_format: gilles deleuze
+  id: 45
+tag_00100: 
+  label: homards
+  label_format: homards
+  id: 100
+tag_00018: 
+  label: !binary |
+    QsOpYXJu
+
+  label_format: bearn
+  id: 18
+tag_00074: 
+  label: musique
+  label_format: musique
+  id: 74
+tag_00046: 
+  label: Hommage
+  label_format: hommage
+  id: 46
+tag_00101: 
+  label: bretagne libre
+  label_format: bretagne libre
+  id: 101
+tag_00019: 
+  label: Argentine
+  label_format: argentine
+  id: 19
+tag_00075: 
+  label: "bande dessin\xC3\xA9e"
+  label_format: bande dessinee
+  id: 75
+tag_00047: 
+  label: Nietzsche
+  label_format: nietzsche
+  id: 47
+tag_00102: 
+  label: "\xC3\xA0 lire"
+  label_format: a lire
+  id: 102
+tag_00076: 
+  label: chateau
+  label_format: chateau
+  id: 76
+tag_00048: 
+  label: Cahiers de l'Herne
+  label_format: cahiers de l'herne
+  id: 48
+tag_00103: 
+  label: amis
+  label_format: amis
+  id: 103
+tag_00077: 
+  label: cholesterol
+  label_format: cholesterol
+  id: 77
+tag_00049: 
+  label: Heidegger
+  label_format: heidegger
+  id: 49
+tag_00104: 
+  label: "cuisine di\xC3\xA9t\xC3\xA9tique"
+  label_format: cuisine dietetique
+  id: 104
+tag_00078: 
+  label: romantisme
+  label_format: romantisme
+  id: 78
+tag_00105: 
+  label: diners entre amis
+  label_format: diners entre amis
+  id: 105
+tag_00020: 
+  label: Oenologie
+  label_format: oenologie
+  id: 20
+tag_00079: 
+  label: !binary |
+    Y3LDqnBl
+
+  label_format: crepe
+  id: 79
+tag_00106: 
+  label: cool
+  label_format: cool
+  id: 106
+tag_00107: 
+  label: boite
+  label_format: boite
+  id: 107
+tag_00021: 
+  label: Oenologues
+  label_format: oenologues
+  id: 21
+tag_00108: 
+  label: "bol\xC3\xA9ro"
+  label_format: bolero
+  id: 108
+tag_00050: 
+  label: Drogue
+  label_format: drogue
+  id: 50
+tag_00022: 
+  label: histoire du vin
+  label_format: histoire du vin
+  id: 22
+tag_00109: 
+  label: alerte
+  label_format: alerte
+  id: 109
+tag_00051: 
+  label: Pays-Bas
+  label_format: pays-bas
+  id: 51
+tag_00023: 
+  label: "vignoble fran\xC3\xA7ais"
+  label_format: vignoble francais
+  id: 23
+tag_00080: 
+  label: "\xC3\xA9pices asie"
+  label_format: epices asie
+  id: 80
+tag_00052: 
+  label: festival d'Avignon
+  label_format: festival d'avignon
+  id: 52
+tag_00024: 
+  label: France
+  label_format: france
+  id: 24
+tag_00081: 
+  label: Far
+  label_format: far
+  id: 81
+tag_00053: 
+  label: Faivre d'Arcier
+  label_format: faivre d'arcier
+  id: 53
+tag_00025: 
+  label: Vigne
+  label_format: vigne
+  id: 25
+tag_00082: 
+  label: miam
+  label_format: miam
+  id: 82
+tag_00054: 
+  label: chintoc
+  label_format: chintoc
+  id: 54
+tag_00026: 
+  label: Asie
+  label_format: asie
+  id: 26
+tag_00083: 
+  label: brest
+  label_format: brest
+  id: 83
+tag_00055: 
+  label: moyen age
+  label_format: moyen age
+  id: 55
+tag_00110: 
+  label: tagon
+  label_format: tagon
+  id: 110
+tag_00027: 
+  label: Laos
+  label_format: laos
+  id: 27
+tag_00056: 
+  label: pratt
+  label_format: pratt
+  id: 56
+tag_00111: 
+  label: art
+  label_format: art
+  id: 111
+tag_00028: 
+  label: Asie du sud-est
+  label_format: asie du sud-est
+  id: 28
+tag_00084: 
+  label: "Litt\xC3\xA9rature sociale"
+  label_format: litterature sociale
+  id: 84
+tag_00085: 
+  label: cuisine bretonne
+  label_format: cuisine bretonne
+  id: 85
+tag_00057: 
+  label: BD
+  label_format: bd
+  id: 57
+tag_00112: 
+  label: coppola
+  label_format: coppola
+  id: 112
+tag_00029: 
+  label: guide
+  label_format: guide
+  id: 29
+tag_00113: 
+  label: chipolata
+  label_format: chipolata
+  id: 113
+tag_00058: 
+  label: nouvelle cuisine
+  label_format: nouvelle cuisine
+  id: 58
+tag_00086: 
+  label: Tunisia
+  label_format: tunisia
+  id: 86
+tag_00087: 
+  label: kemper
+  label_format: kemper
+  id: 87
+tag_00059: 
+  label: carnac
+  label_format: carnac
+  id: 59
+tag_00114: 
+  label: mondrian
+  label_format: mondrian
+  id: 114
+tag_00088: 
+  label: antilles
+  label_format: antilles
+  id: 88
+tag_00115: 
+  label: topissime
+  label_format: topissime
+  id: 115
+tag_00001: 
+  label: classique
+  label_format: classique
+  id: 1

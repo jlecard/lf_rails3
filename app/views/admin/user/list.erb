@@ -1,0 +1,46 @@
+<div id="page_contents">
+<%= render(:partial => "admin/navigation")%>
+<div id="center"  class="column">
+<h2><%=translate("USERS")%></h2>
+<div id="edit_form">
+ <div class="admin-list">
+  <%   columns_hash=User.columns_hash
+		for column in  @display_columns 
+        _class_name="medium-column"     
+        if column=="full_name" or column=="email" 
+          _class_name="large-column"
+        end %> 
+      <label class="<%=_class_name%>"><%= columns_hash[column].human_name%></label>
+  <% end %>
+    <span class="action-links">&nbsp;</span>
+  </div>
+<br/>
+  
+  <% for user in @users %>
+  <div class="admin-list">
+  <% for column in @display_columns 
+         _class_name="medium-column"
+         if column=="full_name" or column=="email" 
+           _class_name="large-column"
+         end 
+         if user.send(column)==nil or user.send(column)=="" %>
+             <span class="<%=_class_name%>">&nbsp;</span>
+		    <%elsif column=="full_name"%>
+     <span class="<%=_class_name%>"><%= link_to h(user.send(column)), :action => 'show', :id => user %></span>
+        <%else%>
+          <span class="<%=_class_name%>"><%=h user.send(column) %></span>
+     <% end %>
+  <% end %>
+    <span class="action-links">
+      <%= link_to translate("EDIT"), :action => 'edit', :id => user %>&nbsp;&nbsp;
+      <%= link_to translate("DESTROY"), { :action => 'destroy', :id => user }, :confirm => translate("ARE_YOU_SURE"), :method => "post" %></span>
+  </div>
+  <br/>
+<% end %>
+
+
+<%= link_to translate("PREVIOUS_PAGE"), { :page => @user_pages.current.previous } if @user_pages.current.previous %>
+<%= link_to translate("NEXT_PAGE"), { :page => @user_pages.current.next } if @user_pages.current.next %> 
+</div>
+</div>
+</div>

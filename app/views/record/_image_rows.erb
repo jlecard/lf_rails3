@@ -1,0 +1,25 @@
+<%= render(:partial => "messages") %>
+  <%= render(:partial => "errors") %>
+<%= render(:partial => "private") %> 
+<%lf_paginate(12)
+if @results_page!=nil and !@results_page.empty? and !@results.empty?	
+	first_result=(@page*12)-11
+	last_result=first_result+@results_page.length-1%>  
+    <div id='hits'><span><%=translate('RESULTS_HITS',[first_result.to_s,last_result.to_s,get_total_hits.to_s])%></span><%= render(:partial => "sort")%></div>
+<% _i=0
+  for _record in @results_page %>
+    <% if _i % 3 == 0 %>
+      <div id="image_row">
+    <%end %>
+	<div class="image_column">
+    <%=render(:partial => "record/details/image", :object => _record) %>
+	
+  <%=render(:partial => "record/details/image_citation", :object => _record) %>
+  </div>
+    <% if _i % 3 == 2 %>
+      </div>
+    <%end %>
+    <%_i=_i+1 
+  end %>
+  <%=render(:partial => "pagination") %>
+<%end %>

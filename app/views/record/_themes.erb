@@ -1,0 +1,121 @@
+<%if @themes!=nil or @filter.assoc("theme")!=nil %>
+<div id="bThemes" class="navigation">
+    <b><%=translate('THEMES') %></b>
+    <%if @filter.assoc("theme")!=nil
+	    filter=build_unfilter_string("theme")
+	    params=build_filter_params(filter,@tab_template) %>
+	    <%=link_to translate('UNFILTER_THEMES'),
+	    {  :action => 'retrieve_page',
+	    :controller=>'record',
+	    :params=>params},	:onclick=>"scroll(0,0);showWait()", :class=>"unfilter" %>
+    <%end %>
+	<div id="tTheme">
+    
+    	<!-- niveau 1 -->
+            <%count=0
+            @themes.each do |_theme, values|
+		            count=count+1
+		            filter=build_filter_string("theme",_theme)
+		            params=build_filter_params(filter,@tab_template) %>
+					
+					<span>
+						<% if values[1].length >= 1%> 
+							<a name="setEffectToggle" class="linkplus">+</a>
+						<% else %>
+							<a class="linkplus">-</a>
+						<% end %>
+						
+						<div id='tree_<%=count%>' class="navigation">
+		            	<%=link_to translate('RESULTS',[_theme,values[0].to_s]),
+			            {  :action => 'retrieve_page',
+			            :controller=>'record',
+			            :params=>params},	:onclick=>"scroll(0,0);showWait()", :style => "margin-left:0px" %>
+	            
+			
+			            <!-- niveau 2 -->
+							<div name="menuItem" id='sub_tree_<%=count%>' class="navigation">
+			                	<%count2=0
+				                values[1].each do |_theme2, values2|
+						                count2=count2+1
+						                filter2=build_filter_string("theme",_theme2)
+						                params2=build_filter_params(filter2,@tab_template) %>
+										
+										<span>
+											<% if values2[1].length >= 1%> 
+												<a name="setEffectToggle" class="linkplus">+</a>
+											<% else %>
+												<a class="linkplus">-</a>
+											<% end %>
+											<div id='tree_<%=count%>_<%=count2%>' class="navigation">
+							                <%=link_to translate('RESULTS',[_theme2,values2[0].to_s]),
+							                {  :action => 'retrieve_page',
+							                :controller=>'record',
+							                :params=>params2},	:onclick=>"scroll(0,0);showWait()", :style => "margin-left:0px"%>
+					                
+								
+												<!-- niveau 3 -->
+												<div name="menuItem" id='sub_tree_<%=count%>_<%=count2%>' class="navigation">
+									            	<%count3=0
+										            values2[1].each do |_theme3, values3|
+											                if count3<10
+											                count3=count3+1
+											                filter3=build_filter_string("theme",_theme3)
+											                params3=build_filter_params(filter3,@tab_template) %>
+															<span>
+																<a class="linkplus">-</a>
+																
+																<div id='tree_<%=count%>_<%=count2%>_<%=count3%>' class="navigation">
+												                <%=link_to translate('RESULTS',[_theme3,values3[0].to_s]),
+												                {  :action => 'retrieve_page',
+												                :controller=>'record',
+												                :params=>params3},	:onclick=>"scroll(0,0);showWait()", 
+																:style => "margin-left:0px"%>
+																</div>
+															</span>
+															<% end %>
+										            <% end %>
+							            		</div>
+												<!-- fin niveau 3 -->
+											</div>
+										</span>
+								<% end %>
+			            	</div>
+						<!-- fin niveau 2 -->
+					</div>
+				</span>
+          <% end %>
+	<!-- fin niveau 1 -->
+   </div>
+		
+		
+      <!--  <% if @themes.length>10 %>
+        <%=link_to_function translate('MORE_THEMES'), "Element.hide('more_themes_0');Element.show('more_themes');Element.show('themes_1')", {:style=>"text-decoration:underline", :id=>'more_themes_0'} %>
+        <%end %> -->
+		
+        <!-- <%if @themes.length>10 %>
+        <div id='more_themes'>
+        <%multiples=((@themes.length)/10).ceil
+        1.upto(multiples) { |i| %>
+        <div id=<%='themes_'+i.to_s %> style='display:none;'>
+        <%@themes[i*10..(i+1)*10-1].each{|_theme, values|
+        filter=build_filter_string("theme",_theme)
+        params=build_filter_params(filter,@tab_template) %>
+        <%=link_to translate('RESULTS',[_theme,values[0].to_s]),
+        {  :action => 'retrieve_page',
+        :controller=>'record',
+        :params=>params},	:onclick=>"scroll(0,0);showWait()" %>
+        <%} %>
+        <span id=<%='more_themes_'+i.to_s %>><%=link_to_function translate('TOP_THEMES'), "Element.hide('more_themes');Element.show('more_themes_0')", :style=>"text-decoration:underline" %>
+        <%if i<multiples %>
+        <%=link_to_function translate('MORE_THEMES'), "Element.hide('more_themes_"+i.to_s+"');Element.show('themes_"+(i+1).to_s+"');Element.show('more_themes_"+(i+1).to_s+"')", :style=>"text-decoration:underline" %>
+        <%end %>
+        </span>
+        </div>
+        <%} %>
+        </div>
+        <%end %> -->
+</div>
+<script>
+    initMenuAdmin();
+</script>
+<%end %>

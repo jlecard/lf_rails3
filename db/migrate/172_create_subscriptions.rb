@@ -1,6 +1,6 @@
 class CreateSubscriptions < ActiveRecord::Migration
   def self.up
-    create_table (:subscriptions, :primary_key => [:object,:object_id,:uuid]) do |t|
+    create_table(:subscriptions, :primary_key => [:object,:object_id,:uuid]) do |t|
       t.string :object_id
       t.integer :object
       t.datetime :subscription_date

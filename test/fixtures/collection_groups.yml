@@ -1,53 +1,5123 @@
-# LibraryFind - Quality find done better.
-# Copyright (C) 2007 Oregon State University
-#
-# This program is free software; you can redistribute it and/or modify it under 
-# the terms of the GNU General Public License as published by the Free Software 
-# Foundation; either version 2 of the License, or (at your option) any later 
-# version.
-#
-# This program is distributed in the hope that it will be useful, but WITHOUT 
-# ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS 
-# FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
-#
-# You should have received a copy of the GNU General Public License along with 
-# this program; if not, write to the Free Software Foundation, Inc., 59 Temple 
-# Place, Suite 330, Boston, MA 02111-1307 USA
-#
-# Questions or comments on this program may be addressed to:
-#
-# LibraryFind
-# 121 The Valley Library
-# Corvallis OR 97331-4501
-#
-# http://libraryfind.org
 --- 
-collection_groups_001: 
-  name: agriculture
-  enabled: "1"
-  id: "1"
-  description: Collections grouped as Agriculture
+collection_group_00008: 
+  name: a_tout_art
+  display_advanced_search: false
+  rank: 3
+  id: 8
+  enabled: false
+  full_name: Arts
+  description: "G\xC3\xA9n\xC3\xA9ralit\xC3\xA9s + ressources sp\xC3\xA9cialis\xC3\xA9es : Art Index, Oxford Art Online, Francis, etc."
+  tab_id: 1
+collection_group_00482: 
+  name: l_films_docscine_bdd
+  display_advanced_search: false
+  rank: 1
+  id: 482
+  enabled: false
+  full_name: "Bases de donn\xC3\xA9es"
+  description: ""
+  tab_id: 0
+collection_group_00292: 
+  name: l_films_exth_shs_socio_viequotidienne
+  display_advanced_search: false
+  rank: 334
+  id: 292
+  enabled: false
+  full_name: Vie quotidienne
+  description: ""
+  tab_id: 0
+collection_group_00435: 
+  name: n_sites_exth_shs_education
+  display_advanced_search: false
+  rank: 419
+  id: 435
+  enabled: false
+  full_name: Education
+  description: ""
+  tab_id: 0
+collection_group_00245: 
+  name: l_films_exth_stm_maths_chimie
+  display_advanced_search: false
+  rank: 347
+  id: 245
+  enabled: false
+  full_name: Chimie
+  description: ""
+  tab_id: 0
+collection_group_00055: 
+  name: g_sites_test 2
+  display_advanced_search: true
+  rank: 5
+  id: 55
+  enabled: false
+  full_name: Sites test 2
+  description: ""
+  tab_id: 0
+collection_group_00009: 
+  name: "a_tout_droit,\xC3\xA9co"
+  display_advanced_search: false
+  rank: 7
+  id: 9
+  enabled: false
+  full_name: "Droit, \xC3\xA9conomie, gestion"
+  description: "G\xC3\xA9n\xC3\xA9ralit\xC3\xA9s + ressources sp\xC3\xA9cialis\xC3\xA9es : Lextenso, Pais, IBSS"
+  tab_id: 1
+collection_group_00483: 
+  name: l_films_docscine_sites_tous
+  display_advanced_search: false
+  rank: 102
+  id: 483
+  enabled: false
+  full_name: Tous les documents
+  description: ""
+  tab_id: 0
+collection_group_00293: 
+  name: l_films_exth_shs_ethno_ethnologues
+  display_advanced_search: false
+  rank: 297
+  id: 293
+  enabled: false
+  full_name: Ethnologues
+  description: ""
+  tab_id: 0
+collection_group_00436: 
+  name: n_sites_exth_shs_infocom
+  display_advanced_search: false
+  rank: 423
+  id: 436
+  enabled: false
+  full_name: Sciences de l'information et de la communication
+  description: ""
+  tab_id: 0
+collection_group_00246: 
+  name: l_films_exth_stm_maths_maths
+  display_advanced_search: false
+  rank: 348
+  id: 246
+  enabled: false
+  full_name: "Math\xC3\xA9matiques"
+  description: ""
+  tab_id: 0
+collection_group_00056: 
+  name: a_tout_test 3
+  display_advanced_search: false
+  rank: 9
+  id: 56
+  enabled: false
+  full_name: Test3
+  description: ""
+  tab_id: 7
+collection_group_00294: 
+  name: l_films_exth_shs_ethno_pays_france
+  display_advanced_search: false
+  rank: 302
+  id: 294
+  enabled: false
+  full_name: Etudes par pays, France
+  description: ""
+  tab_id: 0
+collection_group_00437: 
+  name: n_sites_exth_shs_geo
+  display_advanced_search: false
+  rank: 422
+  id: 437
+  enabled: false
+  full_name: "G\xC3\xA9ographie, urbanisme"
+  description: ""
+  tab_id: 0
+collection_group_00247: 
+  name: l_films_exth_stm_maths_phys
+  display_advanced_search: false
+  rank: 349
+  id: 247
+  enabled: false
+  full_name: Physique
+  description: ""
+  tab_id: 0
+collection_group_00057: 
+  name: h_tout_Recherche d'emploi_Emploi
+  display_advanced_search: false
+  rank: 1
+  id: 57
+  enabled: false
+  full_name: Recherche d'emploi
+  description: ""
+  tab_id: 0
+collection_group_00295: 
+  name: l_films_exth_shs_ethno_pays_afrique
+  display_advanced_search: false
+  rank: 298
+  id: 295
+  enabled: false
+  full_name: Etudes par pays, Afrique
+  description: ""
+  tab_id: 0
+collection_group_00438: 
+  name: n_sites_exth_pra_repertoires
+  display_advanced_search: false
+  rank: 416
+  id: 438
+  enabled: false
+  full_name: "R\xC3\xA9pertoires g\xC3\xA9n\xC3\xA9raux d'adresses"
+  description: ""
+  tab_id: 0
+collection_group_00248: 
+  name: l_films_exth_stm_stu_gene
+  display_advanced_search: false
+  rank: 356
+  id: 248
+  enabled: false
+  full_name: "Sciences de la Terre, g\xC3\xA9n\xC3\xA9ralit\xC3\xA9s"
+  description: ""
+  tab_id: 0
+collection_group_00058: 
+  name: h_tout_Recherche d'emploi_Orientation
+  display_advanced_search: true
+  rank: 1
+  id: 58
+  enabled: false
+  full_name: "Orientation, m\xC3\xA9tiers, formation"
+  description: ""
+  tab_id: 0
+collection_group_00296: 
+  name: l_films_exth_shs_ethno_pays_amerique
+  display_advanced_search: false
+  rank: 299
+  id: 296
+  enabled: false
+  full_name: "Etudes par pays, Am\xC3\xA9rique"
+  description: ""
+  tab_id: 0
+collection_group_00439: 
+  name: n_sites_exth_pra_demarches
+  display_advanced_search: false
+  rank: 411
+  id: 439
+  enabled: false
+  full_name: "D\xC3\xA9marches administratives et juridiques"
+  description: ""
+  tab_id: 0
+collection_group_00249: 
+  name: l_films_exth_stm_stu_geologie
+  display_advanced_search: false
+  rank: 357
+  id: 249
+  enabled: false
+  full_name: "G\xC3\xA9ologie"
+  description: ""
+  tab_id: 0
+collection_group_00059: 
+  name: h_tout_hist_de_France
+  display_advanced_search: false
+  rank: 40
+  id: 59
+  enabled: false
+  full_name: "Histoire de France, g\xC3\xA9n\xC3\xA9alogie"
+  description: ""
+  tab_id: 0
+collection_group_00297: 
+  name: l_films_exth_shs_ethno_pays_asie
+  display_advanced_search: false
+  rank: 300
+  id: 297
+  enabled: false
+  full_name: Etudes par pays, Asie
+  description: ""
+  tab_id: 0
+collection_group_00300: 
+  name: l_films_exth_shs_polit_pays_france
+  display_advanced_search: false
+  rank: 315
+  id: 300
+  enabled: false
+  full_name: Etudes par pays, France
+  description: ""
+  tab_id: 0
+collection_group_00488: 
+  name: l_films_docscine_docsonor
+  display_advanced_search: false
+  rank: 1
+  id: 488
+  enabled: false
+  full_name: Documents sonores
+  description: ""
+  tab_id: 0
+collection_group_00298: 
+  name: l_films_exth_shs_ethno_pays_europe
+  display_advanced_search: false
+  rank: 301
+  id: 298
+  enabled: false
+  full_name: Etudes par pays, Europe
+  description: ""
+  tab_id: 0
+collection_group_00301: 
+  name: l_films_exth_shs_polit_pays_afrique
+  display_advanced_search: false
+  rank: 311
+  id: 301
+  enabled: false
+  full_name: Etudes par pays, Afrique
+  description: ""
+  tab_id: 0
+collection_group_00111: 
+  name: h_tout_stm_informatique
+  display_advanced_search: false
+  rank: 1
+  id: 111
+  enabled: false
+  full_name: Sciences techniques, informatique
+  description: ""
+  tab_id: 0
+collection_group_00489: 
+  name: l_films_docscine_didact
+  display_advanced_search: false
+  rank: 1
+  id: 489
+  enabled: false
+  full_name: Didacticiels
+  description: ""
+  tab_id: 0
+collection_group_00299: 
+  name: l_films_exth_shs_ethno_pays_oceanie
+  display_advanced_search: false
+  rank: 303
+  id: 299
+  enabled: false
+  full_name: "Etudes par pays, Oc\xC3\xA9anie"
+  description: ""
+  tab_id: 0
+collection_group_00302: 
+  name: l_films_exth_shs_polit_pays_amerique
+  display_advanced_search: false
+  rank: 312
+  id: 302
+  enabled: false
+  full_name: "Etudes par pays, Am\xC3\xA9rique"
+  description: ""
+  tab_id: 0
+collection_group_00112: 
+  name: h_tout_stm_industrie
+  display_advanced_search: false
+  rank: 1
+  id: 112
+  enabled: false
+  full_name: Sciences techniques, industrie et artisanat
+  description: ""
+  tab_id: 0
+collection_group_00160: 
+  name: l_films_exth_arts_mus_concerts_rock
+  display_advanced_search: false
+  rank: 210
+  id: 160
+  enabled: false
+  full_name: "Concerts film\xC3\xA9s, rock"
+  description: ""
+  tab_id: 0
+collection_group_00303: 
+  name: l_films_exth_shs_polit_pays_asie
+  display_advanced_search: false
+  rank: 313
+  id: 303
+  enabled: false
+  full_name: Etudes par pays, Asie
+  description: ""
+  tab_id: 0
+collection_group_00113: 
+  name: h_tout_stm_sciences_terre
+  display_advanced_search: false
+  rank: 1
+  id: 113
+  enabled: false
+  full_name: Sciences techniques, sciences de la terre
+  description: ""
+  tab_id: 0
+collection_group_00540: 
+  name: k_musique_exty_concerts_classique
+  display_advanced_search: false
+  rank: 1
+  id: 540
+  enabled: false
+  full_name: "Classique (concerts film\xC3\xA9s)"
+  description: ""
+  tab_id: 0
+collection_group_00350: 
+  name: l_films_exge_docu_stm_stu
+  display_advanced_search: false
+  rank: 175
+  id: 350
+  enabled: false
+  full_name: Sciences de la Terre et de l'Univers
+  description: ""
+  tab_id: 0
+collection_group_00161: 
+  name: l_films_exth_arts_mus_concerts_soul
+  display_advanced_search: false
+  rank: 211
+  id: 161
+  enabled: false
+  full_name: "Concerts film\xC3\xA9s, soul, rap, reggae"
+  description: ""
+  tab_id: 0
+collection_group_00304: 
+  name: l_films_exth_shs_polit_pays_moyeno
+  display_advanced_search: false
+  rank: 316
+  id: 304
+  enabled: false
+  full_name: Etudes par pays, Moyen-Orient
+  description: ""
+  tab_id: 0
+collection_group_00541: 
+  name: k_musique_exty_concerts_monde
+  display_advanced_search: false
+  rank: 1
+  id: 541
+  enabled: false
+  full_name: "Musiques du monde (concerts film\xC3\xA9s)"
+  description: ""
+  tab_id: 0
+collection_group_00351: 
+  name: l_films_exge_docu_stm_scvie
+  display_advanced_search: false
+  rank: 174
+  id: 351
+  enabled: false
+  full_name: Sciences de la vie
+  description: ""
+  tab_id: 0
+collection_group_00305: 
+  name: l_films_exth_shs_polit_pays_europe
+  display_advanced_search: false
+  rank: 314
+  id: 305
+  enabled: false
+  full_name: Etudes par pays, Europe
+  description: ""
+  tab_id: 0
+collection_group_00115: 
+  name: h_tout_pratique_demarches
+  display_advanced_search: false
+  rank: 3
+  id: 115
+  enabled: false
+  full_name: "Vie pratique, d\xC3\xA9marches administratives"
+  description: ""
+  tab_id: 0
+collection_group_00542: 
+  name: k_musique_exty_concerts_opera
+  display_advanced_search: false
+  rank: 1
+  id: 542
+  enabled: false
+  full_name: "Op\xC3\xA9ra (concerts film\xC3\xA9s)"
+  description: ""
+  tab_id: 0
+collection_group_00352: 
+  name: l_films_exge_docu_stm_med
+  display_advanced_search: false
+  rank: 173
+  id: 352
+  enabled: false
+  full_name: "M\xC3\xA9decine"
+  description: ""
+  tab_id: 0
+collection_group_00162: 
+  name: l_films_exth_arts_mus_docu_gene
+  display_advanced_search: false
+  rank: 216
+  id: 162
+  enabled: false
+  full_name: "Documentaires musicaux, g\xC3\xA9n\xC3\xA9ralit\xC3\xA9s"
+  description: ""
+  tab_id: 0
+collection_group_00306: 
+  name: l_films_exth_shs_polit_pays_oceanie
+  display_advanced_search: false
+  rank: 317
+  id: 306
+  enabled: false
+  full_name: "Etudes par pays, Oc\xC3\xA9anie"
+  description: ""
+  tab_id: 0
+collection_group_00116: 
+  name: h_tout_pratique_Paris
+  display_advanced_search: false
+  rank: 8
+  id: 116
+  enabled: false
+  full_name: Vie pratique, Paris et Ile-de-France
+  description: ""
+  tab_id: 0
+collection_group_00543: 
+  name: k_musique_exty_concerts_rock
+  display_advanced_search: false
+  rank: 1
+  id: 543
+  enabled: false
+  full_name: "Rock (concerts film\xC3\xA9s)"
+  description: ""
+  tab_id: 0
+collection_group_00353: 
+  name: l_films_exge_docu_stm_inge
+  display_advanced_search: false
+  rank: 171
+  id: 353
+  enabled: false
+  full_name: "Sciences de l'ing\xC3\xA9nieur"
+  description: ""
+  tab_id: 0
+collection_group_00163: 
+  name: l_films_exth_arts_mus_docu_blues
+  display_advanced_search: false
+  rank: 212
+  id: 163
+  enabled: false
+  full_name: Documentaires musicaux, blues, jazz
+  description: ""
+  tab_id: 0
+collection_group_00307: 
+  name: l_films_exth_shs_polit_propagande
+  display_advanced_search: false
+  rank: 319
+  id: 307
+  enabled: false
+  full_name: Information, propagande
+  description: ""
+  tab_id: 0
+collection_group_00117: 
+  name: h_tout_pratique_vie affective
+  display_advanced_search: false
+  rank: 4
+  id: 117
+  enabled: false
+  full_name: Vie pratique, Vie affective et familiale
+  description: ""
+  tab_id: 0
+collection_group_00544: 
+  name: k_musique_exty_concerts_soul
+  display_advanced_search: false
+  rank: 1
+  id: 544
+  enabled: false
+  full_name: "Soul, rap, reggae (concerts film\xC3\xA9s)"
+  description: ""
+  tab_id: 0
+collection_group_00354: 
+  name: l_films_exge_docu_stm_agri
+  display_advanced_search: false
+  rank: 167
+  id: 354
+  enabled: false
+  full_name: Agriculture et alimentation
+  description: ""
+  tab_id: 0
+collection_group_00164: 
+  name: l_films_exth_arts_mus_docu_chanson
+  display_advanced_search: false
+  rank: 213
+  id: 164
+  enabled: false
+  full_name: "Documentaires musicaux, chanson fran\xC3\xA7aise"
+  description: ""
+  tab_id: 0
+collection_group_00308: 
+  name: "l_films_exth_shs_polit_pens\xC3\xA9e"
+  display_advanced_search: false
+  rank: 318
+  id: 308
+  enabled: false
+  full_name: "Pens\xC3\xA9e politique"
+  description: ""
+  tab_id: 0
+collection_group_00118: 
+  name: h_tout_pratique_logement
+  display_advanced_search: false
+  rank: 6
+  id: 118
+  enabled: false
+  full_name: Vie pratique, logement
+  description: ""
+  tab_id: 0
+collection_group_00545: 
+  name: "k_musique_exty_films_g\xC3\xA9n\xC3\xA9ralit\xC3\xA9s"
+  display_advanced_search: false
+  rank: 1
+  id: 545
+  enabled: false
+  full_name: "G\xC3\xA9n\xC3\xA9ralit\xC3\xA9s (films)"
+  description: ""
+  tab_id: 0
+collection_group_00355: 
+  name: l_films_exge_docu_stm_transports
+  display_advanced_search: false
+  rank: 176
+  id: 355
+  enabled: false
+  full_name: Transports
+  description: ""
+  tab_id: 0
+collection_group_00165: 
+  name: l_films_exth_arts_mus_docu_compo
+  display_advanced_search: false
+  rank: 214
+  id: 165
+  enabled: false
+  full_name: Documentaires musicaux, compositeurs
+  description: ""
+  tab_id: 0
+collection_group_00309: 
+  name: l_films_exth_shs_polit_immigration
+  display_advanced_search: false
+  rank: 309
+  id: 309
+  enabled: false
+  full_name: Politique de l'immigation
+  description: ""
+  tab_id: 0
+collection_group_00119: 
+  name: h_tout_pratique_solidarite
+  display_advanced_search: false
+  rank: 5
+  id: 119
+  enabled: false
+  full_name: "Vie pratique, solidarit\xC3\xA9 et sant\xC3\xA9"
+  description: ""
+  tab_id: 0
+collection_group_00593: 
+  name: a_tout_interne
+  display_advanced_search: true
+  rank: 1
+  id: 593
+  enabled: false
+  full_name: Catalogue Bpi
+  description: ""
+  tab_id: 1
+collection_group_00546: 
+  name: k_musique_exty_films_blues
+  display_advanced_search: false
+  rank: 1
+  id: 546
+  enabled: false
+  full_name: Blues, jazz (films)
+  description: ""
+  tab_id: 0
+collection_group_00356: 
+  name: l_films_exge_docu_stm_indus
+  display_advanced_search: false
+  rank: 169
+  id: 356
+  enabled: false
+  full_name: Industrie et artisanat
+  description: ""
+  tab_id: 0
+collection_group_00166: 
+  name: l_films_exth_arts_mus_docu_instr
+  display_advanced_search: false
+  rank: 217
+  id: 166
+  enabled: false
+  full_name: Documentaires musicaux, instruments
+  description: ""
+  tab_id: 0
+collection_group_00547: 
+  name: k_musique_exty_films_chanson
+  display_advanced_search: false
+  rank: 1
+  id: 547
+  enabled: false
+  full_name: "Chanson fran\xC3\xA7aise (films)"
+  description: ""
+  tab_id: 0
+collection_group_00357: 
+  name: l_films_exge_docu_stm_informatique
+  display_advanced_search: false
+  rank: 170
+  id: 357
+  enabled: false
+  full_name: Informatique
+  description: ""
+  tab_id: 0
+collection_group_00167: 
+  name: l_films_exth_arts_mus_docu_interp
+  display_advanced_search: false
+  rank: 218
+  id: 167
+  enabled: false
+  full_name: "Documentaires musicaux, interpr\xC3\xA8tes"
+  description: ""
+  tab_id: 0
+collection_group_00548: 
+  name: k_musique_exty_films_compositeurs
+  display_advanced_search: false
+  rank: 1
+  id: 548
+  enabled: false
+  full_name: Compositeurs (films)
+  description: ""
+  tab_id: 0
+collection_group_00358: 
+  name: l_films_exge_docu_shs_psy
+  display_advanced_search: false
+  rank: 165
+  id: 358
+  enabled: false
+  full_name: Psychologie, psychanalyse
+  description: ""
+  tab_id: 0
+collection_group_00168: 
+  name: l_films_exth_arts_mus_docu_monde
+  display_advanced_search: false
+  rank: 219
+  id: 168
+  enabled: false
+  full_name: Documentaires musicaux, musiques du monde
+  description: ""
+  tab_id: 0
+collection_group_00596: 
+  name: b_livres_Manuels
+  display_advanced_search: false
+  rank: 7
+  id: 596
+  enabled: false
+  full_name: Manuels
+  description: "Manuels d'enseignement "
+  tab_id: 2
+collection_group_00549: 
+  name: k_musique_exty_films_instruments
+  display_advanced_search: false
+  rank: 1
+  id: 549
+  enabled: false
+  full_name: Instruments (films)
+  description: ""
+  tab_id: 0
+collection_group_00359: 
+  name: l_films_exge_docu_shs_socio
+  display_advanced_search: false
+  rank: 166
+  id: 359
+  enabled: false
+  full_name: "Sociologie, d\xC3\xA9mographie"
+  description: ""
+  tab_id: 0
+collection_group_00169: 
+  name: l_films_exth_arts_mus_docu_rock
+  display_advanced_search: false
+  rank: 220
+  id: 169
+  enabled: false
+  full_name: Documentaires musicaux, rock
+  description: ""
+  tab_id: 0
+collection_group_00597: 
+  name: d_musique_citemusique
+  display_advanced_search: false
+  rank: 1
+  id: 597
+  enabled: false
+  full_name: "Cit\xC3\xA9 de la musique"
+  description: "Ressources de la Cit\xC3\xA9 de la musique"
+  tab_id: 0
+collection_group_00600: 
+  name: "k_musique_exty_concertsfim\xC3\xA9s"
+  display_advanced_search: false
+  rank: 1
+  id: 600
+  enabled: false
+  full_name: "Concerts film\xC3\xA9s"
+  description: "Concerts film\xC3\xA9s"
+  tab_id: 0
+collection_group_00410: 
+  name: n_sites_exth_litt_generale
+  display_advanced_search: false
+  rank: 1
+  id: 410
+  enabled: false
+  full_name: "Litt\xC3\xA9rature g\xC3\xA9n\xC3\xA9rale"
+  description: ""
+  tab_id: 0
+collection_group_00598: 
+  name: j_articles_exge_dospresse
+  display_advanced_search: false
+  rank: 1
+  id: 598
+  enabled: false
+  full_name: Dossiers de presse
+  description: ""
+  tab_id: 0
+collection_group_00220: 
+  name: l_films_exth_lst_sports_golf
+  display_advanced_search: false
+  rank: 272
+  id: 220
+  enabled: false
+  full_name: Golf
+  description: ""
+  tab_id: 0
+collection_group_00030: 
+  name: d_musique_musiqueaudio
+  display_advanced_search: true
+  rank: 5
+  id: 30
+  enabled: false
+  full_name: Musique (audio)
+  description: "Chercher de la musique \xC3\xA0 \xC3\xA9couter"
+  tab_id: 4
+collection_group_00601: 
+  name: k_musique_exty_sites
+  display_advanced_search: false
+  rank: 1
+  id: 601
+  enabled: false
+  full_name: Sites internet sur la musique
+  description: ""
+  tab_id: 0
+collection_group_00411: 
+  name: n_sites_exth_litt_francaise
+  display_advanced_search: false
+  rank: 1
+  id: 411
+  enabled: false
+  full_name: "Litt\xC3\xA9rature de langue fran\xC3\xA7aise"
+  description: ""
+  tab_id: 0
+collection_group_00599: 
+  name: k_musique_exty_documentairesmus
+  display_advanced_search: false
+  rank: 1
+  id: 599
+  enabled: false
+  full_name: Documentaires musicaux
+  description: Films documentaires
+  tab_id: 0
+collection_group_00221: 
+  name: l_films_exth_lst_sports_natation
+  display_advanced_search: false
+  rank: 274
+  id: 221
+  enabled: false
+  full_name: Natation
+  description: ""
+  tab_id: 0
+collection_group_00031: 
+  name: d_musique_partitions
+  display_advanced_search: true
+  rank: 6
+  id: 31
+  enabled: false
+  full_name: Partitions
+  description: Chercher des partitions de musique
+  tab_id: 4
+collection_group_00602: 
+  name: k_musique_exty_musenligne
+  display_advanced_search: false
+  rank: 1
+  id: 602
+  enabled: false
+  full_name: Musique en ligne
+  description: ""
+  tab_id: 0
+collection_group_00412: 
+  name: n_sites_exth_litt_etrangeres
+  display_advanced_search: false
+  rank: 1
+  id: 412
+  enabled: false
+  full_name: "Litt\xC3\xA9ratures \xC3\xA9trang\xC3\xA8res"
+  description: ""
+  tab_id: 0
+collection_group_00032: 
+  name: d_musique_films
+  display_advanced_search: true
+  rank: 4
+  id: 32
+  enabled: false
+  full_name: "Concerts film\xC3\xA9s et documentaires"
+  description: "Chercher des concerts film\xC3\xA9s et documentaires sur la musique"
+  tab_id: 4
+collection_group_00080: 
+  name: h_tout_art_19e
+  display_advanced_search: false
+  rank: 18
+  id: 80
+  enabled: false
+  full_name: "Art jusqu'au 19e "
+  description: ""
+  tab_id: 0
+collection_group_00603: 
+  name: k_musique_exge_rapsoulfunk
+  display_advanced_search: false
+  rank: 1
+  id: 603
+  enabled: false
+  full_name: Rap, soul, funk
+  description: ""
+  tab_id: 0
+collection_group_00413: 
+  name: n_sites_exth_lst_loisirs
+  display_advanced_search: false
+  rank: 405
+  id: 413
+  enabled: false
+  full_name: Loisirs
+  description: ""
+  tab_id: 0
+collection_group_00223: 
+  name: l_films_exth_lst_sports_pelote
+  display_advanced_search: false
+  rank: 275
+  id: 223
+  enabled: false
+  full_name: Pelote basque
+  description: ""
+  tab_id: 0
+collection_group_00033: 
+  name: d_musique_livres
+  display_advanced_search: true
+  rank: 3
+  id: 33
+  enabled: false
+  full_name: Livres sur la musique
+  description: Chercher des livres sur la musique
+  tab_id: 4
+collection_group_00460: 
+  name: l_films_exge_anim_cm_pol
+  display_advanced_search: false
+  rank: 1
+  id: 460
+  enabled: false
+  full_name: Pologne
+  description: ""
+  tab_id: 0
+collection_group_00270: 
+  name: l_films_exth_stm_transp_maritime
+  display_advanced_search: false
+  rank: 366
+  id: 270
+  enabled: false
+  full_name: Transport maritime et fluvial
+  description: ""
+  tab_id: 0
+collection_group_00604: 
+  name: k_musique_exge_rock
+  display_advanced_search: false
+  rank: 1
+  id: 604
+  enabled: false
+  full_name: Rock
+  description: ""
+  tab_id: 0
+collection_group_00414: 
+  name: n_sites_exth_lst_sports
+  display_advanced_search: false
+  rank: 406
+  id: 414
+  enabled: false
+  full_name: Sports
+  description: ""
+  tab_id: 0
+collection_group_00224: 
+  name: l_films_exth_lst_sports_rugby
+  display_advanced_search: false
+  rank: 276
+  id: 224
+  enabled: false
+  full_name: Rugby
+  description: ""
+  tab_id: 0
+collection_group_00034: 
+  name: d_musique_articles
+  display_advanced_search: true
+  rank: 2
+  id: 34
+  enabled: false
+  full_name: Articles et revues sur la musique
+  description: Chercher des articles et revues sur la musique
+  tab_id: 4
+collection_group_00461: 
+  name: l_films_exge_anim_cm_reptch
+  display_advanced_search: false
+  rank: 1
+  id: 461
+  enabled: false
+  full_name: "R\xC3\xA9publique tch\xC3\xA8que"
+  description: ""
+  tab_id: 0
+collection_group_00271: 
+  name: l_films_exth_stm_transp_publics
+  display_advanced_search: false
+  rank: 367
+  id: 271
+  enabled: false
+  full_name: Transports publics
+  description: ""
+  tab_id: 0
+collection_group_00081: 
+  name: h_tout_art_20e
+  display_advanced_search: false
+  rank: 19
+  id: 81
+  enabled: false
+  full_name: Art des 20e et 21e
+  description: ""
+  tab_id: 0
+collection_group_00605: 
+  name: l_films_exge_anim_lmm
+  display_advanced_search: false
+  rank: 1
+  id: 605
+  enabled: false
+  full_name: "Longs et moyens m\xC3\xA9trages"
+  description: ""
+  tab_id: 0
+collection_group_00415: 
+  name: n_sites_exth_lst_tourisme
+  display_advanced_search: false
+  rank: 407
+  id: 415
+  enabled: false
+  full_name: Tourisme
+  description: ""
+  tab_id: 0
+collection_group_00225: 
+  name: l_films_exth_lst_sports_ski
+  display_advanced_search: false
+  rank: 277
+  id: 225
+  enabled: false
+  full_name: Ski
+  description: ""
+  tab_id: 0
+collection_group_00035: 
+  name: d_musique_sites et bases
+  display_advanced_search: true
+  rank: 6
+  id: 35
+  enabled: false
+  full_name: Sites internet et bases
+  description: Chercher des sites web et bases sur la musique
+  tab_id: 4
+collection_group_00462: 
+  name: l_films_exge_anim_cm_russie
+  display_advanced_search: false
+  rank: 1
+  id: 462
+  enabled: false
+  full_name: Russie
+  description: ""
+  tab_id: 0
+collection_group_00272: 
+  name: l_films_exth_stm_indus_artisanat
+  display_advanced_search: false
+  rank: 338
+  id: 272
+  enabled: false
+  full_name: Artisanat
+  description: ""
+  tab_id: 0
+collection_group_00082: 
+  name: h_tout_art_architecture
+  display_advanced_search: false
+  rank: 20
+  id: 82
+  enabled: false
+  full_name: Art, Architecture
+  description: ""
+  tab_id: 0
+collection_group_00606: 
+  name: l_films_exge_anim_cm
+  display_advanced_search: false
+  rank: 1
+  id: 606
+  enabled: false
+  full_name: "Courts m\xC3\xA9trages"
+  description: ""
+  tab_id: 0
+collection_group_00416: 
+  name: n_sites_exth_philorel_philo
+  display_advanced_search: false
+  rank: 408
+  id: 416
+  enabled: false
+  full_name: Philosophie
+  description: ""
+  tab_id: 0
+collection_group_00226: 
+  name: l_films_exth_lst_sports_surf
+  display_advanced_search: false
+  rank: 278
+  id: 226
+  enabled: false
+  full_name: Surf
+  description: ""
+  tab_id: 0
+collection_group_00036: 
+  name: d_musique_test 1
+  display_advanced_search: true
+  rank: 7
+  id: 36
+  enabled: false
+  full_name: Musique test 1
+  description: ""
+  tab_id: 0
+collection_group_00463: 
+  name: l_films_exge_anim_cm_sui
+  display_advanced_search: false
+  rank: 1
+  id: 463
+  enabled: false
+  full_name: Suisse
+  description: ""
+  tab_id: 0
+collection_group_00273: 
+  name: l_films_exth_stm_indus_industrie
+  display_advanced_search: false
+  rank: 339
+  id: 273
+  enabled: false
+  full_name: Industrie
+  description: ""
+  tab_id: 0
+collection_group_00083: 
+  name: h_tout_art_artsdeco
+  display_advanced_search: false
+  rank: 21
+  id: 83
+  enabled: false
+  full_name: "Arts, Arts d\xC3\xA9coratifs"
+  description: ""
+  tab_id: 0
+collection_group_00607: 
+  name: CDRAP
+  display_advanced_search: false
+  rank: 1
+  id: 607
+  enabled: false
+  full_name: CDRAP
+  description: ""
+  tab_id: 1
+collection_group_00417: 
+  name: n_sites_exth_philorel_religions
+  display_advanced_search: false
+  rank: 409
+  id: 417
+  enabled: false
+  full_name: Religions
+  description: ""
+  tab_id: 0
+collection_group_00227: 
+  name: l_films_exth_lst_sports_tennis
+  display_advanced_search: false
+  rank: 279
+  id: 227
+  enabled: false
+  full_name: Tennis
+  description: ""
+  tab_id: 0
+collection_group_00037: 
+  name: d_musique_test 2
+  display_advanced_search: true
+  rank: 8
+  id: 37
+  enabled: false
+  full_name: Musique test 2
+  description: ""
+  tab_id: 0
+collection_group_00464: 
+  name: l_films_exge_anim_cm_ci
+  display_advanced_search: false
+  rank: 1
+  id: 464
+  enabled: false
+  full_name: Compilations internationales
+  description: ""
+  tab_id: 0
+collection_group_00274: 
+  name: "l_films_exth_stm_indus_m\xC3\xA9tiers"
+  display_advanced_search: false
+  rank: 340
+  id: 274
+  enabled: false
+  full_name: "Petits m\xC3\xA9tiers"
+  description: ""
+  tab_id: 0
+collection_group_00084: 
+  name: h_tout_art_graphisme
+  display_advanced_search: false
+  rank: 24
+  id: 84
+  enabled: false
+  full_name: Art, Graphisme, BD
+  description: ""
+  tab_id: 0
+collection_group_00608: 
+  name: keesing
+  display_advanced_search: false
+  rank: 1
+  id: 608
+  enabled: false
+  full_name: keesing
+  description: ""
+  tab_id: 1
+collection_group_00418: 
+  name: n_sites_exth_emploi_orientation
+  display_advanced_search: false
+  rank: 1
+  id: 418
+  enabled: false
+  full_name: "Orientation, formation, m\xC3\xA9tiers"
+  description: ""
+  tab_id: 0
+collection_group_00228: 
+  name: l_films_exth_lst_tourisme_afrique
+  display_advanced_search: false
+  rank: 280
+  id: 228
+  enabled: false
+  full_name: Tourisme, Afrique
+  description: ""
+  tab_id: 0
+collection_group_00038: 
+  name: e_films_filmsuniquement
+  display_advanced_search: true
+  rank: 1
+  id: 38
+  enabled: false
+  full_name: Films uniquement
+  description: "Chercher dans les films disponibles \xC3\xA0 la Bpi"
+  tab_id: 5
+collection_group_00465: 
+  name: l_films_exge_anim_cme
+  display_advanced_search: false
+  rank: 1
+  id: 465
+  enabled: false
+  full_name: "Courts-m\xC3\xA9trages d'\xC3\xA9cole"
+  description: ""
+  tab_id: 0
+collection_group_00275: 
+  name: l_films_exth_stm_informatique
+  display_advanced_search: false
+  rank: 341
+  id: 275
+  enabled: false
+  full_name: Informatique
+  description: ""
+  tab_id: 0
+collection_group_00085: 
+  name: h_tout_art_photo
+  display_advanced_search: false
+  rank: 25
+  id: 85
+  enabled: false
+  full_name: Art, Photographie
+  description: ""
+  tab_id: 0
+collection_group_00609: 
+  name: CRAWLER
+  display_advanced_search: false
+  rank: 1
+  id: 609
+  enabled: false
+  full_name: CRAWLER
+  description: ""
+  tab_id: 1
+collection_group_00419: 
+  name: n_sites_exth_emploi_recherche
+  display_advanced_search: false
+  rank: 1
+  id: 419
+  enabled: false
+  full_name: Recherche d'emploi
+  description: ""
+  tab_id: 0
+collection_group_00229: 
+  name: l_films_exth_lst_tourisme_amnord
+  display_advanced_search: false
+  rank: 282
+  id: 229
+  enabled: false
+  full_name: "Tourisme, Am\xC3\xA9rique du Nord"
+  description: ""
+  tab_id: 0
+collection_group_00039: 
+  name: e_films_toutfilms
+  display_advanced_search: true
+  rank: 2
+  id: 39
+  enabled: false
+  full_name: Tout films
+  description: "Chercher des films et tous types de documents sur le cin\xC3\xA9ma"
+  tab_id: 5
+collection_group_00466: 
+  name: l_films_exge_anim_lmm_can
+  display_advanced_search: false
+  rank: 117
+  id: 466
+  enabled: false
+  full_name: Canada
+  description: ""
+  tab_id: 0
+collection_group_00276: 
+  name: l_films_exth_shs_psy
+  display_advanced_search: false
+  rank: 320
+  id: 276
+  enabled: false
+  full_name: Psychologie, psychanalyse
+  description: ""
+  tab_id: 0
+collection_group_00086: 
+  name: h_tout_art_cinema
+  display_advanced_search: false
+  rank: 22
+  id: 86
+  enabled: false
+  full_name: "Art, Cin\xC3\xA9ma"
+  description: ""
+  tab_id: 0
+collection_group_00467: 
+  name: l_films_exge_anim_lmm_chine
+  display_advanced_search: false
+  rank: 118
+  id: 467
+  enabled: false
+  full_name: Chine
+  description: ""
+  tab_id: 0
+collection_group_00277: 
+  name: l_films_exth_shs_socio_sociologues
+  display_advanced_search: false
+  rank: 331
+  id: 277
+  enabled: false
+  full_name: Sociologues
+  description: ""
+  tab_id: 0
+collection_group_00087: 
+  name: h_tout_art_spectacle
+  display_advanced_search: false
+  rank: 26
+  id: 87
+  enabled: false
+  full_name: Art, Spectacle vivant
+  description: ""
+  tab_id: 0
+collection_group_00468: 
+  name: l_films_exge_anim_lmm_dan
+  display_advanced_search: false
+  rank: 119
+  id: 468
+  enabled: false
+  full_name: Danemark
+  description: ""
+  tab_id: 0
+collection_group_00278: 
+  name: l_films_exth_shs_socio_categories
+  display_advanced_search: false
+  rank: 321
+  id: 278
+  enabled: false
+  full_name: "Cat\xC3\xA9gories sociales"
+  description: ""
+  tab_id: 0
+collection_group_00088: 
+  name: h_tout_droit
+  display_advanced_search: false
+  rank: 27
+  id: 88
+  enabled: false
+  full_name: Droit
+  description: ""
+  tab_id: 0
+collection_group_00469: 
+  name: l_films_exge_anim_lmm_etatsu
+  display_advanced_search: false
+  rank: 120
+  id: 469
+  enabled: false
+  full_name: Etats-Unis
+  description: ""
+  tab_id: 0
+collection_group_00279: 
+  name: l_films_exth_shs_socio_continents_afrique
+  display_advanced_search: false
+  rank: 322
+  id: 279
+  enabled: false
+  full_name: Etudes par continents, Afrique
+  description: ""
+  tab_id: 0
+collection_group_00089: 
+  name: h_tout_droit_administration
+  display_advanced_search: false
+  rank: 28
+  id: 89
+  enabled: false
+  full_name: Administrations, institutions
+  description: ""
+  tab_id: 0
+collection_group_00520: 
+  name: k_musique_exge_monde_afriquedunord
+  display_advanced_search: false
+  rank: 1
+  id: 520
+  enabled: false
+  full_name: Afrique du Nord
+  description: ""
+  tab_id: 0
+collection_group_00330: 
+  name: l_films_exge_docu_arts_specviv
+  display_advanced_search: false
+  rank: 142
+  id: 330
+  enabled: false
+  full_name: Spectacle vivant
+  description: ""
+  tab_id: 0
+collection_group_00140: 
+  name: l_films_exth_arts_artdeco_deco
+  display_advanced_search: false
+  rank: 191
+  id: 140
+  enabled: false
+  full_name: "Arts d\xC3\xA9coratifs"
+  description: ""
+  tab_id: 0
+collection_group_00521: 
+  name: k_musique_exge_monde_amerique
+  display_advanced_search: false
+  rank: 1
+  id: 521
+  enabled: false
+  full_name: Amerique du Nord
+  description: ""
+  tab_id: 0
+collection_group_00331: 
+  name: l_films_exge_docu_droit_admin
+  display_advanced_search: false
+  rank: 144
+  id: 331
+  enabled: false
+  full_name: Administration, institutions
+  description: ""
+  tab_id: 0
+collection_group_00141: 
+  name: l_films_exth_arts_artdeco_design
+  display_advanced_search: false
+  rank: 192
+  id: 141
+  enabled: false
+  full_name: Design
+  description: ""
+  tab_id: 0
+collection_group_00522: 
+  name: k_musique_exge_monde_amerlatine
+  display_advanced_search: false
+  rank: 1
+  id: 522
+  enabled: false
+  full_name: "Am\xC3\xA9rique latine"
+  description: ""
+  tab_id: 0
+collection_group_00332: 
+  name: l_films_exge_docu_droit_droit
+  display_advanced_search: false
+  rank: 145
+  id: 332
+  enabled: false
+  full_name: Droit
+  description: ""
+  tab_id: 0
+collection_group_00142: 
+  name: l_films_exth_arts_artdeco_mode
+  display_advanced_search: false
+  rank: 193
+  id: 142
+  enabled: false
+  full_name: Mode
+  description: ""
+  tab_id: 0
+collection_group_00523: 
+  name: k_musique_exge_monde_oceanie
+  display_advanced_search: false
+  rank: 1
+  id: 523
+  enabled: false
+  full_name: "Oc\xC3\xA9anie, r\xC3\xA9gions polaires"
+  description: ""
+  tab_id: 0
+collection_group_00333: 
+  name: l_films_exge_docu_eco_economie
+  display_advanced_search: false
+  rank: 146
+  id: 333
+  enabled: false
+  full_name: Economie
+  description: ""
+  tab_id: 0
+collection_group_00143: 
+  name: l_films_exth_arts_graphisme
+  display_advanced_search: false
+  rank: 205
+  id: 143
+  enabled: false
+  full_name: "Graphisme, bande-dessin\xC3\xA9e"
+  description: ""
+  tab_id: 0
+collection_group_00570: 
+  name: k_musique_exty_sites_instruments
+  display_advanced_search: false
+  rank: 1
+  id: 570
+  enabled: false
+  full_name: Instruments de musique (sites)
+  description: ""
+  tab_id: 0
+collection_group_00380: 
+  name: n_sites_exth_gene_biblionum
+  display_advanced_search: false
+  rank: 1
+  id: 380
+  enabled: false
+  full_name: "Biblioth\xC3\xA8ques num\xC3\xA9riques"
+  description: ""
+  tab_id: 0
+collection_group_00190: 
+  name: l_films_exth_eco_ecopublique
+  display_advanced_search: false
+  rank: 241
+  id: 190
+  enabled: false
+  full_name: Economie publique
+  description: ""
+  tab_id: 0
+collection_group_00524: 
+  name: k_musique_exge_vocale
+  display_advanced_search: false
+  rank: 1
+  id: 524
+  enabled: false
+  full_name: Musique vocale
+  description: ""
+  tab_id: 0
+collection_group_00334: 
+  name: l_films_exge_docu_eco_entreprise
+  display_advanced_search: false
+  rank: 147
+  id: 334
+  enabled: false
+  full_name: Entreprise, gestion
+  description: ""
+  tab_id: 0
+collection_group_00144: 
+  name: l_films_exth_arts_photo_hist
+  display_advanced_search: false
+  rank: 223
+  id: 144
+  enabled: false
+  full_name: Histoire de la photographie
+  description: ""
+  tab_id: 0
+collection_group_00571: 
+  name: k_musique_exty_instruments_anthologies
+  display_advanced_search: false
+  rank: 1
+  id: 571
+  enabled: false
+  full_name: Anthologies (instruments)
+  description: 2 documents
+  tab_id: 0
+collection_group_00381: 
+  name: n_sites_exth_gene_encyclo
+  display_advanced_search: false
+  rank: 1
+  id: 381
+  enabled: false
+  full_name: "Encyclop\xC3\xA9dies"
+  description: ""
+  tab_id: 0
+collection_group_00191: 
+  name: l_films_exth_eco_production
+  display_advanced_search: false
+  rank: 244
+  id: 191
+  enabled: false
+  full_name: Production, commerce
+  description: ""
+  tab_id: 0
+collection_group_00525: 
+  name: k_musique_exge_operette
+  display_advanced_search: false
+  rank: 1
+  id: 525
+  enabled: false
+  full_name: "Op\xC3\xA9ra comique, op\xC3\xA9rette, com\xC3\xA9die musicale, ballets"
+  description: ""
+  tab_id: 0
+collection_group_00335: 
+  name: l_films_exge_docu_hist_gene
+  display_advanced_search: false
+  rank: 151
+  id: 335
+  enabled: false
+  full_name: "Histoire, g\xC3\xA9n\xC3\xA9ralit\xC3\xA9s"
+  description: ""
+  tab_id: 0
+collection_group_00145: 
+  name: l_films_exth_arts_photo_photgraphe
+  display_advanced_search: false
+  rank: 224
+  id: 145
+  enabled: false
+  full_name: Photographes
+  description: ""
+  tab_id: 0
+collection_group_00572: 
+  name: k_musique_exty_instruments_clavier
+  display_advanced_search: false
+  rank: 1
+  id: 572
+  enabled: false
+  full_name: "Instruments \xC3\xA0 clavier"
+  description: ""
+  tab_id: 0
+collection_group_00382: 
+  name: n_sites_exth_gene_dic_langues
+  display_advanced_search: false
+  rank: 1
+  id: 382
+  enabled: false
+  full_name: Dictionnaires de langues, de sigles
+  description: ""
+  tab_id: 0
+collection_group_00192: 
+  name: l_films_exth_eco_theories
+  display_advanced_search: false
+  rank: 245
+  id: 192
+  enabled: false
+  full_name: "Th\xC3\xA9ories \xC3\xA9conomiques"
+  description: ""
+  tab_id: 0
+collection_group_00336: 
+  name: l_films_exge_docu_hist_prehist
+  display_advanced_search: false
+  rank: 153
+  id: 336
+  enabled: false
+  full_name: "Pr\xC3\xA9histoire, arch\xC3\xA9ologie, Antiquit\xC3\xA9"
+  description: ""
+  tab_id: 0
+collection_group_00146: 
+  name: l_films_exth_arts_cine_gene
+  display_advanced_search: false
+  rank: 199
+  id: 146
+  enabled: false
+  full_name: !binary |
+    Q2luw6ltYSwgZ8OpbsOpcmFsaXTDqXM=
+
+  description: ""
+  tab_id: 0
+collection_group_00573: 
+  name: k_musique_exty_instruments_cordes
+  display_advanced_search: false
+  rank: 1
+  id: 573
+  enabled: false
+  full_name: "Instruments \xC3\xA0 cordes pinc\xC3\xA9es"
+  description: ""
+  tab_id: 0
+collection_group_00383: 
+  name: n_sites_exth_gene_dic_biogr
+  display_advanced_search: false
+  rank: 1
+  id: 383
+  enabled: false
+  full_name: Dictionnaires biographiques
+  description: ""
+  tab_id: 0
+collection_group_00193: 
+  name: l_films_exth_eco_travail
+  display_advanced_search: false
+  rank: 246
+  id: 193
+  enabled: false
+  full_name: Travail, emploi
+  description: ""
+  tab_id: 0
+collection_group_00527: 
+  name: k_musique_exge_seriestel
+  display_advanced_search: false
+  rank: 1
+  id: 527
+  enabled: false
+  full_name: "Musique de s\xC3\xA9ries t\xC3\xA9l\xC3\xA9vis\xC3\xA9es"
+  description: ""
+  tab_id: 0
+collection_group_00337: 
+  name: l_films_exge_docu_hist_medievale
+  display_advanced_search: false
+  rank: 152
+  id: 337
+  enabled: false
+  full_name: "Histoire m\xC3\xA9di\xC3\xA9vale et moderne"
+  description: ""
+  tab_id: 0
+collection_group_00147: 
+  name: l_films_exth_arts_cine_pays
+  display_advanced_search: false
+  rank: 202
+  id: 147
+  enabled: false
+  full_name: "Cin\xC3\xA9ma, \xC3\xA9tudes par pays"
+  description: ""
+  tab_id: 0
+collection_group_00574: 
+  name: k_musique_exty_instruments_vent
+  display_advanced_search: false
+  rank: 1
+  id: 574
+  enabled: false
+  full_name: "Instruments \xC3\xA0 vent"
+  description: ""
+  tab_id: 0
+collection_group_00384: 
+  name: n_sites_exth_gene_pays
+  display_advanced_search: false
+  rank: 1
+  id: 384
+  enabled: false
+  full_name: "Donn\xC3\xA9es sur les pays"
+  description: ""
+  tab_id: 0
+collection_group_00194: 
+  name: l_films_exth_hist_gene
+  display_advanced_search: false
+  rank: 257
+  id: 194
+  enabled: false
+  full_name: "Histoire, g\xC3\xA9n\xC3\xA9ralit\xC3\xA9s"
+  description: ""
+  tab_id: 0
+collection_group_00528: 
+  name: k_musique_exge_chanson_anthologies
+  display_advanced_search: false
+  rank: 1
+  id: 528
+  enabled: false
+  full_name: "Anthologies de chanson fran\xC3\xA7aise"
+  description: ""
+  tab_id: 0
+collection_group_00338: 
+  name: l_films_exth_shs_polit_mouv
+  display_advanced_search: false
+  rank: 310
+  id: 338
+  enabled: false
+  full_name: Mouvements et personnages politiques
+  description: ""
+  tab_id: 0
+collection_group_00148: 
+  name: l_films_exth_arts_cine_anim_courtsmetrages
+  display_advanced_search: false
+  rank: 195
+  id: 148
+  enabled: false
+  full_name: "Cin\xC3\xA9ma, courts m\xC3\xA9trages"
+  description: ""
+  tab_id: 0
+collection_group_00575: 
+  name: k_musique_exty_instruments_mecanique
+  display_advanced_search: false
+  rank: 1
+  id: 575
+  enabled: false
+  full_name: "Instruments m\xC3\xA9caniques et \xC3\xA9lectroniques"
+  description: ""
+  tab_id: 0
+collection_group_00385: 
+  name: n_sites_exth_actu_articles
+  display_advanced_search: false
+  rank: 1
+  id: 385
+  enabled: false
+  full_name: Articles de journaux et de magazines
+  description: ""
+  tab_id: 0
+collection_group_00195: 
+  name: l_films_exth_hist_prehist
+  display_advanced_search: false
+  rank: 260
+  id: 195
+  enabled: false
+  full_name: "Pr\xC3\xA9histoire, arch\xC3\xA9ologie, Antiquit\xC3\xA9"
+  description: ""
+  tab_id: 0
+collection_group_00529: 
+  name: k_musique_exge_chanson
+  display_advanced_search: false
+  rank: 1
+  id: 529
+  enabled: false
+  full_name: "Chanson fran\xC3\xA7aise"
+  description: ""
+  tab_id: 0
+collection_group_00339: 
+  name: l_films_exge_docu_hist_contemp
+  display_advanced_search: false
+  rank: 148
+  id: 339
+  enabled: false
+  full_name: Histoire contemporaine
+  description: ""
+  tab_id: 0
+collection_group_00149: 
+  name: l_films_exth_arts_cine_anim_ecoles
+  display_advanced_search: false
+  rank: 197
+  id: 149
+  enabled: false
+  full_name: "Cin\xC3\xA9ma, courts m\xC3\xA9trages d'\xC3\xA9coles"
+  description: ""
+  tab_id: 0
+collection_group_00576: 
+  name: k_musique_exty_instruments_divers
+  display_advanced_search: false
+  rank: 1
+  id: 576
+  enabled: false
+  full_name: Instruments de musique divers
+  description: 1 document
+  tab_id: 0
+collection_group_00386: 
+  name: n_sites_exth_actu_sites
+  display_advanced_search: false
+  rank: 1
+  id: 386
+  enabled: false
+  full_name: Sites de journaux et de magazines
+  description: ""
+  tab_id: 0
+collection_group_00196: 
+  name: l_films_exth_hist_medievale
+  display_advanced_search: false
+  rank: 259
+  id: 196
+  enabled: false
+  full_name: "Histoire m\xC3\xA9di\xC3\xA9vale et moderne"
+  description: ""
+  tab_id: 0
+collection_group_00577: 
+  name: k_musique_exge_reggae
+  display_advanced_search: false
+  rank: 1
+  id: 577
+  enabled: false
+  full_name: Reggae
+  description: ""
+  tab_id: 0
+collection_group_00387: 
+  name: n_sites_exth_actu_docu
+  display_advanced_search: false
+  rank: 1
+  id: 387
+  enabled: false
+  full_name: "Documentation sur les m\xC3\xA9dias et l'\xC3\xA9dition"
+  description: ""
+  tab_id: 0
+collection_group_00197: 
+  name: l_films_exth_hist_contemp_gm1
+  display_advanced_search: false
+  rank: 247
+  id: 197
+  enabled: false
+  full_name: "1\xC3\xA8re guerre mondiale"
+  description: ""
+  tab_id: 0
+collection_group_00200: 
+  name: l_films_exth_hist_hist_france
+  display_advanced_search: false
+  rank: 258
+  id: 200
+  enabled: false
+  full_name: "Histoire de France, g\xC3\xA9n\xC3\xA9alogie"
+  description: ""
+  tab_id: 0
+collection_group_00578: 
+  name: j_articles_exth_droit
+  display_advanced_search: false
+  rank: 1
+  id: 578
+  enabled: false
+  full_name: Droit, administration (revues)
+  description: ""
+  tab_id: 0
+collection_group_00388: 
+  name: n_sites_exth_arts_gene
+  display_advanced_search: false
+  rank: 1
+  id: 388
+  enabled: false
+  full_name: "Arts, g\xC3\xA9n\xC3\xA9ralit\xC3\xA9s"
+  description: ""
+  tab_id: 0
+collection_group_00198: 
+  name: l_films_exth_hist_contemp_gm2
+  display_advanced_search: false
+  rank: 248
+  id: 198
+  enabled: false
+  full_name: "2\xC3\xA8me guerre mondiale"
+  description: ""
+  tab_id: 0
+collection_group_00201: 
+  name: l_films_exth_hist_continents_afrique
+  display_advanced_search: false
+  rank: 250
+  id: 201
+  enabled: false
+  full_name: Afrique
+  description: ""
+  tab_id: 0
+collection_group_00579: 
+  name: c_articles_bases_presse
+  display_advanced_search: false
+  rank: 2
+  id: 579
+  enabled: false
+  full_name: Bases de presse
+  description: Chercher dans des bases de presse
+  tab_id: 3
+collection_group_00011: 
+  name: "a_tout_langues,litt\xC3\xA9rature"
+  display_advanced_search: false
+  rank: 4
+  id: 11
+  enabled: false
+  full_name: "Litt\xC3\xA9ratures"
+  description: "G\xC3\xA9n\xC3\xA9ralit\xC3\xA9s + ressources sp\xC3\xA9cialis\xC3\xA9es : Francis, MLA, la Quinzaine, etc."
+  tab_id: 1
+collection_group_00389: 
+  name: n_sites_exth_arts_19e
+  display_advanced_search: false
+  rank: 1
+  id: 389
+  enabled: false
+  full_name: "Art jusqu'au 19\xC3\xA8me si\xC3\xA8cle"
+  description: ""
+  tab_id: 0
+collection_group_00199: 
+  name: l_films_exth_hist_contem_guerrefroide
+  display_advanced_search: false
+  rank: 249
+  id: 199
+  enabled: false
+  full_name: Guerre froide
+  description: ""
+  tab_id: 0
+collection_group_00202: 
+  name: l_films_exth_hist_continents_amernord
+  display_advanced_search: false
+  rank: 252
+  id: 202
+  enabled: false
+  full_name: "Am\xC3\xA9rique du Nord"
+  description: ""
+  tab_id: 0
+collection_group_00440: 
+  name: n_sites_exth_pra_travail
+  display_advanced_search: false
+  rank: 418
+  id: 440
+  enabled: false
+  full_name: Travail, retraite
+  description: ""
+  tab_id: 0
+collection_group_00250: 
+  name: l_films_exth_stm_stu_geophys
+  display_advanced_search: false
+  rank: 358
+  id: 250
+  enabled: false
+  full_name: "G\xC3\xA9ophysique, climatologie"
+  description: ""
+  tab_id: 0
+collection_group_00060: 
+  name: h_tout_hist_generalites
+  display_advanced_search: false
+  rank: 41
+  id: 60
+  enabled: false
+  full_name: "Histoire, g\xC3\xA9n\xC3\xA9ralit\xC3\xA9s"
+  description: ""
+  tab_id: 0
+collection_group_00203: 
+  name: l_films_exth_hist_continents_amerlat
+  display_advanced_search: false
+  rank: 251
+  id: 203
+  enabled: false
+  full_name: "Am\xC3\xA9rique latine"
+  description: ""
+  tab_id: 0
+collection_group_00441: 
+  name: n_sites_exth_pra_famille
+  display_advanced_search: false
+  rank: 412
+  id: 441
+  enabled: false
+  full_name: Famille et couple
+  description: ""
+  tab_id: 0
+collection_group_00251: 
+  name: l_films_exth_stm_stu_paleontologie
+  display_advanced_search: false
+  rank: 359
+  id: 251
+  enabled: false
+  full_name: "Pal\xC3\xA9ontologie, \xC3\xA9volution"
+  description: ""
+  tab_id: 0
+collection_group_00061: 
+  name: h_tout_hist_prehistoire
+  display_advanced_search: false
+  rank: 43
+  id: 61
+  enabled: false
+  full_name: "Histoire, pr\xC3\xA9histoire"
+  description: ""
+  tab_id: 0
+collection_group_00204: 
+  name: l_films_exth_hist_continents_asie
+  display_advanced_search: false
+  rank: 253
+  id: 204
+  enabled: false
+  full_name: Asie
+  description: ""
+  tab_id: 0
+collection_group_00442: 
+  name: n_sites_exth_pra_logement
+  display_advanced_search: false
+  rank: 414
+  id: 442
+  enabled: false
+  full_name: Logement
+  description: ""
+  tab_id: 0
+collection_group_00252: 
+  name: l_films_exth_stm_sv_biologie
+  display_advanced_search: false
+  rank: 360
+  id: 252
+  enabled: false
+  full_name: Biologie
+  description: ""
+  tab_id: 0
+collection_group_00062: 
+  name: i_livres_theme6
+  display_advanced_search: false
+  rank: 84
+  id: 62
+  enabled: false
+  full_name: theme6
+  description: ""
+  tab_id: 0
+collection_group_00205: 
+  name: l_films_exth_hist_continents_moyeno
+  display_advanced_search: false
+  rank: 255
+  id: 205
+  enabled: false
+  full_name: Moyen-Orient
+  description: ""
+  tab_id: 0
+collection_group_00015: 
+  name: a_tout_science,medecine
+  display_advanced_search: false
+  rank: 6
+  id: 15
+  enabled: false
+  full_name: "Sciences,technique,m\xC3\xA9decine"
+  description: "G\xC3\xA9n\xC3\xA9ralit\xC3\xA9s + ressources sp\xC3\xA9cialis\xC3\xA9es : EM Consulte, I-Revues, Pascal, etc."
+  tab_id: 1
+collection_group_00443: 
+  name: n_sites_exth_pra_sante
+  display_advanced_search: false
+  rank: 417
+  id: 443
+  enabled: false
+  full_name: "Sant\xC3\xA9, solidarit\xC3\xA9"
+  description: ""
+  tab_id: 0
+collection_group_00253: 
+  name: l_films_exth_stm_sv_botanique
+  display_advanced_search: false
+  rank: 361
+  id: 253
+  enabled: false
+  full_name: Botanique
+  description: ""
+  tab_id: 0
+collection_group_00206: 
+  name: l_films_exth_hist_continents_eur
+  display_advanced_search: false
+  rank: 254
+  id: 206
+  enabled: false
+  full_name: Europe
+  description: ""
+  tab_id: 0
+collection_group_00016: 
+  name: a_tout_scienceshumaines
+  display_advanced_search: false
+  rank: 5
+  id: 16
+  enabled: false
+  full_name: Sciences humaines et sociales
+  description: "G\xC3\xA9n\xC3\xA9ralit\xC3\xA9s + ressources sp\xC3\xA9cialis\xC3\xA9es : Francis, IBSS, PAIS etc"
+  tab_id: 1
+collection_group_00490: 
+  name: k_musique_exge_classique_classique
+  display_advanced_search: false
+  rank: 1
+  id: 490
+  enabled: false
+  full_name: "P\xC3\xA9riode classique"
+  description: ""
+  tab_id: 0
+collection_group_00444: 
+  name: n_sites_exth_pra_handicap
+  display_advanced_search: false
+  rank: 413
+  id: 444
+  enabled: false
+  full_name: Handicap
+  description: ""
+  tab_id: 0
+collection_group_00254: 
+  name: l_films_exth_stm_sv_ecologie
+  display_advanced_search: false
+  rank: 362
+  id: 254
+  enabled: false
+  full_name: Ecologie
+  description: ""
+  tab_id: 0
+collection_group_00207: 
+  name: l_films_exth_hist_continents_oceanie
+  display_advanced_search: false
+  rank: 256
+  id: 207
+  enabled: false
+  full_name: Oceanie
+  description: ""
+  tab_id: 0
+collection_group_00491: 
+  name: k_musique_exge_classique_romantique
+  display_advanced_search: false
+  rank: 1
+  id: 491
+  enabled: false
+  full_name: "P\xC3\xA9riode romantique"
+  description: "19e si\xC3\xA8cle"
+  tab_id: 0
+collection_group_00445: 
+  name: n_sites_exth_pra_consommation
+  display_advanced_search: false
+  rank: 410
+  id: 445
+  enabled: false
+  full_name: Consommation, budget
+  description: ""
+  tab_id: 0
+collection_group_00255: 
+  name: l_films_exth_stm_sv_zoologie
+  display_advanced_search: false
+  rank: 363
+  id: 255
+  enabled: false
+  full_name: Zoologie
+  description: ""
+  tab_id: 0
+collection_group_00208: 
+  name: l_films_exth_languesetlitteratures
+  display_advanced_search: false
+  rank: 261
+  id: 208
+  enabled: false
+  full_name: "Langues, litt\xC3\xA9ratures"
+  description: ""
+  tab_id: 0
+collection_group_00018: 
+  name: b_livres_livres papier
+  display_advanced_search: true
+  rank: 4
+  id: 18
+  enabled: false
+  full_name: Livres papier
+  description: "Chercher des livres imprim\xC3\xA9s"
+  tab_id: 2
+collection_group_00492: 
+  name: k_musique_exge_classique_moderne
+  display_advanced_search: false
+  rank: 1
+  id: 492
+  enabled: false
+  full_name: "P\xC3\xA9riode moderne"
+  description: ""
+  tab_id: 0
+collection_group_00446: 
+  name: n_sites_exth_pra_paris
+  display_advanced_search: false
+  rank: 415
+  id: 446
+  enabled: false
+  full_name: Paris et Ile-de-France
+  description: ""
+  tab_id: 0
+collection_group_00256: 
+  name: l_films_exth_stm_med_corps
+  display_advanced_search: false
+  rank: 350
+  id: 256
+  enabled: false
+  full_name: Corps humain
+  description: ""
+  tab_id: 0
+collection_group_00066: 
+  name: k_musique_exge_classique_medievale
+  display_advanced_search: false
+  rank: 1
+  id: 66
+  enabled: false
+  full_name: "P\xC3\xA9riode m\xC3\xA9di\xC3\xA9vale"
+  description: "Du 5e au 15e si\xC3\xA8cle"
+  tab_id: 0
+collection_group_00209: 
+  name: l_films_exth_lst_loisirs_jeux
+  display_advanced_search: false
+  rank: 263
+  id: 209
+  enabled: false
+  full_name: Jeux
+  description: ""
+  tab_id: 0
+collection_group_00019: 
+  name: b_livres_livres elec
+  display_advanced_search: true
+  rank: 2
+  id: 19
+  enabled: false
+  full_name: "Livres \xC3\xA9lectroniques"
+  description: "Chercher des livres \xC3\xA9lectroniques"
+  tab_id: 2
+collection_group_00493: 
+  name: k_musique_exge_classique_contemporain
+  display_advanced_search: false
+  rank: 1
+  id: 493
+  enabled: false
+  full_name: "P\xC3\xA9riode contemporaine"
+  description: Depuis 1945
+  tab_id: 0
+collection_group_00447: 
+  name: n_sites_exty_sites
+  display_advanced_search: false
+  rank: 440
+  id: 447
+  enabled: false
+  full_name: Sites web
+  description: ""
+  tab_id: 0
+collection_group_00257: 
+  name: l_films_exth_stm_med_maladies
+  display_advanced_search: false
+  rank: 351
+  id: 257
+  enabled: false
+  full_name: Maladies et handicaps
+  description: ""
+  tab_id: 0
+collection_group_00067: 
+  name: k_musique_exge_classique_renaissance
+  display_advanced_search: false
+  rank: 1
+  id: 67
+  enabled: false
+  full_name: Renaissance
+  description: "16e si\xC3\xA8cle"
+  tab_id: 0
+collection_group_00494: 
+  name: k_musique_exge_jazz_anthologies
+  display_advanced_search: false
+  rank: 1
+  id: 494
+  enabled: false
+  full_name: Anthologies de jazz
+  description: ""
+  tab_id: 0
+collection_group_00448: 
+  name: n_sites_exty_bases
+  display_advanced_search: false
+  rank: 438
+  id: 448
+  enabled: false
+  full_name: "Bases de donn\xC3\xA9es"
+  description: ""
+  tab_id: 0
+collection_group_00258: 
+  name: l_films_exth_stm_med_medicaments
+  display_advanced_search: false
+  rank: 352
+  id: 258
+  enabled: false
+  full_name: "M\xC3\xA9dicaments"
+  description: ""
+  tab_id: 0
+collection_group_00068: 
+  name: k_musique_exge_classique_baroque
+  display_advanced_search: false
+  rank: 1
+  id: 68
+  enabled: false
+  full_name: Baroque
+  description: ""
+  tab_id: 0
+collection_group_00495: 
+  name: k_musique_exge_jazz_blues
+  display_advanced_search: false
+  rank: 1
+  id: 495
+  enabled: false
+  full_name: Blues, gospel
+  description: ""
+  tab_id: 0
+collection_group_00449: 
+  name: n_sites_exty_gratuit
+  display_advanced_search: false
+  rank: 439
+  id: 449
+  enabled: false
+  full_name: Ressources gratuites
+  description: ""
+  tab_id: 0
+collection_group_00259: 
+  name: l_films_exth_stm_med_professions
+  display_advanced_search: false
+  rank: 353
+  id: 259
+  enabled: false
+  full_name: "Professions m\xC3\xA9dicales, h\xC3\xB4pitaux"
+  description: ""
+  tab_id: 0
+collection_group_00496: 
+  name: k_musique_exge_jazz_ragtime
+  display_advanced_search: false
+  rank: 1
+  id: 496
+  enabled: false
+  full_name: Ragtime, New Orleans
+  description: ""
+  tab_id: 0
+collection_group_00497: 
+  name: k_musique_exge_jazz_middle
+  display_advanced_search: false
+  rank: 1
+  id: 497
+  enabled: false
+  full_name: Midlle jazz, swing
+  description: ""
+  tab_id: 0
+collection_group_00500: 
+  name: k_musique_exge_jazz_rock
+  display_advanced_search: false
+  rank: 1
+  id: 500
+  enabled: false
+  full_name: Jazz-rock
+  description: ""
+  tab_id: 0
+collection_group_00310: 
+  name: l_films_exth_shs_educ_ecoles
+  display_advanced_search: false
+  rank: 295
+  id: 310
+  enabled: false
+  full_name: Ecoles
+  description: ""
+  tab_id: 0
+collection_group_00120: 
+  name: h_tout_pratique_handicap
+  display_advanced_search: false
+  rank: 2
+  id: 120
+  enabled: false
+  full_name: Vie pratique, handicap
+  description: ""
+  tab_id: 0
+collection_group_00498: 
+  name: k_musique_exge_jazz_classique
+  display_advanced_search: false
+  rank: 1
+  id: 498
+  enabled: false
+  full_name: Jazz classique, be bop, cool
+  description: ""
+  tab_id: 0
+collection_group_00501: 
+  name: k_musique_exge_jazz_contemporain
+  display_advanced_search: false
+  rank: 1
+  id: 501
+  enabled: false
+  full_name: Jazz contemporain
+  description: ""
+  tab_id: 0
+collection_group_00311: 
+  name: l_films_exth_shs_educ_educspe
+  display_advanced_search: false
+  rank: 296
+  id: 311
+  enabled: false
+  full_name: "Education sp\xC3\xA9cialis\xC3\xA9e"
+  description: ""
+  tab_id: 0
+collection_group_00121: 
+  name: h_tout_pratique_budget
+  display_advanced_search: false
+  rank: 7
+  id: 121
+  enabled: false
+  full_name: Vie pratique, consommation budget
+  description: ""
+  tab_id: 0
+collection_group_00499: 
+  name: k_musique_exge_jazz_free
+  display_advanced_search: false
+  rank: 1
+  id: 499
+  enabled: false
+  full_name: "Free jazz, jazz exp\xC3\xA9rimental"
+  description: ""
+  tab_id: 0
+collection_group_00502: 
+  name: k_musique_exge_rap_anthologies
+  display_advanced_search: false
+  rank: 1
+  id: 502
+  enabled: false
+  full_name: Anthologies de rap, soul, funk
+  description: ""
+  tab_id: 0
+collection_group_00312: 
+  name: l_films_exth_shs_infocom_bib
+  display_advanced_search: false
+  rank: 308
+  id: 312
+  enabled: false
+  full_name: "Information, communication, biblioth\xC3\xA8ques"
+  description: ""
+  tab_id: 0
+collection_group_00122: 
+  name: test_portfolio
+  display_advanced_search: false
+  rank: 441
+  id: 122
+  enabled: false
+  full_name: Test Folio
+  description: ""
+  tab_id: 0
+collection_group_00550: 
+  name: k_musique_exty_films_interpretes
+  display_advanced_search: false
+  rank: 1
+  id: 550
+  enabled: false
+  full_name: Interpretes (films)
+  description: ""
+  tab_id: 0
+collection_group_00360: 
+  name: l_films_exge_docu_shs_ethno
+  display_advanced_search: false
+  rank: 161
+  id: 360
+  enabled: false
+  full_name: Ethnologie
+  description: ""
+  tab_id: 0
+collection_group_00170: 
+  name: l_films_exth_arts_mus_docu_soul
+  display_advanced_search: false
+  rank: 221
+  id: 170
+  enabled: false
+  full_name: Documentaires musicaux, soul, rap, reggae
+  description: ""
+  tab_id: 0
+collection_group_00503: 
+  name: k_musique_exge_rap_soul
+  display_advanced_search: false
+  rank: 1
+  id: 503
+  enabled: false
+  full_name: Soul
+  description: ""
+  tab_id: 0
+collection_group_00313: 
+  name: l_films_exth_shs_geo_pays_france
+  display_advanced_search: false
+  rank: 306
+  id: 313
+  enabled: false
+  full_name: "G\xC3\xA9ographie, France"
+  description: ""
+  tab_id: 0
+collection_group_00123: 
+  name: i_livres_genre_atlas
+  display_advanced_search: true
+  rank: 6
+  id: 123
+  enabled: false
+  full_name: Livres atlas
+  description: ""
+  tab_id: 2
+collection_group_00551: 
+  name: k_musique_exty_films_monde
+  display_advanced_search: false
+  rank: 1
+  id: 551
+  enabled: false
+  full_name: Musiques du monde (films)
+  description: ""
+  tab_id: 0
+collection_group_00361: 
+  name: l_films_exth_docu_shs_polit_mvmt
+  display_advanced_search: false
+  rank: 233
+  id: 361
+  enabled: false
+  full_name: Mouvements et personnages politiques
+  description: ""
+  tab_id: 0
+collection_group_00171: 
+  name: l_films_exth_arts_mus_docu_films
+  display_advanced_search: false
+  rank: 215
+  id: 171
+  enabled: false
+  full_name: Documentaires musicaux, musique de films
+  description: ""
+  tab_id: 0
+collection_group_00504: 
+  name: k_musique_exge_rap_rap
+  display_advanced_search: false
+  rank: 1
+  id: 504
+  enabled: false
+  full_name: Rap
+  description: ""
+  tab_id: 0
+collection_group_00314: 
+  name: l_films_exth_shs_geo_pays_asie
+  display_advanced_search: false
+  rank: 304
+  id: 314
+  enabled: false
+  full_name: "G\xC3\xA9ographie, Asie"
+  description: ""
+  tab_id: 0
+collection_group_00552: 
+  name: k_musique_exty_films_rock
+  display_advanced_search: false
+  rank: 1
+  id: 552
+  enabled: false
+  full_name: Rock (films)
+  description: ""
+  tab_id: 0
+collection_group_00362: 
+  name: l_films_exge_docu_shs_edu
+  display_advanced_search: false
+  rank: 160
+  id: 362
+  enabled: false
+  full_name: Education
+  description: ""
+  tab_id: 0
+collection_group_00172: 
+  name: l_films_exth_arts_mus_docu_vocal
+  display_advanced_search: false
+  rank: 222
+  id: 172
+  enabled: false
+  full_name: Documentaires musicaux, musique vocale
+  description: ""
+  tab_id: 0
+collection_group_00505: 
+  name: k_musique_exge_rap_funk
+  display_advanced_search: false
+  rank: 1
+  id: 505
+  enabled: false
+  full_name: Funk, divers
+  description: ""
+  tab_id: 0
+collection_group_00315: 
+  name: l_films_exth_shs_geo_pays_europe
+  display_advanced_search: false
+  rank: 305
+  id: 315
+  enabled: false
+  full_name: "G\xC3\xA9ographie, Europe"
+  description: ""
+  tab_id: 0
+collection_group_00125: 
+  name: j_articles_exge_revueselec
+  display_advanced_search: false
+  rank: 1
+  id: 125
+  enabled: false
+  full_name: "Revues \xC3\xA9lectroniques"
+  description: ""
+  tab_id: 0
+collection_group_00553: 
+  name: k_musique_exty_films_soul
+  display_advanced_search: false
+  rank: 1
+  id: 553
+  enabled: false
+  full_name: Soul, rap, reggae (films)
+  description: ""
+  tab_id: 0
+collection_group_00363: 
+  name: l_films_exge_docu_shs_infocom
+  display_advanced_search: false
+  rank: 163
+  id: 363
+  enabled: false
+  full_name: Information, communication
+  description: ""
+  tab_id: 0
+collection_group_00173: 
+  name: l_films_exth_arts_specviv_cirque_cirque
+  display_advanced_search: false
+  rank: 225
+  id: 173
+  enabled: false
+  full_name: Cirque
+  description: ""
+  tab_id: 0
+collection_group_00316: 
+  name: l_films_exth_shs_geo_urbanisme
+  display_advanced_search: false
+  rank: 307
+  id: 316
+  enabled: false
+  full_name: Urbanisme
+  description: ""
+  tab_id: 0
+collection_group_00126: 
+  name: l_films_exth_actu_edition
+  display_advanced_search: false
+  rank: 178
+  id: 126
+  enabled: false
+  full_name: Edition, librairie
+  description: ""
+  tab_id: 0
+collection_group_00554: 
+  name: k_musique_exty_films_films
+  display_advanced_search: false
+  rank: 1
+  id: 554
+  enabled: false
+  full_name: Musique de films (films)
+  description: ""
+  tab_id: 0
+collection_group_00364: 
+  name: l_films_exge_docu_shs_geo
+  display_advanced_search: false
+  rank: 162
+  id: 364
+  enabled: false
+  full_name: "G\xC3\xA9ographie, urbanisme"
+  description: ""
+  tab_id: 0
+collection_group_00174: 
+  name: l_films_exth_arts_specviv_cirque_mario
+  display_advanced_search: false
+  rank: 226
+  id: 174
+  enabled: false
+  full_name: Marionnettes
+  description: ""
+  tab_id: 0
+collection_group_00317: 
+  name: l_films_exge_docu_actu_edition
+  display_advanced_search: false
+  rank: 130
+  id: 317
+  enabled: false
+  full_name: Edition, librairie
+  description: ""
+  tab_id: 0
+collection_group_00127: 
+  name: l_films_exth_actu_lecture
+  display_advanced_search: false
+  rank: 179
+  id: 127
+  enabled: false
+  full_name: Lecture
+  description: ""
+  tab_id: 0
+collection_group_00555: 
+  name: k_musique_exty_films_vocale
+  display_advanced_search: false
+  rank: 1
+  id: 555
+  enabled: false
+  full_name: Musique vocale (films)
+  description: ""
+  tab_id: 0
+collection_group_00365: 
+  name: h_tout_actu_articles
+  display_advanced_search: false
+  rank: 15
+  id: 365
+  enabled: false
+  full_name: Articles de journaux et de magazines
+  description: A supprimer ? AF
+  tab_id: 0
+collection_group_00175: 
+  name: l_films_exth_arts_specviv_cirque_tauro
+  display_advanced_search: false
+  rank: 227
+  id: 175
+  enabled: false
+  full_name: Tauromachie
+  description: ""
+  tab_id: 0
+collection_group_00318: 
+  name: l_films_exge_docu_actu_lecture
+  display_advanced_search: false
+  rank: 131
+  id: 318
+  enabled: false
+  full_name: Lecture
+  description: ""
+  tab_id: 0
+collection_group_00128: 
+  name: l_films_exth_actu_presse
+  display_advanced_search: false
+  rank: 180
+  id: 128
+  enabled: false
+  full_name: Presse, journalisme
+  description: ""
+  tab_id: 0
+collection_group_00556: 
+  name: k_musique_exty_livres
+  display_advanced_search: false
+  rank: 1
+  id: 556
+  enabled: false
+  full_name: Livres
+  description: ""
+  tab_id: 0
+collection_group_00366: 
+  name: h_tout_actu_titres
+  display_advanced_search: false
+  rank: 17
+  id: 366
+  enabled: false
+  full_name: Titres de journaux et de magazines
+  description: ""
+  tab_id: 0
+collection_group_00176: 
+  name: l_films_exth_arts_specviv_danse_cine
+  display_advanced_search: false
+  rank: 228
+  id: 176
+  enabled: false
+  full_name: "Danse, adaptations cin\xC3\xA9matographiques"
+  description: ""
+  tab_id: 0
+collection_group_00319: 
+  name: l_films_exge_docu_actu_presse
+  display_advanced_search: false
+  rank: 132
+  id: 319
+  enabled: false
+  full_name: Presse, journalisme
+  description: ""
+  tab_id: 0
+collection_group_00129: 
+  name: l_films_exth_actu_radio
+  display_advanced_search: false
+  rank: 181
+  id: 129
+  enabled: false
+  full_name: "Radio, t\xC3\xA9l\xC3\xA9visions"
+  description: ""
+  tab_id: 0
+collection_group_00557: 
+  name: k_musique_exty_revues
+  display_advanced_search: false
+  rank: 1
+  id: 557
+  enabled: false
+  full_name: Revues et presse musicale
+  description: ""
+  tab_id: 0
+collection_group_00367: 
+  name: h_tout_actu_documentation
+  display_advanced_search: false
+  rank: 16
+  id: 367
+  enabled: false
+  full_name: "Documentation sur les m\xC3\xA9dias et l'\xC3\xA9dition"
+  description: ""
+  tab_id: 0
+collection_group_00177: 
+  name: l_films_exth_arts_specviv_danse_docu
+  display_advanced_search: false
+  rank: 229
+  id: 177
+  enabled: false
+  full_name: Danse, documentaires
+  description: ""
+  tab_id: 0
+collection_group_00558: 
+  name: k_musique_exty_didacticiels
+  display_advanced_search: false
+  rank: 1
+  id: 558
+  enabled: false
+  full_name: Didacticiels
+  description: ""
+  tab_id: 0
+collection_group_00368: 
+  name: h_tout_hist_medievale
+  display_advanced_search: false
+  rank: 42
+  id: 368
+  enabled: false
+  full_name: "Histoire m\xC3\xA9di\xC3\xA9vale et moderne"
+  description: ""
+  tab_id: 0
+collection_group_00178: 
+  name: l_films_exth_arts_specviv_musichall
+  display_advanced_search: false
+  rank: 230
+  id: 178
+  enabled: false
+  full_name: Music-hall
+  description: ""
+  tab_id: 0
+collection_group_00559: 
+  name: k_musique_exty_bases
+  display_advanced_search: false
+  rank: 1
+  id: 559
+  enabled: false
+  full_name: "Bases de donn\xC3\xA9es musicales"
+  description: ""
+  tab_id: 0
+collection_group_00369: 
+  name: h_tout_litt_langues
+  display_advanced_search: false
+  rank: 46
+  id: 369
+  enabled: false
+  full_name: Langues
+  description: ""
+  tab_id: 0
+collection_group_00179: 
+  name: l_films_exth_arts_specviv_thea_cine
+  display_advanced_search: false
+  rank: 231
+  id: 179
+  enabled: false
+  full_name: "Th\xC3\xA9\xC3\xA2tre, adaptations cin\xC3\xA9matographiques"
+  description: ""
+  tab_id: 0
+collection_group_00610: 
+  name: ArtBibModern
+  display_advanced_search: false
+  rank: 1
+  id: 610
+  enabled: false
+  full_name: ArtBibModern
+  description: ""
+  tab_id: 1
+collection_group_00420: 
+  name: n_sites_exth_stm_gene
+  display_advanced_search: false
+  rank: 428
+  id: 420
+  enabled: false
+  full_name: "Sciences, g\xC3\xA9n\xC3\xA9ralit\xC3\xA9s"
+  description: ""
+  tab_id: 0
+collection_group_00230: 
+  name: l_films_exth_lst_tourisme_amlat
+  display_advanced_search: false
+  rank: 281
+  id: 230
+  enabled: false
+  full_name: "Tourisme, Am\xC3\xA9rique Latine"
+  description: ""
+  tab_id: 0
+collection_group_00040: 
+  name: e_films_livres
+  display_advanced_search: true
+  rank: 5
+  id: 40
+  enabled: false
+  full_name: "Livres sur le cin\xC3\xA9ma"
+  description: "Chercher des livres sur le cin\xC3\xA9ma"
+  tab_id: 5
+collection_group_00421: 
+  name: n_sites_exth_stm_maths
+  display_advanced_search: false
+  rank: 432
+  id: 421
+  enabled: false
+  full_name: "Math\xC3\xA9matiques, physique, chimie"
+  description: ""
+  tab_id: 0
+collection_group_00231: 
+  name: l_films_exth_lst_tourisme_asie
+  display_advanced_search: false
+  rank: 283
+  id: 231
+  enabled: false
+  full_name: Tourisme, Asie
+  description: ""
+  tab_id: 0
+collection_group_00041: 
+  name: e_films_articles
+  display_advanced_search: true
+  rank: 4
+  id: 41
+  enabled: false
+  full_name: "Articles et revues sur le cin\xC3\xA9ma"
+  description: "Chercher dans les bases contenant des articles ou trouver une revue sp\xC3\xA9cialis\xC3\xA9e en cin\xC3\xA9ma"
+  tab_id: 5
+collection_group_00422: 
+  name: n_sites_exth_stm_terre
+  display_advanced_search: false
+  rank: 434
+  id: 422
+  enabled: false
+  full_name: Sciences de la Terre et de l'univers
+  description: ""
+  tab_id: 0
+collection_group_00232: 
+  name: l_films_exth_lst_tourisme_europe
+  display_advanced_search: false
+  rank: 284
+  id: 232
+  enabled: false
+  full_name: Tourisme, Europe
+  description: ""
+  tab_id: 0
+collection_group_00042: 
+  name: "e_films_cin\xC3\xA9 r\xC3\xA9el"
+  display_advanced_search: true
+  rank: 3
+  id: 42
+  enabled: false
+  full_name: "Cin\xC3\xA9ma du r\xC3\xA9el"
+  description: "Catalogue du Cin\xC3\xA9ma du R\xC3\xA9el (\xC3\xA0 venir)"
+  tab_id: 5
+collection_group_00470: 
+  name: l_films_exge_anim_lmm_fr
+  display_advanced_search: false
+  rank: 121
+  id: 470
+  enabled: false
+  full_name: France
+  description: ""
+  tab_id: 0
+collection_group_00280: 
+  name: l_films_exth_lst_sports_gym
+  display_advanced_search: false
+  rank: 273
+  id: 280
+  enabled: false
+  full_name: Gymnastique
+  description: ""
+  tab_id: 0
+collection_group_00090: 
+  name: h_tout_loisirs_loisirs
+  display_advanced_search: false
+  rank: 49
+  id: 90
+  enabled: false
+  full_name: Loisirs
+  description: ""
+  tab_id: 0
+collection_group_00423: 
+  name: n_sites_exth_stm_vie
+  display_advanced_search: false
+  rank: 436
+  id: 423
+  enabled: false
+  full_name: Sciences de la vie
+  description: ""
+  tab_id: 0
+collection_group_00233: 
+  name: l_films_exth_lst_tourisme_oceanie
+  display_advanced_search: false
+  rank: 285
+  id: 233
+  enabled: false
+  full_name: "Tourisme, Oc\xC3\xA9anie"
+  description: ""
+  tab_id: 0
+collection_group_00043: 
+  name: e_films_sites bases
+  display_advanced_search: true
+  rank: 6
+  id: 43
+  enabled: false
+  full_name: "Sites et bases sur le cin\xC3\xA9ma"
+  description: "Chercher un site web ou une base de donn\xC3\xA9es sur le cin\xC3\xA9ma"
+  tab_id: 5
+collection_group_00471: 
+  name: l_films_exge_anim_lmm_japon
+  display_advanced_search: false
+  rank: 122
+  id: 471
+  enabled: false
+  full_name: Japon
+  description: ""
+  tab_id: 0
+collection_group_00281: 
+  name: l_films_exth_shs_socio_continents_amerique
+  display_advanced_search: false
+  rank: 323
+  id: 281
+  enabled: false
+  full_name: "Etudes par continents, Am\xC3\xA9rique"
+  description: ""
+  tab_id: 0
+collection_group_00091: 
+  name: h_tout_loisirs_sport
+  display_advanced_search: false
+  rank: 50
+  id: 91
+  enabled: false
+  full_name: Sport
+  description: ""
+  tab_id: 0
+collection_group_00424: 
+  name: n_sites_exth_stm_medecine
+  display_advanced_search: false
+  rank: 433
+  id: 424
+  enabled: false
+  full_name: "M\xC3\xA9decine"
+  description: ""
+  tab_id: 0
+collection_group_00234: 
+  name: l_films_exth_philorel_philo_gene
+  display_advanced_search: false
+  rank: 286
+  id: 234
+  enabled: false
+  full_name: "Philosophie, g\xC3\xA9n\xC3\xA9ralit\xC3\xA9s"
+  description: ""
+  tab_id: 0
+collection_group_00044: 
+  name: e_films_test 1
+  display_advanced_search: true
+  rank: 7
+  id: 44
+  enabled: false
+  full_name: Films test 1
+  description: ""
+  tab_id: 0
+collection_group_00472: 
+  name: l_films_exge_anim_lmm_reptch
+  display_advanced_search: false
+  rank: 123
+  id: 472
+  enabled: false
+  full_name: "R\xC3\xA9publique tch\xC3\xA8que"
+  description: ""
+  tab_id: 0
+collection_group_00282: 
+  name: l_films_exth_shs_socio_continents_asie
+  display_advanced_search: false
+  rank: 324
+  id: 282
+  enabled: false
+  full_name: Etudes par continents, Asie
+  description: ""
+  tab_id: 0
+collection_group_00092: 
+  name: h_tout_loisirs_tourisme
+  display_advanced_search: false
+  rank: 1
+  id: 92
+  enabled: false
+  full_name: Tourisme
+  description: ""
+  tab_id: 0
+collection_group_00425: 
+  name: n_sites_exth_stm_inge
+  display_advanced_search: false
+  rank: 431
+  id: 425
+  enabled: false
+  full_name: "Sciences de l'ing\xC3\xA9nieur"
+  description: ""
+  tab_id: 0
+collection_group_00235: 
+  name: l_films_exth_philorel_philo_philosphes
+  display_advanced_search: false
+  rank: 287
+  id: 235
+  enabled: false
+  full_name: Philosophes
+  description: ""
+  tab_id: 0
+collection_group_00045: 
+  name: e_films_test 2
+  display_advanced_search: true
+  rank: 8
+  id: 45
+  enabled: false
+  full_name: Films test 2
+  description: ""
+  tab_id: 0
+collection_group_00473: 
+  name: l_films_exge_anim_spec_art_21
+  display_advanced_search: false
+  rank: 124
+  id: 473
+  enabled: false
+  full_name: "21\xC3\xA8me si\xC3\xA8cle"
+  description: ""
+  tab_id: 0
+collection_group_00283: 
+  name: l_films_exth_shs_socio_continents_moyeno
+  display_advanced_search: false
+  rank: 326
+  id: 283
+  enabled: false
+  full_name: Etudes par continents, Moyen-Orient
+  description: ""
+  tab_id: 0
+collection_group_00093: 
+  name: h_tout_economie_eco
+  display_advanced_search: false
+  rank: 29
+  id: 93
+  enabled: false
+  full_name: Economie
+  description: ""
+  tab_id: 0
+collection_group_00426: 
+  name: n_sites_exth_stm_agriculture
+  display_advanced_search: false
+  rank: 427
+  id: 426
+  enabled: false
   full_name: Agriculture
-collection_groups_002: 
-  name: general
-  enabled: "1"
-  id: "2"
   description: ""
-  full_name: General
-collection_groups_003: 
-  name: image
-  enabled: "1"
-  id: "3"
+  tab_id: 0
+collection_group_00236: 
+  name: l_films_exth_philorel_rel_gene
+  display_advanced_search: false
+  rank: 291
+  id: 236
+  enabled: false
+  full_name: "Religions, g\xC3\xA9n\xC3\xA9ralit\xC3\xA9s"
   description: ""
-  full_name: Images
-collection_groups_004: 
-  name: books
-  enabled: "1"
-  id: "4"
+  tab_id: 0
+collection_group_00046: 
+  name: f_autoformation_tout
+  display_advanced_search: true
+  rank: 1
+  id: 46
+  enabled: false
+  full_name: Tout autoformation
+  description: Chercher dans tous les documents pour se former
+  tab_id: 6
+collection_group_00474: 
+  name: l_films_exge_anim_spec_conc
+  display_advanced_search: false
+  rank: 126
+  id: 474
+  enabled: false
+  full_name: Concerts
   description: ""
-  full_name: Books and more
-collection_groups_005:
-  name: articles
-  enabled: "1"
-  id: "5"
-  full_name: Articles
+  tab_id: 0
+collection_group_00284: 
+  name: l_films_exth_shs_socio_continents_europe
+  display_advanced_search: false
+  rank: 325
+  id: 284
+  enabled: false
+  full_name: Etudes par continents, Europe
+  description: ""
+  tab_id: 0
+collection_group_00094: 
+  name: h_tout_economie_gestion
+  display_advanced_search: false
+  rank: 30
+  id: 94
+  enabled: false
+  full_name: Economie, entreprise, gestion
+  description: ""
+  tab_id: 0
+collection_group_00427: 
+  name: n_sites_exth_stm_transports
+  display_advanced_search: false
+  rank: 435
+  id: 427
+  enabled: false
+  full_name: Transports
+  description: ""
+  tab_id: 0
+collection_group_00237: 
+  name: l_films_exth_philorel_rel_boud
+  display_advanced_search: false
+  rank: 289
+  id: 237
+  enabled: false
+  full_name: Bouddhisme
+  description: ""
+  tab_id: 0
+collection_group_00047: 
+  name: f_autoformation_films
+  display_advanced_search: true
+  rank: 2
+  id: 47
+  enabled: false
+  full_name: Films d'autoformation
+  description: Chercher des films en VO pour progresser dans une langue
+  tab_id: 6
+collection_group_00475: 
+  name: l_films_exge_anim_spec_cirq
+  display_advanced_search: false
+  rank: 125
+  id: 475
+  enabled: false
+  full_name: Cirque et autres spectacles
+  description: ""
+  tab_id: 0
+collection_group_00285: 
+  name: l_films_exth_shs_socio_exclusion
+  display_advanced_search: false
+  rank: 327
+  id: 285
+  enabled: false
+  full_name: Exclusion
+  description: ""
+  tab_id: 0
+collection_group_00095: 
+  name: h_tout_shs_generalites
+  display_advanced_search: false
+  rank: 1
+  id: 95
+  enabled: false
+  full_name: "Sciences humaines, g\xC3\xA9n\xC3\xA9ralit\xC3\xA9s"
+  description: "Collections de r\xC3\xA9f\xC3\xA9rence en sciences humaines et sociales"
+  tab_id: 0
+collection_group_00428: 
+  name: n_sites_exth_stm_informatique
+  display_advanced_search: false
+  rank: 430
+  id: 428
+  enabled: false
+  full_name: Informatique
+  description: ""
+  tab_id: 0
+collection_group_00238: 
+  name: l_films_exth_philorel_rel_christianisme
+  display_advanced_search: false
+  rank: 290
+  id: 238
+  enabled: false
+  full_name: Christianisme
+  description: ""
+  tab_id: 0
+collection_group_00048: 
+  name: f_autoformation_livres
+  display_advanced_search: true
+  rank: 3
+  id: 48
+  enabled: false
+  full_name: Livres et manuels
+  description: Chercher des livres pour se former
+  tab_id: 6
+collection_group_00476: 
+  name: l_films_exge_anim_spec_dans
+  display_advanced_search: false
+  rank: 127
+  id: 476
+  enabled: false
+  full_name: Danse
+  description: ""
+  tab_id: 0
+collection_group_00096: 
+  name: h_tout_shs_psychologie
+  display_advanced_search: false
+  rank: 1
+  id: 96
+  enabled: false
+  full_name: Sciences humaines, psychologie
+  description: ""
+  tab_id: 0
+collection_group_00429: 
+  name: n_sites_exth_stm_industrie
+  display_advanced_search: false
+  rank: 429
+  id: 429
+  enabled: false
+  full_name: Industrie, artisanat
+  description: ""
+  tab_id: 0
+collection_group_00239: 
+  name: l_films_exth_philorel_rel_islam
+  display_advanced_search: false
+  rank: 292
+  id: 239
+  enabled: false
+  full_name: Islam
+  description: ""
+  tab_id: 0
+collection_group_00049: 
+  name: f_autoformation_test 1
+  display_advanced_search: true
+  rank: 4
+  id: 49
+  enabled: false
+  full_name: Autoformation test 1
+  description: ""
+  tab_id: 0
+collection_group_00477: 
+  name: l_films_exge_anim_spec_th
+  display_advanced_search: false
+  rank: 128
+  id: 477
+  enabled: false
+  full_name: !binary |
+    VGjDqcOidHJl
+
+  description: ""
+  tab_id: 0
+collection_group_00287: 
+  name: "l_films_exth_shs_socio_identit\xC3\xA9"
+  display_advanced_search: false
+  rank: 328
+  id: 287
+  enabled: false
+  full_name: "Identit\xC3\xA9 culturelle"
+  description: ""
+  tab_id: 0
+collection_group_00097: 
+  name: h_tout_shs_sociologie
+  display_advanced_search: false
+  rank: 1
+  id: 97
+  enabled: false
+  full_name: Sciences humaines, sociologie
+  description: ""
+  tab_id: 0
+collection_group_00478: 
+  name: l_films_exge_filmseaf
+  display_advanced_search: false
+  rank: 177
+  id: 478
+  enabled: false
+  full_name: Films d'autoformation
+  description: ""
+  tab_id: 0
+collection_group_00100: 
+  name: h_tout_shs_education
+  display_advanced_search: false
+  rank: 1
+  id: 100
+  enabled: false
+  full_name: "Sciences humaines, \xC3\xA9ducation"
+  description: ""
+  tab_id: 0
+collection_group_00288: 
+  name: l_films_exth_shs_socio_migrations
+  display_advanced_search: false
+  rank: 329
+  id: 288
+  enabled: false
+  full_name: Migrations
+  description: ""
+  tab_id: 0
+collection_group_00098: 
+  name: h_tout_shs_ethnologie
+  display_advanced_search: false
+  rank: 1
+  id: 98
+  enabled: false
+  full_name: Sciences humaines, ethnologie
+  description: ""
+  tab_id: 0
+collection_group_00479: 
+  name: l_films_exge_artevod
+  display_advanced_search: false
+  rank: 129
+  id: 479
+  enabled: false
+  full_name: "VOD : Arte VOD"
+  description: ""
+  tab_id: 0
+collection_group_00101: 
+  name: h_tout_shs_infocom
+  display_advanced_search: false
+  rank: 1
+  id: 101
+  enabled: false
+  full_name: Sciences humaines, communication
+  description: ""
+  tab_id: 0
+collection_group_00289: 
+  name: l_films_exth_shs_socio_rurale
+  display_advanced_search: false
+  rank: 330
+  id: 289
+  enabled: false
+  full_name: Sociologie rurale
+  description: ""
+  tab_id: 0
+collection_group_00099: 
+  name: h_tout_shs_politique
+  display_advanced_search: false
+  rank: 1
+  id: 99
+  enabled: false
+  full_name: Sciences humaines, politique
+  description: ""
+  tab_id: 0
+collection_group_00102: 
+  name: h_tout_shs_geographie
+  display_advanced_search: false
+  rank: 1
+  id: 102
+  enabled: false
+  full_name: "Sciences humaines, g\xC3\xA9ographie"
+  description: ""
+  tab_id: 0
+collection_group_00103: 
+  name: h_tout_stm_generalites
+  display_advanced_search: false
+  rank: 1
+  id: 103
+  enabled: false
+  full_name: "Sciences techniques, g\xC3\xA9n\xC3\xA9ralit\xC3\xA9s"
+  description: ""
+  tab_id: 0
+collection_group_00340: 
+  name: l_films_exge_docu_hist_france
+  display_advanced_search: false
+  rank: 150
+  id: 340
+  enabled: false
+  full_name: "Histoire de France, g\xC3\xA9n\xC3\xA9alogie"
+  description: ""
+  tab_id: 0
+collection_group_00150: 
+  name: l_films_exth_arts_cine_anim_docu
+  display_advanced_search: false
+  rank: 196
+  id: 150
+  enabled: false
+  full_name: "Cin\xC3\xA9ma, documentaires"
+  description: ""
+  tab_id: 0
+collection_group_00104: 
+  name: h_tout_stm_maths
+  display_advanced_search: false
+  rank: 1
+  id: 104
+  enabled: false
+  full_name: "Sciences techniques, math\xC3\xA9matiques"
+  description: ""
+  tab_id: 0
+collection_group_00341: 
+  name: l_films_exge_docu_hist_continents
+  display_advanced_search: false
+  rank: 149
+  id: 341
+  enabled: false
+  full_name: Histoire des continents et des pays
+  description: ""
+  tab_id: 0
+collection_group_00151: 
+  name: l_films_exth_arts_cine_anim_longsmetrages
+  display_advanced_search: false
+  rank: 198
+  id: 151
+  enabled: false
+  full_name: "Cin\xC3\xA9ma, longs et moyens m\xC3\xA9trages"
+  description: ""
+  tab_id: 0
+collection_group_00105: 
+  name: h_tout_stm_sciences_vie
+  display_advanced_search: false
+  rank: 1
+  id: 105
+  enabled: false
+  full_name: Sciences techniques, sciences de la vie
+  description: ""
+  tab_id: 0
+collection_group_00342: 
+  name: l_films_exge_docu_langues
+  display_advanced_search: false
+  rank: 154
+  id: 342
+  enabled: false
+  full_name: "Langues, litt\xC3\xA9ratures"
+  description: ""
+  tab_id: 0
+collection_group_00152: 
+  name: l_films_exth_arts_cine_genres
+  display_advanced_search: false
+  rank: 200
+  id: 152
+  enabled: false
+  full_name: "Genres et th\xC3\xA8mes cin\xC3\xA9matographiques"
+  description: ""
+  tab_id: 0
+collection_group_00106: 
+  name: h_tout_stm_medecine
+  display_advanced_search: false
+  rank: 1
+  id: 106
+  enabled: false
+  full_name: "Sciences techniques, m\xC3\xA9decine"
+  description: ""
+  tab_id: 0
+collection_group_00580: 
+  name: c_articles_revues_papier
+  display_advanced_search: true
+  rank: 4
+  id: 580
+  enabled: false
+  full_name: Revues papier
+  description: ""
+  tab_id: 0
+collection_group_00390: 
+  name: n_sites_exth_arts_20e
+  display_advanced_search: false
+  rank: 1
+  id: 390
+  enabled: false
+  full_name: "Art des 20\xC3\xA8me et 21\xC3\xA8me si\xC3\xA8cles"
+  description: ""
+  tab_id: 0
+collection_group_00343: 
+  name: l_films_exge_docu_lst_loisirs
+  display_advanced_search: false
+  rank: 155
+  id: 343
+  enabled: false
+  full_name: Loisirs
+  description: ""
+  tab_id: 0
+collection_group_00153: 
+  name: l_films_exth_arts_cine_oeuvres
+  display_advanced_search: false
+  rank: 201
+  id: 153
+  enabled: false
+  full_name: Oeuvres originales, autobiographies
+  description: ""
+  tab_id: 0
+collection_group_00107: 
+  name: h_tout_stm_sciences_inge
+  display_advanced_search: false
+  rank: 1
+  id: 107
+  enabled: false
+  full_name: "Sciences techniques, sciences de l'ing\xC3\xA9nieur"
+  description: ""
+  tab_id: 0
+collection_group_00581: 
+  name: j_articles_exth_economie
+  display_advanced_search: false
+  rank: 1
+  id: 581
+  enabled: false
+  full_name: Economie, entreprise, gestion (revues et articles)
+  description: ""
+  tab_id: 0
+collection_group_00391: 
+  name: n_sites_exth_arts_architecture
+  display_advanced_search: false
+  rank: 1
+  id: 391
+  enabled: false
+  full_name: Architecture
+  description: ""
+  tab_id: 0
+collection_group_00344: 
+  name: l_films_exge_docu_lst_sports
+  display_advanced_search: false
+  rank: 156
+  id: 344
+  enabled: false
+  full_name: Sports
+  description: ""
+  tab_id: 0
+collection_group_00154: 
+  name: l_films_exth_arts_cine_acteurs
+  display_advanced_search: false
+  rank: 194
+  id: 154
+  enabled: false
+  full_name: Portraits d'acteurs
+  description: ""
+  tab_id: 0
+collection_group_00108: 
+  name: h_tout_stm_agriculture
+  display_advanced_search: false
+  rank: 1
+  id: 108
+  enabled: false
+  full_name: Sciences techniques, agriculture
+  description: ""
+  tab_id: 0
+collection_group_00582: 
+  name: j_articles_exth_histoire
+  display_advanced_search: false
+  rank: 1
+  id: 582
+  enabled: false
+  full_name: Histoire (revues et articles)
+  description: ""
+  tab_id: 0
+collection_group_00392: 
+  name: n_sites_exth_arts_artsdeco
+  display_advanced_search: false
+  rank: 1
+  id: 392
+  enabled: false
+  full_name: "Arts d\xC3\xA9coratifs, design, mode"
+  description: ""
+  tab_id: 0
+collection_group_00345: 
+  name: l_films_exge_docu_lst_tourisme
+  display_advanced_search: false
+  rank: 157
+  id: 345
+  enabled: false
+  full_name: Tourisme
+  description: ""
+  tab_id: 0
+collection_group_00155: 
+  name: l_films_exth_arts_cine_realisateur
+  display_advanced_search: false
+  rank: 203
+  id: 155
+  enabled: false
+  full_name: "Portraits de r\xC3\xA9alisateurs"
+  description: ""
+  tab_id: 0
+collection_group_00346: 
+  name: l_films_exge_docu_philorel_philo
+  display_advanced_search: false
+  rank: 158
+  id: 346
+  enabled: false
+  full_name: Philosophie
+  description: ""
+  tab_id: 0
+collection_group_00536: 
+  name: k_musique_exge_films
+  display_advanced_search: false
+  rank: 1
+  id: 536
+  enabled: false
+  full_name: Musique de film
+  description: ""
+  tab_id: 0
+collection_group_00109: 
+  name: h_tout_stm_transport
+  display_advanced_search: false
+  rank: 1
+  id: 109
+  enabled: false
+  full_name: Sciences techniques, transport
+  description: ""
+  tab_id: 0
+collection_group_00583: 
+  name: j_articles_exth_langues
+  display_advanced_search: false
+  rank: 1
+  id: 583
+  enabled: false
+  full_name: "Langues, litt\xC3\xA9ratures (revues et articles)"
+  description: ""
+  tab_id: 0
+collection_group_00393: 
+  name: n_sites_exth_arts_graphisme
+  display_advanced_search: false
+  rank: 1
+  id: 393
+  enabled: false
+  full_name: "Graphisme, bande dessin\xC3\xA9e"
+  description: ""
+  tab_id: 0
+collection_group_00156: 
+  name: l_films_exth_arts_mus_concerts_blues
+  display_advanced_search: false
+  rank: 206
+  id: 156
+  enabled: false
+  full_name: "Concerts film\xC3\xA9s, blues, jazz"
+  description: ""
+  tab_id: 0
+collection_group_00157: 
+  name: l_films_exth_arts_mus_concerts_chanson
+  display_advanced_search: false
+  rank: 207
+  id: 157
+  enabled: false
+  full_name: "Concerts film\xC3\xA9s, chanson fran\xC3\xA7aise"
+  description: ""
+  tab_id: 0
+collection_group_00394: 
+  name: n_sites_exth_arts_photo
+  display_advanced_search: false
+  rank: 1
+  id: 394
+  enabled: false
+  full_name: Photographie
+  description: ""
+  tab_id: 0
+collection_group_00584: 
+  name: j_articles_exth_lst
+  display_advanced_search: false
+  rank: 1
+  id: 584
+  enabled: false
+  full_name: Loisirs, sport, tourisme (revues et articles)
+  description: ""
+  tab_id: 0
+collection_group_00537: 
+  name: k_musique_exty_partitions
+  display_advanced_search: false
+  rank: 1
+  id: 537
+  enabled: false
+  full_name: Partitions
+  description: ""
+  tab_id: 0
+collection_group_00347: 
+  name: l_films_exge_docu_philorel_religions
+  display_advanced_search: false
+  rank: 159
+  id: 347
+  enabled: false
+  full_name: Religions
+  description: ""
+  tab_id: 0
+collection_group_00348: 
+  name: l_films_exge_docu_stm_gene
+  display_advanced_search: false
+  rank: 168
+  id: 348
+  enabled: false
+  full_name: "Sciences, techniques, m\xC3\xA9decine, g\xC3\xA9n\xC3\xA9ralit\xC3\xA9s"
+  description: ""
+  tab_id: 0
+collection_group_00538: 
+  name: k_musique_exty_concerts_blues
+  display_advanced_search: false
+  rank: 1
+  id: 538
+  enabled: false
+  full_name: "Blues, jazz (concerts film\xC3\xA9s)"
+  description: ""
+  tab_id: 0
+collection_group_00585: 
+  name: j_articles_exth_philorel
+  display_advanced_search: false
+  rank: 1
+  id: 585
+  enabled: false
+  full_name: Philosophie, religions (revues et articles)
+  description: ""
+  tab_id: 0
+collection_group_00395: 
+  name: n_sites_exth_arts_cinema
+  display_advanced_search: false
+  rank: 1
+  id: 395
+  enabled: false
+  full_name: "Cin\xC3\xA9ma"
+  description: ""
+  tab_id: 0
+collection_group_00158: 
+  name: l_films_exth_arts_mus_concerts_monde
+  display_advanced_search: false
+  rank: 208
+  id: 158
+  enabled: false
+  full_name: "Concerts film\xC3\xA9s, musiques du monde"
+  description: ""
+  tab_id: 0
+collection_group_00349: 
+  name: l_films_exge_docu_stm_maths
+  display_advanced_search: false
+  rank: 172
+  id: 349
+  enabled: false
+  full_name: "Math\xC3\xA9matiques, physique, chimie"
+  description: ""
+  tab_id: 0
+collection_group_00539: 
+  name: k_musique_exty_concerts_chanson
+  display_advanced_search: false
+  rank: 1
+  id: 539
+  enabled: false
+  full_name: "Chanson fran\xC3\xA7aise (concerts film\xC3\xA9s)"
+  description: ""
+  tab_id: 0
+collection_group_00396: 
+  name: n_sites_exth_arts_musique
+  display_advanced_search: false
+  rank: 1
+  id: 396
+  enabled: false
+  full_name: Musique
+  description: ""
+  tab_id: 0
+collection_group_00159: 
+  name: l_films_exth_arts_mus_concerts_opera
+  display_advanced_search: false
+  rank: 209
+  id: 159
+  enabled: false
+  full_name: "Concerts film\xC3\xA9s, op\xC3\xA9ra"
+  description: ""
+  tab_id: 0
+collection_group_00586: 
+  name: j_articles_exth_emploi
+  display_advanced_search: false
+  rank: 1
+  id: 586
+  enabled: false
+  full_name: "Recherche d'emploi, m\xC3\xA9tiers, formations (revues et articles)"
+  description: ""
+  tab_id: 0
+collection_group_00587: 
+  name: j_articles_exth_stm
+  display_advanced_search: false
+  rank: 1
+  id: 587
+  enabled: false
+  full_name: "Sciences, techniques, m\xC3\xA9decine (revues et articles)"
+  description: ""
+  tab_id: 0
+collection_group_00397: 
+  name: n_sites_exth_arts_specvivant
+  display_advanced_search: false
+  rank: 1
+  id: 397
+  enabled: false
+  full_name: Spectacle vivant
+  description: ""
+  tab_id: 0
+collection_group_00398: 
+  name: n_sites_exth_droit_administrations
+  display_advanced_search: false
+  rank: 1
+  id: 398
+  enabled: false
+  full_name: Administrations, institutions
+  description: ""
+  tab_id: 0
+collection_group_00400: 
+  name: n_sites_exth_eco_economie
+  display_advanced_search: false
+  rank: 1
+  id: 400
+  enabled: false
+  full_name: Economie
+  description: ""
+  tab_id: 0
+collection_group_00210: 
+  name: l_films_exth_lst_loisirs_autres
+  display_advanced_search: false
+  rank: 262
+  id: 210
+  enabled: false
+  full_name: Autres loisirs
+  description: ""
+  tab_id: 0
+collection_group_00020: 
+  name: b_livres_livres audios
+  display_advanced_search: true
+  rank: 3
+  id: 20
+  enabled: false
+  full_name: Livres audios
+  description: Chercher des livres audios
+  tab_id: 2
+collection_group_00588: 
+  name: j_articles_exth_shs
+  display_advanced_search: false
+  rank: 1
+  id: 588
+  enabled: false
+  full_name: Sciences humaines et sociales (revues et articles)
+  description: ""
+  tab_id: 0
+collection_group_00589: 
+  name: j_articles_exth_pratique
+  display_advanced_search: false
+  rank: 1
+  id: 589
+  enabled: false
+  full_name: Vie pratique (revues et articles)
+  description: ""
+  tab_id: 0
+collection_group_00021: 
+  name: b_livres_encyclo,dico
+  display_advanced_search: true
+  rank: 2
+  id: 21
+  enabled: false
+  full_name: "Encyclop\xC3\xA9dies, dictionnaires"
+  description: "Chercher des encyclop\xC3\xA9dies et dictionnaires"
+  tab_id: 2
+collection_group_00401: 
+  name: n_sites_exth_eco_entreprises
+  display_advanced_search: false
+  rank: 1
+  id: 401
+  enabled: false
+  full_name: Entreprises, gestion
+  description: ""
+  tab_id: 0
+collection_group_00211: 
+  name: l_films_exth_lst_sports_alpi
+  display_advanced_search: false
+  rank: 264
+  id: 211
+  enabled: false
+  full_name: Alpinisme
+  description: ""
+  tab_id: 0
+collection_group_00399: 
+  name: n_sites_exth_droit_droit
+  display_advanced_search: false
+  rank: 1
+  id: 399
+  enabled: false
+  full_name: Droit
+  description: ""
+  tab_id: 0
+collection_group_00212: 
+  name: l_films_exth_lst_sports_artsmart
+  display_advanced_search: false
+  rank: 265
+  id: 212
+  enabled: false
+  full_name: Arts martiaux
+  description: ""
+  tab_id: 0
+collection_group_00402: 
+  name: n_sites_exth_hist_gene
+  display_advanced_search: false
+  rank: 1
+  id: 402
+  enabled: false
+  full_name: "Histoire, g\xC3\xA9n\xC3\xA9ralites"
+  description: ""
+  tab_id: 0
+collection_group_00022: 
+  name: b_livres_livres test 1
+  display_advanced_search: true
+  rank: 3
+  id: 22
+  enabled: false
+  full_name: Livres test 1
+  description: ""
+  tab_id: 0
+collection_group_00260: 
+  name: l_films_exth_stm_med_psy
+  display_advanced_search: false
+  rank: 354
+  id: 260
+  enabled: false
+  full_name: Psychiatrie
+  description: ""
+  tab_id: 0
+collection_group_00450: 
+  name: n_sites_exty_abonnements
+  display_advanced_search: false
+  rank: 437
+  id: 450
+  enabled: false
+  full_name: Abonnements Bpi
+  description: ""
+  tab_id: 0
+collection_group_00403: 
+  name: n_sites_exth_hist_prehistoire
+  display_advanced_search: false
+  rank: 1
+  id: 403
+  enabled: false
+  full_name: "Pr\xC3\xA9histoire, arch\xC3\xA9ologie, Antiquit\xC3\xA9"
+  description: ""
+  tab_id: 0
+collection_group_00213: 
+  name: l_films_exth_lst_sports_athle
+  display_advanced_search: false
+  rank: 266
+  id: 213
+  enabled: false
+  full_name: "Athl\xC3\xA9tisme"
+  description: ""
+  tab_id: 0
+collection_group_00023: 
+  name: b_livres_livres test 2
+  display_advanced_search: true
+  rank: 4
+  id: 23
+  enabled: false
+  full_name: Livres test 2
+  description: ""
+  tab_id: 0
+collection_group_00070: 
+  name: h_tout_hist_contemp
+  display_advanced_search: false
+  rank: 38
+  id: 70
+  enabled: false
+  full_name: Histoire contemporaine
+  description: ""
+  tab_id: 0
+collection_group_00261: 
+  name: l_films_exth_stm_med_recherche
+  display_advanced_search: false
+  rank: 355
+  id: 261
+  enabled: false
+  full_name: Recherche
+  description: ""
+  tab_id: 0
+collection_group_00451: 
+  name: l_films_exge_docu_shs_pol
+  display_advanced_search: false
+  rank: 164
+  id: 451
+  enabled: false
+  full_name: Politique
+  description: ""
+  tab_id: 0
+collection_group_00404: 
+  name: n_sites_exth_hist_medievale
+  display_advanced_search: false
+  rank: 1
+  id: 404
+  enabled: false
+  full_name: "Histoire m\xC3\xA9di\xC3\xA9vale et moderne"
+  description: ""
+  tab_id: 0
+collection_group_00214: 
+  name: l_films_exth_lst_sports_boxe
+  display_advanced_search: false
+  rank: 267
+  id: 214
+  enabled: false
+  full_name: Boxe
+  description: ""
+  tab_id: 0
+collection_group_00024: 
+  name: j_articles_exge_bases
+  display_advanced_search: false
+  rank: 1
+  id: 24
+  enabled: false
+  full_name: Bases de presse
+  description: Chercher des articles en ligne
+  tab_id: 0
+collection_group_00071: 
+  name: h_tout_hist_continents
+  display_advanced_search: false
+  rank: 39
+  id: 71
+  enabled: false
+  full_name: Histoire des continents et des pays
+  description: ""
+  tab_id: 0
+collection_group_00072: 
+  name: h_tout_gene_bibliogr
+  display_advanced_search: false
+  rank: 32
+  id: 72
+  enabled: false
+  full_name: "G\xC3\xA9n\xC3\xA9ralit\xC3\xA9s, Bibliographies"
+  description: ""
+  tab_id: 0
+collection_group_00262: 
+  name: l_films_exth_stm_inge_armement
+  display_advanced_search: false
+  rank: 342
+  id: 262
+  enabled: false
+  full_name: Armement
+  description: ""
+  tab_id: 0
+collection_group_00215: 
+  name: l_films_exth_lst_sports_chasse
+  display_advanced_search: false
+  rank: 268
+  id: 215
+  enabled: false
+  full_name: Chasse
+  description: ""
+  tab_id: 0
+collection_group_00025: 
+  name: c_articles_revues_elec
+  display_advanced_search: true
+  rank: 3
+  id: 25
+  enabled: false
+  full_name: "Revues \xC3\xA9lectroniques"
+  description: "Chercher des revues \xC3\xA9lectroniques"
+  tab_id: 0
+collection_group_00452: 
+  name: l_films_exge_anim_cm_all
+  display_advanced_search: false
+  rank: 1
+  id: 452
+  enabled: false
+  full_name: Allemagne
+  description: ""
+  tab_id: 0
+collection_group_00405: 
+  name: n_sites_exth_hist_contemporaine
+  display_advanced_search: false
+  rank: 1
+  id: 405
+  enabled: false
+  full_name: Histoire contemporaine
+  description: ""
+  tab_id: 0
+collection_group_00073: 
+  name: h_tout_gene_bibliocat
+  display_advanced_search: false
+  rank: 31
+  id: 73
+  enabled: false
+  full_name: "G\xC3\xA9n\xC3\xA9ralit\xC3\xA9s, Biblioth\xC3\xA8ques et catalogues"
+  description: ""
+  tab_id: 0
+collection_group_00263: 
+  name: l_films_exth_stm_inge_astro
+  display_advanced_search: false
+  rank: 343
+  id: 263
+  enabled: false
+  full_name: Astronautique
+  description: ""
+  tab_id: 0
+collection_group_00216: 
+  name: l_films_exth_lst_sports_cyclisme
+  display_advanced_search: false
+  rank: 269
+  id: 216
+  enabled: false
+  full_name: Cyclisme
+  description: ""
+  tab_id: 0
+collection_group_00026: 
+  name: j_articles_exge_revues_papier
+  display_advanced_search: false
+  rank: 1
+  id: 26
+  enabled: false
+  full_name: Revues papier
+  description: "Chercher des revues imprim\xC3\xA9es"
+  tab_id: 0
+collection_group_00453: 
+  name: l_films_exge_anim_cm_bel
+  display_advanced_search: false
+  rank: 1
+  id: 453
+  enabled: false
+  full_name: Belgique
+  description: ""
+  tab_id: 0
+collection_group_00406: 
+  name: n_sites_exth_hist_france
+  display_advanced_search: false
+  rank: 1
+  id: 406
+  enabled: false
+  full_name: "Histoire de France, g\xC3\xA9n\xC3\xA9alogie"
+  description: ""
+  tab_id: 0
+collection_group_00407: 
+  name: n_sites_exth_hist_continents
+  display_advanced_search: false
+  rank: 1
+  id: 407
+  enabled: false
+  full_name: Histoire des continents et des pays
+  description: ""
+  tab_id: 0
+collection_group_00074: 
+  name: h_tout_gene_dict_biogr
+  display_advanced_search: false
+  rank: 34
+  id: 74
+  enabled: false
+  full_name: "G\xC3\xA9n\xC3\xA9ralit\xC3\xA9s, Dictionnaires biographiques"
+  description: ""
+  tab_id: 0
+collection_group_00027: 
+  name: j_articles_exge_sites_journaux
+  display_advanced_search: false
+  rank: 5
+  id: 27
+  enabled: false
+  full_name: Sites de journaux
+  description: Sites de journaux et de magazines
+  tab_id: 0
+collection_group_00454: 
+  name: l_films_exge_anim_cm_can
+  display_advanced_search: false
+  rank: 1
+  id: 454
+  enabled: false
+  full_name: Canada
+  description: ""
+  tab_id: 0
+collection_group_00264: 
+  name: l_films_exth_stm_inge_contruction
+  display_advanced_search: false
+  rank: 344
+  id: 264
+  enabled: false
+  full_name: Construction
+  description: ""
+  tab_id: 0
+collection_group_00217: 
+  name: l_films_exth_lst_sports_equitation
+  display_advanced_search: false
+  rank: 270
+  id: 217
+  enabled: false
+  full_name: Equitation, courses de chevaux
+  description: ""
+  tab_id: 0
+collection_group_00075: 
+  name: h_tout_gene_dict_lang
+  display_advanced_search: false
+  rank: 35
+  id: 75
+  enabled: false
+  full_name: "G\xC3\xA9n\xC3\xA9ralit\xC3\xA9s, Dictionnaires de langues"
+  description: ""
+  tab_id: 0
+collection_group_00265: 
+  name: l_films_exth_stm_inge_energie
+  display_advanced_search: false
+  rank: 345
+  id: 265
+  enabled: false
+  full_name: Energie
+  description: ""
+  tab_id: 0
+collection_group_00028: 
+  name: j_articles_exth_art
+  display_advanced_search: true
+  rank: 6
+  id: 28
+  enabled: false
+  full_name: Art (revues)
+  description: ""
+  tab_id: 0
+collection_group_00455: 
+  name: l_films_exge_anim_cm_est
+  display_advanced_search: false
+  rank: 1
+  id: 455
+  enabled: false
+  full_name: Estonie
+  description: ""
+  tab_id: 0
+collection_group_00408: 
+  name: n_sites_exth_litt_langues
+  display_advanced_search: false
+  rank: 403
+  id: 408
+  enabled: false
+  full_name: Langues
+  description: ""
+  tab_id: 0
+collection_group_00219: 
+  name: l_films_exth_lst_sports_foot
+  display_advanced_search: false
+  rank: 271
+  id: 219
+  enabled: false
+  full_name: Football
+  description: ""
+  tab_id: 0
+collection_group_00409: 
+  name: n_sites_exth_litt_linguistique
+  display_advanced_search: false
+  rank: 404
+  id: 409
+  enabled: false
+  full_name: Linguistique
+  description: ""
+  tab_id: 0
+collection_group_00456: 
+  name: l_films_exge_anim_cm_etatsu
+  display_advanced_search: false
+  rank: 1
+  id: 456
+  enabled: false
+  full_name: Etats-Unis
+  description: ""
+  tab_id: 0
+collection_group_00266: 
+  name: l_films_exth_stm_agri_agri
+  display_advanced_search: false
+  rank: 335
+  id: 266
+  enabled: false
+  full_name: Agriculture
+  description: ""
+  tab_id: 0
+collection_group_00076: 
+  name: h_tout_gene_encyclopedie
+  display_advanced_search: false
+  rank: 36
+  id: 76
+  enabled: false
+  full_name: "G\xC3\xA9n\xC3\xA9ralit\xC3\xA9s, Encyclop\xC3\xA9dies"
+  description: ""
+  tab_id: 0
+collection_group_00029: 
+  name: d_musique_Tout
+  display_advanced_search: true
+  rank: 1
+  id: 29
+  enabled: false
+  full_name: Tout musique
+  description: Chercher tous types de documents sur la musique
+  tab_id: 4
+collection_group_00077: 
+  name: h_tout_gene_bibnum
+  display_advanced_search: false
+  rank: 33
+  id: 77
+  enabled: false
+  full_name: "G\xC3\xA9n\xC3\xA9ralit\xC3\xA9s, Biblioth\xC3\xA8ques num\xC3\xA9riques"
+  description: ""
+  tab_id: 0
+collection_group_00457: 
+  name: l_films_exge_anim_cm_fr
+  display_advanced_search: false
+  rank: 1
+  id: 457
+  enabled: false
+  full_name: France
+  description: ""
+  tab_id: 0
+collection_group_00267: 
+  name: l_films_exth_stm_agri_alimentation
+  display_advanced_search: false
+  rank: 336
+  id: 267
+  enabled: false
+  full_name: Alimentation, gastronomie
+  description: ""
+  tab_id: 0
+collection_group_00268: 
+  name: l_films_exth_stm_transp_aeronautique
+  display_advanced_search: false
+  rank: 364
+  id: 268
+  enabled: false
+  full_name: "A\xC3\xA9ronautique"
+  description: ""
+  tab_id: 0
+collection_group_00458: 
+  name: l_films_exge_anim_cm_gb
+  display_advanced_search: false
+  rank: 1
+  id: 458
+  enabled: false
+  full_name: Grande-Bretagne
+  description: ""
+  tab_id: 0
+collection_group_00078: 
+  name: h_tout_gene_pays
+  display_advanced_search: false
+  rank: 37
+  id: 78
+  enabled: false
+  full_name: "G\xC3\xA9n\xC3\xA9ralit\xC3\xA9s, Donn\xC3\xA9es pays"
+  description: ""
+  tab_id: 0
+collection_group_00079: 
+  name: h_tout_art_generalites
+  display_advanced_search: false
+  rank: 23
+  id: 79
+  enabled: false
+  full_name: !binary |
+    QXJ0LCBHw6luw6lyYWxpdMOpcw==
+
+  description: ""
+  tab_id: 0
+collection_group_00459: 
+  name: l_films_exge_anim_cm_pb
+  display_advanced_search: false
+  rank: 1
+  id: 459
+  enabled: false
+  full_name: Pays-Bas
+  description: ""
+  tab_id: 0
+collection_group_00269: 
+  name: l_films_exth_stm_transp_auto
+  display_advanced_search: false
+  rank: 365
+  id: 269
+  enabled: false
+  full_name: Automobiles, motos, cycles
+  description: ""
+  tab_id: 0
+collection_group_00130: 
+  name: l_films_exth_arts_gene
+  display_advanced_search: false
+  rank: 204
+  id: 130
+  enabled: false
+  full_name: "Arts, g\xC3\xA9n\xC3\xA9ralit\xC3\xA9s"
+  description: ""
+  tab_id: 0
+collection_group_00320: 
+  name: l_films_exge_docu_actu_radio
+  display_advanced_search: false
+  rank: 133
+  id: 320
+  enabled: false
+  full_name: "Radio, t\xC3\xA9l\xC3\xA9vision"
+  description: ""
+  tab_id: 0
+collection_group_00131: 
+  name: l_films_exth_art19_prehist
+  display_advanced_search: false
+  rank: 186
+  id: 131
+  enabled: false
+  full_name: "Art jusqu'au 19e, pr\xC3\xA9histoire"
+  description: ""
+  tab_id: 0
+collection_group_00321: 
+  name: l_films_exge_docu_arts_gene
+  display_advanced_search: false
+  rank: 138
+  id: 321
+  enabled: false
+  full_name: "Arts, g\xC3\xA9n\xC3\xA9ralit\xC3\xA9s"
+  description: ""
+  tab_id: 0
+collection_group_00132: 
+  name: l_films_exth_art19_antiquite
+  display_advanced_search: false
+  rank: 183
+  id: 132
+  enabled: false
+  full_name: "Art jusqu'au 19e, antiquit\xC3\xA9"
+  description: ""
+  tab_id: 0
+collection_group_00322: 
+  name: l_films_exge_docu_arts_19e
+  display_advanced_search: false
+  rank: 134
+  id: 322
+  enabled: false
+  full_name: "Art jusqu'au 19\xC3\xA8me"
+  description: ""
+  tab_id: 0
+collection_group_00180: 
+  name: l_films_exth_arts_specviv_thea_docu
+  display_advanced_search: false
+  rank: 232
+  id: 180
+  enabled: false
+  full_name: "Th\xC3\xA9\xC3\xA2tres, documentaires"
+  description: ""
+  tab_id: 0
+collection_group_00323: 
+  name: l_films_exge_docu_art_20e
+  display_advanced_search: false
+  rank: 143
+  id: 323
+  enabled: false
+  full_name: "Art des 20\xC3\xA8me et 21\xC3\xA8me si\xC3\xA8cles"
+  description: ""
+  tab_id: 0
+collection_group_00133: 
+  name: l_films_exth_art19_moyenage
+  display_advanced_search: false
+  rank: 185
+  id: 133
+  enabled: false
+  full_name: Art jusqu'au 19e, Moyen-age
+  description: ""
+  tab_id: 0
+collection_group_00370: 
+  name: h_tout_litt_linguistique
+  display_advanced_search: false
+  rank: 47
+  id: 370
+  enabled: false
+  full_name: Linguistique
+  description: ""
+  tab_id: 0
+collection_group_00560: 
+  name: "k_musique_exty_sites_generalit\xC3\xA9s"
+  display_advanced_search: false
+  rank: 1
+  id: 560
+  enabled: false
+  full_name: "G\xC3\xA9n\xC3\xA9ralit\xC3\xA9s (sites)"
+  description: "1 doc (oxford muusic) : \xC3\xA0 fusionner avec bibliogr."
+  tab_id: 0
+collection_group_00561: 
+  name: k_musique_exty_sites_bibliogr
+  display_advanced_search: false
+  rank: 1
+  id: 561
+  enabled: false
+  full_name: Bibliographies (sites)
+  description: ""
+  tab_id: 0
+collection_group_00324: 
+  name: l_films_exge_docu_arts_archi
+  display_advanced_search: false
+  rank: 135
+  id: 324
+  enabled: false
+  full_name: Architecture
+  description: ""
+  tab_id: 0
+collection_group_00134: 
+  name: l_films_exth_art19_baroque
+  display_advanced_search: false
+  rank: 184
+  id: 134
+  enabled: false
+  full_name: Art jusqu'au 19e, Baroque
+  description: ""
+  tab_id: 0
+collection_group_00371: 
+  name: h_tout_litt_littgenerale
+  display_advanced_search: false
+  rank: 48
+  id: 371
+  enabled: false
+  full_name: "Litt\xC3\xA9rature g\xC3\xA9n\xC3\xA9rale"
+  description: ""
+  tab_id: 0
+collection_group_00181: 
+  name: l_films_exth_droit_admin_aide
+  display_advanced_search: false
+  rank: 234
+  id: 181
+  enabled: false
+  full_name: Aide sociale
+  description: ""
+  tab_id: 0
+collection_group_00325: 
+  name: l_films_exge_docu_arts_artsdeco
+  display_advanced_search: false
+  rank: 136
+  id: 325
+  enabled: false
+  full_name: "Arts d\xC3\xA9coratifs, design, mode"
+  description: ""
+  tab_id: 0
+collection_group_00135: 
+  name: l_films_exth_art19_19eme
+  display_advanced_search: false
+  rank: 182
+  id: 135
+  enabled: false
+  full_name: "Art jusqu'au 19e, 19\xC3\xA8me si\xC3\xA8cle"
+  description: ""
+  tab_id: 0
+collection_group_00372: 
+  name: h_tout_litt_francaise
+  display_advanced_search: false
+  rank: 45
+  id: 372
+  enabled: false
+  full_name: "Litt\xC3\xA9rature fran\xC3\xA7aise"
+  description: ""
+  tab_id: 0
+collection_group_00182: 
+  name: l_films_exth_droit_admin_armee
+  display_advanced_search: false
+  rank: 235
+  id: 182
+  enabled: false
+  full_name: !binary |
+    QXJtw6ll
+
+  description: ""
+  tab_id: 0
+collection_group_00515: 
+  name: k_musique_exge_electronique
+  display_advanced_search: false
+  rank: 1
+  id: 515
+  enabled: false
+  full_name: "Musiques \xC3\xA9lectroniques, techno"
+  description: ""
+  tab_id: 0
+collection_group_00562: 
+  name: k_musique_exty_sites_biblio
+  display_advanced_search: false
+  rank: 1
+  id: 562
+  enabled: false
+  full_name: "Biblioth\xC3\xA8ques (sites)"
+  description: ""
+  tab_id: 0
+collection_group_00563: 
+  name: k_musique_exty_sites_institutions
+  display_advanced_search: false
+  rank: 1
+  id: 563
+  enabled: false
+  full_name: Institutions, organismes, associations
+  description: ""
+  tab_id: 0
+collection_group_00516: 
+  name: k_musique_exge_monde_anthologies
+  display_advanced_search: false
+  rank: 1
+  id: 516
+  enabled: false
+  full_name: Anthologies de musiques du monde
+  description: ""
+  tab_id: 0
+collection_group_00136: 
+  name: l_films_exth_art19_primitif
+  display_advanced_search: false
+  rank: 187
+  id: 136
+  enabled: false
+  full_name: Art jusqu'au 19e, arts primitifs
+  description: ""
+  tab_id: 0
+collection_group_00373: 
+  name: h_tout_litt_etrangeres
+  display_advanced_search: false
+  rank: 44
+  id: 373
+  enabled: false
+  full_name: "Litt\xC3\xA9ratures \xC3\xA9trang\xC3\xA8res"
+  description: ""
+  tab_id: 0
+collection_group_00183: 
+  name: l_films_exth_droit_admin_instit
+  display_advanced_search: false
+  rank: 236
+  id: 183
+  enabled: false
+  full_name: Institutions
+  description: ""
+  tab_id: 0
+collection_group_00326: 
+  name: l_films_exge_docu_arts_graphisme
+  display_advanced_search: false
+  rank: 139
+  id: 326
+  enabled: false
+  full_name: "Graphisme, bande dessin\xC3\xA9e"
+  description: ""
+  tab_id: 0
+collection_group_00137: 
+  name: l_films_exth_art20_20e
+  display_advanced_search: false
+  rank: 188
+  id: 137
+  enabled: false
+  full_name: "20\xC3\xA8me si\xC3\xA8cle"
+  description: ""
+  tab_id: 0
+collection_group_00374: 
+  name: h_tout_philorel_philosophie
+  display_advanced_search: false
+  rank: 1
+  id: 374
+  enabled: false
+  full_name: Philosophie
+  description: ""
+  tab_id: 0
+collection_group_00184: 
+  name: l_films_exth_droit_admin_police
+  display_advanced_search: false
+  rank: 237
+  id: 184
+  enabled: false
+  full_name: Police, justice
+  description: ""
+  tab_id: 0
+collection_group_00327: 
+  name: l_films_exge_docu_arts_photo
+  display_advanced_search: false
+  rank: 141
+  id: 327
+  enabled: false
+  full_name: Photographie
+  description: ""
+  tab_id: 0
+collection_group_00517: 
+  name: k_musique_exge_monde_europe
+  display_advanced_search: false
+  rank: 1
+  id: 517
+  enabled: false
+  full_name: Europe
+  description: ""
+  tab_id: 0
+collection_group_00564: 
+  name: k_musique_exty_sites_manifestations
+  display_advanced_search: false
+  rank: 1
+  id: 564
+  enabled: false
+  full_name: "Manifestations et \xC3\xA9v\xC3\xA9nements (sites)"
+  description: ""
+  tab_id: 0
+collection_group_00565: 
+  name: k_musique_exty_sites_ressources
+  display_advanced_search: false
+  rank: 1
+  id: 565
+  enabled: false
+  full_name: Ressources musicales en ligne
+  description: "A fusionner avec g\xC3\xA9n\xC3\xA9ralit\xC3\xA9s et bibliographies ?"
+  tab_id: 0
+collection_group_00518: 
+  name: k_musique_exge_monde_asie
+  display_advanced_search: false
+  rank: 1
+  id: 518
+  enabled: false
+  full_name: Asie et Moyen-Orient
+  description: ""
+  tab_id: 0
+collection_group_00138: 
+  name: l_films_exth_art20_21e
+  display_advanced_search: false
+  rank: 189
+  id: 138
+  enabled: false
+  full_name: "21\xC3\xA8me si\xC3\xA8cle"
+  description: ""
+  tab_id: 0
+collection_group_00375: 
+  name: i_livres_genre_romanssf
+  display_advanced_search: false
+  rank: 83
+  id: 375
+  enabled: false
+  full_name: Romans de science-fiction
+  description: ""
+  tab_id: 0
+collection_group_00185: 
+  name: l_films_exth_droit_droit_internat
+  display_advanced_search: false
+  rank: 238
+  id: 185
+  enabled: false
+  full_name: Droit international
+  description: ""
+  tab_id: 0
+collection_group_00328: 
+  name: l_films_exge_docu_arts_cinema
+  display_advanced_search: false
+  rank: 137
+  id: 328
+  enabled: false
+  full_name: "Cin\xC3\xA9ma"
+  description: ""
+  tab_id: 0
+collection_group_00139: 
+  name: l_films_exth_arts_architecture
+  display_advanced_search: false
+  rank: 190
+  id: 139
+  enabled: false
+  full_name: Arts, architecture
+  description: ""
+  tab_id: 0
+collection_group_00376: 
+  name: h_tout_philorel_religions
+  display_advanced_search: false
+  rank: 1
+  id: 376
+  enabled: false
+  full_name: Religions
+  description: ""
+  tab_id: 0
+collection_group_00186: 
+  name: l_films_exth_droit_droit_prive
+  display_advanced_search: false
+  rank: 239
+  id: 186
+  enabled: false
+  full_name: "Droit priv\xC3\xA9"
+  description: ""
+  tab_id: 0
+collection_group_00329: 
+  name: l_films_exge_docu_arts_musique
+  display_advanced_search: false
+  rank: 140
+  id: 329
+  enabled: false
+  full_name: Musique
+  description: ""
+  tab_id: 0
+collection_group_00519: 
+  name: k_musique_exge_monde_afrique
+  display_advanced_search: false
+  rank: 1
+  id: 519
+  enabled: false
+  full_name: Afrique
+  description: ""
+  tab_id: 0
+collection_group_00566: 
+  name: k_musique_exty_sites_logiciels
+  display_advanced_search: false
+  rank: 1
+  id: 566
+  enabled: false
+  full_name: Logiciels musicaux
+  description: A mettre en niveau 1
+  tab_id: 0
+collection_group_00567: 
+  name: k_musique_exty_sites_revues
+  display_advanced_search: false
+  rank: 1
+  id: 567
+  enabled: false
+  full_name: Revues (sites)
+  description: ""
+  tab_id: 0
+collection_group_00187: 
+  name: l_films_exth_droit_droit_public
+  display_advanced_search: false
+  rank: 240
+  id: 187
+  enabled: false
+  full_name: Droit public
+  description: ""
+  tab_id: 0
+collection_group_00377: 
+  name: h_tout_recherche d'emploi_examens
+  display_advanced_search: false
+  rank: 1
+  id: 377
+  enabled: false
+  full_name: Examens, concours, tests
+  description: ""
+  tab_id: 0
+collection_group_00188: 
+  name: l_films_exth_eco_entreprise
+  display_advanced_search: false
+  rank: 243
+  id: 188
+  enabled: false
+  full_name: Entreprise, gestion
+  description: ""
+  tab_id: 0
+collection_group_00378: 
+  name: n_sites_exth_gene_bibliogr
+  display_advanced_search: false
+  rank: 1
+  id: 378
+  enabled: false
+  full_name: Bibliographies, livres en librairie
+  description: ""
+  tab_id: 0
+collection_group_00568: 
+  name: k_musique_exty_sites_compositeurs
+  display_advanced_search: false
+  rank: 1
+  id: 568
+  enabled: false
+  full_name: Compositeurs (sites)
+  description: ""
+  tab_id: 0
+collection_group_00569: 
+  name: k_musique_exty_sites_genres
+  display_advanced_search: false
+  rank: 1
+  id: 569
+  enabled: false
+  full_name: Genres musicaux (sites)
+  description: ""
+  tab_id: 0
+collection_group_00379: 
+  name: n_sites_exth_gene_bibliocat
+  display_advanced_search: false
+  rank: 1
+  id: 379
+  enabled: false
+  full_name: "Biblioth\xC3\xA8ques et catalogues"
+  description: ""
+  tab_id: 0
+collection_group_00001: 
+  name: a_tout_generalites
+  display_advanced_search: false
+  rank: 1
+  id: 1
+  enabled: false
+  full_name: !binary |
+    R8OpbsOpcmFsaXTDqXM=
+
+  description: "Catalogue, Bpi-Doc, Archives sonores, Encyclopedia Americana, Encyclopedia Multimedia, CD-Rap, Pers\xC3\xA9e, Cairn"
+  tab_id: 1
+collection_group_00189: 
+  name: l_films_exth_eco_eco_dvpmt
+  display_advanced_search: false
+  rank: 242
+  id: 189
+  enabled: false
+  full_name: "D\xC3\xA9veloppement"
+  description: ""
+  tab_id: 0
+collection_group_00050: 
+  name: f_autoformation_methlang
+  display_advanced_search: true
+  rank: 3
+  id: 50
+  enabled: false
+  full_name: "M\xC3\xA9thodes de langues"
+  description: ""
+  tab_id: 6
+collection_group_00240: 
+  name: l_films_exth_philorel_rel_judaisme
+  display_advanced_search: false
+  rank: 293
+  id: 240
+  enabled: false
+  full_name: "Juda\xC3\xAFsme"
+  description: ""
+  tab_id: 0
+collection_group_00430: 
+  name: n_sites_exth_shs_gene
+  display_advanced_search: false
+  rank: 421
+  id: 430
+  enabled: false
+  full_name: "Sciences humaines et sociales, g\xC3\xA9n\xC3\xA9ralit\xC3\xA9s"
+  description: ""
+  tab_id: 0
+collection_group_00003: 
+  name: a_tout_test2
+  display_advanced_search: false
+  rank: 8
+  id: 3
+  enabled: false
+  full_name: Test2
+  description: ""
+  tab_id: 7
+collection_group_00431: 
+  name: n_sites_exth_shs_psycho
+  display_advanced_search: false
+  rank: 425
+  id: 431
+  enabled: false
+  full_name: Psychologie, psychanalyse
+  description: ""
+  tab_id: 0
+collection_group_00004: 
+  name: a_tout_actumediapresse
+  display_advanced_search: false
+  rank: 2
+  id: 4
+  enabled: false
+  full_name: "Actualit\xC3\xA9s, m\xC3\xA9dias, presse"
+  description: "G\xC3\xA9n\xC3\xA9ralit\xC3\xA9s + ressources sp\xC3\xA9cialis\xC3\xA9es : CD-Rap, Europresse, Times Digital Archives..."
+  tab_id: 1
+collection_group_00241: 
+  name: l_films_exth_philorel_rel_mytho
+  display_advanced_search: false
+  rank: 294
+  id: 241
+  enabled: false
+  full_name: Mytholgies
+  description: ""
+  tab_id: 0
+collection_group_00051: 
+  name: g_sites_tout
+  display_advanced_search: true
+  rank: 1
+  id: 51
+  enabled: false
+  full_name: Tout sites et bases
+  description: Chercher dans tous les sites et bases
+  tab_id: 7
+collection_group_00052: 
+  name: g_sites_sites web
+  display_advanced_search: true
+  rank: 2
+  id: 52
+  enabled: false
+  full_name: Sites web
+  description: "Chercher dans les sites web s\xC3\xA9lectionn\xC3\xA9s"
+  tab_id: 7
+collection_group_00242: 
+  name: l_films_exth_philorel_rel_autres
+  display_advanced_search: false
+  rank: 288
+  id: 242
+  enabled: false
+  full_name: Autres religions
+  description: ""
+  tab_id: 0
+collection_group_00005: 
+  name: b_livres_tous livres
+  display_advanced_search: true
+  rank: 1
+  id: 5
+  enabled: false
+  full_name: Tous les livres
+  description: Chercher tous types de livres
+  tab_id: 2
+collection_group_00432: 
+  name: n_sites_exth_shs_socio
+  display_advanced_search: false
+  rank: 426
+  id: 432
+  enabled: false
+  full_name: "Sociologie, d\xC3\xA9mographie"
+  description: ""
+  tab_id: 0
+collection_group_00433: 
+  name: n_sites_exth_shs_ethno
+  display_advanced_search: false
+  rank: 420
+  id: 433
+  enabled: false
+  full_name: Ethnologie
+  description: ""
+  tab_id: 0
+collection_group_00290: 
+  name: l_films_exth_shs_socio_urbaine
+  display_advanced_search: false
+  rank: 333
+  id: 290
+  enabled: false
+  full_name: Sociologie urbaine
+  description: ""
+  tab_id: 0
+collection_group_00006: 
+  name: c_articles_tous articles
+  display_advanced_search: true
+  rank: 1
+  id: 6
+  enabled: false
+  full_name: Tous articles et revues
+  description: Trouver une revue ou un journal, chercher dans les bases d'articles
+  tab_id: 3
+collection_group_00053: 
+  name: g_sites_bases
+  display_advanced_search: true
+  rank: 3
+  id: 53
+  enabled: false
+  full_name: "Bases sp\xC3\xA9cialis\xC3\xA9es"
+  description: "Chercher dans les bases de donn\xC3\xA9es sp\xC3\xA9cialis\xC3\xA9es"
+  tab_id: 7
+collection_group_00243: 
+  name: l_films_exth_stm_gene
+  display_advanced_search: false
+  rank: 337
+  id: 243
+  enabled: false
+  full_name: "Sciences, techniques, m\xC3\xA9decine, g\xC3\xA9n\xC3\xA9ralit\xC3\xA9s"
+  description: ""
+  tab_id: 0
+collection_group_00480: 
+  name: l_films_docscine_livres
+  display_advanced_search: false
+  rank: 1
+  id: 480
+  enabled: false
+  full_name: Livres
+  description: ""
+  tab_id: 0
+collection_group_00481: 
+  name: l_films_docscine_revues
+  display_advanced_search: false
+  rank: 1
+  id: 481
+  enabled: false
+  full_name: Revues
+  description: ""
+  tab_id: 0
+collection_group_00244: 
+  name: l_films_exth_stm_maths_astronomie
+  display_advanced_search: false
+  rank: 346
+  id: 244
+  enabled: false
+  full_name: Astronomie
+  description: ""
+  tab_id: 0
+collection_group_00054: 
+  name: g_sites_test 1
+  display_advanced_search: true
+  rank: 4
+  id: 54
+  enabled: false
+  full_name: Sites test 1
+  description: ""
+  tab_id: 0
+collection_group_00291: 
+  name: l_films_exth_shs_socio_travail
+  display_advanced_search: false
+  rank: 332
+  id: 291
+  enabled: false
+  full_name: Travail
+  description: ""
+  tab_id: 0
+collection_group_00434: 
+  name: n_sites_exth_shs_politique
+  display_advanced_search: false
+  rank: 424
+  id: 434
+  enabled: false
+  full_name: Politique
+  description: ""
+  tab_id: 0

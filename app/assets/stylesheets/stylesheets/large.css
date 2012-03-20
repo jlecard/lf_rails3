@@ -1,0 +1,33 @@
+body, body div, body p, body th, body td, body li, body dd	{
+	font-size:	medium;
+	voice-family:	"\"}\"";
+	voice-family:	inherit;
+	font-size:	large
+}
+
+html>body, html>body div, html>body p, html>body th, html>body td, html>body li, html>body dd	{
+	font-size:	large
+}
+
+body #t_nav, body #t_nav div, body #t_nav p, body #t_navth, body #t_nav td, body #t_nav li, body #t_nav dd	{
+	font-size:	small;
+	voice-family:	"\"}\"";
+	voice-family:	inherit;
+	font-size:	medium
+}
+
+html>body #t_nav, html>body #t_nav div, html>body #t_nav p, html>body #t_nav th, html>body #t_nav td, html>body #t_nav li, html>body #t_nav dd	{
+	font-size:	medium
+}
+body #t_nav div#menuswitch {font-size:small;}
+html>body #t_nav div#menuswitch {font-size:small;}
+body #header div, body #librarybar li {font-size:small;}
+body h2 {font-size:x-large;}
+html>body #header div, html>body #librarybar li {font-size:small;}
+html>body h2 {font-size:x-large;}
+body .anchors {font-size: 13px;}
+html>body .anchors {font-size: 13px;}
+
+.smallfont {background-image: url(/images/a_small.gif);}
+.medfont { background-image: url(/images/a_med.gif);}
+.largefont {background-image: url(/images/a_large_underline.gif);}

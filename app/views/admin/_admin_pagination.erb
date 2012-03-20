@@ -1,0 +1,23 @@
+<div class="admin_pagination">
+    <% params.delete(:page) %>
+	<%if pages.current.previous %>
+    <%= link_to "<<", { :page => pages.first, :params=>params } %>
+	&nbsp;&nbsp;
+	<%= link_to "<", { :page => pages.current.previous,:params=>params } %>
+	<%end %>
+    
+	&nbsp;&nbsp;&nbsp;&nbsp;
+    <% pages.each do |_page| %>
+	<%  if pages.current.number == _page.number %>
+	<%=    _page.number %>
+    <%  else %>
+    <%=   link_to _page.number, {:page => _page.number, :params=>params} %>
+	<%  end %>
+    <% end %>
+	&nbsp;&nbsp;&nbsp;&nbsp;
+	<% if pages.current.next %>
+    <%=  link_to ">", { :page => pages.current.next, :params=>params } %>
+	&nbsp;&nbsp;
+	<%=  link_to ">>", { :page => pages.last,:params=>params } %>
+	<% end%>
+</div>

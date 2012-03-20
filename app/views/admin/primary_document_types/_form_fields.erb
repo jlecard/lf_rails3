@@ -1,0 +1,47 @@
+<div id="form_field">
+	<span class="form_left">
+    	<%= f.label translate('NAME_LABEL') %><br />
+	</span>
+	<span class="form_right">
+    	<%= f.text_field :name, :style => "width:150px"%>
+	</span>
+</div>
+
+<div id="form_field">
+	<span class="form_left">
+    	<%= f.label translate('NEW_PERIOD_LABEL') %>
+		<br/>
+		<small>
+			<%=translate("NEW_PERIOD_DESCRIPTION") %>
+		</small>
+	</span>
+	<span class="form_right">
+		<%= f.text_field :new_period, :style => "width:50px" %>	
+	</span>
+</div>
+
+<div id="form_field">
+	<span class="form_left">
+    	<%= f.label translate('ICON_DISPLAY') %>
+		<br/>
+		<small>
+			<%=translate("ICON_DISPLAY_DESCRIPTION") %>
+		</small>
+	</span>
+	<span class="form_right">
+		<%= f.text_field :display_icon, :style => "width:150px" %>
+	</span>
+</div>
+
+<div id="form_field">
+	<span class="form_left">
+    	<%= f.label translate('NO_IMAGE_DISPLAY') %>
+		<br/>
+		<small>
+			<%=translate("NO_IMAGE_DESCRIPTION") %>
+		</small>
+	</span>
+	<span class="form_right">
+		<%= f.text_field :no_image_icon, :style => "width:150px" %>
+	</span>
+</div>

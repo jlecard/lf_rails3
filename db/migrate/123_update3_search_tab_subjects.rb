@@ -22,7 +22,7 @@ class Update3SearchTabSubjects < ActiveRecord::Migration
   end
   
   def self.down
-    remove_column (:search_tab_subjects, :rank)
+    remove_column :search_tab_subjects, :rank
   end
 
 end

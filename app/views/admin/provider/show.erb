@@ -1,0 +1,19 @@
+<div id="page_contents">
+<%= render(:partial => "admin/navigation")%>
+<div id="center"  class="column">
+<h2><%=translate("PROVIDER_HEADER")%></h2>
+<div id="edit_form">
+<% for column in Provider.content_columns %>
+	<div id="form_field">
+  	  <span class="form_left">
+  	    <label for="<%=column.name %>"><%= column.human_name%>:</label>
+	  </span>
+	  <span class="form_right">
+		<%=h @provider.send(column.name)%>
+	  </span>
+	</div>
+<% end %>
+<%= link_to translate("EDIT"), :action => 'edit', :id => @provider %> 
+</div>
+</div>
+</div>

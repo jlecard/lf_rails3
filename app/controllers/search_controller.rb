@@ -26,6 +26,10 @@ require 'uri'
 require 'net/http'
 
 class SearchController < ApplicationController
+
+  def initialize
+    super
+  end
   
   def autocomplete
     _sTime = Time.now().to_f
@@ -48,40 +52,6 @@ class SearchController < ApplicationController
       logger.debug("ERROR " + e.message)
     end
     logger.debug("#STAT# [AUTOCOMPLETE] total: " + sprintf( "%.2f",(Time.now().to_f - _sTime)).to_s) if LOG_STATS
-  end
-  
-  def aform
-    
-  end
-  
-  def load_filter
-    @tab_id = SearchTab.find(:all);
-    
-    @filter_tab = Hash.new();
-    @tab_id.each do |elem|
-      if (@filter_tab[elem.id] == nil)
-        eval ("@filter_tab[:'#{elem.id}'] = Array.new()");
-      end
-      eval ("@filter_tab[:'#{elem.id}'].push(SearchTabFilter.find(:all, :conditions => 'search_tab_id=#{elem.id}'))");
-    end
-    return @filter_tab;
-  end
-  
-  def load_menu
-    return SearchTab.find(:all);  
-  end
-  
-  def load_groups
-    tab = SearchTab.find(:all);
-    groups = Array.new();
-    
-    tab.each do |items|
-      if (groups[items.id] == nil)
-        eval ("groups[#{items.id}] = Array.new()");
-      end
-      eval ("groups[#{items.id}] = CollectionGroup.find(:all, :conditions => 'tab_id=#{items.id}', :order => 'rank');")
-    end
-    return groups;
   end
   
 end

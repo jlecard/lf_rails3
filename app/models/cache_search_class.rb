@@ -94,6 +94,8 @@ class CacheSearchClass < ActionController::Base
         _lrecord = CACHE.get(cle)
         if !_lrecord.blank?
           logger.info("[CacheSearchClass] [GetRecord] Data from cache with key: #{cle}")
+        else
+          logger.debug("[CacheSearchClass] [GetRecord] NO RECORD from cache with key: #{cle}")
         end
       end
       

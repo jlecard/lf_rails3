@@ -1,0 +1,16 @@
+<div id="page_contents">
+    <%= render(:partial => "admin/navigation") %>
+    <div id="center" class="middle">
+        <h1><%=translate("NEW_SCHEDULE") %></h1>
+		<% logger.debug("VIEW NEW LETS CHECK THE PARAMS : #{params.inspect}")%>
+        <% form_for(:harvest_schedule, @harvest_schedule, :url => {:action => 'create'}) do |f| %>
+        <%= render :partial => "form", :locals=>{:f=>f, :params=>params} %>
+		<input type="hidden" id="back_to_collection" name="back_to_collection" value="<%=params[:back_to_collection]%>" />
+        <p>
+        	<%= params['back_to_collection']%>
+            <%= f.submit translate("CREATE_BUTTON_LABEL") %>
+        </p>
+        <% end %>
+      <%= render(:partial => "helper") %>
+    </div>
+</div>

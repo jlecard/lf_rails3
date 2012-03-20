@@ -1,0 +1,31 @@
+<% if @IsMobile != true %>
+<span id="links"><% if defined?(LIBRARYFIND_OFFER_LOGIN) && LIBRARYFIND_OFFER_LOGIN == true
+    if request.host.index(LIBRARYFIND_PROXY_STUB)==nil
+    objAuth = Authorize.new
+    if  objAuth.IsPrivateVisible(request.env['REMOTE_ADDR'], request.env['HTTP_REFERER']) == false
+    objProxy = Proxy.new()
+    _proxyurl = objProxy.GenerateProxy(request.url) %>
+    <a class="vr" href="<%=_proxyurl%>"><%=translate('LOGIN_PROXY') %></a>| <% end %>
+    <% end %>
+    <% end %>
+    <!--
+    <%=link_to translate('MY_SAVED_ITEMS'), {
+    :action => 'list', :controller=>'/cart' },{
+    :onclick=>"scroll(0,0);showWait()",
+    :class => "vr"}%>
+    |
+    --><%if session[:user] %>
+    <% if session[:user].administrator %>
+    <%=link_to translate('ADMIN'), {:action=>'index', :controller=>'/admin/dashboard'}, :class=>"vr" %>| <%end %>
+    <%=link_to translate('LOG_OUT'), {:action=>'logout', :controller=>'/user'}, :class=>"vr" %>| <%end %>
+    <!--
+    <%=link_to translate('HELP'), {
+    :action => 'help', :controller=>'/record' },{
+    :onclick=>"scroll(0,0);showWait()",
+    :class => "vr"}%>  |
+    <%=mail_to("metasearch@lists.oregonstate.edu", translate('REPORT_A_PROBLEM'),
+    :subject=>translate('PROBLEM_REPORT'),
+    :encode=>"javascript",
+    :class=>"vr")%>
+    --></span>
+<%end %>

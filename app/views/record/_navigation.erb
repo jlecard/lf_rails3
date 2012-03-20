@@ -1,0 +1,65 @@
+<%if @IsMobile != true %>
+<%if @results!=nil and !@results.empty? %>
+<div class="column left">
+    <!-- nav bar -->
+    <div id="browse">
+        <div class="xsnazzysearch">
+            <div>
+                <h2><%=translate('REFINE_RESULTS') %></h2>
+                <div id="t_nav">
+                	<%= render :partial => 'availabilities' %>
+					
+	
+                    <%if @material_types!=nil or @filter.assoc("material_type")!=nil %>
+                    <div id="bMatTypes" class="navigation">
+                        <b><%=translate('MATERIAL_TYPES') %></b>
+                        <%if @filter.assoc("material_type")!=nil
+                        @config ||= YAML::load_file(RAILS_ROOT + "/config/config.yml")
+                        tab_template=@config["GENERAL_TEMPLATE"]
+                        filter=build_unfilter_string("material_type")
+                        params=build_filter_params(filter,tab_template) %>
+                        <%=link_to translate('UNFILTER_MATERIAL_TYPES'),
+                        {  :action => 'retrieve_page',
+                        :controller=>'record',
+                        :params=>params},	:onclick=>"scroll(0,0);showWait()", :class=>"unfilter" %>
+                        <%end %>
+                        <div name="expandedItem" id="tMatTypes" class="expanded" init="0">
+                            <%@material_types.each{|_material_type, _count|
+                            if _material_type!=""
+                            @config ||= YAML::load_file(RAILS_ROOT + "/config/config.yml")
+                            if _material_type.downcase!="image"
+                            tab_template=@config["GENERAL_TEMPLATE"]
+                            else
+                            tab_template=@config["IMAGES_TEMPLATE"]
+                            end
+                            filter=build_filter_string("material_type",_material_type)
+                            params=build_filter_params(filter,tab_template) %>
+                            <%=link_to translate('RESULTS',[_material_type.pluralize,_count.to_s]),
+                            {  :action => 'retrieve_page',
+                            :controller=>'record',
+                            :params=>params},	:onclick=>"scroll(0,0);showWait()" %>
+                            <%end
+                            } %>
+                        </div>
+                    </div>
+                    <%end %>	
+                    <%= render :partial => 'subjects' %>
+                    <%= render :partial => 'authors' %>
+                    <%= render :partial => 'databases' %>
+                    <%= render :partial => 'dates' %>	
+                    <%= render :partial => 'langs' %>
+					<% if THEME_ACTIVATE %>
+					<%= render :partial => 'themes' %>
+					<% end %>
+				</div>
+                <!--end t_nav-->
+            </div>
+            <!--close xboxcontent -->
+        </div>
+        <!--end xsnazzysearch-->
+    </div>
+    <!--close browse -->
+</div>
+<!-- end left column -->
+<%end %>
+<%end %>

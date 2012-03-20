@@ -24,6 +24,7 @@
 # http://libraryfind.org
 class SearchTabSubject < ActiveRecord::Base
   has_many  :children, :dependent => :delete_all, :class_name => "SearchTabSubject", :foreign_key => :parent_id
+  belongs_to :search_tab, :foreign_key=>:tab_id
   include ApplicationHelper
   def	getElemWhereParentId(value)
     ret = Array.new();

@@ -1,0 +1,9 @@
+<div id="citation">
+  <%citation=author_citation(book_citation)%>
+  <%=citation%>
+  <%if book_citation.ptitle!=nil && book_citation.ptitle!=''%>
+    <span class="citation_title"><%=trim_punctuation(book_citation.ptitle)%></span>.
+  <%end
+    citation=publisher_citation(book_citation)+year_citation(book_citation)%>
+    <%=citation%>
+</div>

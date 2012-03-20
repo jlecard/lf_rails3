@@ -77,8 +77,8 @@ end
 #For sets, if they are specified as parameters, use those sets.  
 #In the case that the group is being changed, then default to the sets for that group.
 def init_search
-  setDefaults
-  initQueryAndType(params[:query][:string],params[:query][:type])
+  defaults
+  init_query_and_type(params[:query][:string],params[:query][:type])
   if (params[:query][:mod] != "0") 
     initAttributeSearch(params[:query][:mod])
   end
@@ -118,9 +118,9 @@ def init_search
   end
 end
 
-def setDefaults
+def defaults
   @filter=[]
-  @max= getMaxCollectionSearch
+  @max= max_search_results
   @mod="0"
   @mode="simple"
   @query=[""]
@@ -167,7 +167,7 @@ def strip_quotes(_record)
 end
  
   
-def initQueryAndType(query, type)
+def init_query_and_type(query, type)
    _query_array=buildQueryArray(query) 
    if _query_array.length<2
     _type_param=type

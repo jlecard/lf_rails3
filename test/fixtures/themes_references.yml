@@ -1,0 +1,8923 @@
+--- 
+themes_reference_12205: 
+  ref_theme: "2010"
+  exclusion: 
+  id: 12205
+  source: portfoliodw
+  ref_source: 73(07)
+themes_reference_12337: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12337
+  source: portfoliodw
+  ref_source: 892.4(07
+themes_reference_11815: 
+  ref_theme: "4520"
+  exclusion: 
+  id: 11815
+  source: mdbfilms
+  ref_source: "1141"
+themes_reference_12469: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12469
+  source: portfoliodw
+  ref_source: 886.1(0)
+themes_reference_11947: 
+  ref_theme: "4030"
+  exclusion: 
+  id: 11947
+  source: mdbesv
+  ref_source: "373"
+themes_reference_11260: 
+  ref_theme: "6010"
+  exclusion: 
+  id: 11260
+  source: mdbrg
+  ref_source: "1120"
+themes_reference_11392: 
+  ref_theme: "2020"
+  exclusion: 
+  id: 11392
+  source: mdbrg
+  ref_source: "1378"
+themes_reference_12206: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12206
+  source: portfoliodw
+  ref_source: 895.2(04
+themes_reference_12338: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12338
+  source: portfoliodw
+  ref_source: 895.1(0)
+themes_reference_11816: 
+  ref_theme: "2515"
+  exclusion: 
+  id: 11816
+  source: mdbfilms
+  ref_source: "973"
+themes_reference_11948: 
+  ref_theme: "6520"
+  exclusion: 
+  id: 11948
+  source: mdbesv
+  ref_source: "431"
+themes_reference_11261: 
+  ref_theme: "1020"
+  exclusion: 
+  id: 11261
+  source: mdbrg
+  ref_source: "978"
+themes_reference_11393: 
+  ref_theme: "4020"
+  exclusion: 
+  id: 11393
+  source: mdbrg
+  ref_source: "1029"
+themes_reference_12207: 
+  ref_theme: "4030"
+  exclusion: 
+  id: 12207
+  source: portfoliodw
+  ref_source: "887"
+themes_reference_12339: 
+  ref_theme: "3535"
+  exclusion: 
+  id: 12339
+  source: portfoliodw
+  ref_source: "940.3"
+themes_reference_11817: 
+  ref_theme: "4020"
+  exclusion: 
+  id: 11817
+  source: mdbfilms
+  ref_source: "1051"
+themes_reference_11949: 
+  ref_theme: "6020"
+  exclusion: 
+  id: 11949
+  source: mdbesv
+  ref_source: "409"
+themes_reference_11262: 
+  ref_theme: "4515"
+  exclusion: 
+  id: 11262
+  source: mdbrg
+  ref_source: "1067"
+themes_reference_11394: 
+  ref_theme: "2050"
+  exclusion: 
+  id: 11394
+  source: mdbrg
+  ref_source: "885"
+themes_reference_12470: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12470
+  source: portfoliodw
+  ref_source: 839.5(00)
+themes_reference_12208: 
+  ref_theme: "2020"
+  exclusion: 
+  id: 12208
+  source: portfoliodw
+  ref_source: 70""12""
+themes_reference_11818: 
+  ref_theme: "4025"
+  exclusion: 
+  id: 11818
+  source: mdbfilms
+  ref_source: "1284"
+themes_reference_11263: 
+  ref_theme: "6515"
+  exclusion: 
+  id: 11263
+  source: mdbrg
+  ref_source: "1201"
+themes_reference_11395: 
+  ref_theme: "3515"
+  exclusion: 
+  id: 11395
+  source: mdbrg
+  ref_source: "992"
+themes_reference_12471: 
+  ref_theme: "4030"
+  exclusion: 
+  id: 12471
+  source: portfoliodw
+  ref_source: "823"
+themes_reference_12209: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12209
+  source: portfoliodw
+  ref_source: 888.1(04
+themes_reference_11819: 
+  ref_theme: "4520"
+  exclusion: 
+  id: 11819
+  source: mdbfilms
+  ref_source: "1142"
+themes_reference_11264: 
+  ref_theme: "6010"
+  exclusion: 
+  id: 11264
+  source: mdbrg
+  ref_source: "1121"
+themes_reference_11396: 
+  ref_theme: "5015"
+  exclusion: 
+  id: 11396
+  source: mdbrg
+  ref_source: "1083"
+themes_reference_12340: 
+  ref_theme: "1025"
+  exclusion: 
+  id: 12340
+  source: portfoliodw
+  ref_source: ENC A
+themes_reference_12472: 
+  ref_theme: "6050"
+  exclusion: 
+  id: 12472
+  source: portfoliodw
+  ref_source: "681"
+themes_reference_11950: 
+  ref_theme: "2515"
+  exclusion: 
+  id: 11950
+  source: mdbesv
+  ref_source: "332"
+themes_reference_11265: 
+  ref_theme: "5510"
+  exclusion: 
+  id: 11265
+  source: mdbrg
+  ref_source: "1095"
+themes_reference_11397: 
+  ref_theme: "2050"
+  exclusion: 
+  id: 11397
+  source: mdbrg
+  ref_source: "886"
+themes_reference_12341: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12341
+  source: portfoliodw
+  ref_source: 888(00)
+themes_reference_11951: 
+  ref_theme: "4030"
+  exclusion: 
+  id: 11951
+  source: mdbesv
+  ref_source: "374"
+themes_reference_12473: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12473
+  source: portfoliodw
+  ref_source: 869(07
+themes_reference_11266: 
+  ref_theme: "2055"
+  exclusion: 
+  id: 11266
+  source: mdbrg
+  ref_source: "898"
+themes_reference_11398: 
+  ref_theme: "3515"
+  exclusion: 
+  id: 11398
+  source: mdbrg
+  ref_source: "993"
+themes_reference_12210: 
+  ref_theme: "4030"
+  exclusion: 
+  id: 12210
+  source: portfoliodw
+  ref_source: "888"
+themes_reference_12342: 
+  ref_theme: "1010"
+  exclusion: 
+  id: 12342
+  source: portfoliodw
+  ref_source: "0.0"
+themes_reference_11820: 
+  ref_theme: "2515"
+  exclusion: 
+  id: 11820
+  source: mdbfilms
+  ref_source: "974"
+themes_reference_11952: 
+  ref_theme: "6520"
+  exclusion: 
+  id: 11952
+  source: mdbesv
+  ref_source: "432"
+themes_reference_12474: 
+  ref_theme: "4030"
+  exclusion: 
+  id: 12474
+  source: portfoliodw
+  ref_source: "871"
+themes_reference_11267: 
+  ref_theme: "4515"
+  exclusion: 
+  id: 11267
+  source: mdbrg
+  ref_source: "1068"
+themes_reference_11399: 
+  ref_theme: "5015"
+  exclusion: 
+  id: 11399
+  source: mdbrg
+  ref_source: "1084"
+themes_reference_12211: 
+  ref_theme: "1035"
+  exclusion: 
+  id: 12211
+  source: portfoliodw
+  ref_source: "90"
+themes_reference_12343: 
+  ref_theme: "2021"
+  exclusion: 
+  id: 12343
+  source: portfoliodw
+  ref_source: 70""20"""
+themes_reference_11821: 
+  ref_theme: "4020"
+  exclusion: 
+  id: 11821
+  source: mdbfilms
+  ref_source: "1052"
+themes_reference_11953: 
+  ref_theme: "6025"
+  exclusion: 
+  id: 11953
+  source: mdbesv
+  ref_source: "411"
+themes_reference_12475: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12475
+  source: portfoliodw
+  ref_source: 839.5(04
+themes_reference_11268: 
+  ref_theme: "6515"
+  exclusion: 
+  id: 11268
+  source: mdbrg
+  ref_source: "1202"
+themes_reference_12212: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12212
+  source: portfoliodw
+  ref_source: 895.6(0)
+themes_reference_12344: 
+  ref_theme: "3535"
+  exclusion: 
+  id: 12344
+  source: portfoliodw
+  ref_source: "940.4"
+themes_reference_11822: 
+  ref_theme: "6025"
+  exclusion: 
+  id: 11822
+  source: mdbfilms
+  ref_source: "1171"
+themes_reference_11954: 
+  ref_theme: "5015"
+  exclusion: 
+  id: 11954
+  source: mdbesv
+  ref_source: "396"
+themes_reference_12476: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12476
+  source: portfoliodw
+  ref_source: 886.1(00)
+themes_reference_11269: 
+  ref_theme: "4515"
+  exclusion: 
+  id: 11269
+  source: mdbrg
+  ref_source: "1069"
+themes_reference_12213: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12213
+  source: portfoliodw
+  ref_source: 86.@
+themes_reference_12345: 
+  ref_theme: "4030"
+  exclusion: 
+  id: 12345
+  source: portfoliodw
+  ref_source: "894 "
+themes_reference_11823: 
+  ref_theme: "4520"
+  exclusion: 
+  id: 11823
+  source: mdbfilms
+  ref_source: "1143"
+themes_reference_11955: 
+  ref_theme: "2050"
+  exclusion: 
+  id: 11955
+  source: mdbesv
+  ref_source: "312"
+themes_reference_12477: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12477
+  source: portfoliodw
+  ref_source: 895.24(0)
+themes_reference_12214: 
+  ref_theme: "6545"
+  exclusion: 
+  id: 12214
+  source: portfoliodw
+  ref_source: "91"
+themes_reference_12346: 
+  ref_theme: "1025"
+  exclusion: 
+  id: 12346
+  source: portfoliodw
+  ref_source: ENC B
+themes_reference_11824: 
+  ref_theme: "2515"
+  exclusion: 
+  id: 11824
+  source: mdbfilms
+  ref_source: "975"
+themes_reference_11956: 
+  ref_theme: "3535"
+  exclusion: 
+  id: 11956
+  source: mdbesv
+  ref_source: "354"
+themes_reference_12478: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12478
+  source: portfoliodw
+  ref_source: 892.7(04
+themes_reference_12215: 
+  ref_theme: "4030"
+  exclusion: 
+  id: 12215
+  source: portfoliodw
+  ref_source: "889"
+themes_reference_12347: 
+  ref_theme: "1015"
+  exclusion: 
+  id: 12347
+  source: portfoliodw
+  ref_source: "0.1"
+themes_reference_11825: 
+  ref_theme: "4020"
+  exclusion: 
+  id: 11825
+  source: mdbfilms
+  ref_source: "1053"
+themes_reference_11957: 
+  ref_theme: "4030"
+  exclusion: 
+  id: 11957
+  source: mdbesv
+  ref_source: "375"
+themes_reference_12479: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12479
+  source: portfoliodw
+  ref_source: 821(07
+themes_reference_11270: 
+  ref_theme: "2055"
+  exclusion: 
+  id: 11270
+  source: mdbrg
+  ref_source: "899"
+themes_reference_12216: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12216
+  source: portfoliodw
+  ref_source: 891.1(0)
+themes_reference_12348: 
+  ref_theme: "3520"
+  exclusion: 
+  id: 12348
+  source: portfoliodw
+  ref_source: "940.5"
+themes_reference_11826: 
+  ref_theme: "4025"
+  exclusion: 
+  id: 11826
+  source: mdbfilms
+  ref_source: "1285"
+themes_reference_11958: 
+  ref_theme: "6520"
+  exclusion: 
+  id: 11958
+  source: mdbesv
+  ref_source: "433"
+themes_reference_11271: 
+  ref_theme: "6530"
+  exclusion: 
+  id: 11271
+  source: mdbrg
+  ref_source: "1230"
+themes_reference_12217: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12217
+  source: portfoliodw
+  ref_source: "86 "
+themes_reference_12349: 
+  ref_theme: "3530"
+  exclusion: 
+  id: 12349
+  source: portfoliodw
+  ref_source: "929"
+themes_reference_11827: 
+  ref_theme: "6545"
+  exclusion: 
+  id: 11827
+  source: mdbfilms
+  ref_source: "1257"
+themes_reference_11959: 
+  ref_theme: "6025"
+  exclusion: 
+  id: 11959
+  source: mdbesv
+  ref_source: "412"
+themes_reference_11272: 
+  ref_theme: "6010"
+  exclusion: 
+  id: 11272
+  source: mdbrg
+  ref_source: "1122"
+themes_reference_12218: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12218
+  source: portfoliodw
+  ref_source: 895.2(07
+themes_reference_11828: 
+  ref_theme: "6025"
+  exclusion: 
+  id: 11828
+  source: mdbfilms
+  ref_source: "1172"
+themes_reference_11273: 
+  ref_theme: "6530"
+  exclusion: 
+  id: 11273
+  source: mdbrg
+  ref_source: "1231"
+themes_reference_12480: 
+  ref_theme: "4030"
+  exclusion: 
+  id: 12480
+  source: portfoliodw
+  ref_source: "825"
+themes_reference_12219: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12219
+  source: portfoliodw
+  ref_source: 893(0)
+themes_reference_11829: 
+  ref_theme: "4020"
+  exclusion: 
+  id: 11829
+  source: mdbfilms
+  ref_source: "1054"
+themes_reference_11274: 
+  ref_theme: "6010"
+  exclusion: 
+  id: 11274
+  source: mdbrg
+  ref_source: "1123"
+themes_reference_12481: 
+  ref_theme: "4030"
+  exclusion: 
+  id: 12481
+  source: portfoliodw
+  ref_source: "873"
+themes_reference_11275: 
+  ref_theme: "5510"
+  exclusion: 
+  id: 11275
+  source: mdbrg
+  ref_source: "1098"
+themes_reference_12350: 
+  ref_theme: "1010"
+  exclusion: 
+  id: 12350
+  source: portfoliodw
+  ref_source: "0.2"
+themes_reference_12482: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12482
+  source: portfoliodw
+  ref_source: 859(04
+themes_reference_11960: 
+  ref_theme: "5015"
+  exclusion: 
+  id: 11960
+  source: mdbesv
+  ref_source: "397"
+themes_reference_11276: 
+  ref_theme: "6520"
+  exclusion: 
+  id: 11276
+  source: mdbrg
+  ref_source: "1205"
+themes_reference_12351: 
+  ref_theme: "3520"
+  exclusion: 
+  id: 12351
+  source: portfoliodw
+  ref_source: "940.6"
+themes_reference_12483: 
+  ref_theme: "4030"
+  exclusion: 
+  id: 12483
+  source: portfoliodw
+  ref_source: "826"
+themes_reference_11961: 
+  ref_theme: "2050"
+  exclusion: 
+  id: 11961
+  source: mdbesv
+  ref_source: "313"
+themes_reference_11277: 
+  ref_theme: "6030"
+  exclusion: 
+  id: 11277
+  source: mdbrg
+  ref_source: "1151"
+themes_reference_12220: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12220
+  source: portfoliodw
+  ref_source: 890(07
+themes_reference_11830: 
+  ref_theme: "2055"
+  exclusion: 
+  id: 11830
+  source: mdbfilms
+  ref_source: "1286"
+themes_reference_12352: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12352
+  source: portfoliodw
+  ref_source: 85.@
+themes_reference_12484: 
+  ref_theme: "4025"
+  exclusion: 
+  id: 12484
+  source: portfoliodw
+  ref_source: "841 "
+themes_reference_11962: 
+  ref_theme: "3535"
+  exclusion: 
+  id: 11962
+  source: mdbesv
+  ref_source: "355"
+themes_reference_11278: 
+  ref_theme: "6010"
+  exclusion: 
+  id: 11278
+  source: mdbrg
+  ref_source: "1124"
+themes_reference_12221: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12221
+  source: portfoliodw
+  ref_source: 841(0)
+themes_reference_11831: 
+  ref_theme: "6025"
+  exclusion: 
+  id: 11831
+  source: mdbfilms
+  ref_source: "1173"
+themes_reference_12353: 
+  ref_theme: "1030"
+  exclusion: 
+  id: 12353
+  source: portfoliodw
+  ref_source: ENC D
+themes_reference_12485: 
+  ref_theme: "2024"
+  exclusion: 
+  id: 12485
+  source: portfoliodw
+  ref_source: 7.3(4@
+themes_reference_11963: 
+  ref_theme: "4030"
+  exclusion: 
+  id: 11963
+  source: mdbesv
+  ref_source: "376"
+themes_reference_11279: 
+  ref_theme: "5510"
+  exclusion: 
+  id: 11279
+  source: mdbrg
+  ref_source: "1099"
+themes_reference_12222: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12222
+  source: portfoliodw
+  ref_source: 895.22(04
+themes_reference_11700: 
+  ref_theme: "6050"
+  exclusion: 
+  id: 11700
+  source: mdbeaf
+  ref_source: "511"
+themes_reference_11832: 
+  ref_theme: "4020"
+  exclusion: 
+  id: 11832
+  source: mdbfilms
+  ref_source: "1055"
+themes_reference_12354: 
+  ref_theme: "1510"
+  exclusion: 
+  id: 12354
+  source: portfoliodw
+  ref_source: 0(
+themes_reference_12486: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12486
+  source: portfoliodw
+  ref_source: 873(00)
+themes_reference_11964: 
+  ref_theme: "6520"
+  exclusion: 
+  id: 11964
+  source: mdbesv
+  ref_source: "434"
+themes_reference_12223: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12223
+  source: portfoliodw
+  ref_source: 863(0)
+themes_reference_11701: 
+  ref_theme: "2025"
+  exclusion: 
+  id: 11701
+  source: mdbeaf
+  ref_source: "456"
+themes_reference_11833: 
+  ref_theme: "4510"
+  exclusion: 
+  id: 11833
+  source: mdbfilms
+  ref_source: "1116"
+themes_reference_12355: 
+  ref_theme: "3525"
+  exclusion: 
+  id: 12355
+  source: portfoliodw
+  ref_source: "940.7"
+themes_reference_12487: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12487
+  source: portfoliodw
+  ref_source: 839.5(07
+themes_reference_11965: 
+  ref_theme: "6025"
+  exclusion: 
+  id: 11965
+  source: mdbesv
+  ref_source: "413"
+themes_reference_12224: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12224
+  source: portfoliodw
+  ref_source: 846.1(0)
+themes_reference_11702: 
+  ref_theme: "6035"
+  exclusion: 
+  id: 11702
+  source: mdbfilms
+  ref_source: "1183"
+themes_reference_11834: 
+  ref_theme: "2020"
+  exclusion: 
+  id: 11834
+  source: mdbfilms
+  ref_source: "891"
+themes_reference_12356: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12356
+  source: portfoliodw
+  ref_source: 864(00)
+themes_reference_12488: 
+  ref_theme: "4030"
+  exclusion: 
+  id: 12488
+  source: portfoliodw
+  ref_source: "827"
+themes_reference_11966: 
+  ref_theme: "5015"
+  exclusion: 
+  id: 11966
+  source: mdbesv
+  ref_source: "398"
+themes_reference_11280: 
+  ref_theme: "2055"
+  exclusion: 
+  id: 11280
+  source: mdbrg
+  ref_source: "900"
+themes_reference_12225: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12225
+  source: portfoliodw
+  ref_source: 888.1(07
+themes_reference_11703: 
+  ref_theme: "4030"
+  exclusion: 
+  id: 11703
+  source: mdbfilms
+  ref_source: "1093"
+themes_reference_12357: 
+  ref_theme: "2015"
+  exclusion: 
+  id: 12357
+  source: portfoliodw
+  ref_source: 704-7(076)
+themes_reference_11835: 
+  ref_theme: "4030"
+  exclusion: 
+  id: 11835
+  source: mdbfilms
+  ref_source: "1083"
+themes_reference_12489: 
+  ref_theme: "6520"
+  exclusion: 
+  id: 12489
+  source: portfoliodw
+  ref_source: "30"
+themes_reference_11967: 
+  ref_theme: "3010"
+  exclusion: 
+  id: 11967
+  source: mdbesv
+  ref_source: "335"
+themes_reference_11281: 
+  ref_theme: "6530"
+  exclusion: 
+  id: 11281
+  source: mdbrg
+  ref_source: "1232"
+themes_reference_12226: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12226
+  source: portfoliodw
+  ref_source: 888(0)
+themes_reference_11704: 
+  ref_theme: "3520"
+  exclusion: 
+  id: 11704
+  source: mdbfilms
+  ref_source: "987"
+themes_reference_12358: 
+  ref_theme: "4030"
+  exclusion: 
+  id: 12358
+  source: portfoliodw
+  ref_source: 87-@
+themes_reference_11836: 
+  ref_theme: "6050"
+  exclusion: 
+  id: 11836
+  source: mdbfilms
+  ref_source: "1200"
+themes_reference_11968: 
+  ref_theme: "3535"
+  exclusion: 
+  id: 11968
+  source: mdbesv
+  ref_source: "356"
+themes_reference_11282: 
+  ref_theme: "6520"
+  exclusion: 
+  id: 11282
+  source: mdbrg
+  ref_source: "1206"
+themes_reference_12227: 
+  ref_theme: "3510"
+  exclusion: 
+  id: 12227
+  source: portfoliodw
+  ref_source: "93"
+themes_reference_11705: 
+  ref_theme: "2040"
+  exclusion: 
+  id: 11705
+  source: mdbfilms
+  ref_source: "900"
+themes_reference_12359: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12359
+  source: portfoliodw
+  ref_source: 839.6(00)
+themes_reference_11837: 
+  ref_theme: "6025"
+  exclusion: 
+  id: 11837
+  source: mdbfilms
+  ref_source: "1174"
+themes_reference_11969: 
+  ref_theme: "2050"
+  exclusion: 
+  id: 11969
+  source: mdbesv
+  ref_source: "314"
+themes_reference_11283: 
+  ref_theme: "6030"
+  exclusion: 
+  id: 11283
+  source: mdbrg
+  ref_source: "1152"
+themes_reference_12490: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12490
+  source: portfoliodw
+  ref_source: 892.7(07
+themes_reference_12228: 
+  ref_theme: "3535"
+  exclusion: 
+  id: 12228
+  source: portfoliodw
+  ref_source: "941"
+themes_reference_11706: 
+  ref_theme: "4025"
+  exclusion: 
+  id: 11706
+  source: mdbfilms
+  ref_source: "1065"
+themes_reference_11838: 
+  ref_theme: "4510"
+  exclusion: 
+  id: 11838
+  source: mdbfilms
+  ref_source: "1117"
+themes_reference_11284: 
+  ref_theme: "6025"
+  exclusion: 
+  id: 11284
+  source: mdbrg
+  ref_source: "1420"
+themes_reference_12491: 
+  ref_theme: "4030"
+  exclusion: 
+  id: 12491
+  source: portfoliodw
+  ref_source: "875"
+themes_reference_12229: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12229
+  source: portfoliodw
+  ref_source: 895.2(00)
+themes_reference_11707: 
+  ref_theme: "4515"
+  exclusion: 
+  id: 11707
+  source: mdbfilms
+  ref_source: "1126"
+themes_reference_11839: 
+  ref_theme: "2020"
+  exclusion: 
+  id: 11839
+  source: mdbfilms
+  ref_source: "892"
+themes_reference_11285: 
+  ref_theme: "1520"
+  exclusion: 
+  id: 11285
+  source: mdbrg
+  ref_source: "820"
+themes_reference_12360: 
+  ref_theme: "2010"
+  exclusion: 
+  id: 12360
+  source: portfoliodw
+  ref_source: 7(07)
+themes_reference_12492: 
+  ref_theme: "2015"
+  exclusion: 
+  id: 12492
+  source: portfoliodw
+  ref_source: 704-8(03)
+themes_reference_11970: 
+  ref_theme: "6520"
+  exclusion: 
+  id: 11970
+  source: mdbesv
+  ref_source: "435"
+themes_reference_11708: 
+  ref_theme: "6035"
+  exclusion: 
+  id: 11708
+  source: mdbfilms
+  ref_source: "1184"
+themes_reference_11286: 
+  ref_theme: "2055"
+  exclusion: 
+  id: 11286
+  source: mdbrg
+  ref_source: "901"
+themes_reference_12361: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12361
+  source: portfoliodw
+  ref_source: 894.35(04
+themes_reference_12493: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12493
+  source: portfoliodw
+  ref_source: 886.2(07
+themes_reference_11971: 
+  ref_theme: "6025"
+  exclusion: 
+  id: 11971
+  source: mdbesv
+  ref_source: "414"
+themes_reference_11709: 
+  ref_theme: "5015"
+  exclusion: 
+  id: 11709
+  source: mdbfilms
+  ref_source: "1155"
+themes_reference_12230: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12230
+  source: portfoliodw
+  ref_source: 862(0)
+themes_reference_12362: 
+  ref_theme: "1030"
+  exclusion: 
+  id: 12362
+  source: portfoliodw
+  ref_source: "0.6"
+themes_reference_11840: 
+  ref_theme: "3010"
+  exclusion: 
+  id: 11840
+  source: mdbfilms
+  ref_source: "978"
+themes_reference_12494: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12494
+  source: portfoliodw
+  ref_source: 876(04
+themes_reference_11972: 
+  ref_theme: "5015"
+  exclusion: 
+  id: 11972
+  source: mdbesv
+  ref_source: "399"
+themes_reference_11287: 
+  ref_theme: "6545"
+  exclusion: 
+  id: 11287
+  source: mdbrg
+  ref_source: "1260"
+themes_reference_12231: 
+  ref_theme: "3535"
+  exclusion: 
+  id: 12231
+  source: portfoliodw
+  ref_source: "95"
+themes_reference_12363: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12363
+  source: portfoliodw
+  ref_source: 895.8(0)
+themes_reference_11841: 
+  ref_theme: "5010"
+  exclusion: 
+  id: 11841
+  source: mdbfilms
+  ref_source: "1146"
+themes_reference_12495: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12495
+  source: portfoliodw
+  ref_source: 884(00)
+themes_reference_11973: 
+  ref_theme: "3535"
+  exclusion: 
+  id: 11973
+  source: mdbesv
+  ref_source: "357"
+themes_reference_11288: 
+  ref_theme: "6530"
+  exclusion: 
+  id: 11288
+  source: mdbrg
+  ref_source: "1233"
+themes_reference_12100: 
+  ref_theme: "2015"
+  exclusion: 
+  id: 12100
+  source: portfoliodw
+  ref_source: 704-8(06)
+themes_reference_12232: 
+  ref_theme: "3535"
+  exclusion: 
+  id: 12232
+  source: portfoliodw
+  ref_source: "942"
+themes_reference_11710: 
+  ref_theme: "2040"
+  exclusion: 
+  id: 11710
+  source: mdbfilms
+  ref_source: "901"
+themes_reference_12364: 
+  ref_theme: "4030"
+  exclusion: 
+  id: 12364
+  source: portfoliodw
+  ref_source: "840"
+themes_reference_11842: 
+  ref_theme: "2025"
+  exclusion: 
+  id: 11842
+  source: mdbfilms
+  ref_source: "893"
+themes_reference_12496: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12496
+  source: portfoliodw
+  ref_source: 849(0)
+themes_reference_11974: 
+  ref_theme: "2050"
+  exclusion: 
+  id: 11974
+  source: mdbesv
+  ref_source: "315"
+themes_reference_11289: 
+  ref_theme: "6520"
+  exclusion: 
+  id: 11289
+  source: mdbrg
+  ref_source: "1207"
+themes_reference_12101: 
+  ref_theme: "4030"
+  exclusion: 
+  id: 12101
+  source: portfoliodw
+  ref_source: 88(082)
+themes_reference_12233: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12233
+  source: portfoliodw
+  ref_source: 895.22(07
+themes_reference_11711: 
+  ref_theme: "4025"
+  exclusion: 
+  id: 11711
+  source: mdbfilms
+  ref_source: "1066"
+themes_reference_12365: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12365
+  source: portfoliodw
+  ref_source: 884(00)
+themes_reference_11843: 
+  ref_theme: "3010"
+  exclusion: 
+  id: 11843
+  source: mdbfilms
+  ref_source: "979"
+themes_reference_12497: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12497
+  source: portfoliodw
+  ref_source: 891.2(07
+themes_reference_11975: 
+  ref_theme: "3010"
+  exclusion: 
+  id: 11975
+  source: mdbesv
+  ref_source: "336"
+themes_reference_12102: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12102
+  source: portfoliodw
+  ref_source: 864(04
+themes_reference_12234: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12234
+  source: portfoliodw
+  ref_source: 886.7(04
+themes_reference_11712: 
+  ref_theme: "4515"
+  exclusion: 
+  id: 11712
+  source: mdbfilms
+  ref_source: "1127"
+themes_reference_11844: 
+  ref_theme: "6510"
+  exclusion: 
+  id: 11844
+  source: mdbfilms
+  ref_source: "1202"
+themes_reference_12366: 
+  ref_theme: "7010"
+  exclusion: 
+  id: 12366
+  source: portfoliodw
+  ref_source: "0.7"
+themes_reference_12498: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12498
+  source: portfoliodw
+  ref_source: ": 82  82.@"
+themes_reference_11976: 
+  ref_theme: "6520"
+  exclusion: 
+  id: 11976
+  source: mdbesv
+  ref_source: "436"
+themes_reference_12103: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12103
+  source: portfoliodw
+  ref_source: 892(00)
+themes_reference_12235: 
+  ref_theme: "2010"
+  exclusion: 
+  id: 12235
+  source: portfoliodw
+  ref_source: 7(084)
+themes_reference_11713: 
+  ref_theme: "6530"
+  exclusion: 
+  id: 11713
+  source: mdbfilms
+  ref_source: "1240"
+themes_reference_11845: 
+  ref_theme: "6030"
+  exclusion: 
+  id: 11845
+  source: mdbfilms
+  ref_source: "1176"
+themes_reference_12367: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12367
+  source: portfoliodw
+  ref_source: 895.24(00)
+themes_reference_12499: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12499
+  source: portfoliodw
+  ref_source: 839.31(0)
+themes_reference_11977: 
+  ref_theme: "6025"
+  exclusion: 
+  id: 11977
+  source: mdbesv
+  ref_source: "415"
+themes_reference_11290: 
+  ref_theme: "6030"
+  exclusion: 
+  id: 11290
+  source: mdbrg
+  ref_source: "1153"
+themes_reference_12104: 
+  ref_theme: "6030"
+  exclusion: 
+  id: 12104
+  source: portfoliodw
+  ref_source: "61"
+themes_reference_12236: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12236
+  source: portfoliodw
+  ref_source: 888.1(00)
+themes_reference_11714: 
+  ref_theme: "6035"
+  exclusion: 
+  id: 11714
+  source: mdbfilms
+  ref_source: "1185"
+themes_reference_11846: 
+  ref_theme: "5010"
+  exclusion: 
+  id: 11846
+  source: mdbfilms
+  ref_source: "1147"
+themes_reference_12368: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12368
+  source: portfoliodw
+  ref_source: 887(0)
+themes_reference_11978: 
+  ref_theme: "4510"
+  exclusion: 
+  id: 11978
+  source: mdbesv
+  ref_source: "379"
+themes_reference_11291: 
+  ref_theme: "4030"
+  exclusion: 
+  id: 11291
+  source: mdbrg
+  ref_source: "1341"
+themes_reference_12105: 
+  ref_theme: "6010"
+  exclusion: 
+  id: 12105
+  source: portfoliodw
+  ref_source: "5.1"
+themes_reference_12237: 
+  ref_theme: "6035"
+  exclusion: 
+  id: 12237
+  source: portfoliodw
+  ref_source: 62(
+themes_reference_11715: 
+  ref_theme: "3525"
+  exclusion: 
+  id: 11715
+  source: mdbfilms
+  ref_source: "989"
+themes_reference_11847: 
+  ref_theme: "4025"
+  exclusion: 
+  id: 11847
+  source: mdbfilms
+  ref_source: "1057"
+themes_reference_12369: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12369
+  source: portfoliodw
+  ref_source: 863(00)
+themes_reference_11979: 
+  ref_theme: "2050"
+  exclusion: 
+  id: 11979
+  source: mdbesv
+  ref_source: "316"
+themes_reference_11292: 
+  ref_theme: "1520"
+  exclusion: 
+  id: 11292
+  source: mdbrg
+  ref_source: "821"
+themes_reference_12106: 
+  ref_theme: "5010"
+  exclusion: 
+  id: 12106
+  source: portfoliodw
+  ref_source: "13"
+themes_reference_12238: 
+  ref_theme: "3535"
+  exclusion: 
+  id: 12238
+  source: portfoliodw
+  ref_source: "96"
+themes_reference_11716: 
+  ref_theme: "4515"
+  exclusion: 
+  id: 11716
+  source: mdbfilms
+  ref_source: "1128"
+themes_reference_11848: 
+  ref_theme: "4515"
+  exclusion: 
+  id: 11848
+  source: mdbfilms
+  ref_source: "1119"
+themes_reference_11293: 
+  ref_theme: "6545"
+  exclusion: 
+  id: 11293
+  source: mdbrg
+  ref_source: "1261"
+themes_reference_12107: 
+  ref_theme: "4025"
+  exclusion: 
+  id: 12107
+  source: portfoliodw
+  ref_source: "849 "
+themes_reference_12239: 
+  ref_theme: "3535"
+  exclusion: 
+  id: 12239
+  source: portfoliodw
+  ref_source: "943"
+themes_reference_11717: 
+  ref_theme: "6530"
+  exclusion: 
+  id: 11717
+  source: mdbfilms
+  ref_source: "1241"
+themes_reference_11849: 
+  ref_theme: "6515"
+  exclusion: 
+  id: 11849
+  source: mdbfilms
+  ref_source: "1203"
+themes_reference_11294: 
+  ref_theme: "6530"
+  exclusion: 
+  id: 11294
+  source: mdbrg
+  ref_source: "1234"
+themes_reference_12370: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12370
+  source: portfoliodw
+  ref_source: 829.4(00)
+themes_reference_11980: 
+  ref_theme: "3015"
+  exclusion: 
+  id: 11980
+  source: mdbesv
+  ref_source: "337"
+themes_reference_12108: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12108
+  source: portfoliodw
+  ref_source: "83 "
+themes_reference_11718: 
+  ref_theme: "6035"
+  exclusion: 
+  id: 11718
+  source: mdbfilms
+  ref_source: "1186"
+themes_reference_11295: 
+  ref_theme: "6520"
+  exclusion: 
+  id: 11295
+  source: mdbrg
+  ref_source: "1208"
+themes_reference_12371: 
+  ref_theme: "2015"
+  exclusion: 
+  id: 12371
+  source: portfoliodw
+  ref_source: 704-8(076)
+themes_reference_11981: 
+  ref_theme: "3535"
+  exclusion: 
+  id: 11981
+  source: mdbesv
+  ref_source: "358"
+themes_reference_12109: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12109
+  source: portfoliodw
+  ref_source: 892.7(00)
+themes_reference_11719: 
+  ref_theme: "5510"
+  exclusion: 
+  id: 11719
+  source: mdbfilms
+  ref_source: "1157"
+themes_reference_11296: 
+  ref_theme: "6045"
+  exclusion: 
+  id: 11296
+  source: mdbrg
+  ref_source: "1180"
+themes_reference_12372: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12372
+  source: portfoliodw
+  ref_source: 843(0)
+themes_reference_11850: 
+  ref_theme: "2030"
+  exclusion: 
+  id: 11850
+  source: mdbfilms
+  ref_source: "895"
+themes_reference_11982: 
+  ref_theme: "4515"
+  exclusion: 
+  id: 11982
+  source: mdbesv
+  ref_source: "380"
+themes_reference_11297: 
+  ref_theme: "6030"
+  exclusion: 
+  id: 11297
+  source: mdbrg
+  ref_source: "1154"
+themes_reference_12240: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12240
+  source: portfoliodw
+  ref_source: 889(00)
+themes_reference_12373: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12373
+  source: portfoliodw
+  ref_source: 846.3(0)
+themes_reference_11851: 
+  ref_theme: "3535"
+  exclusion: 
+  id: 11851
+  source: mdbfilms
+  ref_source: "1000"
+themes_reference_11983: 
+  ref_theme: "6525"
+  exclusion: 
+  id: 11983
+  source: mdbesv
+  ref_source: "437"
+themes_reference_11298: 
+  ref_theme: "6015"
+  exclusion: 
+  id: 11298
+  source: mdbrg
+  ref_source: "1127"
+themes_reference_12241: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12241
+  source: portfoliodw
+  ref_source: 829.4(0)
+themes_reference_12374: 
+  ref_theme: "4030"
+  exclusion: 
+  id: 12374
+  source: portfoliodw
+  ref_source: "890"
+themes_reference_11852: 
+  ref_theme: "4025"
+  exclusion: 
+  id: 11852
+  source: mdbfilms
+  ref_source: "1058"
+themes_reference_11984: 
+  ref_theme: "6030"
+  exclusion: 
+  id: 11984
+  source: mdbesv
+  ref_source: "416"
+themes_reference_11299: 
+  ref_theme: "6545"
+  exclusion: 
+  id: 11299
+  source: mdbrg
+  ref_source: "1262"
+themes_reference_12110: 
+  ref_theme: "5010"
+  exclusion: 
+  id: 12110
+  source: portfoliodw
+  ref_source: "14"
+themes_reference_11720: 
+  ref_theme: "2045"
+  exclusion: 
+  id: 11720
+  source: mdbfilms
+  ref_source: "931"
+themes_reference_12242: 
+  ref_theme: "3535"
+  exclusion: 
+  id: 12242
+  source: portfoliodw
+  ref_source: "97"
+themes_reference_12375: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12375
+  source: portfoliodw
+  ref_source: 894.35(07
+themes_reference_11853: 
+  ref_theme: "6530"
+  exclusion: 
+  id: 11853
+  source: mdbfilms
+  ref_source: "1232"
+themes_reference_11985: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 11985
+  source: mdbesv
+  ref_source: "360"
+themes_reference_12111: 
+  ref_theme: "2020"
+  exclusion: 
+  id: 12111
+  source: portfoliodw
+  ref_source: 70""16""
+themes_reference_11721: 
+  ref_theme: "4030"
+  exclusion: 
+  id: 11721
+  source: mdbfilms
+  ref_source: "1096"
+themes_reference_12243: 
+  ref_theme: "3530"
+  exclusion: 
+  id: 12243
+  source: portfoliodw
+  ref_source: "944"
+themes_reference_12376: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12376
+  source: portfoliodw
+  ref_source: 846.3(00)
+themes_reference_11854: 
+  ref_theme: "6030"
+  exclusion: 
+  id: 11854
+  source: mdbfilms
+  ref_source: "1177"
+themes_reference_11986: 
+  ref_theme: "4520"
+  exclusion: 
+  id: 11986
+  source: mdbesv
+  ref_source: "381"
+themes_reference_12112: 
+  ref_theme: "2015"
+  exclusion: 
+  id: 12112
+  source: portfoliodw
+  ref_source: 704-9(07)
+themes_reference_11722: 
+  ref_theme: "2045"
+  exclusion: 
+  id: 11722
+  source: mdbfilms
+  ref_source: "903"
+themes_reference_12244: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12244
+  source: portfoliodw
+  ref_source: "894.5 "
+themes_reference_12377: 
+  ref_theme: "6010"
+  exclusion: 
+  id: 12377
+  source: portfoliodw
+  ref_source: 5(0
+themes_reference_11855: 
+  ref_theme: "5015"
+  exclusion: 
+  id: 11855
+  source: mdbfilms
+  ref_source: "1149"
+themes_reference_11987: 
+  ref_theme: "6040"
+  exclusion: 
+  id: 11987
+  source: mdbesv
+  ref_source: "417"
+themes_reference_12113: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12113
+  source: portfoliodw
+  ref_source: 885(04
+themes_reference_11723: 
+  ref_theme: "4025"
+  exclusion: 
+  id: 11723
+  source: mdbfilms
+  ref_source: "1067"
+themes_reference_12245: 
+  ref_theme: "3535"
+  exclusion: 
+  id: 12245
+  source: portfoliodw
+  ref_source: "98"
+themes_reference_12378: 
+  ref_theme: "4030"
+  exclusion: 
+  id: 12378
+  source: portfoliodw
+  ref_source: "892"
+themes_reference_11856: 
+  ref_theme: "2030"
+  exclusion: 
+  id: 11856
+  source: mdbfilms
+  ref_source: "896"
+themes_reference_11988: 
+  ref_theme: "2055"
+  exclusion: 
+  id: 11988
+  source: mdbesv
+  ref_source: "318"
+themes_reference_12114: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12114
+  source: portfoliodw
+  ref_source: 891.2(07
+themes_reference_11724: 
+  ref_theme: "4515"
+  exclusion: 
+  id: 11724
+  source: mdbfilms
+  ref_source: "1129"
+themes_reference_12246: 
+  ref_theme: "3535"
+  exclusion: 
+  id: 12246
+  source: portfoliodw
+  ref_source: "945"
+themes_reference_11989: 
+  ref_theme: "1015"
+  exclusion: 
+  id: 11989
+  source: mdbesv
+  ref_source: "339"
+themes_reference_12115: 
+  ref_theme: "6515"
+  exclusion: 
+  id: 12115
+  source: portfoliodw
+  ref_source: "15"
+themes_reference_11725: 
+  ref_theme: "6530"
+  exclusion: 
+  id: 11725
+  source: mdbfilms
+  ref_source: "1242"
+themes_reference_12247: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12247
+  source: portfoliodw
+  ref_source: 829.9(00)
+themes_reference_12379: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12379
+  source: portfoliodw
+  ref_source: 894(00)
+themes_reference_11857: 
+  ref_theme: "6520"
+  exclusion: 
+  id: 11857
+  source: mdbfilms
+  ref_source: "1205"
+themes_reference_12116: 
+  ref_theme: "6040"
+  exclusion: 
+  id: 12116
+  source: portfoliodw
+  ref_source: "63"
+themes_reference_11726: 
+  ref_theme: "6010"
+  exclusion: 
+  id: 11726
+  source: mdbfilms
+  ref_source: "1158"
+themes_reference_12248: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12248
+  source: portfoliodw
+  ref_source: 886.7(07
+themes_reference_11858: 
+  ref_theme: "6030"
+  exclusion: 
+  id: 11858
+  source: mdbfilms
+  ref_source: "1178"
+themes_reference_12117: 
+  ref_theme: "6010"
+  exclusion: 
+  id: 12117
+  source: portfoliodw
+  ref_source: "5.3"
+themes_reference_11727: 
+  ref_theme: "1520"
+  exclusion: 
+  id: 11727
+  source: mdbfilms
+  ref_source: "877"
+themes_reference_12249: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12249
+  source: portfoliodw
+  ref_source: 839.31(0)
+themes_reference_11859: 
+  ref_theme: "2030"
+  exclusion: 
+  id: 11859
+  source: mdbfilms
+  ref_source: "897"
+themes_reference_12380: 
+  ref_theme: "4025"
+  exclusion: 
+  id: 12380
+  source: portfoliodw
+  ref_source: "845"
+themes_reference_11990: 
+  ref_theme: "4020"
+  exclusion: 
+  id: 11990
+  source: mdbesv
+  ref_source: "361"
+themes_reference_12118: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12118
+  source: portfoliodw
+  ref_source: 877(04
+themes_reference_11728: 
+  ref_theme: "2045"
+  exclusion: 
+  id: 11728
+  source: mdbfilms
+  ref_source: "932"
+themes_reference_12381: 
+  ref_theme: "4030"
+  exclusion: 
+  id: 12381
+  source: portfoliodw
+  ref_source: "893"
+themes_reference_11991: 
+  ref_theme: "6530"
+  exclusion: 
+  id: 11991
+  source: mdbesv
+  ref_source: "440"
+themes_reference_12119: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12119
+  source: portfoliodw
+  ref_source: 864(07
+themes_reference_11729: 
+  ref_theme: "2045"
+  exclusion: 
+  id: 11729
+  source: mdbfilms
+  ref_source: "904"
+themes_reference_12250: 
+  ref_theme: "3535"
+  exclusion: 
+  id: 12250
+  source: portfoliodw
+  ref_source: "946"
+themes_reference_11860: 
+  ref_theme: "4515"
+  exclusion: 
+  id: 11860
+  source: mdbfilms
+  ref_source: "1120"
+themes_reference_12382: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12382
+  source: portfoliodw
+  ref_source: 829.3(07
+themes_reference_11992: 
+  ref_theme: "6530"
+  exclusion: 
+  id: 11992
+  source: mdbesv
+  ref_source: "439"
+themes_reference_12251: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12251
+  source: portfoliodw
+  ref_source: 839.7(0)
+themes_reference_12383: 
+  ref_theme: "4025"
+  exclusion: 
+  id: 12383
+  source: portfoliodw
+  ref_source: "846"
+themes_reference_11861: 
+  ref_theme: "3010"
+  exclusion: 
+  id: 11861
+  source: mdbfilms
+  ref_source: "980"
+themes_reference_11993: 
+  ref_theme: "5015"
+  exclusion: 
+  id: 11993
+  source: mdbesv
+  ref_source: "341"
+themes_reference_12120: 
+  ref_theme: "5010"
+  exclusion: 
+  id: 12120
+  source: portfoliodw
+  ref_source: "16"
+themes_reference_12252: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12252
+  source: portfoliodw
+  ref_source: 848(0)
+themes_reference_11730: 
+  ref_theme: "4025"
+  exclusion: 
+  id: 11730
+  source: mdbfilms
+  ref_source: "1068"
+themes_reference_12384: 
+  ref_theme: "4030"
+  exclusion: 
+  id: 12384
+  source: portfoliodw
+  ref_source: "862 "
+themes_reference_11862: 
+  ref_theme: "6520"
+  exclusion: 
+  id: 11862
+  source: mdbfilms
+  ref_source: "1206"
+themes_reference_11994: 
+  ref_theme: "2055"
+  exclusion: 
+  id: 11994
+  source: mdbesv
+  ref_source: "320"
+themes_reference_12121: 
+  ref_theme: "4510"
+  exclusion: 
+  id: 12121
+  source: portfoliodw
+  ref_source: "64"
+themes_reference_12253: 
+  ref_theme: "3535"
+  exclusion: 
+  id: 12253
+  source: portfoliodw
+  ref_source: "99"
+themes_reference_11731: 
+  ref_theme: "2055"
+  exclusion: 
+  id: 11731
+  source: mdbfilms
+  ref_source: "960"
+themes_reference_12385: 
+  ref_theme: "2010"
+  exclusion: 
+  id: 12385
+  source: portfoliodw
+  ref_source: 75(07)
+themes_reference_11863: 
+  ref_theme: "6030"
+  exclusion: 
+  id: 11863
+  source: mdbfilms
+  ref_source: "1179"
+themes_reference_11995: 
+  ref_theme: "2055"
+  exclusion: 
+  id: 11995
+  source: mdbesv
+  ref_source: "319"
+themes_reference_12122: 
+  ref_theme: "3535"
+  exclusion: 
+  id: 12122
+  source: portfoliodw
+  ref_source: 940(0
+themes_reference_11600: 
+  ref_theme: "3530"
+  exclusion: 
+  id: 11600
+  source: mdbrg
+  ref_source: "1007"
+themes_reference_12254: 
+  ref_theme: "3535"
+  exclusion: 
+  id: 12254
+  source: portfoliodw
+  ref_source: "947"
+themes_reference_11732: 
+  ref_theme: "6520"
+  exclusion: 
+  id: 11732
+  source: mdbfilms
+  ref_source: "1214"
+themes_reference_12386: 
+  ref_theme: "6545"
+  exclusion: 
+  id: 12386
+  source: portfoliodw
+  ref_source: HG US ATL
+themes_reference_11864: 
+  ref_theme: "2035"
+  exclusion: 
+  id: 11864
+  source: mdbfilms
+  ref_source: "898"
+themes_reference_11996: 
+  ref_theme: "1520"
+  exclusion: 
+  id: 11996
+  source: mdbesv
+  ref_source: "383"
+themes_reference_12123: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12123
+  source: portfoliodw
+  ref_source: 889(0)
+themes_reference_11601: 
+  ref_theme: "4510"
+  exclusion: 
+  id: 11601
+  source: mdbrg
+  ref_source: "1060"
+themes_reference_12255: 
+  ref_theme: "3535"
+  exclusion: 
+  id: 12255
+  source: portfoliodw
+  ref_source: "948"
+themes_reference_11733: 
+  ref_theme: "2045"
+  exclusion: 
+  id: 11733
+  source: mdbfilms
+  ref_source: "933"
+themes_reference_12387: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12387
+  source: portfoliodw
+  ref_source: 895.1(07
+themes_reference_11865: 
+  ref_theme: "4515"
+  exclusion: 
+  id: 11865
+  source: mdbfilms
+  ref_source: "1121"
+themes_reference_11997: 
+  ref_theme: "6520"
+  exclusion: 
+  id: 11997
+  source: portfoliodw
+  ref_source: "31"
+themes_reference_12124: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12124
+  source: portfoliodw
+  ref_source: 894.51(0)
+themes_reference_11602: 
+  ref_theme: "2015"
+  exclusion: 
+  id: 11602
+  source: mdbrg
+  ref_source: "837"
+themes_reference_12256: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12256
+  source: portfoliodw
+  ref_source: 886.7(00)
+themes_reference_11734: 
+  ref_theme: "2045"
+  exclusion: 
+  id: 11734
+  source: mdbfilms
+  ref_source: "905"
+themes_reference_12388: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12388
+  source: portfoliodw
+  ref_source: 892(0)
+themes_reference_11866: 
+  ref_theme: "3010"
+  exclusion: 
+  id: 11866
+  source: mdbfilms
+  ref_source: "981"
+themes_reference_11998: 
+  ref_theme: "6055"
+  exclusion: 
+  id: 11998
+  source: portfoliodw
+  ref_source: "639"
+themes_reference_12125: 
+  ref_theme: "4030"
+  exclusion: 
+  id: 12125
+  source: portfoliodw
+  ref_source: "88 "
+themes_reference_11603: 
+  ref_theme: "3010"
+  exclusion: 
+  id: 11603
+  source: mdbrg
+  ref_source: "944"
+themes_reference_12257: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12257
+  source: portfoliodw
+  ref_source: 839.6(0)
+themes_reference_11735: 
+  ref_theme: "4025"
+  exclusion: 
+  id: 11735
+  source: mdbfilms
+  ref_source: "1069"
+themes_reference_12389: 
+  ref_theme: "2024"
+  exclusion: 
+  id: 12389
+  source: portfoliodw
+  ref_source: 7.3(6@
+themes_reference_11867: 
+  ref_theme: "6520"
+  exclusion: 
+  id: 11867
+  source: mdbfilms
+  ref_source: "1207"
+themes_reference_11999: 
+  ref_theme: "4030"
+  exclusion: 
+  id: 11999
+  source: portfoliodw
+  ref_source: "876"
+themes_reference_12126: 
+  ref_theme: "7035"
+  exclusion: 
+  id: 12126
+  source: portfoliodw
+  ref_source: PRA A
+themes_reference_11604: 
+  ref_theme: "1015"
+  exclusion: 
+  id: 11604
+  source: mdbrg
+  ref_source: "970"
+themes_reference_12258: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12258
+  source: portfoliodw
+  ref_source: 895.6(04
+themes_reference_11736: 
+  ref_theme: "1520"
+  exclusion: 
+  id: 11736
+  source: mdbfilms
+  ref_source: "878"
+themes_reference_11868: 
+  ref_theme: "5015"
+  exclusion: 
+  id: 11868
+  source: mdbfilms
+  ref_source: "1150"
+themes_reference_12127: 
+  ref_theme: "5010"
+  exclusion: 
+  id: 12127
+  source: portfoliodw
+  ref_source: "17"
+themes_reference_11605: 
+  ref_theme: "7045"
+  exclusion: 
+  id: 11605
+  source: mdbrg
+  ref_source: "1276"
+themes_reference_11737: 
+  ref_theme: "6530"
+  exclusion: 
+  id: 11737
+  source: mdbfilms
+  ref_source: "1243"
+themes_reference_12259: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12259
+  source: portfoliodw
+  ref_source: 884(0)
+themes_reference_11869: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 11869
+  source: mdbfilms
+  ref_source: "1003"
+themes_reference_12390: 
+  ref_theme: "6010"
+  exclusion: 
+  id: 12390
+  source: portfoliodw
+  ref_source: "50"
+themes_reference_12128: 
+  ref_theme: "3015"
+  exclusion: 
+  id: 12128
+  source: portfoliodw
+  ref_source: "65"
+themes_reference_11606: 
+  ref_theme: "4025"
+  exclusion: 
+  id: 11606
+  source: mdbrg
+  ref_source: "1034"
+themes_reference_11738: 
+  ref_theme: "6520"
+  exclusion: 
+  id: 11738
+  source: mdbfilms
+  ref_source: "1215"
+themes_reference_12391: 
+  ref_theme: "4030"
+  exclusion: 
+  id: 12391
+  source: portfoliodw
+  ref_source: "895"
+themes_reference_12129: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12129
+  source: portfoliodw
+  ref_source: 885(07
+themes_reference_11607: 
+  ref_theme: "4510"
+  exclusion: 
+  id: 11607
+  source: mdbrg
+  ref_source: "1061"
+themes_reference_11739: 
+  ref_theme: "6040"
+  exclusion: 
+  id: 11739
+  source: mdbfilms
+  ref_source: "1188"
+themes_reference_12260: 
+  ref_theme: "4030"
+  exclusion: 
+  id: 12260
+  source: portfoliodw
+  ref_source: 88(091)
+themes_reference_11870: 
+  ref_theme: "3010"
+  exclusion: 
+  id: 11870
+  source: mdbfilms
+  ref_source: "982"
+themes_reference_12392: 
+  ref_theme: "6015"
+  exclusion: 
+  id: 12392
+  source: portfoliodw
+  ref_source: "51"
+themes_reference_11608: 
+  ref_theme: "1515"
+  exclusion: 
+  id: 11608
+  source: mdbrg
+  ref_source: "757"
+themes_reference_12261: 
+  ref_theme: "6035"
+  exclusion: 
+  id: 12261
+  source: portfoliodw
+  ref_source: "62."
+themes_reference_11871: 
+  ref_theme: "5015"
+  exclusion: 
+  id: 11871
+  source: mdbfilms
+  ref_source: "1151"
+themes_reference_12393: 
+  ref_theme: "4025"
+  exclusion: 
+  id: 12393
+  source: portfoliodw
+  ref_source: "848 "
+themes_reference_11609: 
+  ref_theme: "2015"
+  exclusion: 
+  id: 11609
+  source: mdbrg
+  ref_source: "838"
+themes_reference_12130: 
+  ref_theme: "2015"
+  exclusion: 
+  id: 12130
+  source: portfoliodw
+  ref_source: 704-7(06)
+themes_reference_12262: 
+  ref_theme: "3535"
+  exclusion: 
+  id: 12262
+  source: portfoliodw
+  ref_source: "949"
+themes_reference_11740: 
+  ref_theme: "2045"
+  exclusion: 
+  id: 11740
+  source: mdbfilms
+  ref_source: "934"
+themes_reference_11872: 
+  ref_theme: "2055"
+  exclusion: 
+  id: 11872
+  source: mdbfilms
+  ref_source: "955"
+themes_reference_12394: 
+  ref_theme: "6540"
+  exclusion: 
+  id: 12394
+  source: portfoliodw
+  ref_source: "03"
+themes_reference_12131: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12131
+  source: portfoliodw
+  ref_source: 859(00)
+themes_reference_12263: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12263
+  source: portfoliodw
+  ref_source: 885(00)
+themes_reference_11741: 
+  ref_theme: "4030"
+  exclusion: 
+  id: 11741
+  source: mdbfilms
+  ref_source: "1099"
+themes_reference_11873: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 11873
+  source: mdbfilms
+  ref_source: "1004"
+themes_reference_12395: 
+  ref_theme: "2015"
+  exclusion: 
+  id: 12395
+  source: portfoliodw
+  ref_source: 704-7(082)
+themes_reference_12000: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12000
+  source: portfoliodw
+  ref_source: 859(07
+themes_reference_11610: 
+  ref_theme: "2050"
+  exclusion: 
+  id: 11610
+  source: mdbrg
+  ref_source: "890"
+themes_reference_12132: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12132
+  source: portfoliodw
+  ref_source: 876(04
+themes_reference_12264: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12264
+  source: portfoliodw
+  ref_source: 891.1(04
+themes_reference_11742: 
+  ref_theme: "3525"
+  exclusion: 
+  id: 11742
+  source: mdbfilms
+  ref_source: "990"
+themes_reference_11874: 
+  ref_theme: "3015"
+  exclusion: 
+  id: 11874
+  source: mdbfilms
+  ref_source: "983"
+themes_reference_12396: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12396
+  source: portfoliodw
+  ref_source: 839.9(0)
+themes_reference_11611: 
+  ref_theme: "2515"
+  exclusion: 
+  id: 11611
+  source: mdbrg
+  ref_source: "918"
+themes_reference_12133: 
+  ref_theme: "7015"
+  exclusion: 
+  id: 12133
+  source: portfoliodw
+  ref_source: PRA B
+themes_reference_12265: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12265
+  source: portfoliodw
+  ref_source: 893(04
+themes_reference_11743: 
+  ref_theme: "4515"
+  exclusion: 
+  id: 11743
+  source: mdbfilms
+  ref_source: "1130"
+themes_reference_11875: 
+  ref_theme: "4515"
+  exclusion: 
+  id: 11875
+  source: mdbfilms
+  ref_source: "1122"
+themes_reference_12397: 
+  ref_theme: "6020"
+  exclusion: 
+  id: 12397
+  source: portfoliodw
+  ref_source: "52"
+themes_reference_12001: 
+  ref_theme: "4030"
+  exclusion: 
+  id: 12001
+  source: portfoliodw
+  ref_source: "829"
+themes_reference_11612: 
+  ref_theme: "3010"
+  exclusion: 
+  id: 11612
+  source: mdbrg
+  ref_source: "945"
+themes_reference_12134: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12134
+  source: portfoliodw
+  ref_source: 877(07
+themes_reference_12266: 
+  ref_theme: "2020"
+  exclusion: 
+  id: 12266
+  source: portfoliodw
+  ref_source: 70""15""
+themes_reference_11744: 
+  ref_theme: "1520"
+  exclusion: 
+  id: 11744
+  source: mdbfilms
+  ref_source: "879"
+themes_reference_11876: 
+  ref_theme: "6030"
+  exclusion: 
+  id: 11876
+  source: mdbfilms
+  ref_source: "1180"
+themes_reference_12398: 
+  ref_theme: "4030"
+  exclusion: 
+  id: 12398
+  source: portfoliodw
+  ref_source: "897"
+themes_reference_12002: 
+  ref_theme: "6530"
+  exclusion: 
+  id: 12002
+  source: portfoliodw
+  ref_source: "32"
+themes_reference_11613: 
+  ref_theme: "1035"
+  exclusion: 
+  id: 11613
+  source: mdbrg
+  ref_source: "971"
+themes_reference_12135: 
+  ref_theme: "7020"
+  exclusion: 
+  id: 12135
+  source: portfoliodw
+  ref_source: PRA C
+themes_reference_12267: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12267
+  source: portfoliodw
+  ref_source: 841(04
+themes_reference_11745: 
+  ref_theme: "6520"
+  exclusion: 
+  id: 11745
+  source: mdbfilms
+  ref_source: "1216"
+themes_reference_11877: 
+  ref_theme: "5015"
+  exclusion: 
+  id: 11877
+  source: mdbfilms
+  ref_source: "1152"
+themes_reference_12399: 
+  ref_theme: "1040"
+  exclusion: 
+  id: 12399
+  source: portfoliodw
+  ref_source: "3.2"
+themes_reference_12003: 
+  ref_theme: "5010"
+  exclusion: 
+  id: 12003
+  source: portfoliodw
+  ref_source: "\"1("
+themes_reference_11614: 
+  ref_theme: "2020"
+  exclusion: 
+  id: 11614
+  source: mdbrg
+  ref_source: "1357"
+themes_reference_12136: 
+  ref_theme: "6055"
+  exclusion: 
+  id: 12136
+  source: portfoliodw
+  ref_source: "66"
+themes_reference_12268: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12268
+  source: portfoliodw
+  ref_source: 863(04
+themes_reference_11746: 
+  ref_theme: "6040"
+  exclusion: 
+  id: 11746
+  source: mdbfilms
+  ref_source: "1189"
+themes_reference_11878: 
+  ref_theme: "4515"
+  exclusion: 
+  id: 11878
+  source: mdbfilms
+  ref_source: "1123"
+themes_reference_12004: 
+  ref_theme: "4030"
+  exclusion: 
+  id: 12004
+  source: portfoliodw
+  ref_source: "877"
+themes_reference_11615: 
+  ref_theme: "4020"
+  exclusion: 
+  id: 11615
+  source: mdbrg
+  ref_source: "1384"
+themes_reference_12137: 
+  ref_theme: "3535"
+  exclusion: 
+  id: 12137
+  source: portfoliodw
+  ref_source: "940 "
+themes_reference_12269: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12269
+  source: portfoliodw
+  ref_source: 846.1(04
+themes_reference_11747: 
+  ref_theme: "3525"
+  exclusion: 
+  id: 11747
+  source: mdbfilms
+  ref_source: "991"
+themes_reference_11879: 
+  ref_theme: "6030"
+  exclusion: 
+  id: 11879
+  source: mdbfilms
+  ref_source: "1181"
+themes_reference_12005: 
+  ref_theme: "2024"
+  exclusion: 
+  id: 12005
+  source: portfoliodw
+  ref_source: 7.3(9@
+themes_reference_11616: 
+  ref_theme: "3530"
+  exclusion: 
+  id: 11616
+  source: mdbrg
+  ref_source: "1008"
+themes_reference_12138: 
+  ref_theme: "7030"
+  exclusion: 
+  id: 12138
+  source: portfoliodw
+  ref_source: PRA D
+themes_reference_11748: 
+  ref_theme: "4515"
+  exclusion: 
+  id: 11748
+  source: mdbfilms
+  ref_source: "1131"
+themes_reference_12006: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12006
+  source: portfoliodw
+  ref_source: 84.@
+themes_reference_11617: 
+  ref_theme: "7045"
+  exclusion: 
+  id: 11617
+  source: mdbrg
+  ref_source: "1277"
+themes_reference_12139: 
+  ref_theme: "6055"
+  exclusion: 
+  id: 12139
+  source: portfoliodw
+  ref_source: "67"
+themes_reference_11749: 
+  ref_theme: "2055"
+  exclusion: 
+  id: 11749
+  source: mdbfilms
+  ref_source: "963"
+themes_reference_12007: 
+  ref_theme: "4015"
+  exclusion: 
+  id: 12007
+  source: portfoliodw
+  ref_source: "80"
+themes_reference_11618: 
+  ref_theme: "6515"
+  exclusion: 
+  id: 11618
+  source: mdbrg
+  ref_source: "1197"
+themes_reference_12270: 
+  ref_theme: "6035"
+  exclusion: 
+  id: 12270
+  source: portfoliodw
+  ref_source: "620"
+themes_reference_11880: 
+  ref_theme: "5015"
+  exclusion: 
+  id: 11880
+  source: mdbfilms
+  ref_source: "1153"
+themes_reference_12008: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12008
+  source: portfoliodw
+  ref_source: 886.2(04
+themes_reference_11619: 
+  ref_theme: "4520"
+  exclusion: 
+  id: 11619
+  source: mdbrg
+  ref_source: "1062"
+themes_reference_12271: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12271
+  source: portfoliodw
+  ref_source: 895.6(07
+themes_reference_11881: 
+  ref_theme: "3510"
+  exclusion: 
+  id: 11881
+  source: mdbfilms
+  ref_source: "985"
+themes_reference_12009: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12009
+  source: portfoliodw
+  ref_source: "85 "
+themes_reference_12140: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12140
+  source: portfoliodw
+  ref_source: 839.8(04
+themes_reference_11750: 
+  ref_theme: "6535"
+  exclusion: 
+  id: 11750
+  source: mdbfilms
+  ref_source: "1245"
+themes_reference_12272: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12272
+  source: portfoliodw
+  ref_source: 897(0)
+themes_reference_11882: 
+  ref_theme: "4515"
+  exclusion: 
+  id: 11882
+  source: mdbfilms
+  ref_source: "1124"
+themes_reference_12141: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12141
+  source: portfoliodw
+  ref_source: 876(07
+themes_reference_11751: 
+  ref_theme: "6520"
+  exclusion: 
+  id: 11751
+  source: mdbfilms
+  ref_source: "1217"
+themes_reference_12273: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12273
+  source: portfoliodw
+  ref_source: 888(04
+themes_reference_11883: 
+  ref_theme: "5015"
+  exclusion: 
+  id: 11883
+  source: mdbfilms
+  ref_source: "1154"
+themes_reference_12010: 
+  ref_theme: "3010"
+  exclusion: 
+  id: 12010
+  source: portfoliodw
+  ref_source: "33"
+themes_reference_12142: 
+  ref_theme: "4510"
+  exclusion: 
+  id: 12142
+  source: portfoliodw
+  ref_source: "635.9"
+themes_reference_11620: 
+  ref_theme: "4025"
+  exclusion: 
+  id: 11620
+  source: mdbrg
+  ref_source: "1035"
+themes_reference_11752: 
+  ref_theme: "3530"
+  exclusion: 
+  id: 11752
+  source: mdbfilms
+  ref_source: "992"
+themes_reference_12274: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12274
+  source: portfoliodw
+  ref_source: 891.5(0)
+themes_reference_11884: 
+  ref_theme: "3515"
+  exclusion: 
+  id: 11884
+  source: mdbfilms
+  ref_source: "986"
+themes_reference_12011: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12011
+  source: portfoliodw
+  ref_source: 882(0)
+themes_reference_12143: 
+  ref_theme: "2033"
+  exclusion: 
+  id: 12143
+  source: portfoliodw
+  ref_source: "743.9"
+themes_reference_11621: 
+  ref_theme: "2015"
+  exclusion: 
+  id: 11621
+  source: mdbrg
+  ref_source: "839"
+themes_reference_11753: 
+  ref_theme: "4025"
+  exclusion: 
+  id: 11753
+  source: mdbfilms
+  ref_source: "1070"
+themes_reference_12275: 
+  ref_theme: "6035"
+  exclusion: 
+  id: 12275
+  source: portfoliodw
+  ref_source: "621"
+themes_reference_11885: 
+  ref_theme: "4515"
+  exclusion: 
+  id: 11885
+  source: mdbfilms
+  ref_source: "1125"
+themes_reference_12012: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12012
+  source: portfoliodw
+  ref_source: 839.31(00)
+themes_reference_12144: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12144
+  source: portfoliodw
+  ref_source: 821(00)
+themes_reference_11622: 
+  ref_theme: "2035"
+  exclusion: 
+  id: 11622
+  source: mdbrg
+  ref_source: "865"
+themes_reference_12276: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12276
+  source: portfoliodw
+  ref_source: 891.1(07
+themes_reference_11754: 
+  ref_theme: "4515"
+  exclusion: 
+  id: 11754
+  source: mdbfilms
+  ref_source: "1132"
+themes_reference_11886: 
+  ref_theme: "6045"
+  exclusion: 
+  id: 11886
+  source: mdbesv
+  ref_source: "420"
+themes_reference_12013: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12013
+  source: portfoliodw
+  ref_source: 88(04
+themes_reference_12145: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12145
+  source: portfoliodw
+  ref_source: 839.4(04
+themes_reference_11623: 
+  ref_theme: "2050"
+  exclusion: 
+  id: 11623
+  source: mdbrg
+  ref_source: "891"
+themes_reference_12277: 
+  ref_theme: "2015"
+  exclusion: 
+  id: 12277
+  source: portfoliodw
+  ref_source: 704-9(092)
+themes_reference_11755: 
+  ref_theme: "2050"
+  exclusion: 
+  id: 11755
+  source: mdbfilms
+  ref_source: "936"
+themes_reference_11887: 
+  ref_theme: "6045"
+  exclusion: 
+  id: 11887
+  source: mdbesv
+  ref_source: "419"
+themes_reference_12014: 
+  ref_theme: "4020"
+  exclusion: 
+  id: 12014
+  source: portfoliodw
+  ref_source: "81"
+themes_reference_12146: 
+  ref_theme: "7025"
+  exclusion: 
+  id: 12146
+  source: portfoliodw
+  ref_source: PRA F
+themes_reference_11624: 
+  ref_theme: "2515"
+  exclusion: 
+  id: 11624
+  source: mdbrg
+  ref_source: "919"
+themes_reference_12278: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12278
+  source: portfoliodw
+  ref_source: 893(07
+themes_reference_11756: 
+  ref_theme: "6535"
+  exclusion: 
+  id: 11756
+  source: mdbfilms
+  ref_source: "1246"
+themes_reference_11888: 
+  ref_theme: "2055"
+  exclusion: 
+  id: 11888
+  source: mdbesv
+  ref_source: "321"
+themes_reference_12700: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12700
+  source: portfoliodw
+  ref_source: 829.4(00)
+themes_reference_12015: 
+  ref_theme: "2515"
+  exclusion: 
+  id: 12015
+  source: portfoliodw
+  ref_source: "34"
+themes_reference_12147: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12147
+  source: portfoliodw
+  ref_source: 849(0)
+themes_reference_11625: 
+  ref_theme: "3010"
+  exclusion: 
+  id: 11625
+  source: mdbrg
+  ref_source: "946"
+themes_reference_12279: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12279
+  source: portfoliodw
+  ref_source: 862(04
+themes_reference_11757: 
+  ref_theme: "6520"
+  exclusion: 
+  id: 11757
+  source: mdbfilms
+  ref_source: "1218"
+themes_reference_11889: 
+  ref_theme: "3510"
+  exclusion: 
+  id: 11889
+  source: mdbesv
+  ref_source: "342"
+themes_reference_12701: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12701
+  source: portfoliodw
+  ref_source: 888.1(0)
+themes_reference_12016: 
+  ref_theme: "2015"
+  exclusion: 
+  id: 12016
+  source: portfoliodw
+  ref_source: 704-7(03)
+themes_reference_12148: 
+  ref_theme: "7040"
+  exclusion: 
+  id: 12148
+  source: portfoliodw
+  ref_source: PRA G
+themes_reference_11626: 
+  ref_theme: "3530"
+  exclusion: 
+  id: 11626
+  source: mdbrg
+  ref_source: "1009"
+themes_reference_11758: 
+  ref_theme: "6020"
+  exclusion: 
+  id: 11758
+  source: mdbfilms
+  ref_source: "1161"
+themes_reference_12702: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12702
+  source: portfoliodw
+  ref_source: 839.4(00)
+themes_reference_12017: 
+  ref_theme: "2515"
+  exclusion: 
+  id: 12017
+  source: portfoliodw
+  ref_source: "35"
+themes_reference_12149: 
+  ref_theme: "4025"
+  exclusion: 
+  id: 12149
+  source: portfoliodw
+  ref_source: "8.20"
+themes_reference_11627: 
+  ref_theme: "6515"
+  exclusion: 
+  id: 11627
+  source: mdbrg
+  ref_source: "1198"
+themes_reference_11759: 
+  ref_theme: "4515"
+  exclusion: 
+  id: 11759
+  source: mdbfilms
+  ref_source: "1275"
+themes_reference_12703: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12703
+  source: portfoliodw
+  ref_source: 839.9(00)
+themes_reference_12280: 
+  ref_theme: "4030"
+  exclusion: 
+  id: 12280
+  source: portfoliodw
+  ref_source: 843-@
+themes_reference_11890: 
+  ref_theme: "4025"
+  exclusion: 
+  id: 11890
+  source: mdbesv
+  ref_source: "363"
+themes_reference_12018: 
+  ref_theme: "2020"
+  exclusion: 
+  id: 12018
+  source: portfoliodw
+  ref_source: "\"70\"\"11\"\""
+themes_reference_11628: 
+  ref_theme: "2035"
+  exclusion: 
+  id: 11628
+  source: mdbrg
+  ref_source: "866"
+themes_reference_12704: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12704
+  source: portfoliodw
+  ref_source: 895.24(0)
+themes_reference_12281: 
+  ref_theme: "6035"
+  exclusion: 
+  id: 12281
+  source: portfoliodw
+  ref_source: "622"
+themes_reference_11891: 
+  ref_theme: "1520"
+  exclusion: 
+  id: 11891
+  source: mdbesv
+  ref_source: "384"
+themes_reference_12019: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12019
+  source: portfoliodw
+  ref_source: 886.1(04
+themes_reference_11629: 
+  ref_theme: "2050"
+  exclusion: 
+  id: 11629
+  source: mdbrg
+  ref_source: "892"
+themes_reference_12705: 
+  ref_theme: 
+  exclusion: "2030"
+  id: 12705
+  source: portfoliodw
+  ref_source: "743.9"
+themes_reference_12150: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12150
+  source: portfoliodw
+  ref_source: 88(00)
+themes_reference_12282: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12282
+  source: portfoliodw
+  ref_source: 841(07
+themes_reference_11760: 
+  ref_theme: "6520"
+  exclusion: 
+  id: 11760
+  source: mdbfilms
+  ref_source: "1219"
+themes_reference_11892: 
+  ref_theme: "6535"
+  exclusion: 
+  id: 11892
+  source: mdbesv
+  ref_source: "442"
+themes_reference_12706: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12706
+  source: portfoliodw
+  ref_source: 88(00)
+themes_reference_12151: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12151
+  source: portfoliodw
+  ref_source: 895.26(0)
+themes_reference_12283: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12283
+  source: portfoliodw
+  ref_source: 863(07
+themes_reference_11761: 
+  ref_theme: "6015"
+  exclusion: 
+  id: 11761
+  source: mdbfilms
+  ref_source: "1162"
+themes_reference_11893: 
+  ref_theme: "6045"
+  exclusion: 
+  id: 11893
+  source: mdbesv
+  ref_source: "421"
+themes_reference_12707: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12707
+  source: portfoliodw
+  ref_source: 863(00)
+themes_reference_12020: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12020
+  source: portfoliodw
+  ref_source: 894.51(00)
+themes_reference_12152: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12152
+  source: portfoliodw
+  ref_source: 829.9(04
+themes_reference_11630: 
+  ref_theme: "3010"
+  exclusion: 
+  id: 11630
+  source: mdbrg
+  ref_source: "947"
+themes_reference_12284: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12284
+  source: portfoliodw
+  ref_source: 846.1(07
+themes_reference_11762: 
+  ref_theme: "3535"
+  exclusion: 
+  id: 11762
+  source: mdbfilms
+  ref_source: "994"
+themes_reference_11894: 
+  ref_theme: "5015"
+  exclusion: 
+  id: 11894
+  source: mdbesv
+  ref_source: "400"
+themes_reference_12708: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12708
+  source: portfoliodw
+  ref_source: 894.35(07
+themes_reference_12021: 
+  ref_theme: "2515"
+  exclusion: 
+  id: 12021
+  source: portfoliodw
+  ref_source: "36"
+themes_reference_12153: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12153
+  source: portfoliodw
+  ref_source: 839.8(07
+themes_reference_11631: 
+  ref_theme: "4025"
+  exclusion: 
+  id: 11631
+  source: mdbrg
+  ref_source: "1036"
+themes_reference_12285: 
+  ref_theme: "6035"
+  exclusion: 
+  id: 12285
+  source: portfoliodw
+  ref_source: "623"
+themes_reference_11763: 
+  ref_theme: "4030"
+  exclusion: 
+  id: 11763
+  source: mdbfilms
+  ref_source: "1072"
+themes_reference_11895: 
+  ref_theme: "2010"
+  exclusion: 
+  id: 11895
+  source: mdbesv
+  ref_source: "301"
+themes_reference_12709: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12709
+  source: portfoliodw
+  ref_source: 894(0)
+themes_reference_11500: 
+  ref_theme: "3015"
+  exclusion: 
+  id: 11500
+  source: mdbrg
+  ref_source: "957"
+themes_reference_12022: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12022
+  source: portfoliodw
+  ref_source: 877(00)
+themes_reference_12154: 
+  ref_theme: "7045"
+  exclusion: 
+  id: 12154
+  source: portfoliodw
+  ref_source: PRA H
+themes_reference_11632: 
+  ref_theme: "5015"
+  exclusion: 
+  id: 11632
+  source: mdbrg
+  ref_source: "1090"
+themes_reference_12286: 
+  ref_theme: "4030"
+  exclusion: 
+  id: 12286
+  source: portfoliodw
+  ref_source: "860"
+themes_reference_11764: 
+  ref_theme: "4515"
+  exclusion: 
+  id: 11764
+  source: mdbfilms
+  ref_source: "1133"
+themes_reference_11896: 
+  ref_theme: "3510"
+  exclusion: 
+  id: 11896
+  source: mdbesv
+  ref_source: "343"
+themes_reference_11501: 
+  ref_theme: "3510"
+  exclusion: 
+  id: 11501
+  source: mdbrg
+  ref_source: "983"
+themes_reference_12023: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12023
+  source: portfoliodw
+  ref_source: 88(07
+themes_reference_12155: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12155
+  source: portfoliodw
+  ref_source: 839.8(00)
+themes_reference_11633: 
+  ref_theme: "2050"
+  exclusion: 
+  id: 11633
+  source: mdbrg
+  ref_source: "893"
+themes_reference_12287: 
+  ref_theme: "2015"
+  exclusion: 
+  id: 12287
+  source: portfoliodw
+  ref_source: 704-8(092)
+themes_reference_11765: 
+  ref_theme: "1520"
+  exclusion: 
+  id: 11765
+  source: mdbfilms
+  ref_source: "880"
+themes_reference_11897: 
+  ref_theme: "4025"
+  exclusion: 
+  id: 11897
+  source: mdbesv
+  ref_source: "364"
+themes_reference_11502: 
+  ref_theme: "2045"
+  exclusion: 
+  id: 11502
+  source: mdbrg
+  ref_source: "876"
+themes_reference_12024: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12024
+  source: portfoliodw
+  ref_source: 873(0)
+themes_reference_12156: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12156
+  source: portfoliodw
+  ref_source: "874 "
+themes_reference_11634: 
+  ref_theme: "4025"
+  exclusion: 
+  id: 11634
+  source: mdbrg
+  ref_source: "1037"
+themes_reference_12288: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12288
+  source: portfoliodw
+  ref_source: 888(07
+themes_reference_11766: 
+  ref_theme: "6540"
+  exclusion: 
+  id: 11766
+  source: mdbfilms
+  ref_source: "1248"
+themes_reference_11898: 
+  ref_theme: "1520"
+  exclusion: 
+  id: 11898
+  source: mdbesv
+  ref_source: "385"
+themes_reference_11503: 
+  ref_theme: "3015"
+  exclusion: 
+  id: 11503
+  source: mdbrg
+  ref_source: "958"
+themes_reference_12025: 
+  ref_theme: "3515"
+  exclusion: 
+  id: 12025
+  source: portfoliodw
+  ref_source: "931"
+themes_reference_12157: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12157
+  source: portfoliodw
+  ref_source: 839.4(07
+themes_reference_11635: 
+  ref_theme: "6515"
+  exclusion: 
+  id: 11635
+  source: mdbrg
+  ref_source: "1199"
+themes_reference_12289: 
+  ref_theme: "6035"
+  exclusion: 
+  id: 12289
+  source: portfoliodw
+  ref_source: "624"
+themes_reference_11767: 
+  ref_theme: "6045"
+  exclusion: 
+  id: 11767
+  source: mdbfilms
+  ref_source: "1191"
+themes_reference_11899: 
+  ref_theme: "6535"
+  exclusion: 
+  id: 11899
+  source: mdbesv
+  ref_source: "443"
+themes_reference_12710: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12710
+  source: portfoliodw
+  ref_source: 877(04
+themes_reference_11504: 
+  ref_theme: "3510"
+  exclusion: 
+  id: 11504
+  source: mdbrg
+  ref_source: "984"
+themes_reference_12026: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12026
+  source: portfoliodw
+  ref_source: 886.2(07
+themes_reference_12158: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12158
+  source: portfoliodw
+  ref_source: 894(0)
+themes_reference_11636: 
+  ref_theme: "2050"
+  exclusion: 
+  id: 11636
+  source: mdbrg
+  ref_source: "894"
+themes_reference_11768: 
+  ref_theme: "6015"
+  exclusion: 
+  id: 11768
+  source: mdbfilms
+  ref_source: "1163"
+themes_reference_12711: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12711
+  source: portfoliodw
+  ref_source: 887(0)
+themes_reference_11505: 
+  ref_theme: "1515"
+  exclusion: 
+  id: 11505
+  source: mdbrg
+  ref_source: "796"
+themes_reference_12027: 
+  ref_theme: "6535"
+  exclusion: 
+  id: 12027
+  source: portfoliodw
+  ref_source: "37"
+themes_reference_12159: 
+  ref_theme: "6540"
+  exclusion: 
+  id: 12159
+  source: portfoliodw
+  ref_source: "020"
+themes_reference_11637: 
+  ref_theme: "4025"
+  exclusion: 
+  id: 11637
+  source: mdbrg
+  ref_source: "1038"
+themes_reference_11769: 
+  ref_theme: "3535"
+  exclusion: 
+  id: 11769
+  source: mdbfilms
+  ref_source: "995"
+themes_reference_12712: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12712
+  source: portfoliodw
+  ref_source: 892(07
+themes_reference_12290: 
+  ref_theme: "4030"
+  exclusion: 
+  id: 12290
+  source: portfoliodw
+  ref_source: "861"
+themes_reference_11506: 
+  ref_theme: "2045"
+  exclusion: 
+  id: 11506
+  source: mdbrg
+  ref_source: "877"
+themes_reference_12028: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12028
+  source: portfoliodw
+  ref_source: 886.5(0)
+themes_reference_11638: 
+  ref_theme: "4515"
+  exclusion: 
+  id: 11638
+  source: mdbrg
+  ref_source: "1065"
+themes_reference_12713: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12713
+  source: portfoliodw
+  ref_source: 886.1(0)
+themes_reference_11507: 
+  ref_theme: "5010"
+  exclusion: 
+  id: 11507
+  source: mdbrg
+  ref_source: "1075"
+themes_reference_12029: 
+  ref_theme: "3515"
+  exclusion: 
+  id: 12029
+  source: portfoliodw
+  ref_source: "932"
+themes_reference_11639: 
+  ref_theme: "6050"
+  exclusion: 
+  id: 11639
+  source: mdbeaf
+  ref_source: "501"
+themes_reference_12714: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12714
+  source: portfoliodw
+  ref_source: 895.26(04
+themes_reference_12291: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12291
+  source: portfoliodw
+  ref_source: 862(07
+themes_reference_11508: 
+  ref_theme: "3510"
+  exclusion: 
+  id: 11508
+  source: mdbrg
+  ref_source: "985"
+themes_reference_12715: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12715
+  source: portfoliodw
+  ref_source: 886.7(00)
+themes_reference_12160: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12160
+  source: portfoliodw
+  ref_source: 829.9(07
+themes_reference_12292: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12292
+  source: portfoliodw
+  ref_source: 829.4(04
+themes_reference_11770: 
+  ref_theme: "4515"
+  exclusion: 
+  id: 11770
+  source: mdbfilms
+  ref_source: "1134"
+themes_reference_11509: 
+  ref_theme: "2045"
+  exclusion: 
+  id: 11509
+  source: mdbrg
+  ref_source: "878"
+themes_reference_12716: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12716
+  source: portfoliodw
+  ref_source: 892.4(04
+themes_reference_12161: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12161
+  source: portfoliodw
+  ref_source: 83.@
+themes_reference_12293: 
+  ref_theme: "6035"
+  exclusion: 
+  id: 12293
+  source: portfoliodw
+  ref_source: "625"
+themes_reference_11771: 
+  ref_theme: "4030"
+  exclusion: 
+  id: 11771
+  source: mdbfilms
+  ref_source: "1106"
+themes_reference_12717: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12717
+  source: portfoliodw
+  ref_source: 841(00)
+themes_reference_12030: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12030
+  source: portfoliodw
+  ref_source: 848 (00)
+themes_reference_12162: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12162
+  source: portfoliodw
+  ref_source: 890(0)
+themes_reference_11640: 
+  ref_theme: "6050"
+  exclusion: 
+  id: 11640
+  source: mdbeaf
+  ref_source: "490"
+themes_reference_12294: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12294
+  source: portfoliodw
+  ref_source: 839.31(04
+themes_reference_11772: 
+  ref_theme: "6045"
+  exclusion: 
+  id: 11772
+  source: mdbfilms
+  ref_source: "1192"
+themes_reference_12718: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12718
+  source: portfoliodw
+  ref_source: 891.1(04
+themes_reference_12031: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12031
+  source: portfoliodw
+  ref_source: 895.24(04
+themes_reference_12163: 
+  ref_theme: "6540"
+  exclusion: 
+  id: 12163
+  source: portfoliodw
+  ref_source: "021"
+themes_reference_11641: 
+  ref_theme: "6020"
+  exclusion: 
+  id: 11641
+  source: mdbeaf
+  ref_source: "1342"
+themes_reference_12295: 
+  ref_theme: "6035"
+  exclusion: 
+  id: 12295
+  source: portfoliodw
+  ref_source: "626"
+themes_reference_11773: 
+  ref_theme: "6015"
+  exclusion: 
+  id: 11773
+  source: mdbfilms
+  ref_source: "1164"
+themes_reference_12719: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12719
+  source: portfoliodw
+  ref_source: 897(00)
+themes_reference_12032: 
+  ref_theme: "6535"
+  exclusion: 
+  id: 12032
+  source: portfoliodw
+  ref_source: "38"
+themes_reference_11510: 
+  ref_theme: "5010"
+  exclusion: 
+  id: 11510
+  source: mdbrg
+  ref_source: "1076"
+themes_reference_12164: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12164
+  source: portfoliodw
+  ref_source: 889(04
+themes_reference_11642: 
+  ref_theme: "6015"
+  exclusion: 
+  id: 11642
+  source: mdbeaf
+  ref_source: "1441"
+themes_reference_12296: 
+  ref_theme: "4030"
+  exclusion: 
+  id: 12296
+  source: portfoliodw
+  ref_source: "863"
+themes_reference_11774: 
+  ref_theme: "3535"
+  exclusion: 
+  id: 11774
+  source: mdbfilms
+  ref_source: "996"
+themes_reference_12033: 
+  ref_theme: "2055"
+  exclusion: 
+  id: 12033
+  source: portfoliodw
+  ref_source: "790"
+themes_reference_11511: 
+  ref_theme: "3510"
+  exclusion: 
+  id: 11511
+  source: mdbrg
+  ref_source: "986"
+themes_reference_12165: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12165
+  source: portfoliodw
+  ref_source: 894.51(04
+themes_reference_11643: 
+  ref_theme: "5510"
+  exclusion: 
+  id: 11643
+  source: mdbeaf
+  ref_source: "1133"
+themes_reference_12297: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12297
+  source: portfoliodw
+  ref_source: 848(04
+themes_reference_11775: 
+  ref_theme: "4020"
+  exclusion: 
+  id: 11775
+  source: mdbfilms
+  ref_source: "1277"
+themes_reference_12034: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12034
+  source: portfoliodw
+  ref_source: 886.1(07
+themes_reference_11512: 
+  ref_theme: "2515"
+  exclusion: 
+  id: 11512
+  source: mdbrg
+  ref_source: "1398"
+themes_reference_12166: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12166
+  source: portfoliodw
+  ref_source: 895.2(0)
+themes_reference_11644: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 11644
+  source: mdbeaf
+  ref_source: "1100"
+themes_reference_12298: 
+  ref_theme: "6035"
+  exclusion: 
+  id: 12298
+  source: portfoliodw
+  ref_source: "627"
+themes_reference_11776: 
+  ref_theme: "4515"
+  exclusion: 
+  id: 11776
+  source: mdbfilms
+  ref_source: "1135"
+themes_reference_12720: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12720
+  source: portfoliodw
+  ref_source: 891.1(00)
+themes_reference_12035: 
+  ref_theme: "6525"
+  exclusion: 
+  id: 12035
+  source: portfoliodw
+  ref_source: "39"
+themes_reference_11513: 
+  ref_theme: "4030"
+  exclusion: 
+  id: 11513
+  source: mdbrg
+  ref_source: "1049"
+themes_reference_12167: 
+  ref_theme: "6540"
+  exclusion: 
+  id: 12167
+  source: portfoliodw
+  ref_source: "022"
+themes_reference_11645: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 11645
+  source: mdbeaf
+  ref_source: "523"
+themes_reference_12299: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12299
+  source: portfoliodw
+  ref_source: 839.7(04
+themes_reference_11777: 
+  ref_theme: "2510"
+  exclusion: 
+  id: 11777
+  source: mdbfilms
+  ref_source: "968"
+themes_reference_12721: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12721
+  source: portfoliodw
+  ref_source: 882(04
+themes_reference_12036: 
+  ref_theme: "2045"
+  exclusion: 
+  id: 12036
+  source: portfoliodw
+  ref_source: "791"
+themes_reference_11514: 
+  ref_theme: "2045"
+  exclusion: 
+  id: 11514
+  source: mdbrg
+  ref_source: "879"
+themes_reference_12168: 
+  ref_theme: "5010"
+  exclusion: 
+  id: 12168
+  source: portfoliodw
+  ref_source: 18"
+themes_reference_11646: 
+  ref_theme: "3010"
+  exclusion: 
+  id: 11646
+  source: mdbeaf
+  ref_source: "468"
+themes_reference_11778: 
+  ref_theme: "2010"
+  exclusion: 
+  id: 11778
+  source: mdbfilms
+  ref_source: "882"
+themes_reference_12722: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12722
+  source: portfoliodw
+  ref_source: 839.7(04
+themes_reference_12037: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12037
+  source: portfoliodw
+  ref_source: 895.22(00)
+themes_reference_11515: 
+  ref_theme: "5010"
+  exclusion: 
+  id: 11515
+  source: mdbrg
+  ref_source: "1077"
+themes_reference_12169: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12169
+  source: portfoliodw
+  ref_source: 888.1(0)
+themes_reference_11647: 
+  ref_theme: "2045"
+  exclusion: 
+  id: 11647
+  source: mdbeaf
+  ref_source: "457"
+themes_reference_11779: 
+  ref_theme: "6520"
+  exclusion: 
+  id: 11779
+  source: mdbfilms
+  ref_source: "1220"
+themes_reference_12723: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12723
+  source: portfoliodw
+  ref_source: "85 "
+themes_reference_12038: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12038
+  source: portfoliodw
+  ref_source: 829.(04
+themes_reference_11516: 
+  ref_theme: "1515"
+  exclusion: 
+  id: 11516
+  source: mdbrg
+  ref_source: "799"
+themes_reference_11648: 
+  ref_theme: "6020"
+  exclusion: 
+  id: 11648
+  source: mdbeaf
+  ref_source: "1343"
+themes_reference_12724: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12724
+  source: portfoliodw
+  ref_source: 885(00)
+themes_reference_12039: 
+  ref_theme: "3515"
+  exclusion: 
+  id: 12039
+  source: portfoliodw
+  ref_source: "934"
+themes_reference_11517: 
+  ref_theme: "3510"
+  exclusion: 
+  id: 11517
+  source: mdbrg
+  ref_source: "987"
+themes_reference_11649: 
+  ref_theme: "6010"
+  exclusion: 
+  id: 11649
+  source: mdbeaf
+  ref_source: "1145"
+themes_reference_12725: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12725
+  source: portfoliodw
+  ref_source: 877(07
+themes_reference_12170: 
+  ref_theme: "3510"
+  exclusion: 
+  id: 12170
+  source: portfoliodw
+  ref_source: HG US CHRO.
+themes_reference_11780: 
+  ref_theme: "6045"
+  exclusion: 
+  id: 11780
+  source: mdbfilms
+  ref_source: "1193"
+themes_reference_11518: 
+  ref_theme: "6520"
+  exclusion: 
+  id: 11518
+  source: mdbrg
+  ref_source: "1210"
+themes_reference_12726: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12726
+  source: portfoliodw
+  ref_source: 895.8(00)
+themes_reference_12171: 
+  ref_theme: "4030"
+  exclusion: 
+  id: 12171
+  source: portfoliodw
+  ref_source: "830"
+themes_reference_11781: 
+  ref_theme: "3535"
+  exclusion: 
+  id: 11781
+  source: mdbfilms
+  ref_source: "997"
+themes_reference_11519: 
+  ref_theme: "6015"
+  exclusion: 
+  id: 11519
+  source: mdbrg
+  ref_source: "1130"
+themes_reference_12727: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12727
+  source: portfoliodw
+  ref_source: 895.26(07
+themes_reference_12040: 
+  ref_theme: "2055"
+  exclusion: 
+  id: 12040
+  source: portfoliodw
+  ref_source: "792"
+themes_reference_12172: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12172
+  source: portfoliodw
+  ref_source: 839.7(00)
+themes_reference_11650: 
+  ref_theme: "5510"
+  exclusion: 
+  id: 11650
+  source: mdbeaf
+  ref_source: "1134"
+themes_reference_11782: 
+  ref_theme: "2510"
+  exclusion: 
+  id: 11782
+  source: mdbfilms
+  ref_source: "969"
+themes_reference_12728: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12728
+  source: portfoliodw
+  ref_source: 888(0)
+themes_reference_12041: 
+  ref_theme: "3515"
+  exclusion: 
+  id: 12041
+  source: portfoliodw
+  ref_source: "935"
+themes_reference_12173: 
+  ref_theme: "4025"
+  exclusion: 
+  id: 12173
+  source: portfoliodw
+  ref_source: "8.3"
+themes_reference_11651: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 11651
+  source: mdbeaf
+  ref_source: "524"
+themes_reference_11783: 
+  ref_theme: "6045"
+  exclusion: 
+  id: 11783
+  source: mdbfilms
+  ref_source: "1194"
+themes_reference_12729: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12729
+  source: portfoliodw
+  ref_source: 892.4(07
+themes_reference_12042: 
+  ref_theme: "4025"
+  exclusion: 
+  id: 12042
+  source: portfoliodw
+  ref_source: "842  843 "
+themes_reference_11520: 
+  ref_theme: "3510"
+  exclusion: 
+  id: 11520
+  source: mdbrg
+  ref_source: "988"
+themes_reference_12174: 
+  ref_theme: "4030"
+  exclusion: 
+  id: 12174
+  source: portfoliodw
+  ref_source: "831"
+themes_reference_11652: 
+  ref_theme: "3015"
+  exclusion: 
+  id: 11652
+  source: mdbeaf
+  ref_source: "469"
+themes_reference_11784: 
+  ref_theme: "4520"
+  exclusion: 
+  id: 11784
+  source: mdbfilms
+  ref_source: "1137"
+themes_reference_12043: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12043
+  source: portfoliodw
+  ref_source: 895.24(07
+themes_reference_11521: 
+  ref_theme: "6520"
+  exclusion: 
+  id: 11521
+  source: mdbrg
+  ref_source: "1211"
+themes_reference_12175: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12175
+  source: portfoliodw
+  ref_source: 889(07
+themes_reference_11653: 
+  ref_theme: "2050"
+  exclusion: 
+  id: 11653
+  source: mdbeaf
+  ref_source: "458"
+themes_reference_11785: 
+  ref_theme: "4030"
+  exclusion: 
+  id: 11785
+  source: mdbfilms
+  ref_source: "1109"
+themes_reference_12044: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12044
+  source: portfoliodw
+  ref_source: 895.8(00)
+themes_reference_11522: 
+  ref_theme: "5010"
+  exclusion: 
+  id: 11522
+  source: mdbrg
+  ref_source: "1078"
+themes_reference_12176: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12176
+  source: portfoliodw
+  ref_source: 894.51(07
+themes_reference_11654: 
+  ref_theme: "6040"
+  exclusion: 
+  id: 11654
+  source: mdbeaf
+  ref_source: "1355"
+themes_reference_11786: 
+  ref_theme: "2015"
+  exclusion: 
+  id: 11786
+  source: mdbfilms
+  ref_source: "884"
+themes_reference_12045: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12045
+  source: portfoliodw
+  ref_source: 876(00)
+themes_reference_11523: 
+  ref_theme: "6520"
+  exclusion: 
+  id: 11523
+  source: mdbrg
+  ref_source: "1212"
+themes_reference_12177: 
+  ref_theme: "4025"
+  exclusion: 
+  id: 12177
+  source: portfoliodw
+  ref_source: "8.4"
+themes_reference_11655: 
+  ref_theme: "6035"
+  exclusion: 
+  id: 11655
+  source: mdbeaf
+  ref_source: "1157"
+themes_reference_11787: 
+  ref_theme: "3535"
+  exclusion: 
+  id: 11787
+  source: mdbfilms
+  ref_source: "998"
+themes_reference_12730: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12730
+  source: portfoliodw
+  ref_source: 886.2(04
+themes_reference_12046: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12046
+  source: portfoliodw
+  ref_source: 887(00)
+themes_reference_11524: 
+  ref_theme: "5515"
+  exclusion: 
+  id: 11524
+  source: mdbrg
+  ref_source: "1105"
+themes_reference_12178: 
+  ref_theme: "1520"
+  exclusion: 
+  id: 12178
+  source: portfoliodw
+  ref_source: "024"
+themes_reference_11656: 
+  ref_theme: "6020"
+  exclusion: 
+  id: 11656
+  source: mdbeaf
+  ref_source: "1344"
+themes_reference_11788: 
+  ref_theme: "6545"
+  exclusion: 
+  id: 11788
+  source: mdbfilms
+  ref_source: "1250"
+themes_reference_12731: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12731
+  source: portfoliodw
+  ref_source: 891.1(07
+themes_reference_12047: 
+  ref_theme: "3515"
+  exclusion: 
+  id: 12047
+  source: portfoliodw
+  ref_source: "936"
+themes_reference_11525: 
+  ref_theme: "5010"
+  exclusion: 
+  id: 11525
+  source: mdbrg
+  ref_source: "1079"
+themes_reference_12179: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12179
+  source: portfoliodw
+  ref_source: 841(00)
+themes_reference_11657: 
+  ref_theme: "6010"
+  exclusion: 
+  id: 11657
+  source: mdbeaf
+  ref_source: "1146"
+themes_reference_11789: 
+  ref_theme: "6520"
+  exclusion: 
+  id: 11789
+  source: mdbfilms
+  ref_source: "1221"
+themes_reference_12600: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12600
+  source: portfoliodw
+  ref_source: 894.35(00)
+themes_reference_12732: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12732
+  source: portfoliodw
+  ref_source: 886.1(00)
+themes_reference_12048: 
+  ref_theme: "4030"
+  exclusion: 
+  id: 12048
+  source: portfoliodw
+  ref_source: "852 "
+themes_reference_11526: 
+  ref_theme: "6530"
+  exclusion: 
+  id: 11526
+  source: mdbrg
+  ref_source: "1240"
+themes_reference_11658: 
+  ref_theme: "5510"
+  exclusion: 
+  id: 11658
+  source: mdbeaf
+  ref_source: "1135"
+themes_reference_12601: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12601
+  source: portfoliodw
+  ref_source: 893(00)
+themes_reference_12733: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12733
+  source: portfoliodw
+  ref_source: 85.@
+themes_reference_12180: 
+  ref_theme: "4030"
+  exclusion: 
+  id: 12180
+  source: portfoliodw
+  ref_source: "832"
+themes_reference_12049: 
+  ref_theme: "4510"
+  exclusion: 
+  id: 12049
+  source: portfoliodw
+  ref_source: "794"
+themes_reference_11527: 
+  ref_theme: "6520"
+  exclusion: 
+  id: 11527
+  source: mdbrg
+  ref_source: "1213"
+themes_reference_11659: 
+  ref_theme: "4510"
+  exclusion: 
+  id: 11659
+  source: mdbeaf
+  ref_source: "1124"
+themes_reference_12602: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12602
+  source: portfoliodw
+  ref_source: 846.1(07
+themes_reference_12734: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12734
+  source: portfoliodw
+  ref_source: 882(07
+themes_reference_11790: 
+  ref_theme: "6045"
+  exclusion: 
+  id: 11790
+  source: mdbfilms
+  ref_source: "1195"
+themes_reference_11528: 
+  ref_theme: "1510"
+  exclusion: 
+  id: 11528
+  source: mdbrg
+  ref_source: "720"
+themes_reference_12603: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12603
+  source: portfoliodw
+  ref_source: 891.5(00)
+themes_reference_12735: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12735
+  source: portfoliodw
+  ref_source: 839.7(07
+themes_reference_12181: 
+  ref_theme: "4025"
+  exclusion: 
+  id: 12181
+  source: portfoliodw
+  ref_source: "8.5"
+themes_reference_11791: 
+  ref_theme: "6020"
+  exclusion: 
+  id: 11791
+  source: mdbfilms
+  ref_source: "1166"
+themes_reference_11529: 
+  ref_theme: "6520"
+  exclusion: 
+  id: 11529
+  source: mdbrg
+  ref_source: "1214"
+themes_reference_12604: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12604
+  source: portfoliodw
+  ref_source: 886.5(07
+themes_reference_12736: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12736
+  source: portfoliodw
+  ref_source: 891.2(04
+themes_reference_12182: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12182
+  source: portfoliodw
+  ref_source: 895.22(0)
+themes_reference_11660: 
+  ref_theme: "3015"
+  exclusion: 
+  id: 11660
+  source: mdbeaf
+  ref_source: "470"
+themes_reference_11792: 
+  ref_theme: "4030"
+  exclusion: 
+  id: 11792
+  source: mdbfilms
+  ref_source: "1077"
+themes_reference_12605: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12605
+  source: portfoliodw
+  ref_source: 894.51(04
+themes_reference_12737: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12737
+  source: portfoliodw
+  ref_source: 897(04
+themes_reference_12050: 
+  ref_theme: "3515"
+  exclusion: 
+  id: 12050
+  source: portfoliodw
+  ref_source: "937"
+themes_reference_12183: 
+  ref_theme: "4025"
+  exclusion: 
+  id: 12183
+  source: portfoliodw
+  ref_source: "8.6"
+themes_reference_11661: 
+  ref_theme: "2040"
+  exclusion: 
+  id: 11661
+  source: mdbeaf
+  ref_source: "459"
+themes_reference_11793: 
+  ref_theme: "4520"
+  exclusion: 
+  id: 11793
+  source: mdbfilms
+  ref_source: "1138"
+themes_reference_12606: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12606
+  source: portfoliodw
+  ref_source: 869(0)
+themes_reference_12738: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12738
+  source: portfoliodw
+  ref_source: 839.4(0)
+themes_reference_12051: 
+  ref_theme: "4520"
+  exclusion: 
+  id: 12051
+  source: portfoliodw
+  ref_source: "795"
+themes_reference_12739: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12739
+  source: portfoliodw
+  ref_source: 839.8(04
+themes_reference_12184: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12184
+  source: portfoliodw
+  ref_source: 849(04
+themes_reference_11662: 
+  ref_theme: "6015"
+  exclusion: 
+  id: 11662
+  source: mdbeaf
+  ref_source: "1444"
+themes_reference_11794: 
+  ref_theme: "2015"
+  exclusion: 
+  id: 11794
+  source: mdbfilms
+  ref_source: "885"
+themes_reference_12607: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12607
+  source: portfoliodw
+  ref_source: 848(0)
+themes_reference_12052: 
+  ref_theme: "4515"
+  exclusion: 
+  id: 12052
+  source: portfoliodw
+  ref_source: "796"
+themes_reference_11530: 
+  ref_theme: "6030"
+  exclusion: 
+  id: 11530
+  source: mdbrg
+  ref_source: "1160"
+themes_reference_12185: 
+  ref_theme: "4030"
+  exclusion: 
+  id: 12185
+  source: portfoliodw
+  ref_source: "882"
+themes_reference_11663: 
+  ref_theme: "6010"
+  exclusion: 
+  id: 11663
+  source: mdbeaf
+  ref_source: "1147"
+themes_reference_11795: 
+  ref_theme: "3535"
+  exclusion: 
+  id: 11795
+  source: mdbfilms
+  ref_source: "999"
+themes_reference_12608: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12608
+  source: portfoliodw
+  ref_source: 889(00)
+themes_reference_12053: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12053
+  source: portfoliodw
+  ref_source: 882(04
+themes_reference_11531: 
+  ref_theme: "6020"
+  exclusion: 
+  id: 11531
+  source: mdbrg
+  ref_source: "1133"
+themes_reference_12186: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12186
+  source: portfoliodw
+  ref_source: 895.26(04
+themes_reference_11664: 
+  ref_theme: "4510"
+  exclusion: 
+  id: 11664
+  source: mdbeaf
+  ref_source: "1125"
+themes_reference_11796: 
+  ref_theme: "6020"
+  exclusion: 
+  id: 11796
+  source: mdbfilms
+  ref_source: "1167"
+themes_reference_12609: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12609
+  source: portfoliodw
+  ref_source: 863(07
+themes_reference_11400: 
+  ref_theme: "2050"
+  exclusion: 
+  id: 11400
+  source: mdbrg
+  ref_source: "887"
+themes_reference_12054: 
+  ref_theme: "2015"
+  exclusion: 
+  id: 12054
+  source: portfoliodw
+  ref_source: 704-7(091)
+themes_reference_11532: 
+  ref_theme: "2515"
+  exclusion: 
+  id: 11532
+  source: mdbrg
+  ref_source: "1402"
+themes_reference_12187: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12187
+  source: portfoliodw
+  ref_source: 846.1(00)
+themes_reference_11665: 
+  ref_theme: "3015"
+  exclusion: 
+  id: 11665
+  source: mdbeaf
+  ref_source: "471"
+themes_reference_11797: 
+  ref_theme: "4520"
+  exclusion: 
+  id: 11797
+  source: mdbfilms
+  ref_source: "1139"
+themes_reference_11401: 
+  ref_theme: "1015"
+  exclusion: 
+  id: 11401
+  source: mdbrg
+  ref_source: "968"
+themes_reference_12055: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12055
+  source: portfoliodw
+  ref_source: 891(07
+themes_reference_11533: 
+  ref_theme: "1510"
+  exclusion: 
+  id: 11533
+  source: mdbrg
+  ref_source: "721"
+themes_reference_12188: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12188
+  source: portfoliodw
+  ref_source: 886.7(0)
+themes_reference_11666: 
+  ref_theme: "2055"
+  exclusion: 
+  id: 11666
+  source: mdbeaf
+  ref_source: "460"
+themes_reference_11798: 
+  ref_theme: "2015"
+  exclusion: 
+  id: 11798
+  source: mdbfilms
+  ref_source: "886"
+themes_reference_11402: 
+  ref_theme: "5015"
+  exclusion: 
+  id: 11402
+  source: mdbrg
+  ref_source: "1085"
+themes_reference_12056: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12056
+  source: portfoliodw
+  ref_source: 852(00)
+themes_reference_11534: 
+  ref_theme: "6020"
+  exclusion: 
+  id: 11534
+  source: mdbrg
+  ref_source: "1134"
+themes_reference_11799: 
+  ref_theme: "6525"
+  exclusion: 
+  id: 11799
+  source: mdbfilms
+  ref_source: "1223"
+themes_reference_12610: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12610
+  source: portfoliodw
+  ref_source: 839.7(00)
+themes_reference_11403: 
+  ref_theme: "4510"
+  exclusion: 
+  id: 11403
+  source: mdbrg
+  ref_source: "1058"
+themes_reference_12057: 
+  ref_theme: "4515"
+  exclusion: 
+  id: 12057
+  source: portfoliodw
+  ref_source: "797"
+themes_reference_11535: 
+  ref_theme: "3525"
+  exclusion: 
+  id: 11535
+  source: mdbrg
+  ref_source: "1000"
+themes_reference_12189: 
+  ref_theme: "4030"
+  exclusion: 
+  id: 12189
+  source: portfoliodw
+  ref_source: "883"
+themes_reference_11667: 
+  ref_theme: "5510"
+  exclusion: 
+  id: 11667
+  source: mdbeaf
+  ref_source: "1137"
+themes_reference_12611: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12611
+  source: portfoliodw
+  ref_source: 841(0)
+themes_reference_11404: 
+  ref_theme: "2050"
+  exclusion: 
+  id: 11404
+  source: mdbrg
+  ref_source: "888"
+themes_reference_12058: 
+  ref_theme: "2020"
+  exclusion: 
+  id: 12058
+  source: portfoliodw
+  ref_source: 70""13""
+themes_reference_11536: 
+  ref_theme: "1510"
+  exclusion: 
+  id: 11536
+  source: mdbrg
+  ref_source: "722"
+themes_reference_11668: 
+  ref_theme: "4510"
+  exclusion: 
+  id: 11668
+  source: mdbeaf
+  ref_source: "1126"
+themes_reference_12059: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12059
+  source: portfoliodw
+  ref_source: 891.2(0)
+themes_reference_11537: 
+  ref_theme: "2510"
+  exclusion: 
+  id: 11537
+  source: mdbrg
+  ref_source: "910"
+themes_reference_12612: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12612
+  source: portfoliodw
+  ref_source: 892.7(00)
+themes_reference_12190: 
+  ref_theme: "4025"
+  exclusion: 
+  id: 12190
+  source: portfoliodw
+  ref_source: "8.8"
+themes_reference_11405: 
+  ref_theme: "1015"
+  exclusion: 
+  id: 11405
+  source: mdbrg
+  ref_source: "969"
+themes_reference_11669: 
+  ref_theme: "3010"
+  exclusion: 
+  id: 11669
+  source: mdbeaf
+  ref_source: "472"
+themes_reference_11406: 
+  ref_theme: "5015"
+  exclusion: 
+  id: 11406
+  source: mdbrg
+  ref_source: "1086"
+themes_reference_12191: 
+  ref_theme: "5015"
+  exclusion: 
+  id: 12191
+  source: portfoliodw
+  ref_source: "2"
+themes_reference_12613: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12613
+  source: portfoliodw
+  ref_source: 864(04
+themes_reference_11538: 
+  ref_theme: "6020"
+  exclusion: 
+  id: 11538
+  source: mdbrg
+  ref_source: "1135"
+themes_reference_11539: 
+  ref_theme: "1040"
+  exclusion: 
+  id: 11539
+  source: mdbrg
+  ref_source: "1430"
+themes_reference_12614: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12614
+  source: portfoliodw
+  ref_source: 894.51(07
+themes_reference_11407: 
+  ref_theme: "4510"
+  exclusion: 
+  id: 11407
+  source: mdbrg
+  ref_source: "1059"
+themes_reference_12192: 
+  ref_theme: "4030"
+  exclusion: 
+  id: 12192
+  source: portfoliodw
+  ref_source: "884"
+themes_reference_11670: 
+  ref_theme: "2010"
+  exclusion: 
+  id: 11670
+  source: mdbeaf
+  ref_source: "461"
+themes_reference_12615: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12615
+  source: portfoliodw
+  ref_source: 886.5(00)
+themes_reference_12060: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12060
+  source: portfoliodw
+  ref_source: 891.5(00)
+themes_reference_11408: 
+  ref_theme: "2050"
+  exclusion: 
+  id: 11408
+  source: mdbrg
+  ref_source: "889"
+themes_reference_11409: 
+  ref_theme: "3520"
+  exclusion: 
+  id: 11409
+  source: mdbrg
+  ref_source: "996"
+themes_reference_12061: 
+  ref_theme: "4515"
+  exclusion: 
+  id: 12061
+  source: portfoliodw
+  ref_source: "798"
+themes_reference_12616: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12616
+  source: portfoliodw
+  ref_source: 829.3(0)
+themes_reference_11671: 
+  ref_theme: "6050"
+  exclusion: 
+  id: 11671
+  source: mdbeaf
+  ref_source: "517"
+themes_reference_12193: 
+  ref_theme: "2024"
+  exclusion: 
+  id: 12193
+  source: portfoliodw
+  ref_source: 7.3(5@
+themes_reference_12194: 
+  ref_theme: "4025"
+  exclusion: 
+  id: 12194
+  source: portfoliodw
+  ref_source: "8.9"
+themes_reference_11540: 
+  ref_theme: "2010"
+  exclusion: 
+  id: 11540
+  source: mdbrg
+  ref_source: "830"
+themes_reference_12617: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12617
+  source: portfoliodw
+  ref_source: 843(04
+themes_reference_12062: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12062
+  source: portfoliodw
+  ref_source: 897(00)
+themes_reference_11672: 
+  ref_theme: "6015"
+  exclusion: 
+  id: 11672
+  source: mdbeaf
+  ref_source: "1149"
+themes_reference_11673: 
+  ref_theme: "5510"
+  exclusion: 
+  id: 11673
+  source: mdbeaf
+  ref_source: "1138"
+themes_reference_12063: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12063
+  source: portfoliodw
+  ref_source: 864(0)
+themes_reference_12618: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12618
+  source: portfoliodw
+  ref_source: 895.24(00)
+themes_reference_11541: 
+  ref_theme: "2510"
+  exclusion: 
+  id: 11541
+  source: mdbrg
+  ref_source: "911"
+themes_reference_12195: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12195
+  source: portfoliodw
+  ref_source: 869(00)
+themes_reference_11674: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 11674
+  source: mdbeaf
+  ref_source: "1116"
+themes_reference_12064: 
+  ref_theme: "2020"
+  exclusion: 
+  id: 12064
+  source: portfoliodw
+  ref_source: 70""18"""
+themes_reference_11410: 
+  ref_theme: "5515"
+  exclusion: 
+  id: 11410
+  source: mdbrg
+  ref_source: "1112"
+themes_reference_12619: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12619
+  source: portfoliodw
+  ref_source: 895.2(04
+themes_reference_11542: 
+  ref_theme: "2025"
+  exclusion: 
+  id: 11542
+  source: mdbrg
+  ref_source: "1323"
+themes_reference_12196: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12196
+  source: portfoliodw
+  ref_source: 849(07
+themes_reference_12197: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12197
+  source: portfoliodw
+  ref_source: 894(04
+themes_reference_11543: 
+  ref_theme: "7030"
+  exclusion: 
+  id: 11543
+  source: mdbrg
+  ref_source: "1270"
+themes_reference_11411: 
+  ref_theme: "5015"
+  exclusion: 
+  id: 11411
+  source: mdbrg
+  ref_source: "1087"
+themes_reference_12065: 
+  ref_theme: "4515"
+  exclusion: 
+  id: 12065
+  source: portfoliodw
+  ref_source: "799"
+themes_reference_11675: 
+  ref_theme: "3015"
+  exclusion: 
+  id: 11675
+  source: mdbeaf
+  ref_source: "473"
+themes_reference_11676: 
+  ref_theme: "6050"
+  exclusion: 
+  id: 11676
+  source: mdbeaf
+  ref_source: "496"
+themes_reference_12066: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12066
+  source: portfoliodw
+  ref_source: 882(07
+themes_reference_11412: 
+  ref_theme: "3520"
+  exclusion: 
+  id: 11412
+  source: mdbrg
+  ref_source: "997"
+themes_reference_11544: 
+  ref_theme: "6535"
+  exclusion: 
+  id: 11544
+  source: mdbrg
+  ref_source: "1243"
+themes_reference_12198: 
+  ref_theme: "4030"
+  exclusion: 
+  id: 12198
+  source: portfoliodw
+  ref_source: "885"
+themes_reference_12199: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12199
+  source: portfoliodw
+  ref_source: 895.26(07
+themes_reference_11545: 
+  ref_theme: "6035"
+  exclusion: 
+  id: 11545
+  source: mdbrg
+  ref_source: "1163"
+themes_reference_11413: 
+  ref_theme: "6020"
+  exclusion: 
+  id: 11413
+  source: mdbrg
+  ref_source: "1140"
+themes_reference_12067: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12067
+  source: portfoliodw
+  ref_source: 883(00)
+themes_reference_11677: 
+  ref_theme: "6025"
+  exclusion: 
+  id: 11677
+  source: mdbeaf
+  ref_source: "1348"
+themes_reference_12620: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12620
+  source: portfoliodw
+  ref_source: 883(04
+themes_reference_12621: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12621
+  source: portfoliodw
+  ref_source: 893(0)
+themes_reference_11546: 
+  ref_theme: "6020"
+  exclusion: 
+  id: 11546
+  source: mdbrg
+  ref_source: "1136"
+themes_reference_12068: 
+  ref_theme: "4030"
+  exclusion: 
+  id: 12068
+  source: portfoliodw
+  ref_source: 841-@
+themes_reference_11414: 
+  ref_theme: "5015"
+  exclusion: 
+  id: 11414
+  source: mdbrg
+  ref_source: "1088"
+themes_reference_11678: 
+  ref_theme: "4515"
+  exclusion: 
+  id: 11678
+  source: mdbeaf
+  ref_source: "1128"
+themes_reference_11547: 
+  ref_theme: "5515"
+  exclusion: 
+  id: 11547
+  source: mdbrg
+  ref_source: "1324"
+themes_reference_12069: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12069
+  source: portfoliodw
+  ref_source: 895.26(00)
+themes_reference_11415: 
+  ref_theme: "6525"
+  exclusion: 
+  id: 11415
+  source: mdbrg
+  ref_source: "1222"
+themes_reference_11679: 
+  ref_theme: "3015"
+  exclusion: 
+  id: 11679
+  source: mdbeaf
+  ref_source: "474"
+themes_reference_12622: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12622
+  source: portfoliodw
+  ref_source: 862(04
+themes_reference_12623: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12623
+  source: portfoliodw
+  ref_source: 892.7(0)
+themes_reference_11416: 
+  ref_theme: "6525"
+  exclusion: 
+  id: 11416
+  source: mdbrg
+  ref_source: "1223"
+themes_reference_11548: 
+  ref_theme: "1040"
+  exclusion: 
+  id: 11548
+  source: mdbrg
+  ref_source: "1431"
+themes_reference_11549: 
+  ref_theme: "3525"
+  exclusion: 
+  id: 11549
+  source: mdbrg
+  ref_source: "1001"
+themes_reference_12070: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12070
+  source: portfoliodw
+  ref_source: 873(04
+themes_reference_11417: 
+  ref_theme: "6025"
+  exclusion: 
+  id: 11417
+  source: mdbrg
+  ref_source: "1143"
+themes_reference_12624: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12624
+  source: portfoliodw
+  ref_source: 864(07
+themes_reference_12625: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12625
+  source: portfoliodw
+  ref_source: 895.8(0)
+themes_reference_11418: 
+  ref_theme: "6010"
+  exclusion: 
+  id: 11418
+  source: mdbrg
+  ref_source: "1116"
+themes_reference_11680: 
+  ref_theme: "6025"
+  exclusion: 
+  id: 11680
+  source: mdbeaf
+  ref_source: "1350"
+themes_reference_11681: 
+  ref_theme: "5515"
+  exclusion: 
+  id: 11681
+  source: mdbeaf
+  ref_source: "1141"
+themes_reference_12071: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12071
+  source: portfoliodw
+  ref_source: 870.@
+themes_reference_11419: 
+  ref_theme: "6540"
+  exclusion: 
+  id: 11419
+  source: mdbrg
+  ref_source: "1251"
+themes_reference_12626: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12626
+  source: portfoliodw
+  ref_source: 895.2(00)
+themes_reference_12627: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12627
+  source: portfoliodw
+  ref_source: 889(0)
+themes_reference_11682: 
+  ref_theme: "5010"
+  exclusion: 
+  id: 11682
+  source: mdbeaf
+  ref_source: "1130"
+themes_reference_12072: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12072
+  source: portfoliodw
+  ref_source: 886.5(04
+themes_reference_11550: 
+  ref_theme: "2010"
+  exclusion: 
+  id: 11550
+  source: mdbrg
+  ref_source: "831"
+themes_reference_11551: 
+  ref_theme: "2510"
+  exclusion: 
+  id: 11551
+  source: mdbrg
+  ref_source: "912"
+themes_reference_12073: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12073
+  source: portfoliodw
+  ref_source: 885(0)
+themes_reference_11683: 
+  ref_theme: "4520"
+  exclusion: 
+  id: 11683
+  source: mdbeaf
+  ref_source: "1129"
+themes_reference_12628: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12628
+  source: portfoliodw
+  ref_source: 895.1(0)
+themes_reference_12629: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12629
+  source: portfoliodw
+  ref_source: 843(07
+themes_reference_11552: 
+  ref_theme: "7030"
+  exclusion: 
+  id: 11552
+  source: mdbrg
+  ref_source: "1271"
+themes_reference_12074: 
+  ref_theme: "4030"
+  exclusion: 
+  id: 12074
+  source: portfoliodw
+  ref_source: "891.1"
+themes_reference_11420: 
+  ref_theme: "6525"
+  exclusion: 
+  id: 11420
+  source: mdbrg
+  ref_source: "1224"
+themes_reference_11684: 
+  ref_theme: "3015"
+  exclusion: 
+  id: 11684
+  source: mdbeaf
+  ref_source: "1361"
+themes_reference_11553: 
+  ref_theme: "6535"
+  exclusion: 
+  id: 11553
+  source: mdbrg
+  ref_source: "1244"
+themes_reference_12075: 
+  ref_theme: "2015"
+  exclusion: 
+  id: 12075
+  source: portfoliodw
+  ref_source: 704-8(091)
+themes_reference_11421: 
+  ref_theme: "6010"
+  exclusion: 
+  id: 11421
+  source: mdbrg
+  ref_source: "1117"
+themes_reference_11685: 
+  ref_theme: "3015"
+  exclusion: 
+  id: 11685
+  source: mdbeaf
+  ref_source: "475"
+themes_reference_11554: 
+  ref_theme: "6055"
+  exclusion: 
+  id: 11554
+  source: mdbrg
+  ref_source: "1190"
+themes_reference_12076: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12076
+  source: portfoliodw
+  ref_source: 877(0)
+themes_reference_11422: 
+  ref_theme: "2515"
+  exclusion: 
+  id: 11422
+  source: mdbrg
+  ref_source: "1412"
+themes_reference_11686: 
+  ref_theme: "6545"
+  exclusion: 
+  id: 11686
+  source: mdbeaf
+  ref_source: "487"
+themes_reference_11687: 
+  ref_theme: "6030"
+  exclusion: 
+  id: 11687
+  source: mdbeaf
+  ref_source: "1153"
+themes_reference_11423: 
+  ref_theme: "6540"
+  exclusion: 
+  id: 11423
+  source: mdbrg
+  ref_source: "1252"
+themes_reference_12077: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12077
+  source: portfoliodw
+  ref_source: 862(00)
+themes_reference_11555: 
+  ref_theme: "6035"
+  exclusion: 
+  id: 11555
+  source: mdbrg
+  ref_source: "1164"
+themes_reference_12630: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12630
+  source: portfoliodw
+  ref_source: 888(00)
+themes_reference_12631: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12631
+  source: portfoliodw
+  ref_source: 895.2(07
+themes_reference_11688: 
+  ref_theme: "6025"
+  exclusion: 
+  id: 11688
+  source: mdbeaf
+  ref_source: "1351"
+themes_reference_11424: 
+  ref_theme: "6525"
+  exclusion: 
+  id: 11424
+  source: mdbrg
+  ref_source: "1225"
+themes_reference_12078: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12078
+  source: portfoliodw
+  ref_source: 829.3(00)
+themes_reference_11556: 
+  ref_theme: "6020"
+  exclusion: 
+  id: 11556
+  source: mdbrg
+  ref_source: "1137"
+themes_reference_11689: 
+  ref_theme: "6020"
+  exclusion: 
+  id: 11689
+  source: mdbeaf
+  ref_source: "1339"
+themes_reference_11425: 
+  ref_theme: "6510"
+  exclusion: 
+  id: 11425
+  source: mdbrg
+  ref_source: "1440"
+themes_reference_12079: 
+  ref_theme: "4030"
+  exclusion: 
+  id: 12079
+  source: portfoliodw
+  ref_source: "850"
+themes_reference_11557: 
+  ref_theme: "2515"
+  exclusion: 
+  id: 11557
+  source: mdbrg
+  ref_source: "1406"
+themes_reference_12500: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12500
+  source: portfoliodw
+  ref_source: 897(07
+themes_reference_12632: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12632
+  source: portfoliodw
+  ref_source: 876(00)
+themes_reference_12633: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12633
+  source: portfoliodw
+  ref_source: 883(07
+themes_reference_12501: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12501
+  source: portfoliodw
+  ref_source: 839.6(04
+themes_reference_11558: 
+  ref_theme: "1025"
+  exclusion: 
+  id: 11558
+  source: mdbrg
+  ref_source: "1432"
+themes_reference_11426: 
+  ref_theme: "6040"
+  exclusion: 
+  id: 11426
+  source: mdbrg
+  ref_source: "1171"
+themes_reference_11559: 
+  ref_theme: "3525"
+  exclusion: 
+  id: 11559
+  source: mdbrg
+  ref_source: "1002"
+themes_reference_11427: 
+  ref_theme: "6025"
+  exclusion: 
+  id: 11427
+  source: mdbrg
+  ref_source: "1144"
+themes_reference_12080: 
+  ref_theme: "4030"
+  exclusion: 
+  id: 12080
+  source: portfoliodw
+  ref_source: "891.2"
+themes_reference_12502: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12502
+  source: portfoliodw
+  ref_source: 821(0)
+themes_reference_12634: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12634
+  source: portfoliodw
+  ref_source: 862(07
+themes_reference_12635: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12635
+  source: portfoliodw
+  ref_source: 88(0)
+themes_reference_12503: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12503
+  source: portfoliodw
+  ref_source: 839.8(07
+themes_reference_11690: 
+  ref_theme: "5515"
+  exclusion: 
+  id: 11690
+  source: mdbeaf
+  ref_source: "1142"
+themes_reference_11428: 
+  ref_theme: "6010"
+  exclusion: 
+  id: 11428
+  source: mdbrg
+  ref_source: "1118"
+themes_reference_12081: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12081
+  source: portfoliodw
+  ref_source: 839.4(00)
+themes_reference_11691: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 11691
+  source: mdbeaf
+  ref_source: "586"
+themes_reference_11429: 
+  ref_theme: "2515"
+  exclusion: 
+  id: 11429
+  source: mdbrg
+  ref_source: "920"
+themes_reference_12504: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12504
+  source: portfoliodw
+  ref_source: 894.51(00)
+themes_reference_12636: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12636
+  source: portfoliodw
+  ref_source: 884(04
+themes_reference_12637: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12637
+  source: portfoliodw
+  ref_source: 895.22(00)
+themes_reference_12505: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12505
+  source: portfoliodw
+  ref_source: 888.1(04
+themes_reference_11560: 
+  ref_theme: "1515"
+  exclusion: 
+  id: 11560
+  source: mdbrg
+  ref_source: "725"
+themes_reference_12082: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12082
+  source: portfoliodw
+  ref_source: 873(07
+themes_reference_11692: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 11692
+  source: mdbeaf
+  ref_source: "1120"
+themes_reference_11693: 
+  ref_theme: "6025"
+  exclusion: 
+  id: 11693
+  source: mdbeaf
+  ref_source: "1352"
+themes_reference_12083: 
+  ref_theme: "4030"
+  exclusion: 
+  id: 12083
+  source: portfoliodw
+  ref_source: "851"
+themes_reference_11561: 
+  ref_theme: "2010"
+  exclusion: 
+  id: 11561
+  source: mdbrg
+  ref_source: "832"
+themes_reference_12506: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12506
+  source: portfoliodw
+  ref_source: "898"
+themes_reference_12638: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12638
+  source: portfoliodw
+  ref_source: 873(04
+themes_reference_12639: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12639
+  source: portfoliodw
+  ref_source: "870 "
+themes_reference_12507: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12507
+  source: portfoliodw
+  ref_source: 895.24(04
+themes_reference_11694: 
+  ref_theme: "6020"
+  exclusion: 
+  id: 11694
+  source: mdbeaf
+  ref_source: "1341"
+themes_reference_11430: 
+  ref_theme: "4030"
+  exclusion: 
+  id: 11430
+  source: mdbrg
+  ref_source: "1332"
+themes_reference_12084: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12084
+  source: portfoliodw
+  ref_source: 891.1(00)
+themes_reference_11562: 
+  ref_theme: "2510"
+  exclusion: 
+  id: 11562
+  source: mdbrg
+  ref_source: "913"
+themes_reference_11695: 
+  ref_theme: "5510"
+  exclusion: 
+  id: 11695
+  source: mdbeaf
+  ref_source: "1132"
+themes_reference_11431: 
+  ref_theme: "6540"
+  exclusion: 
+  id: 11431
+  source: mdbrg
+  ref_source: "1253"
+themes_reference_12085: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12085
+  source: portfoliodw
+  ref_source: 876(0)
+themes_reference_11563: 
+  ref_theme: "7035"
+  exclusion: 
+  id: 11563
+  source: mdbrg
+  ref_source: "1272"
+themes_reference_12508: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12508
+  source: portfoliodw
+  ref_source: 829.4(0)
+themes_reference_12509: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12509
+  source: portfoliodw
+  ref_source: 839.5(0)
+themes_reference_12086: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12086
+  source: portfoliodw
+  ref_source: 886.5(07
+themes_reference_11564: 
+  ref_theme: "6535"
+  exclusion: 
+  id: 11564
+  source: mdbrg
+  ref_source: "1245"
+themes_reference_11300: 
+  ref_theme: "6530"
+  exclusion: 
+  id: 11300
+  source: mdbrg
+  ref_source: "1235"
+themes_reference_11432: 
+  ref_theme: "6525"
+  exclusion: 
+  id: 11432
+  source: mdbrg
+  ref_source: "1226"
+themes_reference_11696: 
+  ref_theme: "5510"
+  exclusion: 
+  id: 11696
+  source: mdbeaf
+  ref_source: "477"
+themes_reference_11697: 
+  ref_theme: "3510"
+  exclusion: 
+  id: 11697
+  source: mdbeaf
+  ref_source: "488"
+themes_reference_11433: 
+  ref_theme: "6040"
+  exclusion: 
+  id: 11433
+  source: mdbrg
+  ref_source: "1172"
+themes_reference_11301: 
+  ref_theme: "6520"
+  exclusion: 
+  id: 11301
+  source: mdbrg
+  ref_source: "1209"
+themes_reference_11565: 
+  ref_theme: "6055"
+  exclusion: 
+  id: 11565
+  source: mdbrg
+  ref_source: "1191"
+themes_reference_12087: 
+  ref_theme: "4030"
+  exclusion: 
+  id: 12087
+  source: portfoliodw
+  ref_source: "852"
+themes_reference_12640: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12640
+  source: portfoliodw
+  ref_source: "83 "
+themes_reference_12641: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12641
+  source: portfoliodw
+  ref_source: 895.26(00)
+themes_reference_12088: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12088
+  source: portfoliodw
+  ref_source: 882(00)
+themes_reference_11566: 
+  ref_theme: "6050"
+  exclusion: 
+  id: 11566
+  source: mdbrg
+  ref_source: "1460"
+themes_reference_11302: 
+  ref_theme: "6045"
+  exclusion: 
+  id: 11302
+  source: mdbrg
+  ref_source: "1181"
+themes_reference_11434: 
+  ref_theme: "6025"
+  exclusion: 
+  id: 11434
+  source: mdbrg
+  ref_source: "1145"
+themes_reference_11698: 
+  ref_theme: "2515"
+  exclusion: 
+  id: 11698
+  source: mdbeaf
+  ref_source: "466"
+themes_reference_11699: 
+  ref_theme: "2010"
+  exclusion: 
+  id: 11699
+  source: mdbeaf
+  ref_source: "455"
+themes_reference_11435: 
+  ref_theme: "6010"
+  exclusion: 
+  id: 11435
+  source: mdbrg
+  ref_source: "1119"
+themes_reference_11303: 
+  ref_theme: "6015"
+  exclusion: 
+  id: 11303
+  source: mdbrg
+  ref_source: "1128"
+themes_reference_11567: 
+  ref_theme: "6035"
+  exclusion: 
+  id: 11567
+  source: mdbrg
+  ref_source: "1165"
+themes_reference_12089: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12089
+  source: portfoliodw
+  ref_source: 893(00)
+themes_reference_12510: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12510
+  source: portfoliodw
+  ref_source: 876(07
+themes_reference_12642: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12642
+  source: portfoliodw
+  ref_source: 894(00)
+themes_reference_12643: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12643
+  source: portfoliodw
+  ref_source: 869(04
+themes_reference_12511: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12511
+  source: portfoliodw
+  ref_source: 894(04
+themes_reference_11436: 
+  ref_theme: "2515"
+  exclusion: 
+  id: 11436
+  source: mdbrg
+  ref_source: "921"
+themes_reference_11304: 
+  ref_theme: "4030"
+  exclusion: 
+  id: 11304
+  source: mdbrg
+  ref_source: "1450"
+themes_reference_11568: 
+  ref_theme: "6020"
+  exclusion: 
+  id: 11568
+  source: mdbrg
+  ref_source: "1138"
+themes_reference_11437: 
+  ref_theme: "6525"
+  exclusion: 
+  id: 11437
+  source: mdbrg
+  ref_source: "1227"
+themes_reference_11305: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 11305
+  source: mdbrg
+  ref_source: "1020"
+themes_reference_12090: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12090
+  source: portfoliodw
+  ref_source: 839.8(0)
+themes_reference_11569: 
+  ref_theme: "3010"
+  exclusion: 
+  id: 11569
+  source: mdbrg
+  ref_source: "940"
+themes_reference_12512: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12512
+  source: portfoliodw
+  ref_source: 886.1(04
+themes_reference_12644: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12644
+  source: portfoliodw
+  ref_source: 884(07
+themes_reference_12645: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12645
+  source: portfoliodw
+  ref_source: 882(00)
+themes_reference_12513: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12513
+  source: portfoliodw
+  ref_source: 890(0)
+themes_reference_11306: 
+  ref_theme: "2515"
+  exclusion: 
+  id: 11306
+  source: mdbrg
+  ref_source: "930"
+themes_reference_12091: 
+  ref_theme: "4030"
+  exclusion: 
+  id: 12091
+  source: portfoliodw
+  ref_source: "842.8"
+themes_reference_11438: 
+  ref_theme: "6510"
+  exclusion: 
+  id: 11438
+  source: mdbrg
+  ref_source: "1441"
+themes_reference_11439: 
+  ref_theme: "6040"
+  exclusion: 
+  id: 11439
+  source: mdbrg
+  ref_source: "1173"
+themes_reference_12092: 
+  ref_theme: "5010"
+  exclusion: 
+  id: 12092
+  source: portfoliodw
+  ref_source: "10"
+themes_reference_11307: 
+  ref_theme: "6530"
+  exclusion: 
+  id: 11307
+  source: mdbrg
+  ref_source: "1236"
+themes_reference_12514: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12514
+  source: portfoliodw
+  ref_source: 887(04
+themes_reference_12646: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12646
+  source: portfoliodw
+  ref_source: 848(04
+themes_reference_12647: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12647
+  source: portfoliodw
+  ref_source: 873(07
+themes_reference_12515: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12515
+  source: portfoliodw
+  ref_source: 839.6(07
+themes_reference_11308: 
+  ref_theme: "6030"
+  exclusion: 
+  id: 11308
+  source: mdbrg
+  ref_source: "1155"
+themes_reference_11570: 
+  ref_theme: "7040"
+  exclusion: 
+  id: 11570
+  source: mdbrg
+  ref_source: "1273"
+themes_reference_11571: 
+  ref_theme: "6535"
+  exclusion: 
+  id: 11571
+  source: mdbrg
+  ref_source: "1246"
+themes_reference_12093: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12093
+  source: portfoliodw
+  ref_source: 839.4(0)
+themes_reference_11309: 
+  ref_theme: "6015"
+  exclusion: 
+  id: 11309
+  source: mdbrg
+  ref_source: "1129"
+themes_reference_12516: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12516
+  source: portfoliodw
+  ref_source: 888.1(07
+themes_reference_12648: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12648
+  source: portfoliodw
+  ref_source: 839.9(0)
+themes_reference_12649: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12649
+  source: portfoliodw
+  ref_source: 841(04
+themes_reference_12517: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12517
+  source: portfoliodw
+  ref_source: 891.5(0)
+themes_reference_11572: 
+  ref_theme: "6055"
+  exclusion: 
+  id: 11572
+  source: mdbrg
+  ref_source: "1192"
+themes_reference_11440: 
+  ref_theme: "6025"
+  exclusion: 
+  id: 11440
+  source: mdbrg
+  ref_source: "1146"
+themes_reference_12094: 
+  ref_theme: "5010"
+  exclusion: 
+  id: 12094
+  source: portfoliodw
+  ref_source: "11"
+themes_reference_12095: 
+  ref_theme: "2024"
+  exclusion: 
+  id: 12095
+  source: portfoliodw
+  ref_source: 7.3(7@
+themes_reference_11441: 
+  ref_theme: "4510"
+  exclusion: 
+  id: 11441
+  source: mdbrg
+  ref_source: "1415"
+themes_reference_11573: 
+  ref_theme: "6035"
+  exclusion: 
+  id: 11573
+  source: mdbrg
+  ref_source: "1461"
+themes_reference_12518: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12518
+  source: portfoliodw
+  ref_source: 890(00)
+themes_reference_12519: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12519
+  source: portfoliodw
+  ref_source: 895.24(07
+themes_reference_12096: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12096
+  source: portfoliodw
+  ref_source: 891.2(04
+themes_reference_11442: 
+  ref_theme: "6510"
+  exclusion: 
+  id: 11442
+  source: mdbrg
+  ref_source: "1442"
+themes_reference_11310: 
+  ref_theme: "5015"
+  exclusion: 
+  id: 11310
+  source: mdbrg
+  ref_source: "1370"
+themes_reference_11574: 
+  ref_theme: "6020"
+  exclusion: 
+  id: 11574
+  source: mdbrg
+  ref_source: "1139"
+themes_reference_12097: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12097
+  source: portfoliodw
+  ref_source: 829.9(0)
+themes_reference_11443: 
+  ref_theme: "6025"
+  exclusion: 
+  id: 11443
+  source: mdbrg
+  ref_source: "1147"
+themes_reference_11311: 
+  ref_theme: "4515"
+  exclusion: 
+  id: 11311
+  source: mdbrg
+  ref_source: "1451"
+themes_reference_11575: 
+  ref_theme: "2515"
+  exclusion: 
+  id: 11575
+  source: mdbrg
+  ref_source: "1408"
+themes_reference_12650: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12650
+  source: portfoliodw
+  ref_source: 84.@
+themes_reference_12651: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12651
+  source: portfoliodw
+  ref_source: "86 "
+themes_reference_12098: 
+  ref_theme: "4510"
+  exclusion: 
+  id: 12098
+  source: portfoliodw
+  ref_source: "635.1"
+themes_reference_11444: 
+  ref_theme: "2515"
+  exclusion: 
+  id: 11444
+  source: mdbrg
+  ref_source: "923"
+themes_reference_11312: 
+  ref_theme: "4015"
+  exclusion: 
+  id: 11312
+  source: mdbrg
+  ref_source: "1021"
+themes_reference_11576: 
+  ref_theme: "2030"
+  exclusion: 
+  id: 11576
+  source: mdbrg
+  ref_source: "860"
+themes_reference_12099: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12099
+  source: portfoliodw
+  ref_source: 849(00)
+themes_reference_11445: 
+  ref_theme: "3535"
+  exclusion: 
+  id: 11445
+  source: mdbrg
+  ref_source: "1012"
+themes_reference_11313: 
+  ref_theme: "2025"
+  exclusion: 
+  id: 11313
+  source: mdbrg
+  ref_source: "850"
+themes_reference_11577: 
+  ref_theme: "3010"
+  exclusion: 
+  id: 11577
+  source: mdbrg
+  ref_source: "941"
+themes_reference_12520: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12520
+  source: portfoliodw
+  ref_source: 846.3(0)
+themes_reference_12652: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12652
+  source: portfoliodw
+  ref_source: 869(07
+themes_reference_12653: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12653
+  source: portfoliodw
+  ref_source: 895.6(0)
+themes_reference_12521: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12521
+  source: portfoliodw
+  ref_source: 846.1(00)
+themes_reference_11578: 
+  ref_theme: "4515"
+  exclusion: 
+  id: 11578
+  source: mdbrg
+  ref_source: "1380"
+themes_reference_11314: 
+  ref_theme: "2510"
+  exclusion: 
+  id: 11314
+  source: mdbrg
+  ref_source: "905"
+themes_reference_11446: 
+  ref_theme: "6510"
+  exclusion: 
+  id: 11446
+  source: mdbrg
+  ref_source: "1443"
+themes_reference_11447: 
+  ref_theme: "6025"
+  exclusion: 
+  id: 11447
+  source: mdbrg
+  ref_source: "1148"
+themes_reference_11315: 
+  ref_theme: "7010"
+  exclusion: 
+  id: 11315
+  source: mdbrg
+  ref_source: "1264"
+themes_reference_11579: 
+  ref_theme: "6535"
+  exclusion: 
+  id: 11579
+  source: mdbrg
+  ref_source: "1247"
+themes_reference_12522: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12522
+  source: portfoliodw
+  ref_source: 886.7(0)
+themes_reference_12654: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12654
+  source: portfoliodw
+  ref_source: 893(04
+themes_reference_12655: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12655
+  source: portfoliodw
+  ref_source: 841(07
+themes_reference_12523: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12523
+  source: portfoliodw
+  ref_source: 886.1(07
+themes_reference_11316: 
+  ref_theme: "6530"
+  exclusion: 
+  id: 11316
+  source: mdbrg
+  ref_source: "1237"
+themes_reference_11448: 
+  ref_theme: "2020"
+  exclusion: 
+  id: 11448
+  source: mdbrg
+  ref_source: "843"
+themes_reference_11317: 
+  ref_theme: "6030"
+  exclusion: 
+  id: 11317
+  source: mdbrg
+  ref_source: "1156"
+themes_reference_11449: 
+  ref_theme: "3015"
+  exclusion: 
+  id: 11449
+  source: mdbrg
+  ref_source: "950"
+themes_reference_12524: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12524
+  source: portfoliodw
+  ref_source: 888.1(00)
+themes_reference_12656: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12656
+  source: portfoliodw
+  ref_source: 848(07
+themes_reference_12657: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12657
+  source: portfoliodw
+  ref_source: 892.7(04
+themes_reference_12525: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12525
+  source: portfoliodw
+  ref_source: 887(07
+themes_reference_11318: 
+  ref_theme: "5015"
+  exclusion: 
+  id: 11318
+  source: mdbrg
+  ref_source: "1371"
+themes_reference_11580: 
+  ref_theme: "6035"
+  exclusion: 
+  id: 11580
+  source: mdbrg
+  ref_source: "1166"
+themes_reference_11319: 
+  ref_theme: "1040"
+  exclusion: 
+  id: 11319
+  source: mdbrg
+  ref_source: "1425"
+themes_reference_11581: 
+  ref_theme: "1030"
+  exclusion: 
+  id: 11581
+  source: mdbrg
+  ref_source: "1435"
+themes_reference_12526: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12526
+  source: portfoliodw
+  ref_source: 888(04
+themes_reference_12658: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12658
+  source: portfoliodw
+  ref_source: 894.35(0)
+themes_reference_12659: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12659
+  source: portfoliodw
+  ref_source: 849(00)
+themes_reference_12527: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12527
+  source: portfoliodw
+  ref_source: 864(00)
+themes_reference_11450: 
+  ref_theme: "4030"
+  exclusion: 
+  id: 11450
+  source: mdbrg
+  ref_source: "1363"
+themes_reference_11582: 
+  ref_theme: "3530"
+  exclusion: 
+  id: 11582
+  source: mdbrg
+  ref_source: "1005"
+themes_reference_11451: 
+  ref_theme: "3535"
+  exclusion: 
+  id: 11451
+  source: mdbrg
+  ref_source: "1013"
+themes_reference_11583: 
+  ref_theme: "4025"
+  exclusion: 
+  id: 11583
+  source: mdbrg
+  ref_source: "1032"
+themes_reference_12528: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12528
+  source: portfoliodw
+  ref_source: 848 (00)
+themes_reference_12529: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12529
+  source: portfoliodw
+  ref_source: 852(00)
+themes_reference_11584: 
+  ref_theme: "2015"
+  exclusion: 
+  id: 11584
+  source: mdbrg
+  ref_source: "835"
+themes_reference_11320: 
+  ref_theme: "2010"
+  exclusion: 
+  id: 11320
+  source: mdbrg
+  ref_source: "825"
+themes_reference_11452: 
+  ref_theme: "4025"
+  exclusion: 
+  id: 11452
+  source: mdbrg
+  ref_source: "1040"
+themes_reference_11453: 
+  ref_theme: "6545"
+  exclusion: 
+  id: 11453
+  source: mdbrg
+  ref_source: "1256"
+themes_reference_11321: 
+  ref_theme: "2025"
+  exclusion: 
+  id: 11321
+  source: mdbrg
+  ref_source: "851"
+themes_reference_11585: 
+  ref_theme: "2030"
+  exclusion: 
+  id: 11585
+  source: mdbrg
+  ref_source: "861"
+themes_reference_12660: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12660
+  source: portfoliodw
+  ref_source: 895.8(04
+themes_reference_12661: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12661
+  source: portfoliodw
+  ref_source: 892(0)
+themes_reference_11586: 
+  ref_theme: "2515"
+  exclusion: 
+  id: 11586
+  source: mdbrg
+  ref_source: "916"
+themes_reference_11322: 
+  ref_theme: "2510"
+  exclusion: 
+  id: 11322
+  source: mdbrg
+  ref_source: "906"
+themes_reference_11454: 
+  ref_theme: "6510"
+  exclusion: 
+  id: 11454
+  source: mdbrg
+  ref_source: "1444"
+themes_reference_11455: 
+  ref_theme: "6045"
+  exclusion: 
+  id: 11455
+  source: mdbrg
+  ref_source: "1176"
+themes_reference_11323: 
+  ref_theme: "6530"
+  exclusion: 
+  id: 11323
+  source: mdbrg
+  ref_source: "1319"
+themes_reference_11587: 
+  ref_theme: "3010"
+  exclusion: 
+  id: 11587
+  source: mdbrg
+  ref_source: "942"
+themes_reference_12530: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12530
+  source: portfoliodw
+  ref_source: 892(00)
+themes_reference_12662: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12662
+  source: portfoliodw
+  ref_source: 889(04
+themes_reference_12663: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12663
+  source: portfoliodw
+  ref_source: 839.8(00)
+themes_reference_12531: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12531
+  source: portfoliodw
+  ref_source: 839.4(04
+themes_reference_11588: 
+  ref_theme: "7045"
+  exclusion: 
+  id: 11588
+  source: mdbrg
+  ref_source: "1275"
+themes_reference_11324: 
+  ref_theme: "6530"
+  exclusion: 
+  id: 11324
+  source: mdbrg
+  ref_source: "1238"
+themes_reference_11456: 
+  ref_theme: "2020"
+  exclusion: 
+  id: 11456
+  source: mdbrg
+  ref_source: "844"
+themes_reference_11457: 
+  ref_theme: "2040"
+  exclusion: 
+  id: 11457
+  source: mdbrg
+  ref_source: "870"
+themes_reference_11325: 
+  ref_theme: "6050"
+  exclusion: 
+  id: 11325
+  source: mdbrg
+  ref_source: "1184"
+themes_reference_11589: 
+  ref_theme: "6535"
+  exclusion: 
+  id: 11589
+  source: mdbrg
+  ref_source: "1248"
+themes_reference_12400: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12400
+  source: portfoliodw
+  ref_source: 883(0)
+themes_reference_12532: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12532
+  source: portfoliodw
+  ref_source: 888(07
+themes_reference_12664: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12664
+  source: portfoliodw
+  ref_source: 829.3(00)
+themes_reference_12665: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12665
+  source: portfoliodw
+  ref_source: 893(07
+themes_reference_12533: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12533
+  source: portfoliodw
+  ref_source: 895.22(0)
+themes_reference_12401: 
+  ref_theme: "2020"
+  exclusion: 
+  id: 12401
+  source: portfoliodw
+  ref_source: 70""14""
+themes_reference_11326: 
+  ref_theme: "6030"
+  exclusion: 
+  id: 11326
+  source: mdbrg
+  ref_source: "1157"
+themes_reference_11458: 
+  ref_theme: "3015"
+  exclusion: 
+  id: 11458
+  source: mdbrg
+  ref_source: "951"
+themes_reference_11327: 
+  ref_theme: "4030"
+  exclusion: 
+  id: 11327
+  source: mdbrg
+  ref_source: "1372"
+themes_reference_11459: 
+  ref_theme: "3535"
+  exclusion: 
+  id: 11459
+  source: mdbrg
+  ref_source: "1390"
+themes_reference_12402: 
+  ref_theme: "6015"
+  exclusion: 
+  id: 12402
+  source: portfoliodw
+  ref_source: "53"
+themes_reference_12534: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12534
+  source: portfoliodw
+  ref_source: 829.9(0)
+themes_reference_12666: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12666
+  source: portfoliodw
+  ref_source: 829.3(07
+themes_reference_12667: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12667
+  source: portfoliodw
+  ref_source: 862(00)
+themes_reference_12535: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12535
+  source: portfoliodw
+  ref_source: 849(04
+themes_reference_12403: 
+  ref_theme: "4030"
+  exclusion: 
+  id: 12403
+  source: portfoliodw
+  ref_source: "894.35"
+themes_reference_11590: 
+  ref_theme: "6035"
+  exclusion: 
+  id: 11590
+  source: mdbrg
+  ref_source: "1167"
+themes_reference_11328: 
+  ref_theme: "1040"
+  exclusion: 
+  id: 11328
+  source: mdbrg
+  ref_source: "1426"
+themes_reference_11591: 
+  ref_theme: "1030"
+  exclusion: 
+  id: 11591
+  source: mdbrg
+  ref_source: "1436"
+themes_reference_11329: 
+  ref_theme: "1515"
+  exclusion: 
+  id: 11329
+  source: mdbrg
+  ref_source: "771"
+themes_reference_12404: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12404
+  source: portfoliodw
+  ref_source: 895.8(04
+themes_reference_12536: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12536
+  source: portfoliodw
+  ref_source: 859(0)
+themes_reference_12668: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12668
+  source: portfoliodw
+  ref_source: 892.7(07
+themes_reference_12669: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12669
+  source: portfoliodw
+  ref_source: 88(04
+themes_reference_12537: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12537
+  source: portfoliodw
+  ref_source: 839.31(04
+themes_reference_12405: 
+  ref_theme: "1040"
+  exclusion: 
+  id: 12405
+  source: portfoliodw
+  ref_source: "3.3"
+themes_reference_11460: 
+  ref_theme: "3535"
+  exclusion: 
+  id: 11460
+  source: mdbrg
+  ref_source: "1014"
+themes_reference_11592: 
+  ref_theme: "3530"
+  exclusion: 
+  id: 11592
+  source: mdbrg
+  ref_source: "1006"
+themes_reference_11461: 
+  ref_theme: "4025"
+  exclusion: 
+  id: 11461
+  source: mdbrg
+  ref_source: "1041"
+themes_reference_11593: 
+  ref_theme: "4025"
+  exclusion: 
+  id: 11593
+  source: mdbrg
+  ref_source: "1033"
+themes_reference_12406: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12406
+  source: portfoliodw
+  ref_source: 890(00)
+themes_reference_12538: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12538
+  source: portfoliodw
+  ref_source: 852(0)
+themes_reference_12539: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12539
+  source: portfoliodw
+  ref_source: 821(04
+themes_reference_12407: 
+  ref_theme: "4030"
+  exclusion: 
+  id: 12407
+  source: portfoliodw
+  ref_source: "898"
+themes_reference_11594: 
+  ref_theme: "1515"
+  exclusion: 
+  id: 11594
+  source: mdbrg
+  ref_source: "781"
+themes_reference_11330: 
+  ref_theme: "2010"
+  exclusion: 
+  id: 11330
+  source: mdbrg
+  ref_source: "826"
+themes_reference_11462: 
+  ref_theme: "6545"
+  exclusion: 
+  id: 11462
+  source: mdbrg
+  ref_source: "1257"
+themes_reference_11463: 
+  ref_theme: "6510"
+  exclusion: 
+  id: 11463
+  source: mdbrg
+  ref_source: "1445"
+themes_reference_11331: 
+  ref_theme: "2025"
+  exclusion: 
+  id: 11331
+  source: mdbrg
+  ref_source: "852"
+themes_reference_11595: 
+  ref_theme: "2015"
+  exclusion: 
+  id: 11595
+  source: mdbrg
+  ref_source: "836"
+themes_reference_12408: 
+  ref_theme: "6015"
+  exclusion: 
+  id: 12408
+  source: portfoliodw
+  ref_source: "54"
+themes_reference_12670: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12670
+  source: portfoliodw
+  ref_source: 895.8(07
+themes_reference_12671: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12671
+  source: portfoliodw
+  ref_source: 877(0)
+themes_reference_12409: 
+  ref_theme: "3520"
+  exclusion: 
+  id: 12409
+  source: portfoliodw
+  ref_source: "930.6"
+themes_reference_11596: 
+  ref_theme: "2030"
+  exclusion: 
+  id: 11596
+  source: mdbrg
+  ref_source: "862"
+themes_reference_11332: 
+  ref_theme: "7015"
+  exclusion: 
+  id: 11332
+  source: mdbrg
+  ref_source: "1265"
+themes_reference_11464: 
+  ref_theme: "2040"
+  exclusion: 
+  id: 11464
+  source: mdbrg
+  ref_source: "871"
+themes_reference_11465: 
+  ref_theme: "3015"
+  exclusion: 
+  id: 11465
+  source: mdbrg
+  ref_source: "952"
+themes_reference_11333: 
+  ref_theme: "6530"
+  exclusion: 
+  id: 11333
+  source: mdbrg
+  ref_source: "1239"
+themes_reference_11597: 
+  ref_theme: "2515"
+  exclusion: 
+  id: 11597
+  source: mdbrg
+  ref_source: "917"
+themes_reference_12540: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12540
+  source: portfoliodw
+  ref_source: 885(0)
+themes_reference_12672: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12672
+  source: portfoliodw
+  ref_source: 889(07
+themes_reference_12673: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12673
+  source: portfoliodw
+  ref_source: 895.1(07
+themes_reference_12541: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12541
+  source: portfoliodw
+  ref_source: 846.3(00)
+themes_reference_11466: 
+  ref_theme: "4030"
+  exclusion: 
+  id: 11466
+  source: mdbrg
+  ref_source: "1364"
+themes_reference_11334: 
+  ref_theme: "6050"
+  exclusion: 
+  id: 11334
+  source: mdbrg
+  ref_source: "1185"
+themes_reference_11598: 
+  ref_theme: "3010"
+  exclusion: 
+  id: 11598
+  source: mdbrg
+  ref_source: "943"
+themes_reference_11599: 
+  ref_theme: "6035"
+  exclusion: 
+  id: 11599
+  source: mdbrg
+  ref_source: "1168"
+themes_reference_11335: 
+  ref_theme: "6030"
+  exclusion: 
+  id: 11335
+  source: mdbrg
+  ref_source: "1158"
+themes_reference_11467: 
+  ref_theme: "3535"
+  exclusion: 
+  id: 11467
+  source: mdbrg
+  ref_source: "1015"
+themes_reference_12410: 
+  ref_theme: "4030"
+  exclusion: 
+  id: 12410
+  source: portfoliodw
+  ref_source: "87 "
+themes_reference_12542: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12542
+  source: portfoliodw
+  ref_source: 839.4(07
+themes_reference_12674: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12674
+  source: portfoliodw
+  ref_source: 895.26(0)
+themes_reference_12675: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12675
+  source: portfoliodw
+  ref_source: 839.7(0)
+themes_reference_12543: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12543
+  source: portfoliodw
+  ref_source: 839.5(04
+themes_reference_12411: 
+  ref_theme: "3525"
+  exclusion: 
+  id: 12411
+  source: portfoliodw
+  ref_source: "930.7"
+themes_reference_11468: 
+  ref_theme: "4025"
+  exclusion: 
+  id: 11468
+  source: mdbrg
+  ref_source: "1042"
+themes_reference_11336: 
+  ref_theme: "3530"
+  exclusion: 
+  id: 11336
+  source: mdbrg
+  ref_source: "1346"
+themes_reference_11469: 
+  ref_theme: "2020"
+  exclusion: 
+  id: 11469
+  source: mdbrg
+  ref_source: "845"
+themes_reference_11337: 
+  ref_theme: "2015"
+  exclusion: 
+  id: 11337
+  source: mdbrg
+  ref_source: "1373"
+themes_reference_12412: 
+  ref_theme: "1520"
+  exclusion: 
+  id: 12412
+  source: portfoliodw
+  ref_source: "07"
+themes_reference_12544: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12544
+  source: portfoliodw
+  ref_source: 849(07
+themes_reference_12676: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12676
+  source: portfoliodw
+  ref_source: 891.1(0)
+themes_reference_12677: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12677
+  source: portfoliodw
+  ref_source: 843(00)
+themes_reference_12545: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12545
+  source: portfoliodw
+  ref_source: 890(04
+themes_reference_12413: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12413
+  source: portfoliodw
+  ref_source: 843(04
+themes_reference_11338: 
+  ref_theme: "1040"
+  exclusion: 
+  id: 11338
+  source: mdbrg
+  ref_source: "1427"
+themes_reference_11339: 
+  ref_theme: "4515"
+  exclusion: 
+  id: 11339
+  source: mdbrg
+  ref_source: "1453"
+themes_reference_12414: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12414
+  source: portfoliodw
+  ref_source: 895.1(00)
+themes_reference_12546: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12546
+  source: portfoliodw
+  ref_source: 886.5(0)
+themes_reference_12678: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12678
+  source: portfoliodw
+  ref_source: 892.4(0)
+themes_reference_12679: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12679
+  source: portfoliodw
+  ref_source: 839.31(00)
+themes_reference_12547: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12547
+  source: portfoliodw
+  ref_source: 829.4(04
+themes_reference_12415: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12415
+  source: portfoliodw
+  ref_source: 846.3(04
+themes_reference_11470: 
+  ref_theme: "6545"
+  exclusion: 
+  id: 11470
+  source: mdbrg
+  ref_source: "1258"
+themes_reference_11471: 
+  ref_theme: "6510"
+  exclusion: 
+  id: 11471
+  source: mdbrg
+  ref_source: "1446"
+themes_reference_12416: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12416
+  source: portfoliodw
+  ref_source: 852(0)
+themes_reference_12548: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12548
+  source: portfoliodw
+  ref_source: 846.1(0)
+themes_reference_12549: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12549
+  source: portfoliodw
+  ref_source: 886.2(00)
+themes_reference_12417: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12417
+  source: portfoliodw
+  ref_source: 887(04
+themes_reference_11340: 
+  ref_theme: "4030"
+  exclusion: 
+  id: 11340
+  source: mdbrg
+  ref_source: "1050"
+themes_reference_11472: 
+  ref_theme: "6045"
+  exclusion: 
+  id: 11472
+  source: mdbrg
+  ref_source: "1177"
+themes_reference_11341: 
+  ref_theme: "2010"
+  exclusion: 
+  id: 11341
+  source: mdbrg
+  ref_source: "827"
+themes_reference_11473: 
+  ref_theme: "2040"
+  exclusion: 
+  id: 11473
+  source: mdbrg
+  ref_source: "872"
+themes_reference_12418: 
+  ref_theme: "6020"
+  exclusion: 
+  id: 12418
+  source: portfoliodw
+  ref_source: "55"
+themes_reference_12680: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12680
+  source: portfoliodw
+  ref_source: 88(07
+themes_reference_12681: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12681
+  source: portfoliodw
+  ref_source: 882(0)
+themes_reference_12419: 
+  ref_theme: "5510"
+  exclusion: 
+  id: 12419
+  source: portfoliodw
+  ref_source: EMP A
+themes_reference_11342: 
+  ref_theme: "2025"
+  exclusion: 
+  id: 11342
+  source: mdbrg
+  ref_source: "853"
+themes_reference_11474: 
+  ref_theme: "3015"
+  exclusion: 
+  id: 11474
+  source: mdbrg
+  ref_source: "953"
+themes_reference_11343: 
+  ref_theme: "2510"
+  exclusion: 
+  id: 11343
+  source: mdbrg
+  ref_source: "907"
+themes_reference_11475: 
+  ref_theme: "4030"
+  exclusion: 
+  id: 11475
+  source: mdbrg
+  ref_source: "1365"
+themes_reference_12550: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12550
+  source: portfoliodw
+  ref_source: 821(07
+themes_reference_12682: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12682
+  source: portfoliodw
+  ref_source: 873(00)
+themes_reference_12683: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12683
+  source: portfoliodw
+  ref_source: 821(00)
+themes_reference_12551: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12551
+  source: portfoliodw
+  ref_source: 839.31(07
+themes_reference_11344: 
+  ref_theme: "3010"
+  exclusion: 
+  id: 11344
+  source: mdbrg
+  ref_source: "934"
+themes_reference_11476: 
+  ref_theme: "2010"
+  exclusion: 
+  id: 11476
+  source: mdbrg
+  ref_source: "1392"
+themes_reference_11477: 
+  ref_theme: "4025"
+  exclusion: 
+  id: 11477
+  source: mdbrg
+  ref_source: "1043"
+themes_reference_11345: 
+  ref_theme: "6050"
+  exclusion: 
+  id: 11345
+  source: mdbrg
+  ref_source: "1186"
+themes_reference_12420: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12420
+  source: portfoliodw
+  ref_source: 895.8(07
+themes_reference_12552: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12552
+  source: portfoliodw
+  ref_source: 891.5(04
+themes_reference_12684: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12684
+  source: portfoliodw
+  ref_source: 877(00)
+themes_reference_12685: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12685
+  source: portfoliodw
+  ref_source: 839.9(04
+themes_reference_12553: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12553
+  source: portfoliodw
+  ref_source: 859(00)
+themes_reference_12421: 
+  ref_theme: "2015"
+  exclusion: 
+  id: 12421
+  source: portfoliodw
+  ref_source: 704-8(082)
+themes_reference_11478: 
+  ref_theme: "1520"
+  exclusion: 
+  id: 11478
+  source: mdbrg
+  ref_source: "819"
+themes_reference_11346: 
+  ref_theme: "6030"
+  exclusion: 
+  id: 11346
+  source: mdbrg
+  ref_source: "1159"
+themes_reference_11347: 
+  ref_theme: "4515"
+  exclusion: 
+  id: 11347
+  source: mdbrg
+  ref_source: "1454"
+themes_reference_11900: 
+  ref_theme: "6055"
+  exclusion: 
+  id: 11900
+  source: mdbesv
+  ref_source: "422"
+themes_reference_11479: 
+  ref_theme: "2020"
+  exclusion: 
+  id: 11479
+  source: mdbrg
+  ref_source: "846"
+themes_reference_12422: 
+  ref_theme: "6025"
+  exclusion: 
+  id: 12422
+  source: portfoliodw
+  ref_source: "56"
+themes_reference_12554: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12554
+  source: portfoliodw
+  ref_source: 863(0)
+themes_reference_12686: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12686
+  source: portfoliodw
+  ref_source: 886.2(0)
+themes_reference_12687: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12687
+  source: portfoliodw
+  ref_source: 839.8(0)
+themes_reference_12555: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12555
+  source: portfoliodw
+  ref_source: 886.7(04
+themes_reference_12423: 
+  ref_theme: "5515"
+  exclusion: 
+  id: 12423
+  source: portfoliodw
+  ref_source: EMP B
+themes_reference_11901: 
+  ref_theme: "2015"
+  exclusion: 
+  id: 11901
+  source: mdbesv
+  ref_source: "302"
+themes_reference_11348: 
+  ref_theme: "2020"
+  exclusion: 
+  id: 11348
+  source: mdbrg
+  ref_source: "1374"
+themes_reference_11902: 
+  ref_theme: "3515"
+  exclusion: 
+  id: 11902
+  source: mdbesv
+  ref_source: "344"
+themes_reference_11349: 
+  ref_theme: "1040"
+  exclusion: 
+  id: 11349
+  source: mdbrg
+  ref_source: "1428"
+themes_reference_12424: 
+  ref_theme: "1520"
+  exclusion: 
+  id: 12424
+  source: portfoliodw
+  ref_source: 09
+themes_reference_12556: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12556
+  source: portfoliodw
+  ref_source: 83.@
+themes_reference_12688: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12688
+  source: portfoliodw
+  ref_source: 891.2(0)
+themes_reference_12689: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12689
+  source: portfoliodw
+  ref_source: 897(0)
+themes_reference_12557: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12557
+  source: portfoliodw
+  ref_source: "84 "
+themes_reference_12425: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12425
+  source: portfoliodw
+  ref_source: 869(0)
+themes_reference_11903: 
+  ref_theme: "4025"
+  exclusion: 
+  id: 11903
+  source: mdbesv
+  ref_source: "365"
+themes_reference_11480: 
+  ref_theme: "6545"
+  exclusion: 
+  id: 11480
+  source: mdbrg
+  ref_source: "1259"
+themes_reference_11904: 
+  ref_theme: "6540"
+  exclusion: 
+  id: 11904
+  source: mdbesv
+  ref_source: "444"
+themes_reference_11481: 
+  ref_theme: "6510"
+  exclusion: 
+  id: 11481
+  source: mdbrg
+  ref_source: "1447"
+themes_reference_12426: 
+  ref_theme: "6025"
+  exclusion: 
+  id: 12426
+  source: portfoliodw
+  ref_source: "57"
+themes_reference_12558: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12558
+  source: portfoliodw
+  ref_source: 846.3(04
+themes_reference_12559: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12559
+  source: portfoliodw
+  ref_source: 839.5(07
+themes_reference_12427: 
+  ref_theme: "5510"
+  exclusion: 
+  id: 12427
+  source: portfoliodw
+  ref_source: EMP C
+themes_reference_11482: 
+  ref_theme: "6045"
+  exclusion: 
+  id: 11482
+  source: mdbrg
+  ref_source: "1178"
+themes_reference_11905: 
+  ref_theme: "2510"
+  exclusion: 
+  id: 11905
+  source: mdbesv
+  ref_source: "324"
+themes_reference_11350: 
+  ref_theme: "4020"
+  exclusion: 
+  id: 11350
+  source: mdbrg
+  ref_source: "1024"
+themes_reference_11351: 
+  ref_theme: "4030"
+  exclusion: 
+  id: 11351
+  source: mdbrg
+  ref_source: "1051"
+themes_reference_11906: 
+  ref_theme: "3520"
+  exclusion: 
+  id: 11906
+  source: mdbesv
+  ref_source: "345"
+themes_reference_11483: 
+  ref_theme: "2515"
+  exclusion: 
+  id: 11483
+  source: mdbrg
+  ref_source: "928"
+themes_reference_12428: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12428
+  source: portfoliodw
+  ref_source: 843(07
+themes_reference_12690: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12690
+  source: portfoliodw
+  ref_source: 895.6(04
+themes_reference_12691: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12691
+  source: portfoliodw
+  ref_source: 876(0)
+themes_reference_12429: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12429
+  source: portfoliodw
+  ref_source: 846.3(07
+themes_reference_11484: 
+  ref_theme: "3015"
+  exclusion: 
+  id: 11484
+  source: mdbrg
+  ref_source: "954"
+themes_reference_11907: 
+  ref_theme: "4025"
+  exclusion: 
+  id: 11907
+  source: mdbesv
+  ref_source: "366"
+themes_reference_11352: 
+  ref_theme: "2010"
+  exclusion: 
+  id: 11352
+  source: mdbrg
+  ref_source: "828"
+themes_reference_11353: 
+  ref_theme: "2025"
+  exclusion: 
+  id: 11353
+  source: mdbrg
+  ref_source: "854"
+themes_reference_11908: 
+  ref_theme: "2020"
+  exclusion: 
+  id: 11908
+  source: mdbesv
+  ref_source: "303"
+themes_reference_11485: 
+  ref_theme: "4030"
+  exclusion: 
+  id: 11485
+  source: mdbrg
+  ref_source: "1366"
+themes_reference_12560: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12560
+  source: portfoliodw
+  ref_source: 894.51(0)
+themes_reference_12692: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12692
+  source: portfoliodw
+  ref_source: 870.@
+themes_reference_12693: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12693
+  source: portfoliodw
+  ref_source: 839.9(07
+themes_reference_12561: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12561
+  source: portfoliodw
+  ref_source: 874.@
+themes_reference_11486: 
+  ref_theme: "4515"
+  exclusion: 
+  id: 11486
+  source: mdbrg
+  ref_source: "1070"
+themes_reference_11909: 
+  ref_theme: "6545"
+  exclusion: 
+  id: 11909
+  source: mdbesv
+  ref_source: "445"
+themes_reference_11354: 
+  ref_theme: "2045"
+  exclusion: 
+  id: 11354
+  source: mdbrg
+  ref_source: "880"
+themes_reference_11487: 
+  ref_theme: "2040"
+  exclusion: 
+  id: 11487
+  source: mdbrg
+  ref_source: "873"
+themes_reference_11355: 
+  ref_theme: "2510"
+  exclusion: 
+  id: 11355
+  source: mdbrg
+  ref_source: "908"
+themes_reference_12430: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12430
+  source: portfoliodw
+  ref_source: 887(07
+themes_reference_12562: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12562
+  source: portfoliodw
+  ref_source: 829.4(07
+themes_reference_12694: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12694
+  source: portfoliodw
+  ref_source: 894.35(04
+themes_reference_12695: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12695
+  source: portfoliodw
+  ref_source: 892(04
+themes_reference_12563: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12563
+  source: portfoliodw
+  ref_source: 890(07
+themes_reference_12431: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12431
+  source: portfoliodw
+  ref_source: 821(0)
+themes_reference_11488: 
+  ref_theme: "6520"
+  exclusion: 
+  id: 11488
+  source: mdbrg
+  ref_source: "1448"
+themes_reference_11356: 
+  ref_theme: "3010"
+  exclusion: 
+  id: 11356
+  source: mdbrg
+  ref_source: "935"
+themes_reference_11489: 
+  ref_theme: "6045"
+  exclusion: 
+  id: 11489
+  source: mdbrg
+  ref_source: "1179"
+themes_reference_11357: 
+  ref_theme: "7020"
+  exclusion: 
+  id: 11357
+  source: mdbrg
+  ref_source: "1267"
+themes_reference_11910: 
+  ref_theme: "6510"
+  exclusion: 
+  id: 11910
+  source: mdbesv
+  ref_source: "424"
+themes_reference_12300: 
+  ref_theme: "4030"
+  exclusion: 
+  id: 12300
+  source: portfoliodw
+  ref_source: "864"
+themes_reference_12432: 
+  ref_theme: "6025"
+  exclusion: 
+  id: 12432
+  source: portfoliodw
+  ref_source: "58"
+themes_reference_12564: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12564
+  source: portfoliodw
+  ref_source: 829.(04
+themes_reference_12696: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12696
+  source: portfoliodw
+  ref_source: 891.2(00)
+themes_reference_12697: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12697
+  source: portfoliodw
+  ref_source: 883(00)
+themes_reference_12565: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12565
+  source: portfoliodw
+  ref_source: 839.6(00)
+themes_reference_12433: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12433
+  source: portfoliodw
+  ref_source: 839.5(0)
+themes_reference_12301: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12301
+  source: portfoliodw
+  ref_source: 892.4(0)
+themes_reference_11358: 
+  ref_theme: "6050"
+  exclusion: 
+  id: 11358
+  source: mdbrg
+  ref_source: "1187"
+themes_reference_11911: 
+  ref_theme: "6010"
+  exclusion: 
+  id: 11911
+  source: mdbesv
+  ref_source: "403"
+themes_reference_11359: 
+  ref_theme: "4515"
+  exclusion: 
+  id: 11359
+  source: mdbrg
+  ref_source: "1455"
+themes_reference_11912: 
+  ref_theme: "3525"
+  exclusion: 
+  id: 11912
+  source: mdbesv
+  ref_source: "346"
+themes_reference_12302: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12302
+  source: portfoliodw
+  ref_source: 829.4(07
+themes_reference_12434: 
+  ref_theme: "6025"
+  exclusion: 
+  id: 12434
+  source: portfoliodw
+  ref_source: "59"
+themes_reference_12566: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12566
+  source: portfoliodw
+  ref_source: 886.7(07
+themes_reference_12698: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12698
+  source: portfoliodw
+  ref_source: 839.6(0)
+themes_reference_12699: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12699
+  source: portfoliodw
+  ref_source: 895.6(07
+themes_reference_12567: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12567
+  source: portfoliodw
+  ref_source: 829.9(00)
+themes_reference_12435: 
+  ref_theme: "4030"
+  exclusion: 
+  id: 12435
+  source: portfoliodw
+  ref_source: "892.5"
+themes_reference_12303: 
+  ref_theme: "6035"
+  exclusion: 
+  id: 12303
+  source: portfoliodw
+  ref_source: "628"
+themes_reference_11490: 
+  ref_theme: "4030"
+  exclusion: 
+  id: 11490
+  source: mdbrg
+  ref_source: "1367"
+themes_reference_11913: 
+  ref_theme: "4025"
+  exclusion: 
+  id: 11913
+  source: mdbesv
+  ref_source: "367"
+themes_reference_11491: 
+  ref_theme: "2515"
+  exclusion: 
+  id: 11491
+  source: mdbrg
+  ref_source: "1394"
+themes_reference_11914: 
+  ref_theme: "2025"
+  exclusion: 
+  id: 11914
+  source: mdbesv
+  ref_source: "304"
+themes_reference_12304: 
+  ref_theme: "4030"
+  exclusion: 
+  id: 12304
+  source: portfoliodw
+  ref_source: "865"
+themes_reference_12436: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12436
+  source: portfoliodw
+  ref_source: 892(04
+themes_reference_12568: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12568
+  source: portfoliodw
+  ref_source: 864(0)
+themes_reference_12569: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12569
+  source: portfoliodw
+  ref_source: 846.3(07
+themes_reference_12437: 
+  ref_theme: "2035"
+  exclusion: 
+  id: 12437
+  source: portfoliodw
+  ref_source: "765"
+themes_reference_12305: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12305
+  source: portfoliodw
+  ref_source: 884(04
+themes_reference_11915: 
+  ref_theme: "2510"
+  exclusion: 
+  id: 11915
+  source: mdbesv
+  ref_source: "325"
+themes_reference_11360: 
+  ref_theme: "1040"
+  exclusion: 
+  id: 11360
+  source: mdbrg
+  ref_source: "1429"
+themes_reference_11492: 
+  ref_theme: "4515"
+  exclusion: 
+  id: 11492
+  source: mdbrg
+  ref_source: "1071"
+themes_reference_11493: 
+  ref_theme: "1515"
+  exclusion: 
+  id: 11493
+  source: mdbrg
+  ref_source: "793"
+themes_reference_11361: 
+  ref_theme: "4020"
+  exclusion: 
+  id: 11361
+  source: mdbrg
+  ref_source: "1025"
+themes_reference_11916: 
+  ref_theme: "6515"
+  exclusion: 
+  id: 11916
+  source: mdbesv
+  ref_source: "425"
+themes_reference_12306: 
+  ref_theme: "6045"
+  exclusion: 
+  id: 12306
+  source: portfoliodw
+  ref_source: "629"
+themes_reference_12438: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12438
+  source: portfoliodw
+  ref_source: 892.7(0)
+themes_reference_12439: 
+  ref_theme: "3515"
+  exclusion: 
+  id: 12439
+  source: portfoliodw
+  ref_source: "93.2"
+themes_reference_12307: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12307
+  source: portfoliodw
+  ref_source: 848(07
+themes_reference_11917: 
+  ref_theme: "5010"
+  exclusion: 
+  id: 11917
+  source: mdbesv
+  ref_source: "390"
+themes_reference_11362: 
+  ref_theme: "4030"
+  exclusion: 
+  id: 11362
+  source: mdbrg
+  ref_source: "1052"
+themes_reference_11494: 
+  ref_theme: "6520"
+  exclusion: 
+  id: 11494
+  source: mdbrg
+  ref_source: "1449"
+themes_reference_11495: 
+  ref_theme: "5015"
+  exclusion: 
+  id: 11495
+  source: mdbrg
+  ref_source: "1368"
+themes_reference_11363: 
+  ref_theme: "2010"
+  exclusion: 
+  id: 11363
+  source: mdbrg
+  ref_source: "829"
+themes_reference_11918: 
+  ref_theme: "4025"
+  exclusion: 
+  id: 11918
+  source: mdbesv
+  ref_source: "368"
+themes_reference_12308: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12308
+  source: portfoliodw
+  ref_source: 895.6(00)
+themes_reference_12570: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12570
+  source: portfoliodw
+  ref_source: 869(00)
+themes_reference_12571: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12571
+  source: portfoliodw
+  ref_source: "874 "
+themes_reference_12309: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12309
+  source: portfoliodw
+  ref_source: 839.31(07
+themes_reference_11919: 
+  ref_theme: "2510"
+  exclusion: 
+  id: 11919
+  source: mdbesv
+  ref_source: "326"
+themes_reference_11364: 
+  ref_theme: "2025"
+  exclusion: 
+  id: 11364
+  source: mdbrg
+  ref_source: "855"
+themes_reference_11496: 
+  ref_theme: "3015"
+  exclusion: 
+  id: 11496
+  source: mdbrg
+  ref_source: "956"
+themes_reference_11497: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 11497
+  source: mdbrg
+  ref_source: "1019"
+themes_reference_11365: 
+  ref_theme: "2045"
+  exclusion: 
+  id: 11365
+  source: mdbrg
+  ref_source: "881"
+themes_reference_12440: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12440
+  source: portfoliodw
+  ref_source: 859(0)
+themes_reference_12572: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12572
+  source: portfoliodw
+  ref_source: 843(0)
+themes_reference_12573: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12573
+  source: portfoliodw
+  ref_source: 883(0)
+themes_reference_12441: 
+  ref_theme: "3515"
+  exclusion: 
+  id: 12441
+  source: portfoliodw
+  ref_source: "938."
+themes_reference_11498: 
+  ref_theme: "2025"
+  exclusion: 
+  id: 11498
+  source: mdbrg
+  ref_source: "849"
+themes_reference_11366: 
+  ref_theme: "2510"
+  exclusion: 
+  id: 11366
+  source: mdbrg
+  ref_source: "909"
+themes_reference_11499: 
+  ref_theme: "5015"
+  exclusion: 
+  id: 11499
+  source: mdbrg
+  ref_source: "1369"
+themes_reference_11367: 
+  ref_theme: "3010"
+  exclusion: 
+  id: 11367
+  source: mdbrg
+  ref_source: "936"
+themes_reference_11920: 
+  ref_theme: "6015"
+  exclusion: 
+  id: 11920
+  source: mdbesv
+  ref_source: "405"
+themes_reference_12310: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12310
+  source: portfoliodw
+  ref_source: 839.6(04
+themes_reference_12442: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12442
+  source: portfoliodw
+  ref_source: 892(07
+themes_reference_12574: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12574
+  source: portfoliodw
+  ref_source: "894.5 "
+themes_reference_12575: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12575
+  source: portfoliodw
+  ref_source: 895.2(0)
+themes_reference_12443: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12443
+  source: portfoliodw
+  ref_source: 839.9(04
+themes_reference_12311: 
+  ref_theme: "4030"
+  exclusion: 
+  id: 12311
+  source: portfoliodw
+  ref_source: "894.51"
+themes_reference_11368: 
+  ref_theme: "1010"
+  exclusion: 
+  id: 11368
+  source: mdbrg
+  ref_source: "962"
+themes_reference_11921: 
+  ref_theme: "2030"
+  exclusion: 
+  id: 11921
+  source: mdbesv
+  ref_source: "306"
+themes_reference_11369: 
+  ref_theme: "7025"
+  exclusion: 
+  id: 11369
+  source: mdbrg
+  ref_source: "1268"
+themes_reference_11922: 
+  ref_theme: "3530"
+  exclusion: 
+  id: 11922
+  source: mdbesv
+  ref_source: "348"
+themes_reference_12312: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12312
+  source: portfoliodw
+  ref_source: 839.7(07
+themes_reference_12444: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12444
+  source: portfoliodw
+  ref_source: 883(04
+themes_reference_12576: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12576
+  source: portfoliodw
+  ref_source: 86.@
+themes_reference_12577: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12577
+  source: portfoliodw
+  ref_source: 891(07
+themes_reference_12445: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12445
+  source: portfoliodw
+  ref_source: 839.9(00)
+themes_reference_12313: 
+  ref_theme: "2024"
+  exclusion: 
+  id: 12313
+  source: portfoliodw
+  ref_source: 7.3(8@
+themes_reference_11923: 
+  ref_theme: "4030"
+  exclusion: 
+  id: 11923
+  source: mdbesv
+  ref_source: "370"
+themes_reference_11924: 
+  ref_theme: "6520"
+  exclusion: 
+  id: 11924
+  source: mdbesv
+  ref_source: "427"
+themes_reference_12314: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12314
+  source: portfoliodw
+  ref_source: ": 82  82.@"
+themes_reference_12446: 
+  ref_theme: "2035"
+  exclusion: 
+  id: 12446
+  source: portfoliodw
+  ref_source: "768"
+themes_reference_12578: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12578
+  source: portfoliodw
+  ref_source: 895.22(04
+themes_reference_12579: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12579
+  source: portfoliodw
+  ref_source: 852(04
+themes_reference_12447: 
+  ref_theme: "3510"
+  exclusion: 
+  id: 12447
+  source: portfoliodw
+  ref_source: "93 "
+themes_reference_12315: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12315
+  source: portfoliodw
+  ref_source: 897(04
+themes_reference_11925: 
+  ref_theme: "6015"
+  exclusion: 
+  id: 11925
+  source: mdbesv
+  ref_source: "406"
+themes_reference_11370: 
+  ref_theme: "6010"
+  exclusion: 
+  id: 11370
+  source: mdbrg
+  ref_source: "1456"
+themes_reference_11926: 
+  ref_theme: "5010"
+  exclusion: 
+  id: 11926
+  source: mdbesv
+  ref_source: "392"
+themes_reference_11371: 
+  ref_theme: "2020"
+  exclusion: 
+  id: 11371
+  source: mdbrg
+  ref_source: "1375"
+themes_reference_12316: 
+  ref_theme: "4030"
+  exclusion: 
+  id: 12316
+  source: portfoliodw
+  ref_source: "868"
+themes_reference_12448: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12448
+  source: portfoliodw
+  ref_source: 894.35(00)
+themes_reference_12449: 
+  ref_theme: "4030"
+  exclusion: 
+  id: 12449
+  source: portfoliodw
+  ref_source: "859 "
+themes_reference_12317: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12317
+  source: portfoliodw
+  ref_source: 884(07
+themes_reference_11927: 
+  ref_theme: "2030"
+  exclusion: 
+  id: 11927
+  source: mdbesv
+  ref_source: "307"
+themes_reference_11372: 
+  ref_theme: "4020"
+  exclusion: 
+  id: 11372
+  source: mdbrg
+  ref_source: "1026"
+themes_reference_11928: 
+  ref_theme: "2515"
+  exclusion: 
+  id: 11928
+  source: mdbesv
+  ref_source: "328"
+themes_reference_11373: 
+  ref_theme: "4030"
+  exclusion: 
+  id: 11373
+  source: mdbrg
+  ref_source: "1053"
+themes_reference_12318: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12318
+  source: portfoliodw
+  ref_source: 894(07)
+themes_reference_12580: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12580
+  source: portfoliodw
+  ref_source: 862(0)
+themes_reference_12581: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12581
+  source: portfoliodw
+  ref_source: 859(04
+themes_reference_12319: 
+  ref_theme: "2015"
+  exclusion: 
+  id: 12319
+  source: portfoliodw
+  ref_source: 704-8(07)
+themes_reference_11929: 
+  ref_theme: "3530"
+  exclusion: 
+  id: 11929
+  source: mdbesv
+  ref_source: "350"
+themes_reference_11374: 
+  ref_theme: "2025"
+  exclusion: 
+  id: 11374
+  source: mdbrg
+  ref_source: "856"
+themes_reference_11375: 
+  ref_theme: "2045"
+  exclusion: 
+  id: 11375
+  source: mdbrg
+  ref_source: "882"
+themes_reference_12450: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12450
+  source: portfoliodw
+  ref_source: 839.9(07
+themes_reference_12582: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12582
+  source: portfoliodw
+  ref_source: 895.6(00)
+themes_reference_12583: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12583
+  source: portfoliodw
+  ref_source: 885(04
+themes_reference_12451: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12451
+  source: portfoliodw
+  ref_source: 883(07
+themes_reference_11376: 
+  ref_theme: "3010"
+  exclusion: 
+  id: 11376
+  source: mdbrg
+  ref_source: "937"
+themes_reference_11930: 
+  ref_theme: "3530"
+  exclusion: 
+  id: 11930
+  source: mdbesv
+  ref_source: "349"
+themes_reference_11377: 
+  ref_theme: "1010"
+  exclusion: 
+  id: 11377
+  source: mdbrg
+  ref_source: "963"
+themes_reference_12320: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12320
+  source: portfoliodw
+  ref_source: 891.5(04
+themes_reference_12452: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12452
+  source: portfoliodw
+  ref_source: 886.5(00)
+themes_reference_12584: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12584
+  source: portfoliodw
+  ref_source: 887(00)
+themes_reference_12585: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12585
+  source: portfoliodw
+  ref_source: 839.5(00)
+themes_reference_12453: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12453
+  source: portfoliodw
+  ref_source: 892.4(00)
+themes_reference_12321: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12321
+  source: portfoliodw
+  ref_source: "84 "
+themes_reference_11931: 
+  ref_theme: "4030"
+  exclusion: 
+  id: 11931
+  source: mdbesv
+  ref_source: "371"
+themes_reference_11378: 
+  ref_theme: "6510"
+  exclusion: 
+  id: 11378
+  source: mdbrg
+  ref_source: "1457"
+themes_reference_11379: 
+  ref_theme: "2020"
+  exclusion: 
+  id: 11379
+  source: mdbrg
+  ref_source: "1376"
+themes_reference_11800: 
+  ref_theme: "6055"
+  exclusion: 
+  id: 11800
+  source: mdbfilms
+  ref_source: "1197"
+themes_reference_11932: 
+  ref_theme: "6520"
+  exclusion: 
+  id: 11932
+  source: mdbesv
+  ref_source: "428"
+themes_reference_12322: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12322
+  source: portfoliodw
+  ref_source: 839.6(07
+themes_reference_12454: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12454
+  source: portfoliodw
+  ref_source: 852(04
+themes_reference_12586: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12586
+  source: portfoliodw
+  ref_source: 895.1(00)
+themes_reference_12587: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12587
+  source: portfoliodw
+  ref_source: 829.9(04
+themes_reference_12455: 
+  ref_theme: "2020"
+  exclusion: 
+  id: 12455
+  source: portfoliodw
+  ref_source: 70""17""
+themes_reference_12323: 
+  ref_theme: "4030"
+  exclusion: 
+  id: 12323
+  source: portfoliodw
+  ref_source: "869"
+themes_reference_11933: 
+  ref_theme: "5010"
+  exclusion: 
+  id: 11933
+  source: mdbesv
+  ref_source: "393"
+themes_reference_11801: 
+  ref_theme: "6020"
+  exclusion: 
+  id: 11801
+  source: mdbfilms
+  ref_source: "1168"
+themes_reference_11934: 
+  ref_theme: "2035"
+  exclusion: 
+  id: 11934
+  source: mdbesv
+  ref_source: "308"
+themes_reference_11802: 
+  ref_theme: "2510"
+  exclusion: 
+  id: 11802
+  source: mdbfilms
+  ref_source: "970"
+themes_reference_12324: 
+  ref_theme: "2025"
+  exclusion: 
+  id: 12324
+  source: portfoliodw
+  ref_source: "72"
+themes_reference_12456: 
+  ref_theme: "6510"
+  exclusion: 
+  id: 12456
+  source: portfoliodw
+  ref_source: 3(
+themes_reference_12588: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12588
+  source: portfoliodw
+  ref_source: 892.4(00)
+themes_reference_12589: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12589
+  source: portfoliodw
+  ref_source: 895.22(07
+themes_reference_12457: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12457
+  source: portfoliodw
+  ref_source: 891.2(00)
+themes_reference_12325: 
+  ref_theme: "2029"
+  exclusion: 
+  id: 12325
+  source: portfoliodw
+  ref_source: "73"
+themes_reference_11935: 
+  ref_theme: "2515"
+  exclusion: 
+  id: 11935
+  source: mdbesv
+  ref_source: "330"
+themes_reference_11803: 
+  ref_theme: "2015"
+  exclusion: 
+  id: 11803
+  source: mdbfilms
+  ref_source: "887"
+themes_reference_11380: 
+  ref_theme: "4020"
+  exclusion: 
+  id: 11380
+  source: mdbrg
+  ref_source: "1027"
+themes_reference_11381: 
+  ref_theme: "4030"
+  exclusion: 
+  id: 11381
+  source: mdbrg
+  ref_source: "1054"
+themes_reference_11804: 
+  ref_theme: "6525"
+  exclusion: 
+  id: 11804
+  source: mdbfilms
+  ref_source: "1224"
+themes_reference_11936: 
+  ref_theme: "2515"
+  exclusion: 
+  id: 11936
+  source: mdbesv
+  ref_source: "329"
+themes_reference_12326: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12326
+  source: portfoliodw
+  ref_source: 897(07
+themes_reference_12458: 
+  ref_theme: "2055"
+  exclusion: 
+  id: 12458
+  source: portfoliodw
+  ref_source: "79 "
+themes_reference_12459: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12459
+  source: portfoliodw
+  ref_source: 886.2(00)
+themes_reference_12327: 
+  ref_theme: "2030"
+  exclusion: 
+  id: 12327
+  source: portfoliodw
+  ref_source: "74"
+themes_reference_11937: 
+  ref_theme: "3530"
+  exclusion: 
+  id: 11937
+  source: mdbesv
+  ref_source: "351"
+themes_reference_11805: 
+  ref_theme: "6055"
+  exclusion: 
+  id: 11805
+  source: mdbfilms
+  ref_source: "1198"
+themes_reference_11382: 
+  ref_theme: "2025"
+  exclusion: 
+  id: 11382
+  source: mdbrg
+  ref_source: "857"
+themes_reference_11383: 
+  ref_theme: "3010"
+  exclusion: 
+  id: 11383
+  source: mdbrg
+  ref_source: "938"
+themes_reference_11806: 
+  ref_theme: "6020"
+  exclusion: 
+  id: 11806
+  source: mdbfilms
+  ref_source: "1169"
+themes_reference_11938: 
+  ref_theme: "4030"
+  exclusion: 
+  id: 11938
+  source: mdbesv
+  ref_source: "372"
+themes_reference_12328: 
+  ref_theme: "2027"
+  exclusion: 
+  id: 12328
+  source: portfoliodw
+  ref_source: "75"
+themes_reference_12590: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12590
+  source: portfoliodw
+  ref_source: 884(0)
+themes_reference_12591: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12591
+  source: portfoliodw
+  ref_source: 894(07)
+themes_reference_12329: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12329
+  source: portfoliodw
+  ref_source: 894.35(0)
+themes_reference_11939: 
+  ref_theme: "6520"
+  exclusion: 
+  id: 11939
+  source: mdbesv
+  ref_source: "430"
+themes_reference_11807: 
+  ref_theme: "2510"
+  exclusion: 
+  id: 11807
+  source: mdbfilms
+  ref_source: "971"
+themes_reference_11384: 
+  ref_theme: "1010"
+  exclusion: 
+  id: 11384
+  source: mdbrg
+  ref_source: "964"
+themes_reference_11385: 
+  ref_theme: "2020"
+  exclusion: 
+  id: 11385
+  source: mdbrg
+  ref_source: "1377"
+themes_reference_11808: 
+  ref_theme: "2015"
+  exclusion: 
+  id: 11808
+  source: mdbfilms
+  ref_source: "888"
+themes_reference_11253: 
+  ref_theme: "2040"
+  exclusion: 
+  id: 11253
+  source: mdbrg
+  ref_source: "869"
+themes_reference_12460: 
+  ref_theme: "4030"
+  exclusion: 
+  id: 12460
+  source: portfoliodw
+  ref_source: "820"
+themes_reference_12592: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12592
+  source: portfoliodw
+  ref_source: 852(07
+themes_reference_12593: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12593
+  source: portfoliodw
+  ref_source: 846.1(04
+themes_reference_12461: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12461
+  source: portfoliodw
+  ref_source: 886.2(0)
+themes_reference_11254: 
+  ref_theme: "2050"
+  exclusion: 
+  id: 11254
+  source: mdbrg
+  ref_source: "895"
+themes_reference_11809: 
+  ref_theme: "4520"
+  exclusion: 
+  id: 11809
+  source: mdbfilms
+  ref_source: "1140"
+themes_reference_11386: 
+  ref_theme: "4020"
+  exclusion: 
+  id: 11386
+  source: mdbrg
+  ref_source: "1028"
+themes_reference_11940: 
+  ref_theme: "6520"
+  exclusion: 
+  id: 11940
+  source: mdbesv
+  ref_source: "429"
+themes_reference_11255: 
+  ref_theme: "4025"
+  exclusion: 
+  id: 11255
+  source: mdbrg
+  ref_source: "1039"
+themes_reference_11387: 
+  ref_theme: "3010"
+  exclusion: 
+  id: 11387
+  source: mdbrg
+  ref_source: "939"
+themes_reference_12330: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12330
+  source: portfoliodw
+  ref_source: 892.4(04
+themes_reference_12462: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12462
+  source: portfoliodw
+  ref_source: 869(04
+themes_reference_12594: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12594
+  source: portfoliodw
+  ref_source: 859(07
+themes_reference_12595: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12595
+  source: portfoliodw
+  ref_source: 886.5(04
+themes_reference_12463: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12463
+  source: portfoliodw
+  ref_source: 88(0)
+themes_reference_12331: 
+  ref_theme: "2021"
+  exclusion: 
+  id: 12331
+  source: portfoliodw
+  ref_source: "\"70\"\"19\"\""
+themes_reference_11388: 
+  ref_theme: "1010"
+  exclusion: 
+  id: 11388
+  source: mdbrg
+  ref_source: "965"
+themes_reference_11256: 
+  ref_theme: "4515"
+  exclusion: 
+  id: 11256
+  source: mdbrg
+  ref_source: "1066"
+themes_reference_11941: 
+  ref_theme: "6020"
+  exclusion: 
+  id: 11941
+  source: mdbesv
+  ref_source: "408"
+themes_reference_11810: 
+  ref_theme: "2015"
+  exclusion: 
+  id: 11810
+  source: mdbfilms
+  ref_source: "889"
+themes_reference_11389: 
+  ref_theme: "3515"
+  exclusion: 
+  id: 11389
+  source: mdbrg
+  ref_source: "991"
+themes_reference_11257: 
+  ref_theme: "5510"
+  exclusion: 
+  id: 11257
+  source: mdbrg
+  ref_source: "1093"
+themes_reference_11942: 
+  ref_theme: "5010"
+  exclusion: 
+  id: 11942
+  source: mdbesv
+  ref_source: "394"
+themes_reference_12200: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12200
+  source: portfoliodw
+  ref_source: 890(04
+themes_reference_12332: 
+  ref_theme: "2040"
+  exclusion: 
+  id: 12332
+  source: portfoliodw
+  ref_source: "77"
+themes_reference_12464: 
+  ref_theme: "4030"
+  exclusion: 
+  id: 12464
+  source: portfoliodw
+  ref_source: "821"
+themes_reference_12596: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12596
+  source: portfoliodw
+  ref_source: 885(07
+themes_reference_12597: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12597
+  source: portfoliodw
+  ref_source: 863(04
+themes_reference_12465: 
+  ref_theme: "2010"
+  exclusion: 
+  id: 12465
+  source: portfoliodw
+  ref_source: 7(091)
+themes_reference_12333: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12333
+  source: portfoliodw
+  ref_source: 829.3(0)
+themes_reference_12201: 
+  ref_theme: "6035"
+  exclusion: 
+  id: 12201
+  source: portfoliodw
+  ref_source: "62 "
+themes_reference_11943: 
+  ref_theme: "2045"
+  exclusion: 
+  id: 11943
+  source: mdbesv
+  ref_source: "310"
+themes_reference_11258: 
+  ref_theme: "3535"
+  exclusion: 
+  id: 11258
+  source: mdbrg
+  ref_source: "1389"
+themes_reference_11811: 
+  ref_theme: "4020"
+  exclusion: 
+  id: 11811
+  source: mdbfilms
+  ref_source: "1050"
+themes_reference_11812: 
+  ref_theme: "2050"
+  exclusion: 
+  id: 11812
+  source: mdbfilms
+  ref_source: "944"
+themes_reference_11259: 
+  ref_theme: "6515"
+  exclusion: 
+  id: 11259
+  source: mdbrg
+  ref_source: "1200"
+themes_reference_11944: 
+  ref_theme: "2040"
+  exclusion: 
+  id: 11944
+  source: mdbesv
+  ref_source: "309"
+themes_reference_12202: 
+  ref_theme: "5010"
+  exclusion: 
+  id: 12202
+  source: portfoliodw
+  ref_source: 1""""
+themes_reference_12334: 
+  ref_theme: "3535"
+  exclusion: 
+  id: 12334
+  source: portfoliodw
+  ref_source: "940.1"
+themes_reference_12466: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12466
+  source: portfoliodw
+  ref_source: 852(07
+themes_reference_12598: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12598
+  source: portfoliodw
+  ref_source: 873(0)
+themes_reference_12599: 
+  ref_theme: 
+  exclusion: "4030"
+  id: 12599
+  source: portfoliodw
+  ref_source: 829.9(07
+themes_reference_12467: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12467
+  source: portfoliodw
+  ref_source: 874.@
+themes_reference_12335: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12335
+  source: portfoliodw
+  ref_source: 843(00)
+themes_reference_12203: 
+  ref_theme: "4030"
+  exclusion: 
+  id: 12203
+  source: portfoliodw
+  ref_source: "886"
+themes_reference_11390: 
+  ref_theme: "6025"
+  exclusion: 
+  id: 11390
+  source: mdbrg
+  ref_source: "1459"
+themes_reference_11813: 
+  ref_theme: "6055"
+  exclusion: 
+  id: 11813
+  source: mdbfilms
+  ref_source: "1199"
+themes_reference_11945: 
+  ref_theme: "2515"
+  exclusion: 
+  id: 11945
+  source: mdbesv
+  ref_source: "331"
+themes_reference_11946: 
+  ref_theme: "3530"
+  exclusion: 
+  id: 11946
+  source: mdbesv
+  ref_source: "352"
+themes_reference_11814: 
+  ref_theme: "4020"
+  exclusion: 
+  id: 11814
+  source: mdbfilms
+  ref_source: "1283"
+themes_reference_11391: 
+  ref_theme: "5015"
+  exclusion: 
+  id: 11391
+  source: mdbrg
+  ref_source: "1082"
+themes_reference_12204: 
+  ref_theme: "4030"
+  exclusion: 
+  id: 12204
+  source: portfoliodw
+  ref_source: "839"
+themes_reference_12336: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12336
+  source: portfoliodw
+  ref_source: "870 "
+themes_reference_12468: 
+  ref_theme: "4010"
+  exclusion: 
+  id: 12468
+  source: portfoliodw
+  ref_source: 821(04

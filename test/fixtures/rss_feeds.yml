@@ -1,0 +1,79 @@
+--- 
+rss_feed_00003: 
+  update_periodicity: 1
+  name: nouveaux_articles
+  created_at: 2011-05-09 16:26:49 +02:00
+  updated_at: 2011-08-25 16:35:50 +02:00
+  primary_document_type: 11
+  url: http://10.1.2.119/rss/feed?query[rss_id]=3
+  id: 3
+  new_docs: 1
+  isbn_issn_nullable: 0
+  full_name: Nouveaux articles
+  solr_request: ""
+  collection_group: 1
+rss_feed_00004: 
+  update_periodicity: 10
+  name: nouveaux_enregistrements
+  created_at: 2011-05-09 16:40:52 +02:00
+  updated_at: 2011-05-09 16:40:52 +02:00
+  primary_document_type: 15
+  url: http://10.1.2.119/rss/feed?query[rss_id]=4
+  id: 4
+  new_docs: 1
+  isbn_issn_nullable: 0
+  full_name: Nouveaux enregistrements
+  solr_request: ""
+  collection_group: 1
+rss_feed_00005: 
+  update_periodicity: 1
+  name: nouveaux_livres
+  created_at: 2011-05-16 17:26:40 +02:00
+  updated_at: 2011-08-25 16:34:22 +02:00
+  primary_document_type: 3
+  url: http://10.1.2.119/rss/feed?query[rss_id]=5
+  id: 5
+  new_docs: 1
+  isbn_issn_nullable: 0
+  full_name: nouveaux livres
+  solr_request: ""
+  collection_group: 1
+rss_feed_00006: 
+  update_periodicity: 15
+  name: nouveautes_emploiformationviepratique
+  created_at: 2011-05-30 17:24:43 +02:00
+  updated_at: 2011-07-20 13:01:18 +02:00
+  primary_document_type: 3
+  url: http://10.1.2.111/rss/feed?query[rss_id]=6
+  id: 6
+  new_docs: 0
+  isbn_issn_nullable: 1
+  full_name: "Nouveaut\xC3\xA9s emploi formation vie pratique"
+  solr_request: theme:(vie pratique) OR theme:(recherche d'emploi)
+  collection_group: 1
+rss_feed_00001: 
+  update_periodicity: 1
+  name: Test_Amelie
+  created_at: 2010-08-31 10:33:07 +02:00
+  updated_at: 2011-03-30 19:02:32 +02:00
+  primary_document_type: 3
+  url: http://10.1.2.123/rss/feed?query[rss_id]=1
+  id: 1
+  new_docs: 0
+  isbn_issn_nullable: 0
+  full_name: "Test Am\xC3\xA9lie"
+  solr_request: ""
+  collection_group: 1
+rss_feed_00002: 
+  update_periodicity: 1
+  name: nouveaux_films
+  created_at: 2011-03-30 18:47:41 +02:00
+  updated_at: 2011-08-25 16:33:32 +02:00
+  primary_document_type: 16
+  url: http://10.1.2.111/rss/feed?query[rss_id]=2
+  id: 2
+  new_docs: 1
+  isbn_issn_nullable: 
+  full_name: Nouveaux films
+  solr_request: ""
+  collection_group: 1

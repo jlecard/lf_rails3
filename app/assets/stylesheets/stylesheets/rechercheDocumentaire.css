@@ -1,0 +1,1124 @@
+
+/*
+ ** this file contains all css added
+ ** for federer search
+ */
+/* _______________________  SUB-MENU __________________________*/
+.menu-niv2 {
+    /* Position & margin */
+    margin: 0px;
+    padding: 0px;
+    padding-top: 1em;
+    padding-left: 2.7em;
+    width: 97%; /* Correction pour Firefox  */
+    width: 100%; /* Cheat pour IE6 */
+    height: 3em;
+    /* Style */
+    background-color: #f4f4f4;
+    font-size: 1.1em;
+    line-height: 1em;
+    font-weight: bold;
+}
+
+.cheatVAlign {
+    line-height: 0.5em;
+}
+
+.menu-niv2 ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+.menu-niv2 li {
+    /* Position & margin */
+    float: left;
+    margin: 0px;
+    margin-top: 0.2em;
+    padding: 0px;
+    vertical-align: 1em;
+    display: inline;
+}
+
+.menu-niv2 li a {
+    /* Position & margin */
+    float: left;
+    margin: 0px;
+    padding: 0px;
+    padding-top: 0.5em;
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-bottom: 0.3em;
+    display: block;
+    height: 2em;
+    _height: 3em; /* Cheat IE6 */
+    z-index: 100;
+    /* Style */
+    text-decoration: none;
+    text-align: center;
+    -moz-border-radius: 5px 5px 0px 0px;
+    color: #483d8b;
+}
+
+/* _______________________  MENU UNDER __________________________*/
+.sub-container {
+    /* Position & margin */
+    margin: 0px;
+    padding: 0px;
+    float: left;
+    padding-left: 3em;
+    width: 97%; /* Correction pour Firefox  */
+    _width: 100%; /* Cheat pour IE6 */
+    z-index: 99;
+    display: inline;
+}
+
+/* _______________________  SEARCH __________________________*/
+.search {
+    /* Position & margin */
+    float: left;
+    background-color: #483d8b;
+    width: 78%;
+    z-index: 2000;
+    padding-top: 1em;
+    overflow: visible;
+    /* Style */
+    -moz-border-radius: 0px 2px 2px 2px;
+    color: white;
+    font-weight: bold;
+    font-size: 1em;
+    text-align: left;
+}
+
+.search form {
+    /* Position & margin */
+    margin: 0px;
+    padding: 0px;
+    padding-top: 0.5em;
+    padding-left: 1em;
+    width: 98%;
+    text-align: left;
+    font-size: 1.5em;
+    clear: both;
+}
+
+.search form input, form select {
+    /* Position & margin */
+    margin-left: 1em;
+    margin-right: 0.1em;
+    border: 0px;
+    /*width: 8em;*/
+    background-color: white;
+    opacity: 0.9;
+}
+
+.textField {
+    /* Position & margin */
+    /*background-color: white;*/
+    background-image: url(/images/searchField.jpg);
+    width: 220px !important;
+    height: 20px;
+    border: 0px;
+}
+
+.andOr {
+    width: auto;
+}
+
+#buttonSubmit {
+    float: left;
+}
+
+.search a {
+    /* Position & margin */
+    font-size: 0.8em;
+    color: white;
+    text-decoration: none;
+    margin-left: 0.2em;
+}
+
+.button {
+    vertical-align: bottom;
+    background-image: url("/images/btn-valider-mauve.gif");
+    width: 7em;
+    height: 2em;
+}
+
+#autoCompleteMenu {
+    margin: 0px;
+    padding: 0px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    background-color: white;
+    text-align: left;
+    font-size: 1.5em;
+    line-height: 1.5em;
+    font-weight: normal;
+    color: black;
+    z-index: 2001;
+}
+
+#autoComplete .selected {
+    background-color: #483d8b;
+    display: block;
+    color: white;
+    height: 100%;
+    width: 100%;
+}
+
+#advancedAlign {
+    float: left;
+    /*width: 48em;*/
+}
+
+.advanceForm {
+    float: left;
+    clear: both;
+    margin-left: 1.39em;
+    display: inline;
+}
+
+.fieldSearch, .textSearchElem, .fieldSearchFirst {
+    margin: 0px;
+    padding: 0px;
+    margin-bottom: 0.5em;
+    text-align: left;
+}
+
+.fieldSearch {
+    clear: both;
+    float: right;
+}
+
+.fieldSearchFirst {
+    float: left;
+    _margin-left: 0.2em;
+}
+
+.textSearchElem {
+    width: 5.5em;
+    float: left;
+}
+
+.hideElement {
+    display: none;
+}
+
+.keyword {
+    background-color: yellow;
+    color: inherit;
+}
+
+/* _______________________  HELP __________________________*/
+.help {
+    /* Position & margin */
+    float: left;
+    margin: 0px;
+    padding: 0px;
+    padding-top: 1em;
+    width: 19%;
+    max-height: 2.5em;
+    display: inline;
+    /* Style */
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+}
+
+.help a {
+    /* Style */
+    text-decoration: none;
+    color: #483d8b;
+}
+
+.help ul li {
+    /* Style */
+    list-style-image: url("/images/puce.PNG");
+}
+
+/*
+ ** _______________________  LEFT __________________________
+ */
+.left {
+    /* Position & margin */
+    float: left;
+    clear: left;
+    margin: 0px;
+    padding-top: 2em;
+    width: 19%;
+    min-height: 37em;
+    z-index: 99;
+    display: inline;
+    /* Style*/
+    font-size: 1.2em;
+    background-color: #f5f5f5;
+    -moz-border-radius: 0px 0px 5px 5px;
+    line-height: 2em;
+}
+
+.left a {
+    padding: 0px;
+    margin: 0px;
+    text-decoration: none;
+    cursor: pointer;
+    color: black;
+}
+
+.sub-menu-tree ul {
+    padding: 0px;
+    margin: 0px;
+    list-style-image: none;
+    font-weight: normal;
+}
+
+.sub-menu-tree-open {
+    padding: 0px;
+    margin: 0px;
+    list-style-image: url("/images/picto-fleche-mauve.gif") !important;
+    font-weight: bolder !important;
+}
+
+.sub-menu-tree-open li {
+    padding: 0px;
+    margin: 0px;
+    list-style-image: url("/images/puce_menu_tree.PNG");
+    margin-left: 2em;
+}
+
+.sub-menu-tree-open a {
+    padding: 0px;
+    margin: 0px;
+}
+
+.left .plus {
+    padding: 0px;
+    margin: 0px;
+    margin-left: 2em;
+    overflow: visible;
+}
+
+.left .other {
+    padding: 0px;
+    margin: 0px;
+    margin-left: 2em;
+    overflow: visible;
+}
+
+.xboxcontent {
+    color: #555555;
+}
+
+.navigation {
+    clear: right;
+    text-align: left;
+    font-weight: bold;
+    margin-bottom: 3px;
+    color: #555555;
+}
+
+.navigation a {
+    display: block;
+}
+
+.left .navigation {
+    margin-left: 1em;
+}
+
+.left .linkplus {
+    float: left;
+    margin: 0px !important;
+}
+
+#t_nav div div a {
+    font-weight: normal;
+    margin-left: 15px;
+    text-align: left;
+}
+
+.h2#browsetitle {
+    background: #F7F5FA url(http://osulibrary.oregonstate.edu/images/browsebkgrd.jpg) repeat-x scroll 0 0;
+    border-bottom: medium none;
+    color: #504A4D;
+    padding-left: 12px;
+    text-align: left;
+    z-index: 2;
+}
+
+h1, h2 {
+    font-weight: normal;
+    letter-spacing: -1px;
+    margin: 0;
+}
+
+/* _______________________  RIGHT __________________________*/
+.right {
+    /* Position & margin */
+    float: right;
+    margin: 0px;
+    margin-right: 2%;
+    margin-top: 0em;
+    padding: 0px;
+    padding-left: 1em;
+    padding-bottom: 2em;
+    overflow: visible;
+    display: inline;
+    width: 19%;
+    min-height: 43em;
+    z-index: 99;
+    /* Style */
+    text-align: left;
+    background-color: #f5f5f5;
+}
+
+.right form {
+    float: left;
+    padding-top: 1em;
+    z-index: 98;
+    text-align: left;
+    display: inline;
+}
+
+.right form div {
+    position: inherit;
+}
+
+.right input {
+    /* Position & margin */
+    margin-top: 0.5em;
+    height: 2em;
+    /* Style */
+    background-color: #e6e6fa;
+    border-width: 1px;
+    border-color: black;
+    font-size: 1em;
+    border-width: 1px;
+}
+
+.inputtext input {
+    background-color: white;
+    color: #808080;
+    width: 100%;
+}
+
+.form-text {
+    float: left;
+    clear: both;
+    right: 1em;
+    color: #483d8b;
+    text-align: left;
+    display: inline;
+}
+
+.form-text a {
+    text-decoration: none;
+    color: black;
+}
+
+.right h4 {
+    text-align: center;
+}
+
+.right h5 {
+    text-align: center;
+    font-weight: bold;
+}
+
+.right hr {
+    float: left;
+    clear: both;
+    margin: 0px;
+    padding: 0px;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+    text-align: left;
+    width: 60%;
+    margin-left: 10%;
+}
+
+.right a {
+    text-decoration: none;
+}
+
+#personnalSpace, #list {
+    margin: 0px;
+    padding: 0px;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    background-color: #f5f5f5;
+    text-align: left;
+    width: 100%;
+}
+
+#list {
+    float: left;
+    /*height: 20em;*/
+}
+
+/* Gros cheat pour ie6 center element */
+#followUs {
+    float: left;
+    margin: 0px;
+    padding: 0px;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    text-align: left;
+    height: 5em;
+    width: 80%;
+}
+
+.logo-groups-center {
+    text-align: center;
+}
+
+.logo-groups {
+    width: 9em;
+    margin: 0px;
+    padding: 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.logo-groups img {
+    width: 1.5em;
+    height: 1.5em;
+}
+
+.right .row {
+    width: inherit;
+    padding-bottom: 0.5em;
+}
+
+.right #result-row {
+    width: inherit;
+    float: left;
+    clear: both;
+}
+
+.arow {
+    float: left;
+    clear: both;
+    width: inherit;
+}
+
+#session_basket {
+    clear: both;
+    float: left;
+}
+
+/* _______________________  MIDDLE __________________________*/
+.middle {
+    /* Position & margin */
+    float: left;
+    padding-left: 1%;
+    width: 55%; /* Correction pour Firefox  */
+    _width: 59%; /* Cheat pour IE6 */
+    z-index: 100;
+    _display: table;
+}
+
+.middle #result {
+    display: inline;
+    width: 300px;
+    float: left;
+    font-size: 12px;
+    font-weight: 600;
+    width: 600px;
+    float: left;
+    text-align: left;
+    display: inline;
+}
+
+.middle h3 {
+    /* Position & margin */
+    text-align: center;
+    /* Style */
+    color: #808080;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.middle-center {
+    /* Position & margin */
+    width: 95.8%;
+    _width: 100%; /* Cheat pour IE6 */
+    height: 16em;
+    padding: 0px;
+    padding-left: 1%;
+    padding-right: 1%;
+    margin: 0px;
+    margin: 0px;
+    margin-left: 2%;
+    margin-bottom: 2%;
+    /* Style */
+    border: solid;
+    border-width: 1px;
+    border-color: #808080;
+    display: table;
+}
+
+.title {
+    /* Position & margin */
+    width: 100%;
+    /* Style */
+    text-align: center;
+    color: #191970;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.retrait {
+    /* Position & margin */
+    margin-left: 1em;
+    /* Style */
+    color: #483d8b;
+}
+
+.flux_rss {
+    /* Position & margin */
+    float: right;
+}
+
+.middle-bottom-left, .middle-bottom-right {
+    /* Position & margin */
+    float: left;
+    height: 16em;
+    padding: 0px;
+    padding-left: 1%;
+    padding-right: 1%;
+    margin: 0px;
+    margin-left: 2%;
+    margin-bottom: 2%;
+    width: 45.6%;
+    display: table;
+    /* Style */
+    border: solid;
+    border-width: 1px;
+    border-color: #008080;
+}
+
+/*
+ .middle-bottom-right {
+ float: left;
+ height: 16em;
+ padding: 0px;
+ padding-left: 1%;
+ padding-right: 1%;
+ margin-left: 2%;
+ margin-bottom: 2%;
+ display: table;
+ border: solid;
+ border-width: 1px;
+ border-color: #008080;
+ }
+ */
+/* -- middle document display -- */
+.document_message #mailOk {
+    color: #06A600;
+    font-weight: bold;
+}
+
+.document_message #mailError {
+    color: #FF0000;
+    font-weight: bold;
+}
+
+.doc {
+    text-align: center;
+    max-width: 70%;
+    _width: auto;
+}
+
+.doc .citation {
+    background-color: white;
+    border-width: 0px;
+    width: 100%;
+}
+
+.doc h3 {
+    color: #5b4418;
+    font-size: 1.6em;
+    text-align: left;
+    padding-left: 2em;
+}
+
+.doc p {
+    margin: 0px;
+    padding: 0px;
+    margin-bottom: 1em;
+    border: 0px;
+    border-bottom: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: black;
+}
+
+.doc #preview {
+    padding-left: 2em;
+    float: left;
+    background-color: #E0E7Ef;
+    width: 22%;
+    height: 20em;
+}
+
+.doc img {
+    float: left;
+    margin-top: 2em;
+    max-height: 10em;
+    _height: 10em;
+    max-width: 10em;
+    width: 10em;
+}
+
+.doc #barTop {
+    background-color: #E0E7Ef;
+    width: 75%;
+    height: 4em;
+    float: left;
+    border: 0px;
+}
+
+.doc #infoUtils {
+    margin-top: 1em;
+    margin-left: 1em;
+    float: left;
+    width: 73%;
+    text-align: left;
+}
+
+.doc .myAlign {
+    position: absolute;
+    left: 0px;
+    _left: -15em;
+}
+
+.doc .elementInfoUtils {
+    margin: 0px;
+    padding: 0px;
+    padding-left: 15em;
+    border: solid;
+    border-width: 0px;
+    border-bottom-width: 1px;
+    border-bottom-color: black;
+    font-size: 1.3em;
+}
+
+.doc .elementInfoUtils b {
+    font-weight: bolder;
+}
+
+#links {
+    z-index: 1250;
+    float: left;
+}
+
+.row {
+    border-bottom: 1px solid black;
+    margin-bottom: 1em;
+}
+
+.middle .alCenter {
+    text-align: center;
+}
+
+.middle .alLeft {
+    text-align: left;
+}
+
+.middle .alRight {
+    text-align: right;
+}
+
+.middle .number {
+    text-align: left;
+}
+
+.middle table {
+    border-collapse: collapse;
+    /*	width: 15em; */
+    width: 100%;
+    margin: auto;
+}
+
+.middle th {
+    padding: 0.2em;
+}
+
+.middle td {
+    text-align: center;
+    padding: 0.2em;
+}
+
+.middle .interTr {
+    background: #f5f5f5;
+}
+
+#graph {
+    margin: auto;
+    width: 65em;
+    overflow: hidden;
+}
+
+.action-links {
+    float: right;
+}
+
+/*
+ * Document Display
+ */
+tocitem {
+    margin: 0;
+    padding: 0;
+    float: left;
+    clear: both;
+    width: 100%;
+}
+
+page {
+    float: right;
+}
+
+item {
+    float: left;
+    margin-right: 5em;
+}
+
+#tableDesMatieresGlobal {
+    float: left;
+    clear: both;
+    margin: 0px;
+    display: block;
+    overflow: hidden;
+    width: inherit;
+    font-size: 1.2em;
+}
+
+#titleTdm {
+    display: block;
+    background: #D9DDDF url(/images/bg_showmorelessbox.png) repeat-x scroll 0 -400px;
+    font-weight: bold;
+    margin: 0;
+    padding: 3px 6px 4px;
+    margin-bottom: 1em;
+}
+
+#quatriemeDeCouvertureGlobal {
+    overflow: hidden;
+    float: left;
+    clear: both;
+    margin: 0px;
+    padding: 0px;
+    padding-bottom: 0.5em;
+    display: block;
+    width: inherit;
+    font-size: 1.2em;
+}
+
+#quatriemeDeCouvertureGlobal p {
+    border: 0px;
+    text-align: left;
+}
+
+#titleQuatrieme {
+    display: block;
+    background: #D9DDDF url(/images/bg_showmorelessbox.png) repeat-x scroll 0 -400px;
+    font-weight: bold;
+    margin: 0;
+    padding: 3px 6px 4px;
+    margin-bottom: 0.5em;
+}
+
+.levelUp1 {
+    margin-left: 1em;
+}
+
+.levelUp2 {
+    margin-left: 1.5em;
+}
+
+.levelUp3 {
+    margin-left: 2em;
+}
+
+.levelUp4 {
+    margin-left: 2.5em;
+}
+
+.levelUp5 {
+    margin-left: 3em;
+}
+
+.levelUp6 {
+    margin-left: 3.5em;
+}
+
+.levelUp7 {
+    margin-left: 4em;
+}
+
+.levelUp8 {
+    margin-left: 4.5em;
+}
+
+.levelUp9 {
+    margin-left: 5em;
+}
+
+.levelUp10 {
+    margin-left: 5.5em;
+}
+
+/* _______________________  EDITORIAL __________________________*/
+#editorial {
+    display: table;
+    margin: 0 auto;
+    text-align: center; /* for IE */
+}
+
+#editorial ul {
+    display: inline-block; /* IE Only */
+}
+
+#editorial ul.editList {
+    display: inline; /* ie tripswitch to get inline-block to work */
+}
+
+html > body #editorial ul.editList {
+    display: table-row;
+}
+
+html > body #editorial li.elemEdit {
+    display: table-cell;
+}
+
+#editorial li.elemEdit {
+    float: left; /* for IE only */
+    line-height: 2em;
+    border: 1px solid lightBlue;
+    margin: 1em;
+    padding: 1em;
+}
+
+.editTitle {
+    float: left;
+    clear: both;
+}
+
+.editContent {
+    float: left;
+    clear: both;
+    max-width: 300;
+}
+
+/* _______________________  Admin theme/schedules __________________________*/
+.box {
+    font-size: 14px;
+    display: block;
+    background: white;
+    border: 1px solid gray;
+    border-right: 0px;
+    border-bottom: 0px;
+    border-top-width: 0px;
+    margin-left: 1em;
+    padding: 0px 0px 5px 0px;
+}
+
+.boxHeader {
+    background: #eeeaf8;
+    display: block;
+    text-align: right;
+    margin-top: 5px;
+}
+
+.boxHeader img {
+    width: 20px;
+    height: 20px;
+}
+
+.boxSubHeader, .boxAddElem {
+    background: #CCC8D6;
+}
+
+.boxAddChild img {
+    src width: 20px;
+    height:
+    20px;
+}
+
+.boxTitle {
+    float: left;
+    text-align: left;
+    width: 50%;
+    font-size: 14px;
+}
+
+.boxAction {
+    padding: 0.2em;
+    cursor: pointer;
+}
+
+.boxTab {
+    border-color: #483D8B;
+}
+
+.boxHeaderTab {
+    background: #483D8B none repeat scroll 0 0;
+    color: white;
+    font-weight: bolder;
+}
+
+.double-width {
+    width: 200%;
+}
+
+div.collection_helper {
+    border: 1px solid black;
+    font-size: 12px;
+    height: 100px;
+    overflow: auto;
+    padding: 5px;
+	clear: both;
+}
+
+div.collection_helper_label {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding-bottom: 10px;
+    font-size: 14px;
+	clear:both;
+}
+
+div.collection_helper ul li:hover {
+    background-color: #ffb;
+}
+
+.collection_helper_form {
+    width: 300px;
+}
+
+/* _______________________  Admin reject __________________________*/
+.list_csv li {
+    list-style: circle;
+    float: left;
+    clear: both;
+}
+
+.list_csv h3 {
+    float: left;
+    padding-top: 0.5em;
+}
+
+.list_csv img {
+    margin-left: 3em
+}
+
+/* _______________________  Admin pagination __________________________*/
+.admin_pagination {
+    -moz-border-radius: 10px 10px 10px 10px;
+    width: 30%;
+    position: relative;
+    right: 330px;
+    display: block;
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+    float: right;
+    color: white;
+    padding: 5px 5px 5px 5px;
+    background: #483D8B;
+}
+
+.admin_pagination a {
+    font-size: 14px;
+    font-weight: bolder;
+    text-decoration: none;
+    letter-spacing: 2px;
+    color: #eeeaf8;
+}
+
+/* _______________________  Admin filtering box __________________________*/
+.admin_filter_form {
+    padding-bottom: 10px;
+}
+
+/* _______________________  Admin collection_groups __________________________*/
+.collection_list {
+    display: block;
+    font-size: 12px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.collection_list a {
+    font-size: 12px;
+    line-height: 200%;
+    padding-bottom: 5px;
+    padding-bottom: 10px;
+    margin: 10px 3px 10px 3px;
+}
+
+.collection_list_items a {
+    font-size: 10em;
+    line-height: 250%;
+    padding-bottom: 5px;
+    padding-bottom: 10px;
+}
+
+/* _______________________  Admin autocompletion __________________________*/
+div.auto_complete {
+    margin: 0px;
+    padding: 0px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    background-color: white;
+    text-align: left;
+    font-size: 1.5em;
+    line-height: 1.5em;
+    font-weight: normal;
+    color: black;
+    z-index: 2001;
+}
+
+div.auto_complete ul {
+    border: 1px solid #888;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    list-style-type: none;
+}
+
+div.auto_complete ul li {
+    margin: 0;
+    padding: 3px;
+}
+
+div.auto_complete ul li.selected {
+    background-color: #ffb;
+}
+
+div.auto_complete ul strong.highlight {
+    color: #800;
+    margin: 0;
+    padding: 0;
+}
+
+.update {
+    margin: 0px;
+    padding: 3px 2px 0px 3px background-color: white;
+    text-align: left;
+    font-size:
+    14px;
+    font-weight: normal;
+    color:
+    black;
+    z-index:
+    2001;
+}
+
+#green {
+    color: green;
+}
+
+#red {
+    color : red;
+}
+

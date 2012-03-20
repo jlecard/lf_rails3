@@ -1,0 +1,13 @@
+<div id="citation_<%=article_citation.id.to_s%>" class="citation" style="display:none">
+	<div style="float:right">
+		<%= link_to_function image_tag("/images/close.png", :border=>0), "Element.hide('citation_"+article_citation.id.to_s+"')"%>
+            </div>
+	<label><%=translate('AUTHOR_LABEL')%>  </label><%=article_citation.author%><br/>
+	<label><%=translate('ARTICLE_TITLE_LABEL')%>  </label><%=article_citation.ptitle%><br/>
+	<label><%=translate('JOURNAL_TITLE_LABEL')%>  </label><%=article_citation.title%><br/>
+	<label><%=translate('VOLUME_LABEL')%>  </label><%=article_citation.volume%><br/>
+	<label><%=translate('ISSUE_LABEL')%>  </label><%=article_citation.issue%><br/>
+	<label><%=translate('PAGES_LABEL')%>  </label><%=article_citation.page%><br/>
+	<label><%=translate('DATE_LABEL')%>  </label><%=format_date(article_citation)%><br/>
+        <label><%=translate('RAW_CITATION_LABEL')%>  </label><%=article_citation.raw_citation%><br />
+</div>

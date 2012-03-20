@@ -1,0 +1,32 @@
+<%top_images=top_images()
+  if top_images!=nil && top_images.length>0 %>
+<div id="image_row">
+
+	 <% @config ||= YAML::load_file(RAILS_ROOT + "/config/config.yml")
+		tab_template=@config["IMAGES_TEMPLATE"]
+		filter=build_filter_string("material_type","image")	
+		params=build_filter_params(filter,tab_template)%>			  
+	<%=link_to translate("TOP_IMAGES"), 
+		{   :action => 'retrieve_page', 
+			:controller=>'record', 
+			:params=>params},	:onclick=>"scroll(0,0);showWait()"%>
+	<br/>
+	<%  count=0
+		max=3
+		for image in top_images
+		  if count < max
+	 url = image.direct_url
+    	 if url!=nil and url!=''
+	   thumbnail_url = image.thumbnail_url
+      	   if thumbnail_url != nil and thumbnail_url != ''
+ 		     %>
+			<a target="_blank"  href="<%=h(url)%>" >
+			  <img src="<%=h(thumbnail_url)%>" border="0"/>
+			</a>
+			<%count=count+1
+		  end%>
+		<%end%>
+	  <%end%>
+	<%end%>
+</div>
+<%end%>

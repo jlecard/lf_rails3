@@ -1,0 +1,142 @@
+<%_from=display_source(book_list) %>
+<div>
+    <%    if @image_isbn_list == nil
+    @image_isbn_list = ""
+    end
+    if @isbn_list == nil
+    @isbn_list = ""
+    end
+    pisbn = '' %>
+    <!--
+    <%
+    if book_list.thumbnail_url != nil && book_list.thumbnail_url != ''
+    %>
+    <span style="display:inline;float:left;padding-right:0.5em;" name="open_lib_image"><img src="<%=book_list.thumbnail_url%>" border="0" /></span>
+    <%
+    elsif ((defined?(OPENLIBRARY_COVERS)) or (defined?(GOOGLE_COVERS)) && book_list.isbn != nil && book_list.isbn != '')
+    pisbn = book_list.isbn
+    if book_list.isbn.index(";")
+    _tisbna = pisbn.split(";")
+    pisbn = _tisbna[0]
+    if pisbn.index(' ')
+    pisbn = pisbn.slice(0, pisbn.index(' '))
+    end
+    else
+    if pisbn.index(' ')
+    pisbn = pisbn.slice(0, pisbn.index(' '))
+    end
+    end
+    logger.debug("COVER ISBN: " + pisbn)
+    %>
+    <% if pisbn != '' %>
+    <span style="display:none;float:left;padding-right:0.5em;" name="open_lib_image" id="OL:ISBN:<%=pisbn%>"></span>
+    <% @image_isbn_list += "ISBN:" + pisbn + "," %>
+    <%else%>
+    <span style="display:none;float:left;padding-right:0.5em;" name="open_lib_image" id="OL:00-<%=book_list.id.to_s%>"></span>
+    <% @image_isbn_list += "ISBN:" + book_list.id.to_s + "," %>
+    <%end%>
+    <%elsif ((defined?(OPENLIBRARY_COVERS)) or (defined?(GOOGLE_COVERS)) && book_list.oclc_num != nil && book_list.oclc_num != '') %>
+    <span style="display:none; float:left;padding-right:0.5em;" name="open_lib_image" id="OL:OCLC:<%=book_list.oclc_num%>"></span>
+    <% @image_isbn_list += "OCLC:" + book_list.oclc_num + "," %>
+    <%end %>
+    -->
+</div>
+<% if (book_list.ptitle.length() > 30)
+book_list.ptitle = book_list.ptitle[0..30] + "...";
+end %>
+<div id="result-row">
+    <%_localopenurl = nil %>
+    <%if book_list.openurl!=nil %>
+    <%_tmppos = book_list.openurl.index("?") %>
+    <%if _tmppos != nil %>
+    <%_localopenurl = book_list.openurl.slice(_tmppos+1, (book_list.openurl.length-(_tmppos+1))) %>
+    <%end %>
+    <%end %>
+    <span id="ptitle"><% idVar = book_list.id.split('_') %>
+        <% linkId = idVar[2] + ";" + idVar[1] + ";" + idVar[0] %>
+        <%= link_to book_list.ptitle, :controller=>"document", :action=>"display", :id=>linkId %>
+    </span>
+</div>
+<% if book_list.callnum!='' %>
+<div id="result-row">
+    <span class="call-num-label">Call Number: </span>
+    <%=book_list.callnum %>
+</div>
+<%end %>
+<% if (book_list.author!=nil and book_list.author!='')  or (book_list.subject != nil and book_list.subject!='') %>
+<div id="result-row">
+    <% if book_list.author!='' %>
+    <%=book_list.author %>
+    <%if book_list.subject!='' %>
+    | <%=book_list.subject %>
+    <%end %>
+    <%else %>
+    <%if book_list.subject!='' %>
+    <%=book_list.subject %>
+    <%end %>
+    <%end %>
+</div>
+<% end %>
+<%if book_list.abstract!='' %>
+<div id="abstract">
+    <%=short_abstract(book_list) %>
+</div>
+<%end %>
+<% if (book_list.date !='' and book_list.date!='00000000') or (_from!=nil and _from!='') %>
+<div id="result-row">
+    <%if book_list.date!='' and book_list.date!='00000000' %>
+    <%=display_date(book_list) %>&#160;<%end %>
+    <span id="source"><%=_from %>
+    </span>
+</div>
+<% end %>
+<div id="google-row">
+    <% if book_list.oclc_num == nil || book_list.oclc_num == '' %>
+    <% if pisbn != '' %>
+    <span style="display:none" name="google_book_lists" id = "ISBN:<%=pisbn%>"></span>
+    <%@isbn_list += "ISBN:" +  pisbn + "," %>
+    <% else %>
+    <span style="display:none" name="google_book_lists" id = "00-<%=book_list.id.to_s%>"></span>
+    <%@isbn_list += "ISBN:" + book_list.id.to_s + "," %>
+    <% end %>
+    <% else %>
+    <span style="display:none" name="google_book_lists" id = "OCLC:<%=book_list.oclc_num%>"></span>
+    <%@isbn_list += "OCLC:" + book_list.oclc_num + "," %>
+    <% end %>
+</div>
+<% if book_list.holdings !=nil and book_list.holdings != '' %>
+<div id = "result-row">
+    <span id ="holdings"><% if book_list.holdings == '1' %>
+        <strong>Library owns this book_list</strong><% end %>
+    </span>
+</div>
+<% end %>
+<div id="result-row" class='vr' >
+
+  <span id="add_to_cart_<%=book_list.id%>"> 
+         <%if session[:cart]==nil ||  !session[:cart].include?(book_list.id) %>
+         <%=link_to_remote translate('SAVE_THIS_ITEM'), {
+                                              :update => 'add_to_cart_%s' % book_list.id,
+                                              :url => { :action => 'add', :controller=>'/cart'},
+                                              :with => "'id=%s'" % book_list.id
+                                              }%>
+        <% else 
+             if @cart_page!=nil and !@cart_page.empty? %>
+              <%=link_to_remote translate('REMOVE_FROM_SAVED_ITEMS'), {
+                                              :update => 'row_%s' % book_list.id,
+                                              :url => { :action => 'remove', :controller=>'/cart'},
+                                              :with => "'id=%s'" % book_list.id,
+                                              :loading => "scroll(0,0);Element.show('waitimage')",
+                                              :complete => "Element.hide('waitimage');"
+                                              }%>
+          <%end%>
+        <%end%>
+     
+      </span>&#160;
+ <% if book_list.vendor_url!=nil and book_list.vendor_url!='' %>
+         <a href=<%=h(book_list.vendor_url)%> target="_blank">
+                  <%=translate('MORE_FROM',[escape_quote(book_list.vendor_name)])%>
+                </a>&#160;
+  <%end%>           
+   
+</div>  

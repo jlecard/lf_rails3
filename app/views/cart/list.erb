@@ -1,0 +1,25 @@
+<div id="page_contents" >
+  <%= render(:partial => "navigation")%>
+  <%= render(:partial => "/record/rnavigation")%>
+  <div id="center"  class="middle">
+  <% paginate_cart(6) %>
+  <h2><%=translate('SAVED_ITEMS_HEADER')%></h2>
+   <div id="notice"><%=translate('SAVED_ITEMS_NOTICE')%></div>
+  <%
+  if @cart_page!=nil and !@cart_page.empty?
+      for _record in @cart_page %>   
+        <div id="row_<%=_record.id%>" class="row">
+  <%    if _record.material_type.downcase=='book' %> 
+          <%= render(:partial => "/record/details/book", :object => _record) %>
+     <% elsif _record.material_type.downcase=='article' %>
+          <%= render(:partial => "/record/details/generic", :object => _record) %>
+        <% elsif _record.material_type.downcase=='image' %>
+     <%= render(:partial => "/record/details/image_full", :object => _record) %>
+     <% else %>
+          <%= render(:partial => "/record/details/generic", :object => _record) %>
+     <% end  %>
+        </div>
+<%    end %>
+<%  end %>
+  </div>
+</div>

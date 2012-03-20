@@ -1,0 +1,10 @@
+truncate cached_records;
+truncate cached_searches;
+truncate controls;
+truncate coverages;
+truncate hits;
+truncate job_queues;
+truncate metadatas;
+truncate records;
+truncate portfolio_datas;
+truncate volumes;

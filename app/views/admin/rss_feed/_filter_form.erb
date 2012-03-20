@@ -1,0 +1,57 @@
+<div id="filter_form" class="admin_filter_form">
+    <br/>
+	<h2><%= translate("SEARCH_BOX_TITLE") %>
+    </h2>
+	<br/>
+	<% form_tag('/admin/rss_feed') do -%>
+		<%= label_tag("name_filter", translate("NAME_LABEL")) %>
+		<% display_value = params[:rss_feed][:name] unless params[:rss_feed].nil? or params[:rss_feed][:name].blank? %>
+		<%= text_field_with_auto_complete(:rss_feed, :name, {:value=>display_value}, {:skip_style=>true}) %>
+		<%= label_tag("full_name_filter", translate("FULL_NAME_LABEL")) %>
+		<% display_value = ""%>
+		<% display_value = params[:rss_feed][:full_name] unless params[:rss_feed].nil? or params[:rss_feed][:full_name].blank? %>
+		<%= text_field_with_auto_complete(:rss_feed, :full_name, {:value=>display_value}, {:skip_style=>true}) %>
+		<br/>
+		<br/>
+    	
+		<!--<%= label_tag("primary_document_type", translate("PRIMARY_DOCUMENT_TYPE_LABEL")) %>
+		<span id="primary_document_types_filter">
+			<% display_value = "" %>
+			<% display_value = params[:primary_document_type] unless params[:primary_document_type].blank? %>
+			<select id="select1" name="primary_document_type" title="<%= translate('PRIMARY_DOCUMENT_TYPE') %>">
+				<% if @primary_document_types != nil %>
+					<% @primary_document_types.each do | elem | %>
+						<% if elem.name == display_value %>
+							<option  selected onclick='this.parentNode.title="<%=elem.name%>"' value='<%= elem.name %>' title='<%= elem.name %>'><%= elem.name %></option>
+						<% else %>
+							<option  onclick='this.parentNode.title="<%=elem.name%>"' value='<%= elem.name %>' title='<%= elem.name %>'><%= elem.name %></option>
+						<% end %>
+					<% end %>
+				<% end %>
+				<option  onclick='this.parentNode.title="Tout"' value='Tout' title='Tout'><%= 'Tout' %></option>
+			</select>
+		</span>
+		
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<%= label_tag("collection_group", translate("COLLECTION_GROUP_LABEL")) %>
+		<% display_value = "" %>
+		<% display_value = params[:collection_group] unless params[:collection_group].blank? %>
+		<select id="select2" name="collection_group" title="<%= translate('COLLECTION_GROUPS') %>">
+	    <% if (@groups_tab[1] != nil) %>
+	        <% @groups_tab[1].each do | elem | %>
+				<% if elem.full_name == display_value %>
+	        		<option selected value='<%= elem.full_name %>' title='<%= elem.description %>' onclick='this.parentNode.title="<%=elem.description%>"' ><%= elem.full_name %></option>
+	        	<% else %>
+					<option value='<%= elem.full_name %>' title='<%= elem.description %>' onclick='this.parentNode.title="<%=elem.description%>"' ><%= elem.full_name %></option>
+				<% end %>
+	        <% end %>
+	    <% end %>
+		</select>
+		<br/>-->
+		<br/>
+    	<%= submit_tag translate("APPLY_FILTER") %>
+    <% end -%>
+	<br/><br/>
+</div>
+
+

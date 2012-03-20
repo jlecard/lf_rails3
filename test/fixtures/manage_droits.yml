@@ -1,0 +1,501 @@
+--- 
+manage_droit_ACC,anonym,6,Bureaux: 
+  id_perm: ACC
+  id_collection: 6
+  id_role: anonym
+  id_lieu: Bureaux
+manage_droit_ACC,anonym,8,DEFAULT: 
+  id_perm: ACC
+  id_collection: 8
+  id_role: anonym
+  id_lieu: DEFAULT
+manage_droit_ACC,anonym,61,PRESSE: 
+  id_perm: ACC
+  id_collection: 61
+  id_role: anonym
+  id_lieu: PRESSE
+manage_droit_ACC,anonym,11,DEFAULT: 
+  id_perm: ACC
+  id_collection: 11
+  id_role: anonym
+  id_lieu: DEFAULT
+manage_droit_ACC,anonym,18,PRESSE: 
+  id_perm: ACC
+  id_collection: 18
+  id_role: anonym
+  id_lieu: PRESSE
+manage_droit_ACC,anonym,20,DEFAULT: 
+  id_perm: ACC
+  id_collection: 20
+  id_role: anonym
+  id_lieu: DEFAULT
+manage_droit_ACC,anonym,5,GED: 
+  id_perm: ACC
+  id_collection: 5
+  id_role: anonym
+  id_lieu: GED
+manage_droit_ACC,anonym,9,DEFAULT: 
+  id_perm: ACC
+  id_collection: 9
+  id_role: anonym
+  id_lieu: DEFAULT
+manage_droit_ACC,anonym,1,DEFAULT: 
+  id_perm: ACC
+  id_collection: 1
+  id_role: anonym
+  id_lieu: DEFAULT
+manage_droit_ACC,anonym,3,PRESSE: 
+  id_perm: ACC
+  id_collection: 3
+  id_role: anonym
+  id_lieu: PRESSE
+manage_droit_ACC,anonym,5,GENERALITES: 
+  id_perm: ACC
+  id_collection: 5
+  id_role: anonym
+  id_lieu: GENERALITES
+manage_droit_ACC,anonym,15,PRESSE: 
+  id_perm: ACC
+  id_collection: 15
+  id_role: anonym
+  id_lieu: PRESSE
+manage_droit_ACC,anonym,49,PRESSE: 
+  id_perm: ACC
+  id_collection: 49
+  id_role: anonym
+  id_lieu: PRESSE
+manage_droit_ACC,anonym,65,DEFAULT: 
+  id_perm: ACC
+  id_collection: 65
+  id_role: anonym
+  id_lieu: DEFAULT
+manage_droit_ACC,anonym,53,PRESSE: 
+  id_perm: ACC
+  id_collection: 53
+  id_role: anonym
+  id_lieu: PRESSE
+manage_droit_ACC,anonym,73,DEFAULT: 
+  id_perm: ACC
+  id_collection: 73
+  id_role: anonym
+  id_lieu: DEFAULT
+manage_droit_ACC,anonym,56,PRESSE: 
+  id_perm: ACC
+  id_collection: 56
+  id_role: anonym
+  id_lieu: PRESSE
+manage_droit_ACC,anonym,49,DEFAULT: 
+  id_perm: ACC
+  id_collection: 49
+  id_role: anonym
+  id_lieu: DEFAULT
+manage_droit_ACC,anonym,57,DEFAULT: 
+  id_perm: ACC
+  id_collection: 57
+  id_role: anonym
+  id_lieu: DEFAULT
+manage_droit_ACC,anonym,74,DEFAULT: 
+  id_perm: ACC
+  id_collection: 74
+  id_role: anonym
+  id_lieu: DEFAULT
+manage_droit_ACC,anonym,63,PRESSE: 
+  id_perm: ACC
+  id_collection: 63
+  id_role: anonym
+  id_lieu: PRESSE
+manage_droit_ACC,anonym,55,DEFAULT: 
+  id_perm: ACC
+  id_collection: 55
+  id_role: anonym
+  id_lieu: DEFAULT
+manage_droit_ACC,anonym,64,DEFAULT: 
+  id_perm: ACC
+  id_collection: 64
+  id_role: anonym
+  id_lieu: DEFAULT
+manage_droit_ACC,anonym,12,PRESSE: 
+  id_perm: ACC
+  id_collection: 12
+  id_role: anonym
+  id_lieu: PRESSE
+manage_droit_ACC,anonym,72,DEFAULT: 
+  id_perm: ACC
+  id_collection: 72
+  id_role: anonym
+  id_lieu: DEFAULT
+manage_droit_ACC,anonym,15,DEFAULT: 
+  id_perm: ACC
+  id_collection: 15
+  id_role: anonym
+  id_lieu: DEFAULT
+manage_droit_ACC,anonym,60,PRESSE: 
+  id_perm: ACC
+  id_collection: 60
+  id_role: anonym
+  id_lieu: PRESSE
+manage_droit_ACC,anonym,63,DEFAULT: 
+  id_perm: ACC
+  id_collection: 63
+  id_role: anonym
+  id_lieu: DEFAULT
+manage_droit_ACC,anonym,56,DEFAULT: 
+  id_perm: ACC
+  id_collection: 56
+  id_role: anonym
+  id_lieu: DEFAULT
+manage_droit_ACC,anonym,23,DEFAULT: 
+  id_perm: ACC
+  id_collection: 23
+  id_role: anonym
+  id_lieu: DEFAULT
+manage_droit_ACC,anonym,16,DEFAULT: 
+  id_perm: ACC
+  id_collection: 16
+  id_role: anonym
+  id_lieu: DEFAULT
+manage_droit_ACC,anonym,6,MUSIQUE: 
+  id_perm: ACC
+  id_collection: 6
+  id_role: anonym
+  id_lieu: MUSIQUE
+manage_droit_ACC,anonym,24,DEFAULT: 
+  id_perm: ACC
+  id_collection: 24
+  id_role: anonym
+  id_lieu: DEFAULT
+manage_droit_ACC,anonym,7,GED: 
+  id_perm: ACC
+  id_collection: 7
+  id_role: anonym
+  id_lieu: GED
+manage_droit_ACC,anonym,14,DEFAULT: 
+  id_perm: ACC
+  id_collection: 14
+  id_role: anonym
+  id_lieu: DEFAULT
+manage_droit_ACC,anonym,11,PRESSE: 
+  id_perm: ACC
+  id_collection: 11
+  id_role: anonym
+  id_lieu: PRESSE
+manage_droit_ACC,anonym,14,PRESSE: 
+  id_perm: ACC
+  id_collection: 14
+  id_role: anonym
+  id_lieu: PRESSE
+manage_droit_ACC,anonym,6,PRESSE: 
+  id_perm: ACC
+  id_collection: 6
+  id_role: anonym
+  id_lieu: PRESSE
+manage_droit_ACC,anonym,5,MUSIQUE: 
+  id_perm: ACC
+  id_collection: 5
+  id_role: anonym
+  id_lieu: MUSIQUE
+manage_droit_ACC,anonym,9,PRESSE: 
+  id_perm: ACC
+  id_collection: 9
+  id_role: anonym
+  id_lieu: PRESSE
+manage_droit_ACC,anonym,4,DEFAULT: 
+  id_perm: ACC
+  id_collection: 4
+  id_role: anonym
+  id_lieu: DEFAULT
+manage_droit_ACC,anonym,25,PRESSE: 
+  id_perm: ACC
+  id_collection: 25
+  id_role: anonym
+  id_lieu: PRESSE
+manage_droit_ACC,anonym,66,PRESSE: 
+  id_perm: ACC
+  id_collection: 66
+  id_role: anonym
+  id_lieu: PRESSE
+manage_droit_ACC,anonym,69,PRESSE: 
+  id_perm: ACC
+  id_collection: 69
+  id_role: anonym
+  id_lieu: PRESSE
+manage_droit_ACC,anonym,68,DEFAULT: 
+  id_perm: ACC
+  id_collection: 68
+  id_role: anonym
+  id_lieu: DEFAULT
+manage_droit_ACC,anonym,6,GENERALITES: 
+  id_perm: ACC
+  id_collection: 6
+  id_role: anonym
+  id_lieu: GENERALITES
+manage_droit_ACC,anonym,2,DEFAULT: 
+  id_perm: ACC
+  id_collection: 2
+  id_role: anonym
+  id_lieu: DEFAULT
+manage_droit_ACC,anonym,73,PRESSE: 
+  id_perm: ACC
+  id_collection: 73
+  id_role: anonym
+  id_lieu: PRESSE
+manage_droit_ACC,anonym,18,DEFAULT: 
+  id_perm: ACC
+  id_collection: 18
+  id_role: anonym
+  id_lieu: DEFAULT
+manage_droit_ACC,anonym,66,DEFAULT: 
+  id_perm: ACC
+  id_collection: 66
+  id_role: anonym
+  id_lieu: DEFAULT
+manage_droit_ACC,anonym,26,DEFAULT: 
+  id_perm: ACC
+  id_collection: 26
+  id_role: anonym
+  id_lieu: DEFAULT
+manage_droit_ACC,anonym,3,DEFAULT: 
+  id_perm: ACC
+  id_collection: 3
+  id_role: anonym
+  id_lieu: DEFAULT
+manage_droit_ACC,anonym,70,PRESSE: 
+  id_perm: ACC
+  id_collection: 70
+  id_role: anonym
+  id_lieu: PRESSE
+manage_droit_ACC,anonym,67,DEFAULT: 
+  id_perm: ACC
+  id_collection: 67
+  id_role: anonym
+  id_lieu: DEFAULT
+manage_droit_ACC,anonym,17,DEFAULT: 
+  id_perm: ACC
+  id_collection: 17
+  id_role: anonym
+  id_lieu: DEFAULT
+manage_droit_ACC,anonym,68,PRESSE: 
+  id_perm: ACC
+  id_collection: 68
+  id_role: anonym
+  id_lieu: PRESSE
+manage_droit_ACC,anonym,60,DEFAULT: 
+  id_perm: ACC
+  id_collection: 60
+  id_role: anonym
+  id_lieu: DEFAULT
+manage_droit_ACC,anonym,25,DEFAULT: 
+  id_perm: ACC
+  id_collection: 25
+  id_role: anonym
+  id_lieu: DEFAULT
+manage_droit_ACC,anonym,10,PRESSE: 
+  id_perm: ACC
+  id_collection: 10
+  id_role: anonym
+  id_lieu: PRESSE
+manage_droit_ACC,anonym,2,PRESSE: 
+  id_perm: ACC
+  id_collection: 2
+  id_role: anonym
+  id_lieu: PRESSE
+manage_droit_ACC,anonym,5,PRESSE: 
+  id_perm: ACC
+  id_collection: 5
+  id_role: anonym
+  id_lieu: PRESSE
+manage_droit_ACC,anonym,7,DEFAULT: 
+  id_perm: ACC
+  id_collection: 7
+  id_role: anonym
+  id_lieu: DEFAULT
+manage_droit_ACC,anonym,17,PRESSE: 
+  id_perm: ACC
+  id_collection: 17
+  id_role: anonym
+  id_lieu: PRESSE
+manage_droit_ACC,anonym,8,PRESSE: 
+  id_perm: ACC
+  id_collection: 8
+  id_role: anonym
+  id_lieu: PRESSE
+manage_droit_ACC,anonym,72,PRESSE: 
+  id_perm: ACC
+  id_collection: 72
+  id_role: anonym
+  id_lieu: PRESSE
+manage_droit_ACC,anonym,5,DEFAULT: 
+  id_perm: ACC
+  id_collection: 5
+  id_role: anonym
+  id_lieu: DEFAULT
+manage_droit_ACC,anonym,21,PRESSE: 
+  id_perm: ACC
+  id_collection: 21
+  id_role: anonym
+  id_lieu: PRESSE
+manage_droit_ACC,anonym,10,DEFAULT: 
+  id_perm: ACC
+  id_collection: 10
+  id_role: anonym
+  id_lieu: DEFAULT
+manage_droit_ACC,anonym,55,PRESSE: 
+  id_perm: ACC
+  id_collection: 55
+  id_role: anonym
+  id_lieu: PRESSE
+manage_droit_ACC,anonym,24,PRESSE: 
+  id_perm: ACC
+  id_collection: 24
+  id_role: anonym
+  id_lieu: PRESSE
+manage_droit_ACC,anonym,62,PRESSE: 
+  id_perm: ACC
+  id_collection: 62
+  id_role: anonym
+  id_lieu: PRESSE
+manage_droit_ACC,anonym,69,DEFAULT: 
+  id_perm: ACC
+  id_collection: 69
+  id_role: anonym
+  id_lieu: DEFAULT
+manage_droit_ACC,anonym,65,PRESSE: 
+  id_perm: ACC
+  id_collection: 65
+  id_role: anonym
+  id_lieu: PRESSE
+manage_droit_ACC,anonym,19,PRESSE: 
+  id_perm: ACC
+  id_collection: 19
+  id_role: anonym
+  id_lieu: PRESSE
+manage_droit_ACC,anonym,6,DEFAULT: 
+  id_perm: ACC
+  id_collection: 6
+  id_role: anonym
+  id_lieu: DEFAULT
+manage_droit_ACC,anonym,7,PRESSE: 
+  id_perm: ACC
+  id_collection: 7
+  id_role: anonym
+  id_lieu: PRESSE
+manage_droit_ACC,anonym,23,PRESSE: 
+  id_perm: ACC
+  id_collection: 23
+  id_role: anonym
+  id_lieu: PRESSE
+manage_droit_ACC,anonym,4,PRESSE: 
+  id_perm: ACC
+  id_collection: 4
+  id_role: anonym
+  id_lieu: PRESSE
+manage_droit_ACC,anonym,26,PRESSE: 
+  id_perm: ACC
+  id_collection: 26
+  id_role: anonym
+  id_lieu: PRESSE
+manage_droit_ACC,anonym,70,DEFAULT: 
+  id_perm: ACC
+  id_collection: 70
+  id_role: anonym
+  id_lieu: DEFAULT
+manage_droit_ACC,anonym,19,DEFAULT: 
+  id_perm: ACC
+  id_collection: 19
+  id_role: anonym
+  id_lieu: DEFAULT
+manage_droit_ACC,anonym,54,DEFAULT: 
+  id_perm: ACC
+  id_collection: 54
+  id_role: anonym
+  id_lieu: DEFAULT
+manage_droit_ACC,anonym,62,DEFAULT: 
+  id_perm: ACC
+  id_collection: 62
+  id_role: anonym
+  id_lieu: DEFAULT
+manage_droit_ACC,anonym,64,PRESSE: 
+  id_perm: ACC
+  id_collection: 64
+  id_role: anonym
+  id_lieu: PRESSE
+manage_droit_ACC,anonym,67,PRESSE: 
+  id_perm: ACC
+  id_collection: 67
+  id_role: anonym
+  id_lieu: PRESSE
+manage_droit_ACC,anonym,71,DEFAULT: 
+  id_perm: ACC
+  id_collection: 71
+  id_role: anonym
+  id_lieu: DEFAULT
+manage_droit_ACC,anonym,16,PRESSE: 
+  id_perm: ACC
+  id_collection: 16
+  id_role: anonym
+  id_lieu: PRESSE
+manage_droit_ACC,anonym,12,DEFAULT: 
+  id_perm: ACC
+  id_collection: 12
+  id_role: anonym
+  id_lieu: DEFAULT
+manage_droit_ACC,anonym,13,PRESSE: 
+  id_perm: ACC
+  id_collection: 13
+  id_role: anonym
+  id_lieu: PRESSE
+manage_droit_ACC,anonym,13,DEFAULT: 
+  id_perm: ACC
+  id_collection: 13
+  id_role: anonym
+  id_lieu: DEFAULT
+manage_droit_ACC,anonym,61,DEFAULT: 
+  id_perm: ACC
+  id_collection: 61
+  id_role: anonym
+  id_lieu: DEFAULT
+manage_droit_ACC,anonym,54,PRESSE: 
+  id_perm: ACC
+  id_collection: 54
+  id_role: anonym
+  id_lieu: PRESSE
+manage_droit_ACC,anonym,20,PRESSE: 
+  id_perm: ACC
+  id_collection: 20
+  id_role: anonym
+  id_lieu: PRESSE
+manage_droit_ACC,anonym,1,PRESSE: 
+  id_perm: ACC
+  id_collection: 1
+  id_role: anonym
+  id_lieu: PRESSE
+manage_droit_ACC,anonym,21,DEFAULT: 
+  id_perm: ACC
+  id_collection: 21
+  id_role: anonym
+  id_lieu: DEFAULT
+manage_droit_ACC,anonym,5,Bureaux: 
+  id_perm: ACC
+  id_collection: 5
+  id_role: anonym
+  id_lieu: Bureaux
+manage_droit_ACC,anonym,6,GED: 
+  id_perm: ACC
+  id_collection: 6
+  id_role: anonym
+  id_lieu: GED
+manage_droit_ACC,anonym,57,PRESSE: 
+  id_perm: ACC
+  id_collection: 57
+  id_role: anonym
+  id_lieu: PRESSE
+manage_droit_ACC,anonym,53,DEFAULT: 
+  id_perm: ACC
+  id_collection: 53
+  id_role: anonym
+  id_lieu: DEFAULT
+manage_droit_ACC,anonym,71,PRESSE: 
+  id_perm: ACC
+  id_collection: 71
+  id_role: anonym
+  id_lieu: PRESSE

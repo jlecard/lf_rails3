@@ -1,0 +1,2125 @@
+--- 
+list_00075: 
+  ptitle: ""
+  created_at: 2011-05-26 10:24:36 +02:00
+  title: !binary |
+    aMOpaMOp
+
+  uuid: jerome.villeminoz@bpi.fr
+  updated_at: 2011-05-26 10:24:36 +02:00
+  id: 75
+  notes_count: 0
+  description: ""
+  comments_count: 0
+  notes_avg: 0.0
+  state: 1
+  date_public: 
+  date_end_public: 
+list_00130: 
+  ptitle: ""
+  created_at: 2011-06-06 16:00:13 +02:00
+  title: cuisine inde
+  uuid: florian.leroy@bpi.fr
+  updated_at: 2011-06-06 16:03:01 +02:00
+  id: 130
+  notes_count: 0
+  description: ""
+  comments_count: 0
+  notes_avg: 0.0
+  state: 1
+  date_public: 
+  date_end_public: 
+list_00189: 
+  ptitle: ""
+  created_at: 2011-06-23 16:00:47 +02:00
+  title: cuisine provencale
+  uuid: daniele.moreno@bpi.fr
+  updated_at: 2011-06-23 16:00:47 +02:00
+  id: 189
+  notes_count: 0
+  description: beaux lires avec adresses de resaurants
+  comments_count: 0
+  notes_avg: 0.0
+  state: 1
+  date_public: 
+  date_end_public: 
+list_00047: 
+  ptitle: lundi 16 mai
+  created_at: 2011-05-16 11:39:57 +02:00
+  title: Perso
+  uuid: christophe.chardey@bpi.fr
+  updated_at: 2011-05-16 11:39:57 +02:00
+  id: 47
+  notes_count: 0
+  description: ""
+  comments_count: 0
+  notes_avg: 0.0
+  state: 0
+  date_public: 
+  date_end_public: 
+list_00102: 
+  ptitle: ""
+  created_at: 2011-05-30 12:00:22 +02:00
+  title: logement
+  uuid: yannick.henrio@bpi.fr
+  updated_at: 2011-05-30 12:00:22 +02:00
+  id: 102
+  notes_count: 0
+  description: |
+    document politique logement france
+
+  comments_count: 0
+  notes_avg: 0.0
+  state: 1
+  date_public: 
+  date_end_public: 
+list_00076: 
+  ptitle: ""
+  created_at: 2011-05-26 10:37:58 +02:00
+  title: Japon bis
+  uuid: claire.lebreton@bpi.fr
+  updated_at: 2011-05-26 10:37:58 +02:00
+  id: 76
+  notes_count: 0
+  description: ""
+  comments_count: 0
+  notes_avg: 0.0
+  state: 1
+  date_public: 
+  date_end_public: 
+list_00131: 
+  ptitle: Cuisine Bretonne
+  created_at: 2011-06-06 16:00:13 +02:00
+  title: Cuisine Bretonne
+  uuid: marc-andre.grosy@bpi.fr
+  updated_at: 2011-06-06 16:00:13 +02:00
+  id: 131
+  notes_count: 0
+  description: Cuisine Bretonne
+  comments_count: 0
+  notes_avg: 0.0
+  state: 1
+  date_public: 
+  date_end_public: 
+list_00048: 
+  ptitle: ""
+  created_at: 2011-05-16 11:40:54 +02:00
+  title: cuisine
+  uuid: benedicte.marty@bpi.fr
+  updated_at: 2011-05-16 11:40:54 +02:00
+  id: 48
+  notes_count: 0
+  description: ""
+  comments_count: 0
+  notes_avg: 0.0
+  state: 1
+  date_public: 
+  date_end_public: 
+list_00103: 
+  ptitle: ""
+  created_at: 2011-05-30 12:05:20 +02:00
+  title: cuisine bretonne
+  uuid: vastie.jasor@bpi.fr
+  updated_at: 2011-05-30 12:05:20 +02:00
+  id: 103
+  notes_count: 0
+  description: ""
+  comments_count: 0
+  notes_avg: 0.0
+  state: 1
+  date_public: 
+  date_end_public: 
+list_00160: 
+  ptitle: ""
+  created_at: 2011-06-16 15:41:09 +02:00
+  title: cuisine bretonne
+  uuid: catherine.rollinat@bpi.fr
+  updated_at: 2011-06-16 15:41:09 +02:00
+  id: 160
+  notes_count: 0
+  description: ""
+  comments_count: 0
+  notes_avg: 0.0
+  state: 1
+  date_public: 
+  date_end_public: 
+list_00077: 
+  ptitle: ""
+  created_at: 2011-05-26 11:37:44 +02:00
+  title: madame bovary
+  uuid: enora.oulchen@bpi.fr
+  updated_at: 2011-05-26 11:37:44 +02:00
+  id: 77
+  notes_count: 0
+  description: ""
+  comments_count: 0
+  notes_avg: 0.0
+  state: 1
+  date_public: 
+  date_end_public: 
+list_00132: 
+  ptitle: plats
+  created_at: 2011-06-06 16:00:29 +02:00
+  title: cuisine chinoise
+  uuid: florence.verdeille@bpi.fr
+  updated_at: 2011-06-06 16:00:29 +02:00
+  id: 132
+  notes_count: 0
+  description: recettes
+  comments_count: 0
+  notes_avg: 0.0
+  state: 1
+  date_public: 
+  date_end_public: 
+list_00104: 
+  ptitle: ""
+  created_at: 2011-05-30 12:47:06 +02:00
+  title: TestListe
+  uuid: marc-andre.grosy@bpi.fr
+  updated_at: 2011-05-30 12:47:06 +02:00
+  id: 104
+  notes_count: 0
+  description: ""
+  comments_count: 0
+  notes_avg: 0.0
+  state: 1
+  date_public: 
+  date_end_public: 
+list_00161: 
+  ptitle: ""
+  created_at: 2011-06-16 15:41:18 +02:00
+  title: cuisine bretonne
+  uuid: annick.lecointe@bpi.fr
+  updated_at: 2011-06-16 15:41:18 +02:00
+  id: 161
+  notes_count: 0
+  description: ""
+  comments_count: 0
+  notes_avg: 0.0
+  state: 1
+  date_public: 
+  date_end_public: 
+list_00133: 
+  ptitle: cuisine
+  created_at: 2011-06-06 16:01:41 +02:00
+  title: bretagne
+  uuid: philippe.charrier@bpi.fr
+  updated_at: 2011-06-06 16:01:41 +02:00
+  id: 133
+  notes_count: 0
+  description: ""
+  comments_count: 0
+  notes_avg: 0.0
+  state: 1
+  date_public: 
+  date_end_public: 
+list_00162: 
+  ptitle: ""
+  created_at: 2011-06-16 15:42:24 +02:00
+  title: cuisine grecque
+  uuid: gislaine.zanos@bpi.fr
+  updated_at: 2011-06-16 15:42:24 +02:00
+  id: 162
+  notes_count: 0
+  description: ""
+  comments_count: 0
+  notes_avg: 0.0
+  state: 1
+  date_public: 
+  date_end_public: 
+list_00135: 
+  ptitle: ancienne
+  created_at: 2011-06-06 16:02:29 +02:00
+  title: cuisine provencale
+  uuid: beatrice.roussier@bpi.fr
+  updated_at: 2011-06-06 16:02:29 +02:00
+  id: 135
+  notes_count: 0
+  description: vieillerie sur la cuisine provencale
+  comments_count: 0
+  notes_avg: 0.0
+  state: 1
+  date_public: 
+  date_end_public: 
+list_00191: 
+  ptitle: ""
+  created_at: 2011-06-23 16:03:11 +02:00
+  title: Recettes bretonnes
+  uuid: veronique.poirier@bpi.fr
+  updated_at: 2011-06-23 16:03:11 +02:00
+  id: 191
+  notes_count: 0
+  description: ""
+  comments_count: 0
+  notes_avg: 0.0
+  state: 0
+  date_public: 
+  date_end_public: 
+list_00163: 
+  ptitle: ""
+  created_at: 2011-06-20 11:49:04 +02:00
+  title: cuisine
+  uuid: magda.sawczuk@hotmail.com
+  updated_at: 2011-06-20 11:49:04 +02:00
+  id: 163
+  notes_count: 0
+  description: ""
+  comments_count: 0
+  notes_avg: 0.0
+  state: 1
+  date_public: 
+  date_end_public: 
+list_00192: 
+  ptitle: ""
+  created_at: 2011-06-23 16:03:18 +02:00
+  title: cuisine
+  uuid: isabelle.bastian-dupleix@bpi.fr
+  updated_at: 2011-06-23 16:03:18 +02:00
+  id: 192
+  notes_count: 0
+  description: ""
+  comments_count: 0
+  notes_avg: 0.0
+  state: 1
+  date_public: 
+  date_end_public: 
+list_00164: 
+  ptitle: ""
+  created_at: 2011-06-20 11:49:45 +02:00
+  title: Cuisine bretonne
+  uuid: lucille.besombes@gmail.com
+  updated_at: 2011-06-20 11:49:45 +02:00
+  id: 164
+  notes_count: 0
+  description: ""
+  comments_count: 0
+  notes_avg: 0.0
+  state: 1
+  date_public: 
+  date_end_public: 
+list_00137: 
+  ptitle: ""
+  created_at: 2011-06-07 16:40:09 +02:00
+  title: A LIRE
+  uuid: florian.leroy@bpi.fr
+  updated_at: 2011-06-07 16:40:09 +02:00
+  id: 137
+  notes_count: 0
+  description: ""
+  comments_count: 0
+  notes_avg: 0.0
+  state: 1
+  date_public: 
+  date_end_public: 
+list_00109: 
+  ptitle: cuisine bretonne
+  created_at: 2011-05-30 16:05:05 +02:00
+  title: bretagne gourmande
+  uuid: didier.demeyere@bpi.fr
+  updated_at: 2011-05-30 16:05:05 +02:00
+  id: 109
+  notes_count: 0
+  description: ""
+  comments_count: 0
+  notes_avg: 0.0
+  state: 1
+  date_public: 
+  date_end_public: 
+list_00193: 
+  ptitle: ""
+  created_at: 2011-06-23 16:03:25 +02:00
+  title: cuisine bretonne
+  uuid: gerald.gros@bpi.fr
+  updated_at: 2011-06-23 16:03:25 +02:00
+  id: 193
+  notes_count: 0
+  description: liste formation
+  comments_count: 0
+  notes_avg: 0.0
+  state: 1
+  date_public: 
+  date_end_public: 
+list_00165: 
+  ptitle: ""
+  created_at: 2011-06-20 11:49:55 +02:00
+  title: cuisine bretonne
+  uuid: richou.mathilde@hotmail.fr
+  updated_at: 2011-06-20 11:49:55 +02:00
+  id: 165
+  notes_count: 0
+  description: ""
+  comments_count: 0
+  notes_avg: 0.0
+  state: 1
+  date_public: 
+  date_end_public: 
+list_00138: 
+  ptitle: ""
+  created_at: 2011-06-09 11:52:35 +02:00
+  title: Cuisine bretonne
+  uuid: francoise.hurault@bpi.fr
+  updated_at: 2011-06-09 11:52:35 +02:00
+  id: 138
+  notes_count: 0
+  description: ""
+  comments_count: 0
+  notes_avg: 0.0
+  state: 1
+  date_public: 
+  date_end_public: 
+list_00080: 
+  ptitle: ""
+  created_at: 2011-05-26 11:50:10 +02:00
+  title: cuisine bretonne
+  uuid: enora.oulchen@bpi.fr
+  updated_at: 2011-05-26 11:50:10 +02:00
+  id: 80
+  notes_count: 0
+  description: ""
+  comments_count: 0
+  notes_avg: 0.0
+  state: 1
+  date_public: 
+  date_end_public: 
+list_00024: 
+  ptitle: ""
+  created_at: 2011-03-24 13:39:09 +01:00
+  title: Abstention
+  uuid: jerome.villeminoz@bpi.fr
+  updated_at: 2011-05-26 09:53:15 +02:00
+  id: 24
+  notes_count: 1
+  description: ""
+  comments_count: 0
+  notes_avg: 2.0
+  state: 1
+  date_public: 
+  date_end_public: 
+list_00081: 
+  ptitle: "plein de beurre sal\xC3\xA9"
+  created_at: 2011-05-26 11:50:54 +02:00
+  title: Cuisine bretonne
+  uuid: laurence.macinot@bpi.fr
+  updated_at: 2011-05-26 11:50:54 +02:00
+  id: 81
+  notes_count: 0
+  description: ""
+  comments_count: 0
+  notes_avg: 0.0
+  state: 1
+  date_public: 
+  date_end_public: 
+list_00167: 
+  ptitle: ""
+  created_at: 2011-06-20 11:50:19 +02:00
+  title: cuisine
+  uuid: c.lloretlinares@gmail.com
+  updated_at: 2011-06-20 11:50:19 +02:00
+  id: 167
+  notes_count: 0
+  description: ""
+  comments_count: 0
+  notes_avg: 0.0
+  state: 1
+  date_public: 
+  date_end_public: 
+list_00025: 
+  ptitle: ""
+  created_at: 2011-04-21 15:59:18 +02:00
+  title: Snowboard
+  uuid: jerome.villeminoz@bpi.fr
+  updated_at: 2011-04-21 15:59:18 +02:00
+  id: 25
+  notes_count: 0
+  description: A quoi bon lire ces livres ?
+  comments_count: 0
+  notes_avg: 0.0
+  state: 1
+  date_public: 
+  date_end_public: 
+list_00082: 
+  ptitle: ""
+  created_at: 2011-05-26 11:50:54 +02:00
+  title: cuisine bretonne
+  uuid: isabelle.morin@bpi.fr
+  updated_at: 2011-05-26 11:50:54 +02:00
+  id: 82
+  notes_count: 0
+  description: ""
+  comments_count: 0
+  notes_avg: 0.0
+  state: 1
+  date_public: 
+  date_end_public: 
+list_00196: 
+  ptitle: ++test
+  created_at: 2011-07-12 14:11:34 +02:00
+  title: test++
+  uuid: mng.alex@gmail.com
+  updated_at: 2011-07-12 14:11:34 +02:00
+  id: 196
+  notes_count: 0
+  description: ""
+  comments_count: 0
+  notes_avg: 0.0
+  state: 1
+  date_public: 
+  date_end_public: 
+list_00168: 
+  ptitle: ""
+  created_at: 2011-06-20 11:50:21 +02:00
+  title: "cuisine bretonne r\xC3\xA9gime"
+  uuid: nathalie.nosny@bpi.fr
+  updated_at: 2011-06-20 11:50:21 +02:00
+  id: 168
+  notes_count: 0
+  description: ""
+  comments_count: 0
+  notes_avg: 0.0
+  state: 1
+  date_public: 
+  date_end_public: 
+list_00083: 
+  ptitle: ""
+  created_at: 2011-05-26 11:51:40 +02:00
+  title: Cuisine Bretonne
+  uuid: francoise.gaudet@bpi.fr
+  updated_at: 2011-05-26 11:51:40 +02:00
+  id: 83
+  notes_count: 0
+  description: Livres de cuisine bretonne
+  comments_count: 0
+  notes_avg: 0.0
+  state: 1
+  date_public: 
+  date_end_public: 
+list_00197: 
+  ptitle: ++test
+  created_at: 2011-07-12 14:12:07 +02:00
+  title: test++
+  uuid: mng.alex@gmail.com
+  updated_at: 2011-07-12 14:12:07 +02:00
+  id: 197
+  notes_count: 0
+  description: ""
+  comments_count: 0
+  notes_avg: 0.0
+  state: 1
+  date_public: 
+  date_end_public: 
+list_00055: 
+  ptitle: ""
+  created_at: 2011-05-23 15:44:28 +02:00
+  title: flaubert
+  uuid: emmanuelle.sune@bpi.fr
+  updated_at: 2011-05-23 15:44:28 +02:00
+  id: 55
+  notes_count: 0
+  description: ""
+  comments_count: 0
+  notes_avg: 0.0
+  state: 1
+  date_public: 
+  date_end_public: 
+list_00110: 
+  ptitle: ""
+  created_at: 2011-05-30 16:05:14 +02:00
+  title: "la cuisine r\xC3\xA9fl\xC3\xA9chie du cuisinier breton"
+  uuid: gisele.burda@bpi.fr
+  updated_at: 2011-05-30 16:05:14 +02:00
+  id: 110
+  notes_count: 0
+  description: ""
+  comments_count: 0
+  notes_avg: 0.0
+  state: 1
+  date_public: 
+  date_end_public: 
+list_00169: 
+  ptitle: ""
+  created_at: 2011-06-20 11:50:27 +02:00
+  title: cuisine bretonne
+  uuid: clem.chassang@hotmail.fr
+  updated_at: 2011-06-20 11:50:27 +02:00
+  id: 169
+  notes_count: 0
+  description: ""
+  comments_count: 0
+  notes_avg: 0.0
+  state: 1
+  date_public: 
+  date_end_public: 
+list_00084: 
+  ptitle: ""
+  created_at: 2011-05-26 11:52:44 +02:00
+  title: cuisine bretonne
+  uuid: isabelle.morin@bpi.fr
+  updated_at: 2011-05-26 11:52:44 +02:00
+  id: 84
+  notes_count: 0
+  description: ""
+  comments_count: 0
+  notes_avg: 0.0
+  state: 1
+  date_public: 
+  date_end_public: 
+list_00198: 
+  ptitle: liste
+  created_at: 2011-07-12 17:56:50 +02:00
+  title: Ma liste
+  uuid: oceane.ventura@atos.net
+  updated_at: 2011-07-12 17:56:50 +02:00
+  id: 198
+  notes_count: 0
+  description: ""
+  comments_count: 0
+  notes_avg: 0.0
+  state: 1
+  date_public: 
+  date_end_public: 
+list_00056: 
+  ptitle: madame bovary
+  created_at: 2011-05-23 15:44:37 +02:00
+  title: flaubert
+  uuid: evelyne.favennec@bpi.fr
+  updated_at: 2011-05-23 15:44:37 +02:00
+  id: 56
+  notes_count: 0
+  description: ""
+  comments_count: 0
+  notes_avg: 0.0
+  state: 1
+  date_public: 
+  date_end_public: 
+list_00111: 
+  ptitle: ""
+  created_at: 2011-05-30 16:06:02 +02:00
+  title: cuisine bretonne
+  uuid: marie-noelle.franchino@bpi.fr
+  updated_at: 2011-05-30 16:06:02 +02:00
+  id: 111
+  notes_count: 0
+  description: ""
+  comments_count: 0
+  notes_avg: 0.0
+  state: 1
+  date_public: 
+  date_end_public: 
+list_00057: 
+  ptitle: ""
+  created_at: 2011-05-23 15:44:54 +02:00
+  title: flaubert
+  uuid: beatrice.zenoni@bpi.fr
+  updated_at: 2011-05-23 15:44:54 +02:00
+  id: 57
+  notes_count: 0
+  description: |
+    bla bla bla
+
+  comments_count: 0
+  notes_avg: 0.0
+  state: 1
+  date_public: 
+  date_end_public: 
+list_00112: 
+  ptitle: ""
+  created_at: 2011-05-30 16:07:08 +02:00
+  title: bretagne
+  uuid: philippe.biteaud@bpi.fr
+  updated_at: 2011-05-30 16:07:08 +02:00
+  id: 112
+  notes_count: 0
+  description: ""
+  comments_count: 0
+  notes_avg: 0.0
+  state: 1
+  date_public: 
+  date_end_public: 
+list_00058: 
+  ptitle: madame
+  created_at: 2011-05-23 15:46:05 +02:00
+  title: bovary
+  uuid: evelyne.favennec@bpi.fr
+  updated_at: 2011-05-23 15:46:05 +02:00
+  id: 58
+  notes_count: 0
+  description: ""
+  comments_count: 0
+  notes_avg: 0.0
+  state: 1
+  date_public: 
+  date_end_public: 
+list_00113: 
+  ptitle: ""
+  created_at: 2011-05-30 16:07:09 +02:00
+  title: bretagne
+  uuid: philippe.biteaud@bpi.fr
+  updated_at: 2011-05-30 16:07:09 +02:00
+  id: 113
+  notes_count: 0
+  description: ""
+  comments_count: 0
+  notes_avg: 0.0
+  state: 1
+  date_public: 
+  date_end_public: 
+list_00059: 
+  ptitle: ""
+  created_at: 2011-05-23 15:46:52 +02:00
+  title: bovary
+  uuid: claire.lebreton@bpi.fr
+  updated_at: 2011-05-23 15:46:52 +02:00
+  id: 59
+  notes_count: 0
+  description: ""
+  comments_count: 0
+  notes_avg: 0.0
+  state: 1
+  date_public: 
+  date_end_public: 
+list_00114: 
+  ptitle: ""
+  created_at: 2011-06-01 15:04:57 +02:00
+  title: Manet
+  uuid: claire.lebreton@bpi.fr
+  updated_at: 2011-06-01 15:04:57 +02:00
+  id: 114
+  notes_count: 0
+  description: ""
+  comments_count: 0
+  notes_avg: 0.0
+  state: 1
+  date_public: 
+  date_end_public: 
+list_00170: 
+  ptitle: casssavetes
+  created_at: 2011-06-20 11:50:30 +02:00
+  title: "cin\xC3\xA9ma"
+  uuid: margueritesalabelle@gmail.fr
+  updated_at: 2011-06-20 11:50:30 +02:00
+  id: 170
+  notes_count: 0
+  description: ""
+  comments_count: 0
+  notes_avg: 0.0
+  state: 1
+  date_public: 
+  date_end_public: 
+list_00087: 
+  ptitle: ""
+  created_at: 2011-05-26 13:50:57 +02:00
+  title: cuisine bretonne
+  uuid: sandra.aubry@bpi.fr
+  updated_at: 2011-05-26 13:50:57 +02:00
+  id: 87
+  notes_count: 0
+  description: ""
+  comments_count: 0
+  notes_avg: 0.0
+  state: 1
+  date_public: 
+  date_end_public: 
+list_00142: 
+  ptitle: ""
+  created_at: 2011-06-09 11:53:49 +02:00
+  title: luduenning
+  uuid: jeanne.mininno@bpi.fr
+  updated_at: 2011-06-09 11:53:49 +02:00
+  id: 142
+  notes_count: 0
+  description: cuisine
+  comments_count: 0
+  notes_avg: 0.0
+  state: 1
+  date_public: 
+  date_end_public: 
+list_00115: 
+  ptitle: ""
+  created_at: 2011-06-01 15:05:12 +02:00
+  title: testimonium
+  uuid: sylvie.lemaire@bpi.fr
+  updated_at: 2011-06-01 15:05:12 +02:00
+  id: 115
+  notes_count: 0
+  description: ""
+  comments_count: 0
+  notes_avg: 0.0
+  state: 1
+  date_public: 
+  date_end_public: 
+list_00171: 
+  ptitle: cassavetes
+  created_at: 2011-06-20 11:51:09 +02:00
+  title: !binary |
+    Y2nDqW1h
+
+  uuid: margueritesalabelle@gmail.fr
+  updated_at: 2011-06-20 11:51:09 +02:00
+  id: 171
+  notes_count: 0
+  description: ""
+  comments_count: 0
+  notes_avg: 0.0
+  state: 1
+  date_public: 
+  date_end_public: 
+list_00088: 
+  ptitle: bretonne cuisine
+  created_at: 2011-05-26 16:09:51 +02:00
+  title: cuisine bretonne
+  uuid: cecile.gobbo@bpi.fr
+  updated_at: 2011-05-26 16:09:51 +02:00
+  id: 88
+  notes_count: 0
+  description: cuisine bretonne bretonne cuisine
+  comments_count: 0
+  notes_avg: 0.0
+  state: 1
+  date_public: 
+  date_end_public: 
+list_00143: 
+  ptitle: a
+  created_at: 2011-06-09 11:53:53 +02:00
+  title: a
+  uuid: frederique.lucas-bizouillier@bpi.fr
+  updated_at: 2011-06-09 11:53:53 +02:00
+  id: 143
+  notes_count: 0
+  description: blabla
+  comments_count: 0
+  notes_avg: 0.0
+  state: 1
+  date_public: 
+  date_end_public: 
+list_00116: 
+  ptitle: ""
+  created_at: 2011-06-01 15:05:29 +02:00
+  title: Manet
+  uuid: bernard.tiburce@bpi.fr
+  updated_at: 2011-06-01 15:05:29 +02:00
+  id: 116
+  notes_count: 0
+  description: ""
+  comments_count: 0
+  notes_avg: 0.0
+  state: 1
+  date_public: 
+  date_end_public: 
+list_00172: 
+  ptitle: "la cr\xC3\xAApe"
+  created_at: 2011-06-20 15:40:22 +02:00
+  title: cuisine bretonne
+  uuid: egourdon@gmail.com
+  updated_at: 2011-06-20 15:47:07 +02:00
+  id: 172
+  notes_count: 0
+  description: miam
+  comments_count: 0
+  notes_avg: 0.0
+  state: 1
+  date_public: 
+  date_end_public: 
+list_00089: 
+  ptitle: ""
+  created_at: 2011-05-26 16:09:58 +02:00
+  title: bre
+  uuid: francoise.monteix-cantuniari@bpi.fr
+  updated_at: 2011-05-26 16:09:58 +02:00
+  id: 89
+  notes_count: 0
+  description: cuisine bretonne
+  comments_count: 0
+  notes_avg: 0.0
+  state: 1
+  date_public: 
+  date_end_public: 
+list_00144: 
+  ptitle: ccc
+  created_at: 2011-06-09 11:53:58 +02:00
+  title: aaaa
+  uuid: sylvie.granger@bpi.fr
+  updated_at: 2011-06-09 11:53:58 +02:00
+  id: 144
+  notes_count: 0
+  description: bbbbbbbbbb
+  comments_count: 0
+  notes_avg: 0.0
+  state: 1
+  date_public: 
+  date_end_public: 
+list_00117: 
+  ptitle: Manet
+  created_at: 2011-06-01 15:05:49 +02:00
+  title: test
+  uuid: raphael.casadesus@bpi.fr
+  updated_at: 2011-06-01 15:05:49 +02:00
+  id: 117
+  notes_count: 0
+  description: ""
+  comments_count: 0
+  notes_avg: 0.0
+  state: 1
+  date_public: 
+  date_end_public: 
+list_00173: 
+  ptitle: miam !
+  created_at: 2011-06-20 15:40:23 +02:00
+  title: cuisine bretonne
+  uuid: elodie_kong@bpi.fr
+  updated_at: 2011-06-20 15:49:36 +02:00
+  id: 173
+  notes_count: 0
+  description: ""
+  comments_count: 0
+  notes_avg: 0.0
+  state: 1
+  date_public: 
+  date_end_public: 
+list_00031: 
+  ptitle: ""
+  created_at: 2011-04-30 21:14:04 +02:00
+  title: Napoleon
+  uuid: jerome.villeminoz@bpi.fr
+  updated_at: 2011-04-30 21:14:04 +02:00
+  id: 31
+  notes_count: 0
+  description: ""
+  comments_count: 0
+  notes_avg: 0.0
+  state: 1
+  date_public: 
+  date_end_public: 
+list_00145: 
+  ptitle: ""
+  created_at: 2011-06-09 11:54:21 +02:00
+  title: la cuisine
+  uuid: jeanne.mininno@bpi.fr
+  updated_at: 2011-06-09 11:54:21 +02:00
+  id: 145
+  notes_count: 0
+  description: cuisine
+  comments_count: 0
+  notes_avg: 0.0
+  state: 1
+  date_public: 
+  date_end_public: 
+list_00118: 
+  ptitle: ""
+  created_at: 2011-06-01 15:05:58 +02:00
+  title: gggg
+  uuid: sylvie.lemaire@bpi.fr
+  updated_at: 2011-06-01 15:05:58 +02:00
+  id: 118
+  notes_count: 0
+  description: ""
+  comments_count: 0
+  notes_avg: 0.0
+  state: 1
+  date_public: 
+  date_end_public: 
+list_00060: 
+  ptitle: ""
+  created_at: 2011-05-23 15:47:16 +02:00
+  title: flaubert
+  uuid: corinne.loyer@bpi.fr
+  updated_at: 2011-05-23 15:47:16 +02:00
+  id: 60
+  notes_count: 0
+  description: Liste d'ouvrages sur Madame Bovary
+  comments_count: 0
+  notes_avg: 0.0
+  state: 1
+  date_public: 
+  date_end_public: 
+list_00174: 
+  ptitle: ""
+  created_at: 2011-06-20 15:41:43 +02:00
+  title: cuisine bretonne
+  uuid: nasimaskari@hotmail.com
+  updated_at: 2011-06-20 15:41:43 +02:00
+  id: 174
+  notes_count: 0
+  description: ""
+  comments_count: 0
+  notes_avg: 0.0
+  state: 1
+  date_public: 
+  date_end_public: 
+list_00032: 
+  ptitle: In girum imus...
+  created_at: 2011-05-02 13:02:52 +02:00
+  title: Debord
+  uuid: jerome.villeminoz@bpi.fr
+  updated_at: 2011-05-02 13:02:52 +02:00
+  id: 32
+  notes_count: 0
+  description: ""
+  comments_count: 0
+  notes_avg: 0.0
+  state: 1
+  date_public: 
+  date_end_public: 
+list_00146: 
+  ptitle: ""
+  created_at: 2011-06-09 14:17:35 +02:00
+  title: livres objets
+  uuid: nelly.guillaume@bpi.fr
+  updated_at: 2011-06-09 14:17:35 +02:00
+  id: 146
+  notes_count: 0
+  description: ""
+  comments_count: 0
+  notes_avg: 0.0
+  state: 1
+  date_public: 
+  date_end_public: 
+list_00201: 
+  ptitle: ""
+  created_at: 2011-07-14 15:37:10 +02:00
+  title: alimentation et sante
+  uuid: daniele.moreno@bpi.fr
+  updated_at: 2011-07-14 15:37:10 +02:00
+  id: 201
+  notes_count: 0
+  description: nouveau focus
+  comments_count: 0
+  notes_avg: 0.0
+  state: 1
+  date_public: 
+  date_end_public: 
+list_00119: 
+  ptitle: ""
+  created_at: 2011-06-01 15:07:14 +02:00
+  title: manet
+  uuid: jean-michel.wavrant@bpi.fr
+  updated_at: 2011-06-01 15:07:14 +02:00
+  id: 119
+  notes_count: 0
+  description: ""
+  comments_count: 0
+  notes_avg: 0.0
+  state: 1
+  date_public: 
+  date_end_public: 
+list_00061: 
+  ptitle: Tout sur Madame Bovary
+  created_at: 2011-05-23 15:47:27 +02:00
+  title: Madame Bovary
+  uuid: claire.lebreton@bpi.fr
+  updated_at: 2011-05-23 15:47:27 +02:00
+  id: 61
+  notes_count: 0
+  description: Madame Bovary est une oeuvre remarquable
+  comments_count: 0
+  notes_avg: 0.0
+  state: 1
+  date_public: 
+  date_end_public: 
+list_00175: 
+  ptitle: ""
+  created_at: 2011-06-20 15:41:51 +02:00
+  title: La cuisine bretonne
+  uuid: reno.etu@gmail.com
+  updated_at: 2011-06-20 15:41:51 +02:00
+  id: 175
+  notes_count: 0
+  description: Les plats bretons
+  comments_count: 0
+  notes_avg: 0.0
+  state: 1
+  date_public: 
+  date_end_public: 
+list_00033: 
+  ptitle: ""
+  created_at: 2011-05-02 13:23:40 +02:00
+  title: Vialatte
+  uuid: jerome.villeminoz@bpi.fr
+  updated_at: 2011-05-02 13:23:40 +02:00
+  id: 33
+  notes_count: 0
+  description: ""
+  comments_count: 0
+  notes_avg: 0.0
+  state: 1
+  date_public: 
+  date_end_public: 
+list_00147: 
+  ptitle: ""
+  created_at: 2011-06-10 11:25:00 +02:00
+  title: Emma
+  uuid: marc.boilloux@bpi.fr
+  updated_at: 2011-06-10 11:25:00 +02:00
+  id: 147
+  notes_count: 0
+  description: ""
+  comments_count: 0
+  notes_avg: 0.0
+  state: 1
+  date_public: 
+  date_end_public: 
+list_00202: 
+  ptitle: ""
+  created_at: 2011-07-16 20:17:48 +02:00
+  title: Flaubert
+  uuid: amelie.fresneau@bpi.fr
+  updated_at: 2011-07-16 20:17:48 +02:00
+  id: 202
+  notes_count: 0
+  description: tous les livres de Flaubert
+  comments_count: 0
+  notes_avg: 0.0
+  state: 1
+  date_public: 
+  date_end_public: 
+list_00062: 
+  ptitle: ""
+  created_at: 2011-05-23 16:05:43 +02:00
+  title: cuisine bretonne
+  uuid: emmanuelle.sune@bpi.fr
+  updated_at: 2011-05-23 16:05:43 +02:00
+  id: 62
+  notes_count: 0
+  description: ""
+  comments_count: 0
+  notes_avg: 0.0
+  state: 1
+  date_public: 
+  date_end_public: 
+list_00176: 
+  ptitle: ""
+  created_at: 2011-06-20 15:41:51 +02:00
+  title: La cuisine bretonne
+  uuid: reno.etu@gmail.com
+  updated_at: 2011-06-20 15:41:51 +02:00
+  id: 176
+  notes_count: 0
+  description: Les plats bretons
+  comments_count: 0
+  notes_avg: 0.0
+  state: 1
+  date_public: 
+  date_end_public: 
+list_00034: 
+  ptitle: picasso
+  created_at: 2011-05-03 14:57:19 +02:00
+  title: Picasso
+  uuid: bpi.beaubourg@gmail.com
+  updated_at: 2011-05-03 14:57:19 +02:00
+  id: 34
+  notes_count: 0
+  description: Picasso c'est beau
+  comments_count: 0
+  notes_avg: 0.0
+  state: 1
+  date_public: 
+  date_end_public: 
+list_00148: 
+  ptitle: ""
+  created_at: 2011-06-10 11:40:07 +02:00
+  title: cuisine bretonne
+  uuid: marianne.genetine@bpi.fr
+  updated_at: 2011-06-10 11:40:07 +02:00
+  id: 148
+  notes_count: 0
+  description: ""
+  comments_count: 0
+  notes_avg: 0.0
+  state: 1
+  date_public: 
+  date_end_public: 
+list_00203: 
+  ptitle: Ma liste
+  created_at: 2011-07-18 17:52:17 +02:00
+  title: Ma liste
+  uuid: test1@atos.net
+  updated_at: 2011-07-18 17:52:17 +02:00
+  id: 203
+  notes_count: 0
+  description: ""
+  comments_count: 0
+  notes_avg: 0.0
+  state: 1
+  date_public: 
+  date_end_public: 
+list_00090: 
+  ptitle: ""
+  created_at: 2011-05-26 16:09:59 +02:00
+  title: cuisine bretonne
+  uuid: francoise.lenoir@bpi.fr
+  updated_at: 2011-05-26 16:09:59 +02:00
+  id: 90
+  notes_count: 0
+  description: ""
+  comments_count: 0
+  notes_avg: 0.0
+  state: 1
+  date_public: 
+  date_end_public: 
+list_00063: 
+  ptitle: ""
+  created_at: 2011-05-23 16:07:29 +02:00
+  title: Cuisine bretonne
+  uuid: corinne.loyer@bpi.fr
+  updated_at: 2011-05-23 16:07:29 +02:00
+  id: 63
+  notes_count: 0
+  description: ""
+  comments_count: 0
+  notes_avg: 0.0
+  state: 0
+  date_public: 
+  date_end_public: 
+list_00177: 
+  ptitle: ..
+  created_at: 2011-06-20 15:41:58 +02:00
+  title: Cuisine Bretonne
+  uuid: fmarie.renucci@gmail.com
+  updated_at: 2011-06-20 15:41:58 +02:00
+  id: 177
+  notes_count: 0
+  description: ""
+  comments_count: 0
+  notes_avg: 0.0
+  state: 1
+  date_public: 
+  date_end_public: 
+list_00035: 
+  ptitle: ""
+  created_at: 2011-05-03 15:35:09 +02:00
+  title: Vialatte
+  uuid: bpi.beaubourg@gmail.com
+  updated_at: 2011-05-03 15:35:09 +02:00
+  id: 35
+  notes_count: 0
+  description: ""
+  comments_count: 0
+  notes_avg: 0.0
+  state: 1
+  date_public: 
+  date_end_public: 
+list_00149: 
+  ptitle: Cuisine
+  created_at: 2011-06-10 11:40:40 +02:00
+  title: Tunisie
+  uuid: chantal.sibille@bpi.fr
+  updated_at: 2011-06-10 11:40:40 +02:00
+  id: 149
+  notes_count: 0
+  description: Liste bibliogr.
+  comments_count: 0
+  notes_avg: 0.0
+  state: 1
+  date_public: 
+  date_end_public: 
+list_00204: 
+  ptitle: Ma liste
+  created_at: 2011-07-18 17:56:47 +02:00
+  title: Ma liste
+  uuid: test2@atos.net
+  updated_at: 2011-07-18 17:56:47 +02:00
+  id: 204
+  notes_count: 0
+  description: ""
+  comments_count: 0
+  notes_avg: 0.0
+  state: 1
+  date_public: 
+  date_end_public: 
+list_00091: 
+  ptitle: ""
+  created_at: 2011-05-26 16:10:00 +02:00
+  title: cuisine bretonne
+  uuid: barbara.arellano@bpi.fr
+  updated_at: 2011-05-26 16:10:00 +02:00
+  id: 91
+  notes_count: 0
+  description: livres de cisine
+  comments_count: 0
+  notes_avg: 0.0
+  state: 1
+  date_public: 
+  date_end_public: 
+list_00205: 
+  ptitle: ""
+  created_at: 2011-07-21 12:38:42 +02:00
+  title: Munch
+  uuid: danielle.resche@bpi.fr
+  updated_at: 2011-07-21 12:38:42 +02:00
+  id: 205
+  notes_count: 0
+  description: ""
+  comments_count: 0
+  notes_avg: 0.0
+  state: 0
+  date_public: 
+  date_end_public: 
+list_00092: 
+  ptitle: ""
+  created_at: 2011-05-26 16:10:24 +02:00
+  title: cuisine bretonne
+  uuid: catherine.pichonneau@bpi.fr
+  updated_at: 2011-05-26 16:10:24 +02:00
+  id: 92
+  notes_count: 0
+  description: ""
+  comments_count: 0
+  notes_avg: 0.0
+  state: 1
+  date_public: 
+  date_end_public: 
+list_00064: 
+  ptitle: bretagne
+  created_at: 2011-05-23 16:08:40 +02:00
+  title: cuisine
+  uuid: evelyne.favennec@bpi.fr
+  updated_at: 2011-05-23 16:08:40 +02:00
+  id: 64
+  notes_count: 0
+  description: ""
+  comments_count: 0
+  notes_avg: 0.0
+  state: 1
+  date_public: 
+  date_end_public: 
+list_00120: 
+  ptitle: ""
+  created_at: 2011-06-01 15:10:42 +02:00
+  title: Monaco
+  uuid: jerome.villeminoz@bpi.fr
+  updated_at: 2011-06-01 15:10:42 +02:00
+  id: 120
+  notes_count: 0
+  description: ""
+  comments_count: 0
+  notes_avg: 0.0
+  state: 1
+  date_public: 
+  date_end_public: 
+list_00179: 
+  ptitle: ""
+  created_at: 2011-06-20 15:42:45 +02:00
+  title: CUISINE BRETONNE
+  uuid: claudine.villette@bpi.fr
+  updated_at: 2011-06-20 15:42:45 +02:00
+  id: 179
+  notes_count: 0
+  description: ""
+  comments_count: 0
+  notes_avg: 0.0
+  state: 1
+  date_public: 
+  date_end_public: 
+list_00206: 
+  ptitle: ""
+  created_at: 2011-07-21 17:58:54 +02:00
+  title: "Trag\xC3\xA9dies"
+  uuid: claire.lebreton@bpi.fr
+  updated_at: 2011-07-21 17:58:54 +02:00
+  id: 206
+  notes_count: 0
+  description: ""
+  comments_count: 0
+  notes_avg: 0.0
+  state: 0
+  date_public: 
+  date_end_public: 
+list_00093: 
+  ptitle: ""
+  created_at: 2011-05-26 16:10:50 +02:00
+  title: CUISINE BRETONNE
+  uuid: angelique.bellec@bpi.fr
+  updated_at: 2011-05-26 16:10:50 +02:00
+  id: 93
+  notes_count: 0
+  description: !binary |
+    csOpZ2Fs
+
+  comments_count: 0
+  notes_avg: 0.0
+  state: 1
+  date_public: 
+  date_end_public: 
+list_00065: 
+  ptitle: ""
+  created_at: 2011-05-23 16:09:11 +02:00
+  title: Cuisine bretonne
+  uuid: claire.lebreton@bpi.fr
+  updated_at: 2011-05-23 16:09:11 +02:00
+  id: 65
+  notes_count: 0
+  description: ""
+  comments_count: 0
+  notes_avg: 0.0
+  state: 1
+  date_public: 
+  date_end_public: 
+list_00207: 
+  ptitle: ""
+  created_at: 2011-07-21 19:02:03 +02:00
+  title: Central
+  uuid: james.lecard@gmail.com
+  updated_at: 2011-07-21 19:02:03 +02:00
+  id: 207
+  notes_count: 0
+  description: ""
+  comments_count: 0
+  notes_avg: 0.0
+  state: 1
+  date_public: 
+  date_end_public: 
+list_00094: 
+  ptitle: Flaubert
+  created_at: 2011-05-30 11:57:43 +02:00
+  title: Bovary
+  uuid: claire.lebreton@bpi.fr
+  updated_at: 2011-05-30 11:57:43 +02:00
+  id: 94
+  notes_count: 0
+  description: ""
+  comments_count: 0
+  notes_avg: 0.0
+  state: 1
+  date_public: 
+  date_end_public: 
+list_00066: 
+  ptitle: cuisine
+  created_at: 2011-05-23 16:09:17 +02:00
+  title: cuisine bretonne
+  uuid: evelyne.favennec@bpi.fr
+  updated_at: 2011-05-23 16:09:17 +02:00
+  id: 66
+  notes_count: 0
+  description: et val de loire
+  comments_count: 0
+  notes_avg: 0.0
+  state: 1
+  date_public: 
+  date_end_public: 
+list_00121: 
+  ptitle: ""
+  created_at: 2011-06-01 15:11:38 +02:00
+  title: Monaco2
+  uuid: jerome.villeminoz@bpi.fr
+  updated_at: 2011-06-01 15:11:38 +02:00
+  id: 121
+  notes_count: 0
+  description: ""
+  comments_count: 0
+  notes_avg: 0.0
+  state: 1
+  date_public: 
+  date_end_public: 
+list_00208: 
+  ptitle: ""
+  created_at: 2011-08-11 17:49:53 +02:00
+  title: "testAo\xC3\xBBt2011"
+  uuid: jerome.villeminoz@bpi.fr
+  updated_at: 2011-08-11 17:49:53 +02:00
+  id: 208
+  notes_count: 0
+  description: ""
+  comments_count: 0
+  notes_avg: 0.0
+  state: 1
+  date_public: 
+  date_end_public: 
+list_00095: 
+  ptitle: Flaubert
+  created_at: 2011-05-30 11:57:44 +02:00
+  title: Bovary
+  uuid: claire.lebreton@bpi.fr
+  updated_at: 2011-05-30 11:57:44 +02:00
+  id: 95
+  notes_count: 0
+  description: ""
+  comments_count: 0
+  notes_avg: 0.0
+  state: 1
+  date_public: 
+  date_end_public: 
+list_00150: 
+  ptitle: ""
+  created_at: 2011-06-10 11:41:07 +02:00
+  title: cuisine bretonne
+  uuid: cecile.denier@bpi.fr
+  updated_at: 2011-06-10 11:41:07 +02:00
+  id: 150
+  notes_count: 0
+  description: ""
+  comments_count: 0
+  notes_avg: 0.0
+  state: 1
+  date_public: 
+  date_end_public: 
+list_00067: 
+  ptitle: ""
+  created_at: 2011-05-23 16:11:32 +02:00
+  title: cuisine bretonne
+  uuid: beatrice.zenoni@bpi.fr
+  updated_at: 2011-05-23 16:11:32 +02:00
+  id: 67
+  notes_count: 0
+  description: ""
+  comments_count: 0
+  notes_avg: 0.0
+  state: 1
+  date_public: 
+  date_end_public: 
+list_00122: 
+  ptitle: Berlioz
+  created_at: 2011-06-06 15:43:13 +02:00
+  title: Musique
+  uuid: veronique.abot@bpi.fr
+  updated_at: 2011-06-06 15:43:13 +02:00
+  id: 122
+  notes_count: 0
+  description: "o\xC3\xB9 la musique finit labarbarie commence"
+  comments_count: 0
+  notes_avg: 0.0
+  state: 1
+  date_public: 
+  date_end_public: 
+list_00209: 
+  ptitle: ""
+  created_at: 2011-08-23 00:32:55 +02:00
+  title: "a \xC3\xA9couter"
+  uuid: james.lecard@bpi.fr
+  updated_at: 2011-08-23 00:32:55 +02:00
+  id: 209
+  notes_count: 0
+  description: ""
+  comments_count: 0
+  notes_avg: 0.0
+  state: 1
+  date_public: 
+  date_end_public: 
+list_00096: 
+  ptitle: ""
+  created_at: 2011-05-30 11:58:21 +02:00
+  title: escrime
+  uuid: monique.laroze@bpi.fr
+  updated_at: 2011-05-30 11:58:21 +02:00
+  id: 96
+  notes_count: 0
+  description: ""
+  comments_count: 0
+  notes_avg: 0.0
+  state: 0
+  date_public: 
+  date_end_public: 
+list_00151: 
+  ptitle: ""
+  created_at: 2011-06-10 11:41:11 +02:00
+  title: "Proph\xC3\xA9tie m\xC3\xA9di\xC3\xA9vale"
+  uuid: marc.boilloux@bpi.fr
+  updated_at: 2011-06-10 11:41:11 +02:00
+  id: 151
+  notes_count: 0
+  description: ""
+  comments_count: 0
+  notes_avg: 0.0
+  state: 1
+  date_public: 
+  date_end_public: 
+list_00068: 
+  ptitle: ""
+  created_at: 2011-05-25 14:45:06 +02:00
+  title: Ma recherche
+  uuid: claire.lebreton@bpi.fr
+  updated_at: 2011-05-25 14:45:06 +02:00
+  id: 68
+  notes_count: 0
+  description: ""
+  comments_count: 0
+  notes_avg: 0.0
+  state: 1
+  date_public: 
+  date_end_public: 
+list_00123: 
+  ptitle: ""
+  created_at: 2011-06-06 15:47:21 +02:00
+  title: heidegger
+  uuid: florian.leroy@bpi.fr
+  updated_at: 2011-06-06 15:47:21 +02:00
+  id: 123
+  notes_count: 0
+  description: ""
+  comments_count: 0
+  notes_avg: 0.0
+  state: 1
+  date_public: 
+  date_end_public: 
+list_00180: 
+  ptitle: ""
+  created_at: 2011-06-20 15:45:13 +02:00
+  title: cuisine de Bretagne
+  uuid: francine.figuiere@bpi.fr
+  updated_at: 2011-06-20 15:45:13 +02:00
+  id: 180
+  notes_count: 0
+  description: ""
+  comments_count: 0
+  notes_avg: 0.0
+  state: 1
+  date_public: 
+  date_end_public: 
+list_00097: 
+  ptitle: ""
+  created_at: 2011-05-30 11:58:22 +02:00
+  title: bovary
+  uuid: vastie.jasor@bpi.fr
+  updated_at: 2011-05-30 11:58:22 +02:00
+  id: 97
+  notes_count: 0
+  description: ""
+  comments_count: 0
+  notes_avg: 0.0
+  state: 1
+  date_public: 
+  date_end_public: 
+list_00152: 
+  ptitle: ""
+  created_at: 2011-06-10 11:41:14 +02:00
+  title: Cuisine antillaise
+  uuid: nathalie.niang@bpi.fr
+  updated_at: 2011-06-10 11:41:14 +02:00
+  id: 152
+  notes_count: 0
+  description: llmqldkoadcjoef
+  comments_count: 0
+  notes_avg: 0.0
+  state: 1
+  date_public: 
+  date_end_public: 
+list_00010: 
+  ptitle: Tout sur Coppola
+  created_at: 2011-03-11 17:27:10 +01:00
+  title: Tout sur Coppola
+  uuid: jameslecard@gmail.com
+  updated_at: 2011-03-11 17:27:10 +01:00
+  id: 10
+  notes_count: 0
+  description: ""
+  comments_count: 0
+  notes_avg: 0.0
+  state: 1
+  date_public: 
+  date_end_public: 
+list_00125: 
+  ptitle: ""
+  created_at: 2011-06-06 15:49:50 +02:00
+  title: Romantisme
+  uuid: veronique.abot@bpi.fr
+  updated_at: 2011-06-06 15:49:50 +02:00
+  id: 125
+  notes_count: 0
+  description: ""
+  comments_count: 0
+  notes_avg: 0.0
+  state: 1
+  date_public: 
+  date_end_public: 
+list_00098: 
+  ptitle: ""
+  created_at: 2011-05-30 11:58:47 +02:00
+  title: Flaubert le 30 mai
+  uuid: claire.lebreton@bpi.fr
+  updated_at: 2011-05-30 11:58:47 +02:00
+  id: 98
+  notes_count: 0
+  description: ""
+  comments_count: 0
+  notes_avg: 0.0
+  state: 1
+  date_public: 
+  date_end_public: 
+list_00153: 
+  ptitle: 5 livres
+  created_at: 2011-06-16 15:39:23 +02:00
+  title: cuisine charentaise
+  uuid: nathalie.daigne@bpi.fr
+  updated_at: 2011-06-16 15:39:23 +02:00
+  id: 153
+  notes_count: 0
+  description: ""
+  comments_count: 0
+  notes_avg: 0.0
+  state: 1
+  date_public: 
+  date_end_public: 
+list_00154: 
+  ptitle: ""
+  created_at: 2011-06-16 15:39:45 +02:00
+  title: cuisine bretonne
+  uuid: delphine.nicolas@bpi.fr
+  updated_at: 2011-06-16 15:39:45 +02:00
+  id: 154
+  notes_count: 0
+  description: ""
+  comments_count: 0
+  notes_avg: 0.0
+  state: 1
+  date_public: 
+  date_end_public: 
+list_00099: 
+  ptitle: flaubert
+  created_at: 2011-05-30 11:59:34 +02:00
+  title: madame bovary
+  uuid: jean-luc.meubry@bpi.fr
+  updated_at: 2011-05-30 11:59:34 +02:00
+  id: 99
+  notes_count: 0
+  description: ""
+  comments_count: 0
+  notes_avg: 0.0
+  state: 1
+  date_public: 
+  date_end_public: 
+list_00182: 
+  ptitle: et bretonne...
+  created_at: 2011-06-20 15:50:52 +02:00
+  title: Cuisine Bretagne
+  uuid: michel.thome@bpi.fr
+  updated_at: 2011-06-20 15:50:52 +02:00
+  id: 182
+  notes_count: 0
+  description: C'est bon !
+  comments_count: 0
+  notes_avg: 0.0
+  state: 1
+  date_public: 
+  date_end_public: 
+list_00040: 
+  ptitle: ""
+  created_at: 2011-05-16 11:34:00 +02:00
+  title: cuisine bretonne
+  uuid: anne.barbier@bpi.fr
+  updated_at: 2011-05-16 11:34:00 +02:00
+  id: 40
+  notes_count: 0
+  description: ""
+  comments_count: 0
+  notes_avg: 0.0
+  state: 1
+  date_public: 
+  date_end_public: 
+list_00126: 
+  ptitle: ""
+  created_at: 2011-06-06 15:53:27 +02:00
+  title: justice
+  uuid: veronique.abot@bpi.fr
+  updated_at: 2011-06-06 15:53:27 +02:00
+  id: 126
+  notes_count: 0
+  description: ""
+  comments_count: 0
+  notes_avg: 0.0
+  state: 1
+  date_public: 
+  date_end_public: 
+list_00210: 
+  ptitle: NEW LIST
+  created_at: 2011-09-20 16:23:54 +02:00
+  title: NEW LIST
+  uuid: admin
+  updated_at: 2011-09-20 16:30:17 +02:00
+  id: 210
+  notes_count: 2
+  description: NEW LIST
+  comments_count: 0
+  notes_avg: 5.0
+  state: 1
+  date_public: 
+  date_end_public: 
+list_00127: 
+  ptitle: ""
+  created_at: 2011-06-06 15:55:44 +02:00
+  title: Badinter
+  uuid: veronique.abot@bpi.fr
+  updated_at: 2011-06-06 15:55:44 +02:00
+  id: 127
+  notes_count: 0
+  description: ""
+  comments_count: 0
+  notes_avg: 0.0
+  state: 1
+  date_public: 
+  date_end_public: 
+list_00041: 
+  ptitle: ""
+  created_at: 2011-05-16 11:34:16 +02:00
+  title: cuisine bretonne
+  uuid: dominique.crest@bpi.fr
+  updated_at: 2011-05-16 11:34:16 +02:00
+  id: 41
+  notes_count: 0
+  description: ""
+  comments_count: 0
+  notes_avg: 0.0
+  state: 1
+  date_public: 
+  date_end_public: 
+list_00183: 
+  ptitle: ""
+  created_at: 2011-06-21 15:37:41 +02:00
+  title: Ethno
+  uuid: christelle.joussain@bpi.fr
+  updated_at: 2011-06-21 15:37:41 +02:00
+  id: 183
+  notes_count: 0
+  description: Coupure de courant
+  comments_count: 0
+  notes_avg: 0.0
+  state: 1
+  date_public: 
+  date_end_public: 
+list_00155: 
+  ptitle: ""
+  created_at: 2011-06-16 15:39:46 +02:00
+  title: badinter
+  uuid: catherine.rollinat@bpi.fr
+  updated_at: 2011-06-16 15:39:46 +02:00
+  id: 155
+  notes_count: 0
+  description: 1O volumes
+  comments_count: 0
+  notes_avg: 0.0
+  state: 1
+  date_public: 
+  date_end_public: 
+list_00013: 
+  ptitle: ""
+  created_at: 2011-03-16 16:10:15 +01:00
+  title: "Le vin \xC3\xA0 l'heure de la mondialisation"
+  uuid: claire.lebreton@bpi.fr
+  updated_at: 2011-07-17 21:43:44 +02:00
+  id: 13
+  notes_count: 0
+  description: ""
+  comments_count: 0
+  notes_avg: 0.0
+  state: 1
+  date_public: 
+  date_end_public: 
+list_00128: 
+  ptitle: ""
+  created_at: 2011-06-06 15:59:35 +02:00
+  title: cuisine autrichienne
+  uuid: veronique.abot@bpi.fr
+  updated_at: 2011-06-06 15:59:35 +02:00
+  id: 128
+  notes_count: 0
+  description: ""
+  comments_count: 0
+  notes_avg: 0.0
+  state: 1
+  date_public: 
+  date_end_public: 
+list_00014: 
+  ptitle: ""
+  created_at: 2011-03-16 16:10:48 +01:00
+  title: "Mondialisation et go\xC3\xBBt"
+  uuid: claire.lebreton@bpi.fr
+  updated_at: 2011-03-16 16:10:48 +01:00
+  id: 14
+  notes_count: 0
+  description: ""
+  comments_count: 0
+  notes_avg: 0.0
+  state: 1
+  date_public: 
+  date_end_public: 
+list_00042: 
+  ptitle: Bretonne
+  created_at: 2011-05-16 11:35:20 +02:00
+  title: Cuisine
+  uuid: christophe.chardey@bpi.fr
+  updated_at: 2011-05-16 11:35:20 +02:00
+  id: 42
+  notes_count: 0
+  description: "Trop sal\xC3\xA9, trop gras, "
+  comments_count: 0
+  notes_avg: 0.0
+  state: 0
+  date_public: 
+  date_end_public: 
+list_00156: 
+  ptitle: ""
+  created_at: 2011-06-16 15:40:16 +02:00
+  title: cuisine bretonne
+  uuid: karine.meneghetti@bpi.fr
+  updated_at: 2011-06-16 15:40:16 +02:00
+  id: 156
+  notes_count: 0
+  description: ""
+  comments_count: 0
+  notes_avg: 0.0
+  state: 1
+  date_public: 
+  date_end_public: 
+list_00070: 
+  ptitle: ""
+  created_at: 2011-05-25 15:51:39 +02:00
+  title: Cuisine bretonne
+  uuid: liliane.colin@bpi.fr
+  updated_at: 2011-05-25 15:51:39 +02:00
+  id: 70
+  notes_count: 0
+  description: ""
+  comments_count: 0
+  notes_avg: 0.0
+  state: 1
+  date_public: 
+  date_end_public: 
+list_00043: 
+  ptitle: "cuisine pas di\xC3\xA9t\xC3\xA9tique"
+  created_at: 2011-05-16 11:35:22 +02:00
+  title: Au bon beurre
+  uuid: catherine.brodard@bpi.fr
+  updated_at: 2011-05-16 11:50:38 +02:00
+  id: 43
+  notes_count: 0
+  description: miam miam
+  comments_count: 0
+  notes_avg: 0.0
+  state: 0
+  date_public: 
+  date_end_public: 
+list_00015: 
+  ptitle: ""
+  created_at: 2011-03-16 16:11:07 +01:00
+  title: "Documentaires engag\xC3\xA9s"
+  uuid: claire.lebreton@bpi.fr
+  updated_at: 2011-03-16 16:11:07 +01:00
+  id: 15
+  notes_count: 0
+  description: ""
+  comments_count: 0
+  notes_avg: 0.0
+  state: 1
+  date_public: 
+  date_end_public: 
+list_00157: 
+  ptitle: galettes
+  created_at: 2011-06-16 15:40:50 +02:00
+  title: cuisine bretonne
+  uuid: laurence.eme@bpi.fr
+  updated_at: 2011-06-16 15:40:50 +02:00
+  id: 157
+  notes_count: 0
+  description: ""
+  comments_count: 0
+  notes_avg: 0.0
+  state: 1
+  date_public: 
+  date_end_public: 
+list_00129: 
+  ptitle: ""
+  created_at: 2011-06-06 16:00:02 +02:00
+  title: cuisine bretonne
+  uuid: marie-helene.gatto@bpi.fr
+  updated_at: 2011-06-06 16:00:02 +02:00
+  id: 129
+  notes_count: 0
+  description: ""
+  comments_count: 0
+  notes_avg: 0.0
+  state: 1
+  date_public: 
+  date_end_public: 
+list_00071: 
+  ptitle: ""
+  created_at: 2011-05-25 15:52:00 +02:00
+  title: cuisine bretonne
+  uuid: catherine.revest@bpi.fr
+  updated_at: 2011-05-25 15:52:00 +02:00
+  id: 71
+  notes_count: 0
+  description: ""
+  comments_count: 0
+  notes_avg: 0.0
+  state: 1
+  date_public: 
+  date_end_public: 
+list_00044: 
+  ptitle: cuisine
+  created_at: 2011-05-16 11:35:36 +02:00
+  title: bretagne
+  uuid: abdelkader.belkhiter@bpi.fr
+  updated_at: 2011-05-16 11:35:36 +02:00
+  id: 44
+  notes_count: 0
+  description: ""
+  comments_count: 0
+  notes_avg: 0.0
+  state: 1
+  date_public: 
+  date_end_public: 
+list_00158: 
+  ptitle: ""
+  created_at: 2011-06-16 15:40:50 +02:00
+  title: CUISINE BRETONNE
+  uuid: anne-marie.mottin@bpi.fr
+  updated_at: 2011-06-16 15:40:50 +02:00
+  id: 158
+  notes_count: 0
+  description: ""
+  comments_count: 0
+  notes_avg: 0.0
+  state: 1
+  date_public: 
+  date_end_public: 
+list_00016: 
+  ptitle: ""
+  created_at: 2011-03-16 16:11:23 +01:00
+  title: Languedoc
+  uuid: claire.lebreton@bpi.fr
+  updated_at: 2011-04-26 11:50:23 +02:00
+  id: 16
+  notes_count: 3
+  description: ""
+  comments_count: 0
+  notes_avg: 4.66667
+  state: 1
+  date_public: 
+  date_end_public: 
+list_00072: 
+  ptitle: ""
+  created_at: 2011-05-25 15:52:07 +02:00
+  title: cuisine bretonne
+  uuid: marc.trouillet@bpi.fr
+  updated_at: 2011-05-25 15:52:07 +02:00
+  id: 72
+  notes_count: 0
+  description: ""
+  comments_count: 0
+  notes_avg: 0.0
+  state: 1
+  date_public: 
+  date_end_public: 
+list_00187: 
+  ptitle: ""
+  created_at: 2011-06-23 16:00:07 +02:00
+  title: cuisine plein air
+  uuid: sylvie.colley@bpi.fr
+  updated_at: 2011-06-23 16:00:07 +02:00
+  id: 187
+  notes_count: 0
+  description: ""
+  comments_count: 0
+  notes_avg: 0.0
+  state: 1
+  date_public: 
+  date_end_public: 
+list_00045: 
+  ptitle: cuisine
+  created_at: 2011-05-16 11:36:07 +02:00
+  title: bretagne
+  uuid: abdelkader.belkhiter@bpi.fr
+  updated_at: 2011-05-16 11:36:07 +02:00
+  id: 45
+  notes_count: 0
+  description: ""
+  comments_count: 0
+  notes_avg: 0.0
+  state: 1
+  date_public: 
+  date_end_public: 
+list_00073: 
+  ptitle: ""
+  created_at: 2011-05-25 15:53:43 +02:00
+  title: "f\xC3\xAAte r\xC3\xA9volutionnaire"
+  uuid: catherine.revest@bpi.fr
+  updated_at: 2011-05-25 15:53:43 +02:00
+  id: 73
+  notes_count: 0
+  description: ""
+  comments_count: 0
+  notes_avg: 0.0
+  state: 1
+  date_public: 
+  date_end_public: 
+list_00159: 
+  ptitle: ""
+  created_at: 2011-06-16 15:41:00 +02:00
+  title: cuisine
+  uuid: sandra.aubry@bpi.fr
+  updated_at: 2011-06-16 15:41:00 +02:00
+  id: 159
+  notes_count: 0
+  description: ""
+  comments_count: 0
+  notes_avg: 0.0
+  state: 1
+  date_public: 
+  date_end_public: 
+list_00017: 
+  ptitle: ""
+  created_at: 2011-03-16 16:30:52 +01:00
+  title: Japon
+  uuid: claire.lebreton@bpi.fr
+  updated_at: 2011-03-16 16:30:52 +01:00
+  id: 17
+  notes_count: 0
+  description: ""
+  comments_count: 0
+  notes_avg: 0.0
+  state: 1
+  date_public: 
+  date_end_public: 
+list_00100: 
+  ptitle: ""
+  created_at: 2011-05-30 11:59:59 +02:00
+  title: MA LISTE A MOI
+  uuid: claire.lebreton@bpi.fr
+  updated_at: 2011-05-30 11:59:59 +02:00
+  id: 100
+  notes_count: 0
+  description: ""
+  comments_count: 0
+  notes_avg: 0.0
+  state: 1
+  date_public: 
+  date_end_public: 
+list_00046: 
+  ptitle: ""
+  created_at: 2011-05-16 11:37:17 +02:00
+  title: Cuisine carnacienne
+  uuid: bruno.beguet@bpi.fr
+  updated_at: 2011-05-16 11:37:17 +02:00
+  id: 46
+  notes_count: 0
+  description: ""
+  comments_count: 0
+  notes_avg: 0.0
+  state: 1
+  date_public: 
+  date_end_public: 
+list_00101: 
+  ptitle: ""
+  created_at: 2011-05-30 12:00:06 +02:00
+  title: denise bellon
+  uuid: anne.legourrierec@bpi.fr
+  updated_at: 2011-05-30 12:00:06 +02:00
+  id: 101
+  notes_count: 0
+  description: ""
+  comments_count: 0
+  notes_avg: 0.0
+  state: 1
+  date_public: 
+  date_end_public: 
+list_00188: 
+  ptitle: ""
+  created_at: 2011-06-23 16:00:13 +02:00
+  title: Cuisine bretonne
+  uuid: annette.peiffer@bpi.fr
+  updated_at: 2011-06-23 16:00:13 +02:00
+  id: 188
+  notes_count: 0
+  description: ""
+  comments_count: 0
+  notes_avg: 0.0
+  state: 1
+  date_public: 
+  date_end_public: 

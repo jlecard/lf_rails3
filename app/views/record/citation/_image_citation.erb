@@ -1,0 +1,11 @@
+<div>
+<%citation=author_citation(image_citation)+title_citation(image_citation)%>
+<%=citation%>
+<%if image_citation.title!=nil && image_citation.title!= ''%>
+    <span class="citation_title"><%=trim_punctuation(image_citation.title)%></span>.
+<%end
+  if image_citation.date!=nil && image_citation.date!=''%>
+ <%=date_citation(image_citation)%>.
+<%end%>
+<%=url_citation(image_citation)%> 
+</div>

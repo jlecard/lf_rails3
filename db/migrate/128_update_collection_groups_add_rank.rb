@@ -21,7 +21,7 @@ class UpdateCollectionGroupsAddRank < ActiveRecord::Migration
   end
   
   def self.down
-    remove_column (:collection_groups, :rank)
+    remove_column :collection_groups, :rank
   end
   
 end

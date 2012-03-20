@@ -1,0 +1,28 @@
+<%completed_length='0'
+  percent=1
+  if @completed!=nil and !@completed.empty?
+    completed_length=@completed.length.to_s
+    percent=@completed.length.to_f/@jobs.length.to_f
+    percent=(percent*100).round
+  end
+   style_string="height:20px;width:"+percent.to_s+"%;float:left;background-color:blue"
+%>
+<input type='hidden' id='jobs_remaining' name='jobs_remaining' value='<%=@jobs_remaining.to_s%>' />
+<input type="hidden" name="mobile" value="<%=@IsMobile.to_s%>" />
+<div id="pinging_feedback">
+
+
+  <div id="pinging_progress">
+	<div id="progress_indicator"><div style=<%=style_string%>></div></div>
+   	<% if @remaining_targets!=nil and @remaining_targets!=""%>
+	<b><%=translate('NOW_SEARCHING')%></b></br>
+	<%=@remaining_targets.to_s%>
+	<%end%>
+
+  </div>
+
+  <div id="pinging_complete">
+    <b><%=translate('COMPLETED_SEARCHING')%></b><br/> 
+	<%=@completed_targets.to_s%>
+  </div>
+</div>

@@ -300,48 +300,48 @@ module ApplicationHelper
     end
   end
   
-  def translate(key, args=[], caller=nil, file = nil)
-    
-	begin
-		language = session[:langue] 
-	rescue
-	end
-    
-    if language.nil?
-      # set la langue par defaut
-      config = YAML::load_file(RAILS_ROOT + "/config/config.yml")
-      language=config["LANGUAGE"]
-	  begin
-		session[:langue] = language
-	  rescue
-	  end
-    end
-    
-    if (file.nil?)
-      file=RAILS_ROOT + "/app/languages/"+get_controller_path(caller).to_s+"_lang.yml"
-    else
-      file=RAILS_ROOT + "/app/languages/#{file}_lang.yml"
-    end
-    translations ||= YAML::load_file(file.to_s)
-    new_string=translations[language][key]
-    if new_string==nil
-        app_translations ||= YAML::load_file(RAILS_ROOT + "/app/languages/application_lang.yml")
-        new_string=app_translations[language][key]
-        if new_string == nil
-          new_string = key
-        end
-    end 
-    if !args.nil? and args.length>0
-      i = 0
-      #new_string=eval(new_string)
-      args.each do |v|
-        key = "\#\{args[#{i}]}"
-        new_string = new_string.gsub(key, v)
-        i += 1
-      end
-    end
-    new_string
-  end
+  # def translate(key, args=[], caller=nil, file = nil)
+#     
+	# begin
+		# language = session[:langue] 
+	# rescue
+	# end
+#     
+    # if language.nil?
+      # # set la langue par defaut
+      # config = YAML::load_file(RAILS_ROOT + "/config/config.yml")
+      # language=config["LANGUAGE"]
+	  # begin
+		# session[:langue] = language
+	  # rescue
+	  # end
+    # end
+#     
+    # if (file.nil?)
+      # file=RAILS_ROOT + "/app/languages/"+get_controller_path(caller).to_s+"_lang.yml"
+    # else
+      # file=RAILS_ROOT + "/app/languages/#{file}_lang.yml"
+    # end
+    # translations ||= YAML::load_file(file.to_s)
+    # new_string=translations[language][key]
+    # if new_string==nil
+        # app_translations ||= YAML::load_file(RAILS_ROOT + "/app/languages/application_lang.yml")
+        # new_string=app_translations[language][key]
+        # if new_string == nil
+          # new_string = key
+        # end
+    # end 
+    # if !args.nil? and args.length>0
+      # i = 0
+      # #new_string=eval(new_string)
+      # args.each do |v|
+        # key = "\#\{args[#{i}]}"
+        # new_string = new_string.gsub(key, v)
+        # i += 1
+      # end
+    # end
+    # new_string
+  # end
   
   def strip_quotes(_record)
     _record.vendor_name.gsub!("'") {""}
