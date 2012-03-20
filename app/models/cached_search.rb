@@ -149,6 +149,7 @@ class CachedSearch < ActiveRecord::Base
         logger.debug("[cached_search][retrieve_metadata]: return object class = #{obj.class} for key #{sid}_#{coll_id}_#{infos_user.location_user}")
       else
         obj = CACHE.get("#{sid}_#{coll_id}")
+        logger.debug("[cached_search][retrieve_metadata]: return object class = #{obj.class} for key #{sid}_#{coll_id}")
       end
       logger.debug("[cached_search][retrieve_metadata]:  object : #{obj.inspect}")
       return obj

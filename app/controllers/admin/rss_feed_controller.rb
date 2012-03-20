@@ -104,8 +104,8 @@ class Admin::RssFeedController < ApplicationController
       # log params
       logger.info("FEED TYPE: #{@type} Query: #{@query} Operator: #{@operator}")
       # request
-      ids = $objDispatch.SearchAsync(@sets, @type, @query, @start, @max, @operator)
-     # ids = $objDispatch.SearchAsync(@sets, @type, @query, @start, 20000, @operator)
+      ids = $objDispatch.search_async(@sets, @type, @query, @start, @max, @operator)
+     # ids = $objDispatch.search_async(@sets, @type, @query, @start, 20000, @operator)
       logger.info("[RssFeedController] jobs : #{ids.inspect}")
             
       #loop through the ids to get info
@@ -118,7 +118,7 @@ class Admin::RssFeedController < ApplicationController
         logger.info("[RssFeedController] jobs : #{ids.inspect}")
         logger.info("[RssFeedController] completed : #{completed.inspect}")
         logger.info("[RssFeedController] errors : #{errors.inspect}")
-        items=$objDispatch.CheckJobStatus(ids)
+        items=$objDispatch.check_job_status(ids)
         if !items.nil?
           items.each do |item|
             id = item.job_id

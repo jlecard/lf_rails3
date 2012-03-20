@@ -129,7 +129,7 @@ class RecordController < ApplicationController
         
         init_defaults
         init_query_and_type(params)
-        if !@query[0].nil? and !@query[0].to_s.strip.blank?
+        if !@query[0].blank? and !@query[0].to_s.strip.blank?
           init_search  
           if @sets and !@sets.empty?
             logger.debug("[retrieve] searching for query: " + @query.to_s + " and type: " + @type.to_s)
@@ -137,7 +137,7 @@ class RecordController < ApplicationController
               dep_find_search_results
               render(:action => @tab_template)
             else
-              @jobs = $objDispatch.SearchAsync(@sets, @type, @query, @start, @max, @operator)
+              @jobs = $objDispatch.search_async(@sets, @type, @query, @start, @max, @operator)
               render(:action => 'intermediate')
             end
           else
@@ -215,7 +215,7 @@ class RecordController < ApplicationController
         dep_find_search_results
         render(:action => @tab_template)
       else
-        @jobs	= $objDispatch.SearchAsync(@sets, @type, @query, @start, @max, @operator)
+        @jobs	= $objDispatch.search_async(@sets, @type, @query, @start, @max, @operator)
         render(:action => 'intermediate')
       end
     else
@@ -244,7 +244,7 @@ class RecordController < ApplicationController
   end
   
   def dep_ping_for_results(_sets=@sets, _type=@type, _query=@query, _start=@start, _max=@max, _operator=@operator)  
-    ids 				= $objDispatch.SearchAsync(_sets, _type, _query, _start, _max, _operator) 
+    ids 				= $objDispatch.search_async(_sets, _type, _query, _start, _max, _operator) 
     completed		= []
     errors			= []
     start_time	= Time.now
@@ -255,7 +255,7 @@ class RecordController < ApplicationController
         if (!completed.include?(id))
           #clear the record cache
           ActiveRecord::Base.clear_active_connections!() 
-          item		= $objDispatch.CheckJobStatus(id)
+          item		= $objDispatch.check_job_status(id)
           count		= count + 1
           if (item.status == -1)
             if (!errors.include?(id))
@@ -327,7 +327,7 @@ class RecordController < ApplicationController
     completed_items=[]
     init_pinging_params
     for id in @jobs
-      item=$objDispatch.CheckJobStatus(id)
+      item=$objDispatch.check_job_status(id)
       if item.status==0 
         @completed<<id
         completed_items<<item
@@ -359,7 +359,7 @@ class RecordController < ApplicationController
     @private = Hash.new
     init_pinging_params
     for id in @jobs
-      item=$objDispatch.CheckJobStatus(id)
+      item=$objDispatch.check_job_status(id)
       if item.status==JOB_WAITING
         if item.thread_id.to_i>0
           begin

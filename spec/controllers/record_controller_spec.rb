@@ -49,9 +49,7 @@ describe RecordController do
       assigns[:idTab].should == 1
       assigns[:type][0].should == "keyword"
       link_menu = assigns[:linkMenu] 
-      link_menu.size.should == 7
-      link_menu[0].should be_a(SearchTab)
-      link_menu[0].label.should == "ALL"
+      link_menu.size.should == 0
       assigns[:groups_tab].should == []
       
       op = assigns[:operator]
@@ -108,7 +106,7 @@ describe RecordController do
     end
     
     it "when only query parameter set, should set default search values
-        and render the intermediate template page, one collection group is 
+        and render the intermediate template page, one default collection group is 
         created but with no assiociated collections" do
       cg = Factory(:collection_group)  
       get :retrieve, {:query=>"test"}, valid_session

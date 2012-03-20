@@ -49,7 +49,7 @@ class MetaSearchNew < ActionController::Base
     @infos_user = nil
   end
   
-  def SimpleSearch(_sets, _qtype, _qstring, _start, _max)
+  def simple_search(_sets, _qtype, _qstring, _start, _max)
     case _qtype.class.to_s
       when "Array"
       return Search(_sets, _qtype, _qstring, _start, _max, nil,nil,nil,true)
@@ -62,16 +62,16 @@ class MetaSearchNew < ActionController::Base
     end
   end
   
-  def SimpleSearchAsync(_sets, _qtype, _qstring, _start, _max)
+  def simple_search_async(_sets, _qtype, _qstring, _start, _max)
     case _qtype.class.to_s
       when "Array"
-      return SearchAsync(_sets, _qtype, _qstring, _start, _max, 1,nil,nil,true)
+      return search_async(_sets, _qtype, _qstring, _start, _max, 1,nil,nil,true)
     else
       qtype = Array.new
       qstring = Array.new
       qtype[0] = _qtype
       qstring[0] = _qstring
-      return SearchAsync(_sets, qtype, qstring, _start, _max, 1, nil, nil, true)
+      return search_async(_sets, qtype, qstring, _start, _max, 1, nil, nil, true)
     end
   end
   
@@ -253,9 +253,9 @@ class MetaSearchNew < ActionController::Base
   # _max :          max result by search
   # _qoperator :  table of operators (operator1, operator2)
   
-  def SearchAsync (_sets, _qtype, _qstring, _start, _max, _qoperator, options=nil, _session_id=nil, _action_type=1, _data = nil, _bool_obj=true) 
+  def search_async (_sets, _qtype, _qstring, _start, _max, _qoperator, options=nil, _session_id=nil, _action_type=1, _data = nil, _bool_obj=true) 
     
-    logger.info("[SearchAsync] INFOS_USER_CONTROL : #{INFOS_USER_CONTROL} @infos_user : #{@infos_user.inspect}")
+    logger.info("[search_async] INFOS_USER_CONTROL : #{INFOS_USER_CONTROL} @infos_user : #{@infos_user.inspect}")
     
     if(INFOS_USER_CONTROL and !@infos_user.nil?)
       
@@ -274,8 +274,8 @@ class MetaSearchNew < ActionController::Base
     end
     logger.info("#{$LOAD_PATH.inspect}")
     _objRec = RecordSet.new
-    logger.debug("[SearchAsync] keyword:#{_qstring[0]}")
-    logger.debug("[SearchAsync] keyword:#{_qstring.inspect}")
+    logger.debug("[search_async] keyword:#{_qstring[0]}")
+    logger.debug("[search_async] keyword:#{_qstring.inspect}")
     _objRec.setKeyword( _qstring[0])
     _max_recs = 0
     
@@ -285,7 +285,7 @@ class MetaSearchNew < ActionController::Base
     end
     
     # search collection for the set id
-    logger.debug("[SearchAsync] search collection #{_sets.to_s}")
+    logger.debug("[search_async] search collection #{_sets.to_s}")
     no_externe = false
     if (!options.nil?)
       no_externe = true
@@ -298,31 +298,31 @@ class MetaSearchNew < ActionController::Base
     _search_id = nil
     _my_search_id = nil
     # Has this search been run before?  Return the matching row as array if so 
-    logger.debug("[SearchAsync] IS THIS FIXED: " + _qstring.join("|").to_s)
+    logger.debug("[search_async] IS THIS FIXED: " + _qstring.join("|").to_s)
     
     cached_recs, _max_recs = CachedSearch.check_cache(_qstring, _qtype,'', _max, @infos_user )
     
     if cached_recs.nil? || cached_recs.empty?
       # _last_id is generated when this search is saved
-      logger.debug("[SearchAsync] No matching search found")
+      logger.debug("[search_async] No matching search found")
       _last_id, _max_recs = CachedSearch.set_query(_qstring, _qtype, '', _max.to_i, @infos_user)
     else
       
       if CACHE_ACTIVATE
-        logger.debug("[SearchAsync] Matching search found...")
+        logger.debug("[search_async] Matching search found...")
         _search_id = cached_recs  
         _last_id = cached_recs
       else
         # _last_id is the id of the matching search
         _last_id = cached_recs[0].id
-        logger.debug("[SearchAsync] Matching search: %s" % _last_id)
+        logger.debug("[search_async] Matching search: %s" % _last_id)
         # _search_id starts with same id, but is modified later
         _search_id = cached_recs[0].id
         # _max_recs is the saved number of hits per collection 
         # (which might be insufficient)
         _max_recs = cached_recs[0].max_recs
       end
-      logger.debug("[SearchAsync] max hits: " + _max_recs.to_s)
+      logger.debug("[search_async] max hits: " + _max_recs.to_s)
     end
     
     spawn_ids = Hash.new
@@ -332,7 +332,7 @@ class MetaSearchNew < ActionController::Base
     _qstring += qstring
     _qtype += qtype 
     _qoperator += qoperator 
-    logger.debug("[SearchAsync] SearchAsync _qstring : #{_qstring.inspect}")
+    logger.debug("[search_async] search_async _qstring : #{_qstring.inspect}")
     _collections.each_index { |_index|
       #================================================
       # If in Cache -- extract data from the cache
@@ -353,13 +353,13 @@ class MetaSearchNew < ActionController::Base
       
       job_id = JobQueue.create_job(_collections[_index].id)
       if (!job_id.nil?)
-        logger.debug("[SearchAsync] create job ; #{_collections[_index].id} ==> #{job_id}")
+        logger.debug("[search_async] create job ; #{_collections[_index].id} ==> #{job_id}")
         myjob[_index] = job_id
       else
-        logger.error("[SearchAsync] #{_collections[_index].id} ==> job id nil")
+        logger.error("[search_async] #{_collections[_index].id} ==> job id nil")
         next
       end
-      logger.debug("[SearchAsync] call spawn")
+      logger.debug("[search_async] call spawn")
       # spawn_ids[_index] = spawn do
         
         ############################################################################
@@ -377,7 +377,7 @@ class MetaSearchNew < ActionController::Base
       end
         
       if _pre_filtered_search 
-        logger.debug("[SearchAsync] Entering in pre filtered search mode")
+        logger.debug("[search_async] Entering in pre filtered search mode")
         _my_search_id, my_cached_recs = CachedSearch.check_cache(_myqstring, _qtype,  '', _max, @infos_user)
         if my_cached_recs.nil? #or my_cached_recs.length==0 
           _my_last_id = CachedSearch.set_query(_myqstring, _qtype, '', _max.to_i, @infos_user)
@@ -385,7 +385,7 @@ class MetaSearchNew < ActionController::Base
           if CACHE_ACTIVATE
             _my_last_id = _my_search_id
             _my_max_recs = my_cached_recs
-            logger.debug("[meta_search][SearchAsync] cacheinfo : _my_last_id=#{_my_last_id}; _my_max_recs=#{_my_max_recs}")
+            logger.debug("[meta_search][search_async] cacheinfo : _my_last_id=#{_my_last_id}; _my_max_recs=#{_my_max_recs}")
           else
             _my_last_id = my_cached_recs[0].id
             _my_search_id = my_cached_recs[0].id
@@ -397,7 +397,7 @@ class MetaSearchNew < ActionController::Base
       ############################################################################
         
       if !INFOS_USER_CONTROL or @infos_user.nil? or (INFOS_USER_CONTROL and cols_ids_authorized.include?(_collections[_index].id))
-        logger.debug("[SearchAsync] Updating job")
+        logger.debug("[search_async] Updating job")
         JobQueue.update_job(myjob[_index], nil, _collections[_index].alt_name, JOB_WAITING)	
         _objCache[_index] = CacheSearchClass.new()
         
@@ -405,10 +405,10 @@ class MetaSearchNew < ActionController::Base
         # Create a new search cache for the prefiltered search query
         ############################################################################
         if _pre_filtered_search
-          logger.debug("[SearchAsync] Searching in pre filtered database cache")
+          logger.debug("[search_async] Searching in pre filtered database cache")
           _s_id = _my_search_id
         else
-          logger.debug("[SearchAsync] Searching in normal database")
+          logger.debug("[search_async] Searching in normal database")
           _s_id = _search_id
         end
         
@@ -419,12 +419,12 @@ class MetaSearchNew < ActionController::Base
           _objCache[_index].SearchCollection(_objRec, _collections[_index].id, _s_id, _max.to_i, myjob[_index], @infos_user,options)
         end
         ############################################################################
-        logger.debug("[SearchAsync] Spawn ID: " + spawn_ids[_index].to_s)
-        logger.debug("[SearchAsync] IS IN CACHE: " + _objCache[_index].is_in_cache.to_s) 
+        logger.debug("[search_async] Spawn ID: " + spawn_ids[_index].to_s)
+        logger.debug("[search_async] IS IN CACHE: " + _objCache[_index].is_in_cache.to_s) 
         
         if cache && _objCache[_index].is_in_cache == true  && _objCache[_index].records != nil
           
-          logger.debug("[SearchAsync] spawn process to found in thread : " + myjob[_index].to_s)
+          logger.debug("[search_async] spawn process to found in thread : " + myjob[_index].to_s)
           # need to mark query as finished.
           _job_etat = JOB_FINISHED
           if _is_private == true
@@ -439,13 +439,13 @@ class MetaSearchNew < ActionController::Base
           
         elsif cache && _objCache[_index].is_in_cache == true && _objCache[_index].records == nil
           # no records were found in the search -- results are zero
-          logger.debug("[SearchAsync] result in cache but results are zero")
+          logger.debug("[search_async] result in cache but results are zero")
           JobQueue.update_job(myjob[_index], _objCache[_index].records_id, _collections[_index].alt_name, JOB_FINISHED, 0)
         else
           # no cache, so search now
           # No matching search found  
           begin
-            logger.debug("[SearchAsync] start time")
+            logger.debug("[search_async] start time")
             _start_thread = Time.now().to_f
             my_id = 0
             my_hits = 0
@@ -470,15 +470,15 @@ class MetaSearchNew < ActionController::Base
             end
             
             
-            logger.info("[SearchAsync] _q.inspect = #{_q.inspect}")
+            logger.info("[search_async] _q.inspect = #{_q.inspect}")
             # determine search class (using oai_set field info if connection type = connector (custom connector)
             _search_class = _collections[_index].conn_type.capitalize
             if _collections[_index].conn_type == 'connector'
               _search_class = _collections[_index].oai_set.capitalize
             end
             
-            logger.debug("[SearchAsync] INDEXER: " + LIBRARYFIND_INDEXER)
-            logger.debug("[MetaSearch][SearchAsync] - Query string: " + _q.join(" "))
+            logger.debug("[search_async] INDEXER: " + LIBRARYFIND_INDEXER)
+            logger.debug("[MetaSearch][search_async] - Query string: " + _q.join(" "))
             logger.debug("[METASEARCH] : Search class = #{_search_class}")
             rescued = false
             begin
@@ -500,11 +500,11 @@ class MetaSearchNew < ActionController::Base
               args[12] = _data
               args[13] = _bool_obj
               spawn_ids[obj_name] = args
-              #logger.info("[MetaSearch][SearchAsync] launching #{obj_name} \n ARGS = #{args.inspect}")
-              logger.info("[MetaSearch][SearchAsync] launching #{obj_name}")
+              #logger.info("[MetaSearch][search_async] launching #{obj_name} \n ARGS = #{args.inspect}")
+              logger.info("[MetaSearch][search_async] launching #{obj_name}")
               my_id, my_hits, total_hits = _SearchCollection(obj_name, _collections[_index], _qtype, _q, _start.to_i, _max.to_i, _qoperator, _s_id, myjob[_index], @infos_user, options, _session_id, 1, _data, _bool_obj)
-              logger.info("[MetaSearch][SearchAsync] test #{test.inspect}")
-              logger.info("[MetaSearch][SearchAsync] launched #{obj_name} my_id = #{my_id}")              
+              logger.info("[MetaSearch][search_async] test #{test.inspect}")
+              logger.info("[MetaSearch][search_async] launched #{obj_name} my_id = #{my_id}")              
             rescue => e
               logger.error("[METASEARCH] : Search class = #{e.message}")
               logger.error("[METASEARCH] backtrace = #{e.backtrace}")
@@ -524,10 +524,10 @@ class MetaSearchNew < ActionController::Base
               _end_thread =  Time.now().to_f - _start_thread
               CachedSearch.save_execution_time(_s_id, _collections[_index].id, _end_thread.to_s, @infos_user)
               
-              logger.debug("[SearchAsync] My_ID = #{my_id.to_s} for collection #{_collections[_index]}")
+              logger.debug("[search_async] My_ID = #{my_id.to_s} for collection #{_collections[_index]}")
               if my_id != nil
                 # Set the job id message for finished.
-                logger.debug("[SearchAsync] Updating status: " + " jobid: " + myjob[_index].to_s + " myid: " + my_id.to_s)
+                logger.debug("[search_async] Updating status: " + " jobid: " + myjob[_index].to_s + " myid: " + my_id.to_s)
                 _job_etat = JOB_FINISHED
                 if _is_private == true
                   _job_etat = JOB_PRIVATE
@@ -536,19 +536,19 @@ class MetaSearchNew < ActionController::Base
                   total_hits = my_hits
                 end
                 tmpreturn = JobQueue.update_job(myjob[_index], my_id, _collections[_index].alt_name, _job_etat, my_hits, total_hits)
-                logger.debug("[SearchAsync] return value from update: " + tmpreturn.to_s)
+                logger.debug("[search_async] return value from update: " + tmpreturn.to_s)
               else
                 # Set the job id message for error; 
-                logger.error("[SearchAsync] Unable to establish/maintain a connection to the resource #{_collections[_index].alt_name}")
+                logger.error("[search_async] Unable to establish/maintain a connection to the resource #{_collections[_index].alt_name}")
                 JobQueue.update_job(myjob[_index], -1, _collections[_index].alt_name, JOB_ERROR, -1, 0, "Unable to establish/maintain a connection to the resource")
               end 
               
             # rescue ArgumentError => er
-              # logger.error("[SearchAsync] error :" + er.message)
+              # logger.error("[search_async] error :" + er.message)
               # JobQueue.update_job(myjob[_index], -1, _collections[_index].alt_name, JOB_ERROR_TYPE, -1, 0, er.message)
             # rescue Exception => bang
-              # logger.error("[SearchAsync] error :" + bang.message)
-              # logger.error("[SearchAsync] " + bang.backtrace.join("\n"))
+              # logger.error("[search_async] error :" + bang.message)
+              # logger.error("[search_async] " + bang.backtrace.join("\n"))
               # JobQueue.update_job(myjob[_index], -1, _collections[_index].alt_name, JOB_ERROR, -1, 0, bang.message)
              end
           #end
@@ -560,10 +560,10 @@ class MetaSearchNew < ActionController::Base
       #end
       # Update the thread_ids to the job
       #
-      logger.debug("[SearchAsync] job id: " + myjob[_index].to_s)
-      #logger.debug("[SearchAsync] spawn handle id: " + spawn_ids[_index].handle.to_s)
-      logger.debug("[SearchAsync] spawn id: " + spawn_ids[_index].to_s)
-      logger.debug("[SearchAsync] index: " + _index.to_s)
+      logger.debug("[search_async] job id: " + myjob[_index].to_s)
+      #logger.debug("[search_async] spawn handle id: " + spawn_ids[_index].handle.to_s)
+      logger.debug("[search_async] spawn id: " + spawn_ids[_index].to_s)
+      logger.debug("[search_async] index: " + _index.to_s)
       #JobQueue.update_thread_id(myjob[_index], spawn_ids[_index].handle)
 
     
@@ -576,7 +576,7 @@ class MetaSearchNew < ActionController::Base
       logger.error("Find all : #{e.backtrace.join("\n")}")
     end
     
-    #logger.warn("#STAT# [RETRIEVE] SearchAsync " + sprintf( "%.2f",(Time.now().to_f - _sTime)).to_s) if LOG_STATS
+    #logger.warn("#STAT# [RETRIEVE] search_async " + sprintf( "%.2f",(Time.now().to_f - _sTime)).to_s) if LOG_STATS
     
     return myjob
   end
@@ -609,7 +609,7 @@ class MetaSearchNew < ActionController::Base
   
   # pass a list of job ids and 
   # then deal with it
-  def CheckJobStatus(_ids)
+  def check_job_status(_ids)
     objJobs = [] 
     i = 0
     case _ids.class.to_s

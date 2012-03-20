@@ -1,0 +1,67 @@
+fr: 
+    application_title: "Profils simples"
+    welcome_message: "Salut %{user}"
+    current_status: "Votre status est %{status}"
+    status_update: "Statut mis à jour"
+    status_no_edit: "Impossible de modifier un statut"
+    logged_out: "Déconnecté"
+    logged_in_label: "Connecté"
+    require_login_label: "Cette page nécessite une authentification"
+    display_label: "Consulter"
+    back_label: "Retour"
+    edit_label: "Modifier"
+    disconnect: "(Déconnexion)"
+    locations: Localisation des utilisateurs
+    full_address: Habite
+    edit_profile: Modifier le profil
+    last_statuses: "5 derniers statuts"
+    status_messages: "%{message} posté le %{date}"
+    errors_saving_model: "%{message} : le %{model} n'a pas pu être sauvegardé pour les raisons suivantes :"
+    error_occured: "Erreur survenue"
+    new_profile: Nouveau profil
+    view_profile: Voir le profil
+    activerecord: 
+        models: 
+            user: Utilisateur
+            profile: Profil
+            status:  Statut
+        attributes: 
+            user: 
+                email: "eMail"
+                first_name: "Prénom"
+                last_name: "Prénom"
+                last_login_at: "Dernière connexion"
+            profile:
+                image: "Photo"
+                street: "Adresse"
+                city: "Ville"
+                zipcode: "Code postal"
+                country: "Pays"
+                user: "Utilisateur"
+                status: "Statut"
+                
+    helpers:
+        label:
+            user: 
+                email: "eMail"
+                first_name: "Prénom"
+                last_name: "Nom"
+                password: "Mot de passe"
+                password_confirmation: "Vérification du mot de passe"
+            profile:
+                image: "Photo"
+                street: "Adresse"
+                city: "Ville"
+                zipcode: "Code postal"
+                country: "Pays"
+                
+            user_session: 
+                email: "eMail"
+                password: "Mot de passe"
+                remember_me: "Rester connecté"
+    will_paginate:
+        previous_label: "&#8592; Page précédente"
+        next_label: "Page suivante &#8594;"
+        page_gap: "&hellip;"
+                
+     

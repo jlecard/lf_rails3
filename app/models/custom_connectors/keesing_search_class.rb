@@ -21,6 +21,7 @@
 # Corvallis OR 97331-4501
 #
 # http://libraryfind.org
+require 'keesing'
 
 class KeesingSearchClass < ActionController::Base
   
@@ -46,7 +47,7 @@ class KeesingSearchClass < ActionController::Base
       @total_hits = browser.total
       result_list = browser.result_list
       logger.debug("[KeesingSearchClass] [SearchCollection] Search performed")
-      logger.debug("[KeesingSearchClass] [SearchCollection] Number fteched #{result_list.size}")
+      logger.debug("[KeesingSearchClass] [SearchCollection] Number fetched #{result_list.size}")
     rescue Exception => bang
       logger.debug("[KeesingSearchClass] [SearchCollection] error: " + bang.message)
       logger.debug("[KeesingSearchClass] [SearchCollection] trace:" + bang.backtrace.join("\n"))
@@ -95,8 +96,8 @@ class KeesingSearchClass < ActionController::Base
       end
       _lxml = CachedSearch.build_cache_xml(_lrecord)
       
-      if _lxml != nil: _lprint = true end
-      if _lxml == nil: _lxml = "" end
+      _lprint = true if _lxml != nil
+      _lxml = "" if _lxml == nil
       
       #============================================
       # Add this info into the cache database
@@ -206,8 +207,8 @@ class KeesingSearchClass < ActionController::Base
         _record[_x] = record
         _x = _x + 1
       rescue Exception => bang
-        logger.debug("[KeesingSearchClass][parse] parse_result error: " + bang)
-        logger.debug("[KeesingSearchClass][parse] parse_result trace: " + bang.backtrace.join("\n"))
+        logger.debug("[KeesingSearchClass][parse] parse_result error: #{bang.message}")
+        logger.debug("[KeesingSearchClass][parse] parse_result trace: #{bang.backtrace.join("\n")}" )
         next
       end
     }

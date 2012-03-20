@@ -26,7 +26,7 @@
 # = Webservice for search in Libraryfind
 # 
 # * <tt>Search</tt> is the first method to call with parameters for search. This method return a array of jobs.
-# * <tt>CheckJobStatus</tt> returns the states of jobs.
+# * <tt>check_job_status</tt> returns the states of jobs.
 # * <tt>GetJobRecord</tt> must be called when all jobs are finished for retrieved all results.
 # 
 # This methods are accessible by this url: <tt>http ://<SERVEUR>/json/<METHOD></tt>
@@ -71,7 +71,7 @@ class JsonController < JsonApplicationController
       init_search
       
       logger.debug("params : #{@sets}, #{@type}, #{@query}, #{@start}, #{@max}, #{@operator}")
-      ids = $objDispatch.SearchAsync(@sets, @type, @query, @start, @max, @operator)
+      ids = $objDispatch.search_async(@sets, @type, @query, @start, @max, @operator)
       logger.debug("#STAT# [JSON] search 1 " + sprintf( "%.2f",(Time.now().to_f - _sTime)).to_s) if LOG_STATS
       if (!ids.nil?)
         search_input = ""
@@ -145,17 +145,17 @@ class JsonController < JsonApplicationController
   end 
   
   # == Checks the status of research from jobs 
-  # <em>ex:  CheckJobStatus?id[]=123&id[]=124</em>
+  # <em>ex:  check_job_status?id[]=123&id[]=124</em>
   #
   # Parameters:
   # * <b>id[]</b> : array of jobs. [Integer].  
   # @return {results => array of #JobItem, error => error if error != 0, message => "error message"}
-  def CheckJobStatus
+  def check_job_status
     error = 0;
     results = nil;
     begin
       if params[:id] != nil 
-        results = $objDispatch.CheckJobStatus(params[:id])
+        results = $objDispatch.check_job_status(params[:id])
       end
     rescue => e
       error = -1;
@@ -184,7 +184,7 @@ class JsonController < JsonApplicationController
   # * <tt>with_facette</tt> : get facets. Integer (0 or 1) 
   # * <tt>stop_search</tt> : kill all jobs not finished. Integer (0 or 1) 
   # * <tt>temps</tt> : get records before this time. String. timestamp
-  # * <tt>with_total_hits</tt> : return last result of #CheckJobStatus method. Integer (0 or 1)
+  # * <tt>with_total_hits</tt> : return last result of #check_job_status method. Integer (0 or 1)
   #
   # === If notice_display == 0
   # @return {:results => {:results => #Record array, :facette => array facetes, :page => page list, total_hits => Array of #JobItem, hits => Integer}, error => error if error != 0, message => "error message"}
@@ -262,7 +262,7 @@ class JsonController < JsonApplicationController
       stop_search = extract_param("stop_search",Integer,0);
       if (stop_search == 1) 
         for job in id
-          item=$objDispatch.CheckJobStatus(job)
+          item=$objDispatch.check_job_status(job)
           if item.status==JOB_WAITING
             if item.thread_id.to_i>0
               begin

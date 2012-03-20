@@ -44,7 +44,7 @@ class JobQueue < ActiveRecord::Base
   
   def self.update_job (id, rec_id, database_name = '', mystatus = 0, hits = 0, total_hits = 0, myerror = "")
     begin
-      objRecord = JobQueue.find(id, :lock=>true)
+      objRecord = JobQueue.find(id ,:lock=>false)
       logger.info("[job_queue][update_job] JOBRECORD ID #{id} : #{objRecord}")
       logger.info("[job_queue][update_job] rec_id : #{rec_id}")
       return nil if objRecord == nil
@@ -69,7 +69,7 @@ class JobQueue < ActiveRecord::Base
   
   def self.update_thread_id (id, thread_id) 
     begin
-      objRecord = JobQueue.find(id, :lock=>false)
+      objRecord = JobQueue.find(id,:lock=>true)
       return nil if objRecord == nil
       objRecord.thread_id = thread_id
       objRecord.save
@@ -80,8 +80,12 @@ class JobQueue < ActiveRecord::Base
   end
   
   def self.create_job(collection_id, rec_id = -1, thread_id = -1, database_name="nil", mystatus=1, myhits = 0, myerror="")
-    objSearch = JobQueue.new("collection_id" => collection_id, "records_id" => rec_id, "thread_id" => thread_id,  "database_name" => database_name, "status" => mystatus, "hits" => myhits, "error" => myerror,"timestamp"=>DateTime::now().to_f)
-    objSearch.save
+    objSearch = JobQueue.new(:collection_id => collection_id, :records_id => rec_id, 
+                            :thread_id => thread_id,  :database_name => database_name, 
+                            :status => mystatus, :hits => myhits, :error => myerror,
+                            :timestamp=>DateTime::now().to_f)
+    objSearch.save(:lock=>true)
+    logger.info("JOB CREATED WITH ID #{objSearch.id}")
     return objSearch.id
   end
   

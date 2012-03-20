@@ -44,7 +44,7 @@ class QueryController < ApplicationController
 
    def search_async(_sets, _qtype, _arg, _start, _max)
        meta = MetaSearch.new()
-       return meta.SearchAsync(_sets, _qtype, _arg, _start, _max)
+       return meta.search_async(_sets, _qtype, _arg, _start, _max)
    end
 
    def simple_search_async(_sets, _qtype, _arg, _start, _max)
@@ -53,7 +53,7 @@ class QueryController < ApplicationController
        _lqtype[0] = _qtype
        _larg = Array.new
        _larg[0] = _arg
-       return meta.SearchAsync(_sets, _lqtype, _larg, _start, _max)
+       return meta.search_async(_sets, _lqtype, _larg, _start, _max)
    end
    
    def search(_sets, _qtype, _arg, _start, _max)
@@ -83,12 +83,12 @@ class QueryController < ApplicationController
 
    def check_job_status(_id)
      meta = MetaSearch.new()
-     return meta.CheckJobStatus(_id)
+     return meta.check_job_status(_id)
    end
 
    def check_jobs_status(_ids)
      meta = MetaSearch.new()
-     return meta.CheckJobStatus(_ids)
+     return meta.check_job_status(_ids)
    end
 
    def kill_thread(_job_id, _thread_id)

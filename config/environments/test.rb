@@ -6,7 +6,7 @@
 # and recreated between test runs.  Don't rely on the data there!
 LfRails3::Application.configure do
   config.cache_classes = false
-  
+  config.reconnect = true
   # Log error messages when you accidentally call methods on nil.
   config.whiny_nils = true
   
@@ -18,5 +18,6 @@ LfRails3::Application.configure do
   # The :test delivery method accumulates sent emails in the
   # ActionMailer::Base.deliveries array.
   config.action_mailer.delivery_method = :test
-  
+  #config.threadsafe!
+  #config.allow_concurrency = true
 end

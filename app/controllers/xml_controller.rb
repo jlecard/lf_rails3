@@ -46,7 +46,7 @@ end
 
 def ping_for_results(_sets=@sets, _type=@type, _query=@query, _start=@start, _max=@max)  
 
-    ids = $objDispatch.SearchAsync(_sets, _type, _query, _start, _max) 
+    ids = $objDispatch.search_async(_sets, _type, _query, _start, _max) 
     done=0
     completed=[]
     errors=[]
@@ -54,7 +54,7 @@ def ping_for_results(_sets=@sets, _type=@type, _query=@query, _start=@start, _ma
     while done==0
       count=0
       for id in ids
-        item=$objDispatch.CheckJobStatus(id)
+        item=$objDispatch.check_job_status(id)
         count=count+1
         if item.status==1
           done=0

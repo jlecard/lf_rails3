@@ -57,8 +57,8 @@ module LfRails3
 
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
-    ActiveSupport::Dependencies.autoload_paths << "
-    #{RAILS_ROOT}/app/models/custom_connectors"
+    config.autoload_paths  += %W(#{Rails.root}/app/models/custom_connectors)
+    
 
     class CustomLogger < Logger
       def format_message(severity, timestamp, progname, msg)
@@ -67,23 +67,17 @@ module LfRails3
     end
     require File.join(File.dirname(__FILE__), 'boot')
      if ENV['ENV_HARVESTING'] == 'true'
-       logfile = "#{RAILS_ROOT}/log/harvesting_log.txt"
+       logfile = "#{Rails.root}/log/harvesting_log.txt"
      elsif ENV['ENV_STATS'] == 'true'
-       logfile = "#{RAILS_ROOT}/log/stats_log.txt"
+       logfile = "#{Rails.root}/log/stats_log.txt"
      else
        logfile = "#{Rails.root}/log/#{ENV['RAILS_ENV']}.log"
      end
-    config.logger = CustomLogger.new(logfile, 20, 1048576)
+    logger = CustomLogger.new(logfile, 20, 1048576)
+    config.logger = logger
+    config.active_record.logger = logger
+    #config.active_record.logger.level = Logger::WARN
     config.log_level = :debug
-    # config.logger.level = :debug
-# 
-    # if ENV['ENV_HARVESTING'] == 'true'
-      # config.logger.level = Logger::INFO
-    # elsif ENV['ENV_STATS'] == 'true'
-      # config.logger.level = Logger::INFO
-    # else
-      # config.logger.level = Logger::DEBUG
-    # end
 
   end
 end

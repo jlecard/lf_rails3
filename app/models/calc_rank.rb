@@ -122,8 +122,10 @@ class CalcRank
         if _t[_x].strip.size>0
           if is_stop(_t[_x])!=true
             if _lsubject.downcase.index(_t[_x])
-              if _x==0 : _trank = _trank + 25
-              else _trank = _trank + 20
+              if _x==0 
+                _trank = _trank + 25
+              else 
+                _trank = _trank + 20
               end
             end
           end
@@ -145,8 +147,10 @@ class CalcRank
           if _t[_x].strip.size>0
             if is_stop(_t[_x])!=true
               if _rec['creator'].downcase.index(_t[_x])
-                if _x==0 : _trank = _trank + 25
-                else _trank = _trank + 20
+                if _x==0 
+                  _trank = _trank + 25
+                else 
+                  _trank = _trank + 20
                 end
               end
             end
@@ -178,8 +182,10 @@ class CalcRank
         if is_stop(_t[_x])!=true
           if _rec['title']!=nil
             if _rec['title'].index(_t[_x])
-              if _x==0  : _trank = _trank + 50
-              else  _trank = _trank + 25
+              if _x==0  
+                _trank = _trank + 50
+              else  
+                _trank = _trank + 25
               end
             end
           end
@@ -260,7 +266,7 @@ class CalcRank
     _pos = -1
     while _x==nil
       _x = _haystack.index(_x,_needle)
-      if _x!=nil : _pos = _x end
+      _pos = _x if _x!=nil 
     end
     return _pos
   end
@@ -270,7 +276,7 @@ class CalcRank
   end
 
   def strip_ex(_string, _pat, _rep)
-    if _string == nil: return "" end
+    return "" if _string == nil
     _string = _string.gsub(/\W+$/,_rep)
     _string = _string.gsub(/^\W+/,_rep)
     return _string

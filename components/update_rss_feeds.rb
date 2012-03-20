@@ -97,7 +97,7 @@ class UpdateRssFeeds
       while ((completed.length.to_i+errors.length.to_i)<nbJobs) && ((Time.now-start_time)<RSS_TIMEOUT)
         sleep(0.5)
         
-        items=ms.CheckJobStatus(ids)
+        items=ms.check_job_status(ids)
         if !items.nil?
           items.each do |item|
             id = item.job_id

@@ -47,7 +47,7 @@ class RssController < ApplicationController
       options = {"isbn" => 0, "news" => 0, "query" => "", "sort" => "harvesting_date"}
        
       # request
-      ids = $objDispatch.SearchAsync(@sets, @type, @query, @start, @max, @operator, options)
+      ids = $objDispatch.search_async(@sets, @type, @query, @start, @max, @operator, options)
       logger.info("[RssController] jobs : #{ids.inspect}")
       
       #loop through the ids to get info
@@ -60,7 +60,7 @@ class RssController < ApplicationController
         logger.fatal("[RssController] jobs : #{ids.inspect}")
         logger.fatal("[RssController] completed : #{completed.inspect}")
         logger.fatal("[RssController] errors : #{errors.inspect}")
-        items=$objDispatch.CheckJobStatus(ids)
+        items=$objDispatch.check_job_status(ids)
         if !items.nil?
           items.each do |item|
             id = item.job_id
@@ -135,7 +135,7 @@ class RssController < ApplicationController
     
         # request
         CachedRecord.deleteCachedRecord(@query,@type,rss_feed.collection_group)
-        ids = $objDispatch.SearchAsync(@sets, @type, @query, @start, @max, @operator,options)
+        ids = $objDispatch.search_async(@sets, @type, @query, @start, @max, @operator,options)
       else
         ids=[]
       end
@@ -149,7 +149,7 @@ class RssController < ApplicationController
         logger.info("[RssController] jobs : #{ids.inspect}")
         logger.info("[RssController] completed : #{completed.inspect}")
         logger.info("[RssController] errors : #{errors.inspect}")
-        items=$objDispatch.CheckJobStatus(ids)
+        items=$objDispatch.check_job_status(ids)
         if !items.nil?
           items.each do |item|
             id = item.job_id

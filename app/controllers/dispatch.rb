@@ -41,29 +41,29 @@ class Dispatch  < DispatchAbstract
   
   
   
-  def SimpleSearch(ssets, qtype, sarg, sstart, smax) 
+  def simple_search(ssets, qtype, sarg, sstart, smax) 
     objdriver = driver;
-    objdriver.send :SimpleSearch, ssets, qtype, sarg, sstart, smax
+    objdriver.send :simple_search, ssets, qtype, sarg, sstart, smax
   end 
   
-  def SimpleSearchAsync(ssets, qtype, sarg, sstart, smax)
+  def simple_search_async(ssets, qtype, sarg, sstart, smax)
     objdriver = driver;
-    objdriver.send :SimpleSearchAsync, ssets, qtype, sarg, sstart, smax
+    objdriver.send :simple_search_async, ssets, qtype, sarg, sstart, smax
   end
   
   
-  def SearchAsync(_sets, _qtype, _arg, _start, _max, _qoperator, options = nil, _session_id=nil, _action_type=1, _data=nil, obj_bool=true)
-    #logger.debug("[SearchAsync]")
+  def search_async(_sets, _qtype, _arg, _start, _max, _qoperator, options = nil, _session_id=nil, _action_type=1, _data=nil, obj_bool=true)
+    #logger.debug("[search_async]")
     objdriver = driver
     case objdriver.class.to_s
       when "SOAP::RPC::Driver"
       if _session_id == nil
-        objdriver.send :SearchAsync,  _sets, _qtype, _arg, _start, _max, _qoperator, options
+        objdriver.send :search_async,  _sets, _qtype, _arg, _start, _max, _qoperator, options
       else
-        objdriver.send :SearchAsync, _sets, _qtype, _arg, _start, _max, _qoperator, options, _session_id, _action_type, _data, obj_bool
+        objdriver.send :search_async, _sets, _qtype, _arg, _start, _max, _qoperator, options, _session_id, _action_type, _data, obj_bool
       end
     else
-      objdriver.send :SearchAsync, _sets, _qtype, _arg, _start, _max, _qoperator, options, _session_id, _action_type, _data, obj_bool
+      objdriver.send :search_async, _sets, _qtype, _arg, _start, _max, _qoperator, options, _session_id, _action_type, _data, obj_bool
     end
   end
   
@@ -107,14 +107,14 @@ class Dispatch  < DispatchAbstract
     objdriver.send :getCollectionAuthenticationInfo, collection_id
   end
     
-  def CheckJobStatus(sids)
+  def check_job_status(sids)
     objdriver = driver
-    objdriver.send :CheckJobStatus, sids
+    objdriver.send :check_job_status, sids
   end
   
   def CheckJobsStatus(sids)
     objdriver = driver
-    objdriver.send :CheckJobStatus, sids
+    objdriver.send :check_job_status, sids
   end
   
   def GetJobRecord(jid, _max)
