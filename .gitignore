@@ -5,3 +5,4 @@ components/publie_net
 components/synonymes
 log
 .project
+config/database.yml
