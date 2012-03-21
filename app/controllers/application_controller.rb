@@ -10,7 +10,6 @@ class ApplicationController < ActionController::Base
   end
   
   if LIBRARYFIND_WSDL == 1 || LIBRARYFIND_IS_SERVER==true
-    require 'actionwebservice'
     require 'record_set'
     require 'rubygems'
     if ::PARSER_TYPE == 'libxml'
