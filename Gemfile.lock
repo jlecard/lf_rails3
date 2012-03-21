@@ -254,6 +254,7 @@ DEPENDENCIES
   soap4r-ruby1.9
   solr-ruby
   spawn!
+  sprockets
   sru
   uglifier (>= 1.0.3)
   webrat

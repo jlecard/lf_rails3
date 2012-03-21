@@ -62,50 +62,23 @@ class RecordController < ApplicationController
   
   def set_query_and_operator
     
-   @values=params[:query]
    @tab_query_string = []
-   if @values!=nil
-     @query_string=@values
-      if @query_string != nil && @query_string != ""
-        @query_string = @query_string.gsub(/(.*),,,(.*)/, '\1|LF_DEL|\2')
-        @query_string = @query_string.gsub(/(.*),,,(.*)/, '\1|LF_DEL|\2')
-        @tab_query_string = @query_string.split("|LF_DEL|")
-      end
-   else
-     if @query != nil
-       @query_string=@query*', '.to_s
-       @tab_query_string=@query;
-     end
+   if params[:string1]
+     @tab_query_string << params[:string1] if !params[:string1].blank? 
+     @tab_query_string << params[:string2] if !params[:string2].blank?
+     @tab_query_string << params[:string3] if !params[:string3].blank?
    end
-   if (params[:query] != nil && params[:string1] != nil)
-     @tab_query_string << params[:string1] || "";
-     @tab_query_string << params[:string2] || "";
-     @tab_query_string << params[:string3] || "";
-   end
-   @sets ||= params[:sets]
-   
-    @field_filter = Array.new(3)
-    if ((params[:query] != nil) && (params[:type] != nil))
-      @field_filter = params[:type].split(",")
-    elsif ((params[:query] != nil) && (params[:field_filter1] != nil))
-      @field_filter[0] = params[:field_filter1] || ""
-      @field_filter[1] = params[:field_filter2] || ""
-      @field_filter[2] = params[:field_filter3] || ""
-    end
-    @operator = Array.new(2);
-    @operator[0] = "AND";
-    @operator[1] = "AND";
-    if ((!params[:query].nil?) && (!params[:operator1].nil?))
-      @operator[0] = params[:operator1];
-    end
-    if ((!params[:query].nil?) && (!params[:operator2].nil?))
-      @operator[1] = params[:operator2];
-    end
-    if ((!params[:query].nil?) && (!params[:operator].nil?))
-      @operator[0] = params[:operator].split(',')[0] || 'AND';
-      @operator[1] = params[:operator].split(',')[1] || 'AND';
-    end
-        
+   @sets ||= params[:query_sets]
+    @field_filter = []   
+    @field_filter[0] = params[:field_filter1] if !params[:field_filter1].blank? 
+    @field_filter[1] = params[:field_filter2] if !params[:field_filter2].blank? 
+    @field_filter[2] = params[:field_filter3] if !params[:field_filter3].blank?
+    
+    
+   @operator = []
+   @operator[0] =  params[:operator1].blank? ? "AND" : params[:operator1] 
+   @operator[1] =  params[:operator2].blank? ? "AND" : params[:operator2]
+    
   end
   
   def advanced_search

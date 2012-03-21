@@ -27,6 +27,7 @@ gem 'savon'
 gem 'mechanize'
 gem 'htmlentities'
 gem 'database_cleaner'
+gem 'sprockets'
 #gem 'actionwebservice', :git=>'https://github.com/jlecard/actionwebservice.git'
 gem 'soap4r-ruby1.9' #, :git=>'https://github.com/felipec/soap4r.git'
 

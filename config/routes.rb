@@ -37,7 +37,7 @@ LfRails3::Application.routes.draw do
   match 'record/retrieve', :to=>'record#retrieve'
   match '', :to=>"record#search"
   match 'admin', :controller => 'admin/dashboard', :action => 'index'
-  match 'javascripts', :to=>'public/javascripts'
+
   resources :admin
   namespace :admin do 
      resources :manage_roles

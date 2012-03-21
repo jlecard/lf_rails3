@@ -69,7 +69,7 @@ describe RecordController do
     
     it "call with query, type, group param, set, should render 
               a search page and assign varialbes" do
-      get :search, {:idTab=>3,:query=>"String to search",:type=>"keyword",:sets=>"g3"}, 
+      get :search, {:idTab=>3,:string1=>"String to search",:field_filter1=>"keyword",:query_sets=>"g3"}, 
                     valid_session
                     
       assigns[:idTab].should == 3.to_s
@@ -97,7 +97,7 @@ describe RecordController do
   describe "GET retrieve with query parameters " do
     it "when only query parameter set, should set default search values
         and render the accueil template page because no group in db" do
-      get :retrieve, {:query=>"test"}, valid_session
+      get :retrieve, {:string1=>"test"}, valid_session
       assigns[:sets].should == ""
       assigns[:idTab].should == 1
       assigns[:type][0].should == "keyword"
@@ -109,8 +109,8 @@ describe RecordController do
         and render the intermediate template page, one default collection group is 
         created but with no assiociated collections" do
       cg = Factory(:collection_group)  
-      get :retrieve, {:query=>"test"}, valid_session
-      assigns[:sets].should == "g#{cg.id}"
+      get :retrieve, {:string1=>"test"}, valid_session
+      assigns[:sets].should == "g1"
       assigns[:idTab].should == 1
       assigns[:type][0].should == "keyword"
       assigns[:jobs].should be_a(Array)

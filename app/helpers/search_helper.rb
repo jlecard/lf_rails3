@@ -130,45 +130,33 @@ module SearchHelper
   
     @query=[]
     @operator=[]
-    if !params[:query].nil?
-      q  = params[:query]
-      t  = params[:type]
-      q1 = params[:string1]
-      q2 = params[:string2]
-      q3 = params[:string3]
-      t1 = params[:field_filter1]
-      t2 = params[:field_filter2]
-      t3 = params[:field_filter3]
-      o1 = params[:operator1]
-      o2 = params[:operator2]
-      
-      if !q1.blank?
-        @query << q1
-        @type << t1
+    
+    q1 = params[:string1]
+    q2 = params[:string2]
+    q3 = params[:string3]
+    t1 = params[:field_filter1]
+    t2 = params[:field_filter2]
+    t3 = params[:field_filter3]
+    o1 = params[:operator1]
+    o2 = params[:operator2]
+    
+    if !q1.blank?
+      @query << q1
+      @type << t1
+    end
+    if !q2.blank?
+      if !@query.empty? 
+        @operator << o1
       end
-      if !q2.blank?
-        if !@query.empty? 
-          @operator << o1
-        end
-        @query  << q2
-        @type << t2
+      @query  << q2
+      @type << t2
+    end
+    if !q3.blank?
+      if !@query.empty? 
+        @operator << o2
       end
-      if !q3.blank?
-        if !@query.empty? 
-          @operator << o2
-        end
-        @query  << q3
-        @type << t3
-      end
-      if !q.blank?
-        if @query.empty?
-          @operator << "AND"
-        end
-          
-        @query << q
-        @type << t
-
-      end
+      @query  << q3
+      @type << t3
     end
     # set default value if empty
     @type ||= ["keyword"]

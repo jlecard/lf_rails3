@@ -26,12 +26,12 @@
                     <div class="fieldSearchFirst">
                         <!-- Field Search one -->
 						<% if @IsMobile == true %>
-                        	<%=text_field_tag "query[string1]", @tab_query_string[0], {:size=>"10", :id=>"label"} %>
+                        	<%=text_field_tag "string1", @tab_query_string[0], {:size=>"10", :id=>"label"} %>
                         <% else %>
-                        	<%=text_field_tag "query[string1]", @tab_query_string[0], {:id=>"autoCompleteTextField_a", :size=>"22", :class=>'textField'} %>
+                        	<%=text_field_tag "string1", @tab_query_string[0], {:id=>"autoCompleteTextField_a", :size=>"22", :class=>'textField'} %>
                         <% end %>
                         <%= translate('FROM') %>
-                      	<select name="query[@field_filter1]" title="<%=translate('FROM_TITLE')%>">
+                      	<select name="field_filter1" title="<%=translate('FROM_TITLE')%>">
                         	<% @filter_tab.each do |filter|%>
 								<% if (@field_filter[0] == filter.field_filter)%>
 									<option selected value="<%=fitler.field_filter%>" title="<%=filter.description%>" ><%= filter.label %></option>
@@ -45,7 +45,7 @@
                             <% if (@groups_tab!= nil) %>
 	                            <% @groups_tab.each do | elem | %>
 	                            	<% value = 'g' + elem.id.to_s
-		                            if (('g' + elem.id.to_s == params[:sets]) || ('g' + elem.id.to_s == params[:query_sets])) %>
+		                            if (('g' + elem.id.to_s == params[:query_sets])  %>
 		                            	<option selected value='g<%= elem.id %>' title='<%= elem.description %>' onclick='this.parentNode.title="<%=elem.description%>"' ><%= elem.full_name %></option>
 		                            <% else %>
 		                            	<option  onclick='this.parentNode.title="<%=elem.description%>"' value='g<%= elem.id %>' title='<%= elem.description %>'><%= elem.full_name %></option>
@@ -59,7 +59,7 @@
                     <div id="advanceForm" class="advanceForm">
                         <div class="fieldSearch">
                             <!-- Field Search two -->
-                            <select class="andOr" name="query[operator1]">
+                            <select class="andOr" name="operator1">
                             	<% if (@operator[0] == "AND")%>
                                 	<option selected='true' value="AND">ET</option>
 								<% else%>
@@ -76,9 +76,9 @@
 									<option value="NOT">SAUF</option>
 								<% end %>
                             </select>
-                            <%=text_field_tag "query[string2]", @tab_query_string[1], {:id=>"autoCompleteTextField_b", :size=>"22", :class=>'textField'} %>
+                            <%=text_field_tag "string2", @tab_query_string[1], {:id=>"autoCompleteTextField_b", :size=>"22", :class=>'textField'} %>
                             <%= translate('FROM') %>
-                            <select name="query[@field_filter2]" title="<%= translate('FROM_TITLE') %>">
+                            <select name="field_filter2" title="<%= translate('FROM_TITLE') %>">
                                 <% @filter_tab.each do | filter |
 								if (@field_filter[1] == filter.field_filter)%>
 									<option selected value="<%=filter.field_filter%>" title="<%=filter.description%>" ><%= filter.label %></option>
@@ -91,7 +91,7 @@
                         <!-- End of span FieldSearch -->
                         <div class="fieldSearch">
                             <!-- Field Search three -->
-                            <select class="andOr" name="query[operator2]">
+                            <select class="andOr" name="operator2">
                                 <% if (@operator[1] == "AND")%>
                                 	<option selected='true' value="AND">ET</option>
 								<% else%>
@@ -108,9 +108,9 @@
 									<option value="NOT">SAUF</option>
 								<% end %>
                             </select>
-                            <%=text_field_tag "query[string3]", @tab_query_string[2], {:id=>"autoCompleteTextFieldc", :size=>"22", :class=>'textField'} %>
+                            <%=text_field_tag "string3", @tab_query_string[2], {:id=>"autoCompleteTextFieldc", :size=>"22", :class=>'textField'} %>
                             <%= translate('FROM') %>
-                            <select name="query[@field_filter3]" title="<%= translate('FROM_TITLE') %>">
+                            <select name="field_filter3" title="<%= translate('FROM_TITLE') %>">
                                 <% @filter_tab.each do | elem |
 								if (@field_filter[2] == elem.field_filter)%>
 									<option selected value="<%=elem.field_filter%>" title="<%=elem.description%>" ><%= elem.label %></option>
@@ -211,9 +211,9 @@
     			initAutoComplete(1);
     			initAutoComplete(2);
     			initAutoComplete(3);
-				setTitle("query[@field_filter1]");
-				setTitle("query[@field_filter2]");
-				setTitle("query[@field_filter3]");
+				setTitle("field_filter1");
+				setTitle("field_filter2");
+				setTitle("field_filter3");
 				setTitle("query_sets");
             </script>
         </div>

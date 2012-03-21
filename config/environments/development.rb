@@ -22,7 +22,7 @@ LfRails3::Application.configure do
   
   config.action_mailer.perform_deliveries = true
   config.action_mailer.delivery_method = :smtp
-  config.assets.enabled = false
+  config.assets.enabled = true
   # config.assets.compress = false
-  # config.assets.debug = true
+  config.assets.debug = true
 end
