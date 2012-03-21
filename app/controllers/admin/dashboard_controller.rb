@@ -35,10 +35,9 @@ class Admin::DashboardController < ApplicationController
   def initialize
     logger.info("ADMIN CONTROLLER")
     super
-    seek = SearchController.new();
-    @filter_tab = SearchTabFilter.load_filter;
-    @linkMenu = seek.load_menu;
-    @groups_tab = SearchTab.load_groups;
+    @filter_tab = SearchTabFilter.load_filter
+    @linkMenu = SearchTab.load_menu
+    @groups_tab = SearchTab.load_groups
   end
   
   def index

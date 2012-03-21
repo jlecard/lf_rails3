@@ -10,7 +10,7 @@
   <div id="error"><%= flash[:error] %></div>
     <br/>
   <% end %>
-        <% form_for :user, :url => { :action=>'login'} do |f| %>
+        <%= form_for :user, :url => '/user/login' do |f| %>
         
         <p>
             <label for="name"><%=translate('NAME')%></label>

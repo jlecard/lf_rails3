@@ -30,8 +30,8 @@ class UserController < ApplicationController
 
  def index
     render :action => 'login'
-  end
-
+ end
+ alias :show :index
 
   def login
     session[:user_id] = nil

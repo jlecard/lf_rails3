@@ -22,11 +22,6 @@
 #
 # http://libraryfind.org
 
-class GroupList < ActionWebService::Struct
-    member :id, :string
-    member :name, :string
-    member :description, :string
-    member :member_ids, [:string]
-    member :member_names, [:string]
-    member :id_tab, :string
+class GroupList
+    attr_accessor :id, :name, :description, :member_ids, :member_names, :id_tab
 end
