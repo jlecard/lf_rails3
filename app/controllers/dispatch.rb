@@ -117,14 +117,14 @@ class Dispatch  < DispatchAbstract
     objdriver.send :check_job_status, sids
   end
   
-  def GetJobRecord(jid, _max)
+  def get_job_record(jid, _max)
     objdriver = driver
-    objdriver.send :GetJobRecord, jid, _max
+    objdriver.send :get_job_record, jid, _max
   end
   
-  def GetJobsRecords(jids, _max, temps)
+  def get_jobs_records(jids, _max, temps)
     objdriver = driver
-    objdriver.send :GetJobsRecords, jids, _max, temps
+    objdriver.send :get_jobs_records, jids, _max, temps
   end
   
   def KillThread(jobid, threadid)

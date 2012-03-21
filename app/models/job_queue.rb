@@ -115,7 +115,7 @@ class JobQueue < ActiveRecord::Base
     end
   end
   
-  def self.getJobInTemps(id, temps)
+  def self.getJobInTemps(id, temps = nil)
     if (id.nil?)
       logger.error("[JobQueue][getJobInTemps] id is nil")
       return nil

@@ -268,7 +268,7 @@ class RecordController < ApplicationController
         end
       end
     end
-    return ($objDispatch.GetJobsRecords(completed, _max, 4))
+    return ($objDispatch.get_jobs_records(completed, _max, 4))
   end
   
   def collect_database_errors
@@ -288,7 +288,7 @@ class RecordController < ApplicationController
   end
   
   def find_search_results
-    @results	= $objDispatch.GetJobsRecords(@completed, max_search_results)
+    @results	= $objDispatch.get_jobs_records(@completed, max_search_results)
     if @results.nil? or @results.empty?
       flash.now[:notice]=translate('NO_RESULTS')
     else
@@ -389,7 +389,7 @@ class RecordController < ApplicationController
    
     init_defaults
     @jobs=[]
-    @results= $objDispatch.GetJobsRecords(@completed, @max, nil)
+    @results= $objDispatch.get_jobs_records(@completed, @max, nil)
     logger.debug("#STAT# [FINISH_SEARCH] get_records " + sprintf( "%.2f",(Time.now().to_f - _sTime)).to_s) if LOG_STATS
     set_query_values
     init_search

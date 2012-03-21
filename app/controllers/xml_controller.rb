@@ -70,7 +70,7 @@ def ping_for_results(_sets=@sets, _type=@type, _query=@query, _start=@start, _ma
         end
       end
     end
-    return $objDispatch.GetJobsRecords(completed, _max)
+    return $objDispatch.get_jobs_records(completed, _max)
 end
 
 #Initialize all global variables.

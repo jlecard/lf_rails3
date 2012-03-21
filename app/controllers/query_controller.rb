@@ -98,12 +98,12 @@ class QueryController < ApplicationController
 
    def get_job_record(_id, _max)
      meta = MetaSearch.new()
-     return meta.GetJobRecord(_id, _max)
+     return meta.get_job_record(_id, _max)
    end
 
    def get_jobs_records(_ids, _max)
      meta = MetaSearch.new()
-     return meta.GetJobsRecords(_ids, _max)
+     return meta.get_jobs_records(_ids, _max)
    end
   
 end

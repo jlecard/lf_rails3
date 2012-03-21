@@ -1,12 +1,14 @@
 # $Id: routes.rb 493 2006-10-25 15:57:02Z dchud $
 
 LfRails3::Application.routes.draw do 
+  
   namespace :admin do resources :search_tab_filters end
 
   resources :search_tab_filters
 
   resources :records
-
+  
+  
   # The priority is based upon order of creation: first created -> highest priority.
   
   # Sample of regular route:

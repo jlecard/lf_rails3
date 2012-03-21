@@ -8,6 +8,6 @@ describe SearchTabFilter do
     filters.should be_a(Array)
     filters.should_not be_empty
     filters[0].should be_a(SearchTabFilter)
-    filters[0].field_filter.should == "title"
+    filters[0].field_filter.should == "title_filter"
   end
 end

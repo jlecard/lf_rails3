@@ -32,24 +32,22 @@ describe MetaSearch do
       CACHE.delete("e272d21eefd9fafee3590d3ed1e0f14deb16d63d")
     end
     
-    # it "should trigger a search and return a valid job_id" do
-      # m = MetaSearch.new
-      # jobs = m.search_async("g#{@assoc.collection_group_id}", ["keyword"], ["Johnson"], 0, 10, ["AND"])
-      # jobs.should_not be_nil
-      # created_jobs = JobQueue.find(jobs) 
-      # created_jobs.count.should == 1
-      # created_jobs[0].should be_a(JobQueue)
-      # created_jobs[0].status.should == 1 
-      # # delete saved memcached key
-      # CACHE.delete("de379b4865d0543e7c0b017db58c9d528bbf7133_#{@collection.id}")
-    # end
+    it "should trigger a search and return a valid job_id" do
+      m = MetaSearch.new
+      jobs = m.search_async("g#{@assoc.collection_group_id}", ["keyword"], ["Johnson"], 0, 10, ["AND"])
+      jobs.should_not be_nil
+      created_jobs = JobQueue.find(jobs) 
+      created_jobs.count.should == 1
+      created_jobs[0].should be_a(JobQueue)
+      created_jobs[0].status.should == 1 
+    end
+    
     it "should trigger a search and return a valid job_id, search should return results" do
       m = MetaSearch.new
-      @collection.url = "http://www.keesings.com"
-      @collection.save
       jobs = m.search_async("g#{@assoc.collection_group_id}", ["keyword"], ["Johnson"], 0, 10, ["AND"])
       jobs.should_not be_nil
       jobstatus = m.check_job_status(jobs)[0]
+      # wait for results
       Timeout::timeout(30) do
         break if jobstatus.status == 0 
         while (jobstatus.status == JOB_WAITING) do
@@ -58,9 +56,20 @@ describe MetaSearch do
           sleep(1)
         end
       end 
+      # test results (job)
       jobstatus.status.should == 0
       jobstatus.hits.should == 10
-
+      jobstatus.total_hits.should == 10
+      # retrieve results (! results titles subject to change)
+      rec = m.get_jobs_records(jobs, 10)
+      rec.should_not be_nil
+      rec.size.should == 10
+      first = rec[0]
+      first.should be_a(Record)
+      first.title.should == "Assassination of President Kennedy (United States)"
+      last = rec[9]
+      last.should be_a(Record)
+      last.title.should match(/^The Dean of Canterbury's Allegations/)
     end
   end
 

@@ -81,7 +81,7 @@ class RssController < ApplicationController
           end
         end
       end
-      @records =  $objDispatch.GetJobsRecords(completed, @max, nil)
+      @records =  $objDispatch.get_jobs_records(completed, @max, nil)
       
       if @records.nil?
         @records = []
@@ -170,7 +170,7 @@ class RssController < ApplicationController
           end
         end
       end
-      @records =  $objDispatch.GetJobsRecords(completed, @max, nil)
+      @records =  $objDispatch.get_jobs_records(completed, @max, nil)
       
       if @records.nil?
         @records = []

@@ -661,11 +661,11 @@ class MetaSearchNew < ActionController::Base
   
   # Retrieve the individual job records.
   # this basically is just an extraction from the cache
-  def GetJobRecord(job_id,  _max)
-    logger.debug("[meta_search][GetJobRecord] get job record id #{job_id}")
+  def get_job_record(job_id,  _max)
+    logger.debug("[meta_search][get_job_record] get job record id #{job_id}")
     _objRec = RecordSet.new
     _xml = JobQueue.retrieve_metadata(job_id, _max, '', @infos_user)
-    logger.debug("[meta_search][GetJobRecord] cached search xml return object = #{_xml.class}")
+    logger.debug("[meta_search][get_job_record] cached search xml return object = #{_xml.class}")
     if _xml != nil
       if _xml.status == LIBRARYFIND_CACHE_OK
         # Note:  it should never happen that .data is nil
@@ -705,7 +705,7 @@ class MetaSearchNew < ActionController::Base
     end
   end 
   
-  def GetJobsRecords(job_ids, _max, temps)
+  def get_jobs_records(job_ids, _max, temps)
     
     _sTime = Time.now().to_f
     _recs = Array.new();
@@ -729,12 +729,12 @@ class MetaSearchNew < ActionController::Base
         begin
           tmp = CACHE.get(cle)
           if !tmp.blank?
-            logger.info("[GetJobsRecords] got data from cache with key: #{cle}")
+            logger.info("[get_jobs_records] got data from cache with key: #{cle}")
             _recs.concat(tmp)
             next
           end
         rescue => e
-          logger.error("[GetJobsRecords] Error when get memcache: #{cle}: #{e.message}")
+          logger.error("[get_jobs_records] Error when get memcache: #{cle}: #{e.message}")
         end
       end
       
@@ -750,11 +750,11 @@ class MetaSearchNew < ActionController::Base
             
             if _tmp != nil
               if CACHE_ACTIVATE
-                logger.info("[GetJobsRecords] Set in cache with key = #{cle}")
+                logger.info("[get_jobs_records] Set in cache with key = #{cle}")
                 begin
                   CACHE.set(cle, _tmp, 3600.seconds)
                 rescue
-                  logger.error("[GetJobsRecords] error when writing in cache")
+                  logger.error("[get_jobs_records] error when writing in cache")
                 end
               end
               _recs.concat(_tmp)

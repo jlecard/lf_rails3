@@ -22,6 +22,6 @@ describe SearchTab do
     groups = SearchTab.load_groups(id)
     groups.should be_a(Array)
     groups.count.should == 1
-    groups[0].name.should == "TEST"
+    groups[0].name.should == "TEST_COLLECTION_GROUP"
   end
 end

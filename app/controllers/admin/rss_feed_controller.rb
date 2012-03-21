@@ -139,7 +139,7 @@ class Admin::RssFeedController < ApplicationController
           end
         end
       end
-      @records =  $objDispatch.GetJobsRecords(completed, @max)
+      @records =  $objDispatch.get_jobs_records(completed, @max)
       
       if @records.nil?
         @records = []

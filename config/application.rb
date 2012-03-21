@@ -76,6 +76,7 @@ module LfRails3
     logger = CustomLogger.new(logfile, 20, 1048576)
     config.logger = logger
     config.active_record.logger = logger
+    ActiveResource::Base.logger = logger
     #config.active_record.logger.level = Logger::WARN
     config.log_level = :debug
 

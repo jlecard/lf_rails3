@@ -1,3 +1,4 @@
+#encoding: utf-8
 # LibraryFind - Quality find done better.
 # Copyright (C) 2007 Oregon State University
 #
@@ -22,12 +23,9 @@
 #
 # http://libraryfind.org
 
-class ApiResource < ActiveResource::Base
-  self.site = 'http://test.host:3000'
-end
+class Record
 
-class Record < ApiResource
-  cattr_accessor :rank, :hits, :ptitle, :title, :atitle, :isbn, :issn, :abstract,
+  attr_accessor :rank, :hits, :ptitle, :title, :atitle, :isbn, :issn, :abstract,
                  :date, :author, :link, :id, :source, :doi, :openurl, :direct_url,
                  :thumbnail_url, :static_url, :subject, :publisher, :relation,
                  :contributor, :coverage, :rights, :callnum, :material_type, :format,
@@ -35,86 +33,59 @@ class Record < ApiResource
                  :holdings, :raw_citation, :oclc_num, :theme, :category, :lang, :identifier,
                  :availability,:is_available, :examplaires,:notice,:actions_allowed,
                  :date_end_new,:date_indexed,:indice,:issue_title, :conservation
-                 
-  self.element_name = "record"
-  self.rank = ""
-  self.hits = ""
-  self.ptitle = ""
-  self.title = ""
-  self.atitle = ""
-  self.isbn = ""
-  self.issn = ""
-  self.abstract = ""
-  self.date = ""
-  self.author = ""
-  self.link = ""
-  self.id = ""
-  self.source = ""
-  self.doi = ""
-  self.openurl = ""
-  self.direct_url = ""
-  self.thumbnail_url = ""
-  self.static_url = ""
-  self.subject = ""
-  self.publisher = ""
-  self.relation = ""
-  self.contributor = ""
-  self.coverage = ""
-  self.rights = ""
-  self.callnum = ""
-  self.material_type = ""
-  self.format = ""
-  self.vendor_name = ""
-  self.vendor_url = ""
-  self.volume = ""
-  self.issue = ""
-  self.number = ""
-  self.page = ""
-  self.start = ""
-  self.end = ""
-  self.holdings = ""
-  self.raw_citation = ""
-  self.oclc_num = ""
-  self.theme = ""
-  self.category = ""
-  self.lang = ""
-  self.identifier = ""
-  self.availability = ""
-  self.is_available = true
-  self.examplaires = []
-  self.notice = nil
-  self.actions_allowed = true
-  self.date_end_new = ""
-  self.date_indexed = ""
-  self.indice = ""
-  self.issue_title = ""
-  self.conservation = ""
-
-
-  def self.normalizeLang(lang)
-    if lang == nil
-      return ""
-    end
-    case lang.downcase
-    when "fr"
-      return "Francais"
-    when "fr_fr"
-      return "Francais"
-    when "en"
-      return "Anglais"
-    when "en_en"
-      return "Anglais"
-    when "en_us"
-      return "Anglais"
-    when "us"
-      return "Anglais"
-    when "us_us"
-      return "Anglais"
-    when "fre"
-      return "Francais"
-    else
-    return ""
-    end
+  
+  def initialize
+    @rank = ""
+    @hits = ""
+    @ptitle = ""
+    @title = ""
+    @atitle = ""
+    @isbn = ""
+    @issn = ""
+    @abstract = ""
+    @date = ""
+    @author = ""
+    @link = ""
+    @id = ""
+    @source = ""
+    @doi = ""
+    @openurl = ""
+    @direct_url = ""
+    @thumbnail_url = ""
+    @static_url = ""
+    @subject = ""
+    @publisher = ""
+    @relation = ""
+    @contributor = ""
+    @coverage = ""
+    @rights = ""
+    @callnum = ""
+    @material_type = ""
+    @format = ""
+    @vendor_name = ""
+    @vendor_url = ""
+    @volume = ""
+    @issue = ""
+    @number = ""
+    @page = ""
+    @start = ""
+    @end = ""
+    @holdings = ""
+    @raw_citation = ""
+    @oclc_num = ""
+    @theme = ""
+    @category = ""
+    @lang = ""
+    @identifier = ""
+    @availability = ""
+    @is_available = true
+    @examplaires = []
+    @notice = nil
+    @actions_allowed = true
+    @date_end_new = ""
+    @date_indexed = ""
+    @indice = ""
+    @issue_title = ""
+    @conservation = ""
   end
-
 end

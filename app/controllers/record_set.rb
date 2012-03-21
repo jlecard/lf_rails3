@@ -56,13 +56,13 @@ class RecordSet  < ActionController::Base
   
   #unpack the cache xml
   def unpack_cache(_recs, _max)
-    Record.new()
     _sTime = Time.now().to_f
     tab = []
     begin
       Yajl::Parser.parse(_recs,{:check_utf8=>false}).each do |h|
         r = Record.new()
         h.each do |k,v|
+          logger.debug("UNPACKING #{k}=#{v}")
           eval("r.#{k} = v")
         end
         tab << r

@@ -27,7 +27,7 @@
 # 
 # * <tt>Search</tt> is the first method to call with parameters for search. This method return a array of jobs.
 # * <tt>check_job_status</tt> returns the states of jobs.
-# * <tt>GetJobRecord</tt> must be called when all jobs are finished for retrieved all results.
+# * <tt>get_job_record</tt> must be called when all jobs are finished for retrieved all results.
 # 
 # This methods are accessible by this url: <tt>http ://<SERVEUR>/json/<METHOD></tt>
 #
@@ -168,7 +168,7 @@ class JsonController < JsonApplicationController
   end
   
   # == Get records by jobs id with pagination
-  # <em>ex: GetJobRecord?id[]=12&id[]=122&page_size=10&page=1</em>
+  # <em>ex: get_job_record?id[]=12&id[]=122&page_size=10&page=1</em>
   #
   # Parameters:
   # * <b>id[]</b> : array of jobs. [Integer].  
@@ -191,7 +191,7 @@ class JsonController < JsonApplicationController
   # 
   # === If notice_display == 1
   # @return {:results => {:current => #Record,:next => has a next record Integer (0 or 1), :previous => has a previous record Integer (0 or 1), :facette => array facetes, :total_hits => Array of JobItem, hits => Integer}, error => error if error != 0, message => "error message"}
-  def GetJobRecord
+  def get_job_record
     error   = 0;
     message = ""
     _sTime = Time.now().to_f
@@ -225,7 +225,7 @@ class JsonController < JsonApplicationController
             @page_size  = NB_RESULTAT_MAX
           end
         rescue => e
-          logger.warn("[JsonController][GetJobRecord] for page_size => #{e.message} #{e.backtrace.join('\n')}")
+          logger.warn("[JsonController][get_job_record] for page_size => #{e.message} #{e.backtrace.join('\n')}")
         end
       end
       
@@ -238,7 +238,7 @@ class JsonController < JsonApplicationController
         rescue => e
           group = -1
           message = e.message
-          logger.warn("[JsonController][GetJobRecord] for group => #{e.message}")
+          logger.warn("[JsonController][get_job_record] for group => #{e.message}")
         end
       end
       
@@ -247,15 +247,15 @@ class JsonController < JsonApplicationController
       
       # get filter values
       @filter     = params[:filter].blank? ? nil : params[:filter].collect! {|items| items.split('#')}
-      logger.debug("[JsonController][GetJobRecord] params: #{id.inspect} max: #{max} group: #{group} sort:#{@sort_value} filter:#{@filter.inspect} page_size:#{@page_size}") 
-      logger.debug("[JsonController][GetJobRecord] options: with_total_hits: #{with_total_hits} with_facette:#{with_facette}")
-      logger.debug("#STAT# [JSON] GetJobRecord 1 " + sprintf( "%.2f",(Time.now().to_f - _sTime)).to_s) if LOG_STATS
+      logger.debug("[JsonController][get_job_record] params: #{id.inspect} max: #{max} group: #{group} sort:#{@sort_value} filter:#{@filter.inspect} page_size:#{@page_size}") 
+      logger.debug("[JsonController][get_job_record] options: with_total_hits: #{with_total_hits} with_facette:#{with_facette}")
+      logger.debug("#STAT# [JSON] get_job_record 1 " + sprintf( "%.2f",(Time.now().to_f - _sTime)).to_s) if LOG_STATS
       
       if (log_action == "facette")
         begin
           $objAccountDispatch.addLogFacette(@filter);
         rescue => e
-          logger.error("[JsonController][GetJobRecord] addLogFacette error : #{e.message}")
+          logger.error("[JsonController][get_job_record] addLogFacette error : #{e.message}")
         end
       end
       # stop search
@@ -266,10 +266,10 @@ class JsonController < JsonApplicationController
           if item.status==JOB_WAITING
             if item.thread_id.to_i>0
               begin
-                logger.debug("[JsonController][GetJobRecord] KillThread for job: #{job}")
+                logger.debug("[JsonController][get_job_record] KillThread for job: #{job}")
                 $objDispatch.KillThread(job, item.thread_id)
               rescue Exception => e
-                logger.error("[JsonController][GetJobRecord] error : #{e.message}")
+                logger.error("[JsonController][get_job_record] error : #{e.message}")
               end
             end
           end
@@ -279,12 +279,12 @@ class JsonController < JsonApplicationController
       temps = extract_param("temps",String,nil);
       
       # get results
-      logger.debug("[JsonController][GetJobRecord] search results for jobs: #{id} and max:#{max}")
-      @results    = $objDispatch.GetJobsRecords(id, max, temps);
-      logger.debug("[JsonController][GetJobRecord] after getJobsRecords size of Result : " + @results.length.to_s);
-      logger.debug("#STAT# [JSON] GetJobRecord 2 " + sprintf( "%.2f",(Time.now().to_f - _sTime)).to_s) if LOG_STATS
+      logger.debug("[JsonController][get_job_record] search results for jobs: #{id} and max:#{max}")
+      @results    = $objDispatch.get_jobs_records(id, max, temps);
+      logger.debug("[JsonController][get_job_record] after getJobsRecords size of Result : " + @results.length.to_s);
+      logger.debug("#STAT# [JSON] get_job_record 2 " + sprintf( "%.2f",(Time.now().to_f - _sTime)).to_s) if LOG_STATS
       
-      logger.debug("[JsonController][GetJobRecord] filter : #{@filter.inspect}") 
+      logger.debug("[JsonController][get_job_record] filter : #{@filter.inspect}") 
       
       # set params to recordController
       t.build_results(@results, @sort_value, @filter);
@@ -297,15 +297,15 @@ class JsonController < JsonApplicationController
       if !@results.nil?
         hits = @results.size
       end
-      logger.debug("[JsonController][GetJobRecord] after sort size of Result : " + @results.length.to_s);
-      logger.debug("#STAT# [JSON] GetJobRecord 3 " + sprintf( "%.2f",(Time.now().to_f - _sTime)).to_s) if LOG_STATS
+      logger.debug("[JsonController][get_job_record] after sort size of Result : " + @results.length.to_s);
+      logger.debug("#STAT# [JSON] get_job_record 3 " + sprintf( "%.2f",(Time.now().to_f - _sTime)).to_s) if LOG_STATS
       
       # get total_hits
       @total_hits = nil
       if with_total_hits
         @totalhits = $objDispatch.GetTotalHitsByJobs(id);
       end
-      logger.debug("#STAT# [JSON] GetJobRecord 4 " + sprintf( "%.2f",(Time.now().to_f - _sTime)).to_s) if LOG_STATS
+      logger.debug("#STAT# [JSON] get_job_record 4 " + sprintf( "%.2f",(Time.now().to_f - _sTime)).to_s) if LOG_STATS
       # generate page_list
       lf_paginate;
       
@@ -314,7 +314,7 @@ class JsonController < JsonApplicationController
       if with_facette
         facette = t.build_databases_subjects_authors();
       end
-      logger.debug("#STAT# [JSON] GetJobRecord 5 " + sprintf( "%.2f",(Time.now().to_f - _sTime)).to_s) if LOG_STATS
+      logger.debug("#STAT# [JSON] get_job_record 5 " + sprintf( "%.2f",(Time.now().to_f - _sTime)).to_s) if LOG_STATS
       
       notice_display = params[:notice_display].blank? ? "0": params[:notice_display];
       
@@ -339,22 +339,22 @@ class JsonController < JsonApplicationController
           :error    => error, 
           :message => message
         })
-        logger.debug("#STAT# [JSON] GetJobRecord by notice " + sprintf( "%.2f",(Time.now().to_f - _sTime)).to_s) if LOG_STATS
+        logger.debug("#STAT# [JSON] get_job_record by notice " + sprintf( "%.2f",(Time.now().to_f - _sTime)).to_s) if LOG_STATS
         return ;
       else
         # tab id
         # merge record with notice
-        logger.debug("[JsonController][GetJobRecord] @results_page : #{@results}") 
+        logger.debug("[JsonController][get_job_record] @results_page : #{@results}") 
         @results_page = $objCommunityDispatch.mergeRecordWithNotices(@results_page)
-        logger.debug("[JsonController][GetJobRecord] @results_page after : #{@results_page}") 
+        logger.debug("[JsonController][get_job_record] @results_page after : #{@results_page}") 
       end
     rescue => e
       error = -1;
       message = e.message
-      logger.error("[Json Controller][GetJobRecord] Error : " + e.message);
-      logger.error("[Json Controller][GetJobRecord] " + e.backtrace.join("\n"))
+      logger.error("[Json Controller][get_job_record] Error : " + e.message);
+      logger.error("[Json Controller][get_job_record] " + e.backtrace.join("\n"))
     end 
-    logger.debug("#STAT# [JSON] GetJobRecord 6 " + sprintf( "%.2f",(Time.now().to_f - _sTime)).to_s) if LOG_STATS
+    logger.debug("#STAT# [JSON] get_job_record 6 " + sprintf( "%.2f",(Time.now().to_f - _sTime)).to_s) if LOG_STATS
     
     render  :text => Yajl::Encoder.encode({ :results    => { :results => @results_page,
         :facette    => facette,
@@ -365,7 +365,7 @@ class JsonController < JsonApplicationController
       :error      => error,
       :message      => message
     })
-    logger.debug("#STAT# [JSON] GetJobRecord " + sprintf( "%.2f",(Time.now().to_f - _sTime)).to_s) if LOG_STATS
+    logger.debug("#STAT# [JSON] get_job_record " + sprintf( "%.2f",(Time.now().to_f - _sTime)).to_s) if LOG_STATS
     return ;
   end	
   
