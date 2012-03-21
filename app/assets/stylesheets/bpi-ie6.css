@@ -1,0 +1,171 @@
+@charset "UTF-8";
+/* CSS Document */
+/* specifique IE6 */
+
+/* règle problème d'espacement et de caractère caché dans les listes */
+ul, li{zoom : 1;}
+
+/* @group Layout */
+
+div#wrapper{
+	margin-left:12px; 
+}
+
+/* @end */
+
+
+
+/* @group Header */
+
+div.header{
+	/* vert par default ? */
+	background-image: url(/images/logo-bpi-ie6-vert.gif);
+}
+
+/* @group Recherche */
+div.recherche{
+	margin-bottom: 11px;
+}
+
+div.recherche #recherche{
+			border: none;
+			border-color:#fff;
+			margin:11px 26px 0 12px;
+			line-height: 90%;
+			width:250px;
+		}
+		
+		div.recherche .type-image-ie6{
+			position: relative;
+			top: 8px;
+		}
+
+
+/* @end */
+
+/* @group Items Menu Niv1 */
+
+	div.menu-niv1 li a{
+		margin-left: 2px;
+		width: 104px;
+	}
+
+
+/* @end */
+			
+
+/* @end */
+
+
+/* @group Content */
+/* @group Column Right */
+div#right-column .article{
+	border-right: 1px solid #fff;
+}
+/* @end */
+/* @end */
+
+
+/****** ACCUEIL ******/
+/*** Spécifique Accueil ***/
+
+/* @group Column Left */
+
+
+/* @group Newslettre */
+div.newslettre .type-text-ie6{
+	width: 148px;
+}
+/* @end */
+
+
+/* @end */
+
+/* @group Column Content */
+
+/* @group Titre */
+	div#content-column .acc-title p {
+		margin-bottom: 0;
+	}
+/* @end */
+div#content-column .article{
+	overflow: visible;
+	height: 60px;
+}
+
+/* @end */
+/***** Pages ******/
+/* @group Annuaire */
+
+/**** PAGES ****/
+div#right-column .focus.annuaire label{
+	display: inline-block;
+}
+	div#right-column .focus.annuaire label .label-ie6{
+		display: none;
+	}
+div#right-column .focus.annuaire .input134{
+		position: relative;
+		float: none;
+		top: -4px;
+	}
+
+/* @end */
+
+/**** Gestion des couleurs *****/
+
+/* @group Couleurs */
+
+/* @group Vert (par default) */
+
+/* vert par default ? */
+	div.menu-niv1 li a.accueil{
+		width: 64px;
+		background-image : url(/images/header-menu-accueil-vert.gif);
+	}
+	div.menu-niv1 li a.decouvrir{background-image:url(/images/header-menu-decouvrir-vert.gif);}
+	div.menu-niv1 li a.recherche{background-image:url(/images/header-menu-recherche-vert.gif);}
+	div.menu-niv1 li a.pratique{background-image:url(/images/header-menu-pratique-vert.gif);}
+	div.menu-niv1 li a.labpi{background-image:url(/images/header-menu-labpi-vert.gif);}
+	div.menu-niv1 li a.saisoncult{background-image:url(/images/header-menu-saisoncult-vert.gif);}
+	div.menu-niv1 li a.biblionum{background-image:url(/images/header-menu-biblionum-vert.gif);}
+	div.menu-niv1 li a.pro{background-image:url(/images/header-menu-pro-vert.gif);}
+	div.menu-niv1 li a.journaliste{background-image:url(/images/header-menu-journaliste-vert.gif);}
+
+/* @end */
+
+/* @group Orange */
+
+.orange div.header{
+	background-image: url(/images/logo-bpi-ie6-orange.gif);
+}
+
+/* vert par default ? */
+.orange div.menu-niv1 li a.accueil{	background-image : url(/images/header-menu-accueil-orange.gif);}
+.orange div.menu-niv1 li a.decouvrir{background-image:url(/images/header-menu-decouvrir-orange.gif);}
+.orange div.menu-niv1 li a.recherche{background-image:url(/images/header-menu-recherche-orange.gif);}
+.orange div.menu-niv1 li a.pratique{background-image:url(/images/header-menu-pratique-orange.gif);}
+.orange div.menu-niv1 li a.labpi{background-image:url(/images/header-menu-labpi-orange.gif);}
+.orange div.menu-niv1 li a.saisoncult{background-image:url(/images/header-menu-saisoncult-orange.gif);}
+.orange div.menu-niv1 li a.biblionum{background-image:url(/images/header-menu-biblionum-orange.gif);}
+.orange div.menu-niv1 li a.pro{background-image:url(/images/header-menu-pro-orange.gif);}
+.orange div.menu-niv1 li a.journaliste{background-image:url(/images/header-menu-journaliste-orange.gif);}
+
+/* @end */
+
+.mauve div.header{
+	background-image: url(/images/logo-bpi-ie6-mauve.gif);
+}
+
+/* vert par default ? */
+.mauve div.menu-niv1 li a.accueil{	background-image : url(/images/header-menu-accueil-mauve.gif);}
+.mauve div.menu-niv1 li a.decouvrir{background-image:url(/images/header-menu-decouvrir-mauve.gif);}
+.mauve div.menu-niv1 li a.recherche{background-image:url(/images/header-menu-recherche-mauve.gif);}
+.mauve div.menu-niv1 li a.pratique{background-image:url(/images/header-menu-pratique-mauve.gif);}
+.mauve div.menu-niv1 li a.labpi{background-image:url(/images/header-menu-labpi-mauve.gif);}
+.mauve div.menu-niv1 li a.saisoncult{background-image:url(/images/header-menu-saisoncult-mauve.gif);}
+.mauve div.menu-niv1 li a.biblionum{background-image:url(/images/header-menu-biblionum-mauve.gif);}
+.mauve div.menu-niv1 li a.pro{background-image:url(/images/header-menu-pro-mauve.gif);}
+.mauve div.menu-niv1 li a.journaliste{background-image:url(/images/header-menu-journaliste-mauve.gif);}
+
+/* @end */

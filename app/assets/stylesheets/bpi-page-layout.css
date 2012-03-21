@@ -1,0 +1,1061 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* @group Styles Ã©crasÃ©s du layout gÃ©nÃ©ral */
+
+
+/* @group Bdx Images */
+.bdx-images{
+	background : url(../img/bdx-images-page.jpg) repeat-x 0 0;
+}
+
+
+/* @end */
+	
+
+
+/* @end */
+
+/* @group Breadcrump */
+.breadcrumb{
+		padding:0;
+		font-size: 1.2em;
+		color: #808080;
+		margin: 0 0 16px 14.5em;
+		_margin: 0 0 16px 13em;
+		width : 500px;
+}
+	.breadcrumb a{
+		color: #808080;
+		text-decoration: underline;
+		text-align: left;
+	}
+		.breadcrumb a:hover{
+		}
+	.breadcrumb a.home{
+		font-weight: bold;
+	}
+
+/* @end */
+
+/* @group Content */
+
+/* @group Column Left */
+
+.left-column{
+	/*background : url(../img/page-rub-decouvrir.gif) no-repeat 0 0;
+	padding: 53px 0 0 0;*/
+}
+/* @group Titrage Colonne */
+.left-column p.bloc-title {
+		font-size: 2.4em;
+		color: #555;
+		margin:4px 0 7px;
+		line-height: 80%;
+	}
+	.left-column .bloc-subtitle{
+		font-size: 67%;
+	}
+
+/* @end */
+
+/* @group SubMenu */
+.left-column .submenu{
+	
+}	
+	.left-column ul.submenu li{
+	  color : #888888;
+		font-size: 1.4em;
+		line-height: 1.2em;
+		margin: 8px 0;
+	}
+		.left-column .submenu li a{
+			color: #888;
+			text-decoration: none;
+		}
+			.left-column .submenu li a:hover{
+				text-decoration: underline;
+			}
+	.left-column .submenu li.select{
+	  color : #000;
+		font-weight: bold;
+		text-indent: 18px;
+		background : url(../img/...) no-repeat 0 0;
+
+	}
+		.left-column .submenu ul{
+			margin:8px 0;			
+		}
+		.left-column .submenu ul li{
+			font-size: 0.8em;
+			font-weight: normal;
+			margin:0 0 2px 18px;
+			padding-bottom: 2px;
+			text-indent: 0;				
+		}
+			.left-column .submenu ul li.select{
+				font-weight: bold;	
+				text-indent: 0;
+				background-image: none;	
+			}
+	
+/* @end */
+
+/* @group RSS */
+.left-column .rss{
+	border-top: 1px solid #e6e6e6;
+	margin-top: 28px;
+}	
+.left-column .rss p{
+	margin: 8px 0;
+}	
+	.left-column .rss img{
+		margin: 0px 5px 0 0;
+		vertical-align: bottom;
+	}	
+	.left-column .rss a{
+		font-size: 1.29em;
+		color: #444;
+		text-decoration: none;
+	}	
+		.left-column .rss a:hover span {
+			text-decoration: underline;
+			color: black;
+		}	
+
+
+/* @end */
+
+
+
+
+
+/* @end */
+
+
+/* @group Separateur */
+
+.content-column .separateur{
+	border-top: 1px solid #DDDCDD;
+	width: 100%;
+	padding-top: 16px;
+	margin-top: 16px ;
+}
+	.content-column .separateur.footer{
+		padding-top: 8px ;
+	}
+
+/* @end */
+/* @group Titrage */
+
+.content-column h1{
+	padding: 0px 0 10px 0;
+	font-size: 2.6em;
+	border-bottom: 1px solid red;
+	color: #666;
+	font-weight: bold;
+	line-height: 1.0em;
+}
+	.content-column h2{
+		padding: 6px 0 6px 0;
+		font-size: 1.8em;
+		border-bottom: 1px solid red;
+		border-top: 1px solid red;
+	}
+
+/* @end */
+
+/* @group Date & Lien Imprim / Envoyer page */
+
+.content-column .date{
+	font-size: 1.1em;
+	text-align: right;
+	color: #999;
+	margin-top: 2px;
+}
+	.content-column .date a{
+		text-decoration: none;
+	}
+		.content-column .date a:hover{
+			text-decoration: underline;
+		}
+
+/* @end */
+
+.content-column p{
+	font-size: 1.2em;
+	line-height: 1.2em;
+	margin: 0 0;
+}
+.content-column p.chapo{
+	padding:0px 0;
+	font-size: 1.6em;
+	line-height: 1.3em;
+}
+
+.content-column img.article-illustration{
+	float: left;
+	margin: 4px 0 4px 0;
+	padding-right: 20px;
+	background-color: #fff;
+}
+
+/* @group Liste */
+
+.content-column ul{
+	list-style-image: none;
+	list-style-position: outside;
+	padding: 0.8em 0;
+	font-size: 1.2em;
+	line-height: 1.6em;
+}
+	.content-column li{
+		margin: 0.4em 0;
+		background: url(../img/...) no-repeat 0 0px;
+		padding-left: 20px;
+	}
+
+
+
+
+/* @end */
+
+
+
+/* @group Autres */
+
+.picto-fleche{
+	background-repeat: no-repeat;
+}
+
+/* @end */
+
+/* @end */
+
+/* @group Column Right */
+.right-column{
+	/*background : url(../img/page-column-right-title-focus.gif) no-repeat 0 0;*/
+	/*padding: 8px 0 0 0;*/
+}
+/* @group Titrage Colonne */
+
+.right-column .focus p.bloc-title {
+		font-size: 2.1em;
+		color: #666;
+		margin:0px 0 2px;
+	}
+	.right-column .bloc-subtitle{
+		font-size: 67%;
+	}
+
+/* @end */
+/* @group Focus */
+.right-column .focus{
+	min-height: 200px;
+	padding: 8px 18px 18px;
+}
+	.right-column .focus h1{
+		font-size: 1.6em;
+	}
+		.right-column .focus h2{
+			margin:2px 0 0 0;
+			line-height: normal;
+		}
+	.right-column .focus p{
+		font-size: 1.2em;
+		color: #333;
+	}
+
+/* @group Focus illustration */
+
+.right-column .focus .focus-illustration{
+	border-bottom: 1px solid red;
+	padding: 10px 0 12px;
+	margin-bottom: 16px;
+}
+	.right-column .focus-illustration img{
+		border: 1px solid #666;
+	}
+
+/* @end */
+
+/* @group Liste */
+
+.right-column .focus ul{
+	margin: 10px 0;
+	font-size: 1.2em;
+}
+	.right-column .focus li{
+		border-bottom: 1px solid red;
+		padding: 10px 0 10px 0;
+		background: url() no-repeat 0 10px;
+	}
+		.right-column .focus li a{
+			color: #000;
+			text-decoration: none;
+		}
+			.right-column .focus li a:hover{
+				text-decoration: underline;
+			}
+	.right-column .focus li.last{
+		border: none;
+	}
+	
+	/*******/
+	.right-column .focus li.lecture{
+		padding-left: 20px;
+	}
+
+/* @end */
+
+
+	
+/* @end */
+	
+/* @group Articles */
+
+.right-column .article{
+	font-size: 1.2em;
+	border-bottom: 1px solid red;
+	margin-top: 20px;
+}
+	.right-column .article img{
+		float: left;
+	}
+	.right-column .article p{
+		margin-left:60px ;
+	}
+	.right-column .article a{
+		color: #333 ;
+		text-decoration: none;
+	}
+		.right-column .article a:hover{
+			text-decoration: underline;
+		}
+	
+	.right-column .article .categorie{
+		font-size: 90%;
+		font-weight: bold;
+		text-transform: uppercase;
+		display: block;
+	}
+	.right-column .article .title{
+		font-weight: bold;
+	}
+
+
+
+/* @end */
+
+/* @end */
+
+
+
+/* @end */
+/*********/
+
+/* @group PAGE Sitemap */
+.left-column p.sitemap{
+	font-size: 1.5em;
+	line-height: 1.6em;
+	margin: 70px 5px 40px 0;
+	font-weight: normal;
+}
+
+.sitemap .line{
+	overflow: hidden;
+}
+.content-column .sitemap ul{
+	font-size: 1.6em;
+	display: block;
+	width: 142px;
+	float: left;
+	padding: 0 15px 0 20px;
+	margin: 20px 0 30px 0;
+	background: url(../img/...) no-repeat 0 0;
+	line-height: normal;
+}
+	
+.content-column .sitemap ul li.rub{
+	font-size: 100%;
+	margin: 0 0 0 0px;
+	background: url(../img/...) no-repeat 0 0;
+	line-height: normal;
+}
+	.content-column .sitemap ul li.rub a{
+		text-decoration: none;
+	}
+		.content-column .sitemap ul li.rub a:hover{
+			text-decoration: underline;
+		}
+
+.content-column .sitemap ul li{
+	font-size: 75%;	
+	background-image: none;
+	margin: 9px 0 0 0; 
+	padding-left: 0;
+}
+	.content-column .sitemap ul li a{
+		color: #333;
+		text-decoration: none;
+		padding-left: 0;
+		background-image: none;
+	}
+
+
+
+/* @end */
+
+/* @group Pages BDD */
+
+/* @group Oriente Express */
+.content-column .metro, .content-column .bus{
+	background: url(../img/picto-metro.gif) no-repeat 0 0;
+	padding:3px 0 0 30px;
+	margin-top: 4px;
+}
+	.content-column .bus{
+		background: url(../img/picto-bus.gif) no-repeat 0 0;
+
+	}
+/* @end */
+
+/* @group Signets */
+
+/* @group Signets Acceuil */
+.content-column   .signets-acc{
+	border-top: 1px solid #DDDCDD;
+	padding: 20px 0;
+	margin: 10px 0;
+}
+.content-column   .signets-acc .col{
+	min-height: 200px;
+	width: 255px;
+	float: left;
+}
+	.content-column   .signets-acc .col-marge{
+		margin: 0 20px 0 0;
+	}
+
+.content-column   .signets-acc table{
+	background:#F6F6F6 url(../img/...) no-repeat 5px 3px;
+	font-size: 1.2em;
+	margin-bottom: 10px;
+}
+	.content-column   .signets-acc table td{
+		border: none;
+	}
+		.content-column   .signets-acc table td.c1{
+			width: 20px;
+		}
+
+
+/* @end */
+
+/* @group Form */
+
+.content-column  .formulaire .form-signets ul{	
+	padding: 0;
+	margin: 0;
+}
+.content-column  .formulaire .form-signets li{
+	display: inline;	
+	padding: 0;
+	background:none;
+}
+	.content-column  .formulaire .form-signets li img{
+		/*vertical-align: text-bottom;*/
+		margin:0 18px 0 4px;
+	}
+	
+/* @end */
+/* @group RÃ©sultat */
+.content-column   .signets-result li{
+	padding: 0 0 10px 0;
+	margin-bottom: 18px;
+	font-size: 0.834em;
+	border-bottom: 1px solid #DDDCDD;
+}
+	.content-column   .signets-result li.last{
+		border: 0;
+		margin: 0;
+	}
+	.content-column   .signets-result li a{
+		padding-left: 20px;
+		font-size: 1.6em;
+	}
+.content-column .signets-result li p{
+	margin: 6px 0;
+}
+	.content-column .signets-result li p a{
+		font-size: 1.0em;
+		padding-left: 0;
+	}
+/* @end */
+
+/* @end */
+
+/* @group Formulaires */
+.content-column .formulaire{
+	
+}
+	.content-column form {
+		font-size: 1.2em;
+	}
+		.content-column form p{
+			font-size: 0.96em;
+		}
+
+.content-column .formulaire label{
+	font-weight: bold;
+	color: #4D4D4D;
+}
+
+.content-column .formulaire .input160{
+	width: 160px;
+}
+.content-column .formulaire .input315{
+	width: 315px;
+}
+
+.content-column .formulaire .note{
+	color: #999;
+}
+
+.content-column  .formulaire input[type=image]{
+		vertical-align: top;
+}
+
+/* @end */
+
+/* @group Resultats */
+
+
+
+/* @group Pager */
+.content-column .pager{
+	border-top: 1px solid red;
+	border-bottom: 1px solid red;
+	font-size: 1.0em;
+}
+	.content-column .pager.signets{
+		border-top: 0;
+	}
+	.content-column .pager.signets-bottom{
+		border-bottom: 0;
+	}
+.content-column .pager p{
+	margin: 6px 0;
+}
+.content-column .pager ul{
+	text-align: right;
+	margin: 4px 0;
+	padding: 2px 0;
+	font-size: 1.1em;
+	position: relative;
+	margin-top: -28px;
+}
+	.content-column .pager ul li{
+		display: inline;
+		background-image: none;
+		/*border-right:1px solid #e4dbca;*/
+		padding: 0 2px 0 2px;
+	}
+		.content-column .pager ul li.last{
+			border: none;
+		}
+	.content-column .pager-bottom{
+		border-top: 1px solid #e4dbca;
+		margin: 0;
+	}
+
+
+/* @end */
+/* @group EntÃªte */
+
+.content-column .entete{
+	font-size: 1.2em;
+}
+	.content-column .entete a{
+		text-decoration: none;
+	}
+		.content-column .entete a:hover{
+			text-decoration: underline;
+		}
+		
+.content-column .entete a.picto-before2{
+	display: block;
+	margin: -20px 0 0 auto;
+	text-align: right;
+	width: 120px;
+}
+
+.content-column .entete ul{
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+}
+	.content-column .entete li{
+		background-image: none;
+		margin: 0;
+		padding: 0;
+	}
+
+/* @end */
+.content-column .result li{
+	margin: 2px 0;
+	padding: 6px 0 6px 24px;
+	background-position: 3px 5px;
+	line-height: normal;
+}
+.content-column .result li.pair{
+	background-color: #F6F6F6;
+}
+	.content-column .result li a{
+		display: block;
+		width: 100%;
+		color: #1A1A1A;
+		text-decoration: none;
+	}
+		.content-column .result li a:hover{
+			font-weight: bold;
+		}
+		
+
+
+/* @end */
+
+/* @group Notice */
+
+/* @group Encart */
+.content-column .encart{
+	width:517px;
+	background-color: #F6F6F6;
+	font-size: 1.2em;
+	padding: 10px;
+	margin: 15px 0 25px;
+}
+	.content-column .encart p{
+		font-size: 1.0em;
+	}
+	.content-column .encart a{
+		text-decoration: none;
+	}
+		.content-column .encart a:hover{
+			text-decoration: underline;
+		}
+.content-column .encart .separateur{
+	margin: 6px 0; padding: 0;
+}
+
+.content-column .encart .panier{
+	display: block;
+	font-weight: bold;
+	background-repeat: no-repeat;
+	width: 60px;
+	text-align: right;
+	margin: -10px 0 0 auto;
+}
+/* @end */
+.content-column .catnat-description span{
+	font-size: 1.2em;
+}
+	.content-column .catnat-description h2{
+		border: none;
+		font-size: 1.6em;
+		display: inline;
+		margin: 10px 0 0 0;
+		padding-left: 20px;
+		background-repeat: no-repeat;
+		background-position: 0 6px;
+	}
+	.content-column .catnat-description .video{
+		margin-bottom: 10px;	
+	}
+
+/* @group Tableau lang-info */
+
+/* @group Focus Cat National */
+.right-column .notice-catnat{
+	padding: 0 18px 0;
+	margin-top: 180px;
+}
+
+/* @end */
+
+.content-column table.langinfos-options{
+	width:100%;
+	background-color: #F6F6F6;
+	font-size: 1.1em;
+	color: #999;
+	text-indent: 20px;
+	border-top: 4px solid  #F6F6F6;
+	border-bottom: 4px solid  #F6F6F6;
+}
+	.content-column table.langinfos-options td{
+		border: none;
+		background-color: #F6F6F6;
+		width: 175px;
+		line-height: 1.4em;
+	}
+		.content-column table.langinfos-options td.actif{
+			color: #000;
+			background:#F6F6F6 url(../img/picto-actif.gif) no-repeat 7px 7px;
+		}
+
+.content-column table.langinfos-langues{
+	width: 100%;
+	font-size: 1.1em;
+}
+	.content-column table.langinfos-langues td{
+		border: none;
+		line-height: 1.0em;
+		
+	}
+
+
+
+/* @end */
+
+/* @end */
+
+
+/* @end */
+
+/* @group Pages Saison Culturelle */
+
+/* @group Accueil */
+
+.content-column .manifestations .edito{
+	font-size: 1.3em;
+}
+.content-column .manifestations{
+	padding: 0;
+}
+	.content-column .manifestations a{
+		text-decoration: none;
+	}
+		.content-column .manifestations a:hover{
+			text-decoration: underline;
+		}
+.content-column .manifestations li{
+	background-position: 0 20px;
+}
+	.content-column .manifestations .infos-manif{
+		font-size: 0.9em;
+	}
+		
+	.content-column .manifestations .titre-manif{
+		font-weight: bold;
+		text-decoration: none;
+	}
+
+/* @end */
+
+/* @group Par dates */
+
+.content-column table.tab-dates-manif{
+	font-size: 1.2em;
+	
+}
+	.content-column .tab-dates-manif td{
+		border: none;
+		vertical-align: top;
+	}
+	.content-column .tab-dates-manif td.date-manif{
+		text-indent: 16px;
+		width: 40%;
+		background: url(../img/...) no-repeat 0 4px;
+	}
+
+/* @end */
+
+/* @group Type */
+
+.content-column .manifestations-type h2{
+	border: none;
+	margin: 0;
+	padding: 0 0 0 20px;
+	font-size: 1.6em;
+	background-repeat: no-repeat;
+	background-position: 0 0px;
+}
+.content-column .manifestations-type .item-manif{
+	margin: 6px 0 40px;
+}
+	.content-column .manifestations-type .item-manif .infos-manif{
+		text-indent: 20px;
+		display: block;
+		font-size: 1.2em;
+	}
+		.content-column .manifestations-type .item-manif img{
+			margin: 16px 0 0;
+		}
+		.content-column .manifestations-type .item-manif p{
+			margin-left: 130px;
+		}
+	.content-column .description-manif{
+		border-top: 1px solid red;
+		margin: 5px 0;
+	}
+
+/* @end */
+
+/* @group Fiche */
+
+.content-column .manifestations-fiche h2{
+	border: none;
+	margin: 0;
+	font-size: 1.6em;
+}
+	.content-column .manifestations-fiche .infos-manif{
+		font-size: 1.2em;
+	}
+	.content-column .manifestations-fiche img{
+		margin: 16px 0 0;
+	}
+	.content-column .manifestations-fiche p{
+			margin-left: 130px;
+	}
+.content-column .manifestations-fiche li{
+	padding: 8px 0 8px 24px;
+	background-position: 3px 8px;
+}
+	.content-column .manifestations-fiche li.pair{
+		background-color: #fff;
+	}
+.content-column .manifestations-fiche li table td{
+	border: none;
+	margin: 0;
+}
+	.content-column .manifestations-fiche li table img{
+		margin: 0;
+	}
+
+/* @end */
+/* @end */
+
+/* @group Pages Annuaire */
+
+/* @group index Lettres */
+
+.content-column .annuaire ul li{
+	background: none;
+	display: inline;
+	margin: 0;
+	padding-left: 9px;
+	font-weight: bold;
+}
+	.content-column .annuaire ul li a{
+		text-decoration: none;
+		font-weight: normal;
+		color: #333;
+	}
+		.content-column .annuaire ul li a:hover{
+			text-decoration: underline;
+		}
+
+/* @end */
+
+/* @group Navigation */
+.content-column .annuaire .navigation{
+	height: auto;
+	overflow: hidden;
+}
+
+.content-column .annuaire .navigation a{
+	display: block;
+	float: left;
+	width: 20px;
+	height: 16px;
+	background-repeat: no-repeat;
+}
+	.content-column .annuaire .navigation .infos{
+		float: left;
+		width: 490px;
+		text-align: center;
+		font-size: 1.2em;
+	}
+
+
+/* @end */
+
+/* @group PÃ´le */
+
+.content-column .annuaire .breadcrumb{
+	font-weight: bold;
+	margin-bottom: 25px;
+}
+	.content-column .annuaire .breadcrumb a{
+		padding-right: 20px;
+		margin-right: 6px;
+		background-position: right 0;
+		background-repeat: no-repeat;
+		/*text-decoration: none;*/
+	}
+
+/* @end */
+
+/* @group Tableau */
+
+/* @group Largeur cellules */
+
+.content-column  .annuaire table .largeur-15 {
+	width: 15%;
+}
+.content-column  .annuaire table .largeur-35 {
+	width: 35%;
+}
+.content-column  .annuaire table .largeur-33 {
+	width: 33%;
+}
+
+/* @end */
+
+.content-column .annuaire table{
+	margin: 10px 0;
+	font-size: 1.2em;
+}
+	.content-column .annuaire table a{
+		color: #333;
+		display: block;
+		font-weight: bold;
+		text-decoration: none;
+		margin: 0 0 4px 0;
+	}
+
+.content-column .annuaire table td, .content-column .annuaire table th{
+	border: none;
+	vertical-align: text-bottom;
+}
+.content-column  .annuaire table tr.ligne2 {
+	background-color:  #F8F3EF;
+}
+
+
+.content-column  .annuaire table.poles tr{
+	border-top: 1px solid white;
+}
+
+
+/* @end */
+
+/* @group Col Focus (Recherche) */
+
+.right-column .focus.annuaire{
+	margin-top: 35px;
+	min-height: 96px;
+}
+	.right-column .focus.annuaire  label{
+		display: none;
+	}
+	.right-column .focus.annuaire form{
+		margin-top: 15px;
+	}
+	.right-column .focus.annuaire .input134{
+		width: 130px;
+		float: left;
+	}
+
+
+/* @end */
+/* @end */
+
+/* @group Page Newslettre */
+.content-column .newslettre .encart{
+	padding-top: 1px;
+	padding-bottom: 15px;
+	margin-bottom: 35px;
+	font-size: 1.0em;
+}
+	.content-column .newslettre .encart h2{
+		border: none;
+		text-indent: 24px;
+		margin: 10px 0;
+		background-position: 2px 5px;
+	}
+	
+	.content-column .newslettre .desinscription{
+		margin-left: 10px;
+	}
+
+/* @group Tableau */
+.content-column  .newslettre table .largeur-35 {
+	width: 35%;
+}
+.content-column .newslettre table{
+	margin: 10px 0;
+	font-size: 1.2em;
+}
+	.content-column .newslettre table a{
+		color: #333;
+		display: block;
+		font-weight: bold;
+		text-decoration: none;
+		margin: 0 0 4px 0;
+	}
+
+.content-column .newslettre table td, .content-column .newslettre table th{
+	border: none;
+	vertical-align: text-bottom;
+}
+.content-column  .newslettre table tr.ligne2 {
+	background-color:  #F8F3EF;
+}
+
+
+.content-column .newslettre table.poles tr{
+	border-top: 1px solid white;
+}
+
+
+
+/* @end */
+
+
+
+/* @end */
+
+/* @group Page Sondages */
+.content-column .sondage .question-sondage{
+	margin-bottom: 40px;
+}
+	.content-column .sondage .question-sondage h2{
+		font-size: 1.2em;
+		font-weight: bold;
+		line-height: 1.4em;
+		border-top: none;
+	}
+	.content-column .sondage .question-sondage .btn-valider{
+		margin-top: 16px;
+	}
+	
+.content-column .sondage .encart{
+	padding-top: 1px;
+	
+}
+	.content-column .sondage .encart p{
+		margin: 10px 0 0 0;
+	}
+	.content-column .sondage .encart .barre100{
+		height: 10px;
+		width: 500px;
+		background-color: #EBEBEB;
+		/*border: 1px solid #EBEBEB;*/
+		font-weight: bold;
+	}
+	.content-column .sondage .encart .barre-resultat{
+		/* la largeur est donnÃ© dans le template par l'attribut "style" directement dans le html car sera dÃ©fini dynamiquement en javascript */
+		height: 10px;
+		background-color: red;
+		display: block;
+		overflow: hidden;
+	}
+.content-column .sondage .encart .pourcentage{
+	margin:4px 0 15px 0;
+	display: block;
+	font-weight: bold;
+}
+
+/* @end */
+

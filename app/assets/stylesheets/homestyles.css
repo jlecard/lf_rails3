@@ -1,0 +1,224 @@
+/*** fonts ***/
+a {color: #00f;}
+a:visited {color: #909;}
+h2{	margin:0;
+	font:italic	300 160% georgia,serif;
+	text-transform:lowercase; 
+	color:#504a4d;
+	border-bottom:1px solid #b3aabe;
+	padding-bottom:5px;
+	}
+.small {font-size: 85%;}
+
+/*** header ***/
+#header {background: #ce5500 url('http://osulibrary.oregsonstate.edu/images/header_bg.gif') repeat-x;}
+#header img {border: 0;}
+div#osulogo {
+overflow:hidden; 
+font-family:'Verdana', 'Arial', 'Helvetica', sans-serif; 
+height: 74px;
+min-width: 995px;
+}
+#pagetitle {
+	margin: 20px 0 0 250px; 
+	padding: 20px 0 0 0;
+	font-size: 210%;
+	vertical-align:top;
+	color: #fff; 
+	position: absolute;
+	visibility:hidden;
+	top: 5px; 
+}
+#pagetitle a {color: #fff; text-decoration: none;}	
+.smallfont {float:left;display:block; visibility:visible; width: 22px; height: 28px; background: url(http://osulibrary.oregsonstate.edu/images/a_small_underline.gif) no-repeat;position: relative;}
+.medfont { float:left;display:block; visibility:visible; width: 22px; height: 28px; background: url(http://osulibrary.oregsonstate.edu/images/images/a_med.gif) no-repeat;position: relative;}
+.largefont {float:left;display:block; visibility:visible; width: 22px; height: 28px; background: url(http://osulibrary.oregsonstate.edu/images/a_large.gif) no-repeat;position: relative;}
+
+/*** horizontal libraries bar ***/
+#librarybar {background: #736980 url(http://osulibrary.oregsonstate.edu/images/navbar.jpg) right repeat-y; position:relative; width: 100%;}
+#myaccount {padding: 4px 0px 4px 8px; background-color:#98786d; width: 183px;	}
+#myaccount a {color:#fff;	text-decoration:none;}
+#myaccount a:hover, #navmenu a:hover {color:#d3d3d3;}
+#navmenu ul {
+	position: absolute;
+	left: 200px; top: 0px;
+	overflow: visible;
+	color:#fff;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	text-align: center;
+	line-height: 1.2em;
+	} 
+#navmenu ul li {
+  	display: block;
+  	float: left;
+  	position: relative; /*** IE6 needs this to display the links ***/
+	padding: 1px 10px;
+	margin: 5px 0;
+	width: auto;  
+	border-right: 2px solid #fff;}
+#navmenu ul li.first {	margin-left: 15px; 	list-style: none;}
+#navmenu ul li.last {border-right: none;}
+#navmenu a {padding: 3px 0; color:#fff; text-decoration:none;} 
+
+/*** search ***/
+#findmenu {margin: 22px 30px 20px 35px;}
+#findmenu h2 {margin-bottom: 10px;}
+#findmenu p {margin-top: 0; margin-bottom: 0;}
+fieldset {padding: 0; margin: 0; border: 0; display:inline;}
+
+/*** tabs ***/
+.anchors {
+    list-style: none;
+    margin: 0;
+    padding: 0 0 5px 0;
+}
+.anchors:after { /* clearing without presentational markup, IE gets extra treatment, see tabs-ie.css */
+    display: block;
+    clear: both;
+    content: " ";
+}
+.anchors li {
+    float: left;
+    margin: 0 15px 0 0 ;
+	padding: 0;
+}
+.anchors a {
+	text-decoration: underline;
+}
+.anchors a:focus, .anchors a:active {
+    outline: none; /* @ Firefox 1.5, remove ugly dotted border */
+}
+.anchors .tabs-selected a, .anchors .tabs-selected a:hover  { /* @ Opera, use pseudo classes otherwise it confuses cursor... */
+    cursor: text;
+	color: #000;
+	text-decoration: none;
+	font-weight:bold;
+}
+.anchors .tabs-deselected a{cursor: pointer;}
+.anchors .tabs-deselected a:hover {color: #f60;}
+
+/*** news and events ***/
+#events {margin: 55px 30px 10px 35px;}
+#events h2 {margin-bottom: 0;}
+#events p {margin-top: 3px;}
+.newsitem {display: block; padding-bottom: 10px; clear: both;}
+.divider {display: block; clear: both; overflow:hidden; margin: 0 0 5px 0; height: 1px; background-color: #aaa; zoom: 1;}
+.newsandevents {float:left; width: 55%; clear: both; padding-bottom: 10px;}
+.hours {float:right; width: 35%;}
+.hoursheader, .closuresheader, .newstitle {font-weight: bold; font-size: 1.1em; margin-top: 5px; margin-bottom: 0; padding-bottom: 0;}
+
+/***  navigation ***/
+#browse {margin-top: 22px; padding:0;}
+.xtop {background:url(http://osulibrary.oregsonstate.edu/images/browsebkgrd.jpg) repeat-x;}
+.xb1, .xb4 {display:block; overflow:hidden; background:#fedab6;}
+.xb1 {height:1px;}
+.xb4 {border-left:1px solid #f0a152; border-right:1px solid #f0a152;}
+.xb1 {margin:0 2px; background:#f0a152;}
+.xb4 {height:1px; margin:0 1px;}
+.xboxcontent {display:block; border:0 solid #f0a152; border-width:0 1px; background:#fff;}
+.xsnazzy {background: transparent; clear:both;}
+h2#browsetitle {
+	z-index:2;
+	color:#504a4d;
+	background: #f7f5fa url(http://osulibrary.oregonstate.edu/images/browsebkgrd.jpg) repeat-x;
+	text-align:left;
+	padding-left: 12px;
+	border-bottom:none;
+	}
+div#menuswitch {text-align:left; margin: 0 0 26px 12px;	font-size: .75em;}
+.expanded {	visibility: visible; display: block;}
+.collapsed {visibility: hidden;	display: none;}
+#t_nav {line-height:normal; padding:0 0 0 3px; background-color:#f7f5fa;	}
+#t_nav a {margin-bottom: 3px; text-decoration: none; color:#644e81; font-weight:bold;}
+#t_nav a:hover {color: #F60; text-decoration: underline;}
+#t_nav div div a {margin-left: 15px; font-weight: normal; text-align:left;}
+.plus {
+font-size: 1em;
+border-bottom: 0;
+text-align:right;
+width: 8px;
+float: left;
+padding-bottom: 3px;
+padding-right: 3px;
+color: #cc5500;
+}
+.point {cursor: pointer;}
+.navigation {text-align: left; padding-bottom: 10px; clear: right;}
+.navigation a {display:block;}
+
+/***rightcolumn section ***/
+#ask {margin-bottom: 15px; margin-left: 17px; width: 250px; margin-top: 22px;}
+#ask h2, #digcollscroll h2 {margin-bottom: 0;}
+#digcollscroll {margin: 0 0 20px 17px; width: 250px;}
+#digcollscroll img {border:0;}
+#ask .right, #digcollscroll .right {float:right; margin-top: 5px;}
+#ask h2, #digcollscroll h2 {margin: 0 0 5px 0; float:left; z-index:2;}
+
+/*** digital collections scroll feature ***/
+#clanci_tjedna {clear: both; position: relative; height: 300px; width: 250px; overflow: auto; background: #fff;}
+#slider {height: 800px; /* width: (153 X cnt(.news_item)px;  */ background: #fff;}
+#slider .news_item {position: relative; width: 250px;}
+#slider .news_item img {width:250px; border-top: 1px solid #333366;border-bottom: 1px solid #333366;}
+#slider .news_item a {margin:0;}
+/***********  scroller javascript *************/
+#scroll_facility  {position:relative; clear:both; width:250px; height:344px; overflow:hidden;}
+#scroll_facility #clanci_tjedna {position:relative; top:24px; overflow:hidden;}
+#scroll_facility #clanci_tjedna #slider {position:absolute;bottom: 0;}
+#scroll_facility .news_item {height:100px; overflow:hidden;}
+/*** control styles ***/
+#scroll_left {position: absolute; display: block; width: 250px; height: 18px; cursor: pointer; outline: none; background: url(http://osulibrary.oregsonstate.edu/images/toparrow.jpg) center no-repeat; padding: 0; margin: 0;}
+#scroll_right {position: absolute; display: block; width: 250px; height: 18px; cursor: pointer; outline: none; background: url(http://osulibrary.oregsonstate.edu/images/bottomarrow.jpg) center no-repeat; z-index:9;}
+#scroll_left {top:0;}
+#scroll_right {bottom: 0;}
+#scroll_left:hover{background: url(http://osulibrary.oregsonstate.edu/images/toparrowhover.jpg) center no-repeat;}
+#scroll_right:hover {background: url(http://osulibrary.oregsonstate.edu/images/bottomarrowhover.jpg) bottom center no-repeat;}
+#scroll_left.disabled {position: absolute; display: block; width: 250px; height: 18px; margin-bottom: 8px; cursor: pointer; outline: none; background: url(http://osulibrary.oregsonstate.edu/images/toparrowdeselect.jpg) center no-repeat !important;}
+#scroll_right.disabled {position: absolute; display: block; width: 250px; height: 18px; margin-top: 8px; cursor: pointer; outline: none; background: url(http://osulibrary.oregsonstate.edu/images/bottomarrowdeselect.jpg) center no-repeat !important;}
+
+/*** see http://alistapart.com/articles/holygrail for details on layout 
+corrected for IE7 at http://www.satzansatz.de/cssd/tmp/holy4-corrected.html***/
+body {
+	margin: 0;
+	padding-left: 191px;    /* LC fullwidth */
+	padding-right: 300px;   /* RC fullwidth + CC padding */
+	min-width: 504px;       /* LC fullwidth + CC padding */
+	font-size:75%;
+	line-height:1.7em;
+	font-family: Verdana, Monaco, sans-serif;
+	background: #fff;
+	}
+#header, #footer {
+	margin-left: -191px;    /* LC fullwidth */
+	margin-right: -300px;   /* RC fullwidth + CC padding */
+	}
+.column {position: relative; float: left;}
+#center {width: 100%; min-width:500px; }
+#left {
+	width: 191px;           /* LC width */
+	padding: 0;        /* LC padding */
+	right: 191px;           /* LC fullwidth + CC padding */
+	margin-left: -100%;
+	text-align: center;
+	top: 22px;
+	z-index:5;
+	}
+#right {
+	width: 300px;           /* RC width */
+	margin-right: -100%;
+	}
+#footer {
+	clear: both;
+	padding-left: 235px;
+	padding-top: 0;
+	font-size: small;
+	border-top: 1px solid #736980;
+	font-size: 90%;
+	}
+#footer p{margin-top: 0;}
+.ada {border:0; width: 23px; height: 23px;}	
+#innerwrapper {
+	zoom: 1; /* haslayout, width:100% would be the same */
+	position: relative; /* IE7beta2: fixes new flip-side bug with negative percentage margins. Not needed in IE6 */
+	}

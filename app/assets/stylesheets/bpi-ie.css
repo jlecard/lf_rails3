@@ -1,0 +1,140 @@
+@charset "UTF-8";
+/* CSS Document */
+/* specifique IE */
+
+/* @group Layout  */
+
+/*div#wrapper{
+	width:94.08em;
+}*/
+
+/* @end */
+
+/* @group Header */
+		
+
+/* @group Recherche */
+	div.recherche p{
+			margin: 0;
+		}
+
+
+	div.recherche input[type=text]{
+		margin-right:27px;
+		border-color: #fff;
+	}
+
+/* @end */
+
+
+
+/* @group Menu Niv 1 */
+div.menu-niv1 li a{
+	margin-left: 0.31em;
+}
+			
+
+/* @end */
+/* @end */
+
+
+/* @group Content */
+div#left-column p.bloc-title {
+	margin-bottom:13px;
+}
+div#right-column p.bloc-title {
+	margin-bottom:13px;
+}
+/* @end */
+
+/* @group Footer */
+div#footer p.group3{
+	left: 106px;
+}
+		
+
+/* @end */
+
+
+
+/****** ACCUEIL ******/
+
+/* @group Content */
+/* @group Column Left */
+div#left-column .innertube{
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+	div#left-column .innertube p{
+		padding: 0;
+		margin: 2px 0;
+	}
+div#left-column .innertube{
+	padding-top: 8px;
+}
+/* @end */
+
+/* @group Content Column */
+div#content-column .actus{
+	border: 1px solid #fff; /* force limitation espace */
+}
+div#content-column .actus .first p{
+	margin-top: 0;
+	margin-bottom: 0px;
+}
+	div#content-column .actus p{
+		margin-top: 6px;
+		margin-bottom: 6px;
+	}
+	div#content-column .actus img{
+		margin-top: 5px;
+	}
+div#content-column .article{
+	padding-top: 4px;
+}
+
+
+/* @group Separateur */
+
+#content-column .separateur.ie-1px{
+	line-height: 1px;
+}
+	
+
+/* @end */
+/* @end */
+/* @group Column Right */
+/* @end */
+
+
+/* @end */
+
+/*******************/
+/* @group Sitemap */
+.sitemap .line{
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+#content-column .sitemap ul li{
+	margin: 6px 0 0 0; 
+}
+
+
+
+/* @end */
+
+/* @group Signets */
+#content-column   .signets-acc{
+	width: 100%;
+}
+
+
+/* @end */
+/* @group Annuaire */
+div#right-column .focus.annuaire .input134{
+	width: 125px;
+	float: left;
+}
+/* @end */

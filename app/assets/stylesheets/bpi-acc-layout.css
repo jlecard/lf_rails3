@@ -1,0 +1,372 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* @group Styles écrasés du layout général */
+
+/* @group Blocs */
+div#wrapper{
+	margin:10px 0 10px 25px; 
+	width:940px;
+	background : url(/images/acc-column-content-background.gif) repeat-y 200px 0;
+}
+div#content-column{
+	width:500px;
+	display: block;
+	background-color: white;
+	margin: 0;
+	padding: 0 20px 0 20px;
+}
+div#left-column, div#right-column{width:200px;}
+/* @end */
+
+
+/* @group Bdx Images */
+/*** Bandeau illustratif image ***/
+div.bdx-images{
+	height: 51px;
+	background : url(/images/bdx-images.jpg) repeat-x 0 0;
+}
+
+
+/* @end */
+	
+
+
+/* @end */
+
+/* @group Content */
+
+/* @group Column Left */
+div#left-column .couleur{
+	margin: 0;
+}
+
+div#left-column .innertube{
+	border-top: 1px solid red;
+	padding: 12px 0 0px;
+	margin:0 8px 0;
+}
+	div#left-column .innertube.first{
+		padding: 0 0 4px;
+		margin-top: 10px;
+	}
+
+	div#left-column .innertube p{
+		margin:2px 0;
+		font-size: 1.2em;
+	}
+		div#left-column .innertube img{
+			float: left;
+			margin:-2px 8px 0 0;
+			padding: 0;
+		}
+
+/* @group Titrage des blocs */
+
+div#left-column p.bloc-title {
+		font-size: 1.9em;
+		color: #444;
+		margin-bottom:4px;
+		line-height: 60%;
+	}
+	div#left-column .bloc-subtitle{
+		font-size: 67%;
+		line-height: 130%;
+	}
+
+/* @end */
+
+/* @group Infos pratiques */
+div#left-column .infospratiques-marge{
+	
+}
+div#left-column .infospratiques-column{
+	float: left;
+	width: 50%;
+	margin-bottom: -6px;
+	padding-bottom: -10px;
+}
+	div#left-column .infospratiques-column a{
+		font-size: 95%;
+		text-decoration: none;
+	}
+		div#left-column .infospratiques-column a:before	{		  content: "» ";		}
+		div#left-column .infospratiques-column a:hover{
+			text-decoration: underline;
+		}
+
+
+/* @end */
+
+/* @group Newslettre */
+div.newslettre{
+	margin:8px 0 8px 0;
+}
+	div.newslettre p{
+		text-align: right;
+		padding: 0;margin: 0;
+	}
+	div.newslettre a{
+		text-decoration: none;margin: 0;padding: 0;
+	}
+		div.newslettre a:hover{
+			text-decoration: underline;
+		}
+	div.newslettre .type-text-ie6{
+		border:none;
+		font-size:1.2em;
+		width:150px;
+		padding: 4px 2px 3px 2px;
+		margin: 0 4px 0 0;
+		float: left;
+		text-indent: 4px;
+	}
+	div.newslettre .type-image-ie6{
+		background:url(/images/picto-fleche-blanc.gif) no-repeat 3px 2px;
+	}
+
+
+
+/* @end */
+/* @end */
+
+/* @group Column Content */
+/* @group Titre */
+div#content-column .acc-title {
+	display: block;
+	height: 32px;
+	border-top: 1px solid red;
+	border-bottom: 1px solid red;
+	top: 1px;
+}
+	div#content-column .acc-title h1 {
+		font-size: 1.9em;
+		color: #444;
+		margin-top: 8px;
+	}
+	div#content-column .acc-title .subtitle{
+		font-size: 70%;
+	}
+	
+	div#content-column .acc-title .date{
+		position: absolute;
+		top: 10px;
+		text-align: right;
+		width: 100%;
+		font-size: 1.2em;
+	}
+
+/* @end */
+/* @group Evenements */
+div#content-column .evenements{
+	width: 198px;
+	float: left;
+	margin: 10px 0 0 0;
+}
+	div#content-column .evenements p{
+		margin: 0;
+	}
+		div#content-column .evenements .categorie{
+			font-size: 1.08em;
+			font-weight: bold;
+			text-transform: uppercase;
+			display: block;
+			margin: 0;
+		}
+		div#content-column .evenements .date{
+			font-size: 1.2em;
+			color: #666;
+		}
+		div#content-column .evenements .title{
+			font-size: 1.8em;
+			margin: 4px 0;
+			line-height: 1em;
+		}
+			div#content-column .evenements .title a{
+				text-decoration: none;
+			}
+				div#content-column .evenements .title a:hover{
+					text-decoration: underline;
+				}
+	
+	
+	div#content-column .evenements img{
+		width: 198px;
+		margin: 5px 0;
+	}
+
+
+/* @group Navigation */
+div#content-column .evenements .navigation{
+	display: block;
+	height: 25px;
+	border-top: 1px solid red;
+}
+	div#content-column .evenements .navigation a{
+		display: block;
+		float: right;
+		margin: 6px 0 0 10px;
+		height: 20px;
+		width: 20px;
+	
+}
+		div#content-column .evenements .navigation a.suivant, div#content-column .evenements .navigation a.precedent{
+			background-image:url(/images/picto-fleche-blanc.gif);
+			background-position: 2px  2px;
+			background-repeat: no-repeat;
+		}
+		div#content-column .evenements .navigation a.precedent{
+			background-image:url(/images/picto-fleche-blanc-inverted.gif);
+		}
+
+
+/* @end */
+/* @end */
+
+
+/* @group Actualités */
+div#content-column .actus{
+	margin: 10px 0 0 220px;
+}
+
+/* @group Article Mis en avant */
+div#content-column .actus .first{
+	border: none;
+	margin-top: 0;
+}
+	div#content-column .actus .first img{
+		/*margin-top: 0;*/
+	}
+	div#content-column .actus .first p a{
+		font-size: 1.2em;
+	}
+
+/* @end */
+
+	
+/* @group Articles */
+
+div#content-column .article{
+	font-size: 1.2em;
+	border-top: 1px solid red;
+	margin-top: 6px;
+	margin-bottom: 2px;
+	overflow: hidden;
+}
+	div#content-column .article img{
+		float: left;
+		margin-top: 8px;
+		border: 1px solid #666;
+}
+	div#content-column .article p{
+		margin-left:80px ;
+		margin-right:4px ;
+	}
+	div#content-column .article a{
+		color: #333 ;
+		text-decoration: none;
+	}
+		div#content-column .article a:hover{
+			text-decoration: underline;
+		}
+	
+	div#content-column .article .categorie{
+		font-size: 90%;
+		font-weight: bold;
+		text-transform: uppercase;
+		display: block;
+	}
+	div#content-column .article .title{
+		font-weight: bold;
+	}
+
+
+
+/* @end */
+/* @end */
+/* @end */
+
+/* @group Column Right */
+div#right-column{
+	background : url(/images/acc-illus-column-right.gif) no-repeat right 8px;
+}
+
+	div#right-column a{
+		text-decoration: none;
+	}
+		div#right-column a:hover{
+			text-decoration: underline;
+		}
+		
+div#right-column .innertube{
+	border-top: 1px solid red;
+	padding: 12px 0 0px;
+	margin:6px 8px;
+}
+	div#right-column .first{
+		padding: 0 0 0;
+		margin-top: 3px;
+		background: none;
+		border: none;
+	}
+	
+	div#right-column .item{
+		background : url(/images/...) no-repeat left 8px;
+		padding:2px 0 0px 20px;
+		margin-top: 0;
+	}
+		div#right-column.accueil .item .item-title{
+			font-size: 1.4em;
+			line-height: 100%;
+			color: #666;
+		}
+		div#right-column.accueil .item p.item-reponse{
+			font-style: italic;
+			color: #666;
+			margin: 0;
+		}
+
+
+	div#right-column .innertube p{
+		margin:2px 0 0px;
+		padding-top: 4px;
+		font-size: 1.2em;
+	}
+
+
+/* @group Titrage des blocs */
+
+	div#right-column h1.bloc-title {
+		font-size: 2.1em;
+		color: #444;
+		margin: 10px 0 9px;
+	}
+	div#right-column .bloc-subtitle{
+		font-size: 67%;
+		line-height: 100%;
+	}
+
+/* @end */
+
+/* @group Sondage */
+div#right-column .sondage{
+	font-size: 1.2em;
+}
+	div#right-column .sondage input[type=image]{
+		margin-top: 4px;
+	}
+	div#right-column p.sondage{
+		margin: 0;
+		padding: 0;
+	}
+
+
+
+/* @end */
+
+
+/* @end */
+
+
+/* @end */
+

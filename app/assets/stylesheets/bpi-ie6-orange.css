@@ -1,0 +1,18 @@
+@charset "UTF-8";
+/* CSS Document */
+/* specifique IE6  > COULEUR ORANGE */
+
+.orange div.header{
+	background-image: url(/images/logo-bpi-ie6-orange.gif);
+}
+
+/* vert par default ? */
+div.menu-niv1 li a.accueil{	background-image : url(/images/header-menu-accueil-orange.gif);}
+div.menu-niv1 li a.decouvrir{background-image:url(/images/header-menu-decouvrir-orange.gif);}
+div.menu-niv1 li a.recherche{background-image:url(/images/header-menu-recherche-orange.gif);}
+div.menu-niv1 li a.pratique{background-image:url(/images/header-menu-pratique-orange.gif);}
+div.menu-niv1 li a.labpi{background-image:url(/images/header-menu-labpi-orange.gif);}
+div.menu-niv1 li a.saisoncult{background-image:url(/images/header-menu-saisoncult-orange.gif);}
+div.menu-niv1 li a.biblionum{background-image:url(/images/header-menu-biblionum-orange.gif);}
+div.menu-niv1 li a.pro{background-image:url(/images/header-menu-pro-orange.gif);}
+div.menu-niv1 li a.journaliste{background-image:url(/images/header-menu-journaliste-orange.gif);}

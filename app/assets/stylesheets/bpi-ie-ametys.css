@@ -1,0 +1,71 @@
+@charset "UTF-8";
+/* CSS Document */
+/* specifique IE sans DTD Ametys */
+
+
+
+
+/* @group Header */
+		
+
+/* @group Recherche */
+	div.recherche input#recherche{
+		border: none;
+		margin-left: 12px;
+	}
+
+
+/* @end */
+
+
+
+/* @group Menu Niv 1 */
+/* Décalage onglets  */
+div.menu-niv1 li a{
+	height: 38px;
+}
+			
+
+/* @end */
+/* @end */
+
+
+
+/* @group Content */
+
+/* @group Coeur de page */
+#content-column img.article-illustration{
+	border-right: 20px solid white;
+}
+
+/* @end */
+/* @end */
+
+/****** ACCUEIL ******/
+/*** Spécifique Accueil ***/
+
+/* @group Layout */
+div#content-column.accueil{
+	width: 540px;
+}
+/* @end */
+
+/* @group Column left */
+
+/* @group Infos pratiques */
+
+div#left-column .infospratiques-column{
+	width: 92px;
+}
+/* @end */
+
+
+/* @group Newslettre */
+	div.newslettre .type-text-ie6{
+		display: block;
+		height: 22px;
+	}
+
+
+/* @end */
+/* @end */
