@@ -32,7 +32,7 @@ class SearchTab < ActiveRecord::Base
     return self.find(:all)
   end
 
-  def self.load_groups(tab_id)
+  def self.load_groups(tab_id=1)
     return CollectionGroup.find(:all, :conditions => "tab_id=#{tab_id}", :order => 'rank')
   end
 end

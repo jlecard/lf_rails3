@@ -122,7 +122,7 @@ class Dispatch  < DispatchAbstract
     objdriver.send :get_job_record, jid, _max
   end
   
-  def get_jobs_records(jids, _max, temps)
+  def get_jobs_records(jids, _max, temps=nil)
     objdriver = driver
     objdriver.send :get_jobs_records, jids, _max, temps
   end

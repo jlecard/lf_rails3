@@ -1,6 +1,6 @@
 <div class="search">
     <div class="field">
-        <% if @linkMenu.nil? %>
+        <% if !@linkMenu.nil? and !@linkMenu.empty? %>
         <%   select = @linkMenu[0].id %>
         <% else %>
         <% 	select = 0 %>
@@ -45,7 +45,7 @@
                             <% if (@groups_tab!= nil) %>
 	                            <% @groups_tab.each do | elem | %>
 	                            	<% value = 'g' + elem.id.to_s
-		                            if (('g' + elem.id.to_s == params[:query_sets])  %>
+		                            if ('g' + elem.id.to_s == params[:query_sets])  %>
 		                            	<option selected value='g<%= elem.id %>' title='<%= elem.description %>' onclick='this.parentNode.title="<%=elem.description%>"' ><%= elem.full_name %></option>
 		                            <% else %>
 		                            	<option  onclick='this.parentNode.title="<%=elem.description%>"' value='g<%= elem.id %>' title='<%= elem.description %>'><%= elem.full_name %></option>

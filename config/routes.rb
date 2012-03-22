@@ -32,11 +32,13 @@ LfRails3::Application.routes.draw do
 
   # Install the default route as the lowest priority.
   #match ':controller/:action'
-  match ':controller(/:action/:id)'
+  match ':controller(/:action(/:id))(.format)'
   match 'record/search', :to=>'record#search'
   match 'record/retrieve', :to=>'record#retrieve'
+  match 'user/login', :to=>'user#login'
   match '', :to=>"record#search"
   match 'admin', :controller => 'admin/dashboard', :action => 'index'
+  match 'admin/collection', :controller =>'admin/collection', :action=>'list'
 
   resources :admin
   namespace :admin do 

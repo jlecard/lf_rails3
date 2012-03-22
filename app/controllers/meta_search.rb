@@ -641,12 +641,13 @@ class MetaSearch < ActionController::Base
   end 
   
   def get_jobs_records(job_ids, _max, temps = nil)
-    
+    return if job_ids.nil? or job_ids.empty?
     _sTime = Time.now().to_f
     _recs = Array.new();
     _tmp = Array.new();
     _objRec = RecordSet.new
     _rec = Record.new
+    
     job_ids.each do |_id|
       # verification si dans le temps
       objJob = JobQueue.getJobInTemps(_id, temps)

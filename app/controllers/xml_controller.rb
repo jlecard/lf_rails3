@@ -108,8 +108,8 @@ def init_search
   if params[:tab_template]!=nil and params[:tab_template]!='' 
     @tab_template = params[:tab_template]
   end
-  if params[:sets]!=nil && params[:sets]!=''
-    @sets=params[:sets]
+  if !params[:query_sets].blank?
+    @sets=params[:query_sets]
   else
     init_sets
   end
