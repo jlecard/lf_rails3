@@ -95,7 +95,7 @@ class RecordController < ApplicationController
     if (params[:start_search] != "false")
       if (params[:query] != nil)
         if (params[:rebonce] != nil)
-          items = {:query => "#{html_escape(params[:query][:string1])}", :filter =>"#{html_escape(params[:query][:field_filter1])}", :host => "#{request.remote_addr}"};
+          items = {:query => "#{html_escape(params[:string1])}", :filter =>"#{html_escape(params[:field_filter1])}", :host => "#{request.remote_addr}"};
           LogGeneric.addToFile("LogRebonceUsage", items)
         end
         logger.debug("[retrieve] idTab:#{@idTab}")
