@@ -46,7 +46,7 @@ describe RecordController do
       assigns[:page_size].should == 10
       assigns[:tab_query_string].should be_a Array
       assigns[:operator].should be_a Array
-      assigns[:idTab].should == 1
+      assigns[:idTab].should == "1"
       assigns[:type][0].should == "keyword"
       link_menu = assigns[:linkMenu] 
       link_menu.size.should == 0
@@ -99,7 +99,7 @@ describe RecordController do
         and render the accueil template page because no group in db" do
       get :retrieve, {:string1=>"test"}, valid_session
       assigns[:sets].should == ""
-      assigns[:idTab].should == 1
+      assigns[:idTab].should == "1"
       assigns[:type][0].should == "keyword"
       flash[:notice].should == "No collection group selected"
       response.should render_template("accueil_all")
@@ -111,7 +111,7 @@ describe RecordController do
       cg = Factory(:collection_group)  
       get :retrieve, {:string1=>"test"}, valid_session
       assigns[:sets].should == "g1"
-      assigns[:idTab].should == 1
+      assigns[:idTab].should == "1"
       assigns[:type][0].should == "keyword"
       assigns[:jobs].should be_a(Array)
       assigns[:jobs].size.should == 0

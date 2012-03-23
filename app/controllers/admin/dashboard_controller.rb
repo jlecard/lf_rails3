@@ -41,6 +41,7 @@ class Admin::DashboardController < ApplicationController
   end
   
   def index
+    render 'admin/dashboard/index'
   end
 
 end

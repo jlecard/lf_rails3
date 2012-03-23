@@ -3,17 +3,17 @@
 # LibraryFind - Quality find done better.
 # Copyright (C) 2007 Oregon State University
 #
-# This program is free software; you can redistribute it and/or modify it under 
-# the terms of the GNU General Public License as published by the Free Software 
-# Foundation; either version 2 of the License, or (at your option) any later 
+# This program is free software; you can redistribute it and/or modify it under
+# the terms of the GNU General Public License as published by the Free Software
+# Foundation; either version 2 of the License, or (at your option) any later
 # version.
 #
-# This program is distributed in the hope that it will be useful, but WITHOUT 
-# ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS 
+# This program is distributed in the hope that it will be useful, but WITHOUT
+# ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
 # FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
 #
-# You should have received a copy of the GNU General Public License along with 
-# this program; if not, write to the Free Software Foundation, Inc., 59 Temple 
+# You should have received a copy of the GNU General Public License along with
+# this program; if not, write to the Free Software Foundation, Inc., 59 Temple
 # Place, Suite 330, Boston, MA 02111-1307 USA
 #
 # Questions or comments on this program may be addressed to:
@@ -27,39 +27,38 @@
 module RecordHelper
 
   #helper methods for creating citations
-   
-   def display_year(_details) 
+  def display_year(_details)
     _year=_details.date[0,4]
   end
-  
+
   def trim_punctuation(_string)
     _string.strip!
     if _string!=nil && _string!=""
       _length=_string.length
       if _string[_length-1,1]==';' || _string[_length-1,1]=='.' || _string[_length-1,1]==','
-        _string=_string[0,_length-1]
+      _string=_string[0,_length-1]
       end
     end
-    h(_string) 
-  end  
-  
+    h(_string)
+  end
+
   def append_punctuation(_string,_punctuation)
     _string.strip!
     if _string!=nil && _string!=""
       _string=trim_punctuation(_string)
-      _string=_string+_punctuation
+    _string=_string+_punctuation
     end
     _string
   end
-  
-   def surround_with(_string,_punctuation1,_punctuation2)
+
+  def surround_with(_string,_punctuation1,_punctuation2)
     _string.strip!
     if _string!=nil && _string!=""
-      _string=_punctuation1+_string+_punctuation2
+    _string=_punctuation1+_string+_punctuation2
     end
     _string
   end
-  
+
   def author_citation(material)
     citation=""
     if material.author!=nil && material.author!=''
@@ -67,7 +66,7 @@ module RecordHelper
     end
     citation
   end
-  
+
   def publisher_citation(book)
     citation=""
     if book.publisher!=nil && book.publisher!=''
@@ -75,7 +74,7 @@ module RecordHelper
     end
     citation
   end
-  
+
   def year_citation(book)
     citation=""
     if book.date!=nil && book.date!=''
@@ -91,7 +90,7 @@ module RecordHelper
     end
     citation
   end
-  
+
   def url_citation(image)
     citation=""
     if image.direct_url!=nil && image.direct_url!= ''
@@ -99,7 +98,7 @@ module RecordHelper
     end
     citation
   end
-  
+
   def page_date_citation(article)
     citation=""
     if article.date!=nil && article.date!=''
@@ -113,7 +112,7 @@ module RecordHelper
     end
     citation
   end
-  
+
   def volume_citation(article)
     citation=""
     if article.volume!=nil && article.volume!=''
@@ -121,8 +120,8 @@ module RecordHelper
     end
     citation
   end
-  
-    def date_citation(_details) 
+
+  def date_citation(_details)
     _year=_details.date[0,4]
     _month=''
     _day=''
@@ -147,90 +146,92 @@ module RecordHelper
     if _details.date.length>6 && _details.date[6,2]!="00"
       _day=_details.date[6,2]+" "
     end
-      _date_string=_day+_month + _year
-    end
-  
-  
+    _date_string=_day+_month + _year
+  end
+
   def build_filter_params(filter, tab_template)
     completed_param=""
     logger.debug("[build_filter_params] idTab : #{@idTab}")
     if @completed!=nil and !@completed.empty?
       completed_param=@completed*','
     end
-      params={  "query[max]"    => @max,
-                "query[mod]"    => @mod,
-                "mode"          => @mode,
-                "sets"          => @sets,
-                "query[string]" => @query*',,,',
-                "sort_value"    => @sort_value,
-                "query[start]"  => @start,
-                "tab_template"  => tab_template,
-                "query[type]"   => @type*',',
-                "filter"        => filter,
-                "completed"     => completed_param,
-                'idTab'         => @idTab
-             }
-    params 
+    params={  "query[max]"    => @max,
+      "query[mod]"    => @mod,
+      "mode"          => @mode,
+      "sets"          => @sets,
+      "query[string]" => @query*',,,',
+      "sort_value"    => @sort_value,
+      "query[start]"  => @start,
+      "tab_template"  => tab_template,
+      "query[type]"   => @type*',',
+      "filter"        => filter,
+      "completed"     => completed_param,
+      'idTab'         => @idTab
+    }
+    params
   end
 
   def build_rss_params(filter)
-      params={"filter"        => filter,
-              "query[max]"    => @max,
-              "query[mod]"    => @mod,
-              "mode"          => @mode,
-              "sets"          => @sets,
-              "query[string]" => @query*',,,',
-              "sort_value"    => @sort_value,
-              "query[start]"  => @start,
-              "tab_template"  => @tab_template,
-              "query[type]"   => @type*','
-             }
+    params={"filter"        => filter,
+      "query[max]"    => @max,
+      "query[mod]"    => @mod,
+      "mode"          => @mode,
+      "sets"          => @sets,
+      "query[string]" => @query*',,,',
+      "sort_value"    => @sort_value,
+      "query[start]"  => @start,
+      "tab_template"  => @tab_template,
+      "query[type]"   => @type*','
+    }
     params
 
-   end
-  
-   def build_pagination_params(filter, page)
+  end
+
+  def build_pagination_params(filter, page)
     completed_param=""
     if @completed!=nil and !@completed.empty?
       completed_param=@completed*','
     end
-      params={"filter"        => filter,
-              "query[max]"    => @max,
-              "query[mod]"    => @mod,
-              "mode"          => @mode,
-              "sets"          => @sets,
-              "query_sets"    => @sets,
-              "query[string]" => @query*',,,',
-              "sort_value"    => @sort_value,
-              "query[start]"  => @start,
-              "tab_template"  => @tab_template,
-              "query[type]"   => @type*',',
-              "completed"     => completed_param,
-              'page'          => '%s'  % page, 
-              'mobile'        => @IsMobile,
-              'idTab'         => @idTab
-              }
-    params 
+    params={"filter"        => filter,
+      "query[max]"    => @max,
+      "query[mod]"    => @mod,
+      "mode"          => @mode,
+      "sets"          => @sets,
+      "query_sets"    => @sets,
+      "query[string]" => @query*',,,',
+      "sort_value"    => @sort_value,
+      "query[start]"  => @start,
+      "tab_template"  => @tab_template,
+      "query[type]"   => @type*',',
+      "completed"     => completed_param,
+      'page'          => '%s'  % page,
+      'mobile'        => @IsMobile,
+      'idTab'         => @idTab
+    }
+    params
   end
-  
-  
-    def build_pinging_params      
-      params={  "query[max]"    => @max,
-                "query[mod]"    => @mod,
-                "mode"          => @mode,
-                "sets"          => @sets,
-                "query_sets"    => @sets,
-                "query[string]" => @query*',,,',
-                "sort_value"    => @sort_value,
-                "query[start]"  => @start,
-                "tab_template"  => @tab_template,
-                "query[type]"   => @type*',',
-                "filter"        => @filter,
-                "mobile"        => @IsMobile,
-                "jobs"          => @jobs*',',
-                'idTab'         => @idTab,
-                'query[operator]' => @operator*','}          
-    params 
+
+  def build_pinging_params
+    params={  "query[max]"    => @max,
+      "query[mod]"    => @mod,
+      "mode"          => @mode,
+      "sets"          => @sets,
+      "query_sets"    => @sets,
+      "query[string]" => @query*',,,',
+      "sort_value"    => @sort_value,
+      "query[start]"  => @start,
+      "tab_template"  => @tab_template,
+      "query[type]"   => @type*',',
+      "filter"        => @filter,
+      "mobile"        => @IsMobile,
+      "jobs"          => @jobs*',',
+      'idTab'         => @idTab,
+      'query[operator]' => @operator*','}
+    params
+  end
+
+  def default_tab
+    @idTab ||= params[:idTab] || "1"
   end
 
 end

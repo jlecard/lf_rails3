@@ -28,6 +28,7 @@ class RecordController < ApplicationController
   include ApplicationHelper
   include SearchHelper
   include CartHelper
+  include RecordHelper
   include ERB::Util
   layout "libraryfind", :except => [:spell_check,:advanced_search, :cart, :build_results, :see_also]
 
@@ -35,6 +36,10 @@ class RecordController < ApplicationController
     @results    = _results
     @sort_value = _sort_value
     @filter     = _filter
+  end
+  
+  def advanced_search?
+    @advanced = @tab_query_string and !@tab_query_string[1].blank?
   end
 
   def index
@@ -76,12 +81,15 @@ class RecordController < ApplicationController
     @operator = []
     @operator[0] =  params[:operator1].blank? ? "AND" : params[:operator1]
     @operator[1] =  params[:operator2].blank? ? "AND" : params[:operator2]
-
+    
+    advanced_search?
   end
 
   def advanced_search
-    init_defaults
-    render(:action=>'advanced_search')
+    if advanced_search?
+      init_defaults
+      render(:action=>'advanced_search')
+    end
   end
 
   def retrieve
@@ -303,15 +311,15 @@ class RecordController < ApplicationController
         completed_items<<item
       elsif item.status==1
         @jobs_remaining=@jobs_remaining+1
-        if !item.target_name.blank?
-          @remaining_targets=@remaining_targets+item.target_name.to_s+"<br/>"
+        if !item.database_name.blank?
+          @remaining_targets=@remaining_targets+item.database_name.to_s+"<br/>"
         end
       end
     end
     sorted_completed=completed_items.sort{|a,b|b.hits.to_i <=> a.hits.to_i}
     for target in sorted_completed
-      if !target.target_name.blank?
-        @completed_targets=@completed_targets+"<span id='completed_targets'>"+target.target_name.to_s+"</span>"+target.hits.to_s+" hits (total:#{target.total_hits})<br/>"
+      if !target.database_name.blank?
+        @completed_targets=@completed_targets+"<span id='completed_targets'>"+target.database_name.to_s+"</span>"+target.hits.to_s+" hits (total:#{target.total_hits})<br/>"
       end
     end
     if params[:mobile] != nil and params[:mobile] == true
@@ -333,7 +341,7 @@ class RecordController < ApplicationController
       if item.status==JOB_WAITING
         if item.thread_id.to_i>0
           begin
-            if item.target_name!=nil
+            if item.database_name!=nil
               flash.now[:notice]=translate('SEARCH_STOPPED')
             end
             $objDispatch.KillThread(id, item.thread_id)
@@ -345,11 +353,11 @@ class RecordController < ApplicationController
       elsif item.status==JOB_FINISHED
         @completed<<id
       elsif item.status==JOB_ERROR
-        @errors[item.target_name]=item.error
+        @errors[item.database_name]=item.error
       elsif item.status==JOB_PRIVATE
         objAuth = Authorize.new
         if objAuth.IsPrivateVisible(request.env['REMOTE_ADDR'], request.env['HTTP_REFERER']) == false
-          @private[item.target_name]=item.error
+          @private[item.database_name]=item.error
         else
           @completed<<id
         end
@@ -381,21 +389,16 @@ class RecordController < ApplicationController
     logger.warn("----------------------------------------------------------------------------------") if LOG_STATS
   end
 
-  def default_tab
-    @idTab ||= params[:idTab] || 1
-  end
-
   def init_defaults
     logger.debug("[RecordController][init_defaults]")
 
     defaults
+    default_tab
+    select_box_items
     @jobs=nil
+    @theme ||= SearchTabSubject.new
+    @TreeObject ||= @theme.CreateSubMenuTree
 
-    @filter_tab = SearchTabFilter.load_filter(default_tab)
-    @linkMenu = SearchTab.load_menu
-    @groups_tab = SearchTab.load_groups(default_tab)
-    @theme = SearchTabSubject.new
-    @TreeObject = @theme.CreateSubMenuTree
     @editorials = nil
     #Most viewed documents
     begin
@@ -589,7 +592,7 @@ class RecordController < ApplicationController
       :material   => @material_types,
       :themes   => @themes,
       :availability  => @availabilities
-    };
+    }
   end
 
   def help_theme(hash, indice)
@@ -613,8 +616,8 @@ class RecordController < ApplicationController
       end
     end
     query_sets=params[:query_sets]
-    if query_sets != nil
-      @sets = query_sets+','
+    if query_sets
+      @sets = "#{query_sets},"
     end
     @sets
   end

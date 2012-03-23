@@ -11,5 +11,29 @@ require 'spec_helper'
 #   end
 # end
 describe RecordHelper do
-  pending "add some examples to (or delete) #{__FILE__}"
+  describe "default_tab" do
+    it "returns 1 if no parameters specified" do
+      id_tab = helper.default_tab
+      id_tab.should == "1"
+    end
+    
+    it "returns a tab id if parameters specified" do
+      params[:idTab] = "4"
+      id_tab = helper.default_tab
+      id_tab.should == "4"
+    end
+    
+    it "returns affected tab id (no parameters specified)" do
+      @idTab = "4"
+      id_tab = helper.default_tab
+      id_tab.should == "4"
+    end
+    
+    it "returns affected tab id (with parameters specified)" do  
+      @idTab = "6"
+      params[:idTab] = "10"
+      id_tab = helper.default_tab
+      id_tab.should == "6"
+    end
+  end
 end

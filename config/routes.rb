@@ -1,14 +1,6 @@
 # $Id: routes.rb 493 2006-10-25 15:57:02Z dchud $
 
 LfRails3::Application.routes.draw do 
-  
-  namespace :admin do resources :search_tab_filters end
-
-  resources :search_tab_filters
-
-  resources :records
-  
-  
   # The priority is based upon order of creation: first created -> highest priority.
   
   # Sample of regular route:
@@ -25,23 +17,23 @@ LfRails3::Application.routes.draw do
 
   # Allow downloading Web Service WSDL as a file with an extension
   # instead of a file named 'wsdl'
-  resources :record
   resources :user
   
   match ':controller/service.wsdl', :action => 'wsdl'
 
   # Install the default route as the lowest priority.
   #match ':controller/:action'
-  match ':controller(/:action(/:id))(.format)'
-  match 'record/search', :to=>'record#search'
-  match 'record/retrieve', :to=>'record#retrieve'
+  
+  #match 'record/search', :to=>'record#search'
+  #match 'record/retrieve', :to=>'record#retrieve'
   match 'user/login', :to=>'user#login'
   match '', :to=>"record#search"
   match 'admin', :controller => 'admin/dashboard', :action => 'index'
+  match 'admin/dashboard', :to => 'admin/dashboard#index'
   match 'admin/collection', :controller =>'admin/collection', :action=>'list'
-
-  resources :admin
+  #resources :admin
   namespace :admin do 
+     resources :dashboard
      resources :manage_roles
      resources :manage_droits
      resources :collection
@@ -53,4 +45,7 @@ LfRails3::Application.routes.draw do
      resources :search_tabs
      resources :editorials
   end
+  match 'admin/:controller(/:action(/:id))(.format)'
+  match ':controller(/:action(/:id))(.format)'
+  
 end
