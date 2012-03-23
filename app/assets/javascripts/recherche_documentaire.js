@@ -149,7 +149,7 @@ function initSubMenu(select, advanced, aIdTab) {
 			aButton[i].style.color = "white";
 		}
 		if (!(aIdTab[i] == select && advanced))
-			Effect.toggle('advanceForm_' + aIdTab[i], 'slide', {
+			Effect.toggle('advanceForm', 'slide', {
 				duration : 0.2
 			});
 		/*

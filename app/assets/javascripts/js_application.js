@@ -75,7 +75,7 @@ function spellCorrection(word){
 }
 
 function getQueryElement(){
-    var query = document.getElementsByName('query[string1]');
+    var query = document.getElementsByName('string1');
     for (var i = 0; i < query.length; i++) {
         if (query[i].type == 'text') {
             return query[i];
