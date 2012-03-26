@@ -71,6 +71,12 @@ def factory_tabs
   return st.id
 end
 
+def authenticate_admin
+  user = Factory(:admin)
+  session[:user] = user
+  session[:user_id] = user.id
+end
+
 # Some test cases require no transaction
 def without_transactional_fixtures(&block)
   self.use_transactional_fixtures = false

@@ -1,14 +1,14 @@
 <div id="filter_form" class="admin_filter_form">
     <h2><%= translate("SEARCH_BOX_TITLE") %>
     </h2>
-    <% form_tag('/admin/collection') do -%>
+    <%= form_tag('/admin/collection') do -%>
     <%= label_tag("name_filter", translate("NAME_LABEL")) %>
 	<% display_value = params[:collection][:name] unless params[:collection].nil? or params[:collection][:name].blank? %>
-	<%= text_field_with_auto_complete(:collection, :name, {:value=>display_value}, {:skip_style=>true}) %>
+	<%= autocomplete_field_tag 'name','','collection/autocomplete_collection_name', :size=>75, :skip_style=>true %>
 	<%= label_tag("full_name_filter", translate("ALT_NAME_LABEL")) %>
 	<% display_value = ""%>
 	<% display_value = params[:collection][:alt_name] unless params[:collection].nil? or params[:collection][:alt_name].blank? %>
-	<%= text_field_with_auto_complete(:collection, :alt_name, {:value=>display_value}, {:skip_style=>true}) %>
+	<%= autocomplete_field_tag 'alt_name','','collection/autocomplete_collection_alt_name', :size=>75, :skip_style=>true %>
     <br/>
     <%= label_tag("tab_id_filter", translate("TAB_LABEL")) %>
 	<span id="tab_value">
@@ -20,7 +20,7 @@
 	<%= label_tag("conn_type_filter", translate("CONNECTION_TYPE_LABEL")) %>
 	<span id="conn_type_value">
     <% display_value = params[:collection][:conn_type] unless params[:collection].nil? or params[:collection][:conn_type].blank? %>
-    <%= text_field_with_auto_complete(:collection, :conn_type, {:value=>display_value}, {:skip_style=>true}) %>
+    <%= autocomplete_field_tag 'conn_type','','collection/autocomplete_collection_conn_type', :size=>75, :skip_style=>true %>
     </span>
 	<br/>
     <%= submit_tag translate("APPLY_FILTER") %>

@@ -27,9 +27,11 @@
 
 class Admin::CollectionController < ApplicationController
   include ApplicationHelper
-  auto_complete_for :collection, :name, {}
-  auto_complete_for :collection, :alt_name, {}
-  auto_complete_for :collection, :conn_type, {}
+
+  autocomplete :collection, :name
+  autocomplete :collection, :alt_name
+  autocomplete :collection, :conn_type
+  
   layout 'admin'
   before_filter :authorize, :except => 'login',
   :role => 'administrator', 
@@ -310,11 +312,9 @@ class Admin::CollectionController < ApplicationController
   
   def initialize
     super
-    seek = SearchController.new();
-    @filter_tab = SearchTabFilter.load_filter;
-    @linkMenu = seek.load_menu;
-    @groups_tab = SearchTab.load_groups;
-    @primaryDocumentTypes = PrimaryDocumentType.find(:all)
+    @filter_tab = SearchTabFilter.load_filter
+    @linkMenu = SearchTab.load_menu
+    @groups_tab = SearchTab.load_groups
   end
   
   def index
@@ -324,8 +324,8 @@ class Admin::CollectionController < ApplicationController
   
   
   # GETs should be safe (see http://www.w3.org/2001/tag/doc/whenToUseGet.html)
-  verify :method => "post", :only => [ :destroy, :create, :update ],
-         :redirect_to => { :action => :list }
+  # verify :method => "post", :only => [ :destroy, :create, :update ],
+         # :redirect_to => { :action => :list }
   
   # Build a filter corresponding to the parameters passed in params
   # Apply the conditions to the result set
@@ -339,14 +339,16 @@ class Admin::CollectionController < ApplicationController
                    WHERE (cgm.collection_group_id = cg.id) 
                    AND (cg.tab_id = #{params[:tab_id_filter][0]})))") unless params[:tab_id_filter].nil? or params[:tab_id_filter][0].blank?
     # Filter on the name of the collection               
-    conditions.push("(name LIKE '#{params[:collection][:name]}')") unless params[:collection].nil? or params[:collection][:name].blank?
-    conditions.push("(alt_name LIKE '#{params[:collection][:alt_name]}')") unless params[:collection].nil? or params[:collection][:alt_name].blank?
-    conditions.push("(conn_type LIKE '#{params[:collection][:conn_type]}')") unless params[:collection].nil? or params[:collection][:conn_type].blank?
+    conditions.push("(name LIKE '#{params[:name]}')") unless params[:name].blank?
+    conditions.push("(alt_name LIKE '#{params[:alt_name]}')") unless  params[:alt_name].blank?
+    conditions.push("(conn_type LIKE '#{params[:conn_type]}')") unless params[:conn_type].blank?
     where_cond = conditions.join(" AND ").gsub(/\*/,"%").chomp(" AND ")
-    
-    @collection_pages, @collections = paginate :collections, :per_page => 20, 
-      :order => 'alt_name asc', :conditions=> where_cond
+    logger.debug("COLLECTIONCONTROLLER WHERECOND = #{where_cond}")
+    @page ||= params[:page] || "1"
+    @collection_pages = Collection.paginate(:page=>@page,:per_page => 20).where(where_cond).order('alt_name asc')
+    logger.debug("COLLECTIONCONTROLLER @coll_pages = #{@collection_pages.inspect}") 
     @display_columns = ['alt_name', 'name']
+    
   end
   
   def show

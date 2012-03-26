@@ -33,6 +33,11 @@ LfRails3::Application.routes.draw do
   match 'admin/collection', :controller =>'admin/collection', :action=>'list'
   #resources :admin
   namespace :admin do 
+      resources :collection do
+        get :autocomplete_collection_name, :on => :collection
+        get :autocomplete_collection_alt_name, :on => :collection
+        get :autocomplete_collection_conn_type, :on => :collection
+      end
      resources :dashboard
      resources :manage_roles
      resources :manage_droits

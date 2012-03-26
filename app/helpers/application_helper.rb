@@ -30,8 +30,15 @@ module ApplicationHelper
       @filter_tab = SearchTabFilter.load_filter(@idTab)
       @groups_tab = SearchTab.load_groups(@idTab)
     else
-      @filter_tab ||= SearchTabFilter.load_filter(@idTab)
-      @groups_tab ||= SearchTab.load_groups(@idTab)
+      reload = @idTab.blank?
+      if reload
+        @idTab = "1"
+        @filter_tab = SearchTabFilter.load_filter(@idTab)
+        @groups_tab = SearchTab.load_groups(@idTab)
+      else
+        @filter_tab ||= SearchTabFilter.load_filter(@idTab)
+        @groups_tab ||= SearchTab.load_groups(@idTab)
+      end
     end
     @linkMenu ||= SearchTab.load_menu
   end

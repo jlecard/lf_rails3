@@ -1,6 +1,6 @@
 class ApplicationController < ActionController::Base
   protect_from_forgery
-  
+  require 'will_paginate'
   def set_locale
     I18n.locale = params[:locale] || I18n.default_locale
   end
