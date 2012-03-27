@@ -29,7 +29,7 @@
 #==============================================
 class Proxy
   def GenerateProxy(s)
-     if s.index(LIBRARYFIND_PROXY_ADDRESS)!=nil: return s end
+     return s if !s.index(LIBRARYFIND_PROXY_ADDRESS).nil?
 
      case LIBRARYFIND_PROXY_TYPE
          when "WAM"
@@ -44,7 +44,7 @@ class Proxy
 
   def GenerateProxyEZ(s)
      s = LIBRARYFIND_PROXY_ADDRESS + s
-     return s;
+     return s
   end
 
   def GenerateProxyIII(s)
@@ -53,7 +53,7 @@ class Proxy
     returnUrl = ""
     port = "0"
 
-    if s.slice(0,1) == '/': s = LIBRARYFIND_BASEURL end
+    s = LIBRARYFIND_BASEURL if s.slice(0,1) == '/'
     if s.index("http://")!=nil
       objMatches = s.match(/http:\/\/(.*?):{0,1}([0-9]*)(\/)(.*)/)
       stem = "http://"
@@ -65,7 +65,7 @@ class Proxy
     if objMatches != nil
       port = objMatches[2] if objMatches[2] != nil
       port = 0 if objMatches[2] == nil
-      if port == "": port = "0" end
+      port = "0" if port == ""
 
       if objMatches[1].length != 0
         slash = ""
@@ -79,7 +79,7 @@ class Proxy
     else
       returnUrl = port + "-" + s.slice(stem.length, (s.length-stem.length)) + LIBRARYFIND_PROXY_ADDRESS
     end
-    return stem + returnUrl;
+    return stem + returnUrl
   end
 end
 

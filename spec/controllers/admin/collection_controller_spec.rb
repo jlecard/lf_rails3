@@ -17,6 +17,7 @@ require 'spec_helper'
 # is no simpler way to get a handle on the object needed for the example.
 # Message expectations are only used when there is no simpler way to specify
 # that an instance is receiving a specific message.
+require 'rails3-jquery-autocomplete'
 
 describe Admin::CollectionController do
 
@@ -77,6 +78,44 @@ describe Admin::CollectionController do
           assigns[:collection_pages].previous_page.should == 1
           assigns[:collection_pages].next_page.should == 3
         end
+      end
+    end
+
+    describe "autocomplete on connection_type field" do
+      before(:each) do
+        authenticate_admin
+      end
+      it "should return distinct values" do
+        10.times do
+          Factory(:collection_seq)
+          Factory(:collection_seq, :conn_type=>"z3950")
+          Factory(:collection_seq, :conn_type=>"connector")
+        end
+        expected = [].to_json
+        get :autocomplete_collection_conn_type,{:term=>'oaip'}
+        response.body.should == expected
+        
+        expected = [].to_json
+        get :autocomplete_collection_conn_type,{:term=>'poai'}
+        response.body.should == expected
+
+        expected = [{:id=>'',
+                    :label=>'oai',
+                    :value=>'oai'}].to_json
+        get :autocomplete_collection_conn_type,{:term=>'oa'}
+        response.body.should == expected
+
+        expected = [{:id=>'',
+                    :label=>'z3950',
+                    :value=>'z3950'}].to_json
+        get :autocomplete_collection_conn_type,{:term=>'z395'}
+        response.body.should == expected
+        
+        expected = [{:id=>'',
+                    :label=>'connector',
+                    :value=>'connector'}].to_json
+        get :autocomplete_collection_conn_type,{:term=>'co'}
+        response.body.should == expected
       end
     end
   end

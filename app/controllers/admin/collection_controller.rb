@@ -37,6 +37,14 @@ class Admin::CollectionController < ApplicationController
   :role => 'administrator', 
   :msg => 'Access to this page is restricted.'
   
+  def get_autocomplete_items(parameters)
+    if parameters[:method] != :conn_type
+      items = super(parameters)
+    else
+      items = Collection.select("distinct conn_type").where(["conn_type LIKE ?", "#{parameters[:term]}%"])      
+    end
+    items
+  end
   
   # Methode pour faire la recherche du mot tapé dans le formulaire
   # params[:mot] contient le mot tapé par l'utilisateur
@@ -310,13 +318,6 @@ class Admin::CollectionController < ApplicationController
     return res
   end
   
-  def initialize
-    super
-    @filter_tab = SearchTabFilter.load_filter
-    @linkMenu = SearchTab.load_menu
-    @groups_tab = SearchTab.load_groups
-  end
-  
   def index
     list
     render :action => 'list'
@@ -395,4 +396,5 @@ class Admin::CollectionController < ApplicationController
     end
     redirect_to :action => 'list'
   end
+
 end

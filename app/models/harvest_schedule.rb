@@ -26,7 +26,8 @@
 
 class HarvestSchedule < ActiveRecord::Base
   belongs_to :collection
-  validates_columns :day, :time
+  validates :day, :presence => true
+  validates :time, :presence => true
   attr_accessor :collection_name
   #validates_uniqueness_of :day, :scope=>:time, :scope=>:collection_id
   

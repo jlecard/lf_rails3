@@ -48,7 +48,6 @@ class Collection < ActiveRecord::Base
     end
   end 
   
-  
   def self.get_all()
     return Collection.find(:all)
   end
