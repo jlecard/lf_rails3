@@ -31,13 +31,15 @@ LfRails3::Application.routes.draw do
   match 'admin', :controller => 'admin/dashboard', :action => 'index'
   match 'admin/dashboard', :to => 'admin/dashboard#index'
   match 'admin/collection', :controller =>'admin/collection', :action=>'list'
+  match 'admin/collection/requeteformulaire', :to => 'admin/collection#requeteformulaire'
   #resources :admin
   namespace :admin do 
-      resources :collection do
-        get :autocomplete_collection_name, :on => :collection
-        get :autocomplete_collection_alt_name, :on => :collection
-        get :autocomplete_collection_conn_type, :on => :collection
-      end
+     resources :collection do
+       get :autocomplete_collection_name, :on => :collection
+       get :autocomplete_collection_alt_name, :on => :collection
+       get :autocomplete_collection_conn_type, :on => :collection
+       get :update
+     end
      resources :dashboard
      resources :manage_roles
      resources :manage_droits
@@ -50,7 +52,8 @@ LfRails3::Application.routes.draw do
      resources :search_tabs
      resources :editorials
   end
-  match 'admin/:controller(/:action(/:id))(.format)'
-  match ':controller(/:action(/:id))(.format)'
-  
+#  match ':controller(/:action(/:id))(.format)'
+  match ':controller(/:id/:action)'
+#  match ':controller(/:action(/:id))', :controller => /admin\/[^\/]+/
+  match ':controller(/:id(/:action))', :controller => /admin\/[^\/]+/
 end

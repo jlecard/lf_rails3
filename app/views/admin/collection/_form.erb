@@ -293,23 +293,26 @@
 		_params_string=_params_string.gsub("{","")
 		_params_string=_params_string.gsub("}","")
 		_params_string=_params_string.gsub(", ",",")
-		%>
+		
 		# Tous ces gsub sont nécessaires car _params_string est de la forme :
 		# {"isword"=>"blabla".....}
 		# et cela crée des bugs d'affichage de la balise
-		<input>
 		# mais aussi un mauvais traitement des données dans la fonction javascript "requete"
-
+		%>
+		
+		
+		
+		<%
 		pos_string = ""
 		pos = _params_string.index("&")
-		while pos != nil
-		if pos_string == ""
-		pos_string = pos.to_s
-		else
-		pos_string="#{pos.to_s},#{pos_string}"
-		end
-		_params_string.sub!("&","")
-		pos = _params_string.index("&")
+		while !pos.nil?
+		  if pos_string == ""
+		    pos_string = pos.to_s
+		  else
+		    pos_string="#{pos.to_s},#{pos_string}"
+		  end
+		  _params_string.sub!("&","")
+		  pos = _params_string.index("&")
 		end
 		# Ce traitement est nécessaire car la présence des "&" crée des bugs dans l'appel de la fonction javascript "requete"
 		%>
