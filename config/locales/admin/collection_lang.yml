@@ -193,6 +193,7 @@ fr:
   NO_RESULTS: "FRENCH No results were returned.  Please confirm your configuration information."
   ERROR_OCCURED: "FRENCH An Error has occurred.  Please confirm your configuration information."
   COLLECTION_CREATED: "La collection a été créée"
+  COLLECTION_UPDATE_ERROR: "Erreur de mise à jour"
   COLLECTION_UPDATED: "La collection a été mise à jour"
   SUNDAY: "Dimanche"
   MONDAY: "Lundi"

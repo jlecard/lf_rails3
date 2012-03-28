@@ -60,8 +60,8 @@ fr:
                 password: "Mot de passe"
                 remember_me: "Rester connecté"
     will_paginate:
-        previous_label: "&#8592; Page précédente"
-        next_label: "Page suivante &#8594;"
-        page_gap: "&hellip;"
+        previous_label: "&#8592; "
+        next_label: " &#8594;"
+        page_gap: "[&hellip;]"
                 
      
