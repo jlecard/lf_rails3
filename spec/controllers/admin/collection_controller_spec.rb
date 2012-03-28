@@ -59,7 +59,7 @@ describe Admin::CollectionController do
           params = assigns[:params]
           params.should be_nil
           assigns[:page].should == "1"
-          assigns[:collection_pages].size.should == 0
+          assigns[:pages].size.should == 0
         end
       end
 
@@ -75,10 +75,10 @@ describe Admin::CollectionController do
           params = assigns[:params]
           params.should be_nil
           assigns[:page].should == "2"
-          assigns[:collection_pages].size.should == 20
-          assigns[:collection_pages].total_pages.should == 3
-          assigns[:collection_pages].previous_page.should == 1
-          assigns[:collection_pages].next_page.should == 3
+          assigns[:pages].size.should == 20
+          assigns[:pages].total_pages.should == 3
+          assigns[:pages].previous_page.should == 1
+          assigns[:pages].next_page.should == 3
         end
       end
     end
@@ -92,8 +92,19 @@ describe Admin::CollectionController do
         put :update, {:id=>c.to_param, :collection => {'host'=>'testhost'}}
         rc = assigns[:collection]
         rc.host.should == "testhost"
-        response.should redirect_to(@collection)
+        response.should redirect_to(admin_collection_path(c))
+        rc.should eq(c)
         flash[:notice].should == "La collection a été mise à jour"
+      end
+      it "should render the edit form - invalid attribute (no changes made)" do
+        c = Factory(:collection_seq)
+        put :update, {:id=>c.to_param, :collection => {:name=>''}}
+        cu = assigns[:collection]
+        response.should_not redirect_to(admin_collection_path(c))
+        response.should render_template("edit")
+        flash[:error].should == "Erreur de mise à jour"
+        cu.errors.size.should == 1
+        cu.errors.full_messages[0].should match(/Name/)
       end
     end
 

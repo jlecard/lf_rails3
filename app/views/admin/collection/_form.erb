@@ -23,7 +23,7 @@
 		<div id="error">
 			<% if @collection.errors.any? %>
 			<ul>
-				<%= @collection.errors.full_messages.each do |msg| %>
+				<% @collection.errors.full_messages.each do |msg| %>
 				<li>
 					<%= msg %>
 				</li>
@@ -160,11 +160,16 @@
 				<small> <%= translate("URL_EXAMPLE") %> </small> </span>
 		</div>
 		<div id="form_field">
-			<span class="form_left"> <label for="collection_mat_type"> <%= translate("MAT_TYPE_LABEL") %> </label>
+			<span class="form_left"> <label for="collection[mat_type]"> <%= translate("MAT_TYPE_LABEL") %> </label>
 				<br/>
 				<small> <%= translate("MATERIAL_TYPE_DESCRIPTION") %> </small> </span>
-			<span class="form_right"><%= radio_button "collection", "mat_type",'Article', :style=>"width:14px" %><span class="dot"><%= translate("ARTICLE_LABEL") %>&nbsp;&nbsp; </span><%= radio_button "collection", "mat_type",'Book', :style=>"width:14px" %><span class="dot"><%= translate("BOOK_LABEL") %>&nbsp;&nbsp; </span><%= radio_button "collection", "mat_type", 'Finding Aid', :style=>"width:14px" %><span class="dot"><%= translate("FINDING_AID_LABEL") %>&nbsp;&nbsp; </span><%= radio_button "collection", "mat_type", 'Image', :style=>"width:14px" %><span class="dot"><%= translate("IMAGE_LABEL") %>&nbsp;&nbsp; </span><%= radio_button "collection", "mat_type", 'Newspaper', :style=>"width:14px" %><span class="dot"><%= translate("NEWSPAPER_LABEL") %>&nbsp;&nbsp; </span><%= radio_button "collection", "mat_type", 'Internet', :style=>"width:14px" %><span class="dot"><%= translate("INTERNET_LABEL") %>&nbsp;&nbsp; </span> <% PrimaryDocumentType.find(:all).each do |p| %>
-				<%= radio_button "collection", "mat_type", "#{p.name}", :style=>"width:14px" %><span class="dot"><%= p.name %>&nbsp;&nbsp; </span><% end %>
+			<span class="form_right">
+				<% PrimaryDocumentType.find(:all).each do |p| %>
+				<%= radio_button "collection", "mat_type", "#{p.name}", :style=>"width:14px;clear:both;float:left" %>
+				<span class="dot">
+					<%= p.name %>&nbsp;&nbsp; 
+				</span>
+				<% end %>
 				<br/>
 				<small> <%= translate("MATERIAL_TYPE_EXAMPLE") %> </small> </span>
 		</div>

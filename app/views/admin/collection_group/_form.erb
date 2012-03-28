@@ -1,102 +1,69 @@
 <div id="error">
-    <%= error_messages_for 'collection_group' %>
+	<% if @collection_group.errors.any? %>
+	<ul>
+		<% @collection_goupr.errors.full_messages.each do |msg| %>
+		<li>
+			<%= msg %>
+		</li>
+		<% end %>
+	</ul>
+	<% end %>
 </div>
 <div id="form_field">
-    <span class="form_left">
-        <label for="collection_group_name">
-            <%=translate("NAME_LABEL") %>
-        </label>
-        <br/>
-        <small>
-            <%=translate("NAME_DESCRIPTION") %>
-        </small>
-    </span>
-    <span class="form_right"><%= form.text_field :name %>
-        <br/>
-        <small>
-            <%=translate("NAME_EXAMPLE") %>
-        </small>
-    </span>
+	<span class="form_left"> <label for="collection_group_name"> <%= translate("NAME_LABEL") %> </label>
+		<br/>
+		<small> <%= translate("NAME_DESCRIPTION") %> </small> </span>
+	<span class="form_right"><%= form.text_field :name %>
+		<br/>
+		<small> <%= translate("NAME_EXAMPLE") %> </small> </span>
 </div>
 <div id="form_field">
-    <span class="form_left">
-        <label for="collection_group_name">
-            <%=translate("FULL_NAME_LABEL") %>
-        </label>
-        <br/>
-        <small>
-            <%=translate("FULL_NAME_DESCRIPTION") %>
-        </small>
-    </span>
-    <span class="form_right"><%= form.text_field :full_name %>
-        <br/>
-        <small>
-            <%=translate("FULL_NAME_EXAMPLE") %>
-        </small>
-    </span>
+	<span class="form_left"> <label for="collection_group_name"> <%= translate("FULL_NAME_LABEL") %> </label>
+		<br/>
+		<small> <%= translate("FULL_NAME_DESCRIPTION") %> </small> </span>
+	<span class="form_right"><%= form.text_field :full_name %>
+		<br/>
+		<small> <%= translate("FULL_NAME_EXAMPLE") %> </small> </span>
 </div>
 <div id="form_field">
-    <span class="form_left">
-        <label for="collection_group_name">
-            <%=translate("DESCRIPTION_LABEL") %>
-        </label>
-        <br/>
-        <small>
-            <%=translate("GROUP_DESC_DESCRIPTION") %>
-        </small>
-    </span>
-    <span class="form_right"><%= form.text_area :description, :rows=>3 %>
-        <br/>
-        <small>
-            <%=translate("GROUP_DESC_EXAMPLE") %>
-        </small>
-    </span>
+	<span class="form_left"> <label for="collection_group_name"> <%= translate("DESCRIPTION_LABEL") %> </label>
+		<br/>
+		<small> <%= translate("GROUP_DESC_DESCRIPTION") %> </small> </span>
+	<span class="form_right"><%= form.text_area :description, :rows=>3 %>
+		<br/>
+		<small> <%= translate("GROUP_DESC_EXAMPLE") %> </small> </span>
 </div>
 <div id="form_field">
-    <span class="form_left">
-        <label for="collection_group_name">
-            <%=translate("DISPLAY_ADVANCED_SEARCH_LABEL") %>
-        </label>
-        <br/>
-    </span>
-    <span class="form_right"><%= radio_button "collection_group", "display_advanced_search", "true", :style=>"width:14px" %><span class="dot"><%=translate("YES_LABEL") %>&nbsp;&nbsp; </span><%= radio_button "collection_group", "display_advanced_search", "false", :style=>"width:14px" %><span class="dot"><%=translate("NO_LABEL") %>&nbsp;&nbsp;</span>
-        <br/>
-    </span>
+	<span class="form_left"> <label for="collection_group_name"> <%= translate("DISPLAY_ADVANCED_SEARCH_LABEL") %> </label>
+		<br/>
+	</span>
+	<span class="form_right"><%= radio_button "collection_group", "display_advanced_search", "true", :style=>"width:14px" %><span class="dot"><%= translate("YES_LABEL") %>&nbsp;&nbsp; </span><%= radio_button "collection_group", "display_advanced_search", "false", :style=>"width:14px" %><span class="dot"><%= translate("NO_LABEL") %>&nbsp;&nbsp;</span>
+		<br/>
+	</span>
 </div>
 <div id="form_field">
-    <span class="form_left">
-        <label for="tab_id">
-            <%=translate("TAB_LABEL") %>
-        </label>
-        <br/>
-    </span>
-    <span class="form_right">
-        <select name="collection_group[tab_id]">
-            <option value=0><%=translate("NONE_VALUE")%></option>
-            <%= options_from_collection_for_select( @search_tabs, :id, :label, @collection_group.tab_id) %>
-            <br/>
-            <br/>
-        </select>
-    </span>
+	<span class="form_left"> <label for="tab_id"> <%= translate("TAB_LABEL") %> </label>
+		<br/>
+	</span>
+	<span class="form_right">
+		<select name="collection_group[tab_id]">
+			<option value=0><%= translate("NONE_VALUE")%></option>
+			<%= options_from_collection_for_select( @search_tabs, :id, :label, @collection_group.tab_id) %>
+			<br/>
+			<br/>
+		</select> </span>
 </div>
 <div id="form_field">
-    <span class="form_left">
-        <label for="tab_id">
-            <%=translate("RANK_LABEL") %>
-        </label>
-        <br/>
-    </span>
-    
+	<span class="form_left"> <label for="tab_id"> <%= translate("RANK_LABEL") %> </label>
+		<br/>
+	</span>
 	<% arr = Array.new();
     (1..50).each do |i|
-    arr << i;
-    end %>
-	
-    <span class="form_right">
-    <select name="collection_group[rank]">
-        <%= options_for_select(arr, @collection_group.rank) %>
-        <br/>
-        <br/>
-    </select>
-</span>
+      arr << i;
+    end %> <span class="form_right">
+		<select name="collection_group[rank]">
+			<%= options_for_select(arr, @collection_group.rank) %>
+			<br/>
+			<br/>
+		</select> </span>
 </div>

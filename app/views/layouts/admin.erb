@@ -3,9 +3,11 @@
     <head>
         <title><%=translate('LIBRARY_FIND_TITLE') %><%= controller.action_name %></title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <%= csrf_meta_tag %>
 		<%= stylesheet_link_tag 'library_find' %>
 		<%= stylesheet_link_tag 'bpi-page' %>
 		<%= stylesheet_link_tag 'ui-lightness/jquery-ui-1.8.11.custom' %>
+        <%= javascript_include_tag "application" %>
 		<%= javascript_include_tag "jquery-1.5.1.min" %>
 		<%= javascript_include_tag "jquery-ui-1.8.11.custom.min" %>
 		<%= javascript_include_tag "js_application" %>

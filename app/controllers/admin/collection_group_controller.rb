@@ -28,40 +28,36 @@ class Admin::CollectionGroupController < ApplicationController
   include ApplicationHelper
 
   layout 'admin'
-  auto_complete_for :collection_group, :name, {}
+  autocomplete :collection_group, :name
+  autocomplete :collection_group, :full_name
+  
   before_filter :authorize, :except => 'login',
     :role => 'administrator', 
     :msg => 'Access to this page is restricted.'
   
-  def initialize
-    super
-    seek = SearchController.new();
-    @filter_tab = SearchTabFilter.load_filter;
-    @linkMenu = seek.load_menu;
-    @groups_tab = SearchTab.load_groups;
-  end
-
   def index
     list
     render :action => 'list'
   end
 
   # GETs should be safe (see http://www.w3.org/2001/tag/doc/whenToUseGet.html)
-  verify :method => "post", :only => [ :destroy, :create, :update ],
-         :redirect_to => { :action => :list }
+  # verify :method => "post", :only => [ :destroy, :create, :update ],
+         # :redirect_to => { :action => :list }
 
   def list
+    logger.debug("CollectionGroupController list params = #{params.inspect}")
     conditions = Array.new
     # Filter on the tabs which this collection can be searched from
     conditions.push("(tab_id = #{params[:tab_id_filter][0]})") unless params[:tab_id_filter].nil? or params[:tab_id_filter][0].blank?
     # Filter on the name of the collection               
-    conditions.push("(name LIKE '#{params[:collection_group][:name]}')") unless params[:collection_group].nil? or params[:collection_group][:name].blank?
+    conditions.push("(name LIKE '#{params[:name]}%')") if params[:name]
+    conditions.push("(full_name LIKE '#{params[:full_name]}%')") if params[:full_name]
     
-    where_cond = conditions.join(" AND ").gsub(/\*/,"%").chomp(" AND ")
- 
-    @collection_group_pages, @collection_groups = paginate :collection_groups, :per_page => 20,:order => 'name asc', :conditions=> where_cond
-                                          
+    where_cond = conditions.join(" AND ").chomp(" AND ")
+    @page ||= params[:page] || "1"
+    @pages  = CollectionGroup.paginate(:page=>@page,:per_page => 20).where(where_cond).order('name asc')
     @display_columns = ['full_name', 'name']
+    
   end
 
   def show

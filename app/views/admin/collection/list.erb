@@ -5,7 +5,7 @@
         <span><h2><%=translate('COLLECTIONS_HEADER') %></h2></span>
         <br/>
         <%= link_to translate('ADD_A_NEW_COLLECTION'), :controller => '/admin/collection', :action => 'new' %>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<%= render :partial => "admin/admin_pagination", :locals=>{:pages=>@collection_pages, :params=> params} %>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<%= render :partial => "admin/admin_pagination", :locals=>{:pages=>@pages, :params=> params} %>
         <div id="edit_form">
             <div class="admin-list">
                 <% columns_hash=Collection.columns_hash
@@ -26,7 +26,7 @@
                 <span class="action-links">&nbsp;</span>
             </div>
             <br/>
-            <% for collection in @collection_pages %>
+            <% for collection in @pages %>
             <div class="admin-list">
                 <% for column in @display_columns
                 _class_name="medium-column"
@@ -66,5 +66,5 @@
             <% end %>
         </div>
     </div>
-    <%= render :partial => "admin/admin_pagination", :locals=>{:pages=>@collection_pages, :params=> params} %>
+    <%= render :partial => "admin/admin_pagination", :locals=>{:pages=>@pages, :params=> params} %>
 </div>

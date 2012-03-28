@@ -22,10 +22,10 @@
                     <span>
                     	<a name="setEffectToggle" class="linkplus">+</a>
                         <div id="bCollectionGroups" class="navigation">
-                            <%= link_to translate('COLLECTION_GROUPS'), :controller => '/admin/collection_group', :action => 'index' %>
+                            <%= link_to translate('COLLECTION_GROUPS'), admin_collection_group_index_path, :action=>'list' %>
                             <div name="menuItem" id="tCollectionGroups" class="expanded" init="0">
-                                <%= link_to translate('LIST_COLLECTION_GROUPS'), :controller => '/admin/collection_group', :action => 'list' %>
-                                <%= link_to translate('ADD_A_NEW_COLLECTION_GROUP'), :controller => '/admin/collection_group', :action => 'new' %>
+                                <%= link_to translate('LIST_COLLECTION_GROUPS'), admin_collection_group_index_path, :action=>'list' %>
+                                <%= link_to translate('ADD_A_NEW_COLLECTION_GROUP'), new_admin_collection_group_path %>
                             </div>
                         </div>
                     </span>

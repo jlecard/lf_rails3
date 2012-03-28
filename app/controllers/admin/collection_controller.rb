@@ -27,6 +27,7 @@
 
 class Admin::CollectionController < ApplicationController
   include ApplicationHelper
+  include Admin::CollectionHelper
 
   autocomplete :collection, :name
   autocomplete :collection, :alt_name
@@ -37,6 +38,8 @@ class Admin::CollectionController < ApplicationController
   :role => 'administrator', 
   :msg => 'Access to this page is restricted.'
   
+  # Override rails3-jquery-autocomplete autocompletion to retrieve 
+  # distinct connection stypes, otherwise use standard behaviour 
   def get_autocomplete_items(parameters)
     if parameters[:method] != :conn_type
       items = super(parameters)
@@ -320,7 +323,7 @@ class Admin::CollectionController < ApplicationController
   
   def index
     list
-    render :action => 'list'
+    render :action => 'list', :params => params
   end
   
   
@@ -346,8 +349,7 @@ class Admin::CollectionController < ApplicationController
     where_cond = conditions.join(" AND ").gsub(/\*/,"%").chomp(" AND ")
     logger.debug("COLLECTIONCONTROLLER WHERECOND = #{where_cond}")
     @page ||= params[:page] || "1"
-    @collection_pages = Collection.paginate(:page=>@page,:per_page => 20).where(where_cond).order('alt_name asc')
-    logger.debug("COLLECTIONCONTROLLER @coll_pages = #{@collection_pages.inspect}") 
+    @pages = Collection.paginate(:page=>@page,:per_page => 20).where(where_cond).order('alt_name asc')
     @display_columns = ['alt_name', 'name']
     
   end
@@ -382,9 +384,10 @@ class Admin::CollectionController < ApplicationController
     @collection = Collection.find(params[:id])
     if @collection.update_attributes(params[:collection])
       flash[:notice] = translate('COLLECTION_UPDATED')
-      redirect_to :action => 'show', :id => @collection
+      redirect_to admin_collection_path(@collection)
     else
-      render :action => 'edit'
+      flash[:error] = translate('COLLECTION_UPDATE_ERROR')
+      render :action=> 'edit', :id=>@collection
     end
   end
   
