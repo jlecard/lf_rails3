@@ -3,17 +3,17 @@
 # LibraryFind - Quality find done better.
 # Copyright (C) 2007 Oregon State University
 #
-# This program is free software; you can redistribute it and/or modify it under 
-# the terms of the GNU General Public License as published by the Free Software 
-# Foundation; either version 2 of the License, or (at your option) any later 
+# This program is free software; you can redistribute it and/or modify it under
+# the terms of the GNU General Public License as published by the Free Software
+# Foundation; either version 2 of the License, or (at your option) any later
 # version.
 #
-# This program is distributed in the hope that it will be useful, but WITHOUT 
-# ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS 
+# This program is distributed in the hope that it will be useful, but WITHOUT
+# ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
 # FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
 #
-# You should have received a copy of the GNU General Public License along with 
-# this program; if not, write to the Free Software Foundation, Inc., 59 Temple 
+# You should have received a copy of the GNU General Public License along with
+# this program; if not, write to the Free Software Foundation, Inc., 59 Temple
 # Place, Suite 330, Boston, MA 02111-1307 USA
 #
 # Questions or comments on this program may be addressed to:
@@ -30,11 +30,10 @@ class Admin::CollectionGroupController < ApplicationController
   layout 'admin'
   autocomplete :collection_group, :name
   autocomplete :collection_group, :full_name
-  
+
   before_filter :authorize, :except => 'login',
-    :role => 'administrator', 
-    :msg => 'Access to this page is restricted.'
-  
+  :role => 'administrator',
+  :msg => 'Access to this page is restricted.'
   def index
     list
     render :action => 'list'
@@ -42,22 +41,22 @@ class Admin::CollectionGroupController < ApplicationController
 
   # GETs should be safe (see http://www.w3.org/2001/tag/doc/whenToUseGet.html)
   # verify :method => "post", :only => [ :destroy, :create, :update ],
-         # :redirect_to => { :action => :list }
+  # :redirect_to => { :action => :list }
 
   def list
     logger.debug("CollectionGroupController list params = #{params.inspect}")
     conditions = Array.new
     # Filter on the tabs which this collection can be searched from
     conditions.push("(tab_id = #{params[:tab_id_filter][0]})") unless params[:tab_id_filter].nil? or params[:tab_id_filter][0].blank?
-    # Filter on the name of the collection               
+    # Filter on the name of the collection
     conditions.push("(name LIKE '#{params[:name]}%')") if params[:name]
     conditions.push("(full_name LIKE '#{params[:full_name]}%')") if params[:full_name]
-    
+
     where_cond = conditions.join(" AND ").chomp(" AND ")
     @page ||= params[:page] || "1"
     @pages  = CollectionGroup.paginate(:page=>@page,:per_page => 20).where(where_cond).order('name asc')
     @display_columns = ['full_name', 'name']
-    
+
   end
 
   def show
@@ -78,14 +77,14 @@ class Admin::CollectionGroupController < ApplicationController
     @collection_group = CollectionGroup.new
     @search_tabs = SearchTab.find(:all)
   end
-  
+
   def create
     @collection_group = CollectionGroup.new(params[:collection_group])
     if @collection_group.save
       checkboxes=params[:collection]
       if checkboxes!=nil
         ids=""
-        for pair in checkboxes 
+        for pair in checkboxes
           if pair[1]=='1'
             query_filter = eval("params[:query_collection][\"#{pair[0].to_s}\"]")
             if query_filter != nil || query_filter != ""
@@ -101,7 +100,7 @@ class Admin::CollectionGroupController < ApplicationController
       render :action => 'new'
     end
   end
-  
+
   def edit_groups
     @search_tabs = SearchTab.find(:all)
     construct_filter_queries
@@ -123,8 +122,8 @@ class Admin::CollectionGroupController < ApplicationController
       @selected_collections=params[:selected_collections].split(',')
     end
     checkboxes=params[:collection]
-    if checkboxes!=nil       
-      for pair in checkboxes 
+    if checkboxes!=nil
+      for pair in checkboxes
         if (params[:query_collection] != nil)
           query_filter = eval("params[:query_collection][\"#{pair[0].to_s}\"]")
           if query_filter != nil || query_filter != ""
@@ -134,13 +133,13 @@ class Admin::CollectionGroupController < ApplicationController
         if pair[1]=='1' && !@selected_collections.include?(pair[0].to_s)
           @selected_collections<<(pair[0].to_s)
         elsif pair[1]=='0' && @selected_collections.include?(pair[0].to_s)
-          @selected_collections.delete(pair[0].to_s)   
+          @selected_collections.delete(pair[0].to_s)
         end
       end
     end
     @selected_collections=@selected_collections.uniq
   end
-  
+
   def construct_filter_queries
     @filter_queries = Hash.new
     for coll in CollectionGroupMember.find(:all, :conditions => "collection_group_id = #{params[:id]}")
@@ -163,11 +162,11 @@ class Admin::CollectionGroupController < ApplicationController
   def update
     @search_tabs = SearchTab.find(:all)
     construct_filter_queries
-     if (params[:id]!=nil && params[:id]!="")
+    if (params[:id]!=nil && params[:id]!="")
       @collection_group = CollectionGroup.find(params[:id].to_i)
-     else
-       @collection_group = CollectionGroup.new(params[:collection_group])
-     end
+    else
+      @collection_group = CollectionGroup.new(params[:collection_group])
+    end
     if @collection_group.update_attributes(params[:collection_group])
       construct_selected_collections
       update_selected_collections
@@ -178,35 +177,34 @@ class Admin::CollectionGroupController < ApplicationController
     end
   end
 
-def create_group_member(collection_group, collection_id, filter_query)
-  collection=Collection.find(collection_id)  
-  cgm = CollectionGroupMember.new 
-  cgm.collection = collection
-  cgm.collection_group = collection_group
-  cgm.default_on = true
-  cgm.filter_query = filter_query == nil ? "" : filter_query
-  cgm.save!
-end
-
+  def create_group_member(collection_group, collection_id, filter_query)
+    collection=Collection.find(collection_id)
+    cgm = CollectionGroupMember.new
+    cgm.collection = collection
+    cgm.collection_group = collection_group
+    cgm.default_on = true
+    cgm.filter_query = filter_query.nil? ? "" : filter_query
+    cgm.save!
+  end
 
   def update_selected_collections
     if (params[:id]!=nil && params[:id]!="")
-      @collection_group = CollectionGroup.find(params[:id].to_i)   
+      @collection_group = CollectionGroup.find(params[:id].to_i)
       if @collection_group.collections!=nil and !@collection_group.collections.empty?
         old_collection_list=Array.new(@collection_group.collections.length) {|i|@collection_group.collections[i].id.to_s}
         removed_collections=old_collection_list-@selected_collections
         for id in removed_collections
           cgm = CollectionGroupMember.find(:first, :conditions =>
-            ["collection_id = :cid and collection_group_id = :cgid", 
+          ["collection_id = :cid and collection_group_id = :cgid",
             {:cid => id.to_i, :cgid => @collection_group.id}])
-          cgm.destroy 
+          cgm.destroy
         end
       end
     end
     for id in @selected_collections
-      collection=Collection.find(id.to_i) 
+      collection=Collection.find(id.to_i)
       if !@collection_group.collections.include? collection
-        cgm = CollectionGroupMember.new 
+        cgm = CollectionGroupMember.new
         cgm.collection = collection
         cgm.collection_group = @collection_group
         cgm.default_on = true

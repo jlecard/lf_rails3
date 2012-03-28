@@ -24,9 +24,12 @@
 				if column=="full_name"
 				_class_name="large-column"
 				end
-				if collection_group.send(column)==nil or collection_group.send(column)=="" %> <span class="<%= _class_name%>">&nbsp;</span>
+				if collection_group.send(column)==nil or collection_group.send(column)=="" %> 
+				<span class="<%= _class_name%>">&nbsp;</span>
 				<%elsif column=="full_name" %>
-				 <span class="<%= _class_name%>"><%= link_to h(collection_group.send(column)), admin_collection_group_path(collection_group) %></span>
+				 <span class="<%= _class_name%>">
+				     <%= link_to h(collection_group.send(column)), admin_collection_group_path(collection_group) %>
+				 </span>
 				<%else %> <span class="<%= _class_name%>"><%= h collection_group.send(column) %></span>
 				<% end %>
 				<% end %>
