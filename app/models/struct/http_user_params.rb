@@ -22,35 +22,31 @@
 # roger.essoh@atosorigin.com
 #
 # http://libraryfind.org
-class Struct::Params < ActionWebService::Struct
-  member :state_user, :string
-  member :name_user, :string
-  member :uuid_user, :string
-  member :role_user, :string
-  member :location_user, :string
-  member :ip_user, :string
-  member :group_user, :timestamp
+class HttpUserParams
+  attr_accessor :state_user
+  attr_accessor :name_user
+  attr_accessor :uuid_user
+  attr_accessor :role_user
+  attr_accessor :location_user
+  attr_accessor :ip_user
+  attr_accessor :group_user
   
-  def initialize(request)
-    super
-    self.state_user = request.env['HTTP_STATE_USER']
-    self.name_user = request.env['HTTP_NAME_USER']
-    self.uuid_user = request.env['HTTP_UUID_USER']
-    
-    if !request.env['HTTP_ROLE_USER'].blank?
-      self.role_user = request.env['HTTP_ROLE_USER'].split(",")
+  def initialize args
+    args.each do |key, val|
+      instance_variable_set("@#{key}", val) unless val.nil?
     end
-    
-    self.location_user = request.env[PROFIL_HTTP]
-    
-    if !request.env['HTTP_IP_USER'].blank?
-      self.ip_user = request.env['HTTP_IP_USER'].split(",")
-    end
-    
-    if !request.env['HTTP_GROUP_USER'].blank?
-      self.group_user = request.env['HTTP_GROUP_USER'].split(",")
-    end
-    
+  end
+  
+  def self.from_http_request(request)
+    info_user = HttpUserParams.new
+    info_user.state_user = request.env['HTTP_STATE_USER']
+    info_user.name_user = request.env['HTTP_NAME_USER']
+    info_user.uuid_user = request.env['HTTP_UUID_USER']
+    info_user.location_user = request.env[PROFIL_HTTP]
+    info_user.role_user = request.env['HTTP_ROLE_USER'].split(",") if !request.env['HTTP_ROLE_USER'].blank?
+    info_user.ip_user = request.env['HTTP_IP_USER'].split(",") if !request.env['HTTP_IP_USER'].blank?
+    info_user.group_user = request.env['HTTP_GROUP_USER'].split(",") if !request.env['HTTP_GROUP_USER'].blank?
+    return info_user
   end
   
 end

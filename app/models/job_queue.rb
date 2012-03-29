@@ -29,7 +29,7 @@
 
 
 class JobQueue < ActiveRecord::Base
-  has_many :cached_record
+  has_many :cached_records
   
   def self.check_status (id)
     begin
@@ -60,7 +60,7 @@ class JobQueue < ActiveRecord::Base
       objRecord.save
       logger.info("[job_queue][update_job] Update JOB ID #{id} : #{objRecord.status} time : #{objRecord.timestamp}")
       return 1
-    rescue Exception=>e
+    rescue => e
       logger.error("[job_queue][update_job] Error on JOBRECORD ID #{id} : #{objRecord} : #{e.message}")
       logger.debug("[job_queue][update_job] Backtrace : #{e.backtrace.join("\n")}")
       return nil
@@ -97,9 +97,8 @@ class JobQueue < ActiveRecord::Base
         return nil
       end
       cle = "#{objJob.records_id}"
-
+      
       if CACHE_ACTIVATE 
-        
         objRec = CACHE.get(cle)
         logger.info("[job_queue][retrieve_metadata] testing cache objerec #{objRec.class}")
         return objRec
@@ -110,7 +109,8 @@ class JobQueue < ActiveRecord::Base
       logger.debug("[job_queue][retrieve_metadata] ObjRecords class #{ObjRecords.class}")
       return nil if objRecords == nil
       return objRecords
-    rescue
+    rescue => e
+      logger.error("[job_queue][retrieve_metadata] error for id #{id} : #{e.message}")
       return nil
     end
   end

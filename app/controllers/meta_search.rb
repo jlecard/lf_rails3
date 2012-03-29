@@ -49,29 +49,15 @@ class MetaSearch < ActionController::Base
   end
   
   def simple_search(_sets, _qtype, _qstring, _start, _max)
-    case _qtype.class.to_s
-      when "Array"
-      return Search(_sets, _qtype, _qstring, _start, _max, nil,nil,nil,true)
-    else
-      qtype = Array.new
-      qstring = Array.new
-      qtype[0] = _qtype
-      qstring[0] = _qstring
-      return Search(_sets, qtype, qstring, _start, _max, nil, nil, nil, true)
-    end
+    _qtype = _qtype.to_a if _qtype.instance_of?(String)
+    _qstring = _qtype.to_a if _qstring.instance_of?(String)
+    return Search(_sets, qtype, qstring, _start, _max, nil, nil, nil, true)
   end
   
   def simple_search_async(_sets, _qtype, _qstring, _start, _max)
-    case _qtype.class.to_s
-      when "Array"
-      return search_async(_sets, _qtype, _qstring, _start, _max, 1,nil,nil,true)
-    else
-      qtype = Array.new
-      qstring = Array.new
-      qtype[0] = _qtype
-      qstring[0] = _qstring
-      return search_async(_sets, qtype, qstring, _start, _max, 1, nil, nil, true)
-    end
+    _qtype = _qtype.to_a if _qtype.instance_of?(String)
+    _qstring = _qtype.to_a if _qstring.instance_of?(String)
+    return search_async(_sets, qtype, qstring, _start, _max, 1, nil, nil, true)
   end
   
   
@@ -82,9 +68,7 @@ class MetaSearch < ActionController::Base
     _objRec.setKeyword( _qstring[0])
     _stype = _qtype[0]
     config = ActiveRecord::Base.configurations[RAILS_ENV]
-    #_dbh = Mysql.real_connect(config['host'], config['username'], config['password'], 
-    #config['database'])
-    #config['database'], config['port'], nil, nil)
+
     _tmp = ""
     _max_recs = 0
     
@@ -253,13 +237,9 @@ class MetaSearch < ActionController::Base
   # _max :          max result by search
   # _qoperator :  table of operators (operator1, operator2)
   def search_async (_sets, _qtype, _qstring, _start, _max, _qoperator, options=nil, _session_id=nil, _action_type=1, _data = nil, _bool_obj=true) 
-    logger.info("[search_async] INFOS_USER_CONTROL : #{INFOS_USER_CONTROL} @infos_user : #{@infos_user.inspect}")
-    logger.info("[search_async] spawn method found in #{2.method(:spawn)}")
     if(INFOS_USER_CONTROL and !@infos_user.nil?)
-      
       # Get collections list in which the user is authorized to search
       collections_permissions = ManageDroit.GetCollectionsAndPermissions(@infos_user)
-      
       cols_ids_authorized = Collection.getCollectionsIds(collections_permissions)
     end
     
@@ -720,9 +700,9 @@ class MetaSearch < ActionController::Base
       arrNames = []
       objMembers.each do |coll|
         arrIds << "c" + coll.collection_id.to_s
-        tmpvals = Collection.get_item(coll.collection_id)
+        tmpvals = Collection.find_by_id(coll.collection_id).alt_name
         if tmpvals != nil
-          arrNames << Collection.get_item(coll.collection_id)
+          arrNames << tmpvals
         else
           arrNames << "[undefined]"
         end 
@@ -733,7 +713,7 @@ class MetaSearch < ActionController::Base
       objGroupList.id_tab = item.tab_id
       objGroupList.description = item.description
     end 
-    return (objList);
+    return objList
   end
   
   def GetGroupMembers(name)

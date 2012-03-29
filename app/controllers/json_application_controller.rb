@@ -51,7 +51,7 @@ class JsonApplicationController < ApplicationController
     logger.debug("[JsonApplicationController] IP_USER : #{request.env['HTTP_IP_USER']}")
     logger.debug("[JsonApplicationController] GROUP_USER : #{request.env['HTTP_GROUP_USER']}")
     if !request.env['HTTP_STATE_USER'].blank?
-      @info_user = Struct::Params.new(request)
+      @info_user = HttpUserParams.from_http_request(request)
     end
     logger.debug("[JsonApplicationController] [analyse_request] @info_user : #{@info_user.inspect}")
     $objDispatch.setInfosUser(@info_user)
