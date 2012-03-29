@@ -107,7 +107,7 @@ class JobQueue < ActiveRecord::Base
       end
       logger.debug("[job_queue][retrieve_metadata] for id #{id}")
       logger.debug("[job_queue][retrieve_metadata] ObjRecords class #{ObjRecords.class}")
-      return nil if objRecords == nil
+      return nil if objRecords.nil?
       return objRecords
     rescue => e
       logger.error("[job_queue][retrieve_metadata] error for id #{id} : #{e.message}")
