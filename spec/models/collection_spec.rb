@@ -17,7 +17,7 @@ describe Collection do
       page = Collection.paginate(:page=>1,:per_page => 20)
       page.size.should == 20
       page = Collection.paginate(:page=>1,:per_page => 20).order('name asc')
-      page[0].name.should == "collection_1"
+      page[0].name.should match(/collection_1/)
       page.total_pages.should == 2
       page.current_page.should == 1
       page.previous_page.should be_nil
@@ -27,13 +27,13 @@ describe Collection do
       page.total_entries.should == 25
     end
 
-    it "should apply conditions and return 11 collections" do
+    it "should apply conditions and return 9 collections" do
       page = Collection.paginate(:page=>2,:per_page => 3).where("name like ?", ["collection_1%"])
       page.size.should == 3
       page.current_page.should == 2
       page.offset.should == 3
-      page.total_pages.should == 4
-      page.total_entries.should == 11
+      page.total_pages.should == 3
+      page.total_entries.should == 9
       
       page = Collection.paginate(:page=>2,:per_page => 3).where("")
       page.size.should == 3

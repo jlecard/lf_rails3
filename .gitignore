@@ -6,3 +6,4 @@ components/synonymes
 log
 .project
 config/database.yml
+config/database.yml

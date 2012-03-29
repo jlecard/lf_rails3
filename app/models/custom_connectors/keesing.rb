@@ -14,7 +14,7 @@ class KeesingBrowserClass
   def search(keyword, max)
     @logger.debug("[Keesing][search] url = #{@url}/search?kssp_search_phrase=#{keyword}")
     a = Mechanize.new do |agent|
-      agent.set_proxy("spxy.bpi.fr","3128")
+      #agent.set_proxy("spxy.bpi.fr","3128")
       agent.keep_alive = true
     end
     

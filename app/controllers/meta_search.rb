@@ -655,54 +655,24 @@ class MetaSearch < ActionController::Base
         next
       end
       
-      if CACHE_ACTIVATE
-        tmp = nil
-        if @infos_user and !@infos_user.location_user.blank?
-          cle = "#{_id}_#{@infos_user.location_user}"
-        else
-          cle = "#{_id}"
-        end
-        begin
-          tmp = CACHE.get(cle)
-          if !tmp.blank?
-            logger.info("[get_jobs_records] got data from cache with key: #{cle}")
-            _recs.concat(tmp)
-            logger.debug("[MetaSearch][get_jobs_records] _recs = #{_recs.inspect}")
-            next
-          end
-        rescue => e
-          logger.error("[get_jobs_records] Error when get memcache: #{cle}: #{e.message}")
-          next
-        end
-      else
-        logger.debug("[MetaSearch][get_jobs_records] _recs = #{_recs.inspect}")
-        _xml = JobQueue.retrieve_metadata(_id, _max, temps, @infos_user)
-        logger.info("[meta_search][GetJobsRecord] cached search xml return object = #{_xml.class}")
-        if _xml != nil
-          if _xml.status == LIBRARYFIND_CACHE_OK
-            # Note:  it should never happen that .data is nil
-            if _xml.data != nil
-              #logger.info("XML to UNPACK: " + _xml.data)
-              # Load from cache
-              _tmp =  _objRec.unpack_cache(_xml.data, _max.to_i)
-              
-              if _tmp != nil
-                if CACHE_ACTIVATE
-                  logger.info("[get_jobs_records] Set in cache with key = #{cle}")
-                  begin
-                    CACHE.set(cle, _tmp, 3600.seconds)
-                  rescue
-                    logger.error("[get_jobs_records] error when writing in cache")
-                  end
-                end
-                _recs.concat(_tmp)
-              end
+
+      logger.debug("[MetaSearch][get_jobs_records] _recs = #{_recs.inspect}")
+      _xml = JobQueue.retrieve_metadata(_id, _max, temps, @infos_user)
+      logger.info("[meta_search][GetJobsRecord] cached search xml return object = #{_xml.class}")
+      if _xml != nil
+        if _xml.status == LIBRARYFIND_CACHE_OK
+          # Note:  it should never happen that .data is nil
+          if _xml.data != nil
+            #logger.info("XML to UNPACK: " + _xml.data)
+            # Load from cache
+            _tmp =  _objRec.unpack_cache(_xml.data, _max.to_i)
+            _recs.concat(_tmp) if _tmp
             end
           end
         end
       end
-    end
     
+
     logger.info("#STAT# [GETRECORDS] total: " + sprintf( "%.2f",(Time.now().to_f - _sTime)).to_s) if LOG_STATS
     logger.debug("FIRST RECORD IS #{_recs[0].inspect}") if _recs[0] 
     return _recs
