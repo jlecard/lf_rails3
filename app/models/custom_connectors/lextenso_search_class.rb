@@ -53,24 +53,9 @@ class LextensoSearchClass < ActionController::Base
     
     _lprint = false
     if _lrecord != nil
-              ### Add cache record ####
-      if (CACHE_ACTIVATE and job_id > 0)
-        begin
-          if infos_user and !infos_user.location_user.blank?
-            cle = "#{job_id}_#{infos_user.location_user}"
-          else
-            cle = "#{job_id}"
-          end
-          CACHE.set(cle, _lrecord, 3600.seconds)
-          logger.debug("[#{self.class}][SearchCollection] Records set in cache with key #{cle}.")
-        rescue
-          logger.error("[#{self.class}][SearchCollection] error when writing in cache")
-        end
-      end
       _lxml = CachedSearch.build_cache_xml(_lrecord)
-      
-      if _lxml != nil: _lprint = true end
-      if _lxml == nil: _lxml = "" end
+      _lprint = true if _lxml != nil
+      _lxml = "" if _lxml == nil
       
       #============================================
       # Add this info into the cache database

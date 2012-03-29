@@ -98,24 +98,9 @@ class CrawlerSearchClass < ApplicationController
     
     _lprint = false
     if _lrecord != nil
-            ### Add cache record ####
-      if (CACHE_ACTIVATE and job_id != "")
-        begin
-          if infos_user and !infos_user.location_user.blank?
-            cle = "#{job_id}_rec_#{infos_user.location_user}"
-          else
-            cle = "#{job_id}_rec"
-          end
-          CACHE.set(cle, _lrecord, 3600.seconds)
-          #logger.info("[#{self.class}][SearchCollection] Records set in cache with key #{cle}.")
-        rescue
-          #logger.error("[#{self.class}][SearchCollection] error when writing in cache")
-        end
-      end
       _lxml = CachedSearch.build_cache_xml(_lrecord)
-      
-      if _lxml != nil: _lprint = true end
-      if _lxml == nil: _lxml = "" end
+      _lprint = true if _lxml != nil
+      _lxml = "" if _lxml == nil
       
       #============================================
       # Add this info into the cache database

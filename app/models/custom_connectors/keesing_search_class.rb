@@ -23,8 +23,6 @@
 # http://libraryfind.org
 require 'keesing'
 
-
-
 class KeesingSearchClass < ActionController::Base
 
   attr_reader :hits, :xml, :total_hits
@@ -41,7 +39,7 @@ class KeesingSearchClass < ActionController::Base
     _lrecord = Array.new()
 
     begin
-    #perform the search
+      #perform the search
       "[KeesingSearchClass][SearchCollection] URL: #{@cObject.url}"
       browser = KeesingBrowserClass.new(@cObject.url, logger)
       browser.search(@pkeyword, _max.to_i)
@@ -56,7 +54,7 @@ class KeesingSearchClass < ActionController::Base
         _lxml = ""
         logger.debug("ID: " + _last_id.to_s)
         my_id = CachedSearch.save_metadata(_last_id, _lxml, _collect.id, _max.to_i, LIBRARYFIND_CACHE_EMPTY, infos_user)
-      return my_id, 0, 0
+        return my_id, 0, 0
       else
         return nil
       end
@@ -72,7 +70,7 @@ class KeesingSearchClass < ActionController::Base
           _lxml = ""
           logger.debug("ID: " + _last_id.to_s)
           my_id = CachedSearch.save_metadata(_last_id, _lxml, _collect.id, _max.to_i, LIBRARYFIND_CACHE_EMPTY, infos_user)
-        return my_id, 0, @total_hits
+          return my_id, 0, @total_hits
         else
           return nil
         end
@@ -81,22 +79,7 @@ class KeesingSearchClass < ActionController::Base
 
     _lprint = false
     if _lrecord != nil
-      ### Add cache record ####
-      if (CACHE_ACTIVATE and job_id > 0)
-        begin
-          if infos_user and !infos_user.location_user.blank?
-            cle = "#{job_id}_#{infos_user.location_user}"
-          else
-            cle = "#{job_id}"
-          end
-          CACHE.set(cle, _lrecord, 3600.seconds)
-          logger.debug("[#{self.class}][SearchCollection] Records set in cache with key #{cle}.")
-        rescue
-          logger.error("[#{self.class}][SearchCollection] error when writing in cache")
-        end
-      end
       _lxml = CachedSearch.build_cache_xml(_lrecord)
-
       _lprint = true if _lxml != nil
       _lxml = "" if _lxml == nil
 
@@ -109,9 +92,7 @@ class KeesingSearchClass < ActionController::Base
       else
         logger.debug("Save metadata")
         status = LIBRARYFIND_CACHE_OK
-        if _lprint != true
-          status = LIBRARYFIND_CACHE_EMPTY
-        end
+        status = LIBRARYFIND_CACHE_EMPTY if !_lprint
         my_id = CachedSearch.save_metadata(_last_id, _lxml, _collect.id, _max.to_i, status, infos_user, @total_hits)
       end
     else
@@ -123,12 +104,12 @@ class KeesingSearchClass < ActionController::Base
 
     if _action_type != nil
       if _lrecord != nil
-      return my_id, _lrecord.length, @total_hits
+        return my_id, _lrecord.length, @total_hits
       else
-      return my_id, 0, @total_hits
+        return my_id, 0, @total_hits
       end
     else
-    return _lrecord
+      return _lrecord
     end
   end
 
@@ -184,7 +165,7 @@ class KeesingSearchClass < ActionController::Base
           # Does user have rights to view the notice ?
           droits = ManageDroit.GetDroits(infos_user,@cObject.id)
           if(droits.id_perm == ACCESS_ALLOWED)
-          record.direct_url = _link
+            record.direct_url = _link
           else
             record.direct_url = "";
           end
@@ -215,7 +196,7 @@ class KeesingSearchClass < ActionController::Base
       rescue Exception => bang
         logger.debug("[KeesingSearchClass][parse] parse_result error: #{bang.message}")
         logger.debug("[KeesingSearchClass][parse] parse_result trace: #{bang.backtrace.join("\n")}" )
-      next
+        next
       end
     }
     return _record

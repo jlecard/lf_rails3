@@ -107,26 +107,11 @@ class Z3950SearchClass < ActionController::Base
       _tprint = false   
       
       if _ltrecord !=nil 
-        ### Add cache record ####
-        if (CACHE_ACTIVATE and job_id > 0)
-          begin
-            logger.debug("[Z3950SearchClass][SearchCollection] Records Z3950 setting in cache.")
-            if infos_user and !infos_user.location_user.blank?
-              cle = "#{job_id}_#{infos_user.location_user}"
-            else
-              cle = "#{job_id}"
-            end
-            CACHE.set(cle, _ltrecord, 300.seconds)
-          rescue
-            logger.error("[Z3950SearchClass][SearchCollection] error when writing in cache")
-          end
-        end
-        
+        _lprint = true if _lxml != nil
+        _lxml = "" if _lxml == nil        
         _startT = Time.now().to_f
         _lxml = CachedSearch.build_cache_xml(_ltrecord)
         logger.debug("[Z3950SearchClass] [SearchCollection] time build cache : #{Time.now().to_f - _startT} s")
-        if _lxml != nil: _tprint = true end            
-        if _lxml == nil: _lxml = "" end
       end
       #=========================================================
       # Add this info into the cache
