@@ -622,22 +622,20 @@ class MetaSearch < ActionController::Base
     _sTime = Time.now().to_f
     _recs = []
     _tmp =[]
-    _objRec = RecordSet.new
+    record_set = RecordSet.new
     _rec = Record.new
 
     job_ids.each do |_id|
       # verification si dans le temps
       job_object = JobQueue.getJobInTemps(_id, temps)
-      if (objJob.nil?)
-        next
-      end
+      next if !job_object
 
       logger.debug("[MetaSearch][get_jobs_records] _recs = #{_recs.inspect}")
       cached_record = JobQueue.retrieve_metadata(_id, _max, temps, @infos_user)
       logger.info("[meta_search][GetJobsRecord] cached search xml return object = #{cached_record.class}")
       if cached_record and cached_record.status == LIBRARYFIND_CACHE_OK 
         if cached_record.data
-          _tmp =  job_object.unpack_cache(cached_record.data, _max.to_i)
+          _tmp =  record_set.unpack_cache(cached_record.data, _max.to_i)
           _recs.concat(_tmp) if _tmp
         end
       end
