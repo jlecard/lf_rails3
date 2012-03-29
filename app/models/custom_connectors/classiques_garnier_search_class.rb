@@ -154,9 +154,9 @@ class ClassiquesgarnierSearchClass < ActionController::Base
     _objRec = RecordSet.new()
     _hits = Hash.new()
     _dateIndexed = Hash.new()
-    _bfound = false;
+    _bfound = false
     
-    if _max.class != 'Int': _max = _max.to_i end
+    _max = _max.to_i 
     
     _keywords = _qstring.join("|")
     #if _keywords.slice(0,1)=='"'

@@ -1039,6 +1039,16 @@ div.collection_helper ul li:hover {
     padding-bottom: 10px;
 }
 
+.admin_filter_form label {
+	float: left;
+	width:150px;
+}
+.admin_filter_form select {
+	float: left;
+	margin:0;
+}
+
+
 /* _______________________  Admin collection_groups __________________________*/
 .collection_list {
     display: block;

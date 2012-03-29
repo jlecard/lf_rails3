@@ -90,8 +90,11 @@ class OaiSearchClass < ActionController::Base
       end
       _lxml = CachedSearch.build_cache_xml(_lrecord)
       
-      if _lxml != nil: _lprint = true end
-      if _lxml == nil: _lxml = "" end
+      if _lxml 
+         _lprint = true 
+      else
+        _lxml = ""
+      end
       
       #============================================
       # Add this info into the cache database
