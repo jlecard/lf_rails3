@@ -23,97 +23,51 @@
 # http://libraryfind.org
 require 'keesing'
 
-class KeesingSearchClass < ActionController::Base
+class KeesingSearchClass
 
   attr_reader :hits, :xml, :total_hits
-  @cObject = nil
+  include SearchClassHelper
+  @collection = nil
   @pkeyword = ""
   @search_id = 0
   @hits = 0
   @total_hits = 0
-  def self.SearchCollection(_collect, _qtype, _qstring, _start, _max, _qoperator, _last_id, job_id = -1, infos_user = nil, options = nil, _session_id=nil, _action_type=nil, _data = nil, _bool_obj=true)
+  def SearchCollection(_collect, _qtype, _qstring, _start, _max, _qoperator, _last_id, job_id = -1, infos_user = nil, options = nil, _session_id=nil, _action_type=nil, _data = nil, _bool_obj=true)
     logger.debug("[KeesingSearchClass] [SearchCollection]")
-    @cObject = _collect
+    @collection = _collect
     @pkeyword = _qstring.join(" ")
     @search_id = _last_id
-    _lrecord = Array.new()
+    @infos_user = infos_user
+    @max = _max
+    @action = _action_type
 
     begin
       #perform the search
-      "[KeesingSearchClass][SearchCollection] URL: #{@cObject.url}"
-      browser = KeesingBrowserClass.new(@cObject.url, logger)
+      "[KeesingSearchClass][SearchCollection] URL: #{@collection.url}"
+      browser = KeesingBrowserClass.new(@collection.url, logger)
       browser.search(@pkeyword, _max.to_i)
       @total_hits = browser.total
       result_list = browser.result_list
       logger.debug("[KeesingSearchClass] [SearchCollection] Search performed")
       logger.debug("[KeesingSearchClass] [SearchCollection] Number fetched #{result_list.size}")
     rescue Exception => bang
-      logger.debug("[KeesingSearchClass] [SearchCollection] error: " + bang.message)
+      logger.error("[KeesingSearchClass] [SearchCollection] error: " + bang.message)
       logger.debug("[KeesingSearchClass] [SearchCollection] trace:" + bang.backtrace.join("\n"))
-      if _action_type != nil
-        _lxml = ""
-        logger.debug("ID: " + _last_id.to_s)
-        my_id = CachedSearch.save_metadata(_last_id, _lxml, _collect.id, _max.to_i, LIBRARYFIND_CACHE_EMPTY, infos_user)
-        return my_id, 0, 0
-      else
-        return nil
-      end
     end
 
-    if !result_list.nil?
+    if result_list
       begin
-        _lrecord = parse_results(result_list, infos_user)
+        parse_results(result_list, infos_user)
       rescue Exception => bang
         logger.error("[KeesingSearchClass] [SearchCollection] error: " + bang.message)
         logger.debug("[KeesingSearchClass] [SearchCollection] trace:" + bang.backtrace.join("\n"))
-        if _action_type != nil
-          _lxml = ""
-          logger.debug("ID: " + _last_id.to_s)
-          my_id = CachedSearch.save_metadata(_last_id, _lxml, _collect.id, _max.to_i, LIBRARYFIND_CACHE_EMPTY, infos_user)
-          return my_id, 0, @total_hits
-        else
-          return nil
-        end
+        logger.debug("ID: " + @search_id.to_s)
       end
     end
-
-    _lprint = false
-    if _lrecord != nil
-      _lxml = CachedSearch.build_cache_xml(_lrecord)
-      _lprint = true if _lxml != nil
-      _lxml = "" if _lxml == nil
-
-      #============================================
-      # Add this info into the cache database
-      #============================================
-      if _last_id.nil?
-        # FIXME:  Raise an error
-        logger.debug("Error: _last_id should not be nil")
-      else
-        logger.debug("Save metadata")
-        status = LIBRARYFIND_CACHE_OK
-        status = LIBRARYFIND_CACHE_EMPTY if !_lprint
-        my_id = CachedSearch.save_metadata(_last_id, _lxml, _collect.id, _max.to_i, status, infos_user, @total_hits)
-      end
-    else
-      logger.debug("save bad metadata")
-      _lxml = ""
-      logger.debug("ID: " + _last_id.to_s)
-      my_id = CachedSearch.save_metadata(_last_id, _lxml, _collect.id, _max.to_i, LIBRARYFIND_CACHE_EMPTY, infos_user)
-    end
-
-    if _action_type != nil
-      if _lrecord != nil
-        return my_id, _lrecord.length, @total_hits
-      else
-        return my_id, 0, @total_hits
-      end
-    else
-      return _lrecord
-    end
+    save_in_cache
   end
 
-  def self.parse_results(result_list, infos_user)
+  def parse_results(result_list, infos_user)
     logger.debug("[KeesingSearchClass][parse_results] Entering method...")
     _objRec = RecordSet.new()
     _title = ""
@@ -123,12 +77,12 @@ class KeesingSearchClass < ActionController::Base
     _publisher = ""
     _link = ""
     _thumbnail = ""
-    _record = Array.new()
+    @records = []
     _x = 0
     _start_time = Time.now()
 
     @hits = result_list.size
-    result_list.each  { |item|
+    result_list.each  do |item|
       next if item.nil?
       logger.debug("[KeesingSearchClass][parse_results] looping through results...")
       begin
@@ -140,11 +94,11 @@ class KeesingSearchClass < ActionController::Base
         _link = item['link']
         _keyword = UtilFormat.html_decode(normalize(_title) + " " + normalize(_description) + normalize(_subjects))
         _date = item['date']
-        _source_node = @cObject.alt_name
+        _source_node = @collection.alt_name
         record = Record.new
-        vendor_name = @cObject.alt_name
-        record_link = @cObject.vendor_url
-        record_id =  (rand(1000000).to_s + rand(1000000).to_s + Time.now().year.to_s + Time.now().day.to_s + Time.now().month.to_s + Time.now().sec.to_s + Time.now().hour.to_s) + ";" + @cObject.id.to_s + ";" + @search_id.to_s
+        vendor_name = @collection.alt_name
+        record_link = @collection.vendor_url
+        record_id =  (rand(1000000).to_s + rand(1000000).to_s + Time.now().year.to_s + Time.now().day.to_s + Time.now().month.to_s + Time.now().sec.to_s + Time.now().hour.to_s) + ";" + @collection.id.to_s + ";" + @search_id.to_s
 
         record.rank = _objRec.calc_rank({'title' => normalize(_title), 'atitle' => '', 'creator'=>normalize(_authors), 'date'=>_date, 'rec' => _keyword , 'pos'=>1}, @pkeyword)
 
@@ -163,7 +117,7 @@ class KeesingSearchClass < ActionController::Base
         record.openurl = ""
         if(INFOS_USER_CONTROL and !infos_user.nil?)
           # Does user have rights to view the notice ?
-          droits = ManageDroit.GetDroits(infos_user,@cObject.id)
+          droits = ManageDroit.GetDroits(infos_user,@collection.id)
           if(droits.id_perm == ACCESS_ALLOWED)
             record.direct_url = _link
           else
@@ -172,13 +126,13 @@ class KeesingSearchClass < ActionController::Base
         else
           record.direct_url = _link
         end
-        static_url = @cObject.vendor_url
+        static_url = @collection.vendor_url
         record.static_url = static_url
         record.subject = _subjects
-        pub = @cObject.alt_name
+        pub = @collection.alt_name
         record.publisher = pub
         record.vendor_url = normalize(static_url)
-        mat_type = @cObject.mat_type
+        mat_type = @collection.mat_type
         record.material_type = mat_type
         record.volume = ""
         record.issue = ""
@@ -189,25 +143,23 @@ class KeesingSearchClass < ActionController::Base
         record.start = _start_time.to_f
         record.end = Time.now().to_f
         record.hits = @hits
-        action_allowed = @cObject.actions_allowed
+        action_allowed = @collection.actions_allowed
         record.actions_allowed = action_allowed
-        _record[_x] = record
+        @records[_x] = record
         _x = _x + 1
       rescue Exception => bang
         logger.debug("[KeesingSearchClass][parse] parse_result error: #{bang.message}")
         logger.debug("[KeesingSearchClass][parse] parse_result trace: #{bang.backtrace.join("\n")}" )
         next
       end
-    }
-    return _record
-
+    end
   end
 
   def self.GetRecord(idDoc, idCollection, idSearch, infos_user = nil)
-    return (CacheSearchClass.GetRecord(idDoc, idCollection, idSearch, infos_user));
+    return (CacheSearchClass.GetRecord(idDoc, idCollection, idSearch, infos_user))
   end
 
-  def self.normalize(_string)
+  def normalize(_string)
     return UtilFormat.normalize(_string) if _string != nil
     return ""
   end

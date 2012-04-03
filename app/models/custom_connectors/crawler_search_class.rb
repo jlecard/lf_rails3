@@ -33,29 +33,32 @@ require 'solr'
 class CrawlerSearchClass < ApplicationController
   
   include Solr  
-  
+  include SearchClassHelper
   attr_reader :hits, :xml, :total_hits
-  @cObject = nil
+  @collection = nil
   @pkeyword = ""
   @search_id = 0
   @hits = 0
   @total_hits = 0
   
-  def self.SearchCollection(_collect, _qtype, _qstring, _start, _max, _qoperator, _last_id, job_id = -1, infos_user = nil ,options = nil, _session_id=nil, _action_type=nil, _data = nil, _bool_obj=true)
+  def SearchCollection(_collect, _qtype, _qstring, _start, _max, _qoperator, _last_id, job_id = -1, infos_user = nil ,options = nil, _session_id=nil, _action_type=nil, _data = nil, _bool_obj=true)
     logger.info("[CrawlerSearchClass][SearchCollection] params :#{_collect}, #{_qtype}, #{_qstring}, #{_start}, #{_max}, #{_qoperator}, #{_last_id}, #{job_id}, #{infos_user} ,#{options}, #{_session_id}, #{_action_type}, #{_data}, #{_bool_obj}")
     logger.info("[CrawlerSearchClass] [SearchCollection] entered")
-    @cObject = _collect
+    @collection = _collect
     @pkeyword = _qstring.join(" ")
     @search_id = _last_id
-    _lrecord = Array.new()
-    #logger.info("[CrawlerSearchClass][SearchCollection] params :#{_collect}, #{_qtype}, #{_qstring}, #{_start}, #{_max}, #{_qoperator}, #{_last_id}, #{job_id}, #{infos_user} ,#{options}, #{_session_id}, #{_action_type}, #{_data}, #{_bool_obj}")
+    @infos_user = infos_user
+    @max = _max
+    @action = _action_type
+    @records = []
+    logger.debug("[CrawlerSearchClass][SearchCollection] params :#{_collect}, #{_qtype}, #{_qstring}, #{_start}, #{_max}, #{_qoperator}, #{_last_id}, #{job_id}, #{infos_user} ,#{options}, #{_session_id}, #{_action_type}, #{_data}, #{_bool_obj}")
     begin
       #initialize
-      logger.info("[CrawlerSearchClass] [SearchCollection] host : " + _collect.host)
+      logger.info("[CrawlerSearchClass] [SearchCollection] host : " + @collection.host)
       
       #perform the search
-      conn = Solr::Connection.new(_collect.host)
-      filter_query = _collect.definition
+      conn = Solr::Connection.new(@collection.host)
+      filter_query = @collection.definition
       logger.info("[CrawlerSearchClass] [SearchCollection] filter_query: #{filter_query}")
       raw_query_string, opt = UtilFormat.generateRequestSolr(_qtype, _qstring, _qoperator, filter_query, false, nil, nil, _max, options)
       raw_query_string = raw_query_string.gsub("keyword:","content_ml:") 
@@ -65,76 +68,24 @@ class CrawlerSearchClass < ApplicationController
       @total_hits = _response.total_hits
       logger.info("[CrawlerSearchClass] [SearchCollection] Search performed - found #{@total_hits}")
       
-    rescue Exception => bang
-      #logger.debug("[CrawlerSearchClass] [SearchCollection] error: " + bang.message)
-      #logger.debug("[CrawlerSearchClass] [SearchCollection] trace:" + bang.backtrace.join("\n"))
-      if _action_type != nil
-        _lxml = ""
-        #logger.debug("ID: " + _last_id.to_s)
-        my_id = CachedSearch.save_metadata(_last_id, _lxml, _collect.id, _max.to_i, LIBRARYFIND_CACHE_EMPTY, infos_user)
-        return my_id, 0
-      else
-        return nil
-      end
+    rescue => bang
+      logger.error("[CrawlerSearchClass] [SearchCollection] error: " + bang.message)
+      logger.debug("[CrawlerSearchClass] [SearchCollection] trace:" + bang.backtrace.join("\n"))
     end
     
-    if _response != nil 
+    if _response
       begin
-        #logger.info("[CrawlerSearchClass] [SearchCollection] Parsing...")
-        _lrecord = parse_crawler(_response, _collect.id, infos_user)
-      rescue Exception => bang
-        #logger.error("[CrawlerSearchClass] [SearchCollection] error: " + bang.message)
-        #logger.debug("[CrawlerSearchClass] [SearchCollection] trace:" + bang.backtrace.join("\n"))
-        if _action_type != nil
-          _lxml = ""
-          #logger.info("[CrawlerSearchClass] [SearchCollection] ID: " + _last_id.to_s)
-          my_id = CachedSearch.save_metadata(_last_id, _lxml, _collect.id, _max.to_i, LIBRARYFIND_CACHE_EMPTY, infos_user)
-          return my_id, 0, @total_hits
-        else
-          return nil
-        end
+        logger.debug("[CrawlerSearchClass] [SearchCollection] Parsing...")
+        @records = parse_crawler(_response, @collection.id, @infos_user)
+      rescue => bang
+        logger.error("[CrawlerSearchClass] [SearchCollection] error: " + bang.message)
+        logger.debug("[CrawlerSearchClass] [SearchCollection] trace:" + bang.backtrace.join("\n"))
       end
     end
-    
-    _lprint = false
-    if _lrecord != nil
-      _lxml = CachedSearch.build_cache_xml(_lrecord)
-      _lprint = true if _lxml != nil
-      _lxml = "" if _lxml == nil
-      
-      #============================================
-      # Add this info into the cache database
-      #============================================
-      if _last_id.nil?
-        # FIXME:  Raise an error
-        #logger.debug("[CrawlerSearchClass] [SearchCollection] Error: _last_id should not be nil")
-      else
-        #logger.debug("[CrawlerSearchClass] [SearchCollection] Save metadata")
-        status = LIBRARYFIND_CACHE_OK
-        if _lprint != true
-          status = LIBRARYFIND_CACHE_EMPTY
-        end
-        my_id = CachedSearch.save_metadata(_last_id, _lxml, _collect.id, _max.to_i, status, infos_user, @total_hits)
-      end
-    else
-      #logger.info("[CrawlerSearchClass] [SearchCollection] save bad metadata")
-      _lxml = ""
-      #logger.info("[CrawlerSearchClass] [SearchCollection] ID: " + _last_id.to_s)
-      my_id = CachedSearch.save_metadata(_last_id, _lxml, _collect.id, _max.to_i, LIBRARYFIND_CACHE_EMPTY, infos_user)
-    end
-    
-    if _action_type != nil
-      if _lrecord != nil
-        return my_id, _lrecord.length, @total_hits
-      else
-        return my_id, 0, @total_hits
-      end
-    else
-      return _lrecord
-    end
+    save_in_cache
   end
   
-  def self.parse_crawler(hits, collection_id, infos_user) 
+  def parse_crawler(hits, collection_id, infos_user) 
     #logger.debug("[CrawlerSearchClass][parse] Entering method...")
     _objRec = RecordSet.new()
     _title = ""
@@ -230,8 +181,8 @@ class CrawlerSearchClass < ApplicationController
     return (CacheSearchClass.GetRecord(idDoc, idCollection, idSearch, infos_user));
   end
   
-  def self.normalize(_string)
-    return UtilFormat.normalize(_string) if _string != nil
+  def normalize(_string)
+    return UtilFormat.normalize(_string) if _string
     return ""
     #_string = _string.gsub(/\W+$/,"")
     #return _string

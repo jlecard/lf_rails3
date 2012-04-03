@@ -1,3 +1,4 @@
+#encoding:utf-8
 # $Id: z3950_search_class.rb 386 2006-09-01 23:34:07Z dchud $
 
 # LibraryFind - Quality find done better.
@@ -24,11 +25,12 @@
 #
 # http://libraryfind.org
 
-class Z3950SearchClass < ActionController::Base
+class Z3950SearchClass < ApplicationController
   @zoom = nil
   @total_hits = 0
+  include SearchClassHelper
   
-  def self.pFrenchNormalizeString(_qstring)
+  def pFrenchNormalizeString(_qstring)
     if _qstring != nil
       x = 0
       y = _qstring.length
@@ -50,16 +52,22 @@ class Z3950SearchClass < ActionController::Base
   end
   
   
-  def self.SearchCollection(_coll, _qtype, _qstring, _start, _max, _qoperator, _last_id, job_id = -1, infos_user=nil, options = nil, _session_id=nil, _action_type=nil, _data = nil, _bool_obj=true)
+  def SearchCollection(_coll, _qtype, _qstring, _start, _max, _qoperator, _last_id, job_id = -1, infos_user=nil, options = nil, _session_id=nil, _action_type=nil, _data = nil, _bool_obj=true)
     
     logger.debug("[Z3950] start search")
     _sTime = Time.now().to_f
-    
+    @search_id = _last_id
+    @collection = _coll
+    @pkeyword = _qstring.join(" ")
+    @infos_user = infos_user
+    @max = _max
+    @action = _action_type
+    @records = []
     _ltrecord = Array.new()
     _qstring = pFrenchNormalizeString(_qstring)
     _tmprec = nil
-    _objRec = RecordSet.new
-    _objRec.setKeyword( _qstring[0])
+    record_set = RecordSet.new
+    record_set.setKeyword( _qstring[0])
     
     #=======================================================
     # we put the require here so users don't
@@ -69,14 +77,14 @@ class Z3950SearchClass < ActionController::Base
     _zoom = RZOOM.new #@zoom
     
     _params = _coll.zoom_params(_qtype[0])
-    _params['search_id'] = _last_id
-    _params['collection_id'] = _coll.id
-    _params['definition_search'] = _coll.definition_search
+    _params['search_id'] = @search_id
+    _params['collection_id'] = @collection.id
+    _params['definition_search'] = @collection.definition_search
     
     _sRTime = Time.now().to_f
     logger.debug("[Z3950SearchClass] [SearchCollection] param: #{_params.inspect} type: #{_qtype.inspect} string: #{_qstring.inspect} operator: #{_qoperator.inspect} start:#{_start} max:#{_max}")
     logger.debug("[Z3950SearchClass][SearchCollection] _coll = #{_coll.inspect}")
-    _items = _zoom.search(_params, _qtype, _qstring, _qoperator, _start, _max.to_i)
+    _items = _zoom.search(_params, _qtype, _qstring, _qoperator, _start, @max.to_i)
     logger.debug("#STAT# [Z3950] base: #{_coll.name}[#{_coll.id}] recherche: " + sprintf( "%.2f",(Time.now().to_f - _sRTime)).to_s) if LOG_STATS
     
     @total_hits = _zoom.hits
@@ -84,74 +92,43 @@ class Z3950SearchClass < ActionController::Base
     
     if _items != nil 
       _startT = Time.now().to_f
-      logger.debug("[Z3950SearchClass] [SearchCollection] schema : #{_coll.record_schema.downcase}")
+      logger.debug("[Z3950SearchClass] [SearchCollection] schema : #{@collection.record_schema.downcase}")
       for _i in 0.._items.length-1
         case _coll.record_schema.downcase
           when "sutrs"
           rec = _objRec.sutrs2record(_items[_i].to_s, _params['def'], _params, _i)
-          if rec != nil: _ltrecord << rec end
+          @records << rec if rec
         else
           logger.debug('Running here....')
           if _bool_obj == false
-            rec = _objRec.unpack_marcxml(_params, _items[_i].xml("marc8", "utf8"), _params['def'], false, infos_user)
-            rec.actions_allowed = _coll.actions_allowed
+            rec = record_set.unpack_marcxml(_params, _items[_i].xml("marc8", "utf8"), _params['def'], false, @infos_user)
+            rec.actions_allowed = @collection.actions_allowed
             _tmp << rec
           else
-            _tmprec = _objRec.unpack_marcxml(_params, _items[_i].xml("marc8", "utf8"), _params['def'], true, infos_user)
-            _tmprec.actions_allowed = _coll.actions_allowed
-            if _tmprec != nil: _ltrecord << _tmprec end
+            _tmprec = record_set.unpack_marcxml(_params, _items[_i].xml("marc8", "utf8"), _params['def'], true, @infos_user)
+            _tmprec.actions_allowed = @collection.actions_allowed
+            @records << _tmprec if _tmprec
           end
         end 
       end  
       logger.info("[Z3950SearchClass] [SearchCollection] time create records object : #{Time.now().to_f - _startT} s")
-      _tprint = false   
-      
-      if _ltrecord !=nil 
-        _lprint = true if _lxml != nil
-        _lxml = "" if _lxml == nil        
-        _startT = Time.now().to_f
-        _lxml = CachedSearch.build_cache_xml(_ltrecord)
-        logger.debug("[Z3950SearchClass] [SearchCollection] time build cache : #{Time.now().to_f - _startT} s")
-      end
-      #=========================================================
-      # Add this info into the cache
-      #=========================================================
-      if _last_id.nil?
-        # FIXME: Raise an error
-        logger.debug("Error, _last_id should not be null")
-      else
-        logger.debug("Save metadata")
-        md = ""
-        status = LIBRARYFIND_CACHE_OK
-        if _tprint == true
-          md = _lxml
-        else
-          if _items.nil?
-            status = LIBRARYFIND_CACHE_ERROR
-          else
-            status = LIBRARYFIND_CACHE_EMPTY
-          end
-        end
-        _startT = Time.now().to_f
-        my_id = CachedSearch.save_metadata(_last_id, md, _coll.id, _max.to_i, status, infos_user, @total_hits)
-        logger.debug("[Z3950SearchClass] [SearchCollection] time save cache : #{Time.now().to_f - _startT} s")
-      end
+      save_in_cache
     end
     
-    logger.debug("#STAT# [Z3950] base: #{_coll.name}[#{_coll.id}] total: " + sprintf( "%.2f",(Time.now().to_f - _sTime)).to_s) if LOG_STATS
+    logger.debug("#STAT# [Z3950] base: #{@collection.name}[#{@collection.id}] total: " + sprintf( "%.2f",(Time.now().to_f - _sTime)).to_s) if LOG_STATS
     #end #End Thread
     #we return a nil because the data is stored in the thread variables.
     #return nil  
-    if _action_type != nil 
+    if @action 
       logger.debug("action_type set")
-      if _ltrecord != nil
-        return my_id,_ltrecord.length, @total_hits
+      if @records 
+        return @my_id, @records.length, @total_hits
       else
-        return my_id, 0, @total_hits
+        return @my_id, 0, @total_hits
       end
     else
       logger.debug("action_type not set")
-      return _ltrecord
+      return @records
     end
   end
   

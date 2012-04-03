@@ -25,45 +25,39 @@
 class OxfordSearchClass < ActionController::Base
   
   attr_reader :hits, :xml, :total_hits
-  @cObject = nil
+  include SearchClassHelper
+  @collection = nil
   @pkeyword = ""
   @search_id = 0
   @hits = 0
   @total_hits = 0
   
-  def self.SearchCollection(_collect, _qtype, _qstring, _start, _max, _qoperator, _last_id, job_id = -1, infos_user = nil, options = nil, _session_id=nil, _action_type=nil, _data = nil, _bool_obj=true)
+  def SearchCollection(_collect, _qtype, _qstring, _start, _max, _qoperator, _last_id, job_id = -1, infos_user = nil, options = nil, _session_id=nil, _action_type=nil, _data = nil, _bool_obj=true)
     logger.debug("[OxfordSearchClass] [SearchCollection]")
-    @cObject = _collect
+    @collection = _collect
     @pkeyword = _qstring.join(" ")
     @search_id = _last_id
-    _lrecord = Array.new()
+    @records = Array.new()
+    @action = _action_type
     
     begin
       #perform the search
-      klass = eval("#{@cObject.record_schema.capitalize}BrowserClass")
-      oxford_browser = klass.new(@cObject.url, logger)
+      klass = eval("#{@collection.record_schema.capitalize}BrowserClass")
+      oxford_browser = klass.new(@collection.url, logger)
       oxford_browser.search(@pkeyword, _max.to_i)
       @total_hits = oxford_browser.result_count
       result_list = oxford_browser.result_list
       logger.debug("[OxfordSearchClass] [SearchCollection] Search performed")
       logger.debug("[OxfordSearchClass] [SearchCollection] Number fteched #{result_list.size}")
-    rescue Exception => bang
+    rescue => bang
       logger.debug("[OxfordSearchClass] [SearchCollection] error: " + bang.message)
       logger.debug("[OxfordSearchClass] [SearchCollection] trace:" + bang.backtrace.join("\n"))
-      if _action_type != nil
-        _lxml = ""
-        logger.debug("ID: " + _last_id.to_s)
-        my_id = CachedSearch.save_metadata(_last_id, _lxml, _collect.id, _max.to_i, LIBRARYFIND_CACHE_EMPTY, infos_user)
-        return my_id, 0
-      else
-        return nil
-      end
     end
     
     if !result_list.nil? 
       begin
-        _lrecord = parse_results(result_list, infos_user)
-      rescue Exception => bang
+        @records = parse_results(result_list, infos_user)
+      rescue => bang
         logger.error("[OxfordSearchClass] [SearchCollection] error: " + bang.message)
         logger.debug("[OxfordSearchClass] [SearchCollection] trace:" + bang.backtrace.join("\n"))
         if _action_type != nil

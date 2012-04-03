@@ -30,6 +30,7 @@ require 'cgi'
 
 
 class EmconsulteSearchClass < ActionController::Base
+  include SearchClassHelper
   
   # <?xml version="1.0" encoding="UTF-8"?>
   # <searchResult>
@@ -51,104 +52,53 @@ class EmconsulteSearchClass < ActionController::Base
   
   
   attr_reader :hits, :xml, :total_hits
-  @cObject = nil
+  @collection = nil
   @pkeyword = ""
   @search_id = 0
   @hits = 0
   @total_hits = 0
   
-  def self.SearchCollection(_collect, _qtype, _qstring, _start, _max, _qoperator, _last_id, job_id = -1, infos_user = nil ,options = nil, _session_id=nil, _action_type=nil, _data = nil, _bool_obj=true)
+  def SearchCollection(_collect, _qtype, _qstring, _start, _max, _qoperator, _last_id, job_id = -1, infos_user = nil ,options = nil, _session_id=nil, _action_type=nil, _data = nil, _bool_obj=true)
     logger.debug("em_consultecollection entered")
-    @cObject = _collect
+    @collection = _collect
     @pkeyword = _qstring.join(" ")
     @search_id = _last_id
-    _lrecord = Array.new()
+    @infos_user = infos_user
+    @max = _max
+    @action = _action_type
     
     begin
       #initialize
-      logger.debug("COLLECT: " + _collect.host)
+      logger.debug("COLLECT: " + @collection.host)
       
       #perform the search
       results = em_consult_search(@pkeyword, _max.to_i)      
       logger.debug("Search performed")
-      #logger.debug("em_consulteXML: " + results)
-    rescue Exception => bang
-      logger.debug("[EmConsulteSearchClass] [SearchCollection] error: " + bang.message)
+    rescue => bang
+      logger.error("[EmConsulteSearchClass] [SearchCollection] error: " + bang.message)
       logger.debug("[EmConsulteSearchClass] [SearchCollection] trace:" + bang.backtrace.join("\n"))
-      if _action_type != nil
-        _lxml = ""
-        logger.debug("ID: " + _last_id.to_s)
-        my_id = CachedSearch.save_metadata(_last_id, _lxml, _collect.id, _max.to_i, LIBRARYFIND_CACHE_EMPTY, infos_user)
-        return my_id, 0
-      else
-        return nil
-      end
     end
     
-    if results != nil 
+    if results
       begin
         logger.debug("Parsing em_consulte")
-        _lrecord = parse_em_consulte(results, _collect.id, infos_user)
+        @records = parse_em_consulte(results, _collect.id, infos_user)
       rescue Exception => bang
         logger.error("[EmConsulteSearchClass] [SearchCollection] error: " + bang.message)
         logger.debug("[EmConsulteSearchClass] [SearchCollection] trace:" + bang.backtrace.join("\n"))
-        if _action_type != nil
-          _lxml = ""
-          logger.debug("ID: " + _last_id.to_s)
-          my_id = CachedSearch.save_metadata(_last_id, _lxml, _collect.id, _max.to_i, LIBRARYFIND_CACHE_EMPTY, infos_user)
-          return my_id, 0, @total_hits
-        else
-          return nil
-        end
       end
     end
-    
-    _lprint = false
-    if _lrecord != nil
-      _lxml = CachedSearch.build_cache_xml(_lrecord)
-      _lprint = true if _lxml != nil
-      _lxml = "" if _lxml == nil
-      
-      #============================================
-      # Add this info into the cache database
-      #============================================
-      if _last_id.nil?
-        # FIXME:  Raise an error
-        logger.debug("Error: _last_id should not be nil")
-      else
-        logger.debug("Save metadata")
-        status = LIBRARYFIND_CACHE_OK
-        if _lprint != true
-          status = LIBRARYFIND_CACHE_EMPTY
-        end
-        my_id = CachedSearch.save_metadata(_last_id, _lxml, _collect.id, _max.to_i, status, infos_user, @total_hits)
-      end
-    else
-      logger.debug("save bad metadata")
-      _lxml = ""
-      logger.debug("ID: " + _last_id.to_s)
-      my_id = CachedSearch.save_metadata(_last_id, _lxml, _collect.id, _max.to_i, LIBRARYFIND_CACHE_EMPTY, infos_user)
-    end
-    
-    if _action_type != nil
-      if _lrecord != nil
-        return my_id, _lrecord.length, @total_hits
-      else
-        return my_id, 0, @total_hits
-      end
-    else
-      return _lrecord
-    end
+    save_in_cache
   end
   
-  def self.em_consult_search(query, max)
+  def em_consult_search(query, max)
     
     logger.debug("Entered EmConsulteSearchClass")
     query = CGI::escape(query)
     url = "http://www.em-consulte.com/externalSearch?keywords=#{query}&startresult=1&endresult=#{max}&maxdocs=#{max}"
     logger.debug("[EmConsulteSearchClass] [em_consult_search] URL: " + url)
     begin
-      if (@cObject.proxy == 1)
+      if (@collection.proxy == 1)
         yp = YAML::load_file(RAILS_ROOT + "/config/webservice.yml");
         _host             = yp['PROXY_HTTP_ADR'];
         _port             = yp['PROXY_HTTP_PORT'];
@@ -164,7 +114,7 @@ class EmconsulteSearchClass < ActionController::Base
     end
   end
   
-  def self.parse_em_consulte(xml, collection_id, infos_user) 
+  def parse_em_consulte(xml, collection_id, infos_user) 
     logger.debug("[EmConsulte Search][parse_em_consulte] Entering method...")
     _objRec = RecordSet.new()
     _title = ""
@@ -219,7 +169,7 @@ class EmconsulteSearchClass < ActionController::Base
         record = Record.new()
         record.rank = _objRec.calc_rank({'title' => normalize(_title), 'atitle' => '', 'creator'=>normalize(_authors), 'date'=>_date, 'rec' => _keyword , 'pos'=>1}, @pkeyword)
         logger.debug("past rank")
-        record.vendor_name = @cObject.alt_name
+        record.vendor_name = @collection.alt_name
         record.ptitle = UtilFormat.html_decode(normalize(_title))
         record.title =  UtilFormat.html_decode(normalize(_title))
         record.atitle =  
@@ -228,13 +178,13 @@ class EmconsulteSearchClass < ActionController::Base
         record.abstract = UtilFormat.html_decode(normalize(_title))
         record.date = normalize(_date)
         record.author = normalize(_authors)
-        record.link = normalize(@cObject.vendor_url)
+        record.link = normalize(@collection.vendor_url)
         record.id =  (rand(1000000).to_s + rand(1000000).to_s + Time.now().year.to_s + Time.now().day.to_s + Time.now().month.to_s + Time.now().sec.to_s + Time.now().hour.to_s) + ";" + @cObject.id.to_s + ";" + @search_id.to_s
         record.doi = ""
         record.openurl = ""
         if(INFOS_USER_CONTROL and !infos_user.nil?)
           # Does user have rights to view the notice ?
-          droits = ManageDroit.GetDroits(infos_user,@cObject.id)
+          droits = ManageDroit.GetDroits(infos_user,@collection.id)
           if(droits.id_perm == ACCESS_ALLOWED)
             record.direct_url = normalize(_link).gsub("emc-consulte","em-premium") # data returned by search is buggy...
           else
@@ -244,12 +194,12 @@ class EmconsulteSearchClass < ActionController::Base
           record.direct_url = normalize(_link).gsub("emc-consulte","em-premium") # data returned by search is buggy...
         end
         
-        record.static_url = @cObject.vendor_url
+        record.static_url = @collection.vendor_url
         record.subject = normalize(_xpath.xpath_get_text(_xpath.xpath_first(_source_node, "label")))
         record.publisher = normalize(_xpath.xpath_get_text(_xpath.xpath_first(_source_node, "label")))
         record.source = record.publisher
         logger.debug("[EmSearchClass] [ParseXml] Record label = #{record.publisher}")
-        record.vendor_url = normalize(@cObject.vendor_url)
+        record.vendor_url = normalize(@collection.vendor_url)
         material_type = _xpath.get_attribute(item, "type").value.capitalize unless _xpath.get_attribute(item, "type").nil?
         logger.debug("[ClassiquesGarnierSearchClass][parse_em_consulte] raw material_type = #{material_type}")
         if !material_type.nil?
@@ -257,7 +207,7 @@ class EmconsulteSearchClass < ActionController::Base
           record.material_type = PrimaryDocumentType.getNameByDocumentType(UtilFormat.normalize(material_type),collection_id)
           logger.debug("[ClassiquesGarnierSearchClass][parse_em_consulte] raw material_type = #{material_type}")
         else
-          record.material_type = @cObject.mat_type
+          record.material_type = @collection.mat_type
         end
         record.volume = normalize(_xpath.xpath_get_text(_xpath.xpath_first(_source_node, "volume")))
         record.issue = ""
@@ -270,7 +220,7 @@ class EmconsulteSearchClass < ActionController::Base
         record.hits = @hits
         _record[_x] = record
         _x = _x + 1
-      rescue Exception => bang
+      rescue => bang
         logger.debug("[EmConsulteSearchClass][parse]em_consulte error: " + bang)
         logger.debug("[EmConsulteSearchClass][parse]em_consulte trace: " + bang.backtrace.join("\n"))
         next
@@ -284,7 +234,7 @@ class EmconsulteSearchClass < ActionController::Base
     return (CacheSearchClass.GetRecord(idDoc, idCollection, idSearch, infos_user));
   end
   
-  def self.normalize(_string)
+  def normalize(_string)
     return UtilFormat.normalize(_string) if _string != nil
     return ""
     #_string = _string.gsub(/\W+$/,"")

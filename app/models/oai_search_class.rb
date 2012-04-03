@@ -23,33 +23,26 @@
 # http://libraryfind.org
 
 class OaiSearchClass < ActionController::Base
-  
+  include SearchClassHelper
   
   attr_reader :hits, :xml
   
   @total_hits = 0
   @pid = 0
   @pkeyword = ""
-  def self.keyword (_string)
-    @pkeyword = _string
-  end
   
-  def self.insert_id(_id) 
-    @pid = _id
-  end
-  
-  def self.SearchCollection(_collect, _qtype, _qstring, _start, _max, _qoperator,_last_id, job_id = -1, infos_user=nil, options=nil, _session_id=nil, _action_type=nil, _data = nil, _bool_obj=true)
+  def SearchCollection(_collect, _qtype, _qstring, _start, _max, _qoperator,_last_id, job_id = -1, infos_user=nil, options=nil, _session_id=nil, _action_type=nil, _data = nil, _bool_obj=true)
     
     logger.debug("[OAI] start search")
     _sTime = Time.now().to_f
     
-    _lrecord = Array.new()
+    @records = []
     keyword(_qstring[0])
-    _type = ""
-    _alias = ""
-    _group = ""
-    _vendor_url = ""
-    _coll_list = ""
+    @collection = _collect
+    @search_id = _last_id
+    @infos_user = infos_user
+    @max = _max
+    @action = _action_type
     
     # _query = "SELECT DISTINCT CN.id, CN.alt_name, C.id, C.oai_identifier, C.collection_id, C.url, C.title, C.description, M.dc_subject, M.dc_creator, M.dc_date, M.dc_format, M.dc_type, M.osu_thumbnail, M.dc_language, M.dc_relation, M.dc_coverage, M.dc_rights,M.dc_source, M.dc_publisher,M.dc_contributor, M.osu_volume from collections CN LEFT JOIN controls C ON CN.id=C.collection_id  LEFT JOIN metadatas M on C.id = M.controls_id where ("
     _query = "SELECT DISTINCT CN.id, CN.alt_name, C.id, CN.vendor_url,
@@ -70,46 +63,9 @@ class OaiSearchClass < ActionController::Base
     _vendor_url = _collect.vendor_url
     _availability = _collect.availability
     
-    _lrecord = RetrieveOAI_Single(_last_id, _query, _qtype, _qstring, _qoperator, _type, _coll_list, _alias, _group, _vendor_url, _is_parent, _col_name,_max.to_i, _collect.filter_query, infos_user, options, _availability)
+    @records = RetrieveOAI_Single(_last_id, _query, _qtype, _qstring, _qoperator, _type, _coll_list, _alias, _group, _vendor_url, _is_parent, _col_name,_max.to_i, _collect.filter_query, infos_user, options, _availability)
     
-    _lprint = false; 
-    if _lrecord != nil
-      _lxml = CachedSearch.build_cache_xml(_lrecord)
-      _lprint = true if _lxml != nil
-      _lxml = "" if _lxml == nil
-      
-      #============================================
-      # Add this info into the cache database
-      #============================================
-      if _last_id.nil?
-        # FIXME:  Raise an error
-        logger.debug("Error: _last_id should not be nil")
-      else
-        logger.debug("Save metadata")
-        status = LIBRARYFIND_CACHE_OK
-        if _lprint != true
-          status = LIBRARYFIND_CACHE_EMPTY
-        end
-        my_id = CachedSearch.save_metadata(_last_id, _lxml, _collect.id, _max.to_i, status, infos_user, @total_hits)
-      end
-    else
-      logger.debug("save bad metadata")
-      _lxml = ""
-      logger.debug("ID: " + _last_id.to_s)
-      my_id = CachedSearch.save_metadata(_last_id, _lxml, _collect.id, _max.to_i, LIBRARYFIND_CACHE_EMPTY, infos_user)
-    end
-    
-    logger.debug("#STAT# [OAI] base: #{_collect.name}[#{_coll_list}] total: " + sprintf( "%.2f",(Time.now().to_f - _sTime)).to_s) if LOG_STATS
-    
-    if _action_type != nil
-      if _lrecord != nil
-        return my_id, _lrecord.length, @total_hits
-      else
-        return my_id, 0, @total_hits
-      end
-    else
-      return _lrecord
-    end
+    save_in_cache
   end
   
   def self.RetrieveOAI_Single(_search_id, _query, _qtype, _qstring, _qoperator, _type, _coll_list, _alias, _group, _vendor_url,  _is_parent, _collection_name,  _max, filter_query, infos_user=nil, options=nil, _availability=nil)
@@ -425,23 +381,6 @@ class OaiSearchClass < ActionController::Base
     
     return _record
   end
-  
-  
-  # check the state of variables
-  def self.chkString(_str)
-    begin
-      if _str == nil
-        return ""
-      end
-      if _str.is_a?(Numeric)
-        return _str.to_s
-      end
-      return _str.chomp
-    rescue
-      return ""
-    end
-  end
-  
   
   def self.GetRecord(idDoc = nil, idCollection = nil, idSearch = "", infos_user = nil)
     

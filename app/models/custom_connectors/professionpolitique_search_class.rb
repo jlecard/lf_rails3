@@ -26,24 +26,21 @@
 class ProfessionpolitiqueSearchClass < ActionController::Base
   
   # require 'ferret'
+  include SearchClassHelper
   attr_reader :hits, :xml
   @total_hits = 0
   @pid = 0
   @pkeyword = ""
-  def self.keyword (_string)
-    @pkeyword = _string
-  end
+
   
-  def self.insert_id(_id) 
-    @pid = _id
-  end
-  
-  def self.SearchCollection(_collect, _qtype, _qstring, _start, _max, _qoperator, _last_id, job_id = -1, infos_user=nil, options=nil, _session_id=nil, _action_type=nil, _data = nil, _bool_obj=true)
+  def SearchCollection(_collect, _qtype, _qstring, _start, _max, _qoperator, _last_id, job_id = -1, infos_user=nil, options=nil, _session_id=nil, _action_type=nil, _data = nil, _bool_obj=true)
     
     logger.debug("[#{self.name}] [SearchCollection]");
     _sTime = Time.now().to_f
     
-    _lrecord = Array.new()
+    @records = []
+    @action = _action_type
+    @search_id = _last_id
     keyword(_qstring[0])
     _type = ""
     _alias = ""
@@ -63,49 +60,12 @@ class ProfessionpolitiqueSearchClass < ActionController::Base
     _availability = _collect.availability
     
     #_lrecord = _obj_OAI.RetrieveOAI_Single(_last_id, _query, _qtype, _qstring, _type, _coll_list, _alias, _group, _vendor_url, _max.to_i)
-    _lrecord = RetrieveProfessionPolitique_Single(_last_id, _query, _qtype, _qstring, _qoperator, _type, _coll_list, _alias, _group, _vendor_url, _is_parent, _col_name,_max.to_i, _collect.filter_query, infos_user, options, _availability)
+    @records = RetrieveProfessionPolitique_Single(_last_id, _query, _qtype, _qstring, _qoperator, _type, _coll_list, _alias, _group, _vendor_url, _is_parent, _col_name,_max.to_i, _collect.filter_query, infos_user, options, _availability)
     logger.debug("Storing found results in cached results begin")
-    _lprint = false; 
-    if _lrecord != nil
-      _lxml = CachedSearch.build_cache_xml(_lrecord)
-      _lprint = true if _lxml != nil
-      _lxml = "" if _lxml == nil
-      
-      #============================================
-      # Add this info into the cache database
-      #============================================
-      if _last_id.nil?
-        # FIXME:  Raise an error
-        logger.debug("Error: _last_id should not be nil")
-      else
-        logger.debug("Save metadata")
-        status = LIBRARYFIND_CACHE_OK
-        if _lprint != true
-          status = LIBRARYFIND_CACHE_EMPTY
-        end
-        my_id = CachedSearch.save_metadata(_last_id, _lxml, _collect.id, _max.to_i, status, infos_user, @total_hits)
-      end
-    else
-      logger.debug("save bad metadata")
-      _lxml = ""
-      logger.debug("ID: " + _last_id.to_s)
-      my_id = CachedSearch.save_metadata(_last_id, _lxml, _collect.id, _max.to_i, LIBRARYFIND_CACHE_EMPTY, infos_user)
-    end
-    
-    logger.debug("#STAT# [#{self.name}] base: #{_collect.name}[#{_coll_list}] total: " + sprintf( "%.2f",(Time.now().to_f - _sTime)).to_s) if LOG_STATS
-    
-    if _action_type != nil
-      if _lrecord != nil
-        return my_id, _lrecord.length, @total_hits
-      else
-        return my_id, 0, @total_hits
-      end
-    else
-      return _lrecord
-    end
+    save_in_cache
   end
   
-  def self.RetrieveProfessionPolitique_Single(_search_id, _query, _qtype, _qstring, _qoperator, _type, _coll_list, _alias, _group, _vendor_url,  _is_parent, _collection_name,  _max, _filter_query=nil, infos_user=nil, options=nil, _availability=nil)
+  def RetrieveProfessionPolitique_Single(_search_id, _query, _qtype, _qstring, _qoperator, _type, _coll_list, _alias, _group, _vendor_url,  _is_parent, _collection_name,  _max, _filter_query=nil, infos_user=nil, options=nil, _availability=nil)
     htype = {_coll_list => _type}
     halias = {_coll_list => _alias}
     hgroup = {_coll_list => _group}
@@ -117,7 +77,7 @@ class ProfessionpolitiqueSearchClass < ActionController::Base
     return  RetrieveProfessionPolitique(_search_id, _query, _qtype, _qstring, _qoperator, htype, _coll_list, halias, hgroup, hvendor, hparent, hcolname, _max, _filter_query, infos_user, options, _availability)
   end
   
-  def self.RetrieveProfessionPolitique(_search_id, _query, _qtype, _qstring, _qoperator, _type, _coll_list, _alias, _group, _vendor_url,  _is_parent, _collection_name, _max,filter_query=nil, infos_user=nil,  options=nil, _availability=nil)
+  def RetrieveProfessionPolitique(_search_id, _query, _qtype, _qstring, _qoperator, _type, _coll_list, _alias, _group, _vendor_url,  _is_parent, _collection_name, _max,filter_query=nil, infos_user=nil,  options=nil, _availability=nil)
     _x = 0
     _y = 0
     _oldset = ""
@@ -352,21 +312,6 @@ class ProfessionpolitiqueSearchClass < ActionController::Base
     logger.debug("Record Hits: #{_record.length} sur #{@total_hits}")
     
     return _record
-  end
-  
-  # check the state of variables
-  def self.chkString(_str)
-    begin
-      if _str == nil
-        return ""
-      end
-      if _str.is_a?(Numeric)
-        return _str.to_s
-      end
-      return _str.chomp
-    rescue
-      return ""
-    end
   end
   
   def self.GetRecord(idDoc = nil, idCollection = nil, idSearch = "", info_user = nil)

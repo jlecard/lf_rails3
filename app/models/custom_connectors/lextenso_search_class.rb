@@ -4,14 +4,16 @@ require 'cgi'
 require 'nokogiri'
 
 class LextensoSearchClass < ActionController::Base
+  include SearchClassHelper
   attr_reader :hits, :total_hits
   
-  def self.SearchCollection(_collect, _qtype, _qstring, _start, _max, _qoperator, _last_id, job_id = -1, infos_user = nil ,options = nil, _session_id=nil, _action_type=nil, _data = nil, _bool_obj=true)
+  def SearchCollection(_collect, _qtype, _qstring, _start, _max, _qoperator, _last_id, job_id = -1, infos_user = nil ,options = nil, _session_id=nil, _action_type=nil, _data = nil, _bool_obj=true)
     logger.debug("[lextenso_search_class][SearchCollection] entered")
-    @cObject = _collect
+    @collection = _collect
     @pkeyword = _qstring.join(" ")
     @search_id = _last_id
-    _lrecord = Array.new()
+    @records = []
+    @action = _action_type
     
     begin
       #initialize
@@ -21,79 +23,28 @@ class LextensoSearchClass < ActionController::Base
       results = search(@pkeyword, _max)      
       logger.debug("lextenso_search_class][SearchCollection]Search performed")
       logger.debug("lextenso_search_class][SearchCollection]RESPONSE: " + results.to_s)
-    rescue Exception => bang
+    rescue => bang
       logger.error("lextenso_search_class][SearchCollection] [SearchCollection] error: " + bang.message)
       logger.error("lextenso_search_class][SearchCollection] [SearchCollection] trace:" + bang.backtrace.join("\n"))
-      if _action_type != nil
-        _lxml = ""
-        logger.debug("ID: " + _last_id.to_s)
-        my_id = CachedSearch.save_metadata(_last_id, _lxml, _collect.id, _max.to_i, LIBRARYFIND_CACHE_EMPTY, infos_user)
-        return my_id, 0
-      else
-        return nil
-      end
     end
     
-    if results != nil 
+    if results
       begin
-        _lrecord = parse_results(results, infos_user)
-      rescue Exception => bang
+        @records = parse_results(results, infos_user)
+      rescue => bang
         logger.error("[LextensoSearchClass] [SearchCollection] error: " + bang.message)
         logger.debug("[LextensoSearchClass] [SearchCollection] trace:" + bang.backtrace.join("\n"))
-        if _action_type != nil
-          _lxml = ""
-          logger.debug("ID: " + _last_id.to_s)
-          my_id = CachedSearch.save_metadata(_last_id, _lxml, _collect.id, _max.to_i, LIBRARYFIND_CACHE_EMPTY, infos_user)
-          return my_id, 0, @total_hits
-        else
-          return nil
-        end
       end
     end
     
-    _lprint = false
-    if _lrecord != nil
-      _lxml = CachedSearch.build_cache_xml(_lrecord)
-      _lprint = true if _lxml != nil
-      _lxml = "" if _lxml == nil
-      
-      #============================================
-      # Add this info into the cache database
-      #============================================
-      if _last_id.nil?
-        # FIXME:  Raise an error
-        logger.debug("Error: _last_id should not be nil")
-      else
-        logger.debug("Save metadata")
-        status = LIBRARYFIND_CACHE_OK
-        if _lprint != true
-          status = LIBRARYFIND_CACHE_EMPTY
-        end
-        my_id = CachedSearch.save_metadata(_last_id, _lxml, _collect.id, _max.to_i, status, infos_user, @total_hits)
-      end
-    else
-      logger.debug("save bad metadata")
-      _lxml = ""
-      logger.debug("ID: " + _last_id.to_s)
-      my_id = CachedSearch.save_metadata(_last_id, _lxml, _collect.id, _max.to_i, LIBRARYFIND_CACHE_EMPTY, infos_user)
-    end
-    
-    if _action_type != nil
-      if _lrecord != nil
-        return my_id, _lrecord.length, @total_hits
-      else
-        return my_id, 0, @total_hits
-      end
-    else
-      return _lrecord
-    end
+    save_in_cache
   end
   
   def self.GetRecord(idDoc, idCollection, idSearch, infos_user = nil)
     return (CacheSearchClass.GetRecord(idDoc, idCollection, idSearch, infos_user));
   end
   
-  def self.search(keyword, max)
+  def search(keyword, max)
     
     header = {"Content-Type"=>"text/xml;charset=UTF-8",
       "Accept-Encoding"=>"gzip,deflate",
@@ -119,7 +70,7 @@ class LextensoSearchClass < ActionController::Base
     begin
       # Post the request
       resp, result = http.post(path, data, header)
-    rescue Exception => e
+    rescue => e
       logger.error("[LextensoSearchClass][search] error: " + e.message)
       logger.error("[LextensoSearchClass][search] trace: " + e.backtrace.join("\n"))
     end
@@ -127,7 +78,7 @@ class LextensoSearchClass < ActionController::Base
     return result
   end
   
-  def self.parse_results(doc, infos_user)
+  def parse_results(doc, infos_user)
     _objRec = RecordSet.new()
     _title = ""
     _authors = ""
@@ -159,7 +110,7 @@ class LextensoSearchClass < ActionController::Base
       record = Record.new()
       
       record.rank = _objRec.calc_rank({'title' => _objRec.normalize(_title), 'creator'=>_objRec.normalize(_authors), 'date'=>_date, 'rec' => _keyword , 'pos'=>1}, @pkeyword)
-      record.vendor_name = @cObject.alt_name
+      record.vendor_name = @collection.alt_name
       record.ptitle = _objRec.normalize(_title)
       record.title =  record.ptitle
       record.atitle =  ""
@@ -172,12 +123,12 @@ class LextensoSearchClass < ActionController::Base
       record.author = _authors
       record.link = ""
       rec_id =  item.xpath(".//id").text
-      record.id = "#{rec_id};#{@cObject.id.to_s};#{@search_id.to_s}"
+      record.id = "#{rec_id};#{@collection.id.to_s};#{@search_id.to_s}"
       record.doi = ""
       record.openurl = ""
       if(INFOS_USER_CONTROL and !infos_user.nil?)
         # Does user have rights to view the notice ?
-        droits = ManageDroit.GetDroits(infos_user,@cObject.id)
+        droits = ManageDroit.GetDroits(infos_user,@collection.id)
         if(droits.id_perm == ACCESS_ALLOWED)
           record.direct_url = "http://www.lextenso.fr/weblextenso/article/afficher?id=#{rec_id}"
         else
@@ -187,11 +138,11 @@ class LextensoSearchClass < ActionController::Base
         record.direct_url = "http://www.lextenso.fr/weblextenso/article/afficher?id=#{rec_id}"          
       end
       
-      record.static_url = @cObject.vendor_url
+      record.static_url = @collection.vendor_url
       record.subject = ""
       record.publisher = ""
       record.vendor_url = ""
-      record.material_type = @cObject.mat_type
+      record.material_type = @collection.mat_type
       record.rights = ""
       record.thumbnail_url = ""
       record.volume = ""
@@ -207,7 +158,7 @@ class LextensoSearchClass < ActionController::Base
       _x = _x + 1
     }
     
-    return _record 
+    return _record
     
   end
   

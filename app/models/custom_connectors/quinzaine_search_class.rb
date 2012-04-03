@@ -354,21 +354,6 @@ class QuinzaineSearchClass < ActionController::Base
     return _record
   end
   
-  # check the state of variables
-  def self.chkString(_str)
-    begin
-      if _str == nil
-        return ""
-      end
-      if _str.is_a?(Numeric)
-        return _str.to_s
-      end
-      return _str.chomp
-    rescue
-      return ""
-    end
-  end
-  
   def self.GetRecord(idDoc = nil, idCollection = nil, idSearch = "", info_user = nil)
     
     #logger.debug("[GetRecord] : idDoc = #{idDoc}")

@@ -456,7 +456,9 @@ class MetaSearch < ActionController::Base
               logger.info("[METASEARCH] : Search class = #{_search_class}")
               rescued = false
               begin
-                eval("my_id, my_hits, total_hits = #{_search_class}SearchClass.SearchCollection(_collections[_index], _qtype, _q, _start.to_i, _max.to_i, _qoperator, _s_id, myjob[_index], @infos_user, options, _session_id, 1, _data, _bool_obj)")
+                #eval("my_id, my_hits, total_hits = #{_search_class}SearchClass.SearchCollection(_collections[_index], _qtype, _q, _start.to_i, _max.to_i, _qoperator, _s_id, myjob[_index], @infos_user, options, _session_id, 1, _data, _bool_obj)")
+                klass = eval("#{_search_class}SearchClass.new")
+                my_id, my_hits, total_hits = klass.SearchCollection(_collections[_index], _qtype, _q, _start.to_i, _max.to_i, _qoperator, _s_id, myjob[_index], @infos_user, options, _session_id, 1, _data, _bool_obj)
               rescue => e
                 logger.error("[METASEARCH] : Search class = #{e.message}")
                 logger.error("[METASEARCH] backtrace = #{e.backtrace}")
@@ -576,13 +578,13 @@ class MetaSearch < ActionController::Base
   def get_job_record(job_id,  _max)
     logger.info("[meta_search][get_job_record] get job record id #{job_id}")
     _objRec = RecordSet.new
-    _xml = JobQueue.retrieve_metadata(job_id, _max, '', @infos_user)
+    json = JobQueue.retrieve_metadata(job_id, _max, '', @infos_user)
     logger.info("[meta_search][get_job_record] cached search xml return object = #{_xml.class}")
-    if _xml != nil
-      if _xml.status == LIBRARYFIND_CACHE_OK
+    if json != nil
+      if json.status == LIBRARYFIND_CACHE_OK
         # Note:  it should never happen that .data is nil
-        if _xml.data != nil
-          return _objRec.unpack_cache(_xml.data, _max.to_i)
+        if json.data != nil
+          return _objRec.unpack_cache(json.data, _max.to_i)
         end
       end
     end
@@ -634,7 +636,7 @@ class MetaSearch < ActionController::Base
       cached_record = JobQueue.retrieve_metadata(_id, _max, temps, @infos_user)
       logger.info("[meta_search][GetJobsRecord] cached search xml return object = #{cached_record.class}")
       if cached_record and cached_record.status == LIBRARYFIND_CACHE_OK 
-        if cached_record.data
+        if !cached_record.data.blank?
           _tmp =  record_set.unpack_cache(cached_record.data, _max.to_i)
           _recs.concat(_tmp) if _tmp
         end

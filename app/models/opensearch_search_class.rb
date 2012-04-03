@@ -27,7 +27,7 @@ require 'opensearch'
 require 'rexml/document'
 
 class OpensearchSearchClass < ActionController::Base
-  
+  include SearchClassHelper
   attr_reader :hits, :xml
   @pkeyword = ""
   @feed_url = ""
@@ -37,8 +37,8 @@ class OpensearchSearchClass < ActionController::Base
   @feed_name = ""
   @total_hits = 0
   
-  def self.SearchCollection(_collect, _qtype, _qstring, _start, _max, _qoperator, _last_id, job_id = -1, infos_user=nil, options = nil, _session_id=nil, _action_type=nil, _data = nil, _bool_obj=true)
-    _lrecord = Array.new()
+  def SearchCollection(_collect, _qtype, _qstring, _start, _max, _qoperator, _last_id, job_id = -1, infos_user=nil, options = nil, _session_id=nil, _action_type=nil, _data = nil, _bool_obj=true)
+    @records = []
     logger.debug("[OPENSEARCH] start search")
     _sTime = Time.now().to_f
     
@@ -46,13 +46,16 @@ class OpensearchSearchClass < ActionController::Base
     _qstring = UtilFormat.analyzeParams(_qtype,_qstring,_coll_list)
     logger.debug("Analyze Params after : _qstring:#{_qstring}")
       
-    
+    @collection = _collect
+    @pkeyword = _qstring.join(" ")
+    @infos_user = infos_user
+    @max = _max
+    @action = _action_type
     @feed_url = _collect.vendor_url
     @feed_id = _collect.id
     @search_id = _last_id
     @feed_type = _collect.mat_type
     @feed_name = _collect.alt_name
-    @pkeyword = _qstring.join(" ")
     
     #====================================
     # Setup the OpenSearch Request
@@ -106,71 +109,19 @@ class OpensearchSearchClass < ActionController::Base
     if feed != nil || feed != ""
       begin
         if _collect.record_schema == 'application/rss+xml'
-          _lrecord = parse_rss(feed, _max.to_i)
+          @records = parse_rss(feed, _max.to_i)
         elsif _collect.record_schema == 'application/atom+xml'
-          _lrecord = parse_atom(feed)
-        else
-          if _action_type != nil
-            _lxml = ""
-            logger.debug("ID: " + _last_id.to_s)
-            my_id = CachedSearch.save_metadata(_last_id, _lxml, _collect.id, _max.to_i, LIBRARYFIND_CACHE_EMPTY, infos_user)
-            return my_id, 0, @total_hits
-          else
-            return nil
-          end
+          @records = parse_atom(feed)
         end
-      rescue
-        if _action_type != nil
-          _lxml = ""
-          logger.debug("ID: " + _last_id.to_s)
-          my_id = CachedSearch.save_metadata(_last_id, _lxml, _collect.id, _max.to_i, LIBRARYFIND_CACHE_EMPTY, infos_user)
-          return my_id, 0, @total_hits
-        else
-          return nil
-        end
+      rescue => e
+        logger.error(e.message)
       end
     end
     
-    _lprint = false
-    if _lrecord != nil
-      _lxml = CachedSearch.build_cache_xml(_lrecord)
-      _lprint = true if _lxml != nil
-      _lxml = "" if _lxml == nil
-      #============================================
-      # Add this info into the cache database
-      #============================================
-      if _last_id.nil?
-        # FIXME:  Raise an error
-        logger.debug("Error: _last_id should not be nil")
-      else
-        logger.debug("Save metadata")
-        status = LIBRARYFIND_CACHE_OK
-        if _lprint != true
-          status = LIBRARYFIND_CACHE_EMPTY
-        end
-        my_id = CachedSearch.save_metadata(_last_id, _lxml, _collect.id, _max.to_i, status, infos_user, @total_hits)
-      end
-    else
-      logger.debug("save bad metadata")
-      _lxml = ""
-      logger.debug("ID: " + _last_id.to_s)
-      my_id = CachedSearch.save_metadata(_last_id, _lxml, _collect.id, _max.to_i, LIBRARYFIND_CACHE_EMPTY, infos_user)
-    end
-    
-     logger.debug("#STAT# [OPENSEARCH] base: #{@feed_name}[#{@feed_id}] total: " + sprintf( "%.2f",(Time.now().to_f - _sTime)).to_s) if LOG_STATS
-    
-    if _action_type != nil
-      if _lrecord != nil
-        return my_id, _lrecord.length, @total_hits
-      else
-        return my_id, 0, @total_hits
-      end
-    else
-      return _lrecord
-    end
+    save_in_cache
   end
   
-  def self.strip_escaped_html(str, allow = [''])
+  def strip_escaped_html(str, allow = [''])
     str = str.gsub("&#38;lt;", "<")
     str = str.gsub("&#38;gt;", ">")
     str = str.gsub("&lt;", "<")
@@ -184,7 +135,7 @@ class OpensearchSearchClass < ActionController::Base
   end
   
   
-  def self.parse_rss(xml, _max = 20) 
+  def parse_rss(xml, _max = 20) 
     _objRec = RecordSet.new()
     _title = ""
     _authors = ""
@@ -294,7 +245,7 @@ class OpensearchSearchClass < ActionController::Base
         if(droits.id_perm == ACCESS_ALLOWED)
           record.direct_url = UtilFormat.normalize(_link)
         else
-          record.direct_url = "";
+          record.direct_url = ""
         end
       else
         record.direct_url = UtilFormat.normalize(_link)       
@@ -303,7 +254,7 @@ class OpensearchSearchClass < ActionController::Base
       record.subject = UtilFormat.normalize(_subjects)
       record.publisher = ""
       record.callnum = ""
-      if @feed_url==nil: @feed_url = "" end
+      @feed_url = "" if !@feed_url
       record.vendor_url = @feed_url
       record.material_type = UtilFormat.normalize(@feed_type)
       record.theme = "" # chkString(uniqString(_theme))
@@ -324,7 +275,7 @@ class OpensearchSearchClass < ActionController::Base
     
   end  
   
-  def self.parse_atom(xml)
+  def parse_atom(xml)
     _objRec = RecordSet.new()
     _title = ""
     _authors = ""
@@ -388,7 +339,7 @@ class OpensearchSearchClass < ActionController::Base
       record.subject = UtilFormat.normalize(_subjects)
       record.publisher = ""
       record.callnum = ""
-      if @feed_url==nil: @feed_url = "" end
+      @feed_url = "" if !@feed_url
       record.vendor_url = @feed_url
       record.material_type = UtilFormat.normalize(@feed_type)
       record.volume = ""
@@ -409,6 +360,6 @@ class OpensearchSearchClass < ActionController::Base
   end
 
   def self.GetRecord(idDoc, idCollection, idSearch, infos_user = nil)
-    return (CacheSearchClass.GetRecord(idDoc, idCollection, idSearch, infos_user));
+    return (CacheSearchClass.GetRecord(idDoc, idCollection, idSearch, infos_user))
   end
 end

@@ -5,14 +5,14 @@ class EuropresseSearchClass < ActionController::Base
   
   
   attr_reader :hits, :xml, :total_hits
-  @cObject = nil
+  @collection = nil
   @pkeyword = ""
   @search_id = 0
   @hits = 0
   @total_hits = 0
   
   
-  def self.query_string(type, keyword)
+  def query_string(type, keyword)
     logger.debug("[EuroPressSearchClass][query_string] TYPE=#{type}")
     logger.debug("[EuroPressSearchClass][query_string] TYPECLASS=#{type.class}")
     case type.to_s
@@ -35,118 +35,52 @@ class EuropresseSearchClass < ActionController::Base
     return (CacheSearchClass.GetRecord(idDoc, idCollection, idSearch, infos_user));
   end
   
-  def self.normalize(_string)
+  def normalize(_string)
     return UtilFormat.normalize(_string) if _string != nil
     return ""
-  end
+  end  
   
-  
-  
-  
-  
-  
-  
-  
-  def self.SearchCollection(_collect, _qtype, _qstring, _start, _max, _qoperator, _last_id, job_id = -1, infos_user = nil, options = nil, _session_id=nil, _action_type=nil, _data = nil, _bool_obj=true)
+  def SearchCollection(_collect, _qtype, _qstring, _start, _max, _qoperator, _last_id, job_id = -1, infos_user = nil, options = nil, _session_id=nil, _action_type=nil, _data = nil, _bool_obj=true)
     logger.debug("[EuroPressSearchClass][SearchCollection]")
     logger.debug("[EuroPressSearchClass][SearchCollection] _qstring.class = #{_qstring.class}")
-    @cObject = _collect
+    @collection = _collect
+    @action = _action_type
     @pkeyword = query_string(_qtype, _qstring.join(" "))
     logger.debug("[EuroPressSearchClass][SearchCollection] @pkeyword = #{@pkeyword}")
     logger.debug("[EuroPressSearchClass][SearchCollection] @pkeyword.class = #{@pkeyword.class}")
     @search_id = _last_id
-    _lrecord = Array.new()
+    @records = []
     logger.debug("[EuropresseSearchClass][_qtype]======#{_qtype} ")
     
     begin
       #initialize
-      logger.debug("COLLECT: " + _collect.host)
+      logger.debug("COLLECT: " + @collection.host)
       
       login
       results = search(@pkeyword, _max.to_i)
       logout
       
-      logger.debug("EuropresseSearchClass => Search performed")
+      logger.error("EuropresseSearchClass => Search performed")
       logger.debug("EuropresseSearchClass : #{results.length}/#{@total_hits}")
-    rescue Exception => bang
-      logger.debug("[EuropresseSearchClass] [SearchCollection] error: " + bang.message)
+    rescue => bang
+      logger.error("[EuropresseSearchClass] [SearchCollection] error: " + bang.message)
       logger.debug("[EuropresseSearchClass] [SearchCollection] trace:" + bang.backtrace.join("\n"))
-      if _action_type != nil
-        _lxml = ""
-        logger.debug("ID: " + _last_id.to_s)
-        my_id = CachedSearch.save_metadata(_last_id, _lxml, _collect.id, _max.to_i, LIBRARYFIND_CACHE_EMPTY, infos_user)
-        return my_id, 0
-      else
-        return nil
-      end
     end
     
-    if results != nil 
+    if results
       begin
-        _lrecord = parse_europresse(results, infos_user, _collect.id)
+        @records = parse_europresse(results, infos_user, _collect.id)
       rescue Exception => bang
         logger.error("[EuroPresseSearchClass] [SearchCollection] error: " + bang.message)
         logger.debug("[EuroPresseSearchClass] [SearchCollection] trace:" + bang.backtrace.join("\n"))
-        if _action_type != nil
-          _lxml = ""
-          logger.debug("ID: " + _last_id.to_s)
-          my_id = CachedSearch.save_metadata(_last_id, _lxml, _collect.id, _max.to_i, LIBRARYFIND_CACHE_EMPTY, infos_user)
-          return my_id, 0, @total_hits
-        else
-          return nil
-        end
       end
     end
-    
-    _lprint = false
-    if _lrecord != nil
-      _lxml = CachedSearch.build_cache_xml(_lrecord)
-      _lprint = true if _lxml != nil
-      _lxml = "" if _lxml == nil
-      
-      #============================================
-      # Add this info into the cache database
-      #============================================
-      if _last_id.nil?
-        # FIXME:  Raise an error
-        logger.debug("Error: _last_id should not be nil")
-      else
-        logger.debug("Save metadata")
-        status = LIBRARYFIND_CACHE_OK
-        if _lprint != true
-          status = LIBRARYFIND_CACHE_EMPTY
-        end
-        my_id = CachedSearch.save_metadata(_last_id, _lxml, _collect.id, _max.to_i, status, infos_user, @total_hits)
-      end
-    else
-      logger.debug("save bad metadata")
-      _lxml = ""
-      logger.debug("ID: " + _last_id.to_s)
-      my_id = CachedSearch.save_metadata(_last_id, _lxml, _collect.id, _max.to_i, LIBRARYFIND_CACHE_EMPTY, infos_user)
-    end
-    
-    if _action_type != nil
-      if _lrecord != nil
-        return my_id, _lrecord.length, @total_hits
-      else
-        return my_id, 0, @total_hits
-      end
-    else
-      return _lrecord
-    end
+    save_in_cache
   end
   
-  
-  
-  
-  
-  
-  
-  
-  
-  
+
   ##TODO => replace by login(username, password) and store these in config
-  def self.login
+  def login
     if !@identity
       
       header = {"Content-Type"=>"text/xml;charset=UTF-8",
@@ -209,7 +143,7 @@ class EuropresseSearchClass < ActionController::Base
   # :version, 
   # :document_language_id
   
-  def self.search(text, max)
+  def search(text, max)
     logger.debug("[EuroPresse][search] text = #{text} --- max = #{max}")
     login if !@identity
     begin
@@ -243,7 +177,7 @@ class EuropresseSearchClass < ActionController::Base
               </soapenv:Envelope>
               EOF
       
-    rescue Exception => e
+    rescue => e
       logger.debug("[EuroPresse] : response => #{response}")
       logger.error("[EuroPresse] : error => #{e.message}")
       logger.debug("[EuroPresse] : backtrace => #{e.backtrace.join("\n")}")
@@ -252,7 +186,7 @@ class EuropresseSearchClass < ActionController::Base
     begin
       # Post the request
       resp, result = http.post(path, data, header)
-    rescue Exception => e
+    rescue => e
       logger.error("[LextensoSearchClass][search] error: " + e.message)
       logger.error("[LextensoSearchClass][search] trace: " + e.backtrace.join("\n"))
     end
@@ -263,7 +197,7 @@ class EuropresseSearchClass < ActionController::Base
     return result
   end
   
-  def self.logout
+  def logout
     header = {"Content-Type"=>"text/xml;charset=UTF-8",
       "Accept-Encoding"=>"gzip,deflate",
       "SOAPAction"=>"http://ws.cedrom-sni.com/Logout",
@@ -288,7 +222,7 @@ class EuropresseSearchClass < ActionController::Base
     @identity = nil
   end
   
-  def self.parse_europresse(records, infos_user, collection_id) 
+  def parse_europresse(records, infos_user, collection_id) 
     logger.debug("[EuroPresseSearchClass][parse_europress] Entering method...")
     _objRec = RecordSet.new()
     _record = Array.new()
@@ -324,8 +258,8 @@ class EuropresseSearchClass < ActionController::Base
         
         record.rank = _objRec.calc_rank({'title' => normalize(_title), 'atitle' => '', 'creator'=>normalize(_authors), 'date'=>_date, 'rec' => _keyword , 'pos'=>1}, @pkeyword)
         logger.debug("past rank")
-        record.vendor_name = @cObject.alt_name
-        record.availability = @cObject.availability
+        record.vendor_name = @collection.alt_name
+        record.availability = @collection.availability
         record.ptitle = _title
         record.title =  _title
         record.atitle =  _title
@@ -336,7 +270,7 @@ class EuropresseSearchClass < ActionController::Base
         record.date = _date
         record.author = _authors
         record.link = ""
-        record.id =  UtilFormat.html_decode(item.xpath(".//Name").text).gsub("·","").gsub("×","") + ";" + @cObject.id.to_s + ";" + @search_id.to_s
+        record.id =  UtilFormat.html_decode(item.xpath(".//Name").text).gsub("·","").gsub("×","") + ";" + @collection.id.to_s + ";" + @search_id.to_s
         record.doi = ""
         record.openurl = ""
         if(INFOS_USER_CONTROL and !infos_user.nil?)
@@ -354,7 +288,7 @@ class EuropresseSearchClass < ActionController::Base
         record.static_url = _link
         record.subject = _title
         record.publisher = _source
-        record.vendor_url = @cObject.vendor_url
+        record.vendor_url = @collection.vendor_url
         record.material_type = "Article"
         record.volume = ""
         record.issue = ""
@@ -378,10 +312,10 @@ class EuropresseSearchClass < ActionController::Base
     
   end
   
-  def self.remove_kwic_format(text)
-    logger.debug("[EuroPresseSearchClass][remove_kwic_format] text = #{text}")
+  def remove_kwic_format(text)
+    logger.debug("[EuroPresseSearchClass][remove_kwic_format] before text = #{text}")
     text = text.gsub(/<.+?>/i,"")
-    logger.debug("[EuroPresseSearchClass][remove_kwic_format] text = #{text}")    
+    logger.debug("[EuroPresseSearchClass][remove_kwic_format] after text = #{text}")    
     return text
   end
   

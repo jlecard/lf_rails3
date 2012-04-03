@@ -30,99 +30,48 @@ require 'cgi'
 
 
 class FactivaSearchClass < ActionController::Base
-  
+  include SearchClassHelper
   attr_reader :hits, :xml, :total_hits
-  @cObject = nil
+  @collection = nil
   @pkeyword = ""
   @search_id = 0
   @hits = 0
   @total_hits = 0
   
-  def self.SearchCollection(_collect, _qtype, _qstring, _start, _max, _qoperator, _last_id, job_id = -1, infos_user = nil ,options = nil, _session_id=nil, _action_type=nil, _data = nil, _bool_obj=true)
+  def SearchCollection(_collect, _qtype, _qstring, _start, _max, _qoperator, _last_id, job_id = -1, infos_user = nil ,options = nil, _session_id=nil, _action_type=nil, _data = nil, _bool_obj=true)
     logger.debug("[factiva_search_class][SearchCollection] entered")
-    @cObject = _collect
+    @collection = _collect
     @pkeyword = _qstring.join(" ")
     @search_id = _last_id
-    _lrecord = Array.new()
+    @records = []
+    @infos_user=infos_user
+    @action = _action_type
     
     begin
       #initialize
-      logger.debug("COLLECTION: " + _collect.host)
+      logger.debug("COLLECTION: " + @collection)
       
       #perform the search
-      results = search(@pkeyword, _max, @cObject)
+      results = search(@pkeyword, _max, @collection)
       logger.debug("factiva_search_class][SearchCollection]Search performed")
-    rescue Exception => bang
+    rescue => bang
       logger.error("factiva_search_class][SearchCollection] [SearchCollection] error: " + bang.message)
-      logger.error("factiva_search_class][SearchCollection] [SearchCollection] trace:" + bang.backtrace.join("\n"))
-      if _action_type != nil
-        _lxml = ""
-        logger.debug("ID: " + _last_id.to_s)
-        my_id = CachedSearch.save_metadata(_last_id, _lxml, _collect.id, _max.to_i, LIBRARYFIND_CACHE_EMPTY, infos_user)
-        return my_id, 0
-      else
-        return nil
-      end
+      logger.debug("factiva_search_class][SearchCollection] [SearchCollection] trace:" + bang.backtrace.join("\n"))
     end
     
-    if results != nil 
+    if results
       begin
-        _lrecord = parse_results(results, infos_user)
-      rescue Exception => bang
+        @records = parse_results(results, infos_user)
+      rescue => bang
         logger.error("[FactivaSearchClass] [SearchCollection] error: " + bang.message)
         logger.debug("[FactivaSearchClass] [SearchCollection] trace:" + bang.backtrace.join("\n"))
-        if _action_type != nil
-          _lxml = ""
-          logger.debug("ID: " + _last_id.to_s)
-          my_id = CachedSearch.save_metadata(_last_id, _lxml, _collect.id, _max.to_i, LIBRARYFIND_CACHE_EMPTY, infos_user)
-          return my_id, 0, @total_hits
-        else
-          return nil
-        end
       end
     end
-    
-    _lprint = false
-    if _lrecord != nil
-      _lxml = CachedSearch.build_cache_xml(_lrecord)
-      _lprint = true if _lxml != nil
-      _lxml = "" if _lxml == nil
-      
-      
-      #============================================
-      # Add this info into the cache database
-      #============================================
-      if _last_id.nil?
-        # FIXME:  Raise an error
-        logger.debug("Error: _last_id should not be nil")
-      else
-        logger.debug("Save metadata")
-        status = LIBRARYFIND_CACHE_OK
-        if _lprint != true
-          status = LIBRARYFIND_CACHE_EMPTY
-        end
-        my_id = CachedSearch.save_metadata(_last_id, _lxml, _collect.id, _max.to_i, status, infos_user, @total_hits)
-      end
-    else
-      logger.debug("save bad metadata")
-      _lxml = ""
-      logger.debug("ID: " + _last_id.to_s)
-      my_id = CachedSearch.save_metadata(_last_id, _lxml, _collect.id, _max.to_i, LIBRARYFIND_CACHE_EMPTY, infos_user)
-    end
-    
-    if _action_type != nil
-      if _lrecord != nil
-        return my_id, _lrecord.length, @total_hits
-      else
-        return my_id, 0, @total_hits
-      end
-    else
-      return _lrecord
-    end
+    save_in_cache
   end
   
   # search records (max search = 100 and search by multiple of 10)
-  def self.search(keyword, max,_collect)
+  def search(keyword, max,_collect)
     continue = false
     remaining = 0
     loops = 1
@@ -165,7 +114,7 @@ class FactivaSearchClass < ActionController::Base
       begin      
         # Post the request
         resp, data = http.post(path, data, header)
-      rescue Exception => e
+      rescue => e
         logger.error("[FactivaSearchClass][search] error: " + e.message)
         logger.error("[FactivaSearchClass][search] trace: " + e.backtrace.join("\n"))
       end
@@ -218,14 +167,14 @@ class FactivaSearchClass < ActionController::Base
       return data
     end
     
-    def self.search_context(xml)
+    def search_context(xml)
       doc = Nokogiri::XML.parse(xml)
       doc.remove_namespaces!
       context = doc.xpath("//searchContext").text
       return context
     end
     
-    def self.continue_search(context, loop, modulo=0)
+    def continue_search(context, loop, modulo=0)
       logger.debug("[FactivaSearchClass][continue_search] called for loop # #{loop}")
       logger.debug("[FactivaSearchClass][continue_search] called with context = #{context}")
       first_result = loop*100
@@ -261,7 +210,7 @@ class FactivaSearchClass < ActionController::Base
       return data
     end
     
-    def self.merge_doc(to_append, source)
+    def merge_doc(to_append, source)
       #logger.debug("[FactivaSearchClass][merge_doc] to_append = #{to_append}")
       doc_to_append = Nokogiri::XML.parse(to_append)
       if source.class == String
@@ -280,7 +229,7 @@ class FactivaSearchClass < ActionController::Base
       return source
     end
     
-    def self.parse_results(doc, infos_user) 
+    def parse_results(doc, infos_user) 
       begin
         logger.debug("[FactivaSearchClass][parse_results] Entering method...")
         _objRec = RecordSet.new()
@@ -325,7 +274,7 @@ class FactivaSearchClass < ActionController::Base
             
             record.rank = _objRec.calc_rank({'title' => normalize(_title), 'creator'=>normalize(_authors), 'date'=>_date, 'rec' => _keyword , 'pos'=>1}, @pkeyword)
             logger.debug("past rank")
-            record.vendor_name = @cObject.alt_name
+            record.vendor_name = @collection.alt_name
             record.ptitle = normalize(_title)
             record.title =  normalize(_title)
             record.atitle =  
@@ -334,29 +283,29 @@ class FactivaSearchClass < ActionController::Base
             record.abstract = normalize(_description)
             record.date = normalize(_date)
             record.author = normalize(_authors)
-            record.link = normalize(@cObject.vendor_url)
+            record.link = normalize(@collection.vendor_url)
             rec_id =  item.xpath("./accessionNo").text
-            record.id = "#{rec_id};#{@cObject.id.to_s};#{@search_id.to_s}"
+            record.id = "#{rec_id};#{@collection.id.to_s};#{@search_id.to_s}"
             record.doi = ""
             record.openurl = ""
             if(INFOS_USER_CONTROL and !infos_user.nil?)
               # Does user have rights to view the notice ?
-              droits = ManageDroit.GetDroits(infos_user,@cObject.id)
+              droits = ManageDroit.GetDroits(infos_user,@collection.id)
               if(droits.id_perm == ACCESS_ALLOWED)
-                record.direct_url = "#{@cObject.vendor_url}/aa/?ref=#{rec_id}"
+                record.direct_url = "#{@collection.vendor_url}/aa/?ref=#{rec_id}"
               else
                 record.direct_url = "";
               end
             else
-              record.direct_url = "#{@cObject.vendor_url}/aa/?ref=#{rec_id}"          
+              record.direct_url = "#{@collection.vendor_url}/aa/?ref=#{rec_id}"          
             end
             
-            record.static_url = @cObject.vendor_url
+            record.static_url = @collection.vendor_url
             record.subject = normalize(_subjects)
             record.publisher = normalize(_source)
             logger.debug("[FactivaSearchClass] [parse] Record label = #{record.publisher}")
-            record.vendor_url = normalize(@cObject.vendor_url)
-            record.material_type = @cObject.mat_type # item.xpath("./contentParts")['contentType']
+            record.vendor_url = normalize(@collection.vendor_url)
+            record.material_type = @collection.mat_type # item.xpath("./contentParts")['contentType']
             record.rights = item.xpath("./copyright").text
             record.thumbnail_url = "http://logos.factiva.com/factcpLogo.gif"
             record.volume = ""
@@ -370,7 +319,7 @@ class FactivaSearchClass < ActionController::Base
             record.hits = @hits
             _record[_x] = record
             _x = _x + 1
-          rescue Exception => e
+          rescue => e
             logger.error("[FactivaSearchClass][parse] error: " + e)
             logger.error("[FactivaSearchClass][parse] trace: " + e.backtrace.join("\n"))
             next
@@ -378,7 +327,7 @@ class FactivaSearchClass < ActionController::Base
         }
         logger.debug("[FactivaSearchClass]Finished _record array")
         return _record
-      rescue Exception => e
+      rescue => e
         logger.error("[FactivaSearchClass][parse_results] error #{e.message}")
         logger.error("[FactivaSearchClass][parse_results] error #{e.backtrace}")
       end
@@ -389,7 +338,7 @@ class FactivaSearchClass < ActionController::Base
       return (CacheSearchClass.GetRecord(idDoc, idCollection, idSearch, infos_user));
     end
     
-    def self.normalize(_string)
+    def normalize(_string)
       return UtilFormat.normalize(_string) if _string != nil
       return ""
       #_string = _string.gsub(/\W+$/,"")
