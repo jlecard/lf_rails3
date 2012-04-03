@@ -23,7 +23,7 @@
 # http://libraryfind.org
 require 'keesing'
 
-class KeesingSearchClass
+class KeesingSearchClass < ActionController::Base 
 
   attr_reader :hits, :xml, :total_hits
   include SearchClassHelper
