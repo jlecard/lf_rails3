@@ -94,8 +94,8 @@ class RZOOM   < ActionController::Base
   
   def search(_host, _stype, _keyword, _operator, _start=0, _max=10) 
     _startTop = Time.now().to_f
-    logger.info("[rzoom][search] Username: " + _host['username'])
-    logger.info("[rzoom][search] Password: " + _host['password'])
+    logger.info("[rzoom][search] Username: #{_host['username']}")
+    logger.info("[rzoom][search] Password:#{_host['password']}")
     logger.info("[rzoom][search] Database Name: " + _host['name'])
     logger.info("[rzoom][search] Host: " + _host['host']) 
     logger.info("[rzoom][search] Port: " + _host['port'].to_s)
@@ -133,7 +133,7 @@ class RZOOM   < ActionController::Base
         is_connected=true
         logger.debug("[rzoom][search] connect with host: #{_host['host']} port:#{_host['port']}")
         _startCnx = Time.now().to_f
-        conn = conn.connect(_host['host'], _host['port'])
+        conn = conn.connect(_host['host'].to_s, _host['port'].to_i)
         logger.debug("[rzoom][search] time connection : #{Time.now().to_f - _startCnx} s")
         conn.set_option('timeout', LIBRARYFIND_PROCESS_TIMEOUT)
         conn.set_option("elementSetName","F")
