@@ -150,7 +150,7 @@ class CachedSearch < ActiveRecord::Base
         return nil if objRecords[0].max_recs < max
       end
       logger.debug("#STAT# [CACHESEARCH] base: [#{coll_id}] recherche: " + sprintf( "%.2f",(Time.now().to_f - _sTime)).to_s) if LOG_STATS
-    return objRecords[0]
+      return objRecords[0]
     end
   end
 
