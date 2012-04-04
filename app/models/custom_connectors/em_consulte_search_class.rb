@@ -231,7 +231,7 @@ class EmconsulteSearchClass < ActionController::Base
   end
   
   def self.GetRecord(idDoc, idCollection, idSearch, infos_user = nil)
-    return (CacheSearchClass.GetRecord(idDoc, idCollection, idSearch, infos_user));
+    return (CacheSearchClass.GetRecord(idDoc, idCollection, idSearch, infos_user))
   end
   
   def normalize(_string)

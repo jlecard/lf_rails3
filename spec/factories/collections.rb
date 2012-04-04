@@ -32,4 +32,14 @@ Factory.define :z3950_collection, :class=>:collection do |c|
   c.definition_search "creator=1003;author=1003;subject=21;issn=8;isbn=7;callnum=16;publisher=1018;title=4;keyword=1016"
 end
 
+Factory.define :em_consulte_collection, :class=>:collection do |c|
+  c.name "emconsulte"
+  c.alt_name "emconsulte"
+  c.conn_type "connector"
+  c.host "http://www.em-consulte.com"
+  c.oai_set "Emconsulte"
+  c.proxy false
+  c.url "http://www.em-consulte.com"
+end
+
 
