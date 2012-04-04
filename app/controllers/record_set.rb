@@ -404,7 +404,7 @@ class RecordSet  < ActionController::Base
       else
         if !_rechash['link'].blank?
           record.direct_url = checknil(_rechash['link'])
-        elseif !_rechash['direct_url'].blank?
+        elsif !_rechash['direct_url'].blank?
           record.direct_url = _rechash['direct_url']
         end
       end

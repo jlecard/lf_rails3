@@ -126,7 +126,11 @@ class RZOOM   < ActionController::Base
       end
       logger.info("[rzoom][search] Create connection with options : #{hOptions.inspect}")
       _startCnx = Time.now().to_f
-      conn = ZOOM::Connection.new(hOptions) 
+      #conn = ZOOM::Connection.new(hOptions) 
+      conn = ZOOM::Connection.new
+      conn.user = hOptions['user']
+      conn.password = hOptions['password']
+      conn.proxy = hOptions['proxy']
       logger.debug("[rzoom][search] time prepare connection : #{Time.now().to_f - _startCnx} s")
       
       if conn != nil
