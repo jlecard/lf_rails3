@@ -57,4 +57,9 @@ module SearchClassHelper
       return ""
     end
   end
+  
+  def normalize(_string)
+    return UtilFormat.normalize(_string) if _string != nil
+    return ""
+  end  
 end
