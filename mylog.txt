@@ -1,2 +1,0 @@
-ASYNC le tableau a 1 élémentsNumber of threads to create = 1
-create thread 0 for key PortfolioSearchClassiiiiiReturn from pthread_create() is 0
