@@ -2,7 +2,8 @@ Description:
     Explain the generator
 
 Example:
-    rails generate search_class Thing
+    rails generate search_class file_name
 
     This will create:
-        what/will/it/create
+        app/models/custom_connectors/file_name_search_class.rb => basic search class skeleton
+        spec/models/connectors/file_name_spec.rb => spec (test on SearchCollection)
