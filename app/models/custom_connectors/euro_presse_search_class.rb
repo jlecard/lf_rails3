@@ -1,9 +1,10 @@
+#encoding:utf-8
 require 'rubygems'
 require 'cgi'
 
 class EuropresseSearchClass < ActionController::Base
   
-  
+  include SearchClassHelper
   attr_reader :hits, :xml, :total_hits
   @collection = nil
   @pkeyword = ""
