@@ -1,5 +1,6 @@
 Description:
-    Explain the generator
+    This generator creates a basic search_class skeleton with basic method templates
+    and a test file to test the search class
 
 Example:
     rails generate search_class file_name
