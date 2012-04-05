@@ -1,4 +1,18 @@
 module SearchClassHelper
+  
+  def proxy?
+    if @collection.proxy == 1
+      @yp ||= YAML::load_file(RAILS_ROOT + "/config/webservice.yml")
+      @proxy_host ||= @yp['PROXY_HTTP_ADR']
+      @proxy_port ||= @yp['PROXY_HTTP_PORT']
+      return true
+    else
+      @proxy_host = nil
+      @proxy_port = nil
+      return false
+     end
+  end
+  
   def save_in_cache
     @print = false
     if @records
@@ -59,7 +73,7 @@ module SearchClassHelper
   end
   
   def normalize(_string)
-    return UtilFormat.normalize(_string) if _string != nil
+    return UtilFormat.normalize(_string) if _string
     return ""
   end  
 end

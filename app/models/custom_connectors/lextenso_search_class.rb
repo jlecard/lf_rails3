@@ -53,7 +53,11 @@ class LextensoSearchClass < ActionController::Base
       "Host"=>"web-lextenso-test.jouve-hdi.com",
       "POST"=>"http://www.web-lextenso-test.jouve-hdi.com/lextenso-ws/serviceHTTP/1.1"}
     path = "lextenso-ws/lextenso-service.wsdl"
-    http = Net::HTTP::Proxy('spxy.bpi.fr',3128).new('web-lextenso-test.jouve-hdi.com/', 80)
+    if proxy?
+      http = Net::HTTP::Proxy(@proxy_host,@proxy_port).new('web-lextenso-test.jouve-hdi.com/', 80)
+    else
+      http = Net::HTTP.new('web-lextenso-test.jouve-hdi.com/', 80)
+    end
     data = <<-EOF
               <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:mes="http://www.lextenso.fr/schemas/messages">
                  <soapenv:Header/>

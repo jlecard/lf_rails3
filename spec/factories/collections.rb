@@ -42,4 +42,70 @@ Factory.define :em_consulte_collection, :class=>:collection do |c|
   c.url "http://www.em-consulte.com"
 end
 
+Factory.define :europresse_collection, :class=>:collection do |c|
+  c.name "europresse"
+  c.alt_name "europresse"
+  c.conn_type "connector"
+  c.host "http://www.bpe.europresse.com/ip/intro.asp?user=pompi"
+  c.oai_set "Europresse"
+  c.proxy false
+  c.post_data "ctl00$Main$ucLoginBiblio$txbUserName=pompi|ctl00$Main$ucLoginBiblio$txbPassword=biblio"
+end
+
+Factory.define :classiques_garnier_collection, :class=>:collection do |c|
+  c.name "classiques_garnier"
+  c.alt_name "classiques_garnier"
+  c.conn_type "connector"
+  c.host "http://www.classiques-garnier.com"
+  c.url "http://www.classiques-garnier.com"
+  c.oai_set "ClassiquesGarnier"
+  c.proxy false
+end
+
+Factory.define :crawler_collection, :class=>:collection do |c|
+  c.name "crawler"
+  c.alt_name "crawler"
+  c.conn_type "connector"
+  c.host "http://10.1.2.129:8180/solr/crawler-bpi"
+  c.oai_set "Crawler"
+  c.proxy false
+end
+
+Factory.define :oxford_art_collection, :class=>:collection do |c|
+  c.name "oxford_art"
+  c.alt_name "oxford_art"
+  c.conn_type "connector"
+  c.record_schema "Oxfordgeneric"
+  c.oai_set "oxford"
+  c.host "http://www.oxfordartonline.com"
+  c.url "http://www.oxfordartonline.com"
+  c.vendor_url "http://www.oxfordartonline.com"
+  c.proxy false
+end
+
+Factory.define :oxford_dnb_collection, :class=>:collection do |c|
+  c.name "oxford_dnb"
+  c.alt_name "oxford_dnb"
+  c.conn_type "connector"
+  c.record_schema "oxforddnb"
+  c.oai_set "oxford"
+  c.host "http://www.oxforddnb.com"
+  c.url "http://www.oxforddnb.com"
+  c.vendor_url "http://www.oxforddnb.com"
+  c.proxy false
+end
+
+Factory.define :factiva_collection, :class=>:collection do |c|
+  c.name "factiva"
+  c.alt_name "factiva"
+  c.conn_type "connector"
+  c.post_data "XSID=S00YdBfZWva5DEs5DEoMDUpMD2pOTVyMHn0YqYvMq382rbRQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQQAA"
+  c.oai_set "Factiva"
+  c.host "https://global.factiva.com/fr/sess/login.asp"
+  c.url "http://global.factiva.com"
+  c.vendor_url "http://global.factiva.com"
+  c.proxy false
+end
+
+
 

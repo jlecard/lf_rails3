@@ -2,24 +2,15 @@ require 'rubygems'
 require 'mechanize'
 
 
-class KeesingBrowserClass
+class KeesingBrowserClass < MechanizeBrowser
   attr_reader :result_count, :result_list, :total
-  
-  def initialize(url=nil, logger=nil)
-    @logger = logger
-    @result_list = Array.new
-    @url = url
-  end
   
   def search(keyword, max)
     @logger.debug("[Keesing][search] url = #{@url}/search?kssp_search_phrase=#{keyword}")
-    a = Mechanize.new do |agent|
-      #agent.set_proxy("spxy.bpi.fr","3128")
-      agent.keep_alive = true
-    end
+    initialize_agent
     
     begin
-      a.get("#{@url}/search?kssp_search_phrase=#{keyword}") do |page|
+      @agent.get("#{@url}/search?kssp_search_phrase=#{keyword}") do |page|
         @logger.debug("[Keesing][search] page = #{page}")
         @total = 0
         parse_results(page, max)

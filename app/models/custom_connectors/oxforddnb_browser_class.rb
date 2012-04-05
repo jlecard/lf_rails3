@@ -1,23 +1,15 @@
 require 'rubygems'
 require 'mechanize'
 
-class OxforddnbBrowserClass
-  attr_reader :result_count, :result_list, :url
-  
-  def initialize(url, logger)
-    @logger = logger
-    @result_list = Array.new
-    @url = url
-  end
+class OxforddnbBrowserClass < MechanizeBrowser
+  attr_reader :result_count
   
   def search(keyword, max)
-    a = Mechanize.new do |agent|
-      agent.set_proxy("spxy.bpi.fr","3128")
-      agent.keep_alive = false
-    end
+    initialize_agent
     
     begin
-      a.get(@url) do |page|
+      @agent.get(@url) do |page|
+        @logger.debug("[OxfordBrowser] agent = #{page.inspect}")
         search_result = page.form_with(:name => 'quickSearchForm') do |search|
           search.field_with(:name => 'simpleName').value = keyword
           search.field_with(:name => 'searchTarget').options[1].select
@@ -25,19 +17,19 @@ class OxforddnbBrowserClass
           @result_count = count(search_result)
           result_page = search_result.frame_with(:name =>'main').click
           parse_results(result_page)
-          get_more(a, 21, max) if max > 20
+          get_more(21, max) if max > 20
         end
       rescue Net::HTTPForbidden
         raise Net::HTTPForbidden, 'The resource is unavailable at this time'
       end
     end
     
-    def get_more(agent, offset, max)
+    def get_more(offset, max)
       num_pages = @result_count/20
       current_page = 2
       i = 0
       while offset < max and current_page < num_pages do
-        agent.get('http://www.oxforddnb.com/search/refine/?docsStart=#{offset}') do |page|
+        @agent.get('http://www.oxforddnb.com/search/refine/?docsStart=#{offset}') do |page|
           i += 1
           result_page = page.frame_with(:name =>'main').click
           parse_results(result_page)

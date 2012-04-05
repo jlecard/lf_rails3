@@ -98,16 +98,13 @@ class EmconsulteSearchClass < ActionController::Base
     url = "http://www.em-consulte.com/externalSearch?keywords=#{query}&startresult=1&endresult=#{max}&maxdocs=#{max}"
     logger.debug("[EmConsulteSearchClass] [em_consult_search] URL: " + url)
     begin
-      if (@collection.proxy == 1)
-        yp = YAML::load_file(RAILS_ROOT + "/config/webservice.yml");
-        _host             = yp['PROXY_HTTP_ADR'];
-        _port             = yp['PROXY_HTTP_PORT'];
-        xml_result_set = Net::HTTP.Proxy(_host,_port).get_response(URI.parse(url))
+      if proxy?
+        xml_result_set = Net::HTTP.Proxy(@proxy_host,@proxy_port).get_response(URI.parse(url))
       else
         xml_result_set = Net::HTTP.get_response(URI.parse(url))
       end
       return xml_result_set.body
-    rescue Exception => e
+    rescue => e
       logger.error("[EmConsulteSearchClass] error: " + e.message)
       logger.error("[EmConsulteSearchClass] error: " + e.backtrace.join("\n"))
       return nil

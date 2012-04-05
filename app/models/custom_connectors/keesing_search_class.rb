@@ -38,31 +38,24 @@ class KeesingSearchClass < ActionController::Base
     @pkeyword = _qstring.join(" ")
     @search_id = _last_id
     @infos_user = infos_user
-    @max = _max
+    @max = _max.to_i
     @action = _action_type
 
     begin
       #perform the search
       "[KeesingSearchClass][SearchCollection] URL: #{@collection.url}"
-      browser = KeesingBrowserClass.new(@collection.url, logger)
-      browser.search(@pkeyword, _max.to_i)
+      if proxy?
+        browser = KeesingBrowserClass.new(@collection.url, logger, @proxy_host, @proxy_port)
+      else
+        browser = KeesingBrowserClass.new(@collection.url, logger)
+      end
+      browser.search(@pkeyword, @max)
       @total_hits = browser.total
       result_list = browser.result_list
-      logger.debug("[KeesingSearchClass] [SearchCollection] Search performed")
-      logger.debug("[KeesingSearchClass] [SearchCollection] Number fetched #{result_list.size}")
+      parse_results(result_list, infos_user) if result_list
     rescue Exception => bang
       logger.error("[KeesingSearchClass] [SearchCollection] error: " + bang.message)
       logger.debug("[KeesingSearchClass] [SearchCollection] trace:" + bang.backtrace.join("\n"))
-    end
-
-    if result_list
-      begin
-        parse_results(result_list, infos_user)
-      rescue Exception => bang
-        logger.error("[KeesingSearchClass] [SearchCollection] error: " + bang.message)
-        logger.debug("[KeesingSearchClass] [SearchCollection] trace:" + bang.backtrace.join("\n"))
-        logger.debug("ID: " + @search_id.to_s)
-      end
     end
     save_in_cache
   end

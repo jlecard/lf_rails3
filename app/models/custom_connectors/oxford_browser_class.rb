@@ -1,27 +1,18 @@
 require 'rubygems'
 require 'mechanize'
 
-class OxfordgenericBrowserClass
+class OxfordgenericBrowserClass < MechanizeBrowser
   attr_reader :result_count, :result_list, :total
-  
-  def initialize(url=nil, logger=nil)
-    @logger = logger
-    @result_list = Array.new
-    @url = url
-  end
-  
+
+
   def search(keyword, max)
-    cookie = nil
-    a = Mechanize.new do |agent|
-      agent.set_proxy("spxy.bpi.fr","3128")
-      agent.keep_alive = true
-    end
+    initialize_agent
     begin
-      a.get(@url) do |page|
+      @agent.get(@url) do |page|
         search_form = page.forms[1]
         @keyword = keyword.gsub(/\s/,"+")
-        @logger.debug("[OxfordBrowser][cookies] #{a.cookie_jar.inspect}")
-        @cookies = a.cookie_jar
+        @logger.debug("[OxfordBrowser][cookies] #{@agent.cookie_jar.inspect}")
+        @cookies = @agent.cookie_jar
         search_form.field_with(:name => 'q').value = @keyword
         search_form.checkboxes.each do |check_box|
           check_box.checked=true
@@ -39,7 +30,7 @@ class OxfordgenericBrowserClass
       @logger.debug("[OxfordBrowser][search] #{e.backtrace.join("\n")}")
     end
   end
-  
+
   def more(result_page, max)
     num_pages = @result_count/25
     current_page = 2
@@ -49,7 +40,7 @@ class OxfordgenericBrowserClass
       parse_results(result_page, max)
     end
   end
-  
+
   def parse_results(result_page, max)
     @total = 0
     result_page.links_with(:href => /article\//).each do |link|
@@ -66,12 +57,13 @@ class OxfordgenericBrowserClass
       return if @total > max
     end
   end
-  
+
   :private
+
   def count(search_page)
     regex = /returned (\d+) results/
     match = search_page.body.match(regex)
     return match[1].to_i if match
   end
-  
+
 end

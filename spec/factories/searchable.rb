@@ -6,6 +6,7 @@ Factory.define :collection do |c|
   c.oai_set "Keesing"
   c.conn_type "connector"
   c.url "http://www.keesings.com"
+  c.proxy false
 end
 
 Factory.define :collection_group_member do |member|
