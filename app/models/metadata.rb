@@ -1,4 +1,5 @@
 class Metadata < ActiveRecord::Base
+  set_table_name "metadatas"
   belongs_to :control
   belongs_to :collection
   has_many :volumes

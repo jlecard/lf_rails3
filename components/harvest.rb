@@ -1,24 +1,32 @@
 # set variable environment harvesting
 # in order to log in special file
+require File.dirname(__FILE__) + '/../config/boot'
 ENV['ENV_HARVESTING'] = "true"
+ENV['LIBRARYFIND_HOME'] = "#{File.expand_path('..')}" if ENV['LIBRARYFIND_HOME'] == nil
+p ENV['LIBRARYFIND_HOME']
+require "#{File.expand_path('.')}/common_harvester.rb"
 # Common harvester that controls individual harvesters
-require 'common_harvester'
+#require "common_harvester"
 
 # Registered harvesters
 begin
-  require 'profession_politique_harvester'
-  require 'mediaview_harvester'
-  require 'ged_harvester'
-  require 'portfolio_harvester'
-  require 'quinzaine_harvester'
-  require 'oai_harvester'
+  #require ENV['LIBRARY_FIND_HOME'] + '/components/profession_politique_harvester.rb'
+  #require ENV['LIBRARY_FIND_HOME'] + '/components/ged_harvester'
+  #require ENV['LIBRARY_FIND_HOME'] + '/components/portfolio_harvester'
+  #require ENV['LIBRARY_FIND_HOME'] + '/components/oai_harvester'
+  #p ENV['LIBRARY_FIND_HOME'] + '/components/classiques_garnier_harvester.rb'
+  #require ENV['LIBRARY_FIND_HOME'] + '/components/classiques_garnier_harvester.rb'
+  p "#{File.expand_path('.')} expanded"
+  require "#{File.expand_path('.')}/classiques_garnier_harvester.rb"
 rescue Exception => e
-  puts e.message
+  p "error"
+  p e.backtrace
+  p e.message
 end
 
 
 begin
-  if AMD64 != 1
+  if ENV['AMD64'] != 1
     require 'sys/proctable'
     include Sys
   end
@@ -26,12 +34,12 @@ rescue LoadError => e
   raise LoadError(e.message, "sys-proctable library must be installed. You may download it from http://rubyforge.org/frs/?group_id=610&release_id=40379")
 end
 
-require 'harvest_schedule'
+#require ENV['LIBRARY_FIND_HOME'] + '/app/models/harvest_schedule'
 
 class Harvester < CommonHarvester
   attr_accessor :diff
   def initialize
-    super('production')
+    super(ENV['RAILS_ENV'])
     @diff = true
   end
   # harvest every collection in the database
@@ -67,7 +75,7 @@ class Harvester < CommonHarvester
       instance = harvest_instance.new
       @logger.info("HARVEST: Harvesting using #{instance.class}")
       instance.harvest(collection.id, @diff)
-    rescue Exception => e
+    rescue => e
       @logger.error(e.message)
       @logger.error(e.backtrace.join("\n"))
       @logger.error("#{collection.name} (id=#{collection.id}) has not been harvested")

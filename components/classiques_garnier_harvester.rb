@@ -23,13 +23,16 @@
 #
 # http://libraryfind.org
 
-require 'common_harvester'
-require 'classiques_garnier'
+require ENV['LIBRARYFIND_HOME'] + '/components/common_harvester'
+require ENV['LIBRARYFIND_HOME'] + '/components/classiques_garnier'
+require ENV['LIBRARYFIND_HOME'] + '/app/models/document_type'
+require ENV['LIBRARYFIND_HOME'] + '/app/models/metadata'  
 require 'marc'
 
 class ClassiquesGarnierHarvester < CommonHarvester
   
   def initialize
+    p "CLASSIQUES GARNIER INIT"
     super
   end
   

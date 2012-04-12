@@ -25,9 +25,9 @@
 
 RAILS_ROOT = "#{File.dirname(__FILE__)}/.." unless defined?(RAILS_ROOT)
 
-if ENV['LIBRARYFIND_HOME'] == nil: ENV['LIBRARYFIND_HOME'] = "../" end
-require ENV['LIBRARYFIND_HOME'] + 'config/environment.rb'
-
+ENV['LIBRARYFIND_HOME'] = "../" if ENV['LIBRARYFIND_HOME'] == nil
+require ENV['LIBRARYFIND_HOME'] + '/config/application.rb'
+require ENV['LIBRARYFIND_HOME'] + '/config/initializers/lf.rb'
 class Control < ActiveRecord::Base
 end
 
@@ -38,13 +38,15 @@ class Metadata < ActiveRecord::Base
 end
 
 class CommonHarvester
+  
+  include LfRails3
   require 'rubygems'
   require 'yaml'
   require 'iconv'
   attr_accessor :logger
   
   def checknil(s)
-    if s.nil? : return "" end
+    return "" if s.nil?
     return s
   end
   
@@ -63,14 +65,14 @@ class CommonHarvester
       @local_indexer = 'solr'
     end 
     
-    @db = YAML::load_file(ENV['LIBRARYFIND_HOME'] + "config/database.yml")
+    @db = YAML::load_file(ENV['LIBRARYFIND_HOME'] + "/config/database.yml")
     
     if type.nil?
       @dbtype = 'development'
     else
       @dbtype = type
     end
-    
+    p @dbtype
     @reharvest = true
     
     case PARSER_TYPE
