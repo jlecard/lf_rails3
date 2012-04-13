@@ -54,42 +54,7 @@ class WcapiSearchClass < ActionController::Base
 	 return nil
       end
     end
-
-
-    _lprint = false
-    if _lrecord != nil
-	_lxml = CachedSearch.build_cache_xml(_lrecord)
-   
-	if _lxml != nil: _lprint = true end
-	if _lxml == nil: _lxml = "" end
-
-	#============================================
-	# Add this info into the cache database
-	#============================================
-	if _last_id.nil?
-		# FIXME:  Raise an error
-		logger.debug("Error: _last_id should not be nil")
-	else
-		status = LIBRARYFIND_CACHE_OK
-		if _lprint != true
-			status = LIBRARYFIND_CACHE_EMPTY
-		end
-		my_id = CachedSearch.save_metadata(_last_id, _lxml, _collect.id, _max.to_i, status, infos_user)
-	end
-     else
-	_lxml = ""
-	my_id = CachedSearch.save_metadata(_last_id, _lxml, _collect.id, _max.to_i, LIBRARYFIND_CACHE_EMPTY, infos_user)
-     end
-
-     if _action_type != nil
-	if _lrecord != nil
-	  return my_id, _lrecord.length
-        else
-	  return my_id, 0
-        end
-     else
-        return _lrecord
-     end
+    save_in_cache
   end
 
   def self.strip_escaped_html(str, allow = [''])
@@ -100,7 +65,7 @@ class WcapiSearchClass < ActionController::Base
         str.strip || ''
         allow_arr = allow.join('|') << '|\/'
         str = str.gsub(/<(\/|\s)*[^(#{allow_arr})][^>]*>/, ' ')
-	str = str.gsub("<", "&lt;")
+	      str = str.gsub("<", "&lt;")
         str = str.gsub(">", "&gt;")
         return str
   end
@@ -219,7 +184,7 @@ class WcapiSearchClass < ActionController::Base
     _string = _string.gsub(/[^0-9]/, "").chomp
     case _string.length
     when 8
-      if _string.slice(4,2).to_i > 12: return _string.slice(0,4) end
+      return _string.slice(0,4) if _string.slice(4,2).to_i > 12
       return _string.slice(0,4) + _string.slice(4,2) + _string.slice(6,2)
     when 6
       return _string.slice(0,4) + _string.slice(4,2) + "00"

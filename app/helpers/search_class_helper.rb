@@ -1,14 +1,38 @@
 module SearchClassHelper
+  # perform a request in solr and return a list of ids
+  def solr_request
+    begin
+      raw_query_string, opt = UtilFormat.generateRequestSolr(@query_type, @query_string, @operators, @collection.filter_query, @collection.is_parent, @collection, @collection.name, @max, @options)
+      conn = Solr::Connection.new(LIBRARYFIND_SOLR_HOST)
+      logger.info("[#{self.class}] [solr_request] RAW STRING: " + raw_query_string)
+      response = conn.query(raw_query_string, opt)
+      @total_hits = _response.total_hits
+      response.each do |hit|
+        next if !defined?(hit["controls_id"])
+        list_of_ids << hit["controls_id"]
+        @themes[hit["controls_id"].to_s] = hit["theme"] if @themes
+        @date_end_new[hit["controls_id"].to_s] = hit["date_end_new"] if @date_end_new
+        @date_indexed[hit["controls_id"].to_s] = hit["harvesting_date"]
+        @bfound = true
+      end
+    rescue Exception => e
+      logger.error("[#{self.class}] [solr_request] Error #{e.message}")
+      logger.debug("[#{self.class}] [solr_request] Error #{e.backtrace}")
+    end
+
+    return list_of_ids
+  end
+
   def proxy?
     if @collection.proxy == 1
       @yp ||= YAML::load_file(RAILS_ROOT + "/config/webservice.yml")
-      @proxy_host ||= @yp['PROXY_HTTP_ADR']
+      @proxy_host ||= @yp['PROXY_HTTP_ADR'].gsub("http://","")
       @proxy_port ||= @yp['PROXY_HTTP_PORT']
-      return true
+    return true
     else
       @proxy_host = nil
       @proxy_port = nil
-      return false
+    return false
     end
   end
 
@@ -39,12 +63,12 @@ module SearchClassHelper
 
     if @action
       if @records
-        return @my_id, @records.length, @total_hits
+      return @my_id, @records.length, @total_hits
       else
-        return @my_id, 0, @total_hits
+      return @my_id, 0, @total_hits
       end
     else
-      return @records
+    return @records
     end
   end
 
@@ -53,12 +77,12 @@ module SearchClassHelper
       # Does user have rights to view the notice ?
       droits = ManageDroit.GetDroits(@infos_user,@collection.id)
       if(droits.id_perm == ACCESS_ALLOWED)
-        record.direct_url = link
+      record.direct_url = link
       else
         record.direct_url = ""
       end
     else
-      record.direct_url = link
+    record.direct_url = link
     end
     record
   end
@@ -67,26 +91,31 @@ module SearchClassHelper
     record = Record.new if !record
 
     record.instance_variables.each do |key|
-      if row.respond_to?("#{key}".to_sym)
-        record.instance_variable_set("@#{key}", row.send("#{key}".to_sym))
-      elsif row.respond_to?("dc_#{key}".to_sym)
-        record.instance_variable_set("@#{key}", row.send("dc_#{key}".to_sym))
-      elsif row.respond_to?("osu_#{key}".to_sym)
-        record.instance_variable_set("@#{key}", row.send("osu_#{key}".to_sym))
-      elsif row.instance_variable_get("#{key}")
-        record.instance_variable_set("@#{key}", row.instance_variable_get("#{key}"))
-      elsif row.instance_variable_get("dc_#{key}")
-        record.instance_variable_set("@#{key}", row.instance_variable_get("dc_#{key}"))
-      elsif row.instance_variable_get("osu_#{key}")
-        record.instance_variable_set("@#{key}", row.instance_variable_get("osu_#{key}"))
-      elsif key == "author"
-        record.instance_variable_set("@#{key}", row.instance_variable_get("dc_creator")) if row.instance_variables.include?("dc_creator")
-        record.instance_variable_set("@#{key}", row.send(:dc_creator)) if row.respond_to?(:dc_creator)  
-      elsif key == "abstract"
-        record.instance_variable_set("@#{key}", row.instance_variable_get("dc_description")) if row.instance_variables.include?("dc_description")
-        record.instance_variable_set("@#{key}", row.send(:dc_description)) if row.respond_to?(:dc_description)  
+      dc_key = "@dc_#{key[1..key.length]}"
+      osu_key = "@dc_#{key[1..key.length]}"
+      key_sym = "#{key[1..key.length]}".to_sym
+      dc_key_sym = "dc_#{key[1..key.length]}".to_sym
+      osu_key_sym = "osu_#{key[1..key.length]}".to_sym
+      if row.respond_to?(key_sym)
+        record.instance_variable_set("#{key}", row.send(key_sym))
+      elsif row.respond_to?(dc_key_sym)
+        record.instance_variable_set("#{key}", row.send(dc_key_sym))
+      elsif row.respond_to?(osu_key_sym)
+        record.instance_variable_set("#{key}", row.send(osu_key_sym))
+      elsif row.instance_variables.include?("#{key}")
+        record.instance_variable_set("#{key}", row.instance_variable_get("#{key}"))
+      elsif row.instance_variables.include?(dc_key)
+        record.instance_variable_set("#{key}", row.instance_variable_get(dc_key))
+      elsif row.instance_variables.include?(osu_key)
+        record.instance_variable_set("#{key}", row.instance_variable_get(osu_key))
+      elsif key == :@author
+        record.instance_variable_set("#{key}", row.instance_variable_get("@dc_creator")) if row.instance_variables.include?("@dc_creator")
+        record.instance_variable_set("#{key}", row.send(:dc_creator)) if row.respond_to?(:dc_creator)
+      elsif key == :@abstract
+        record.instance_variable_set("#{key}", row.instance_variable_get("@dc_description")) if row.instance_variables.include?("@dc_description")
+        record.instance_variable_set("#{key}", row.send(:dc_description)) if row.respond_to?(:dc_description)
       else
-        record.instance_variable_set("@#{key}","")
+        record.instance_variable_set("#{key}","")
       end
     end
     key_value_pairs.each do |key, value|
@@ -110,7 +139,7 @@ module SearchClassHelper
         return ""
       end
       if _str.is_a?(Numeric)
-        return _str.to_s
+      return _str.to_s
       end
       return _str.chomp
     rescue

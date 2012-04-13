@@ -23,16 +23,17 @@
 #
 # http://libraryfind.org
 
-class ClassiquesgarnierSearchClass < ActionController::Base
+class ClassiquesGarnierSearchClass < ActionController::Base
   include SearchClassHelper
   # require 'ferret'
   attr_reader :hits, :xml
+  attr_accessor :list_of_ids, :bfound
   @total_hits = 0
   @pid = 0
   @pkeyword = ""
   def SearchCollection(_collect, _qtype, _qstring, _start, _max, _qoperator, _last_id, job_id = -1, infos_user=nil, options=nil, _session_id=nil, _action_type=nil, _data = nil, _bool_obj=true)
 
-    logger.debug("[#{self.name}] [SearchCollection]")
+    logger.debug("[#{self.class}] [SearchCollection]")
     _sTime = Time.now().to_f
     keyword(_qstring[0])
     @action = _action_type
@@ -45,7 +46,7 @@ class ClassiquesgarnierSearchClass < ActionController::Base
     @records = []
     @query_string = _qstring
     @query_type = _qtype
-    @operators = _qoperotor
+    @operators = _qoperator
 
     search
     logger.debug("Storing found results in cached results begin")
@@ -56,9 +57,8 @@ class ClassiquesgarnierSearchClass < ActionController::Base
     _start_time = Time.now()
     record_set = RecordSet.new
     _hits = {}
-    _dateIndexed = {}
-    _bfound = false
-    list_of_controls_id = []
+    @date_indexed = {}
+    @bfound = false
     keywords = @query_string.join("|")
 
     if LIBRARYFIND_INDEXER.downcase == 'ferret'
@@ -73,40 +73,22 @@ class ClassiquesgarnierSearchClass < ActionController::Base
         #_keywords = "\"" + _keywords + "\""
       end
     end
-
-    logger.debug("Entering SOLR")
-    conn = Solr::Connection.new(LIBRARYFIND_SOLR_HOST)
-    raw_query_string, opt = UtilFormat.generateRequestSolr(@query_type, @query_string, @operators, @collection.filter_query, @collection.is_parent, @collection, @collection.name, @max, @options)
-    logger.debug("RAW STRING: " + raw_query_string)
-    _response = conn.query(raw_query_string, opt)
-
-    @total_hits = _response.total_hits
-
-    _response.each do |hit|
-      if defined?(hit["controls_id"]) == false
-        break
-      end
-      list_of_controls_id << hit["controls_id"]
-      _dateIndexed[hit["controls_id"].to_s] = hit["harvesting_date"]
-      _bfound = true
-    end
-
-    if !_bfound
-      logger.debug("nothing found: " + _coll_list.to_s)
-      return nil
-    end
-
-    _sTime = Time.now().to_f
-    _results = Metadata.find_by_controls_id(list_of_controls_id)
     
+    @list_of_ids ||= solr_request
+    return nil if !@list_of_ids
+   
+    _sTime = Time.now().to_f
+    _results = Metadata.find(:all, :conditions=>{:dc_identifier=>@list_of_ids})
+    @total_hits = _results.count
+    _x = 0
     @records = []
     _i = 0
     options = {}
     _results.each do |_row|
-      if _tmp_max <= @max
+      if _x <= @max
         logger.debug("Prepping to print Title, etc.")
         # set harvesting date
-        harvesting_date = _dateIndexed[_row['dc_identifier'].to_s]
+        harvesting_date = @date_indexed[_row['dc_identifier'].to_s]
         if (!harvesting_date.nil?)
           harvesting_date = DateTime.parse(harvesting_date)
         else
@@ -119,7 +101,7 @@ class ClassiquesgarnierSearchClass < ActionController::Base
                 'atitle' => '',
                 'creator'=>UtilFormat.normalize(_row.dc_creator),
                 'date'=>UtilFormat.normalizeDate(_row.dc_date),
-                'rec' => UtilFormat.normalize(_row.description),
+                'rec' => UtilFormat.normalize(_row.dc_description),
                 'pos'=>1},
               @pkeyword)
         options['rank'] = rank
@@ -134,7 +116,7 @@ class ClassiquesgarnierSearchClass < ActionController::Base
           record.title =  UtilFormat.normalize(_row.dc_title)
           record.atitle =  ""
         end
-        record.id = UtilFormat.normalize(_row.oai_identifier) + ID_SEPARATOR +  @collection.id.to_s + ID_SEPARATOR + @search_id.to_s
+        record.id = UtilFormat.normalize(_row.dc_identifier) + ID_SEPARATOR +  @collection.id.to_s + ID_SEPARATOR + @search_id.to_s
         record = set_record_access_link(record, _row.osu_linking)
         record.static_url = @collection.host
         record.lang = UtilFormat.normalizeLang("fr")

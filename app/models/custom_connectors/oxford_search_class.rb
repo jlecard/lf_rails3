@@ -45,7 +45,7 @@ class OxfordSearchClass < ActionController::Base
     begin
       #perform the search
       klass = eval("#{@collection.record_schema.capitalize}BrowserClass")
-      if proxy?
+      if !proxy?
         oxford_browser = klass.new(@collection.url, logger)
       else
         oxford_browser = klass.new(@collection.url, logger, @proxy_host, @proxy_port)

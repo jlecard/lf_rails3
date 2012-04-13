@@ -89,21 +89,14 @@ class OpensearchSearchClass < ActionController::Base
       #note -- we only support RSS and Atom
       
       logger.debug("Record Schema: " + _collect.record_schema) 
-      if _collect.record_schema == "": _collect.record_schema = "application/rss+xml" end 
+      _collect.record_schema = "application/rss+xml" if _collect.record_schema == "" 
       
       #perform the search
       _sRTime = Time.now().to_f
       feed = objOpen.search(_qstring.join(" "), _collect.record_schema)
       logger.debug("#STAT# [OPENSEARCH] base: #{@feed_name}[#{@feed_id}] recherche: " + sprintf( "%.2f",(Time.now().to_f - _sRTime)).to_s) if LOG_STATS
     rescue
-      if _action_type != nil
-        _lxml = ""
-        logger.debug("ID: " + _last_id.to_s)
-        my_id = CachedSearch.save_metadata(_last_id, _lxml, _collect.id, _max.to_i, LIBRARYFIND_CACHE_EMPTY, infos_user)
-        return my_id, 0, @total_hits
-      else
-        return nil
-      end
+      
     end
     
     if feed != nil || feed != ""
@@ -178,7 +171,7 @@ class OpensearchSearchClass < ActionController::Base
       _title = _xpath.xpath_get_text(_xpath.xpath_first(item, "title")) #item.elements["title"][0].value
       logger.debug("We have a title: " + _title)
       begin
-        if _xpath.xpath_first(item, "description") != nil: _description = strip_escaped_html(_xpath.xpath_get_text(_xpath.xpath_first(item, "description"))) end #item.elements["description"] != nil: _description = strip_escaped_html(item.elements["description"][0].value) end
+        _description = strip_escaped_html(_xpath.xpath_get_text(_xpath.xpath_first(item, "description"))) if _xpath.xpath_first(item, "description") != nil
       rescue 
       end
       logger.debug("Did we process the description")
@@ -209,7 +202,7 @@ class OpensearchSearchClass < ActionController::Base
         }
       end 
       logger.debug("past authors")
-      if _xpath.xpath_first(item, "link") != nil: _link = _xpath.xpath_get_text(_xpath.xpath_first(item, "link")) end
+      _link = _xpath.xpath_get_text(_xpath.xpath_first(item, "link")) if _xpath.xpath_first(item, "link") != nil
       #if item.elements["link"] != nil: _link = item.elements["link"][0].value end
       logger.debug("past links")
       #item text
@@ -291,7 +284,7 @@ class OpensearchSearchClass < ActionController::Base
     doc.elements.each("//entry") { |item |
       _start_time = Time.now()
       _title = item.elements["title"][0].value
-      if item.elements["summary"] != nil: _description = strip_escaped_html(item.elements["summary"][0].value) end
+      _description = strip_escaped_html(item.elements["summary"][0].value) if item.elements["summary"] != nil
       logger.debug("summary")
       if item.elements["category"] != nil
         item.elements.each("category") { |i|

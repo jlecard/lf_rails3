@@ -50,6 +50,7 @@ class EuropresseSearchClass < ActionController::Base
     logger.debug("[EuroPressSearchClass][SearchCollection] @pkeyword = #{@pkeyword}")
     logger.debug("[EuroPressSearchClass][SearchCollection] @pkeyword.class = #{@pkeyword.class}")
     @search_id = _last_id
+    @max = _max.to_i
     @records = []
     logger.debug("[EuropresseSearchClass][_qtype]======#{_qtype} ")
     
@@ -58,7 +59,7 @@ class EuropresseSearchClass < ActionController::Base
       logger.debug("COLLECT: " + @collection.host)
       
       login
-      results = search(@pkeyword, _max.to_i)
+      results = search(@pkeyword, @max)
       logout
       
       logger.error("EuropresseSearchClass => Search performed")
@@ -116,7 +117,6 @@ class EuropresseSearchClass < ActionController::Base
         logger.error("[LextensoSearchClass][search] trace: " + e.backtrace.join("\n"))
       end
     end
-    puts result
     doc = Nokogiri::XML.parse(result)
     doc.remove_namespaces!
     @identity = doc.xpath(".//LoginResult").text
@@ -191,10 +191,10 @@ class EuropresseSearchClass < ActionController::Base
       logger.error("[LextensoSearchClass][search] error: " + e.message)
       logger.error("[LextensoSearchClass][search] trace: " + e.backtrace.join("\n"))
     end
-    
     doc = Nokogiri::XML.parse(result)
     doc.remove_namespaces!
     @total_hits=doc.xpath("////TotalDocFound").text
+    p @total_hits
     return result
   end
   

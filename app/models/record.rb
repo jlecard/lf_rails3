@@ -32,60 +32,66 @@ class Record
                  :vendor_url, :vendor_name, :volume, :issue, :number, :page, :start, :end,
                  :holdings, :raw_citation, :oclc_num, :theme, :category, :lang, :identifier,
                  :availability,:is_available, :examplaires,:notice,:actions_allowed,
-                 :date_end_new,:date_indexed,:indice,:issue_title, :conservation
+                 :date_end_new,:date_indexed,:indice,:issue_title, :conservation, :binding, :issues
   
-  def initialize
-    @rank = ""
-    @hits = ""
-    @ptitle = ""
-    @title = ""
-    @atitle = ""
-    @isbn = ""
-    @issn = ""
-    @abstract = ""
-    @date = ""
-    @author = ""
-    @link = ""
-    @id = ""
-    @source = ""
-    @doi = ""
-    @openurl = ""
-    @direct_url = ""
-    @thumbnail_url = ""
-    @static_url = ""
-    @subject = ""
-    @publisher = ""
-    @relation = ""
-    @contributor = ""
-    @coverage = ""
-    @rights = ""
-    @callnum = ""
-    @material_type = ""
-    @format = ""
-    @vendor_name = ""
-    @vendor_url = ""
-    @volume = ""
-    @issue = ""
-    @number = ""
-    @page = ""
-    @start = ""
-    @end = ""
-    @holdings = ""
-    @raw_citation = ""
-    @oclc_num = ""
-    @theme = ""
-    @category = ""
-    @lang = ""
-    @identifier = ""
-    @availability = ""
-    @is_available = true
-    @examplaires = []
-    @notice = nil
-    @actions_allowed = true
-    @date_end_new = ""
-    @date_indexed = ""
-    @indice = ""
-    @issue_title = ""
-    @conservation = ""
+  def initialize(args=nil)
+    if !args
+      @rank = ""
+      @hits = ""
+      @ptitle = ""
+      @title = ""
+      @atitle = ""
+      @isbn = ""
+      @issn = ""
+      @abstract = ""
+      @date = ""
+      @author = ""
+      @link = ""
+      @id = ""
+      @source = ""
+      @doi = ""
+      @openurl = ""
+      @direct_url = ""
+      @thumbnail_url = ""
+      @static_url = ""
+      @subject = ""
+      @publisher = ""
+      @relation = ""
+      @contributor = ""
+      @coverage = ""
+      @rights = ""
+      @callnum = ""
+      @material_type = ""
+      @format = ""
+      @vendor_name = ""
+      @vendor_url = ""
+      @volume = ""
+      @issue = ""
+      @number = ""
+      @page = ""
+      @start = ""
+      @end = ""
+      @holdings = ""
+      @raw_citation = ""
+      @oclc_num = ""
+      @theme = ""
+      @category = ""
+      @lang = ""
+      @identifier = ""
+      @availability = ""
+      @is_available = true
+      @examplaires = []
+      @notice = nil
+      @actions_allowed = true
+      @date_end_new = ""
+      @date_indexed = ""
+      @indice = ""
+      @issue_title = ""
+      @conservation = ""
+    else
+      args.each do |key, val|
+        instance_variable_set("@#{key}", val)
+      end  
+    end
   end
 end

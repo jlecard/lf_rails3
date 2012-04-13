@@ -26,7 +26,7 @@ Factory.define :z3950_collection, :class=>:collection do |c|
   c.alt_name "Z3950"
   c.conn_type "z3950"
   c.host "lx2.loc.gov:210/LCDB"
-  c.proxy false
+  c.proxy true
   c.record_schema "MARC21"
   c.definition "author=100a;author=700a;creator=100a;creator=100a;atitle=245a;link=773t;link=773g;mat_type=72a;subject=606a;subject=650a;issn=022a;note=546a;note=520a;note=520b;date=903a;pub=260a;cnum=500a;static=856u;volume=945m;volume=945d;volume=945n;page=945p;direct_url=856u"
   c.definition_search "creator=1003;author=1003;subject=21;issn=8;isbn=7;callnum=16;publisher=1018;title=4;keyword=1016"
@@ -38,7 +38,7 @@ Factory.define :em_consulte_collection, :class=>:collection do |c|
   c.conn_type "connector"
   c.host "http://www.em-consulte.com"
   c.oai_set "Emconsulte"
-  c.proxy false
+  c.proxy true
   c.url "http://www.em-consulte.com"
 end
 
@@ -48,7 +48,7 @@ Factory.define :europresse_collection, :class=>:collection do |c|
   c.conn_type "connector"
   c.host "http://www.bpe.europresse.com/ip/intro.asp?user=pompi"
   c.oai_set "Europresse"
-  c.proxy false
+  c.proxy true
   c.post_data "ctl00$Main$ucLoginBiblio$txbUserName=pompi|ctl00$Main$ucLoginBiblio$txbPassword=biblio"
 end
 
@@ -59,7 +59,7 @@ Factory.define :classiques_garnier_collection, :class=>:collection do |c|
   c.host "http://www.classiques-garnier.com"
   c.url "http://www.classiques-garnier.com"
   c.oai_set "ClassiquesGarnier"
-  c.proxy false
+  c.proxy true
 end
 
 Factory.define :crawler_collection, :class=>:collection do |c|
@@ -68,7 +68,7 @@ Factory.define :crawler_collection, :class=>:collection do |c|
   c.conn_type "connector"
   c.host "http://10.1.2.129:8180/solr/crawler-bpi"
   c.oai_set "Crawler"
-  c.proxy false
+  c.proxy true
 end
 
 Factory.define :oxford_art_collection, :class=>:collection do |c|
@@ -80,7 +80,7 @@ Factory.define :oxford_art_collection, :class=>:collection do |c|
   c.host "http://www.oxfordartonline.com"
   c.url "http://www.oxfordartonline.com"
   c.vendor_url "http://www.oxfordartonline.com"
-  c.proxy false
+  c.proxy true
 end
 
 Factory.define :oxford_dnb_collection, :class=>:collection do |c|
@@ -92,7 +92,7 @@ Factory.define :oxford_dnb_collection, :class=>:collection do |c|
   c.host "http://www.oxforddnb.com"
   c.url "http://www.oxforddnb.com"
   c.vendor_url "http://www.oxforddnb.com"
-  c.proxy false
+  c.proxy true
 end
 
 Factory.define :factiva_collection, :class=>:collection do |c|
@@ -104,6 +104,17 @@ Factory.define :factiva_collection, :class=>:collection do |c|
   c.host "https://global.factiva.com/fr/sess/login.asp"
   c.url "http://global.factiva.com"
   c.vendor_url "http://global.factiva.com"
+  c.proxy true
+end
+
+Factory.define :portfolio_collection, :class=>:collection do |c|
+  c.name "portfolio"
+  c.alt_name "portfolio"
+  c.conn_type "connector"
+  c.oai_set "Portfolio"
+  c.host "10.1.2.100"
+  c.user "postgres"
+  c.pass "postgresbpi"
   c.proxy false
 end
 

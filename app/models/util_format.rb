@@ -1,3 +1,4 @@
+#encoding:utf-8
 # LibraryFind - Quality find done better.
 # Copyright (C) 2007 Oregon State University
 # Copyright (C) 2009 Atos Origin France - Business Solution & Innovation
@@ -210,9 +211,9 @@ class UtilFormat
     end
     case lang.downcase
       when "fr"
-      return "Francais"
+      return "Français"
       when "fr_fr"
-      return "Francais"
+      return "Français"
       when "en"
       return "Anglais"
       when "en_en"
@@ -224,7 +225,7 @@ class UtilFormat
       when "us_us"
       return "Anglais"
       when "fre"
-      return "Francais"
+      return "Français"
       when "de"
       return "Allemand"
       when "es"

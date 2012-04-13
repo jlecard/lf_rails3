@@ -16,7 +16,7 @@ describe EuropresseSearchClass do
       end
       it "should return an id, hits and total_hits (action_type set)" do
         klass = EuropresseSearchClass.new
-        collection = (:europresse_collection)
+        collection = Factory(:europresse_collection)
         id, hits, total_hits = klass.SearchCollection(collection, ["keyword"], ["jack"], 0, 100, [], 10, -1, nil, nil, nil, "test")
         id.should match(/^\d+_\d+$/)
         hits.should == 100

@@ -60,11 +60,11 @@ module LfRails3
     config.assets.version = '1.0'
     config.autoload_paths  += %W(#{Rails.root}/app/models)
     config.autoload_paths  += %W(#{Rails.root}/app/models/custom_connectors)
+    config.autoload_paths  += %W(#{Rails.root}/app/models/struct)
     config.autoload_paths  += %W(#{Rails.root}/components)
     config.autoload_paths  += %W(#{Rails.root}/vendor/gems)
     config.autoload_paths  += %W(#{Rails.root}/lib)
-    p "Application configured"
-
+    
     class CustomLogger < Logger
       def format_message(severity, timestamp, progname, msg)
         "#{timestamp.to_formatted_s(:db)} #{severity} #{progname} #{msg}\n"
@@ -78,7 +78,6 @@ module LfRails3
      else
        logfile = "#{Rails.root}/log/#{ENV['RAILS_ENV']}.log"
      end
-    p logfile
     logger = CustomLogger.new(logfile, 20, 1048576)
     config.logger = logger
     config.active_record.logger = logger

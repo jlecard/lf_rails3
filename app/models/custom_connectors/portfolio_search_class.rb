@@ -1,3 +1,4 @@
+#encoding:utf-8
 # LibraryFind - Quality find done better.
 # Copyright (C) 2007 Oregon State University
 # Copyright (C) 2009 Atos Origin France - Business Solution & Innovation
@@ -23,12 +24,12 @@
 #
 # http://libraryfind.org
 
-if ENV['LIBRARYFIND_HOME'] == nil: ENV['LIBRARYFIND_HOME'] = "" end
-require ENV['LIBRARYFIND_HOME'] + 'components/portfolio/portfolio_theme';
+require "#{Rails.root}/components/portfolio/portfolio_theme"
 
 class PortfolioSearchClass < ActionController::Base
   include SearchClassHelper
   require 'rubygems'
+  attr_accessor :list_of_ids, :bfound
   begin
     require 'dbi'
   rescue LoadError => e
@@ -55,28 +56,21 @@ class PortfolioSearchClass < ActionController::Base
       logger.debug("[PortfolioSearchClass] [SearchCollection]");
       _sTime = Time.now().to_f
 
-      _lrecord = Array.new()
       keyword(_qstring[0])
       @action = _action_type
+      @options = options
+      @collection = _collect
       @search_id = _last_id
-      _type = ""
-      _alias = ""
-      _group = ""
-      _vendor_url = ""
-      _coll_list = ""
-      _query = ""
-
-      _coll_list =_collect.id
-      _type = _collect.mat_type
-      _alias = _collect.alt_name
-      _group = _collect.virtual
-      _is_parent = _collect.is_parent
-      _col_name = _collect.name
-      _vendor_url = _collect.vendor_url
-      _availability = _collect.availability
+      @infos_user = infos_user
+      @max = _max.to_i
+      @action = _action_type
+      @records = []
+      @query_string = _qstring
+      @query_type = _qtype
+      @operators = _qoperator
 
       logger.debug "[PortfolioSearchClass] [SearchCollection] Searching in Portfolio"
-      @records = RetrievePortfolio_Single(_last_id, _query, _qtype, _qstring, _qoperator, _type, _coll_list, _alias, _group, _vendor_url, _is_parent, _col_name,_max.to_i, _collect.filter_query, infos_user, options, _availability)
+      search
       logger.debug("[PortfolioSearchClass] [SearchCollection] Storing found results in cached results begin")
       return save_in_cache
     rescue => e
@@ -85,33 +79,21 @@ class PortfolioSearchClass < ActionController::Base
     end
   end
 
-  def self.RetrievePortfolio_Single(_search_id, _query, _qtype, _qstring, _qoperator, _type, _coll_list, _alias, _group, _vendor_url,  _is_parent, _collection_name, _max, filter_query, infos_user=nil, options=nil, _availability=nil)
-    htype = {_coll_list => _type}
-    halias = {_coll_list => _alias}
-    hgroup = {_coll_list => _group}
-    hvendor = {_coll_list => _vendor_url}
-    hparent = {_coll_list => _is_parent}
-    hcolname = {_coll_list => _collection_name}
-    logger.debug("[PortfolioSearchClass] [RetrievePortfolio_Single] Portfolio_Qstring2: " + _qstring.length.to_s)
-    return  RetrievePortfolio(_search_id, _query, _qtype, _qstring, _qoperator, htype, _coll_list, halias, hgroup, hvendor, hparent, hcolname, _max, filter_query, infos_user, options, _availability)
-  end
-
-  def self.RetrievePortfolio(_search_id, _query, _qtype, _qstring, _qoperator, _type, _coll_list, _alias, _group, _vendor_url,  _is_parent, _collection_name, _max, filter_query, infos_user=nil, options=nil, _availability=nil)
+  def search
     _x = 0
     _count = 0
     _tmp_max = 1
     _start_time = Time.now()
     _objRec = RecordSet.new()
-    _bfound = false
-    _Hthemes = Hash.new()
-    _dateEndNew = Hash.new()
-    _dateIndexed = Hash.new()
+    @themes = {}
+    @date_end_new = Hash.new()
+    @date_indexed = {}
+    @bfound = false
 
     logger.debug("[PortfolioSearchClass] [RetrievePortfolio]")
 
-    @max = _max.to_i
 
-    _keywords = _qstring.join("|")
+    _keywords = @query_string.join("|")
     logger.debug("[PortfolioSearchClass] [RetrievePortfolio] keywords enter : #{_keywords.to_s}")
 
     if LIBRARYFIND_INDEXER.downcase == 'ferret'
@@ -141,75 +123,51 @@ class PortfolioSearchClass < ActionController::Base
         end
         _query << " dc_identifier=" + index[doc]["id"].to_s
         _Hthemes[hit[doc]["id"].to_s] = hit[doc]["theme"]
-        _bfound = true;
+        _bfound = true
       end
       index.close
 
     elsif LIBRARYFIND_INDEXER.to_s.downcase == 'solr'
       logger.debug("[PortfolioSearchClass] [RetrievePortfolio] Entering SOLR")
-      conn = Solr::Connection.new(LIBRARYFIND_SOLR_HOST)
-
-      raw_query_string, opt = UtilFormat.generateRequestSolr(_qtype, _qstring, _qoperator, filter_query, _is_parent[_coll_list], _coll_list, _collection_name[_coll_list], _max, options)
-      logger.info("[PortfolioSearchClass] [RetrievePortfolio] RAW STRING: " + raw_query_string)
-
-      _response = conn.query(raw_query_string, opt)
-      @total_hits = _response.total_hits
+      @list_of_ids = solr_request if !@list_of_ids
       logger.info("[PortfolioSearchClass][RetrievePortfolio] SOLR RESPONSE GIVE #{@total_hits}")
-      _query = Array.new
-      _response.each do |hit|
-        if _query != ""
-          _query.push(hit["controls_id"].to_s)
-        end
-
-        logger.debug("[PortfoliosearchClass] [RetrievePortfolio] [controls_id] : " + hit["controls_id"] + " theme : " + hit["theme"]);
-        _Hthemes[hit["controls_id"].to_s] = hit["theme"]
-        _dateEndNew[hit["controls_id"].to_s] = hit["date_end_new"]
-        _dateIndexed[hit["controls_id"].to_s] = hit["harvesting_date"]
-        _bfound = true
-      end
     end
-    logger.debug("[PortfoliosearchClass] [RetrievePortfolio] [hash Themes] : " + _Hthemes.inspect);
+    
+    logger.debug("[PortfoliosearchClass] [RetrievePortfolio] [hash Themes] : " + @themes.inspect);
 
-    if _bfound == false
-      logger.debug("[PortfolioSearchClass] [RetrievePortfolio] nothing found: " + _coll_list.to_s)
+    if !@list_of_ids
+      logger.debug("[PortfolioSearchClass] [RetrievePortfolio] nothing found")
       return nil
     end
     logger.debug("[PortfolioSearchClass] [RetrievePortfolio] recuperation des resultats -- ")
     _sTime = Time.now().to_f
 
     time_start = Time.now.to_f
-    rows = Metadata.find(:all, :limit=> _max, :conditions=>{:collection_id=>_coll_list.to_i, :dc_identifier=>_query }, :include=>[:volumes, :portfolio_data])
+    rows = Metadata.find(:all, :limit=> @max, :conditions=>{:collection_id=>@collection.id, :dc_identifier=>@list_of_ids }, :include=>[:volumes, :portfolio_data])
+    @total_hits = rows.count
     time_end = Time.now.to_f
     logger.debug("PORTFOLIO_SEARCH_CLASS => MetadataFind took #{time_end - time_start} ms")
-    logger.debug("#STAT# [PORTFOLIO] base: [#{_coll_list}] recherche: " + sprintf( "%.2f",(Time.now().to_f - _sTime)).to_s) if LOG_STATS
+    logger.debug("#STAT# [PORTFOLIO] base: [#{@collection.alt_name}] recherche: " + sprintf( "%.2f",(Time.now().to_f - _sTime)).to_s) if LOG_STATS
     logger.debug("-- recuperation des resultats")
 
-    _record = Array.new()
     _i = 0
 
-    begin
-      collection = Collection.getCollectionById(_coll_list)
-    rescue => e
-      logger.error("[PortfolioSearchClass][RetrievePortfolio] Collection not found")
-      raise e
-    end
     start_loop_time = Time.now.to_f
     rows.each do |_row|
       begin
-        logger.debug("[PortfolioSearchClass] [RetrievePortfolio] CHECK: " +  _coll_list.to_s + ";" + UtilFormat.normalize(_row['dc_identifier'].to_s))
 
-        if _tmp_max <= _max
+        if _tmp_max <= @max
           logger.debug("[PortfolioSearchClass] [RetrievePortfolio] Prepping to print Title, etc.")
-          record = Record.new()
+          record = initialize_record_mapping(nil, _row)
 
           logger.debug("[PortfoliosearchClass] [RetrievePortfolio] [row.id] : " + _row['dc_identifier'].to_s)
-          theme = _Hthemes[_row['dc_identifier'].to_s]
+          theme = @themes[_row['dc_identifier'].to_s]
           logger.debug("[PortfoliosearchClass] [RetrievePortfolio] [theme before test] : " + theme.to_s)
           if (theme.nil?)
             theme = ""
           end
 
-          date_end_new = _dateEndNew[_row['dc_identifier'].to_s]
+          date_end_new = @date_end_new[_row['dc_identifier'].to_s]
           if (!date_end_new.nil?)
             date_end_new = DateTime.parse(date_end_new)
           else
@@ -217,7 +175,7 @@ class PortfolioSearchClass < ActionController::Base
           end
           record.date_end_new = date_end_new
 
-          harvesting_date = _dateIndexed[_row['dc_identifier'].to_s]
+          harvesting_date = @date_indexed[_row['dc_identifier'].to_s]
           if (!harvesting_date.nil?)
             harvesting_date = DateTime.parse(harvesting_date)
           else
@@ -232,9 +190,9 @@ class PortfolioSearchClass < ActionController::Base
           logger.debug("[PortfolioSearchClass] [RetrievePortfolio] description: " + UtilFormat.normalize(_row['dc_description']))
           logger.debug("[PortfolioSearchClass] [RetrievePortfolio] theme " + theme)
           logger.debug("[PortfolioSearchClass] [RetrievePortfolio] Publisher: " + UtilFormat.normalize(_row['dc_publisher']))
-          record.material_type = PrimaryDocumentType.getNameByDocumentType(UtilFormat.normalize(_row['dc_type']), _coll_list)
+          record.material_type = PrimaryDocumentType.getNameByDocumentType(UtilFormat.normalize(_row['dc_type']), @collection.id)
           if record.material_type.blank?
-            record.material_type = UtilFormat.normalize(_type[_coll_list])
+            record.material_type = UtilFormat.normalize(@collection.mat_type)
           end
 
           if !_row.portfolio_data.nil?
@@ -257,35 +215,16 @@ class PortfolioSearchClass < ActionController::Base
             'pos'=>1},
           @pkeyword)
           record.ptitle= chkString(_row['dc_title'])
-          record.title = chkString(_row['dc_title'])
           record.hits = @total_hits
           logger.debug("[PortfolioSearchClass] [RetrievePortfolio] record title: " + _row['dc_title'])
           record.issn =  chkString(_row.portfolio_data.issn) unless _row.portfolio_data.blank?
           record.isbn = chkString(_row.portfolio_data.isbn.split(" @;@ ")[0]) unless _row.portfolio_data.blank?
-          record.abstract = chkString(UtilFormat.normalize(_row['dc_description']))
-          record.date = UtilFormat.normalizeDate(_row['dc_date'])
-          record.author = chkString(UtilFormat.normalize(_row['dc_creator']))
 
-          logger.debug("[PortfolioSearchClass] [RetrievePortfolio] vendor_name:" + _alias[_coll_list])
-          record.vendor_name = chkString(UtilFormat.normalize(_alias[_coll_list]))
+          record.vendor_name = chkString(UtilFormat.normalize(@collection.alt_name))
           # record.link = chkString(_row['bpi_dm_lien_lib'])
-          record.id =  _row['dc_identifier'].to_s + ID_SEPARATOR + _coll_list.to_s + ID_SEPARATOR + _search_id.to_s
+          record.id =  _row['dc_identifier'].to_s + ID_SEPARATOR + @collection.id.to_s + ID_SEPARATOR + @search_id.to_s
           record.doi = ""
-          record.openurl = ""
-          record.thumbnail_url= ""
-          record.static_url = ""
-          record.relation = _row['dc_relation']
-          record.contributor = _row['dc_contributor']
-          record.coverage = _row['dc_coverage']
-          record.rights = _row['dc_rights']
-          record.format = chkString(UtilFormat.normalize(_row['dc_format']))
-          record.source = ""
-          logger.debug("PORTFOLIO SUBJECT before: #{_row['dc_subject']}")
-          record.subject = chkString(UtilFormat.normalize(_row['dc_subject']))
-          logger.debug("PORTFOLIO SUBJECT after_: #{record.subject}")
-          record.publisher = chkString(UtilFormat.normalize(_row['dc_publisher']))
-          record.callnum = ""
-          record.vendor_url = _vendor_url[_coll_list]
+          record.vendor_url = @collection.vendor_url
           record.theme = theme
           record.category = _row.portfolio_data.genre
           record.binding = _row.portfolio_data.binding
@@ -304,27 +243,27 @@ class PortfolioSearchClass < ActionController::Base
           record.conservation = _row.portfolio_data.conservation
           # examplaires
           broadcast_group = _row.portfolio_data.broadcast_group.split(";") if !_row.portfolio_data.broadcast_group.blank?
-          record.examplaires = createExamplaires(_row.volumes, _row.collection_id, infos_user, broadcast_group)
+          record.examplaires = createExamplaires(_row.volumes, _row.collection_id, @infos_user, broadcast_group)
           record.examplaires.each do |ex|
             if ex.availability.match(/consultable sur ce poste/i)
-              record.availability = defineAvailability(collection.availability, record.format)
+              record.availability = defineAvailability(@collection.availability, record.format)
               if record.availability.match(/online/i)
                 break
               end
             elsif ex.availability.match(/Disponible/i) or ex.availability.match(/bureau/i)
-              record.availability = defineAvailabilityDisp(collection.availability, record.format)
+              record.availability = defineAvailabilityDisp(@collection.availability, record.format)
               if record.availability.match(/onshelf/i)
                 break
               end
             end
           end
-          record.actions_allowed = collection.actions_allowed
-          _record[_x] = record
+          record.actions_allowed = @collection.actions_allowed
+          @records[_x] = record
           _x = _x + 1
 
         end
 
-      rescue Exception => e
+      rescue => e
         logger.error("#{e.message}")
         logger.error("#{e.backtrace.join("\n")}")
       end
@@ -333,9 +272,9 @@ class PortfolioSearchClass < ActionController::Base
     end #while fetch
     end_loop_time = Time.now.to_f
     logger.debug("TOTAL_LOOP_TIME: #{end_loop_time - start_loop_time}")
-    logger.debug("Record Hits: #{_record.length} sur #{@total_hits}")
+    logger.debug("Record Hits: #{@records.length} sur #{@total_hits}")
 
-    return _record
+    return @records
   end
 
   # check the state of variables
@@ -356,9 +295,7 @@ class PortfolioSearchClass < ActionController::Base
   end
 
   def uniqString(str)
-    if str == nil or str == ""
-      return ""
-    end
+    return "" if str.blank?
     theme = Array.new
     str = str.split(";")
     theme = str.uniq
@@ -452,11 +389,8 @@ class PortfolioSearchClass < ActionController::Base
         record.start = ""
         record.end = ""
         record.holdings = ""
-        record.raw_citation = ""
-        record.oclc_num = ""
         record.availability = defineAvailability(col.availability, record.format)
         record.lang = UtilFormat.normalizeLang(chkString(UtilFormat.normalize(_row['dc_language'])))
-        record.identifier = ""
         record.is_available = _row.portfolio_data.is_available
 
         record.indice = chkString(_row.portfolio_data.indice)
@@ -470,7 +404,7 @@ class PortfolioSearchClass < ActionController::Base
         return record
       end
       logger.debug("[PortfolioSearchClass] [GetRecord] No records matching")
-    rescue Exception => e
+    rescue => e
       logger.error("[PortfolioSearchClass] [GetRecord] Unable to retrieve informations for the document : #{$!}")
       logger.error("[PortfolioSearchClass] [GetRecord] Error : #{e.message}")
       logger.error("[PortfolioSearchClass] [GetRecord] Backtrace #{e.backtrace.join("\n")}")

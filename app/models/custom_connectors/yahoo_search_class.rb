@@ -86,8 +86,8 @@ class YahooSearchClass < ActionController::Base
     if _lrecord != nil
 	_lxml = CachedSearch.build_cache_xml(_lrecord)
    
-	if _lxml != nil: _lprint = true end
-	if _lxml == nil: _lxml = "" end
+	_lprint = true if _lxml != nil
+	 _lxml = "" if _lxml == nil 
 
 	#============================================
 	# Add this info into the cache database

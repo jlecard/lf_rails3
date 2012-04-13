@@ -77,4 +77,3 @@ end
 #  }
 ActionMailer::Base.perform_deliveries = true
 ActionMailer::Base.raise_delivery_errors = true
-require "#{Rails.root}/config/initializers/lf"

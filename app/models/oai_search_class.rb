@@ -93,7 +93,7 @@ class OaiSearchClass < ActionController::Base
     
     logger.debug("OAI Search")
     
-    if _max.class != 'Int': _max = _max.to_i end
+    _max = _max.to_i
     
     _keywords = _qstring.join("|")
     #if _keywords.slice(0,1)=='"'

@@ -71,7 +71,7 @@ class PrimaryDocumentType < ActiveRecord::Base
   
   def self.getNameByDocumentType(dtype,collection_id)
     value = dtype
-    dtype_sql = ActiveRecord::Base.send(:sanitize_sql_for_conditions, ['?', dtype])
+    dtype_sql = sanitize(['?', dtype])
     if !dtype.blank?
       res = PrimaryDocumentType.find_by_sql("SELECT primary_document_types.name AS name, primary_document_types.id AS id FROM primary_document_types,document_types WHERE document_types.name = #{dtype_sql} AND document_types.collection_id = #{collection_id} AND primary_document_types.id = document_types.primary_document_type limit 1")
       if !res.nil? and !res.empty?

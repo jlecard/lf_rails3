@@ -38,7 +38,7 @@ class GedSearchClass < ActionController::Base
     @records = []
     @search_id = _last_id
     @infos_user = infos_user
-    @max = _max
+    @max = _max.to_i
     @action = _action_type
     keyword(_qstring[0])
     _type = ""
@@ -102,7 +102,7 @@ class GedSearchClass < ActionController::Base
 
     logger.debug("GED Search")
 
-    if _max.class != 'Int': _max = _max.to_i end
+    _max = _max.to_i
 
     _keywords = _qstring.join("|")
     #if _keywords.slice(0,1)=='"'
@@ -281,7 +281,7 @@ class GedSearchClass < ActionController::Base
             record.direct_url = transalteUnidEtDonsToUrlGed(record.identifier)
             record.availability = _availability
           else
-            record.direct_url = "";
+            record.direct_url = ""
             record.availability = ""
           end
         else
