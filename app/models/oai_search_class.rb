@@ -32,7 +32,6 @@ class OaiSearchClass < ActionController::Base
   @pid = 0
   @pkeyword = ""
 
-  private
   def set_keywords(_keywords)
     if _keywords.index("site:")!= nil
       _site = _keywords.slice(_keywords.index("site:"), _keywords.length - _keywords.index("site:")).gsub("site:", "")

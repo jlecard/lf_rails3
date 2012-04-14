@@ -32,15 +32,8 @@ class KeesingSearchClass < ActionController::Base
   @search_id = 0
   @hits = 0
   @total_hits = 0
-  def SearchCollection(_collect, _qtype, _qstring, _start, _max, _qoperator, _last_id, job_id = -1, infos_user = nil, options = nil, _session_id=nil, _action_type=nil, _data = nil, _bool_obj=true)
-    logger.debug("[KeesingSearchClass] [SearchCollection]")
-    @collection = _collect
-    @pkeyword = _qstring.join(" ")
-    @search_id = _last_id
-    @infos_user = infos_user
-    @max = _max.to_i
-    @action = _action_type
 
+  def search
     begin
       #perform the search
       "[KeesingSearchClass][SearchCollection] URL: #{@collection.url}"
@@ -52,15 +45,14 @@ class KeesingSearchClass < ActionController::Base
       browser.search(@pkeyword, @max)
       @total_hits = browser.total
       result_list = browser.result_list
-      parse_results(result_list, infos_user) if result_list
-    rescue Exception => bang
+      parse_results(result_list) if result_list
+    rescue => bang
       logger.error("[KeesingSearchClass] [SearchCollection] error: " + bang.message)
       logger.debug("[KeesingSearchClass] [SearchCollection] trace:" + bang.backtrace.join("\n"))
     end
-    save_in_cache
   end
 
-  def parse_results(result_list, infos_user)
+  def parse_results(result_list)
     logger.debug("[KeesingSearchClass][parse_results] Entering method...")
     _objRec = RecordSet.new()
     _title = ""
@@ -108,17 +100,7 @@ class KeesingSearchClass < ActionController::Base
         record.id =  record_id
         record.doi = ""
         record.openurl = ""
-        if(INFOS_USER_CONTROL and !infos_user.nil?)
-          # Does user have rights to view the notice ?
-          droits = ManageDroit.GetDroits(infos_user,@collection.id)
-          if(droits.id_perm == ACCESS_ALLOWED)
-            record.direct_url = _link
-          else
-            record.direct_url = "";
-          end
-        else
-          record.direct_url = _link
-        end
+        record = set_record_access_link(record, _link)
         static_url = @collection.vendor_url
         record.static_url = static_url
         record.subject = _subjects
@@ -140,7 +122,7 @@ class KeesingSearchClass < ActionController::Base
         record.actions_allowed = action_allowed
         @records[_x] = record
         _x = _x + 1
-      rescue Exception => bang
+      rescue => bang
         logger.debug("[KeesingSearchClass][parse] parse_result error: #{bang.message}")
         logger.debug("[KeesingSearchClass][parse] parse_result trace: #{bang.backtrace.join("\n")}" )
         next
@@ -152,9 +134,5 @@ class KeesingSearchClass < ActionController::Base
     return (CacheSearchClass.GetRecord(idDoc, idCollection, idSearch, infos_user))
   end
 
-  def normalize(_string)
-    return UtilFormat.normalize(_string) if _string != nil
-    return ""
-  end
 
 end

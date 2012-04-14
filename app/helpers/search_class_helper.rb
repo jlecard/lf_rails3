@@ -1,5 +1,7 @@
 require 'solr'
 module SearchClassHelper
+  attr_reader :records
+  attr_accessor :collection
   include Solr
   # perform a request in solr and return a list of ids
   def solr_request
@@ -11,18 +13,18 @@ module SearchClassHelper
       @total_hits = _response.total_hits
       response.each do |hit|
         next if !defined?(hit["controls_id"])
-        list_of_ids << hit["controls_id"]
+        @list_of_ids << hit["controls_id"]
         @themes[hit["controls_id"].to_s] = hit["theme"] if @themes
         @date_end_new[hit["controls_id"].to_s] = hit["date_end_new"] if @date_end_new
         @date_indexed[hit["controls_id"].to_s] = hit["harvesting_date"]
         @bfound = true
       end
-    rescue Exception => e
+    rescue => e
       logger.error("[#{self.class}] [solr_request] Error #{e.message}")
       logger.debug("[#{self.class}] [solr_request] Error #{e.backtrace}")
     end
 
-    return list_of_ids
+    @list_of_ids
   end
 
   def proxy?
@@ -40,6 +42,7 @@ module SearchClassHelper
 
   def save_in_cache
     @print = false
+    raise(NameError, "@collection is not defined") if !@collection
     if @records
       @json_records = CachedSearch.build_cache_xml(@records)
       @print = true if @json_records and !@records.empty?
@@ -70,7 +73,8 @@ module SearchClassHelper
         return @my_id, 0, @total_hits
       end
     else
-      return @records
+      return @records if @records
+      return @my_id, 0, 0
     end
   end
 
@@ -155,9 +159,9 @@ module SearchClassHelper
   end
 
   def SearchCollection(_collect, _qtype, _qstring, _start, _max, _qoperator, _last_id, job_id = -1, infos_user=nil, options=nil, _session_id=nil, _action_type=nil, _data = nil, _bool_obj=true)
-
+    raise(NoMethodError, "The method search must be implemented in #{self.class}") if !self.respond_to?(:search)
     begin
-      logger.debug("[PortfolioSearchClass] [SearchCollection]");
+      logger.debug("[#{self.class}] [SearchCollection]")
       _sTime = Time.now().to_f
 
       keyword(_qstring[0])
