@@ -22,7 +22,7 @@
 #
 # http://libraryfind.org
 
-class OaiSearchClass < ActionController::Base
+class OaiSearchClass
   include SearchClassHelper
 
   attr_reader :hits, :xml
@@ -31,6 +31,10 @@ class OaiSearchClass < ActionController::Base
   @total_hits = 0
   @pid = 0
   @pkeyword = ""
+  
+  def logger
+    ActiveRecord::Base.logger 
+  end
 
   def set_keywords(_keywords)
     if _keywords.index("site:")!= nil
@@ -42,7 +46,7 @@ class OaiSearchClass < ActionController::Base
       end
     elsif _keywords.index("sitepref:") != nil
       _sitepref = _keywords.slice(_keywords.index("sitepref:"), _keywords.length - _keywords.index("sitepref:")).gsub("sitepref:", "")
-      logger.debug("[OaiSearchClass][RetrieveOAI] SITE PREF: " + _sitepref)
+      logger.debug("[#{self.class}][set_keywords] SITE PREF: " + _sitepref)
       _keywords = _keywords.slice(0, _keywords.index("sitepref:")).chop
       if _sitepref.index('"') != nil
         _sitepref = _sitepref.gsub('"', "")
@@ -132,12 +136,14 @@ class OaiSearchClass < ActionController::Base
       index.close
 
     elsif LIBRARYFIND_INDEXER.downcase == 'solr'
-
       @list_of_ids ||= solr_request
       return nil if !@list_of_ids
     end
 
     rows = Metadata.find(:all, :limit=> @max, :conditions=>{:collection_id=>@collection.id, :dc_identifier=>@list_of_ids })
+    if @total_hits and @total_hits > rows.count
+      logger.error("Found more results in solr than in database. Maybe collection #{@collection.name}, #{@collection.id} should be reharvested")
+    end
     @total_hits = rows.count
     _i = 0
     _newset = ""
