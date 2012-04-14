@@ -109,18 +109,7 @@ class OxfordSearchClass < ActionController::Base
         record.id =  (rand(1000000).to_s + rand(1000000).to_s + Time.now().year.to_s + Time.now().day.to_s + Time.now().month.to_s + Time.now().sec.to_s + Time.now().hour.to_s) + ";" + @cObject.id.to_s + ";" + @search_id.to_s
         record.doi = ""
         record.openurl = ""
-        if(INFOS_USER_CONTROL and !@infos_user.nil?)
-          # Does user have rights to view the notice ?
-          droits = ManageDroit.GetDroits(@infos_user,@collection.id)
-          if droits.id_perm == ACCESS_ALLOWED
-            record.direct_url = _link
-          else
-            record.direct_url = ""
-          end
-        else
-          record.direct_url = _link          
-        end
-        
+        record = set_record_access_link(record, _link)
         record.static_url = @collection.vendor_url
         record.subject = _subjects
         record.publisher = @collection.alt_name

@@ -41,8 +41,8 @@ class GedSearchClass < ActionController::Base
     _tmp_max = 1
     _xml_tmp = ""
     _xml = ""
-    _start_time = Time.now()
-    _objRec = RecordSet.new()
+    _start_time = Time.now
+    _objRec = RecordSet.new
     _hits = Hash.new()
     @date_end_new = {}
     @date_indexed = {}
@@ -163,7 +163,7 @@ class GedSearchClass < ActionController::Base
           'rec' => UtilFormat.normalize(_row.dc_description),
           'pos'=>1},
         @pkeyword)
-        
+
         record.vendor_name = UtilFormat.normalize(@collection.alt_name)
         record.ptitle = UtilFormat.normalize(_row.dc_title)
         record.title = UtilFormat.normalize(_row.dc_title)
@@ -181,7 +181,12 @@ class GedSearchClass < ActionController::Base
         record.lang = UtilFormat.normalizeLang("fr")
         record.hits = @total_hits
         record.ptitle = UtilFormat.normalize(_row.dc_title)
-        record.material_type = PrimaryDocumentType.getNameByDocumentType(UtilFormat.normalize(@collection.mat_type), _row.collection_id)
+        if !row.dc_type or !row.dc_type.empty?
+          record.material_type = PrimaryDocumentType.getNameByDocumentType(UtilFormat.normalize(@collection.mat_type), _row.collection_id)
+        else
+          record.material_type
+        end
+
         record.vendor_url = @collection.vendor_url
         record.page = UtilFormat.normalize(_row.osu_volume.to_s)
         record.start = _start_time.to_f
@@ -197,7 +202,7 @@ class GedSearchClass < ActionController::Base
       _oldset = _newset
       _count = _count + 1
       _tmp_max = _tmp_max + 1
-end
+    end
 
     logger.debug("Record Hits: #{@records.length} sur #{@total_hits}")
 
@@ -349,7 +354,7 @@ end
         logger.error("Error in transalteUnidEtDonsToUrlGed #{$!}")
       end
     end
-    return nil;
+    return nil
   end
 
 end

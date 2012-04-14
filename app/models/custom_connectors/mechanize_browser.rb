@@ -4,7 +4,7 @@ class MechanizeBrowser
     @logger = logger
     @result_list = []
     @url = url
-    @proxy_host = proxy_host.gsub(/http:\/\//,"")
+    @proxy_host = proxy_host.gsub(/http:\/\//,"") if proxy_port
     @proxy_port = proxy_port
   end
 
