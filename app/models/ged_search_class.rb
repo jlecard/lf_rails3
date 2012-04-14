@@ -27,64 +27,12 @@ class GedSearchClass < ActionController::Base
   include SearchClassHelper
   # require 'ferret'
   attr_reader :hits, :xml
+  attr_accessor :list_of_ids
 
   @total_hits = 0
   @pid = 0
   @pkeyword = ""
-  def SearchCollection(_collect, _qtype, _qstring, _start, _max, _qoperator, _last_id, job_id = -1, infos_user = nil, options = nil, _session_id=nil, _action_type=nil, _data = nil, _bool_obj=true)
-
-    logger.debug("[GED] [SearchCollection]");
-    _sTime = Time.now().to_f
-    @records = []
-    @search_id = _last_id
-    @infos_user = infos_user
-    @max = _max.to_i
-    @action = _action_type
-    keyword(_qstring[0])
-    _type = ""
-    _alias = ""
-    _group = ""
-    _vendor_url = ""
-    _coll_list = ""
-
-    #_query = "SELECT DISTINCT collections.id, collections.alt_name, controls.id as controls_id, controls.oai_identifier, controls.collection_id, controls.url, controls.title, controls.description, metadatas.dc_title, metadatas.dc_subject, metadatas.dc_creator, metadatas.dc_date, metadatas.dc_format, metadatas.osu_thumbnail, metadatas.dc_identifier,  metadatas.dc_publisher, metadatas.osu_volume, metadatas.osu_linking from collections LEFT JOIN controls ON collections.id=controls.collection_id  LEFT JOIN metadatas on controls.id = metadatas.controls_id where ("
-    _query = "SELECT DISTINCT CN.id, CN.alt_name, C.id,
-               C.oai_identifier as oai_identifier, C.collection_id as collection_id, C.url, C.title, C.description,
-               M.dc_subject as dc_subject, M.dc_creator as dc_creator, M.dc_date as dc_date,M.dc_title as dc_title,
-               M.dc_format as dc_format, M.dc_type as dc_type, M.osu_thumbnail as osu_thumbnail, M.dc_language as dc_language,
-               M.dc_relation as dc_relation, M.dc_coverage as dc_coverage, M.dc_rights as dc_rights,
-               M.dc_source as dc_source, M.dc_publisher as dc_publisher, M.dc_contributor as dc_contributor,
-               M.osu_volume as osu_volume
-               FROM collections CN LEFT JOIN controls C ON CN.id=C.collection_id
-               LEFT JOIN metadatas M on C.id = M.controls_id where ("
-
-    _coll_list =_collect.id
-    _type = _collect.mat_type
-    _alias = _collect.alt_name
-    _group = _collect.virtual
-    _is_parent = _collect.is_parent
-    _col_name = _collect.name
-    _vendor_url = _collect.vendor_url
-    _availability = _collect.availability
-
-    @records = RetrieveGED_Single(_last_id, _query, _qtype, _qstring, _qoperator, _type, _coll_list, _alias, _group, _vendor_url, _is_parent, _col_name,_max.to_i, infos_user, options, _collect.filter_query, _availability)
-    logger.debug("Storing found results in cachecd results begin")
-    save_in_cache
-  end
-
-  def RetrieveGED_Single(_search_id, _query, _qtype, _qstring, _qoperator, _type, _coll_list, _alias, _group, _vendor_url,  _is_parent, _collection_name,  _max, infos_user=nil, options=nil, _filter_query=nil, _availability = nil)
-    htype = {_coll_list => _type}
-    halias = {_coll_list => _alias}
-    hgroup = {_coll_list => _group}
-    hvendor = {_coll_list => _vendor_url}
-    hparent = {_coll_list => _is_parent}
-    hcolname = {_coll_list => _collection_name}
-
-    logger.debug("Ged_Qstring2: " + _qstring.length.to_s)
-    return  RetrieveGED(_search_id, _query, _qtype, _qstring, _qoperator, htype, _coll_list, halias, hgroup, hvendor, hparent, hcolname, _max, infos_user, options, _filter_query, _availability)
-  end
-
-  def RetrieveGED(_search_id, _query, _qtype, _qstring, _qoperator, _type, _coll_list, _alias, _group, _vendor_url,  _is_parent, _collection_name, _max, infos_user=nil, options=nil, filter_query=nil, _availability=nil)
+  def search
     _x = 0
     _y = 0
     _oldset = ""
@@ -96,15 +44,11 @@ class GedSearchClass < ActionController::Base
     _start_time = Time.now()
     _objRec = RecordSet.new()
     _hits = Hash.new()
-    _dateEndNew = Hash.new()
-    _dateIndexed = Hash.new()
-    _bfound = false;
-
+    @date_end_new = {}
+    @date_indexed = {}
     logger.debug("GED Search")
 
-    _max = _max.to_i
-
-    _keywords = _qstring.join("|")
+    _keywords = @query_string.join("|")
     #if _keywords.slice(0,1)=='"'
     logger.debug("keywords enter")
     #    _keywords = _keywords.gsub(/^"*/,'')
@@ -153,59 +97,27 @@ class GedSearchClass < ActionController::Base
     elsif LIBRARYFIND_INDEXER.downcase == 'solr'
 
       logger.debug("Entering SOLR")
-      conn = Solr::Connection.new(LIBRARYFIND_SOLR_HOST)
-      raw_query_string, opt = UtilFormat.generateRequestSolr(_qtype, _qstring, _qoperator, filter_query, _is_parent[_coll_list], _coll_list, _collection_name[_coll_list], _max ,options)
-      logger.debug("RAW STRING: " + raw_query_string)
-      _response = conn.query(raw_query_string, opt)
-
-      @total_hits = _response.total_hits
-
-      _response.each do |hit|
-        if defined?(hit["controls_id"]) == false
-          break
-        end
-        _query << " C.id='" + hit["controls_id"].to_s + "' or "
-        _bfound = true
-        _dateEndNew[hit["controls_id"].to_s] = hit["date_end_new"]
-        _dateIndexed[hit["controls_id"].to_s] = hit["harvesting_date"]
-      end
+      @list_of_ids ||= solr_request
+      return nil if !@list_of_ids
     end
-
-    if _bfound == false
-      logger.debug("nothing found: " + _coll_list.to_s)
-      return nil
-    end
-    _query = _query.slice(0, (_query.length- " or ".length)) + ") and C.collection_id=#{_coll_list} order by C.collection_id"
 
     _sTime = Time.now().to_f
-    _results = Collection.find_by_sql(_query.to_s)
-    logger.debug("#STAT# [GED] base: [#{_coll_list}] recherche: " + sprintf( "%.2f",(Time.now().to_f - _sTime)).to_s) if LOG_STATS
+    _results = Metadata.find(:all, :conditions=>{:collection_id=>@collection.id,:dc_identifier=>@list_of_ids})
+    @total_hits = _results.count
 
     if _results.empty?
       logger.warn("no result found: " + _coll_list.to_s)
       return nil
     end
-    _record = Array.new()
     _i = 0
     _newset = ""
-    _trow = nil
-    _trow = Collection.find(_coll_list)
-    _results.each { |_row|
+    _results.each do |_row|
       logger.debug("[GedSearchClass][RetrieveGED] row = #{_row.inspect}")
-      if _is_parent[_coll_list] != 1
-        logger.debug("Find: " + _coll_list.to_s)
-
-        if _trow != nil then
-          logger.debug("COLLECTION RESOLVED")
-          _newset = _trow.alt_name
-          logger.debug('NEW COLLECTION NAME SET' + _newset)
-        else
-          logger.debug("CHECK: " +  _row.collection_id.to_s + ";" + UtilFormat.normalize(_row.oai_identifier))
-          _newset = _row.alt_name
-        end
+      if @collection.is_parent != 1
+        logger.debug("Find: " + @collection.name)
       else
-        logger.debug("CHECK: " +  _row.collection_id.to_s + ";" + UtilFormat.normalize(_row.oai_identifier))
-        _newset = _row.alt_name
+        logger.debug("[OaiSearchClass][RetrieveOAI] CHECK: #{collection.id}  #{UtilFormat.normalize(_row.oai_identifier)}")
+        _newset = @collection.alt_name
       end
 
       if _oldset != ""
@@ -218,16 +130,16 @@ class GedSearchClass < ActionController::Base
         _count = 0
       end
 
-      if _tmp_max <= _max
+      if _tmp_max <= @max
         logger.debug("Prepping to print Title, etc.")
-        record = Record.new()
-        logger.debug("[GedSearchClass][RetrieveGED] Title: " + UtilFormat.normalize(_row.title))
+        record = initialize_record_mapping(nil, _row)
+        logger.debug("[GedSearchClass][RetrieveGED] Title: " + UtilFormat.normalize(_row.dc_title))
         logger.debug("[GedSearchClass][RetrieveGED] creator: " + UtilFormat.normalize(_row.dc_creator))
         logger.debug("[GedSearchClass][RetrieveGED] date: " + UtilFormat.normalizeDate(_row.dc_date))
-        logger.debug("[GedSearchClass][RetrieveGED] description: " + UtilFormat.normalize(_row.description))
+        logger.debug("[GedSearchClass][RetrieveGED] description: " + UtilFormat.normalize(_row.dc_description))
         logger.debug("[GedSearchClass][RetrieveGED] publisher: " + UtilFormat.normalize(_row.dc_publisher))
 
-        date_end_new = _dateEndNew[_row['dc_identifier'].to_s]
+        date_end_new = @date_end_new[_row['dc_identifier'].to_s]
         if (!date_end_new.nil?)
           date_end_new = DateTime.parse(date_end_new)
         else
@@ -235,7 +147,7 @@ class GedSearchClass < ActionController::Base
         end
         record.date_end_new = date_end_new
 
-        harvesting_date = _dateIndexed[_row['dc_identifier'].to_s]
+        harvesting_date = @date_indexed[_row['dc_identifier'].to_s]
         if (!harvesting_date.nil?)
           harvesting_date = DateTime.parse(harvesting_date)
         else
@@ -243,20 +155,16 @@ class GedSearchClass < ActionController::Base
         end
         record.date_indexed = harvesting_date
 
-        record.rank = _objRec.calc_rank({'title' => UtilFormat.normalize(_row.title),
+        record.rank = _objRec.calc_rank({'title' => UtilFormat.normalize(_row.dc_title),
           'theme' => "",
           'atitle' => '',
           'creator'=>UtilFormat.normalize(_row.dc_creator),
           'date'=>UtilFormat.normalizeDate(_row.dc_date),
-          'rec' => UtilFormat.normalize(_row.description),
+          'rec' => UtilFormat.normalize(_row.dc_description),
           'pos'=>1},
         @pkeyword)
-        if _is_parent[_coll_list] != 1 && _trow != nil
-          record.vendor_name = UtilFormat.normalize(_trow.alt_name)
-        else
-          record.vendor_name = UtilFormat.normalize(_row.alt_name) #_alias[_row['collection_id'].to_i]
-        end
-
+        
+        record.vendor_name = UtilFormat.normalize(@collection.alt_name)
         record.ptitle = UtilFormat.normalize(_row.dc_title)
         record.title = UtilFormat.normalize(_row.dc_title)
         record.atitle = UtilFormat.normalize(_row.dc_title)
@@ -264,73 +172,36 @@ class GedSearchClass < ActionController::Base
         logger.debug("[GedSearchClass][RetrieveGED] record title: " + record.title)
         record.issn =  ""
         record.isbn = ""
-        record.abstract = UtilFormat.normalize(_row.description)
-        record.date = UtilFormat.normalizeDate(_row.dc_date)
-        record.author = UtilFormat.normalize(_row.dc_creator)
-        record.identifier = chkString(_row.oai_identifier)
-        record.link = ""
-        record.id = chkString(_row.oai_identifier) + ID_SEPARATOR + _row.collection_id.to_s + ID_SEPARATOR  + _search_id.to_s
+        record.id = chkString(_row.dc_identifier) + ID_SEPARATOR + @collection.id.to_s + ID_SEPARATOR  + @search_id.to_s
         record.doi = ""
-        record.openurl = ""
-        record.thumbnail_url = UtilFormat.normalize(_row.osu_thumbnail)
-
+        link_ref = transalteUnidEtDonsToUrlGed(record.identifier)
         # Does user have rights to view the notice ?
-        if(INFOS_USER_CONTROL and !infos_user.nil?)
-          droits = ManageDroit.GetDroits(infos_user,_row.collection_id)
-          if(droits.id_perm == ACCESS_ALLOWED)
-            record.direct_url = transalteUnidEtDonsToUrlGed(record.identifier)
-            record.availability = _availability
-          else
-            record.direct_url = ""
-            record.availability = ""
-          end
-        else
-          record.direct_url = _row.oai_identifier
-          record.availability = _availability
-        end
-
-        record.static_url = ""
-        record.subject = UtilFormat.normalize(_row.dc_subject)
-        record.publisher = UtilFormat.normalize(_row.dc_publisher)
-        record.callnum = ""
-        record.relation = ""
-        record.contributor = ""
-        record.coverage = ""
-        record.rights = ""
-        record.format = ""
-        record.source = ""
-        record.theme = "" # chkString(uniqString(_row.theme))
-        record.category = ""
+        record = set_record_access_link(record, link_ref)
+        record.direct_url = _row.oai_identifier if !record.direct_url
         record.lang = UtilFormat.normalizeLang("fr")
         record.hits = @total_hits
-        record.ptitle = UtilFormat.normalize(_row.title)
-        record.material_type = PrimaryDocumentType.getNameByDocumentType(UtilFormat.normalize(_type[_row.collection_id.to_i]), _row.collection_id)
-        if record.material_type.blank?
-          record.material_type = UtilFormat.normalize(_type[_row.collection_id.to_i])
-        end
-        record.vendor_url = _trow.vendor_url
-        record.volume = ""
-        record.issue = ""
+        record.ptitle = UtilFormat.normalize(_row.dc_title)
+        record.material_type = PrimaryDocumentType.getNameByDocumentType(UtilFormat.normalize(@collection.mat_type), _row.collection_id)
+        record.vendor_url = @collection.vendor_url
         record.page = UtilFormat.normalize(_row.osu_volume.to_s)
-        record.number = ""
         record.start = _start_time.to_f
         record.end = Time.now().to_f
         record.issue_title = _row.dc_publisher
 
-        record.actions_allowed = _trow.actions_allowed
+        record.actions_allowed = @collection.actions_allowed
 
-        _record[_x] = record
+        @records[_x] = record
         _x = _x + 1
       end
 
       _oldset = _newset
       _count = _count + 1
       _tmp_max = _tmp_max + 1
-    }
+end
 
-    logger.debug("Record Hits: #{_record.length} sur #{@total_hits}")
+    logger.debug("Record Hits: #{@records.length} sur #{@total_hits}")
 
-    return _record
+    return @records
   end
 
   def self.GetRecord(idDoc = nil, idCollection = nil, idSearch = "", infos_user = nil)

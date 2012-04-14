@@ -21,11 +21,7 @@ describe ClassiquesGarnierSearchClass do
         klass.list_of_ids = ids
         
         records = klass.SearchCollection(collection, ["keyword"], ["johnson"], 0, 100, [], 10)
-        records.should be_a(Array)
-        records.size.should == 10
-        records[0].should be_a(Record)
-        records[9].should be_a(Record)
-        check_metadata_record(records[5])
+        check_search_collection_records(records)
       end
       
       it "should return an id, hits and total_hits (action_type set)" do
@@ -40,18 +36,7 @@ describe ClassiquesGarnierSearchClass do
         klass.list_of_ids = ids
         klass.bfound = true
         id, hits, total_hits = klass.SearchCollection(collection, ["keyword"], ["jack"], 0, 100, [], 10, -1, nil, nil, nil, "test")
-        id.should match(/^\d+_\d+$/)
-        hits.should == 10
-        total_hits.should == 10
-        records = CACHE.get(id)
-        records.should be_a(InCacheRecord)
-        records.max.should == 100
-        records.total_hits.should == total_hits
-        records.status.should == 0
-        parser = Yajl::Parser.new
-        parsed_records = parser.parse(records.data)
-        parsed_records.should be_a(Array)
-        check_metadata_record(Record.new(parsed_records[5]))        
+        check_search_collection_cached_records(id, hits, total_hits)       
       end
     end
   end

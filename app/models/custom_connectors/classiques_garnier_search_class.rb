@@ -31,27 +31,6 @@ class ClassiquesGarnierSearchClass < ActionController::Base
   @total_hits = 0
   @pid = 0
   @pkeyword = ""
-  def SearchCollection(_collect, _qtype, _qstring, _start, _max, _qoperator, _last_id, job_id = -1, infos_user=nil, options=nil, _session_id=nil, _action_type=nil, _data = nil, _bool_obj=true)
-
-    logger.debug("[#{self.class}] [SearchCollection]")
-    _sTime = Time.now().to_f
-    keyword(_qstring[0])
-    @action = _action_type
-    @options = options
-    @collection = _collect
-    @search_id = _last_id
-    @infos_user = infos_user
-    @max = _max.to_i
-    @action = _action_type
-    @records = []
-    @query_string = _qstring
-    @query_type = _qtype
-    @operators = _qoperator
-
-    search
-    logger.debug("Storing found results in cached results begin")
-    save_in_cache
-  end
 
   def search
     _start_time = Time.now()
@@ -78,7 +57,7 @@ class ClassiquesGarnierSearchClass < ActionController::Base
     return nil if !@list_of_ids
    
     _sTime = Time.now().to_f
-    _results = Metadata.find(:all, :conditions=>{:dc_identifier=>@list_of_ids})
+    _results = Metadata.find(:all, :conditions=>{:collection_id=>@collection.id,:dc_identifier=>@list_of_ids})
     @total_hits = _results.count
     _x = 0
     @records = []

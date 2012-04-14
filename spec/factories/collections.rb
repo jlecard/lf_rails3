@@ -118,5 +118,29 @@ Factory.define :portfolio_collection, :class=>:collection do |c|
   c.proxy false
 end
 
+Factory.define :oai_collection, :class=>:collection do |c|
+  c.name "oai"
+  c.alt_name "oai"
+  c.conn_type "oai"
+  c.oai_set ""
+  c.vendor_url "http://archives-sonores.bpi.fr/index.php"
+  c.record_schema "oai_dc"
+  c.host "http://archives-sonores.bpi.fr/oai.php"
+  c.proxy false
+end
+
+Factory.define :ged_collection, :class=>:collection do |c|
+  c.name "ged"
+  c.alt_name "ged"
+  c.conn_type "ged"
+  c.oai_set ""
+  c.mat_type "Livre"
+  c.vendor_url "http://sged.ck.bpi.fr/Edip.Client/Default.aspx?UserName=avecGed&Password=dip&Application=BPI2&Action=DefinirFrameset%7CPrincipal,60%,H%7CLIST,40%,H;AfficherVue%7CRsimp%7CPrincipal;AfficherPage%7C../Pages/BPI2/rechaideSimp.htm%7CDIP_FRM_LIST;AfficherFramese"
+  c.url "http://sged.ck.bpi.fr/Edip.Client/Default.aspx?UserName=avecGed&Password=dip&Application=BPI2&Action=DefinirFrameset%7CPrincipal,60%,H%7CLIST,40%,H;AfficherVue%7CRsimp%7CPrincipal;AfficherPage%7C../Pages/BPI2/rechaideSimp.htm%7CDIP_FRM_LIST;AfficherFramese"
+  c.record_schema ""
+  c.host "/srv/ged/Export_tab.txt"
+  c.proxy false
+  c.availability "online"
+end
 
 

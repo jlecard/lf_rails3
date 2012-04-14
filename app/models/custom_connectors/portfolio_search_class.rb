@@ -51,34 +51,6 @@ class PortfolioSearchClass < ActionController::Base
   @pid = 0
   @pkeyword = ""
 
-  def SearchCollection(_collect, _qtype, _qstring, _start, _max, _qoperator, _last_id, job_id = -1, infos_user=nil, options=nil, _session_id=nil, _action_type=nil, _data = nil, _bool_obj=true)
-    begin
-      logger.debug("[PortfolioSearchClass] [SearchCollection]");
-      _sTime = Time.now().to_f
-
-      keyword(_qstring[0])
-      @action = _action_type
-      @options = options
-      @collection = _collect
-      @search_id = _last_id
-      @infos_user = infos_user
-      @max = _max.to_i
-      @action = _action_type
-      @records = []
-      @query_string = _qstring
-      @query_type = _qtype
-      @operators = _qoperator
-
-      logger.debug "[PortfolioSearchClass] [SearchCollection] Searching in Portfolio"
-      search
-      logger.debug("[PortfolioSearchClass] [SearchCollection] Storing found results in cached results begin")
-      return save_in_cache
-    rescue => e
-      logger.error("[PortfolioSearchClass][SearchCollection] Error : " + e.message)
-      logger.error("[PortfolioSearchClass][SearchCollection] Trace : " + e.backtrace.join("\n"))
-    end
-  end
-
   def search
     _x = 0
     _count = 0

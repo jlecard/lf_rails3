@@ -1,4 +1,6 @@
+require 'solr'
 module SearchClassHelper
+  include Solr
   # perform a request in solr and return a list of ids
   def solr_request
     begin
@@ -28,11 +30,11 @@ module SearchClassHelper
       @yp ||= YAML::load_file(RAILS_ROOT + "/config/webservice.yml")
       @proxy_host ||= @yp['PROXY_HTTP_ADR'].gsub("http://","")
       @proxy_port ||= @yp['PROXY_HTTP_PORT']
-    return true
+      return true
     else
       @proxy_host = nil
       @proxy_port = nil
-    return false
+      return false
     end
   end
 
@@ -63,12 +65,12 @@ module SearchClassHelper
 
     if @action
       if @records
-      return @my_id, @records.length, @total_hits
+        return @my_id, @records.length, @total_hits
       else
-      return @my_id, 0, @total_hits
+        return @my_id, 0, @total_hits
       end
     else
-    return @records
+      return @records
     end
   end
 
@@ -77,12 +79,12 @@ module SearchClassHelper
       # Does user have rights to view the notice ?
       droits = ManageDroit.GetDroits(@infos_user,@collection.id)
       if(droits.id_perm == ACCESS_ALLOWED)
-      record.direct_url = link
+        record.direct_url = link
       else
         record.direct_url = ""
       end
     else
-    record.direct_url = link
+      record.direct_url = link
     end
     record
   end
@@ -139,7 +141,7 @@ module SearchClassHelper
         return ""
       end
       if _str.is_a?(Numeric)
-      return _str.to_s
+        return _str.to_s
       end
       return _str.chomp
     rescue
@@ -150,5 +152,34 @@ module SearchClassHelper
   def normalize(_string)
     return UtilFormat.normalize(_string) if _string
     return ""
+  end
+
+  def SearchCollection(_collect, _qtype, _qstring, _start, _max, _qoperator, _last_id, job_id = -1, infos_user=nil, options=nil, _session_id=nil, _action_type=nil, _data = nil, _bool_obj=true)
+
+    begin
+      logger.debug("[PortfolioSearchClass] [SearchCollection]");
+      _sTime = Time.now().to_f
+
+      keyword(_qstring[0])
+      @action = _action_type
+      @options = options
+      @collection = _collect
+      @search_id = _last_id
+      @infos_user = infos_user
+      @max = _max.to_i
+      @action = _action_type
+      @records = []
+      @query_string = _qstring
+      @query_type = _qtype
+      @operators = _qoperator
+
+      logger.debug "[#{self.class}] [SearchCollection] Searching in #{@collection.name}"
+      search
+      logger.debug("[#{self.class}] [SearchCollection] Storing found results in cached results begin")
+      return save_in_cache
+    rescue => e
+      logger.error("[#{self.class}][SearchCollection] Error : " + e.message)
+      logger.error("[#{self.class}][SearchCollection] Trace : " + e.backtrace.join("\n"))
+    end
   end
 end
