@@ -444,11 +444,13 @@ class MetaSearch < ActionController::Base
               end
 
               logger.info("[search_async] _q.inspect = #{_q.inspect}")
-
+              @collection = Collection.find_by_id(_collections[_index].id)
               # determine search class (using oai_set field info if connection type = connector (custom connector)
+              logger.info("[METASEARCH] : oai_set = #{@collection.oai_set}")
+              logger.info("[METASEARCH] : collection = #{@collection.inspect}")
               _search_class = _collections[_index].conn_type.capitalize
-              if _collections[_index].conn_type == 'connector'
-                _search_class = _collections[_index].oai_set.capitalize
+              if @collection.conn_type == 'connector'              
+                _search_class = @collection.oai_set.to_s
               end
 
               logger.info("[search_async] INDEXER: " + LIBRARYFIND_INDEXER)

@@ -7,21 +7,25 @@
       select = params[:idTab].to_i;
     end %>
 	<%
-	lastTabId = 0;
-	callStack = Array.new()
-	callStack.push(0);
-	@TreeObject.each { |value|
-	if (value != "ROOT") # noeud Racine qui contient tous les themes
-	if (lastTabId != value.tab_id)
-	if (lastTabId != 0)
-	while (callStack.last != callStack.first) do
-	callStack.pop();%>
-</div><!--end of tree -->
-</div><!-- end of sub_tree -->
-</span>
-<%end %> </div><!-- end of div sub_menu_tree -->
-<% end
-lastTabId = value.tab_id;
+
+    	lastTabId = 0
+    	callStack = Array.new()
+    	callStack.push(0)
+    	
+    	   @TreeObject.each { |value|
+    	   if (value != "ROOT") # noeud Racine qui contient tous les themes
+    	   if (lastTabId != value.tab_id)
+    	   if (lastTabId != 0)
+    	   while (callStack.last != callStack.first) do
+    	   callStack.pop()%>
+        </div><!--end of tree -->
+        </div><!-- end of sub_tree -->
+        </span>
+        <%end %>
+ </div>
+<!-- end of div sub_menu_tree -->
+<% end %>
+<% lastTabId = value.tab_id;
 if (value.tab_id == select)%>
 <div name='sub_menu_tree_<%= value.tab_id%>'>
 	<% else %>

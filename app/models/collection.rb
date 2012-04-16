@@ -75,6 +75,7 @@ class Collection < ActiveRecord::Base
     sets.split(",").each do |item|
       if item.slice(0,1)=='c'
         coll << item.slice(1,item.length-1) + ","
+        logger.debug("[Collection][find_resources] coll = #{coll.inspect}")  
       else
         groups << item.slice(1,item.length-1) + ","
       end
@@ -95,7 +96,7 @@ class Collection < ActiveRecord::Base
     else
       sql << coll
     end
-    
+    logger.debug("[Collection][find_resources] sql = #{sql}")
     c_ids = CollectionGroupMember.find_by_sql(sql)
     results = []
     c_ids.each do |item|

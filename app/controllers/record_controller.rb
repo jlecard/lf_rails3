@@ -31,13 +31,20 @@ class RecordController < ApplicationController
   include RecordHelper
   include ERB::Util
   layout "libraryfind", :except => [:spell_check,:advanced_search, :cart, :build_results, :see_also]
-
+  
+  def initialize
+    super
+    @filter_tab ||= SearchTabFilter.load_filter
+    @linkMenu ||= SearchTab.load_menu
+    @groups_tab ||= SearchTab.load_groups
+  end
+  
   def build_results(_results, _sort_value, _filter)
     @results    = _results
     @sort_value = _sort_value
     @filter     = _filter
   end
-  
+
   def advanced_search?
     @advanced = @tab_query_string and !@tab_query_string[1].blank?
   end
@@ -72,6 +79,10 @@ class RecordController < ApplicationController
       @tab_query_string << params[:string2] if !params[:string2].blank?
       @tab_query_string << params[:string3] if !params[:string3].blank?
     end
+    logger.debug("[RecordController][set_query_and_operator] #{params.inspect}")
+    if params[:query]
+      @tab_query_string << params[:query][:string] if !params[:query][:string].blank?
+    end
     @sets ||= params[:query_sets]
     @field_filter = []
     @field_filter[0] = params[:field_filter1] if !params[:field_filter1].blank?
@@ -81,7 +92,7 @@ class RecordController < ApplicationController
     @operator = []
     @operator[0] =  params[:operator1].blank? ? "AND" : params[:operator1]
     @operator[1] =  params[:operator2].blank? ? "AND" : params[:operator2]
-    
+
     advanced_search?
   end
 
@@ -93,63 +104,74 @@ class RecordController < ApplicationController
   end
 
   def retrieve
-    session_pagination
-    session_max_search_results
-    default_tab
-
-    logger.debug("[RecordController][retrieve]")
-    if (params[:start_search] != "false")
-      if !params[:string1].blank?
-        if !params[:rebonce].blank?
-          items = {:query => "#{html_escape(params[:string1])}", :filter =>"#{html_escape(params[:field_filter1])}", :host => "#{request.remote_addr}"};
-          LogGeneric.addToFile("LogRebonceUsage", items)
-        end
-        logger.debug("[retrieve] idTab:#{@idTab}")
-
-        init_defaults
-        init_query_and_type(params)
-        if !@query[0].blank? and !@query[0].to_s.strip.blank?
-          init_search
-          if @sets and !@sets.empty?
-            logger.debug("[retrieve] searching for query: " + @query.to_s + " and type: " + @type.to_s)
-            if @IsMobile and !request.user_agent.downcase.index('opera mini').nil?
-              dep_find_search_results
-              render(:action => @tab_template)
+    begin
+      session_pagination
+      session_max_search_results
+      default_tab
+      init_defaults
+      init_query_and_type(params)
+      @theme ||= SearchTabSubject.new
+      @TreeObject ||= @theme.CreateSubMenuTree || {}
+      logger.debug("[RecordController][retrieve]")
+      logger.debug("[RecordController][retrieve] #{params.inspect}")
+      if (params[:start_search] != "false" or !params[:start_search])
+        if !params[:string1].blank? or !params[:query][:string].blank?
+          if !params[:rebonce].blank?
+            items = {:query => "#{html_escape(params[:string1])}", :filter =>"#{html_escape(params[:field_filter1])}", :host => "#{request.remote_addr}"};
+            LogGeneric.addToFile("LogRebonceUsage", items)
+          end
+          logger.debug("[retrieve] idTab:#{@idTab}")
+          init_query_and_type(params)
+          logger.debug("[retrieve] query:#{@query}")
+          if !@query[0].blank? and !@query[0].to_s.strip.blank?
+            init_search
+            if @sets and !@sets.empty?
+              logger.debug("[retrieve] searching for query: " + @query.to_s + " and type: " + @type.to_s)
+              if @IsMobile and !request.user_agent.downcase.index('opera mini').nil?
+                dep_find_search_results
+                render(:action => @tab_template)
+              else
+                metadata = Metadata.new
+                @jobs = $objDispatch.search_async(@sets, @type, @query, @start, @max, @operator)
+                logger.debug("[RecordController][retrieve] render intermediate")
+                render(:action => 'intermediate')
+              end
             else
-              @jobs = $objDispatch.search_async(@sets, @type, @query, @start, @max, @operator)
-              render(:action => 'intermediate')
+              flash.now[:notice]="No collection group selected"
+              render(:action=>"accueil_all")
             end
           else
-            flash.now[:notice]="No collection group selected"
+            flash.now[:notice] = "No query or empty query"
             render(:action=>"accueil_all")
           end
         else
-          flash.now[:notice] = "No query or empty query"
+          flash.now[:notice] = "No query"
           render(:action=>"accueil_all")
         end
       else
-        flash.now[:notice] = "No query"
+        init_defaults
+        if !params[:query].blank?
+          init_query_and_type(params)
+        else
+          @query=['']
+        end
+        if params[:query_sets].blank?
+          @sets=params[:query_sets]
+        else
+          @sets=selected_sets
+          if !@sets or @sets.empty?
+            init_sets
+          end
+        end
+        if @sets.rindex(',') == @sets.length - 1
+          @sets=@sets.chop
+        end
         render(:action=>"accueil_all")
       end
-    else
-      init_defaults
-      if !params[:query].blank?
-        init_query_and_type(params)
-      else
-        @query=['']
-      end
-      if params[:query_sets].blank?
-        @sets=params[:query_sets]
-      else
-        @sets=selected_sets
-        if !@sets or @sets.empty?
-          init_sets
-        end
-      end
-      if @sets.rindex(',') == @sets.length - 1
-        @sets=@sets.chop
-      end
-      render(:action=>"accueil_all")
+    rescue => e
+      logger.error("Exception in RecordController#retrieve #{e.message}")
+      logger.error("Backtrace #{e.backtrace}")
+      #render(:action=>"accueil_all")
     end
   end
 
@@ -397,7 +419,7 @@ class RecordController < ApplicationController
     select_box_items
     @jobs=nil
     @theme ||= SearchTabSubject.new
-    @TreeObject ||= @theme.CreateSubMenuTree
+    @TreeObject ||= @theme.CreateSubMenuTree || {}
 
     @editorials = nil
     #Most viewed documents

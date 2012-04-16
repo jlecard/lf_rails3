@@ -126,7 +126,8 @@ module SearchHelper
   end
 
   def init_query_and_type(params)
-
+    logger.debug("[SearchHelper] init_query_and_type params : #{params.inspect}")
+    logger.debug("[SearchHelper] init_query_and_type params : #{params["query"]}") if !params["query"].nil?
     @query=[]
     @operator=[]
 
@@ -157,6 +158,9 @@ module SearchHelper
       @query  << q3
       @type << t3
     end
+    
+    @query << params["query"]["string"] if  !params["query"].blank? and !params["query"]["string"].blank? 
+    @query << params[:query_string] if !params[:query_string].blank?
     # set default value if empty
     @type ||= ["keyword"]
   end

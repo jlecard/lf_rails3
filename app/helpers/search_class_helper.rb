@@ -10,7 +10,7 @@ module SearchClassHelper
       conn = Solr::Connection.new(LIBRARYFIND_SOLR_HOST)
       logger.info("[#{self.class}] [solr_request] RAW STRING: " + raw_query_string)
       response = conn.query(raw_query_string, opt)
-      @total_hits = _response.total_hits
+      @total_hits = response.total_hits
       response.each do |hit|
         next if !defined?(hit["controls_id"])
         @list_of_ids << hit["controls_id"]

@@ -24,12 +24,13 @@ LfRails3::Application.routes.draw do
   # Install the default route as the lowest priority.
   #match ':controller/:action'
 
-  #match 'record/search', :to=>'record#search'
-  #match 'record/retrieve', :to=>'record#retrieve'
+  match 'record/search', :to=>'record#search'
+  match 'record/retrieve', :to=>'record#retrieve'
   match 'user/login', :to=>'user#login'
   match '', :to=>"record#search"
   match 'admin', :controller => 'admin/dashboard', :action => 'index'
   match 'admin/dashboard', :to => 'admin/dashboard#index'
+  match 'record', :to => 'record#retrieve'
   #match 'admin/collection_group/list', :to => 'admin/collection_group#list'
   namespace :admin do
     resources :collection do
@@ -41,6 +42,7 @@ LfRails3::Application.routes.draw do
       get 'list', :on => :collection
       get :autocomplete_collection_group_name, :on => :collection
       get :autocomplete_collection_group_full_name, :on => :collection
+      post :create
     end
     resources :dashboard
     resources :manage_roles
@@ -55,6 +57,7 @@ LfRails3::Application.routes.draw do
   end
   #match 'admin/collection', :to => 'admin/collection#list'
   #match 'admin/collection/requeteformulaire', :to => 'admin/collection#requeteformulaire'
+  match '/admin/collection_group/create', :to =>'admin/collection_group#create'
   match ':controller(/:id(/:action))', :controller => /admin\/[^\/]+/
   match ':controller(/:action(/:id))', :controller => /admin\/[^\/]+/
   match ':controller(/:id/:action)'

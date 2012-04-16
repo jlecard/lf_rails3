@@ -79,6 +79,7 @@ class Admin::CollectionGroupController < ApplicationController
   end
 
   def create
+    logger.debug("[collection_group_controller][create] #{params[:collection_group]}")
     @collection_group = CollectionGroup.new(params[:collection_group])
     if @collection_group.save
       checkboxes=params[:collection]

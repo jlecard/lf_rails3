@@ -109,7 +109,7 @@ describe RecordController do
         and render the intermediate template page, one default collection group is 
         created but with no assiociated collections" do
       cg = Factory(:collection_group)  
-      get :retrieve, {:string1=>"test"}, valid_session
+      get :retrieve, {:query=>{:string=>"test"}}, valid_session
       assigns[:sets].should == "g1"
       assigns[:idTab].should == "1"
       assigns[:type][0].should == "keyword"
