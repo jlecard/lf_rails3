@@ -18,7 +18,7 @@
 				count=count+1
 				filter=build_filter_string("availability",_availability)
 				params=build_filter_params(filter,@tab_template)%>							  
-	            <%=link_to translate('RESULTS',[translate("COLLECTION_AVAIL_LABEL_" + _availability.upcase), _number.to_s]), 
+	            <%=link_to translate('RESULTS',:collection=>translate("COLLECTION_AVAIL_LABEL_" + _availability.upcase),:count=> _number), 
 	                     {  :action => 'retrieve_page', 
 							:controller=>'record', 
 							:params=>params},	:onclick=>"scroll(0,0);showWait()"%>
@@ -40,7 +40,7 @@
 				  if _availability!=nil and _availability!='' and _availability.to_s.strip!='undefined'		
 					filter=build_filter_string("availability",_availability[0,4])
 					params=build_filter_params(filter,@tab_template)%>	
-		            <%=link_to translate('RESULTS',[translate(COLLECTION_AVAIL_LABEL_ + _availability.upcase),_number.to_s]), 
+		            <%=link_to translate('RESULTS',:collection=>translate(COLLECTION_AVAIL_LABEL_ + _availability.upcase),:count=>_number), 
 		                     {  :action => 'retrieve_page', 
 								:controller=>'record', 
 								:params=>params},	:onclick=>"scroll(0,0);showWait()"%>

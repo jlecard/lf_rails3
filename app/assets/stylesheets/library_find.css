@@ -103,6 +103,7 @@ display:inline;
   float:left;
   position:relative;
   height: 105em;
+  width:20%;
 }
 
 #search_results_min {

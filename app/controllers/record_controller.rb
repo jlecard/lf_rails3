@@ -83,6 +83,14 @@ class RecordController < ApplicationController
     if params[:query]
       @tab_query_string << params[:query][:string] if !params[:query][:string].blank?
     end
+    index = 0
+    @tab_query_string.each do |query_string| 
+      query_string = CGI::unescapeHTML(query_string)
+      @tab_query_string[index] = query_string
+      logger.debug("[RecordController][set_query_and_operator] query_string! #{query_string}")
+      index += 1
+    end
+      
     @sets ||= params[:query_sets]
     @field_filter = []
     @field_filter[0] = params[:field_filter1] if !params[:field_filter1].blank?
@@ -275,12 +283,12 @@ class RecordController < ApplicationController
     errors	= ""
     vendors	= Array.new
     for record in @results
-      # if record.error!=nil and record.error!=""
-      #   if !vendors.include?(record.vendor_name)
-      #     vendors<<record.vendor_name
-      #     errors=record.vendor_name+": "+record.error+"<br>"
-      #   end
-      # end
+       if record.error!=nil and record.error!=""
+         if !vendors.include?(record.vendor_name)
+           vendors<<record.vendor_name
+           errors=record.vendor_name+": "+record.error+"<br>"
+         end
+       end
     end
     if (errors != "")
       flash.now[:notice]=translate('DB_ERRORS',[errors])
@@ -334,14 +342,14 @@ class RecordController < ApplicationController
       elsif item.status==1
         @jobs_remaining=@jobs_remaining+1
         if !item.database_name.blank?
-          @remaining_targets=@remaining_targets+item.database_name.to_s+"<br/>"
+          @remaining_targets="#{@remaining_targets} #{item.database_name}<br/>"
         end
       end
     end
     sorted_completed=completed_items.sort{|a,b|b.hits.to_i <=> a.hits.to_i}
     for target in sorted_completed
       if !target.database_name.blank?
-        @completed_targets=@completed_targets+"<span id='completed_targets'>"+target.database_name.to_s+"</span>"+target.hits.to_s+" hits (total:#{target.total_hits})<br/>"
+        @completed_targets="#{@completed_targets}<span id='completed_targets'>#{target.database_name}</span> #{target.hits} hits (total:#{target.total_hits})<br/>"
       end
     end
     if params[:mobile] != nil and params[:mobile] == true
@@ -396,7 +404,8 @@ class RecordController < ApplicationController
     spell_check
     see_also
     #   @editorials = Editorial.getEditorialsByGroupsId(params[:query_sets].slice(1,params[:query_sets].length-1))
-    @editorials = $objDispatch.GetEditorials(params[:query_sets].slice(1,params[:query_sets].length-1));
+    
+    @editorials = $objDispatch.GetEditorials(@sets) if @sets
     if params[:mobile] != nil and params[:mobile] == 'true'
       @IsMobile = true
     end

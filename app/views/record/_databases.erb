@@ -17,7 +17,7 @@
             count=count+1
             filter=build_filter_string("vendor_name",_vendor_name)
             params=build_filter_params(filter,@tab_template) %>
-            <%=link_to translate('RESULTS',[_vendor_name, _hits.to_s]),
+            <%=link_to translate('RESULTS',:collection=>_vendor_name, :count=>_hits),
             {  :action => 'retrieve_page',
             :controller=>'record',
             :params=>params},	:onclick=>"scroll(0,0);showWait()" %>
@@ -35,7 +35,7 @@
                 <%@databases[i*10..(i+1)*10-1].each{|_vendor_name, _hits|
                 filter=build_filter_string("vendor_name",_vendor_name)
                 params=build_filter_params(filter,@tab_template) %>
-                <%=link_to translate('RESULTS',[_vendor_name, _hits.to_s]),
+                <%=link_to translate('RESULTS',:collection=>_vendor_name,:count=> _hits.to_s),
                 {  :action => 'retrieve_page',
                 :controller=>'record',
                 :params=>params},	:onclick=>"scroll(0,0);showWait()" %>

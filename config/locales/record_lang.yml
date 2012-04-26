@@ -204,7 +204,7 @@ fr:
   #_authors.rhtml
   AUTHORS: Auteur
   UNFILTER_AUTHORS: Enlever le filtre d'auteur
-  RESULTS: " \"#{args[0]} (#{args[1]} résultats)\""
+  RESULTS: " \"%{collection} (%{count} résultats)\""
   MORE_AUTHORS: [Plus d'auteurs...]
   TOP_AUTHORS: [Seulement le Top 10 des Auteurs...]
   #_databases.rhtml
@@ -223,7 +223,7 @@ fr:
   #_group_details.rhtml
   COLLECTIONS_IN_THIS_GROUP: Base de recherche dans ce groupe
   #_image_rows.rhtml
-  RESULTS_HITS: " \"Résultats de #{args[0]} a #{args[1]} sur #{args[2]} documents trouves\""
+  RESULTS_HITS: " \"Résultats de %{start} à %{end} sur %{total} documents trouvés\""
   #_navigation.rhtml
   REFINE_RESULTS: Affiner les résultats
   MATERIAL_TYPES: Type de document

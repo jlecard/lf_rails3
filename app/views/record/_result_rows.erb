@@ -8,7 +8,7 @@
     if @results_page!=nil and !@results_page.empty? and !@results.empty? 
  	first_result=(@page*@page_size)-(@page_size-1)
 	last_result=first_result+@results_page.length-1
-	hits_string=translate('RESULTS_HITS',[first_result.to_s,last_result.to_s,get_total_hits.to_s])%>  
+	hits_string=translate('RESULTS_HITS',:start=>first_result,:end=>last_result,:total=>get_total_hits.to_s)%>  
     <% if @IsMobile != true %>
     <div id='hits'><span><%=hits_string%></span>
     <%= render(:partial => "sort")%>

@@ -16,7 +16,7 @@
  </div>
 
   <div id="center" class="column">
-<% form_tag({ :action => "retrieve", :controller=>'/record'}, {:name=>"search_form", :id=>"search_form", :onsubmit=>"showWait()"})  do -%>
+<%= form_tag({ '/record/retrieve'}, :name=>"search_form", :id=>"search_form", :onsubmit=>"showWait()")  do -%>
   <h2><%=translate('ADVANCED_SEARCH')%></h2>
   <div id="advanced_search">
     <input type='hidden' name='start_search' id="start_search" value="true">

@@ -221,7 +221,7 @@ fr:
   CITATION: Citer ce document
   SAVE_THIS_ITEM: Mettre dans le panier
   REMOVE_FROM_SAVED_ITEMS: Enlever du panier
-  MORE_FROM: " \"Plus de résultats de '#{args[0]}' \""
+  MORE_FROM: " \"Plus de résultats de '%{vendor}' \""
   TITLE_ALL: "Tout"
   TITLE_BOOK: "Livres"
   TITLE_ARTICLE: "Revues et Articles"

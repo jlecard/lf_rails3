@@ -26,7 +26,7 @@
 						<% end %>
 						
 						<div id='tree_<%=count%>' class="navigation">
-		            	<%=link_to translate('RESULTS',[_theme,values[0].to_s]),
+		            	<%=link_to translate('RESULTS',:collection=>_theme,:count=>values[0]),
 			            {  :action => 'retrieve_page',
 			            :controller=>'record',
 			            :params=>params},	:onclick=>"scroll(0,0);showWait()", :style => "margin-left:0px" %>
@@ -47,7 +47,7 @@
 												<a class="linkplus">-</a>
 											<% end %>
 											<div id='tree_<%=count%>_<%=count2%>' class="navigation">
-							                <%=link_to translate('RESULTS',[_theme2,values2[0].to_s]),
+							                <%=link_to translate('RESULTS',:collection=>_theme2,:count=>values2[0]),
 							                {  :action => 'retrieve_page',
 							                :controller=>'record',
 							                :params=>params2},	:onclick=>"scroll(0,0);showWait()", :style => "margin-left:0px"%>
@@ -65,7 +65,7 @@
 																<a class="linkplus">-</a>
 																
 																<div id='tree_<%=count%>_<%=count2%>_<%=count3%>' class="navigation">
-												                <%=link_to translate('RESULTS',[_theme3,values3[0].to_s]),
+												                <%=link_to translate('RESULTS',:collection=>_theme3,:count=>values3[0]),
 												                {  :action => 'retrieve_page',
 												                :controller=>'record',
 												                :params=>params3},	:onclick=>"scroll(0,0);showWait()", 

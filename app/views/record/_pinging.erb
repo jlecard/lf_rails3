@@ -16,13 +16,13 @@
 	<div id="progress_indicator"><div style=<%=style_string%>></div></div>
    	<% if @remaining_targets!=nil and @remaining_targets!=""%>
 	<b><%=translate('NOW_SEARCHING')%></b></br>
-	<%=@remaining_targets.to_s%>
+	<%= simple_format(@remaining_targets)%>
 	<%end%>
 
   </div>
 
   <div id="pinging_complete">
     <b><%=translate('COMPLETED_SEARCHING')%></b><br/> 
-	<%=@completed_targets.to_s%>
+	<%= simple_format(@completed_targets)%>
   </div>
 </div>

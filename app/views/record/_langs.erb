@@ -18,7 +18,7 @@
 				filter=build_filter_string("lang",_lang)
 				params=build_filter_params(filter,@tab_template)
 				lang = translate("LANG_" + _lang.to_s) %>						  
-	            <%=link_to translate('RESULTS',[lang, _number.to_s]), 
+	            <%=link_to translate('RESULTS',:collection=>lang,:count=>_number), 
 	                     {  :action => 'retrieve_page', 
 							:controller=>'record', 
 							:params=>params},	:onclick=>"scroll(0,0);showWait()"%>
@@ -39,7 +39,7 @@
 					filter=build_filter_string("lang",_lang)
 					params=build_filter_params(filter,@tab_template)
 					lang = translate("LANG_" + _lang.to_s) %>				  
-		            <%=link_to translate('RESULTS',[lang.to_s ,_number.to_s]), 
+		            <%=link_to translate('RESULTS',:collection=>lang.to_s ,:count=>_number), 
 		                     {  :action => 'retrieve_page', 
 								:controller=>'record', 
 								:params=>params},	:onclick=>"scroll(0,0);showWait()"%>

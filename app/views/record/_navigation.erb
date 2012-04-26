@@ -33,11 +33,12 @@
                             tab_template=@config["IMAGES_TEMPLATE"]
                             end
                             filter=build_filter_string("material_type",_material_type)
-                            params=build_filter_params(filter,tab_template) %>
-                            <%=link_to translate('RESULTS',[_material_type.pluralize,_count.to_s]),
+                            params=build_filter_params(filter,tab_template) 
+                            str = translate('RESULTS',:collection=>_material_type.pluralize, :count=>_count) %>
+                            <%=link_to(str,
                             {  :action => 'retrieve_page',
                             :controller=>'record',
-                            :params=>params},	:onclick=>"scroll(0,0);showWait()" %>
+                            :params=>params}, :onclick=>"scroll(0,0);showWait()")%>
                             <%end
                             } %>
                         </div>

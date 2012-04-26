@@ -10,7 +10,7 @@
 				error_string=error_string+x*':'
 				error_string=error_string+'<br/>'
 				}%>
-<%= error_string.to_s%>
+<%= simple_format(error_string.to_s)%>
 
 </div>
 </div>

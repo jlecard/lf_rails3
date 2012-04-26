@@ -109,37 +109,27 @@ class CrawlerSearchClass < ApplicationController
         _description = hit["summary"]
         _subject = hit["subject"]
         _link = hit["id"]
-        _keyword = UtilFormat.html_decode(normalize(_title) + " " + normalize(_description) + normalize(_subject))
+        _keyword = UtilFormat.html_decode(title) + " " + _description + _subject
         _date = hit["createtime"]
         _source = hit["source_str"]
         record = Record.new()
-        record.rank = _objRec.calc_rank({'title' => normalize(_title), 'atitle' => '', 'creator'=>normalize(_authors), 'date'=>_date, 'rec' => _keyword , 'pos'=>1}, @pkeyword)
-        record.vendor_name = @cObject.alt_name
-        record.ptitle = UtilFormat.html_decode(normalize(_title))
-        record.title =  UtilFormat.html_decode(normalize(_title))
+        record.rank = _objRec.calc_rank({'title' => _title, 'atitle' => '', 'creator'=>_authors, 'date'=>_date, 'rec' => _keyword , 'pos'=>1}, @pkeyword)
+        record.vendor_name = @collection.alt_name
+        record.ptitle = UtilFormat.html_decode(_title)
+        record.title =  UtilFormat.html_decode(_title)
         record.atitle =  ""
         record.issn =  ""
         record.isbn = ""
         record.abstract = hit["summary"]
-        record.date = normalize(_date)
-        record.author = normalize(_authors)
-        record.link = normalize(@cObject.vendor_url)
-        record.id =  (rand(1000000).to_s + rand(1000000).to_s + Time.now().year.to_s + Time.now().day.to_s + Time.now().month.to_s + Time.now().sec.to_s + Time.now().hour.to_s) + ";" + @cObject.id.to_s + ";" + @search_id.to_s
+        record.date = _date
+        record.author = _authors
+        record.link = @collection.vendor_url
+        record.id =  (rand(1000000).to_s + rand(1000000).to_s + Time.now().year.to_s + Time.now().day.to_s + Time.now().month.to_s + Time.now().sec.to_s + Time.now().hour.to_s) + ";" + @collection.id.to_s + ";" + @search_id.to_s
         record.doi = ""
         record.openurl = ""
-        if(INFOS_USER_CONTROL and !infos_user.nil?)
-          # Does user have rights to view the notice ?
-          droits = ManageDroit.GetDroits(infos_user,@cObject.id)
-          if(droits.id_perm == ACCESS_ALLOWED)
-            record.direct_url = normalize(_link)
-          else
-            record.direct_url = "";
-          end
-        else
-          record.direct_url = normalize(_link)
-        end
+        record = set_record_access_link(record, _link)
         
-        record.static_url = @cObject.vendor_url
+        record.static_url = @collection.vendor_url
         record.subject = _subject
         record.publisher = _source
         record.source = _source
@@ -152,7 +142,7 @@ class CrawlerSearchClass < ApplicationController
           record.material_type = PrimaryDocumentType.getNameByDocumentType(UtilFormat.normalize(material_type),collection_id)
           logger.debug("[CrawlerSearchClass][parse_crawler] raw material_type = #{material_type}")
         else
-          record.material_type = @cObject.mat_type
+          record.material_type = @collection.mat_type
         end
         record.format = hit["contenttyperoot"]
         record.volume = ""
@@ -164,7 +154,7 @@ class CrawlerSearchClass < ApplicationController
         record.hits = @total_hits
         logger.debug("[CrawlerSearchClass][parse_crawler] record: #{record}")
         logger.debug("[CrawlerSearchClass][parse_crawler] record: #{record.inspect}")
-        _record.push(record)
+        @records.push(record)
         _x = _x + 1
       rescue Exception => bang
         logger.debug("[CrawlerSearchClass][parse_crawler] error: " + bang)
@@ -173,7 +163,7 @@ class CrawlerSearchClass < ApplicationController
       end
     }
     #logger.info("[CrawlerSearchClass][parse_crawler] _record returning: #{_record.size}" )
-    return _record 
+    return @records 
     
   end
   

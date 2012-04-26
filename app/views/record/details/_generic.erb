@@ -84,24 +84,26 @@
 <%=render(:partial => "/record/details/generic_citation", :object => generic) %>
 <div id="result-row" class='vr'>
     <%= link_to_function translate('CITATION'), "Element.toggle('citation_"+generic.id.to_s+"')" %>&#160;<span id="add_to_cart_<%=generic.id%>"><%if session[:cart]==nil ||  !session[:cart].include?(generic.id) %>
-        <%=link_to_remote translate('SAVE_THIS_ITEM'), {
+        <%=link_to translate('SAVE_THIS_ITEM'), {
+        :remote=>true,
         :update => 'add_to_cart_%s' % generic.id,
         :url => { :action => 'add', :controller=>'/cart'},
         :with => "'doc=%s'" % generic.id,
         :complete => "loadCart('/record/getCart', 'listMyCart')"
-        } %>
+        }, :remote=>true %>
         <% else
         if @cart_page!=nil and !@cart_page.empty? %>
-        <%=link_to_remote translate('REMOVE_FROM_SAVED_ITEMS'), {
+        <%=link_to translate('REMOVE_FROM_SAVED_ITEMS'), {
+        :remote=>true,
         :update => 'row_%s' % generic.id,
         :url => { :action => 'remove', :controller=>'/cart'},
         :with => "'doc=%s'" % generic.id,
         :loading => "scroll(0,0);Element.show('waitimage')",
         :complete => "Element.hide('waitimage');"
-        } %>
+        }, :remote=>true %>
         <%end %>
     </span>&#160;<%end %>
     <% if generic.vendor_url!=nil and generic.vendor_url!='' %>
-    <a href=<%=h(generic.vendor_url)%>target="_blank"><%=translate('MORE_FROM',[escape_quote(generic.vendor_name)]) %>
+    <a href=<%=h(generic.vendor_url)%>target="_blank"><%=translate('MORE_FROM',:vendor=>escape_quote(generic.vendor_name)) %>
     </a>&#160;<%end %>
 </div>

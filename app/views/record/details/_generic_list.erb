@@ -88,14 +88,15 @@
 
   <span id="add_to_cart_<%=generic_list.id%>"> 
          <%if session[:cart]==nil ||  !session[:cart].include?(generic_list.id) %>
-         <%=link_to_remote translate('SAVE_THIS_ITEM'), {
+         <%=link_to translate('SAVE_THIS_ITEM'), {:remote=>true,
                                               :update => 'add_to_cart_%s' % generic_list.id,
                                               :url => { :action => 'add', :controller=>'/cart'},
                                               :with => "'doc=%s'" % generic_list.id
                                               }%>
         <% else 
              if @cart_page!=nil and !@cart_page.empty? %>
-              <%=link_to_remote translate('REMOVE_FROM_SAVED_ITEMS'), {
+              <%=link_to translate('REMOVE_FROM_SAVED_ITEMS'), {
+              								  :remote=>true,
                                               :update => 'arow_%s' % generic_list.id,
                                               :url => { :action => 'remove', :controller=>'/cart'},
                                               :with => "'doc=%s'" % generic_list.id,

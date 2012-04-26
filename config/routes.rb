@@ -31,6 +31,8 @@ LfRails3::Application.routes.draw do
   match 'admin', :controller => 'admin/dashboard', :action => 'index'
   match 'admin/dashboard', :to => 'admin/dashboard#index'
   match 'record', :to => 'record#retrieve'
+  match 'record/check_job_status', :to => 'record#check_job_status'
+  match 'record/finish_search', :to => 'record#finish_search'
   #match 'admin/collection_group/list', :to => 'admin/collection_group#list'
   namespace :admin do
     resources :collection do
